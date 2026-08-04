@@ -1,0 +1,15 @@
+source,backend,ordering,bond,cutoff,shots,method,elapsed_seconds,bks_hits,bks_rate,near_bks_hits,near_bks_rate,feasible_rate,quality_mass,best_size
+results/cutensornet/raw_es60fst02_mps_bond32_cutoff1e-03_100shots.json,NVIDIA cuTensorNet MPS,sorted,32,0.001,100,published_lr,428.3421879759999,0,0.0,0,0.0,0.25,0.23999999999999994,86
+results/cutensornet/raw_es60fst02_mps_bond32_cutoff1e-03_100shots.json,NVIDIA cuTensorNet MPS,sorted,32,0.001,100,matched_random_search,463.26211187399986,0,0.0,0,0.0,0.7,0.6725,85
+results/cutensornet/raw_es60fst02_spectral_mps_bond128_cutoff1e-03_1000shots.json,NVIDIA cuTensorNet MPS,spectral,128,0.001,1000,published_lr,207.674284734,0,0.0,43,0.043,0.51,0.4945681818181817,87
+results/cutensornet/raw_es60fst02_spectral_mps_bond128_cutoff1e-03_1000shots.json,NVIDIA cuTensorNet MPS,spectral,128,0.001,1000,matched_random_search,220.196266723,3,0.003,89,0.089,0.639,0.620329545454548,88
+results/cutensornet/raw_es60fst02_spectral_mps_bond128_cutoff1e-03_5000shots.json,NVIDIA cuTensorNet MPS,spectral,128,0.001,5000,published_lr,228.71399077800015,6,0.0012,212,0.0424,0.484,0.4695568181818092,88
+results/cutensornet/raw_es60fst02_spectral_mps_bond128_cutoff1e-03_5000shots.json,NVIDIA cuTensorNet MPS,spectral,128,0.001,5000,matched_random_search,252.6798885669998,15,0.003,410,0.082,0.6232,0.6049295454545263,88
+results/cutensornet/raw_es60fst02_spectral_mps_bond128_cutoff1e-04_1000shots.json,NVIDIA cuTensorNet MPS,spectral,128,0.0001,1000,published_lr,222.44933257800005,2,0.002,65,0.065,0.466,0.45315909090909173,88
+results/cutensornet/raw_es60fst02_spectral_mps_bond128_cutoff1e-04_1000shots.json,NVIDIA cuTensorNet MPS,spectral,128,0.0001,1000,matched_random_search,227.32537244000002,2,0.002,76,0.076,0.622,0.6036477272727298,88
+results/cutensornet/raw_es60fst02_spectral_mps_bond128_cutoff1e-04_5000shots.json,NVIDIA cuTensorNet MPS,spectral,128,0.0001,5000,published_lr,222.181579242,12,0.0024,382,0.0764,0.4838,0.47064772727271836,88
+results/cutensornet/raw_es60fst02_spectral_mps_bond128_cutoff1e-04_5000shots.json,NVIDIA cuTensorNet MPS,spectral,128,0.0001,5000,matched_random_search,260.1225304889999,11,0.0022,391,0.0782,0.6352,0.6163954545454357,88
+results/cutensornet/raw_es60fst02_spectral_mps_bond32_cutoff1e-03_100shots.json,NVIDIA cuTensorNet MPS,spectral,32,0.001,100,published_lr,64.66028451300008,0,0.0,3,0.03,0.44,0.42727272727272736,87
+results/cutensornet/raw_es60fst02_spectral_mps_bond32_cutoff1e-03_100shots.json,NVIDIA cuTensorNet MPS,spectral,32,0.001,100,matched_random_search,68.65890495099984,0,0.0,4,0.04,0.74,0.7156818181818185,87
+results/cutensornet/raw_es60fst02_spectral_mps_bond64_cutoff1e-03_200shots.json,NVIDIA cuTensorNet MPS,spectral,64,0.001,200,published_lr,113.58757232400012,1,0.005,4,0.02,0.44,0.4264772727272731,88
+results/cutensornet/raw_es60fst02_spectral_mps_bond64_cutoff1e-03_200shots.json,NVIDIA cuTensorNet MPS,spectral,64,0.001,200,matched_random_search,117.03611872600004,1,0.005,13,0.065,0.725,0.7037500000000011,88

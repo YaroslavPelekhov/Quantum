@@ -1,0 +1,13 @@
+[submodule "QOBLIB"]
+	path = QOBLIB
+	url = https://github.com/ZIB-AOPT/QOBLIB.git
+[submodule "metriq-gym"]
+	path = metriq-gym
+	url = https://github.com/unitaryfoundation/metriq-gym.git
+[submodule "baselines/qoblib-solutions"]
+	path = baselines/qoblib-solutions
+	url = https://github.com/alejomonbar/qoblib-solutions.git
+[submodule "baselines/QAOA-Parameter-Transfer-via-GAT"]
+	path = baselines/QAOA-Parameter-Transfer-via-GAT
+	url = https://github.com/jxsoortha/QAOA-Parameter-Transfer-via-GAT.git
+

@@ -1,0 +1,339 @@
+\documentclass[10pt]{article}
+
+\usepackage[margin=0.72in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,allcolors=blue!55!black]{hyperref}
+
+\newcommand{\Prob}{\mathbb{P}}
+\newcommand{\BKS}{\mathrm{BKS}}
+\newcommand{\tauMPS}{\tau_{\mathrm{MPS}}}
+\setlist{nosep,leftmargin=*}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0pt}
+
+\title{Supplementary Information\\[2mm]
+\large When Better QAOA Schedules Depend on the Simulator:
+Truncation-Induced Rank Reversals on a 55-Qubit QOBLIB Benchmark}
+\author{Anonymous Authors}
+\date{Research artifact, 3 August 2026}
+
+\begin{document}
+\maketitle
+
+\section{Frozen protocol and evaluated schedules}
+
+The split and primary promotion gate were written before any candidate was
+evaluated on \texttt{es60fst02}. Training used the complete
+\texttt{es60fst01} and \texttt{es60fst03} graphs, validation used
+\texttt{es60fst04}, and \texttt{es60fst02} was held out for one confirmatory
+pass. The gate required a positive paired BKS-rate difference from published
+LR, a paired bootstrap 95\% interval excluding zero, and no material loss of
+feasible mass. The nonlinear schedule family was
+\begin{align*}
+ \beta_k &= \Delta_\beta\left(\frac{p-k+1}{p}\right)^{a_\beta}, &
+ \gamma_k &= \Delta_\gamma\left(\frac{k}{p}\right)^{a_\gamma},
+ \qquad p=15.
+\end{align*}
+
+\begin{table}[h]
+\centering
+\caption{Schedules frozen before the blind pass. The genome columns are
+$(\Delta_\beta,\Delta_\gamma,a_\beta,a_\gamma)$.}
+\begin{tabular}{lcccc}
+\toprule
+Method & $\Delta_\beta$ & $\Delta_\gamma$ & $a_\beta$ & $a_\gamma$ \\
+\midrule
+Published LR & 0.70000 & 0.40000 & 1.00000 & 1.00000 \\
+Evolutionary & 0.51750 & 0.77197 & 1.07734 & 1.75435 \\
+Matched random & 0.64247 & 0.75939 & 1.77679 & 0.99172 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Three evolutionary replicates used a fixed population of 20 for six
+generations. Uniform random search received exactly 120 independent candidates
+per replicate. Every candidate received 256 exact-statevector shots on each
+training kernel. One champion per search method was selected on validation;
+test metrics never influenced selection. Samples were only unfolded and
+checked for independence on the original graph. No repair, greedy fill, local
+search, or archived solution was used.
+
+The MIS QUBO penalty was $\lambda=1.5$, with the released maximum
+quadratic-coefficient normalization. The 186-vertex, 280-edge blind graph was
+reduced to a 55-qubit, 91-edge kernel. Its native depth-15 circuit contains
+1,365 RZZ, 825 RZ, 825 RX, and 55 Hadamard operations before measurement.
+
+\section{Blind paired analysis}
+
+The confirmatory experiment used 15 paired simulator seeds and 1,000 shots per
+method and seed. Table~\ref{tab:blind} reports pooled rates; Table~\ref{tab:paired}
+reports paired inference. The confidence interval resamples the 15 paired jobs
+with 20,000 bootstrap draws. The two-sided sign-flip test enumerates all
+$2^{15}$ paired sign assignments. This preserves job-level pairing rather than
+treating 15,000 individual shots as independent simulator replicates.
+
+\begin{table}[h]
+\centering
+\caption{Blind \texttt{es60fst02} results at bond 64 and
+$\tauMPS=10^{-3}$. Each method has 15,000 shots.}
+\label{tab:blind}
+\begin{tabular}{lrrrrrr}
+\toprule
+Method & BKS hits & BKS rate & BKS$-1$ & Feasible & Quality & $N_{95}$ \\
+\midrule
+Published LR & 41 & .00273 & .11213 & .50127 & .48962 & 1,095 \\
+Evolutionary & 31 & .00207 & .06813 & .89987 & .87202 & 1,449 \\
+Matched random & \textbf{101} & \textbf{.00673} & \textbf{.15700} & \textbf{.90180} & \textbf{.87865} & \textbf{444} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Here $N_{95}=\lceil\log(0.05)/\log(1-p_{\BKS})\rceil$ is the estimated number
+of shots required for a 95\% chance of at least one BKS sample.
+
+\begin{table}[h]
+\centering
+\caption{Paired method-minus-LR comparisons across 15 jobs. W/T/L denotes
+wins, ties, and losses.}
+\label{tab:paired}
+\begin{tabular}{llrrrl}
+\toprule
+Method & Metric & Mean $\Delta$ & Bootstrap 95\% CI & $p_{\rm flip}$ & W/T/L \\
+\midrule
+Evolutionary & BKS & $-.00067$ & $[-.00167,.00033]$ & .27002 & 5/2/8 \\
+Evolutionary & Feasible & $+.39860$ & $[.39133,.40660]$ & $6.10\!\times\!10^{-5}$ & 15/0/0 \\
+Matched random & BKS & $+.00400$ & $[.00247,.00553]$ & .000244 & 13/2/0 \\
+Matched random & Near-BKS & $+.04487$ & $[.03780,.05140]$ & $6.10\!\times\!10^{-5}$ & 15/0/0 \\
+Matched random & Feasible & $+.40053$ & $[.39266,.40987]$ & $6.10\!\times\!10^{-5}$ & 15/0/0 \\
+Matched random & Quality & $+.38904$ & $[.38140,.39807]$ & $6.10\!\times\!10^{-5}$ & 15/0/0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Complete 55-qubit sensitivity audit}
+
+All sensitivity points are single jobs with 10,000 shots per method, except
+the primary setting, which pools the 15 confirmatory jobs. Wilson intervals are
+stored with the artifact. Table~\ref{tab:sensitivity} exposes the integer hit
+counts so every displayed rate can be reconstructed.
+
+\begin{table}[h]
+\centering
+\caption{All completed native-circuit MPS settings on the held-out 55-qubit
+kernel. RS is matched random search.}
+\label{tab:sensitivity}
+\begin{tabular}{rrlrrrrr}
+\toprule
+Bond & $\tauMPS$ & Method & Shots & BKS & BKS$-1$ & Feasible & Quality \\
+\midrule
+64 & $10^{-3}$ & LR & 15,000 & 41 (.0027) & 1,682 (.1121) & 7,519 (.5013) & .4896 \\
+64 & $10^{-3}$ & RS & 15,000 & 101 (.0067) & 2,355 (.1570) & 13,527 (.9018) & .8787 \\
+64 & $3\times10^{-4}$ & LR & 10,000 & 116 (.0116) & 1,542 (.1542) & 4,805 (.4805) & .4702 \\
+64 & $3\times10^{-4}$ & RS & 10,000 & 161 (.0161) & 1,949 (.1949) & 8,129 (.8129) & .7934 \\
+64 & $10^{-4}$ & LR & 10,000 & 153 (.0153) & 1,546 (.1546) & 4,809 (.4809) & .4706 \\
+64 & $10^{-4}$ & RS & 10,000 & 109 (.0109) & 1,621 (.1621) & 7,351 (.7351) & .7170 \\
+96 & $10^{-3}$ & LR & 10,000 & 19 (.0019) & 1,188 (.1188) & 5,055 (.5055) & .4938 \\
+96 & $10^{-3}$ & RS & 10,000 & 70 (.0070) & 1,661 (.1661) & 8,925 (.8925) & .8701 \\
+96 & $10^{-4}$ & LR & 10,000 & 152 (.0152) & 1,710 (.1710) & 4,799 (.4799) & .4700 \\
+96 & $10^{-4}$ & RS & 10,000 & 134 (.0134) & 1,808 (.1808) & 7,121 (.7121) & .6953 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The BKS ranking favors RS at $10^{-3}$ and $3\times10^{-4}$, but LR at
+$10^{-4}$ for both bond caps. Near-BKS, feasible, and quality mass favor RS at
+all completed points. Raising the bond cap from 64 to 96 does not remove the
+rank reversal. The attempted bond-128, $10^{-6}$, three-method batch exceeded
+20 minutes and was terminated without producing a result; it is not treated as
+a completed point.
+
+\section{Exact-state MPS calibration}
+
+Complete output states were computed for the real 15-qubit
+\texttt{es60fst01} and 12-qubit \texttt{es60fst03} kernels. Probabilities were
+compared before measurement, eliminating shot noise. For exact distribution
+$p$ and MPS distribution $q$, total variation is
+$\tfrac12\sum_x|p(x)-q(x)|$; fidelity is the squared state overlap. Table
+\ref{tab:exact} gives all bond-128 threshold points.
+
+\begin{table}[h]
+\centering
+\caption{Exact-state calibration. $p^*_{\BKS}$ is exact BKS probability and
+$\Delta p_{\BKS}=p^{\rm MPS}_{\BKS}-p^*_{\BKS}$. NL is the matched-random
+nonlinear schedule.}
+\label{tab:exact}
+\small
+\begin{tabular}{llrrrrr}
+\toprule
+Case & Method & $\tauMPS$ & Fidelity & TV & $p^*_{\BKS}$ & $\Delta p_{\BKS}$ \\
+\midrule
+01 & LR & $10^{-3}$ & .980259 & .051752 & .686100 & +.015769 \\
+01 & LR & $3\times10^{-4}$ & .991631 & .036703 & .686100 & +.009153 \\
+01 & LR & $10^{-4}$ & .995614 & .025605 & .686100 & -.001314 \\
+01 & LR & $10^{-5}$ & .998979 & .008277 & .686100 & -.000559 \\
+01 & LR & $10^{-6}$ & .999866 & .002659 & .686100 & +.000153 \\
+01 & NL & $10^{-3}$ & .952413 & .074245 & .928984 & +.034173 \\
+01 & NL & $3\times10^{-4}$ & .974923 & .052601 & .928984 & +.022460 \\
+01 & NL & $10^{-4}$ & .986271 & .032493 & .928984 & +.012953 \\
+01 & NL & $10^{-5}$ & .998091 & .008755 & .928984 & +.002279 \\
+01 & NL & $10^{-6}$ & .999836 & .001448 & .928984 & +.000220 \\
+\midrule
+03 & LR & $10^{-3}$ & .987431 & .050922 & .735826 & +.007444 \\
+03 & LR & $3\times10^{-4}$ & .994573 & .021938 & .735826 & +.003234 \\
+03 & LR & $10^{-4}$ & .997701 & .016650 & .735826 & -.002770 \\
+03 & LR & $10^{-5}$ & .999535 & .004628 & .735826 & -.000237 \\
+03 & LR & $10^{-6}$ & .999953 & .001805 & .735826 & +.000204 \\
+03 & NL & $10^{-3}$ & .976398 & .070154 & .955300 & +.018487 \\
+03 & NL & $3\times10^{-4}$ & .986230 & .050596 & .955300 & +.010784 \\
+03 & NL & $10^{-4}$ & .994029 & .024675 & .955300 & +.005526 \\
+03 & NL & $10^{-5}$ & .999340 & .005522 & .955300 & +.000701 \\
+03 & NL & $10^{-6}$ & .999969 & .001053 & .955300 & +.000133 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+At each of $10^{-3}$, $3\times10^{-4}$, and $10^{-4}$, the state and metric
+errors are numerically identical at bonds 32, 64, and 128. Bond 16 is also
+identical except for nonlinear \texttt{es60fst01} at $10^{-4}$: TV is
+0.032981 rather than 0.032493 and BKS error is 0.013332 rather than 0.012953.
+Thus the threshold dominates once the cap reaches 32 on these donor kernels.
+The signed LR BKS error crosses zero twice even while fidelity improves, so a
+monotone global state metric does not certify monotone convergence of a rare
+observable.
+
+\section{Independent cuTensorNet audit}
+
+We exported the same native 55-qubit circuits to NVIDIA cuTensorNet 26.6 and
+decoded samples with the unchanged QOBLIB reduction map.  An independent
+exact contraction on the 12- and 15-qubit donor kernels agreed with Qiskit
+statevectors to unit fidelity for both schedules and both qubit orderings.
+On the 55-qubit kernel, the exact sampler failed during contraction planning
+with an internal backend error.  We therefore report the successful
+cuTensorNet MPS sweep, including the failed attempt in the audit log.
+
+A Fiedler ordering of the interaction graph reduced bandwidth from 47 to 10
+and maximum cut width from 42 to 9.  It is an exact relabeling: samples were
+inverse-permuted before decoding.  This reduced the bond-32, 100-shot runtime
+from 428--463 seconds per schedule in sorted order to 65--69 seconds.  Table
+\ref{tab:cutn} gives the completed independent sweep.  Near means objective
+at least BKS$-1$.
+
+\begin{table}[h]
+\centering
+\caption{Independent cuTensorNet MPS results on \texttt{es60fst02}. NL is the
+frozen matched-random nonlinear schedule.}
+\label{tab:cutn}
+\small
+\begin{tabular}{lrrlrrrrr}
+\toprule
+Order & Bond & $\tauMPS$ & Method & Shots & BKS & Near & Feasible & Seconds \\
+\midrule
+Sorted & 32 & $10^{-3}$ & LR & 100 & 0 & .000 & .250 & 428.3 \\
+Sorted & 32 & $10^{-3}$ & NL & 100 & 0 & .000 & .700 & 463.3 \\
+Fiedler & 32 & $10^{-3}$ & LR & 100 & 0 & .030 & .440 & 64.7 \\
+Fiedler & 32 & $10^{-3}$ & NL & 100 & 0 & .040 & .740 & 68.7 \\
+Fiedler & 64 & $10^{-3}$ & LR & 200 & 1 (.0050) & .020 & .440 & 113.6 \\
+Fiedler & 64 & $10^{-3}$ & NL & 200 & 1 (.0050) & .065 & .725 & 117.0 \\
+Fiedler & 128 & $10^{-3}$ & LR & 5,000 & 6 (.0012) & .0424 & .4840 & 228.7 \\
+Fiedler & 128 & $10^{-3}$ & NL & 5,000 & 15 (.0030) & .0820 & .6232 & 252.7 \\
+Fiedler & 128 & $10^{-4}$ & LR & 5,000 & 12 (.0024) & .0764 & .4838 & 222.2 \\
+Fiedler & 128 & $10^{-4}$ & NL & 5,000 & 11 (.0022) & .0782 & .6352 & 260.1 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+At $10^{-3}$, NL has 15 versus 6 BKS hits (Fisher two-sided $p=.078$);
+at $10^{-4}$ the counts are 11 versus 12 ($p=1.0$).  Thus the independent
+backend reproduces loss of the apparent NL advantage under tighter
+truncation, but not a statistically resolved reversal.  Feasible and near-BKS
+mass favor NL at both thresholds.
+
+\section{Strong classical MIS controls}
+
+The complete 186-vertex graph was also solved directly with two classical
+controls.  SciPy/HiGHS mixed-integer programming certified the optimum 88 with
+zero reported gap in 0.036 seconds.  The stochastic control repeatedly picks
+a minimum residual-degree vertex with random tie breaking.  It uses no
+archived solution, parameter training, or repair after sampling.  We ran 15
+independent replicates of 1,000 starts on both the full graph and the released
+55-variable reduced kernel.
+
+\begin{table}[h]
+\centering
+\caption{Classical controls versus the strongest released-setting QAOA row.
+QAOA time is the measured batch wall time divided equally among three methods.}
+\label{tab:classical}
+\small
+\begin{tabular}{lrrrrrr}
+\toprule
+Method & Trials & BKS hits & BKS rate & Near & Feasible & Seconds \\
+\midrule
+HiGHS exact MILP & 1 & 1 & 1.0000 & 1.0000 & 1.0000 & 0.036 \\
+Full-graph greedy & 15,000 & 1,133 & .07553 & .31527 & 1.0000 & 19.95 \\
+Kernel greedy & 15,000 & 6,063 & .40420 & .96873 & 1.0000 & 2.21 \\
+QAOA NL, Aer MPS & 15,000 & 101 & .00673 & .15700 & .9018 & 183.04 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Full-graph and kernel greedy achieve 11.2 and 60.0 times the QAOA BKS rate,
+respectively, while also running faster.  The exact solver is faster still on
+this instance.  These controls rule out a competitive or quantum-advantage
+claim for the present experiment; the contribution is the cross-backend
+diagnosis of rare-event instability.
+
+\section{Audit trail and artifact map}
+
+The first validation and blind MPS pass used Qiskit transpilation at
+optimization level zero. Inspection of the released QOBLIB workflow showed
+that its Aer/MPS baseline receives native RZ/RZZ/RX circuits. Because basis
+decomposition changes where MPS truncation is applied, the first pass was
+preserved as a protocol audit and excluded from the main result. Champions
+were not reselected after this discovery; the corrected pass reevaluated the
+already frozen schedules. Training was exact-statevector simulation, where the
+gate representation does not change the unitary.
+
+\begin{table}[h]
+\centering
+\caption{Machine-readable artifact map. Paths are relative to the artifact
+root.}
+\begin{tabularx}{\textwidth}{lX}
+\toprule
+Purpose & Artifact \\
+\midrule
+Frozen decisions & \texttt{FROZEN\_PROTOCOL.md} \\
+Deviation log & \texttt{PROTOCOL\_DEVIATIONS.md} \\
+Blind raw jobs & \texttt{results/blind\_test.json} \\
+Paired inference & \texttt{results/analysis\_summary.json} \\
+Sensitivity counts & \texttt{results/mps\_sensitivity.csv} \\
+Exact states and metrics & \texttt{results/exact\_mps\_calibration.json} \\
+Compact exact table & \texttt{results/exact\_mps\_calibration.csv} \\
+Classical controls & \texttt{results/classical\_baselines.json} \\
+Extended comparison & \texttt{results/extended\_comparison.json} \\
+cuTensorNet sweep & \texttt{results/cutensornet\_sweep.csv} \\
+Independent exact check & \texttt{results/cutensornet/small\_exact\_validation.json} \\
+Independent attempt log & \texttt{results/cutensornet/ATTEMPTS.md} \\
+Transpiled audit & \texttt{results/blind\_test\_transpiled\_audit.json} \\
+Integrity tests & \texttt{test\_full\_cycle.py} \\
+Checksums and provenance & \texttt{artifact\_manifest.json} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Eight integrity tests check the published ramp formula, split disjointness, the
+186-to-55 reduction, disabled repair, balanced 15,000-shot blind artifacts,
+the 56-row exact-calibration matrix, tight-threshold convergence, and bond
+invariance above 16. They also check the completeness and validity of the
+classical controls and the independent exact/sweep artifacts. The analysis
+scripts regenerate the CSV tables, figures, statistical summaries, and reports
+from the JSON artifacts.
+
+\end{document}

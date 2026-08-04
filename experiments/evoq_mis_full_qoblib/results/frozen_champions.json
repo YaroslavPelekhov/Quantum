@@ -1,0 +1,110 @@
+{
+  "published_lr": {
+    "method": "published_lr",
+    "replicate": 0,
+    "genome": [
+      0.7,
+      0.4,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "total_shots": 1000,
+      "feasible_shots": 561,
+      "feasible_rate": 0.561,
+      "bks_hits": 40,
+      "bks_rate": 0.04,
+      "near_bks_hits": 323,
+      "near_bks_rate": 0.323,
+      "quality_mass": 0.5507051282051257,
+      "conditional_mean_size": 76.56862745098039,
+      "best_size": 78,
+      "approximation_ratio_best": 1.0,
+      "distribution": {
+        "74": 2,
+        "75": 40,
+        "76": 196,
+        "77": 283,
+        "78": 40
+      },
+      "wilson_feasible": 0.5300657570538558,
+      "wilson_bks": 0.029510809273909453,
+      "wilson_near_bks": 0.2947413876122796,
+      "robust_score": 0.8941484487895892
+    },
+    "validation_selection_score": 0.8941484487895892
+  },
+  "evolutionary_search": {
+    "method": "evolutionary_search",
+    "replicate": 1,
+    "genome": [
+      0.5175030726816078,
+      0.7719741612274684,
+      1.0773373543262421,
+      1.7543477389249704
+    ],
+    "training_selection_score": 3.8049280824414646,
+    "validation": {
+      "total_shots": 1000,
+      "feasible_shots": 930,
+      "feasible_rate": 0.93,
+      "bks_hits": 17,
+      "bks_rate": 0.017,
+      "near_bks_hits": 254,
+      "near_bks_rate": 0.254,
+      "quality_mass": 0.9050384615384599,
+      "conditional_mean_size": 75.90645161290323,
+      "best_size": 78,
+      "approximation_ratio_best": 1.0,
+      "distribution": {
+        "73": 5,
+        "74": 52,
+        "75": 239,
+        "76": 380,
+        "77": 237,
+        "78": 17
+      },
+      "wilson_feasible": 0.912484997993282,
+      "wilson_bks": 0.010640599663218203,
+      "wilson_near_bks": 0.22799661573901372,
+      "robust_score": 1.158039544831321
+    },
+    "validation_selection_score": 1.158039544831321
+  },
+  "matched_random_search": {
+    "method": "matched_random_search",
+    "replicate": 2,
+    "genome": [
+      0.6424738670242921,
+      0.7593921349322789,
+      1.776791693073202,
+      0.9917239501652453
+    ],
+    "training_selection_score": 3.6631307320531703,
+    "validation": {
+      "total_shots": 1000,
+      "feasible_shots": 941,
+      "feasible_rate": 0.941,
+      "bks_hits": 51,
+      "bks_rate": 0.051,
+      "near_bks_hits": 475,
+      "near_bks_rate": 0.475,
+      "quality_mass": 0.9219999999999973,
+      "conditional_mean_size": 76.42507970244421,
+      "best_size": 78,
+      "approximation_ratio_best": 1.0,
+      "distribution": {
+        "74": 11,
+        "75": 104,
+        "76": 351,
+        "77": 424,
+        "78": 51
+      },
+      "wilson_feasible": 0.9246387632925527,
+      "wilson_bks": 0.03900075064262791,
+      "wilson_near_bks": 0.44420324639933384,
+      "robust_score": 1.4455241293308645
+    },
+    "validation_selection_score": 1.4455241293308645
+  }
+}

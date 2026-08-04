@@ -1,0 +1,813 @@
+{
+  "stage": "mps_fidelity_audit",
+  "provenance": {
+    "created_at": "2026-08-03T03:45:57.458152+00:00",
+    "python": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "qiskit": "2.5.1",
+    "qiskit_aer": "0.17.2",
+    "numpy": "2.5.1",
+    "qoblib_solutions_commit": "bd3e8a6d36b48b07d53dc605b020d4cb35da2147",
+    "qoblib_path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\QOBLIB",
+    "protocol_sha256": "e321b4a58e88e15ec8b4f35dc42612e9fb232ce22c3124aefc85a923353b3902"
+  },
+  "case": {
+    "name": "es60fst02",
+    "bks": 88,
+    "original_vertices": 186,
+    "original_edges": 280,
+    "reduced_vertices": 55,
+    "reduced_edges": 91,
+    "fold_batches": [
+      14,
+      12,
+      1,
+      1
+    ],
+    "heuristically_pruned_vertices": 5,
+    "forced_selected_vertices": 37,
+    "forced_excluded_vertices": 38
+  },
+  "backend": {
+    "method": "matrix_product_state",
+    "matrix_product_state_max_bond_dimension": 96,
+    "matrix_product_state_truncation_threshold": 0.001
+  },
+  "shots_per_method_replicate": 10000,
+  "replicates": 1,
+  "rows": [
+    {
+      "method": "published_lr",
+      "replicate": 0,
+      "seed": 20300499,
+      "metrics": {
+        "total_shots": 10000,
+        "feasible_shots": 5055,
+        "feasible_rate": 0.5055,
+        "bks_hits": 19,
+        "bks_rate": 0.0019,
+        "near_bks_hits": 1188,
+        "near_bks_rate": 0.1188,
+        "quality_mass": 0.49378863636362347,
+        "conditional_mean_size": 85.96122650840752,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "82": 1,
+          "83": 6,
+          "84": 94,
+          "85": 1193,
+          "86": 2573,
+          "87": 1169,
+          "88": 19
+        },
+        "wilson_feasible": 0.4957003623496237,
+        "wilson_bks": 0.0012167343542042717,
+        "wilson_near_bks": 0.11260427439180866,
+        "robust_score": 0.6097822424568409
+      },
+      "elapsed_batch_seconds": 37.60514119999425,
+      "aer_metadata": {
+        "batched_shots_optimization": false,
+        "required_memory_mb": 0,
+        "method": "matrix_product_state",
+        "active_input_qubits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54
+        ],
+        "device": "CPU",
+        "remapped_qubits": false,
+        "num_qubits": 55,
+        "num_clbits": 55,
+        "time_taken": 13.5717309,
+        "sample_measure_time": 1.3628653,
+        "input_qubit_map": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            19,
+            19
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            21,
+            21
+          ],
+          [
+            22,
+            22
+          ],
+          [
+            23,
+            23
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            25,
+            25
+          ],
+          [
+            26,
+            26
+          ],
+          [
+            27,
+            27
+          ],
+          [
+            28,
+            28
+          ],
+          [
+            29,
+            29
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            31,
+            31
+          ],
+          [
+            32,
+            32
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            35,
+            35
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            37,
+            37
+          ],
+          [
+            38,
+            38
+          ],
+          [
+            39,
+            39
+          ],
+          [
+            40,
+            40
+          ],
+          [
+            41,
+            41
+          ],
+          [
+            42,
+            42
+          ],
+          [
+            43,
+            43
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            45,
+            45
+          ],
+          [
+            46,
+            46
+          ],
+          [
+            47,
+            47
+          ],
+          [
+            48,
+            48
+          ],
+          [
+            49,
+            49
+          ],
+          [
+            50,
+            50
+          ],
+          [
+            51,
+            51
+          ],
+          [
+            52,
+            52
+          ],
+          [
+            53,
+            53
+          ],
+          [
+            54,
+            54
+          ]
+        ],
+        "max_memory_mb": 16172,
+        "measure_sampling": true,
+        "noise": "ideal",
+        "matrix_product_state_truncation_threshold": 0.001,
+        "matrix_product_state_max_bond_dimension": 96,
+        "matrix_product_state_sample_measure_algorithm": 0,
+        "matrix_product_state_lapack": false,
+        "parallel_shots": 1,
+        "parallel_state_update": 28,
+        "runtime_parameter_bind": false,
+        "num_bind_params": 1,
+        "fusion": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "method": "matched_random_search",
+      "replicate": 0,
+      "seed": 20300499,
+      "metrics": {
+        "total_shots": 10000,
+        "feasible_shots": 8925,
+        "feasible_rate": 0.8925,
+        "bks_hits": 70,
+        "bks_rate": 0.007,
+        "near_bks_hits": 1661,
+        "near_bks_rate": 0.1661,
+        "quality_mass": 0.870145454545447,
+        "conditional_mean_size": 85.7958543417367,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "83": 42,
+          "84": 476,
+          "85": 2475,
+          "86": 4271,
+          "87": 1591,
+          "88": 70
+        },
+        "wilson_feasible": 0.886277511342378,
+        "wilson_bks": 0.005544595653529792,
+        "wilson_near_bks": 0.15893395603997235,
+        "robust_score": 1.0482346302909444
+      },
+      "elapsed_batch_seconds": 37.60514119999425,
+      "aer_metadata": {
+        "batched_shots_optimization": false,
+        "required_memory_mb": 0,
+        "method": "matrix_product_state",
+        "active_input_qubits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54
+        ],
+        "device": "CPU",
+        "remapped_qubits": false,
+        "num_qubits": 55,
+        "num_clbits": 55,
+        "time_taken": 23.9742714,
+        "sample_measure_time": 1.3150751,
+        "input_qubit_map": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            19,
+            19
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            21,
+            21
+          ],
+          [
+            22,
+            22
+          ],
+          [
+            23,
+            23
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            25,
+            25
+          ],
+          [
+            26,
+            26
+          ],
+          [
+            27,
+            27
+          ],
+          [
+            28,
+            28
+          ],
+          [
+            29,
+            29
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            31,
+            31
+          ],
+          [
+            32,
+            32
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            35,
+            35
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            37,
+            37
+          ],
+          [
+            38,
+            38
+          ],
+          [
+            39,
+            39
+          ],
+          [
+            40,
+            40
+          ],
+          [
+            41,
+            41
+          ],
+          [
+            42,
+            42
+          ],
+          [
+            43,
+            43
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            45,
+            45
+          ],
+          [
+            46,
+            46
+          ],
+          [
+            47,
+            47
+          ],
+          [
+            48,
+            48
+          ],
+          [
+            49,
+            49
+          ],
+          [
+            50,
+            50
+          ],
+          [
+            51,
+            51
+          ],
+          [
+            52,
+            52
+          ],
+          [
+            53,
+            53
+          ],
+          [
+            54,
+            54
+          ]
+        ],
+        "max_memory_mb": 16172,
+        "measure_sampling": true,
+        "noise": "ideal",
+        "matrix_product_state_truncation_threshold": 0.001,
+        "matrix_product_state_max_bond_dimension": 96,
+        "matrix_product_state_sample_measure_algorithm": 0,
+        "matrix_product_state_lapack": false,
+        "parallel_shots": 1,
+        "parallel_state_update": 28,
+        "runtime_parameter_bind": false,
+        "num_bind_params": 1,
+        "fusion": {
+          "enabled": false
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "method": "matched_random_search",
+      "baseline": "published_lr",
+      "metric": "bks_rate",
+      "replicates": 1,
+      "differences": [
+        0.0051
+      ],
+      "mean_difference": 0.0051,
+      "bootstrap_95_ci": [
+        0.0051,
+        0.0051
+      ],
+      "two_sided_paired_sign_flip_p": 1.0,
+      "wins_ties_losses": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "method": "matched_random_search",
+      "baseline": "published_lr",
+      "metric": "near_bks_rate",
+      "replicates": 1,
+      "differences": [
+        0.047299999999999995
+      ],
+      "mean_difference": 0.047299999999999995,
+      "bootstrap_95_ci": [
+        0.047299999999999995,
+        0.047299999999999995
+      ],
+      "two_sided_paired_sign_flip_p": 1.0,
+      "wins_ties_losses": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "method": "matched_random_search",
+      "baseline": "published_lr",
+      "metric": "feasible_rate",
+      "replicates": 1,
+      "differences": [
+        0.387
+      ],
+      "mean_difference": 0.387,
+      "bootstrap_95_ci": [
+        0.387,
+        0.387
+      ],
+      "two_sided_paired_sign_flip_p": 1.0,
+      "wins_ties_losses": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "method": "matched_random_search",
+      "baseline": "published_lr",
+      "metric": "quality_mass",
+      "replicates": 1,
+      "differences": [
+        0.37635681818182354
+      ],
+      "mean_difference": 0.37635681818182354,
+      "bootstrap_95_ci": [
+        0.37635681818182354,
+        0.37635681818182354
+      ],
+      "two_sided_paired_sign_flip_p": 1.0,
+      "wins_ties_losses": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "method": "matched_random_search",
+      "baseline": "published_lr",
+      "metric": "robust_score",
+      "replicates": 1,
+      "differences": [
+        0.43845238783410356
+      ],
+      "mean_difference": 0.43845238783410356,
+      "bootstrap_95_ci": [
+        0.43845238783410356,
+        0.43845238783410356
+      ],
+      "two_sided_paired_sign_flip_p": 1.0,
+      "wins_ties_losses": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

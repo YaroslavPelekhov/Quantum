@@ -1,0 +1,108 @@
+{
+  "stage": "decoded_cutensornet_exact_sampling",
+  "source": "results/cutensornet/raw_es60fst02_spectral_mps_bond128_cutoff1e-03_5000shots.json",
+  "source_sha256": "45a8b81f1f58e9b5041233d82720e414451510e3dd2843c2a867b8ec7d1fea6e",
+  "case": {
+    "name": "es60fst02",
+    "bks": 88,
+    "original_vertices": 186,
+    "original_edges": 280,
+    "reduced_vertices": 55,
+    "reduced_edges": 91,
+    "fold_batches": [
+      14,
+      12,
+      1,
+      1
+    ],
+    "heuristically_pruned_vertices": 5,
+    "forced_selected_vertices": 37,
+    "forced_excluded_vertices": 38
+  },
+  "provenance": {
+    "created_at": "2026-08-03T12:48:44.756586+00:00",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "qiskit": "2.5.1",
+    "cuquantum": "26.6.0",
+    "cupy": "14.1.1",
+    "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+    "bitstring_order": "q0_to_qn_minus_1"
+  },
+  "shots": 5000,
+  "seed": 31420926,
+  "ordering": "spectral",
+  "hyper_samples": 32,
+  "rows": [
+    {
+      "method": "published_lr",
+      "qubits": 55,
+      "depth": 230,
+      "size": 3070,
+      "elapsed_seconds": 228.71399077800015,
+      "metrics": {
+        "total_shots": 5000,
+        "feasible_shots": 2420,
+        "feasible_rate": 0.484,
+        "bks_hits": 6,
+        "bks_rate": 0.0012,
+        "near_bks_hits": 212,
+        "near_bks_rate": 0.0424,
+        "quality_mass": 0.4695568181818092,
+        "conditional_mean_size": 85.37396694214875,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "80": 1,
+          "81": 3,
+          "82": 11,
+          "83": 77,
+          "84": 295,
+          "85": 847,
+          "86": 974,
+          "87": 206,
+          "88": 6
+        },
+        "wilson_feasible": 0.4701654014927407,
+        "wilson_bks": 0.0005500756587335479,
+        "wilson_near_bks": 0.03715712129210918,
+        "robust_score": 0.5081183824468513
+      }
+    },
+    {
+      "method": "matched_random_search",
+      "qubits": 55,
+      "depth": 230,
+      "size": 3070,
+      "elapsed_seconds": 252.6798885669998,
+      "metrics": {
+        "total_shots": 5000,
+        "feasible_shots": 3116,
+        "feasible_rate": 0.6232,
+        "bks_hits": 15,
+        "bks_rate": 0.003,
+        "near_bks_hits": 410,
+        "near_bks_rate": 0.082,
+        "quality_mass": 0.6049295454545263,
+        "conditional_mean_size": 85.42008985879332,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "80": 1,
+          "81": 1,
+          "82": 19,
+          "83": 98,
+          "84": 405,
+          "85": 1041,
+          "86": 1141,
+          "87": 395,
+          "88": 15
+        },
+        "wilson_feasible": 0.6096782533142426,
+        "wilson_bks": 0.0018189133867023654,
+        "wilson_near_bks": 0.0747120586011437,
+        "robust_score": 0.6856537847589329
+      }
+    }
+  ]
+}

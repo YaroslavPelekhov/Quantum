@@ -1,0 +1,2049 @@
+{
+  "stage": "blind_test",
+  "provenance": {
+    "created_at": "2026-08-03T03:02:12.997839+00:00",
+    "python": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "qiskit": "2.5.1",
+    "qiskit_aer": "0.17.2",
+    "numpy": "2.5.1",
+    "qoblib_solutions_commit": "bd3e8a6d36b48b07d53dc605b020d4cb35da2147",
+    "qoblib_path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\QOBLIB",
+    "protocol_sha256": "e321b4a58e88e15ec8b4f35dc42612e9fb232ce22c3124aefc85a923353b3902"
+  },
+  "case": {
+    "name": "es60fst02",
+    "bks": 88,
+    "original_vertices": 186,
+    "original_edges": 280,
+    "reduced_vertices": 55,
+    "reduced_edges": 91,
+    "fold_batches": [
+      14,
+      12,
+      1,
+      1
+    ],
+    "heuristically_pruned_vertices": 5,
+    "forced_selected_vertices": 37,
+    "forced_excluded_vertices": 38
+  },
+  "shots_per_method_replicate": 1000,
+  "replicates_planned": 15,
+  "rows": [
+    {
+      "method": "published_lr",
+      "replicate": 0,
+      "seed": 21160804,
+      "genome": [
+        0.7,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 501,
+        "feasible_rate": 0.501,
+        "bks_hits": 2,
+        "bks_rate": 0.002,
+        "near_bks_hits": 132,
+        "near_bks_rate": 0.132,
+        "quality_mass": 0.48967045454545605,
+        "conditional_mean_size": 86.00998003992017,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "84": 7,
+          "85": 115,
+          "86": 247,
+          "87": 130,
+          "88": 2
+        },
+        "wilson_feasible": 0.4700652689060268,
+        "wilson_bks": 0.000548632102457155,
+        "wilson_near_bks": 0.11242130181016353,
+        "robust_score": 0.5933864277408193
+      },
+      "elapsed_batch_seconds": 36.17545660000178
+    },
+    {
+      "method": "evolutionary_search",
+      "replicate": 0,
+      "seed": 21160804,
+      "genome": [
+        0.5175030726816078,
+        0.7719741612274684,
+        1.0773373543262421,
+        1.7543477389249704
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 906,
+        "feasible_rate": 0.906,
+        "bks_hits": 3,
+        "bks_rate": 0.003,
+        "near_bks_hits": 69,
+        "near_bks_rate": 0.069,
+        "quality_mass": 0.8782954545454629,
+        "conditional_mean_size": 85.30905077262693,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "82": 2,
+          "83": 27,
+          "84": 131,
+          "85": 347,
+          "86": 330,
+          "87": 66,
+          "88": 3
+        },
+        "wilson_feasible": 0.8863264546820397,
+        "wilson_bks": 0.0010207654054443251,
+        "wilson_near_bks": 0.054883714221355163,
+        "robust_score": 0.9392361996459951
+      },
+      "elapsed_batch_seconds": 36.17545660000178
+    },
+    {
+      "method": "matched_random_search",
+      "replicate": 0,
+      "seed": 21160804,
+      "genome": [
+        0.6424738670242921,
+        0.7593921349322789,
+        1.776791693073202,
+        0.9917239501652453
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 903,
+        "feasible_rate": 0.903,
+        "bks_hits": 10,
+        "bks_rate": 0.01,
+        "near_bks_hits": 145,
+        "near_bks_rate": 0.145,
+        "quality_mass": 0.8797386363636438,
+        "conditional_mean_size": 85.73311184939092,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "82": 2,
+          "83": 5,
+          "84": 43,
+          "85": 287,
+          "86": 421,
+          "87": 135,
+          "88": 10
+        },
+        "wilson_feasible": 0.8830843992979197,
+        "wilson_bks": 0.005440695309270557,
+        "wilson_near_bks": 0.12453458493047025,
+        "robust_score": 1.0168274933797932
+      },
+      "elapsed_batch_seconds": 36.17545660000178
+    },
+    {
+      "method": "published_lr",
+      "replicate": 1,
+      "seed": 21170811,
+      "genome": [
+        0.7,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 472,
+        "feasible_rate": 0.472,
+        "bks_hits": 1,
+        "bks_rate": 0.001,
+        "near_bks_hits": 94,
+        "near_bks_rate": 0.094,
+        "quality_mass": 0.46077272727272833,
+        "conditional_mean_size": 85.90677966101696,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "83": 1,
+          "84": 8,
+          "85": 120,
+          "86": 249,
+          "87": 93,
+          "88": 1
+        },
+        "wilson_feasible": 0.44122453928293626,
+        "wilson_bks": 0.00017654182905727116,
+        "wilson_near_bks": 0.07743389633418889,
+        "robust_score": 0.5287856132701357
+      },
+      "elapsed_batch_seconds": 36.43742660000862
+    },
+    {
+      "method": "evolutionary_search",
+      "replicate": 1,
+      "seed": 21170811,
+      "genome": [
+        0.5175030726816078,
+        0.7719741612274684,
+        1.0773373543262421,
+        1.7543477389249704
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 897,
+        "feasible_rate": 0.897,
+        "bks_hits": 4,
+        "bks_rate": 0.004,
+        "near_bks_hits": 73,
+        "near_bks_rate": 0.073,
+        "quality_mass": 0.8692954545454638,
+        "conditional_mean_size": 85.28205128205128,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "82": 3,
+          "83": 30,
+          "84": 133,
+          "85": 353,
+          "86": 305,
+          "87": 69,
+          "88": 4
+        },
+        "wilson_feasible": 0.8766159605900106,
+        "wilson_bks": 0.0015565629678934289,
+        "wilson_near_bks": 0.058458786926264744,
+        "robust_score": 0.9345276204297888
+      },
+      "elapsed_batch_seconds": 36.43742660000862
+    },
+    {
+      "method": "matched_random_search",
+      "replicate": 1,
+      "seed": 21170811,
+      "genome": [
+        0.6424738670242921,
+        0.7593921349322789,
+        1.776791693073202,
+        0.9917239501652453
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 913,
+        "feasible_rate": 0.913,
+        "bks_hits": 8,
+        "bks_rate": 0.008,
+        "near_bks_hits": 153,
+        "near_bks_rate": 0.153,
+        "quality_mass": 0.8890795454545529,
+        "conditional_mean_size": 85.69441401971523,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "82": 2,
+          "83": 9,
+          "84": 61,
+          "85": 283,
+          "86": 405,
+          "87": 145,
+          "88": 8
+        },
+        "wilson_feasible": 0.8939131380174494,
+        "wilson_bks": 0.004059147003819635,
+        "wilson_near_bks": 0.13201885442660546,
+        "robust_score": 1.031633490170246
+      },
+      "elapsed_batch_seconds": 36.43742660000862
+    },
+    {
+      "method": "published_lr",
+      "replicate": 2,
+      "seed": 21180818,
+      "genome": [
+        0.7,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 470,
+        "feasible_rate": 0.47,
+        "bks_hits": 3,
+        "bks_rate": 0.003,
+        "near_bks_hits": 110,
+        "near_bks_rate": 0.11,
+        "quality_mass": 0.45887500000000087,
+        "conditional_mean_size": 85.91702127659575,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "83": 1,
+          "84": 16,
+          "85": 117,
+          "86": 226,
+          "87": 107,
+          "88": 3
+        },
+        "wilson_feasible": 0.4392393536247678,
+        "wilson_bks": 0.0010207654054443251,
+        "wilson_near_bks": 0.0920790698498625,
+        "robust_score": 0.5431777774731354
+      },
+      "elapsed_batch_seconds": 36.80610859999433
+    },
+    {
+      "method": "evolutionary_search",
+      "replicate": 2,
+      "seed": 21180818,
+      "genome": [
+        0.5175030726816078,
+        0.7719741612274684,
+        1.0773373543262421,
+        1.7543477389249704
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 903,
+        "feasible_rate": 0.903,
+        "bks_hits": 1,
+        "bks_rate": 0.001,
+        "near_bks_hits": 65,
+        "near_bks_rate": 0.065,
+        "quality_mass": 0.8747840909090988,
+        "conditional_mean_size": 85.25027685492802,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "82": 4,
+          "83": 38,
+          "84": 128,
+          "85": 357,
+          "86": 311,
+          "87": 64,
+          "88": 1
+        },
+        "wilson_feasible": 0.8830843992979197,
+        "wilson_bks": 0.00017654182905727116,
+        "wilson_near_bks": 0.0513235473878793,
+        "robust_score": 0.9306108761495031
+      },
+      "elapsed_batch_seconds": 36.80610859999433
+    },
+    {
+      "method": "matched_random_search",
+      "replicate": 2,
+      "seed": 21180818,
+      "genome": [
+        0.6424738670242921,
+        0.7593921349322789,
+        1.776791693073202,
+        0.9917239501652453
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 908,
+        "feasible_rate": 0.908,
+        "bks_hits": 4,
+        "bks_rate": 0.004,
+        "near_bks_hits": 152,
+        "near_bks_rate": 0.152,
+        "quality_mass": 0.8844545454545522,
+        "conditional_mean_size": 85.71806167400881,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "83": 7,
+          "84": 55,
+          "85": 281,
+          "86": 413,
+          "87": 148,
+          "88": 4
+        },
+        "wilson_feasible": 0.8884908764642334,
+        "wilson_bks": 0.0015565629678934289,
+        "wilson_near_bks": 0.13108214258156708,
+        "robust_score": 1.0206679794767468
+      },
+      "elapsed_batch_seconds": 36.80610859999433
+    },
+    {
+      "method": "published_lr",
+      "replicate": 3,
+      "seed": 21190825,
+      "genome": [
+        0.7,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 504,
+        "feasible_rate": 0.504,
+        "bks_hits": 6,
+        "bks_rate": 0.006,
+        "near_bks_hits": 109,
+        "near_bks_rate": 0.109,
+        "quality_mass": 0.49237500000000123,
+        "conditional_mean_size": 85.9702380952381,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "84": 7,
+          "85": 116,
+          "86": 272,
+          "87": 103,
+          "88": 6
+        },
+        "wilson_feasible": 0.47305471260380694,
+        "wilson_bks": 0.0027526315709082323,
+        "wilson_near_bks": 0.09115973208991156,
+        "robust_score": 0.5793798515336321
+      },
+      "elapsed_batch_seconds": 36.70042540000577
+    },
+    {
+      "method": "evolutionary_search",
+      "replicate": 3,
+      "seed": 21190825,
+      "genome": [
+        0.5175030726816078,
+        0.7719741612274684,
+        1.0773373543262421,
+        1.7543477389249704
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 889,
+        "feasible_rate": 0.889,
+        "bks_hits": 2,
+        "bks_rate": 0.002,
+        "near_bks_hits": 70,
+        "near_bks_rate": 0.07,
+        "quality_mass": 0.8620113636363718,
+        "conditional_mean_size": 85.32845894263217,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "82": 3,
+          "83": 20,
+          "84": 129,
+          "85": 339,
+          "86": 328,
+          "87": 68,
+          "88": 2
+        },
+        "wilson_feasible": 0.8680215790175441,
+        "wilson_bks": 0.000548632102457155,
+        "wilson_near_bks": 0.05577613077757772,
+        "robust_score": 0.9218898663094499
+      },
+      "elapsed_batch_seconds": 36.70042540000577
+    },
+    {
+      "method": "matched_random_search",
+      "replicate": 3,
+      "seed": 21190825,
+      "genome": [
+        0.6424738670242921,
+        0.7593921349322789,
+        1.776791693073202,
+        0.9917239501652453
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 894,
+        "feasible_rate": 0.894,
+        "bks_hits": 8,
+        "bks_rate": 0.008,
+        "near_bks_hits": 166,
+        "near_bks_rate": 0.166,
+        "quality_mass": 0.8712727272727337,
+        "conditional_mean_size": 85.76286353467562,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "83": 7,
+          "84": 57,
+          "85": 251,
+          "86": 413,
+          "87": 158,
+          "88": 8
+        },
+        "wilson_feasible": 0.8733891741189649,
+        "wilson_bks": 0.004059147003819635,
+        "wilson_near_bks": 0.14422509534220693,
+        "robust_score": 1.0246743400456955
+      },
+      "elapsed_batch_seconds": 36.70042540000577
+    },
+    {
+      "method": "published_lr",
+      "replicate": 4,
+      "seed": 21200832,
+      "genome": [
+        0.7,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 503,
+        "feasible_rate": 0.503,
+        "bks_hits": 3,
+        "bks_rate": 0.003,
+        "near_bks_hits": 101,
+        "near_bks_rate": 0.101,
+        "quality_mass": 0.4910227272727283,
+        "conditional_mean_size": 85.90457256461232,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "84": 10,
+          "85": 132,
+          "86": 260,
+          "87": 98,
+          "88": 3
+        },
+        "wilson_feasible": 0.4720581081153037,
+        "wilson_bks": 0.0010207654054443251,
+        "wilson_near_bks": 0.08382372191011535,
+        "robust_score": 0.56740567041502
+      },
+      "elapsed_batch_seconds": 37.019140300006256
+    },
+    {
+      "method": "evolutionary_search",
+      "replicate": 4,
+      "seed": 21200832,
+      "genome": [
+        0.5175030726816078,
+        0.7719741612274684,
+        1.0773373543262421,
+        1.7543477389249704
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 895,
+        "feasible_rate": 0.895,
+        "bks_hits": 2,
+        "bks_rate": 0.002,
+        "near_bks_hits": 61,
+        "near_bks_rate": 0.061,
+        "quality_mass": 0.8667386363636443,
+        "conditional_mean_size": 85.22122905027933,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "82": 5,
+          "83": 25,
+          "84": 160,
+          "85": 345,
+          "86": 299,
+          "87": 59,
+          "88": 2
+        },
+        "wilson_feasible": 0.8744642376371893,
+        "wilson_bks": 0.000548632102457155,
+        "wilson_near_bks": 0.04777956041163888,
+        "robust_score": 0.91947826161697
+      },
+      "elapsed_batch_seconds": 37.019140300006256
+    },
+    {
+      "method": "matched_random_search",
+      "replicate": 4,
+      "seed": 21200832,
+      "genome": [
+        0.6424738670242921,
+        0.7593921349322789,
+        1.776791693073202,
+        0.9917239501652453
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 899,
+        "feasible_rate": 0.899,
+        "bks_hits": 10,
+        "bks_rate": 0.01,
+        "near_bks_hits": 164,
+        "near_bks_rate": 0.164,
+        "quality_mass": 0.8761818181818252,
+        "conditional_mean_size": 85.76640711902114,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "82": 1,
+          "83": 7,
+          "84": 45,
+          "85": 269,
+          "86": 413,
+          "87": 154,
+          "88": 10
+        },
+        "wilson_feasible": 0.8787698568381758,
+        "wilson_bks": 0.005440695309270557,
+        "wilson_near_bks": 0.14234381353837114,
+        "robust_score": 1.0307010416669127
+      },
+      "elapsed_batch_seconds": 37.019140300006256
+    },
+    {
+      "method": "published_lr",
+      "replicate": 5,
+      "seed": 21210839,
+      "genome": [
+        0.7,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 498,
+        "feasible_rate": 0.498,
+        "bks_hits": 5,
+        "bks_rate": 0.005,
+        "near_bks_hits": 97,
+        "near_bks_rate": 0.097,
+        "quality_mass": 0.4862727272727286,
+        "conditional_mean_size": 85.92771084337349,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "84": 9,
+          "85": 120,
+          "86": 272,
+          "87": 92,
+          "88": 5
+        },
+        "wilson_feasible": 0.4670769344782838,
+        "wilson_bks": 0.00213750399576525,
+        "wilson_near_bks": 0.08016887955855043,
+        "robust_score": 0.5611187184255871
+      },
+      "elapsed_batch_seconds": 36.7230172999989
+    },
+    {
+      "method": "evolutionary_search",
+      "replicate": 5,
+      "seed": 21210839,
+      "genome": [
+        0.5175030726816078,
+        0.7719741612274684,
+        1.0773373543262421,
+        1.7543477389249704
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 903,
+        "feasible_rate": 0.903,
+        "bks_hits": 3,
+        "bks_rate": 0.003,
+        "near_bks_hits": 75,
+        "near_bks_rate": 0.075,
+        "quality_mass": 0.8756931818181907,
+        "conditional_mean_size": 85.33887043189368,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "82": 1,
+          "83": 20,
+          "84": 136,
+          "85": 339,
+          "86": 332,
+          "87": 72,
+          "88": 3
+        },
+        "wilson_feasible": 0.8830843992979197,
+        "wilson_bks": 0.0010207654054443251,
+        "wilson_near_bks": 0.06025156181870451,
+        "robust_score": 0.9416818831876483
+      },
+      "elapsed_batch_seconds": 36.7230172999989
+    },
+    {
+      "method": "matched_random_search",
+      "replicate": 5,
+      "seed": 21210839,
+      "genome": [
+        0.6424738670242921,
+        0.7593921349322789,
+        1.776791693073202,
+        0.9917239501652453
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 905,
+        "feasible_rate": 0.905,
+        "bks_hits": 5,
+        "bks_rate": 0.005,
+        "near_bks_hits": 151,
+        "near_bks_rate": 0.151,
+        "quality_mass": 0.881613636363644,
+        "conditional_mean_size": 85.72596685082873,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "82": 2,
+          "83": 6,
+          "84": 60,
+          "85": 258,
+          "86": 428,
+          "87": 146,
+          "88": 5
+        },
+        "wilson_feasible": 0.8852451678097385,
+        "wilson_bks": 0.00213750399576525,
+        "wilson_near_bks": 0.13014576187205482,
+        "robust_score": 1.0178501719502764
+      },
+      "elapsed_batch_seconds": 36.7230172999989
+    },
+    {
+      "method": "published_lr",
+      "replicate": 6,
+      "seed": 21220846,
+      "genome": [
+        0.7,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 496,
+        "feasible_rate": 0.496,
+        "bks_hits": 1,
+        "bks_rate": 0.001,
+        "near_bks_hits": 104,
+        "near_bks_rate": 0.104,
+        "quality_mass": 0.48439772727272823,
+        "conditional_mean_size": 85.94153225806451,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "84": 10,
+          "85": 114,
+          "86": 268,
+          "87": 103,
+          "88": 1
+        },
+        "wilson_feasible": 0.4650853277924981,
+        "wilson_bks": 0.00017654182905727116,
+        "wilson_near_bks": 0.08657073457775957,
+        "robust_score": 0.5616653457684873
+      },
+      "elapsed_batch_seconds": 36.62861849999172
+    },
+    {
+      "method": "evolutionary_search",
+      "replicate": 6,
+      "seed": 21220846,
+      "genome": [
+        0.5175030726816078,
+        0.7719741612274684,
+        1.0773373543262421,
+        1.7543477389249704
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 904,
+        "feasible_rate": 0.904,
+        "bks_hits": 2,
+        "bks_rate": 0.002,
+        "near_bks_hits": 66,
+        "near_bks_rate": 0.066,
+        "quality_mass": 0.8759545454545549,
+        "conditional_mean_size": 85.26991150442478,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "82": 5,
+          "83": 35,
+          "84": 116,
+          "85": 371,
+          "86": 311,
+          "87": 64,
+          "88": 2
+        },
+        "wilson_feasible": 0.884164485462243,
+        "wilson_bks": 0.000548632102457155,
+        "wilson_near_bks": 0.05221212520678748,
+        "robust_score": 0.9333689048701007
+      },
+      "elapsed_batch_seconds": 36.62861849999172
+    },
+    {
+      "method": "matched_random_search",
+      "replicate": 6,
+      "seed": 21220846,
+      "genome": [
+        0.6424738670242921,
+        0.7593921349322789,
+        1.776791693073202,
+        0.9917239501652453
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 888,
+        "feasible_rate": 0.888,
+        "bks_hits": 9,
+        "bks_rate": 0.009,
+        "near_bks_hits": 158,
+        "near_bks_rate": 0.158,
+        "quality_mass": 0.865295454545462,
+        "conditional_mean_size": 85.75,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "82": 1,
+          "83": 2,
+          "84": 52,
+          "85": 275,
+          "86": 400,
+          "87": 149,
+          "88": 9
+        },
+        "wilson_feasible": 0.8669495617556403,
+        "wilson_bks": 0.004742006589011481,
+        "wilson_near_bks": 0.13670728972116591,
+        "robust_score": 1.01231381104974
+      },
+      "elapsed_batch_seconds": 36.62861849999172
+    },
+    {
+      "method": "published_lr",
+      "replicate": 7,
+      "seed": 21230853,
+      "genome": [
+        0.7,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 488,
+        "feasible_rate": 0.488,
+        "bks_hits": 0,
+        "bks_rate": 0.0,
+        "near_bks_hits": 100,
+        "near_bks_rate": 0.1,
+        "quality_mass": 0.4765568181818193,
+        "conditional_mean_size": 85.93647540983606,
+        "best_size": 87,
+        "approximation_ratio_best": 0.9886363636363636,
+        "distribution": {
+          "84": 5,
+          "85": 121,
+          "86": 262,
+          "87": 100
+        },
+        "wilson_feasible": 0.45712383226342285,
+        "wilson_bks": 0.0,
+        "wilson_near_bks": 0.08290915646323203,
+        "robust_score": 0.549749481685853
+      },
+      "elapsed_batch_seconds": 36.18206409999402
+    },
+    {
+      "method": "evolutionary_search",
+      "replicate": 7,
+      "seed": 21230853,
+      "genome": [
+        0.5175030726816078,
+        0.7719741612274684,
+        1.0773373543262421,
+        1.7543477389249704
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 895,
+        "feasible_rate": 0.895,
+        "bks_hits": 2,
+        "bks_rate": 0.002,
+        "near_bks_hits": 82,
+        "near_bks_rate": 0.082,
+        "quality_mass": 0.86744318181819,
+        "conditional_mean_size": 85.29050279329608,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "82": 3,
+          "83": 22,
+          "84": 149,
+          "85": 343,
+          "86": 296,
+          "87": 80,
+          "88": 2
+        },
+        "wilson_feasible": 0.8744642376371893,
+        "wilson_bks": 0.000548632102457155,
+        "wilson_near_bks": 0.06655169717368087,
+        "robust_score": 0.9386026711062848
+      },
+      "elapsed_batch_seconds": 36.18206409999402
+    },
+    {
+      "method": "matched_random_search",
+      "replicate": 7,
+      "seed": 21230853,
+      "genome": [
+        0.6424738670242921,
+        0.7593921349322789,
+        1.776791693073202,
+        0.9917239501652453
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 891,
+        "feasible_rate": 0.891,
+        "bks_hits": 2,
+        "bks_rate": 0.002,
+        "near_bks_hits": 144,
+        "near_bks_rate": 0.144,
+        "quality_mass": 0.8677159090909158,
+        "conditional_mean_size": 85.7003367003367,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "83": 8,
+          "84": 57,
+          "85": 275,
+          "86": 407,
+          "87": 142,
+          "88": 2
+        },
+        "wilson_feasible": 0.8701670973953541,
+        "wilson_bks": 0.000548632102457155,
+        "wilson_near_bks": 0.12360059987923064,
+        "robust_score": 0.9936393673272799
+      },
+      "elapsed_batch_seconds": 36.18206409999402
+    },
+    {
+      "method": "published_lr",
+      "replicate": 8,
+      "seed": 21240860,
+      "genome": [
+        0.7,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 502,
+        "feasible_rate": 0.502,
+        "bks_hits": 4,
+        "bks_rate": 0.004,
+        "near_bks_hits": 119,
+        "near_bks_rate": 0.119,
+        "quality_mass": 0.49043181818181897,
+        "conditional_mean_size": 85.97211155378486,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "84": 8,
+          "85": 121,
+          "86": 254,
+          "87": 115,
+          "88": 4
+        },
+        "wilson_feasible": 0.47106162688393816,
+        "wilson_bks": 0.0015565629678934289,
+        "wilson_near_bks": 0.10037486818688018,
+        "robust_score": 0.5842347166555456
+      },
+      "elapsed_batch_seconds": 36.3834249000065
+    },
+    {
+      "method": "evolutionary_search",
+      "replicate": 8,
+      "seed": 21240860,
+      "genome": [
+        0.5175030726816078,
+        0.7719741612274684,
+        1.0773373543262421,
+        1.7543477389249704
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 902,
+        "feasible_rate": 0.902,
+        "bks_hits": 4,
+        "bks_rate": 0.004,
+        "near_bks_hits": 57,
+        "near_bks_rate": 0.057,
+        "quality_mass": 0.873704545454554,
+        "conditional_mean_size": 85.23946784922394,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "82": 6,
+          "83": 30,
+          "84": 128,
+          "85": 377,
+          "86": 304,
+          "87": 53,
+          "88": 4
+        },
+        "wilson_feasible": 0.8820049011851514,
+        "wilson_bks": 0.0015565629678934289,
+        "wilson_near_bks": 0.04425323441955429,
+        "robust_score": 0.9252210836751938
+      },
+      "elapsed_batch_seconds": 36.3834249000065
+    },
+    {
+      "method": "matched_random_search",
+      "replicate": 8,
+      "seed": 21240860,
+      "genome": [
+        0.6424738670242921,
+        0.7593921349322789,
+        1.776791693073202,
+        0.9917239501652453
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 896,
+        "feasible_rate": 0.896,
+        "bks_hits": 5,
+        "bks_rate": 0.005,
+        "near_bks_hits": 155,
+        "near_bks_rate": 0.155,
+        "quality_mass": 0.8728750000000076,
+        "conditional_mean_size": 85.72879464285714,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "83": 9,
+          "84": 57,
+          "85": 262,
+          "86": 413,
+          "87": 150,
+          "88": 5
+        },
+        "wilson_feasible": 0.8755398308973383,
+        "wilson_bks": 0.00213750399576525,
+        "wilson_near_bks": 0.13389326100256138,
+        "robust_score": 1.0123756844427647
+      },
+      "elapsed_batch_seconds": 36.3834249000065
+    },
+    {
+      "method": "published_lr",
+      "replicate": 9,
+      "seed": 21250867,
+      "genome": [
+        0.7,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 517,
+        "feasible_rate": 0.517,
+        "bks_hits": 3,
+        "bks_rate": 0.003,
+        "near_bks_hits": 117,
+        "near_bks_rate": 0.117,
+        "quality_mass": 0.5051022727272741,
+        "conditional_mean_size": 85.97485493230174,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "84": 10,
+          "85": 113,
+          "86": 277,
+          "87": 114,
+          "88": 3
+        },
+        "wilson_feasible": 0.48602179171422133,
+        "wilson_bks": 0.0010207654054443251,
+        "wilson_near_bks": 0.0985280743489338,
+        "robust_score": 0.5961316373805702
+      },
+      "elapsed_batch_seconds": 36.293224900000496
+    },
+    {
+      "method": "evolutionary_search",
+      "replicate": 9,
+      "seed": 21250867,
+      "genome": [
+        0.5175030726816078,
+        0.7719741612274684,
+        1.0773373543262421,
+        1.7543477389249704
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 903,
+        "feasible_rate": 0.903,
+        "bks_hits": 0,
+        "bks_rate": 0.0,
+        "near_bks_hits": 56,
+        "near_bks_rate": 0.056,
+        "quality_mass": 0.8750227272727357,
+        "conditional_mean_size": 85.2735326688815,
+        "best_size": 87,
+        "approximation_ratio_best": 0.9886363636363636,
+        "distribution": {
+          "82": 1,
+          "83": 27,
+          "84": 141,
+          "85": 345,
+          "86": 333,
+          "87": 56
+        },
+        "wilson_feasible": 0.8830843992979197,
+        "wilson_bks": 0.0,
+        "wilson_near_bks": 0.04337460969160231,
+        "robust_score": 0.9224281729769299
+      },
+      "elapsed_batch_seconds": 36.293224900000496
+    },
+    {
+      "method": "matched_random_search",
+      "replicate": 9,
+      "seed": 21250867,
+      "genome": [
+        0.6424738670242921,
+        0.7593921349322789,
+        1.776791693073202,
+        0.9917239501652453
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 902,
+        "feasible_rate": 0.902,
+        "bks_hits": 7,
+        "bks_rate": 0.007,
+        "near_bks_hits": 154,
+        "near_bks_rate": 0.154,
+        "quality_mass": 0.878818181818189,
+        "conditional_mean_size": 85.73835920177383,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "83": 4,
+          "84": 55,
+          "85": 275,
+          "86": 414,
+          "87": 147,
+          "88": 7
+        },
+        "wilson_feasible": 0.8820049011851514,
+        "wilson_bks": 0.003394825079231997,
+        "wilson_near_bks": 0.1329558947664042,
+        "robust_score": 1.0201570864265386
+      },
+      "elapsed_batch_seconds": 36.293224900000496
+    },
+    {
+      "method": "published_lr",
+      "replicate": 10,
+      "seed": 21260874,
+      "genome": [
+        0.7,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 502,
+        "feasible_rate": 0.502,
+        "bks_hits": 0,
+        "bks_rate": 0.0,
+        "near_bks_hits": 123,
+        "near_bks_rate": 0.123,
+        "quality_mass": 0.49028409090909186,
+        "conditional_mean_size": 85.94621513944223,
+        "best_size": 87,
+        "approximation_ratio_best": 0.9886363636363636,
+        "distribution": {
+          "84": 15,
+          "85": 120,
+          "86": 244,
+          "87": 123
+        },
+        "wilson_feasible": 0.47106162688393816,
+        "wilson_bks": 0.0,
+        "wilson_near_bks": 0.10407382134719093,
+        "robust_score": 0.584746680243706
+      },
+      "elapsed_batch_seconds": 36.3925242999976
+    },
+    {
+      "method": "evolutionary_search",
+      "replicate": 10,
+      "seed": 21260874,
+      "genome": [
+        0.5175030726816078,
+        0.7719741612274684,
+        1.0773373543262421,
+        1.7543477389249704
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 899,
+        "feasible_rate": 0.899,
+        "bks_hits": 1,
+        "bks_rate": 0.001,
+        "near_bks_hits": 71,
+        "near_bks_rate": 0.071,
+        "quality_mass": 0.8708409090909185,
+        "conditional_mean_size": 85.2436040044494,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "82": 7,
+          "83": 33,
+          "84": 143,
+          "85": 339,
+          "86": 306,
+          "87": 70,
+          "88": 1
+        },
+        "wilson_feasible": 0.8787698568381758,
+        "wilson_bks": 0.00017654182905727116,
+        "wilson_near_bks": 0.05666945999361375,
+        "robust_score": 0.9318279266162754
+      },
+      "elapsed_batch_seconds": 36.3925242999976
+    },
+    {
+      "method": "matched_random_search",
+      "replicate": 10,
+      "seed": 21260874,
+      "genome": [
+        0.6424738670242921,
+        0.7593921349322789,
+        1.776791693073202,
+        0.9917239501652453
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 911,
+        "feasible_rate": 0.911,
+        "bks_hits": 9,
+        "bks_rate": 0.009,
+        "near_bks_hits": 149,
+        "near_bks_rate": 0.149,
+        "quality_mass": 0.887500000000008,
+        "conditional_mean_size": 85.72996706915478,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "83": 7,
+          "84": 47,
+          "85": 289,
+          "86": 419,
+          "87": 140,
+          "88": 9
+        },
+        "wilson_feasible": 0.891742264575647,
+        "wilson_bks": 0.004742006589011481,
+        "wilson_near_bks": 0.12827400464029462,
+        "robust_score": 1.0273791501061451
+      },
+      "elapsed_batch_seconds": 36.3925242999976
+    },
+    {
+      "method": "published_lr",
+      "replicate": 11,
+      "seed": 21270881,
+      "genome": [
+        0.7,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 507,
+        "feasible_rate": 0.507,
+        "bks_hits": 0,
+        "bks_rate": 0.0,
+        "near_bks_hits": 117,
+        "near_bks_rate": 0.117,
+        "quality_mass": 0.4953863636363649,
+        "conditional_mean_size": 85.98422090729782,
+        "best_size": 87,
+        "approximation_ratio_best": 0.9886363636363636,
+        "distribution": {
+          "83": 1,
+          "84": 11,
+          "85": 100,
+          "86": 278,
+          "87": 117
+        },
+        "wilson_feasible": 0.4760452656710878,
+        "wilson_bks": 0.0,
+        "wilson_near_bks": 0.0985280743489338,
+        "robust_score": 0.5842438890026602
+      },
+      "elapsed_batch_seconds": 36.57445729999745
+    },
+    {
+      "method": "evolutionary_search",
+      "replicate": 11,
+      "seed": 21270881,
+      "genome": [
+        0.5175030726816078,
+        0.7719741612274684,
+        1.0773373543262421,
+        1.7543477389249704
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 893,
+        "feasible_rate": 0.893,
+        "bks_hits": 0,
+        "bks_rate": 0.0,
+        "near_bks_hits": 73,
+        "near_bks_rate": 0.073,
+        "quality_mass": 0.8657386363636437,
+        "conditional_mean_size": 85.31354983202688,
+        "best_size": 87,
+        "approximation_ratio_best": 0.9886363636363636,
+        "distribution": {
+          "82": 5,
+          "83": 14,
+          "84": 134,
+          "85": 356,
+          "86": 311,
+          "87": 73
+        },
+        "wilson_feasible": 0.8723146338063988,
+        "wilson_bks": 0.0,
+        "wilson_near_bks": 0.058458786926264744,
+        "robust_score": 0.927485422011286
+      },
+      "elapsed_batch_seconds": 36.57445729999745
+    },
+    {
+      "method": "matched_random_search",
+      "replicate": 11,
+      "seed": 21270881,
+      "genome": [
+        0.6424738670242921,
+        0.7593921349322789,
+        1.776791693073202,
+        0.9917239501652453
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 899,
+        "feasible_rate": 0.899,
+        "bks_hits": 4,
+        "bks_rate": 0.004,
+        "near_bks_hits": 163,
+        "near_bks_rate": 0.163,
+        "quality_mass": 0.8761022727272804,
+        "conditional_mean_size": 85.75862068965517,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "82": 1,
+          "83": 8,
+          "84": 48,
+          "85": 260,
+          "86": 419,
+          "87": 159,
+          "88": 4
+        },
+        "wilson_feasible": 0.8787698568381758,
+        "wilson_bks": 0.0015565629678934289,
+        "wilson_near_bks": 0.14140362461572462,
+        "robust_score": 1.0219528153342394
+      },
+      "elapsed_batch_seconds": 36.57445729999745
+    },
+    {
+      "method": "published_lr",
+      "replicate": 12,
+      "seed": 21280888,
+      "genome": [
+        0.7,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 526,
+        "feasible_rate": 0.526,
+        "bks_hits": 5,
+        "bks_rate": 0.005,
+        "near_bks_hits": 133,
+        "near_bks_rate": 0.133,
+        "quality_mass": 0.5140454545454557,
+        "conditional_mean_size": 86.0,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "84": 9,
+          "85": 120,
+          "86": 264,
+          "87": 128,
+          "88": 5
+        },
+        "wilson_feasible": 0.49501122153742044,
+        "wilson_bks": 0.00213750399576525,
+        "wilson_near_bks": 0.11335082497407287,
+        "robust_score": 0.6221541710070415
+      },
+      "elapsed_batch_seconds": 36.79411319999781
+    },
+    {
+      "method": "evolutionary_search",
+      "replicate": 12,
+      "seed": 21280888,
+      "genome": [
+        0.5175030726816078,
+        0.7719741612274684,
+        1.0773373543262421,
+        1.7543477389249704
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 910,
+        "feasible_rate": 0.91,
+        "bks_hits": 3,
+        "bks_rate": 0.003,
+        "near_bks_hits": 71,
+        "near_bks_rate": 0.071,
+        "quality_mass": 0.8820227272727363,
+        "conditional_mean_size": 85.2945054945055,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "81": 1,
+          "82": 4,
+          "83": 22,
+          "84": 133,
+          "85": 363,
+          "86": 316,
+          "87": 68,
+          "88": 3
+        },
+        "wilson_feasible": 0.8906578220441299,
+        "wilson_bks": 0.0010207654054443251,
+        "wilson_near_bks": 0.05666945999361375,
+        "robust_score": 0.9450512654629355
+      },
+      "elapsed_batch_seconds": 36.79411319999781
+    },
+    {
+      "method": "matched_random_search",
+      "replicate": 12,
+      "seed": 21280888,
+      "genome": [
+        0.6424738670242921,
+        0.7593921349322789,
+        1.776791693073202,
+        0.9917239501652453
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 908,
+        "feasible_rate": 0.908,
+        "bks_hits": 7,
+        "bks_rate": 0.007,
+        "near_bks_hits": 167,
+        "near_bks_rate": 0.167,
+        "quality_mass": 0.8852613636363706,
+        "conditional_mean_size": 85.79625550660793,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "83": 4,
+          "84": 44,
+          "85": 259,
+          "86": 434,
+          "87": 160,
+          "88": 7
+        },
+        "wilson_feasible": 0.8884908764642334,
+        "wilson_bks": 0.003394825079231997,
+        "wilson_near_bks": 0.14516618387871613,
+        "robust_score": 1.0388319540874822
+      },
+      "elapsed_batch_seconds": 36.79411319999781
+    },
+    {
+      "method": "published_lr",
+      "replicate": 13,
+      "seed": 21290895,
+      "genome": [
+        0.7,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 518,
+        "feasible_rate": 0.518,
+        "bks_hits": 6,
+        "bks_rate": 0.006,
+        "near_bks_hits": 113,
+        "near_bks_rate": 0.113,
+        "quality_mass": 0.5062727272727288,
+        "conditional_mean_size": 86.00772200772201,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "84": 5,
+          "85": 105,
+          "86": 295,
+          "87": 107,
+          "88": 6
+        },
+        "wilson_feasible": 0.4870201230156832,
+        "wilson_bks": 0.0027526315709082323,
+        "wilson_near_bks": 0.09484005096521629,
+        "robust_score": 0.5969917392512387
+      },
+      "elapsed_batch_seconds": 36.899577199990745
+    },
+    {
+      "method": "evolutionary_search",
+      "replicate": 13,
+      "seed": 21290895,
+      "genome": [
+        0.5175030726816078,
+        0.7719741612274684,
+        1.0773373543262421,
+        1.7543477389249704
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 894,
+        "feasible_rate": 0.894,
+        "bks_hits": 3,
+        "bks_rate": 0.003,
+        "near_bks_hits": 69,
+        "near_bks_rate": 0.069,
+        "quality_mass": 0.8659772727272806,
+        "conditional_mean_size": 85.24161073825503,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "82": 7,
+          "83": 36,
+          "84": 137,
+          "85": 340,
+          "86": 305,
+          "87": 66,
+          "88": 3
+        },
+        "wilson_feasible": 0.8733891741189649,
+        "wilson_bks": 0.0010207654054443251,
+        "wilson_near_bks": 0.054883714221355163,
+        "robust_score": 0.9266084684553666
+      },
+      "elapsed_batch_seconds": 36.899577199990745
+    },
+    {
+      "method": "matched_random_search",
+      "replicate": 13,
+      "seed": 21290895,
+      "genome": [
+        0.6424738670242921,
+        0.7593921349322789,
+        1.776791693073202,
+        0.9917239501652453
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 905,
+        "feasible_rate": 0.905,
+        "bks_hits": 6,
+        "bks_rate": 0.006,
+        "near_bks_hits": 162,
+        "near_bks_rate": 0.162,
+        "quality_mass": 0.8821477272727345,
+        "conditional_mean_size": 85.77790055248619,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "83": 3,
+          "84": 48,
+          "85": 264,
+          "86": 428,
+          "87": 156,
+          "88": 6
+        },
+        "wilson_feasible": 0.8852451678097385,
+        "wilson_bks": 0.0027526315709082323,
+        "wilson_near_bks": 0.14046373996425415,
+        "robust_score": 1.029665450647307
+      },
+      "elapsed_batch_seconds": 36.899577199990745
+    },
+    {
+      "method": "published_lr",
+      "replicate": 14,
+      "seed": 21300902,
+      "genome": [
+        0.7,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 515,
+        "feasible_rate": 0.515,
+        "bks_hits": 2,
+        "bks_rate": 0.002,
+        "near_bks_hits": 113,
+        "near_bks_rate": 0.113,
+        "quality_mass": 0.5027954545454554,
+        "conditional_mean_size": 85.91456310679612,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "83": 1,
+          "84": 12,
+          "85": 132,
+          "86": 257,
+          "87": 111,
+          "88": 2
+        },
+        "wilson_feasible": 0.48402549947806195,
+        "wilson_bks": 0.000548632102457155,
+        "wilson_near_bks": 0.09484005096521629,
+        "robust_score": 0.5893477921818893
+      },
+      "elapsed_batch_seconds": 37.108195200009504
+    },
+    {
+      "method": "evolutionary_search",
+      "replicate": 14,
+      "seed": 21300902,
+      "genome": [
+        0.5175030726816078,
+        0.7719741612274684,
+        1.0773373543262421,
+        1.7543477389249704
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 905,
+        "feasible_rate": 0.905,
+        "bks_hits": 1,
+        "bks_rate": 0.001,
+        "near_bks_hits": 64,
+        "near_bks_rate": 0.064,
+        "quality_mass": 0.8767840909090995,
+        "conditional_mean_size": 85.25635359116022,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "82": 5,
+          "83": 31,
+          "84": 135,
+          "85": 355,
+          "86": 315,
+          "87": 63,
+          "88": 1
+        },
+        "wilson_feasible": 0.8852451678097385,
+        "wilson_bks": 0.00017654182905727116,
+        "wilson_near_bks": 0.050435979806259336,
+        "robust_score": 0.9318036928237929
+      },
+      "elapsed_batch_seconds": 37.108195200009504
+    },
+    {
+      "method": "matched_random_search",
+      "replicate": 14,
+      "seed": 21300902,
+      "genome": [
+        0.6424738670242921,
+        0.7593921349322789,
+        1.776791693073202,
+        0.9917239501652453
+      ],
+      "metrics": {
+        "total_shots": 1000,
+        "feasible_shots": 905,
+        "feasible_rate": 0.905,
+        "bks_hits": 7,
+        "bks_rate": 0.007,
+        "near_bks_hits": 172,
+        "near_bks_rate": 0.172,
+        "quality_mass": 0.881750000000006,
+        "conditional_mean_size": 85.73922651933702,
+        "best_size": 88,
+        "approximation_ratio_best": 1.0,
+        "distribution": {
+          "83": 3,
+          "84": 55,
+          "85": 296,
+          "86": 379,
+          "87": 165,
+          "88": 7
+        },
+        "wilson_feasible": 0.8852451678097385,
+        "wilson_bks": 0.003394825079231997,
+        "wilson_near_bks": 0.14987601887484397,
+        "robust_score": 1.0401632529381803
+      },
+      "elapsed_batch_seconds": 37.108195200009504
+    }
+  ],
+  "complete": true,
+  "comparisons": [
+    {
+      "method": "evolutionary_search",
+      "baseline": "published_lr",
+      "metric": "bks_rate",
+      "replicates": 15,
+      "differences": [
+        0.001,
+        0.003,
+        -0.002,
+        -0.004,
+        -0.001,
+        -0.002,
+        0.001,
+        0.002,
+        0.0,
+        -0.003,
+        0.001,
+        0.0,
+        -0.002,
+        -0.003,
+        -0.001
+      ],
+      "mean_difference": -0.0006666666666666668,
+      "bootstrap_95_ci": [
+        -0.0016666666666666666,
+        0.0003333333333333333
+      ],
+      "two_sided_paired_sign_flip_p": 0.27001953125,
+      "wins_ties_losses": [
+        5,
+        2,
+        8
+      ]
+    },
+    {
+      "method": "evolutionary_search",
+      "baseline": "published_lr",
+      "metric": "near_bks_rate",
+      "replicates": 15,
+      "differences": [
+        -0.063,
+        -0.021000000000000005,
+        -0.045,
+        -0.03899999999999999,
+        -0.04000000000000001,
+        -0.022000000000000006,
+        -0.03799999999999999,
+        -0.018000000000000002,
+        -0.06199999999999999,
+        -0.061000000000000006,
+        -0.052000000000000005,
+        -0.04400000000000001,
+        -0.06200000000000001,
+        -0.044,
+        -0.049
+      ],
+      "mean_difference": -0.04400000000000001,
+      "bootstrap_95_ci": [
+        -0.051266666666666676,
+        -0.036533333333333334
+      ],
+      "two_sided_paired_sign_flip_p": 6.103515625e-05,
+      "wins_ties_losses": [
+        0,
+        0,
+        15
+      ]
+    },
+    {
+      "method": "evolutionary_search",
+      "baseline": "published_lr",
+      "metric": "feasible_rate",
+      "replicates": 15,
+      "differences": [
+        0.405,
+        0.42500000000000004,
+        0.43300000000000005,
+        0.385,
+        0.392,
+        0.405,
+        0.40800000000000003,
+        0.40700000000000003,
+        0.4,
+        0.386,
+        0.397,
+        0.386,
+        0.384,
+        0.376,
+        0.39
+      ],
+      "mean_difference": 0.39860000000000007,
+      "bootstrap_95_ci": [
+        0.39133333333333337,
+        0.4066000000000001
+      ],
+      "two_sided_paired_sign_flip_p": 6.103515625e-05,
+      "wins_ties_losses": [
+        15,
+        0,
+        0
+      ]
+    },
+    {
+      "method": "evolutionary_search",
+      "baseline": "published_lr",
+      "metric": "quality_mass",
+      "replicates": 15,
+      "differences": [
+        0.3886250000000068,
+        0.4085227272727354,
+        0.41590909090909794,
+        0.36963636363637054,
+        0.37571590909091607,
+        0.3894204545454621,
+        0.39155681818182664,
+        0.39088636363637075,
+        0.38327272727273504,
+        0.3699204545454615,
+        0.38055681818182663,
+        0.3703522727272788,
+        0.36797727272728065,
+        0.3597045454545519,
+        0.3739886363636441
+      ],
+      "mean_difference": 0.3824030303030376,
+      "bootstrap_95_ci": [
+        0.37523106060606803,
+        0.3902744318181893
+      ],
+      "two_sided_paired_sign_flip_p": 6.103515625e-05,
+      "wins_ties_losses": [
+        15,
+        0,
+        0
+      ]
+    },
+    {
+      "method": "evolutionary_search",
+      "baseline": "published_lr",
+      "metric": "robust_score",
+      "replicates": 15,
+      "differences": [
+        0.34584977190517585,
+        0.40574200715965303,
+        0.38743309867636766,
+        0.3425100147758178,
+        0.35207259120195,
+        0.3805631647620612,
+        0.37170355910161346,
+        0.3888531894204318,
+        0.34098636701964824,
+        0.32629653559635974,
+        0.34708124637256943,
+        0.3432415330086258,
+        0.322897094455894,
+        0.3296167292041279,
+        0.3424559006419037
+      ],
+      "mean_difference": 0.3551535202201466,
+      "bootstrap_95_ci": [
+        0.3432290042654272,
+        0.368139712734384
+      ],
+      "two_sided_paired_sign_flip_p": 6.103515625e-05,
+      "wins_ties_losses": [
+        15,
+        0,
+        0
+      ]
+    },
+    {
+      "method": "matched_random_search",
+      "baseline": "published_lr",
+      "metric": "bks_rate",
+      "replicates": 15,
+      "differences": [
+        0.008,
+        0.007,
+        0.001,
+        0.002,
+        0.007,
+        0.0,
+        0.008,
+        0.002,
+        0.001,
+        0.004,
+        0.009,
+        0.004,
+        0.002,
+        0.0,
+        0.005
+      ],
+      "mean_difference": 0.004,
+      "bootstrap_95_ci": [
+        0.002466666666666667,
+        0.0055333333333333345
+      ],
+      "two_sided_paired_sign_flip_p": 0.000244140625,
+      "wins_ties_losses": [
+        13,
+        2,
+        0
+      ]
+    },
+    {
+      "method": "matched_random_search",
+      "baseline": "published_lr",
+      "metric": "near_bks_rate",
+      "replicates": 15,
+      "differences": [
+        0.012999999999999984,
+        0.059,
+        0.041999999999999996,
+        0.05700000000000001,
+        0.063,
+        0.05399999999999999,
+        0.054000000000000006,
+        0.043999999999999984,
+        0.036000000000000004,
+        0.03699999999999999,
+        0.025999999999999995,
+        0.046,
+        0.034,
+        0.049,
+        0.05899999999999998
+      ],
+      "mean_difference": 0.04486666666666666,
+      "bootstrap_95_ci": [
+        0.03779999999999999,
+        0.05140000000000001
+      ],
+      "two_sided_paired_sign_flip_p": 6.103515625e-05,
+      "wins_ties_losses": [
+        15,
+        0,
+        0
+      ]
+    },
+    {
+      "method": "matched_random_search",
+      "baseline": "published_lr",
+      "metric": "feasible_rate",
+      "replicates": 15,
+      "differences": [
+        0.402,
+        0.44100000000000006,
+        0.43800000000000006,
+        0.39,
+        0.396,
+        0.40700000000000003,
+        0.392,
+        0.403,
+        0.394,
+        0.385,
+        0.40900000000000003,
+        0.392,
+        0.382,
+        0.387,
+        0.39
+      ],
+      "mean_difference": 0.40053333333333335,
+      "bootstrap_95_ci": [
+        0.39266499999999993,
+        0.40986666666666666
+      ],
+      "two_sided_paired_sign_flip_p": 6.103515625e-05,
+      "wins_ties_losses": [
+        15,
+        0,
+        0
+      ]
+    },
+    {
+      "method": "matched_random_search",
+      "baseline": "published_lr",
+      "metric": "quality_mass",
+      "replicates": 15,
+      "differences": [
+        0.39006818181818775,
+        0.4283068181818246,
+        0.4255795454545513,
+        0.3788977272727325,
+        0.3851590909090969,
+        0.3953409090909154,
+        0.38089772727273374,
+        0.3911590909090965,
+        0.38244318181818865,
+        0.3737159090909149,
+        0.3972159090909161,
+        0.38071590909091546,
+        0.37121590909091495,
+        0.37587500000000573,
+        0.37895454545455065
+      ],
+      "mean_difference": 0.38903636363636973,
+      "bootstrap_95_ci": [
+        0.38140140151515745,
+        0.3980666856060668
+      ],
+      "two_sided_paired_sign_flip_p": 6.103515625e-05,
+      "wins_ties_losses": [
+        15,
+        0,
+        0
+      ]
+    },
+    {
+      "method": "matched_random_search",
+      "baseline": "published_lr",
+      "metric": "robust_score",
+      "replicates": 15,
+      "differences": [
+        0.4234410656389739,
+        0.5028478769001102,
+        0.47749020200361136,
+        0.4452944885120633,
+        0.4632953712518927,
+        0.45673145352468925,
+        0.4506484652812528,
+        0.44388988564142684,
+        0.4281409677872191,
+        0.4240254490459684,
+        0.4426324698624391,
+        0.4377089263315792,
+        0.4166777830804407,
+        0.43267371139606836,
+        0.4508154607562911
+      ],
+      "mean_difference": 0.44642090513426846,
+      "bootstrap_95_ci": [
+        0.43611631864478767,
+        0.4581411836951618
+      ],
+      "two_sided_paired_sign_flip_p": 6.103515625e-05,
+      "wins_ties_losses": [
+        15,
+        0,
+        0
+      ]
+    }
+  ]
+}

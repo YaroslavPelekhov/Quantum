@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this research artifact, please cite it using this metadata."
+title: "When Better QAOA Schedules Depend on the Simulator: Truncation-Induced Rank Reversals on a 55-Qubit QOBLIB Benchmark"
+type: software
+authors:
+  - family-names: Pelekhov
+    given-names: Yaroslav
+repository-code: "https://github.com/YaroslavPelekhov/Quantum"
+date-released: 2026-08-03
+version: "1.0.0-research-draft"
+keywords:
+  - QAOA
+  - QOBLIB
+  - tensor networks
+  - matrix product states
+  - evolutionary computing
+  - maximum independent set
+  - reproducible benchmarking
+

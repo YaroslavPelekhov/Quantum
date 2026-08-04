@@ -1,0 +1,104 @@
+{
+  "stage": "cutensornet_small_exact_validation",
+  "provenance": {
+    "created_at": "2026-08-03T12:05:57.259378+00:00",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "qiskit": "2.5.1",
+    "cuquantum": "26.6.0",
+    "cupy": "14.1.1",
+    "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+    "bitstring_order": "q0_to_qn_minus_1"
+  },
+  "hyper_samples": 32,
+  "rows": [
+    {
+      "case": "es60fst03",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 12,
+      "elapsed_seconds": 1.1463532610000584,
+      "state_fidelity": 0.9999999999999993,
+      "total_variation": 3.60129470024981e-15,
+      "max_probability_error": 2.983724378680108e-16,
+      "norm": 1.0000000000000024
+    },
+    {
+      "case": "es60fst03",
+      "method": "matched_random_search",
+      "ordering": "sorted",
+      "qubits": 12,
+      "elapsed_seconds": 0.36434550599983595,
+      "state_fidelity": 0.9999999999999822,
+      "total_variation": 2.0424828319316232e-15,
+      "max_probability_error": 2.498001805406602e-16,
+      "norm": 0.9999999999999887
+    },
+    {
+      "case": "es60fst03",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 12,
+      "elapsed_seconds": 0.3698823390000143,
+      "state_fidelity": 0.9999999999999996,
+      "total_variation": 3.564523065017983e-15,
+      "max_probability_error": 2.42861286636753e-16,
+      "norm": 1.0000000000000036
+    },
+    {
+      "case": "es60fst03",
+      "method": "matched_random_search",
+      "ordering": "spectral",
+      "qubits": 12,
+      "elapsed_seconds": 0.32915698000010707,
+      "state_fidelity": 0.9999999999999822,
+      "total_variation": 2.9990763947095537e-15,
+      "max_probability_error": 4.440892098500626e-16,
+      "norm": 0.9999999999999873
+    },
+    {
+      "case": "es60fst01",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 15,
+      "elapsed_seconds": 0.4283430469999985,
+      "state_fidelity": 0.9999999999999976,
+      "total_variation": 3.9206660662434276e-15,
+      "max_probability_error": 1.249000902703301e-16,
+      "norm": 1.0000000000000027
+    },
+    {
+      "case": "es60fst01",
+      "method": "matched_random_search",
+      "ordering": "sorted",
+      "qubits": 15,
+      "elapsed_seconds": 0.5051734469998337,
+      "state_fidelity": 0.9999999999999771,
+      "total_variation": 3.1095823723691275e-15,
+      "max_probability_error": 1.8735013540549517e-16,
+      "norm": 0.9999999999999858
+    },
+    {
+      "case": "es60fst01",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 15,
+      "elapsed_seconds": 0.4881242580001981,
+      "state_fidelity": 0.9999999999999978,
+      "total_variation": 3.1873798699321155e-15,
+      "max_probability_error": 1.249000902703301e-16,
+      "norm": 1.0000000000000016
+    },
+    {
+      "case": "es60fst01",
+      "method": "matched_random_search",
+      "ordering": "spectral",
+      "qubits": 15,
+      "elapsed_seconds": 0.4616047659999367,
+      "state_fidelity": 0.9999999999999771,
+      "total_variation": 3.787570201772285e-15,
+      "max_probability_error": 3.0878077872387166e-16,
+      "norm": 0.9999999999999845
+    }
+  ]
+}
