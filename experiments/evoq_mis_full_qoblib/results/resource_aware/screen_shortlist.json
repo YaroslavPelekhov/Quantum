@@ -1,0 +1,217 @@
+{
+  "stage": "screen_shortlist_frozen_before_validation",
+  "complete": true,
+  "protocol_sha256": "1ea4ea38d3d13c1af0671ee12eaadedaec83710bb6943d0de596df6c77b7d5aa",
+  "source_sha256": "0e04cd3fa17d3fc3deb3642377e00bbe2090b54ae40467d6d0c87d8db894576b",
+  "max_degree": 4,
+  "configs": [
+    {
+      "config_id": "sobol_24_p3",
+      "schedule_id": "sobol_24",
+      "source": "scrambled_sobol",
+      "genome": [
+        0.40673045567236843,
+        0.7092884230893105,
+        1.0127791032195093,
+        1.6635018242523076
+      ],
+      "depth": 3,
+      "resources": {
+        "circuit_depth": 26,
+        "circuit_size": 183,
+        "rzz_gates": 63,
+        "rx_gates": 45,
+        "operations": {
+          "rzz": 63,
+          "rz": 45,
+          "rx": 45,
+          "h": 15,
+          "measure": 15
+        }
+      },
+      "training_eligible": true
+    },
+    {
+      "config_id": "sobol_24_p5",
+      "schedule_id": "sobol_24",
+      "source": "scrambled_sobol",
+      "genome": [
+        0.40673045567236843,
+        0.7092884230893105,
+        1.0127791032195093,
+        1.6635018242523076
+      ],
+      "depth": 5,
+      "resources": {
+        "circuit_depth": 40,
+        "circuit_size": 285,
+        "rzz_gates": 105,
+        "rx_gates": 75,
+        "operations": {
+          "rzz": 105,
+          "rz": 75,
+          "rx": 75,
+          "h": 15,
+          "measure": 15
+        }
+      },
+      "training_eligible": true
+    },
+    {
+      "config_id": "prior_matched_random_p8",
+      "schedule_id": "prior_matched_random",
+      "source": "anchor",
+      "genome": [
+        0.6424738670407446,
+        0.7593921349176262,
+        1.776791693083474,
+        0.9917239502490107
+      ],
+      "depth": 8,
+      "resources": {
+        "circuit_depth": 61,
+        "circuit_size": 438,
+        "rzz_gates": 168,
+        "rx_gates": 120,
+        "operations": {
+          "rzz": 168,
+          "rz": 120,
+          "rx": 120,
+          "h": 15,
+          "measure": 15
+        }
+      },
+      "training_eligible": true
+    },
+    {
+      "config_id": "prior_matched_random_p10",
+      "schedule_id": "prior_matched_random",
+      "source": "anchor",
+      "genome": [
+        0.6424738670407446,
+        0.7593921349176262,
+        1.776791693083474,
+        0.9917239502490107
+      ],
+      "depth": 10,
+      "resources": {
+        "circuit_depth": 75,
+        "circuit_size": 540,
+        "rzz_gates": 210,
+        "rx_gates": 150,
+        "operations": {
+          "rzz": 210,
+          "rz": 150,
+          "rx": 150,
+          "h": 15,
+          "measure": 15
+        }
+      },
+      "training_eligible": true
+    },
+    {
+      "config_id": "prior_evolutionary_p12",
+      "schedule_id": "prior_evolutionary",
+      "source": "anchor",
+      "genome": [
+        0.5175030726816078,
+        0.7719741612274684,
+        1.0773373543262421,
+        1.7543477389249704
+      ],
+      "depth": 12,
+      "resources": {
+        "circuit_depth": 89,
+        "circuit_size": 642,
+        "rzz_gates": 252,
+        "rx_gates": 180,
+        "operations": {
+          "rzz": 252,
+          "rz": 180,
+          "rx": 180,
+          "h": 15,
+          "measure": 15
+        }
+      },
+      "training_eligible": true
+    },
+    {
+      "config_id": "published_lr_p15",
+      "schedule_id": "published_lr",
+      "source": "anchor",
+      "genome": [
+        0.7,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "depth": 15,
+      "resources": {
+        "circuit_depth": 110,
+        "circuit_size": 795,
+        "rzz_gates": 315,
+        "rx_gates": 225,
+        "operations": {
+          "rzz": 315,
+          "rz": 225,
+          "rx": 225,
+          "h": 15,
+          "measure": 15
+        }
+      },
+      "training_eligible": true
+    },
+    {
+      "config_id": "prior_evolutionary_p15",
+      "schedule_id": "prior_evolutionary",
+      "source": "anchor",
+      "genome": [
+        0.5175030726816078,
+        0.7719741612274684,
+        1.0773373543262421,
+        1.7543477389249704
+      ],
+      "depth": 15,
+      "resources": {
+        "circuit_depth": 110,
+        "circuit_size": 795,
+        "rzz_gates": 315,
+        "rx_gates": 225,
+        "operations": {
+          "rzz": 315,
+          "rz": 225,
+          "rx": 225,
+          "h": 15,
+          "measure": 15
+        }
+      },
+      "training_eligible": true
+    },
+    {
+      "config_id": "prior_matched_random_p15",
+      "schedule_id": "prior_matched_random",
+      "source": "anchor",
+      "genome": [
+        0.6424738670407446,
+        0.7593921349176262,
+        1.776791693083474,
+        0.9917239502490107
+      ],
+      "depth": 15,
+      "resources": {
+        "circuit_depth": 110,
+        "circuit_size": 795,
+        "rzz_gates": 315,
+        "rx_gates": 225,
+        "operations": {
+          "rzz": 315,
+          "rz": 225,
+          "rx": 225,
+          "h": 15,
+          "measure": 15
+        }
+      },
+      "training_eligible": true
+    }
+  ]
+}

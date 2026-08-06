@@ -1,11 +1,15 @@
 import json
 import unittest
 from collections import defaultdict
+from pathlib import Path
 
 import numpy as np
 
 import run_cycle as rc
 from utils import qaoa_schedule
+
+
+RESOURCE_RESULTS = Path(__file__).resolve().parent / "results" / "resource_aware"
 
 
 class FullCycleTests(unittest.TestCase):
@@ -117,6 +121,68 @@ class FullCycleTests(unittest.TestCase):
         self.assertGreater(
             tight["nonlinear_feasible_rate"], tight["lr_feasible_rate"]
         )
+
+    def test_resource_aware_preblind_protocol_is_complete(self):
+        reachability = json.loads(
+            (RESOURCE_RESULTS / "reachability.json").read_text(encoding="utf-8")
+        )
+        self.assertTrue(reachability["complete"])
+        self.assertEqual(reachability["eligible_caps"], [4, 5, 6])
+        self.assertEqual(reachability["selected_minimum_cap"], 4)
+        blind_at_cap_three = next(
+            row
+            for row in reachability["rows"]
+            if row["name"] == "es60fst02" and row["max_degree"] == 3
+        )
+        self.assertFalse(blind_at_cap_three["bks_reachable"])
+
+        train = json.loads(
+            (RESOURCE_RESULTS / "train_exact.json").read_text(encoding="utf-8")
+        )
+        self.assertTrue(train["complete"])
+        self.assertEqual(train["configuration_count"], 210)
+        self.assertEqual(train["training_eligible_count"], 53)
+        self.assertEqual(len(train["rows"]), 210)
+
+        screen = json.loads(
+            (RESOURCE_RESULTS / "validation_screen.json").read_text(encoding="utf-8")
+        )
+        self.assertTrue(screen["complete"])
+        ordering_errors = [
+            error
+            for row in screen["ordering_exact_check"]["rows"]
+            for error in row["absolute_errors"].values()
+        ]
+        self.assertLess(max(ordering_errors), 1e-10)
+
+    def test_resource_aware_confirmation_and_blind_are_complete(self):
+        validation = json.loads(
+            (RESOURCE_RESULTS / "validation_confirm.json").read_text(encoding="utf-8")
+        )
+        self.assertTrue(validation["complete"])
+        self.assertEqual(len(validation["rows"]), 100)
+
+        champion = json.loads(
+            (RESOURCE_RESULTS / "frozen_resource_champion.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertTrue(champion["complete"])
+        self.assertEqual(champion["status"], "no_eligible_resource_champion")
+        self.assertIsNone(champion["config"])
+
+        blind = json.loads(
+            (RESOURCE_RESULTS / "blind_confirmation.json").read_text(encoding="utf-8")
+        )
+        self.assertTrue(blind["complete"])
+        self.assertEqual(len(blind["rows"]), 60)
+        cells = {
+            (row["config_key"], row["setting"]): row["jobs"]
+            for row in blind["summary"]
+        }
+        self.assertEqual(len(cells), 4)
+        self.assertEqual(set(cells.values()), {15})
+        self.assertEqual(sum(row["total_shots"] for row in blind["summary"]), 60_000)
 
 
 if __name__ == "__main__":

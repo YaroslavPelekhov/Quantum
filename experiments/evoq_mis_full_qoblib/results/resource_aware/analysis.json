@@ -1,0 +1,378 @@
+{
+  "stage": "resource_aware_analysis",
+  "complete": true,
+  "protocol_sha256": "1ea4ea38d3d13c1af0671ee12eaadedaec83710bb6943d0de596df6c77b7d5aa",
+  "selected_reduction_cap": 4,
+  "training_configurations": 210,
+  "training_eligible": 53,
+  "screen_configurations": 16,
+  "validation_decisions": [
+    {
+      "config_key": "prior_evolutionary_p15__sorted",
+      "noninferior_both_settings": false,
+      "resource_reduction": false,
+      "eligible": false,
+      "lower_depth": false,
+      "runtime_at_least_10pct_faster": false
+    },
+    {
+      "config_key": "prior_evolutionary_p15__spectral",
+      "noninferior_both_settings": false,
+      "resource_reduction": true,
+      "eligible": false,
+      "lower_depth": false,
+      "runtime_at_least_10pct_faster": true
+    },
+    {
+      "config_key": "prior_matched_random_p15__spectral",
+      "noninferior_both_settings": false,
+      "resource_reduction": true,
+      "eligible": false,
+      "lower_depth": false,
+      "runtime_at_least_10pct_faster": true
+    }
+  ],
+  "champion": {
+    "stage": "resource_champion_frozen_before_blind",
+    "complete": true,
+    "protocol_sha256": "1ea4ea38d3d13c1af0671ee12eaadedaec83710bb6943d0de596df6c77b7d5aa",
+    "source_sha256": "4a585646a9d78bb981e2e88637d85fd47cc9601e2487476c7b5a869976f97de5",
+    "status": "no_eligible_resource_champion",
+    "max_degree": 4,
+    "config": null,
+    "decision": null,
+    "selection_payload_sha256": "b806b7f19ca9108341bc33a5084bdb3821a31200d1f446e40b0ae786997055c0"
+  },
+  "blind_summary": [
+    {
+      "config_key": "prior_matched_random_p15__sorted",
+      "setting": "confirm",
+      "base_config_id": "prior_matched_random_p15",
+      "schedule_id": "prior_matched_random",
+      "genome": [
+        0.6424738670407446,
+        0.7593921349176262,
+        1.776791693083474,
+        0.9917239502490107
+      ],
+      "depth": 15,
+      "ordering": "sorted",
+      "jobs": 15,
+      "total_shots": 15000,
+      "bks_hits": 197,
+      "bks_rate": 0.013133333333333334,
+      "near_bks_hits": 2723,
+      "near_bks_rate": 0.18153333333333332,
+      "feasible_shots": 10296,
+      "feasible_rate": 0.6864,
+      "wilson_bks": 0.011432053228871945,
+      "wilson_near_bks": 0.1754464888596059,
+      "wilson_feasible": 0.6789282310082536,
+      "mean_elapsed_seconds": 370.19289169999536,
+      "median_elapsed_seconds": 370.2333517000079,
+      "resources": {
+        "circuit_depth": 231,
+        "circuit_size": 3125,
+        "rzz_gates": 1365,
+        "rx_gates": 825,
+        "operations": {
+          "rzz": 1365,
+          "rz": 825,
+          "rx": 825,
+          "h": 55,
+          "measure": 55
+        }
+      }
+    },
+    {
+      "config_key": "prior_matched_random_p15__sorted",
+      "setting": "released",
+      "base_config_id": "prior_matched_random_p15",
+      "schedule_id": "prior_matched_random",
+      "genome": [
+        0.6424738670407446,
+        0.7593921349176262,
+        1.776791693083474,
+        0.9917239502490107
+      ],
+      "depth": 15,
+      "ordering": "sorted",
+      "jobs": 15,
+      "total_shots": 15000,
+      "bks_hits": 108,
+      "bks_rate": 0.0072,
+      "near_bks_hits": 2369,
+      "near_bks_rate": 0.15793333333333334,
+      "feasible_shots": 13513,
+      "feasible_rate": 0.9008666666666667,
+      "wilson_bks": 0.005967448473441155,
+      "wilson_near_bks": 0.1521849352178134,
+      "wilson_feasible": 0.8959810879299369,
+      "mean_elapsed_seconds": 12.016346293334694,
+      "median_elapsed_seconds": 12.00921719998587,
+      "resources": {
+        "circuit_depth": 231,
+        "circuit_size": 3125,
+        "rzz_gates": 1365,
+        "rx_gates": 825,
+        "operations": {
+          "rzz": 1365,
+          "rz": 825,
+          "rx": 825,
+          "h": 55,
+          "measure": 55
+        }
+      }
+    },
+    {
+      "config_key": "published_lr_p15__sorted",
+      "setting": "confirm",
+      "base_config_id": "published_lr_p15",
+      "schedule_id": "published_lr",
+      "genome": [
+        0.7,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "depth": 15,
+      "ordering": "sorted",
+      "jobs": 15,
+      "total_shots": 15000,
+      "bks_hits": 260,
+      "bks_rate": 0.017333333333333333,
+      "near_bks_hits": 2781,
+      "near_bks_rate": 0.1854,
+      "feasible_shots": 7405,
+      "feasible_rate": 0.49366666666666664,
+      "wilson_bks": 0.015364933014000196,
+      "wilson_near_bks": 0.17926158232169068,
+      "wilson_feasible": 0.4856682879011418,
+      "mean_elapsed_seconds": 236.96443950665804,
+      "median_elapsed_seconds": 236.9598207999952,
+      "resources": {
+        "circuit_depth": 231,
+        "circuit_size": 3125,
+        "rzz_gates": 1365,
+        "rx_gates": 825,
+        "operations": {
+          "rzz": 1365,
+          "rz": 825,
+          "rx": 825,
+          "h": 55,
+          "measure": 55
+        }
+      }
+    },
+    {
+      "config_key": "published_lr_p15__sorted",
+      "setting": "released",
+      "base_config_id": "published_lr_p15",
+      "schedule_id": "published_lr",
+      "genome": [
+        0.7,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "depth": 15,
+      "ordering": "sorted",
+      "jobs": 15,
+      "total_shots": 15000,
+      "bks_hits": 49,
+      "bks_rate": 0.003266666666666667,
+      "near_bks_hits": 1726,
+      "near_bks_rate": 0.11506666666666666,
+      "feasible_shots": 7640,
+      "feasible_rate": 0.5093333333333333,
+      "wilson_bks": 0.0024719807198237275,
+      "wilson_near_bks": 0.11005822646013684,
+      "wilson_feasible": 0.5013316952207973,
+      "mean_elapsed_seconds": 7.916368720005266,
+      "median_elapsed_seconds": 7.909286700014491,
+      "resources": {
+        "circuit_depth": 231,
+        "circuit_size": 3125,
+        "rzz_gates": 1365,
+        "rx_gates": 825,
+        "operations": {
+          "rzz": 1365,
+          "rz": 825,
+          "rx": 825,
+          "h": 55,
+          "measure": 55
+        }
+      }
+    }
+  ],
+  "blind_comparisons": [
+    {
+      "config_key": "prior_matched_random_p15__sorted",
+      "setting": "released",
+      "comparisons": {
+        "bks_rate": {
+          "paired_jobs": 15,
+          "mean_difference": 0.003933333333333334,
+          "ci95": [
+            0.0026666666666666666,
+            0.005133333333333333
+          ],
+          "wins": 14,
+          "ties": 0,
+          "losses": 1,
+          "sign_flip_p_two_sided": 0.000244140625
+        },
+        "near_bks_rate": {
+          "paired_jobs": 15,
+          "mean_difference": 0.04286666666666668,
+          "ci95": [
+            0.036733333333333326,
+            0.04900000000000001
+          ],
+          "wins": 15,
+          "ties": 0,
+          "losses": 0,
+          "sign_flip_p_two_sided": 6.103515625e-05
+        },
+        "feasible_rate": {
+          "paired_jobs": 15,
+          "mean_difference": 0.39153333333333334,
+          "ci95": [
+            0.3838,
+            0.3988666666666667
+          ],
+          "wins": 15,
+          "ties": 0,
+          "losses": 0,
+          "sign_flip_p_two_sided": 6.103515625e-05
+        }
+      }
+    },
+    {
+      "config_key": "published_lr_p15__sorted",
+      "setting": "released",
+      "comparisons": {
+        "bks_rate": {
+          "paired_jobs": 15,
+          "mean_difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 15,
+          "losses": 0,
+          "sign_flip_p_two_sided": 1.0
+        },
+        "near_bks_rate": {
+          "paired_jobs": 15,
+          "mean_difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 15,
+          "losses": 0,
+          "sign_flip_p_two_sided": 1.0
+        },
+        "feasible_rate": {
+          "paired_jobs": 15,
+          "mean_difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 15,
+          "losses": 0,
+          "sign_flip_p_two_sided": 1.0
+        }
+      }
+    },
+    {
+      "config_key": "prior_matched_random_p15__sorted",
+      "setting": "confirm",
+      "comparisons": {
+        "bks_rate": {
+          "paired_jobs": 15,
+          "mean_difference": -0.0042,
+          "ci95": [
+            -0.005800000000000001,
+            -0.002533333333333333
+          ],
+          "wins": 2,
+          "ties": 0,
+          "losses": 13,
+          "sign_flip_p_two_sided": 0.000732421875
+        },
+        "near_bks_rate": {
+          "paired_jobs": 15,
+          "mean_difference": -0.003866666666666672,
+          "ci95": [
+            -0.007800000000000007,
+            0.00020000000000000017
+          ],
+          "wins": 4,
+          "ties": 2,
+          "losses": 9,
+          "sign_flip_p_two_sided": 0.097900390625
+        },
+        "feasible_rate": {
+          "paired_jobs": 15,
+          "mean_difference": 0.1927333333333333,
+          "ci95": [
+            0.1834666666666667,
+            0.20219999999999996
+          ],
+          "wins": 15,
+          "ties": 0,
+          "losses": 0,
+          "sign_flip_p_two_sided": 6.103515625e-05
+        }
+      }
+    },
+    {
+      "config_key": "published_lr_p15__sorted",
+      "setting": "confirm",
+      "comparisons": {
+        "bks_rate": {
+          "paired_jobs": 15,
+          "mean_difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 15,
+          "losses": 0,
+          "sign_flip_p_two_sided": 1.0
+        },
+        "near_bks_rate": {
+          "paired_jobs": 15,
+          "mean_difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 15,
+          "losses": 0,
+          "sign_flip_p_two_sided": 1.0
+        },
+        "feasible_rate": {
+          "paired_jobs": 15,
+          "mean_difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 15,
+          "losses": 0,
+          "sign_flip_p_two_sided": 1.0
+        }
+      }
+    }
+  ]
+}

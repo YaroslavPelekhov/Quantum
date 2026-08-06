@@ -42,15 +42,13 @@ manifest with:
 ..\..\.venv\Scripts\python.exe build_manifest.py
 ```
 
-The independent backend audit uses cuTensorNet in a dedicated WSL/Linux
-environment. Export circuits on Windows, then enter this same directory from
-WSL and validate or sample:
+The independent backend audit uses cuTensorNet in the dedicated WSL
+environment. Export circuits on Windows, then validate or sample in WSL:
 
 ```powershell
 ..\..\.venv\Scripts\python.exe run_cutensornet_audit.py export
-# In WSL, after `cd` to this directory:
-~/.venvs/evoq-cuquantum/bin/python run_cutensornet_audit.py validate --hyper-samples 32
-~/.venvs/evoq-cuquantum/bin/python run_cutensornet_audit.py sample --ordering spectral --simulation-mode mps --bond 128 --cutoff 1e-4 --shots 5000
+wsl.exe -d Ubuntu -- bash -lc "cd /mnt/c/Users/psgpe/Downloads/Taiwan/experiments/evoq_mis_full_qoblib && ~/.venvs/evoq-cuquantum/bin/python run_cutensornet_audit.py validate --hyper-samples 32"
+wsl.exe -d Ubuntu -- bash -lc "cd /mnt/c/Users/psgpe/Downloads/Taiwan/experiments/evoq_mis_full_qoblib && ~/.venvs/evoq-cuquantum/bin/python run_cutensornet_audit.py sample --ordering spectral --simulation-mode mps --bond 128 --cutoff 1e-4 --shots 5000"
 ```
 
 The released artifacts include all raw cuTensorNet samples, exact small-kernel
@@ -58,3 +56,35 @@ cross-checks, failed-attempt audit entries, and the classical baseline trials.
 
 The code imports the frozen QOBLIB submission utility module from the cloned
 `qoblib-solutions` repository and records its Git commit in every result file.
+
+## Strict resource-aware extension
+
+`RESOURCE_AWARE_PROTOCOL.md` freezes an additional train/validation/blind cycle
+before held-out evaluation. It jointly tests reduction caps 2--6, QAOA depths
+3--15, 35 schedule genomes, sorted/spectral tensor orderings, and two MPS
+fidelities. Exact HiGHS optimization first certifies whether the QOBLIB BKS is
+even reachable after each reduction. Candidate acceptance then requires paired
+non-inferiority for BKS, near-BKS, and feasibility at *both* simulator
+fidelities, together with an actual depth or runtime reduction.
+
+Run or resume the checkpointed stages with:
+
+```powershell
+$env:OPENBLAS_NUM_THREADS='1'
+$env:OMP_NUM_THREADS='1'
+$env:MKL_NUM_THREADS='1'
+$env:NUMEXPR_NUM_THREADS='1'
+....\.venv\Scripts\python.exe run_resource_aware_cycle.py --stage all
+....\.venv\Scripts\python.exe plot_resource_aware.py
+```
+
+The completed frozen cycle evaluated 210 exact schedule-depth configurations,
+100 confirmation jobs on validation, and 60 blind jobs (60,000 blind shots).
+The minimum BKS-preserving reduction cap was 4. No searched candidate satisfied
+the pre-registered quality gate at both MPS fidelities, so the controller
+returned `no_eligible_resource_champion` instead of making an unsafe resource
+claim. On the blind instance, the prior matched schedule's paired BKS effect
+against the published linear ramp reversed from +0.393 percentage points under
+the released approximation to -0.420 points under tight confirmation; both
+effects were statistically significant. See `RESOURCE_AWARE_REPORT.md` and
+`results/figures/resource_aware_cycle.png`.

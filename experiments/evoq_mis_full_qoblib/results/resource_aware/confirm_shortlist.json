@@ -1,0 +1,93 @@
+{
+  "stage": "confirmation_shortlist_frozen_before_accuracy_confirmation",
+  "complete": true,
+  "protocol_sha256": "1ea4ea38d3d13c1af0671ee12eaadedaec83710bb6943d0de596df6c77b7d5aa",
+  "source_sha256": "1d512cb1878dc6d99137756b7700a89d938157d95393189cf36c51a6f223eb8d",
+  "max_degree": 4,
+  "configs": [
+    {
+      "config_key": "prior_matched_random_p15__spectral",
+      "base_config_id": "prior_matched_random_p15",
+      "schedule_id": "prior_matched_random",
+      "genome": [
+        0.6424738670407446,
+        0.7593921349176262,
+        1.776791693083474,
+        0.9917239502490107
+      ],
+      "depth": 15,
+      "ordering": "spectral",
+      "config_id": "prior_matched_random_p15"
+    },
+    {
+      "config_key": "prior_evolutionary_p15__spectral",
+      "base_config_id": "prior_evolutionary_p15",
+      "schedule_id": "prior_evolutionary",
+      "genome": [
+        0.5175030726816078,
+        0.7719741612274684,
+        1.0773373543262421,
+        1.7543477389249704
+      ],
+      "depth": 15,
+      "ordering": "spectral",
+      "config_id": "prior_evolutionary_p15"
+    },
+    {
+      "config_key": "prior_matched_random_p15__sorted",
+      "base_config_id": "prior_matched_random_p15",
+      "schedule_id": "prior_matched_random",
+      "genome": [
+        0.6424738670407446,
+        0.7593921349176262,
+        1.776791693083474,
+        0.9917239502490107
+      ],
+      "depth": 15,
+      "ordering": "sorted",
+      "config_id": "prior_matched_random_p15"
+    },
+    {
+      "config_key": "prior_evolutionary_p15__sorted",
+      "base_config_id": "prior_evolutionary_p15",
+      "schedule_id": "prior_evolutionary",
+      "genome": [
+        0.5175030726816078,
+        0.7719741612274684,
+        1.0773373543262421,
+        1.7543477389249704
+      ],
+      "depth": 15,
+      "ordering": "sorted",
+      "config_id": "prior_evolutionary_p15"
+    },
+    {
+      "config_key": "published_lr_p15__sorted",
+      "base_config_id": "published_lr_p15",
+      "schedule_id": "published_lr",
+      "genome": [
+        0.7,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "depth": 15,
+      "ordering": "sorted",
+      "config_id": "published_lr_p15"
+    },
+    {
+      "config_key": "prior_matched_random_p15__sorted",
+      "base_config_id": "prior_matched_random_p15",
+      "schedule_id": "prior_matched_random",
+      "genome": [
+        0.6424738670407446,
+        0.7593921349176262,
+        1.776791693083474,
+        0.9917239502490107
+      ],
+      "depth": 15,
+      "ordering": "sorted",
+      "config_id": "prior_matched_random_p15"
+    }
+  ]
+}

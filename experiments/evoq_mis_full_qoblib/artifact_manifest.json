@@ -1,6 +1,6 @@
 {
   "root": ".",
-  "artifact_count": 83,
+  "artifact_count": 99,
   "artifacts": [
     {
       "path": "analyze_extended_results.py",
@@ -53,19 +53,34 @@
       "sha256": "0e3df38e8fefe8a9459d8e1010d726bf40229e0be6312cb11bc50033a8bf3717"
     },
     {
+      "path": "plot_resource_aware.py",
+      "bytes": 4907,
+      "sha256": "9741e757bc90ddeafe1a3496fda4aa048de9ad0d654e845b801d10ab36a31359"
+    },
+    {
       "path": "PROTOCOL_DEVIATIONS.md",
       "bytes": 1041,
       "sha256": "46659cc54b3b587a9c0a837cbee9d5e1d5778e023f3ac704b160988c9b95da34"
     },
     {
       "path": "README.md",
-      "bytes": 2490,
-      "sha256": "46506ef9345e5c7bdad1757d6525dd619192a2f709224d5aaa79b46565f9b41d"
+      "bytes": 4224,
+      "sha256": "09f7f4b625eead4bb48b8631694a33f43f35bac6f67e08f3b82d8ee8d92aa453"
     },
     {
       "path": "RESEARCH_CYCLE_REPORT.md",
       "bytes": 5259,
       "sha256": "06d6aea5702b8b5d38e7a207fd8460d0e58d37a3123a1e7e61e2fe5d9948ebf1"
+    },
+    {
+      "path": "RESOURCE_AWARE_PROTOCOL.md",
+      "bytes": 4604,
+      "sha256": "1ea4ea38d3d13c1af0671ee12eaadedaec83710bb6943d0de596df6c77b7d5aa"
+    },
+    {
+      "path": "RESOURCE_AWARE_REPORT.md",
+      "bytes": 2727,
+      "sha256": "d822420ce186ffe5984cc0ff7eecfe1a9d5a54d8119a26112303e36ebf4b27b1"
     },
     {
       "path": "results/analysis_summary.json",
@@ -363,6 +378,16 @@
       "sha256": "27c53c264aa01d727fdae57d690d228689587ae23370a55abd60497968aebd87"
     },
     {
+      "path": "results/figures/resource_aware_cycle.pdf",
+      "bytes": 35931,
+      "sha256": "9aca8994e132e8591d451a97a3748a1dc566b7681797b406046c74801886e68c"
+    },
+    {
+      "path": "results/figures/resource_aware_cycle.png",
+      "bytes": 130697,
+      "sha256": "9424fd52d0f8e7bae47a6792994d20bb6c1130adc2e0c8fef563c3c5a7ea5a87"
+    },
+    {
       "path": "results/frozen_champions.json",
       "bytes": 2971,
       "sha256": "7b666045feffddcf0ac723618867ca2e506ca47419b4acb58b3e9164061998d2"
@@ -371,6 +396,56 @@
       "path": "results/mps_sensitivity.csv",
       "bytes": 2489,
       "sha256": "0f954ff9d5873eef50f68e192426cb057dc4ea22228b5d0330115dec17d6fc86"
+    },
+    {
+      "path": "results/resource_aware/analysis.json",
+      "bytes": 10430,
+      "sha256": "abd9026d43e521ae6b1e53acf2bd3e896ad074bef2be1495095567784cb3bfec"
+    },
+    {
+      "path": "results/resource_aware/blind_confirmation.json",
+      "bytes": 4022715,
+      "sha256": "92675d971082912b253da28ca8a51c28bb600bc54195f9f3f2a3e3296ec33746"
+    },
+    {
+      "path": "results/resource_aware/blind_summary.csv",
+      "bytes": 631,
+      "sha256": "3abb351ae07355bcff5a2293f26fbbbe0e91a53f26e704a0a5463a8a50f167a3"
+    },
+    {
+      "path": "results/resource_aware/confirm_shortlist.json",
+      "bytes": 2682,
+      "sha256": "9ee5ed8ddc732546f99ad50a788420e468b003eaceb919eeb97ab3f89706f0dc"
+    },
+    {
+      "path": "results/resource_aware/frozen_resource_champion.json",
+      "bytes": 462,
+      "sha256": "491a5b177fecaa3823ae62636d10db7007608ef9de6570f14fa9cfaef861cdf2"
+    },
+    {
+      "path": "results/resource_aware/reachability.json",
+      "bytes": 7117,
+      "sha256": "a241bcc0a82548a7fc1ae2220d6363ea1faccf15ae8760834e624b3a9ba39bff"
+    },
+    {
+      "path": "results/resource_aware/screen_shortlist.json",
+      "bytes": 5184,
+      "sha256": "0aab4ea1229975ecc0c50aa5392d61d5e1c844909aeafbd55d284305b7c8b54f"
+    },
+    {
+      "path": "results/resource_aware/train_exact.json",
+      "bytes": 518926,
+      "sha256": "0e04cd3fa17d3fc3deb3642377e00bbe2090b54ae40467d6d0c87d8db894576b"
+    },
+    {
+      "path": "results/resource_aware/validation_confirm.json",
+      "bytes": 3115572,
+      "sha256": "4a585646a9d78bb981e2e88637d85fd47cc9601e2487476c7b5a869976f97de5"
+    },
+    {
+      "path": "results/resource_aware/validation_screen.json",
+      "bytes": 1086019,
+      "sha256": "1d512cb1878dc6d99137756b7700a89d938157d95393189cf36c51a6f223eb8d"
     },
     {
       "path": "results/train.json",
@@ -413,9 +488,14 @@
       "sha256": "28b51c14c69edbf19bc59859fc6e726eec4d4daa4e445b58f16fb9cba11f4092"
     },
     {
+      "path": "run_resource_aware_cycle.py",
+      "bytes": 40655,
+      "sha256": "75c8e8fbc86c2f3d69e47be7f69c6eccbe3a14def59a603ba7dfe1b2202574a5"
+    },
+    {
       "path": "test_full_cycle.py",
-      "bytes": 5533,
-      "sha256": "0b18b1bf80c6f4ac3a61e6e5b2380afab1135b938f9dcb4b0781b78fb09c291d"
+      "bytes": 8151,
+      "sha256": "e5f6531147cc57fd741c8ee0c55deb09f6afffe515d5c5923c772f154c2efb1e"
     }
   ]
 }

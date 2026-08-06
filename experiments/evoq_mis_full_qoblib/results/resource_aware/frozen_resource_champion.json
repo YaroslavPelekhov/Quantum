@@ -1,0 +1,11 @@
+{
+  "stage": "resource_champion_frozen_before_blind",
+  "complete": true,
+  "protocol_sha256": "1ea4ea38d3d13c1af0671ee12eaadedaec83710bb6943d0de596df6c77b7d5aa",
+  "source_sha256": "4a585646a9d78bb981e2e88637d85fd47cc9601e2487476c7b5a869976f97de5",
+  "status": "no_eligible_resource_champion",
+  "max_degree": 4,
+  "config": null,
+  "decision": null,
+  "selection_payload_sha256": "b806b7f19ca9108341bc33a5084bdb3821a31200d1f446e40b0ae786997055c0"
+}
