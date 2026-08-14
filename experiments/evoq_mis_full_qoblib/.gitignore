@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Local build and QA intermediates
+paper/tmp/
+paper/output/pdf/*.aux
+paper/output/pdf/*.log
+paper/output/pdf/*.out
+tmp/
+
+# Runtime-only safety/log files
+results/**/safe_runner.lock
+results/**/safe_runner_*.log
+results/**/resource_monitor.csv
+
+# Atomic-write leftovers
+*.tmp

@@ -1,0 +1,1133 @@
+{
+  "stage": "independent_cutensornet_mps_ladder",
+  "complete": true,
+  "manifest_sha256": "0acef4c08541207e7cef68df81c1a8561edd02a8e7ad5c8df9b773f91ab14877",
+  "protocol_sha256": "39b381d49b1b222250e55c9cc457f86ab224f26b9fba8447bef489755d19227e",
+  "provenance": {
+    "created_at": "2026-08-11T12:38:48.763998+00:00",
+    "python": "3.12.3 (main, Mar 23 2026, 19:04:32) [GCC 13.3.0]",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "qiskit": "2.5.1",
+    "numpy": "2.5.1",
+    "cupy": "14.1.1",
+    "cuquantum": "26.6.0",
+    "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+    "gpu_total_bytes": 17170956288,
+    "gpu_free_bytes_at_start": 15821963264,
+    "network_memory_limit": "60%",
+    "runner_sha256": "6454f7a854f875ccb1655e960a37e112e25d0fffd236ce733419026c01aa4000",
+    "protocol_sha256": "39b381d49b1b222250e55c9cc457f86ab224f26b9fba8447bef489755d19227e",
+    "manifest_sha256": "0acef4c08541207e7cef68df81c1a8561edd02a8e7ad5c8df9b773f91ab14877"
+  },
+  "settings": [
+    {
+      "name": "released",
+      "bond": 64,
+      "cutoff": 0.001
+    },
+    {
+      "name": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001
+    },
+    {
+      "name": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12
+    },
+    {
+      "name": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001
+    },
+    {
+      "name": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05
+    }
+  ],
+  "expected_jobs": 30,
+  "rows": [
+    {
+      "case": "aves-sparrow-social",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8300434036578467,
+        "bks_rate": 0.4207188114294784,
+        "near_bks_rate": 0.8121223845128976,
+        "quality_mass": 0.7971340181751978,
+        "conditional_mean_size": 12.484578746859373,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9929109801175819,
+        "total_variation_distance": 0.027560351797326972,
+        "reference_norm": 0.9999999999999999,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.1232804889496086,
+        "raw_norm_drift": 0.12328048894960864
+      },
+      "simulation_seconds": 58.12347511400003,
+      "metric_seconds": 1.800552231000097,
+      "elapsed_seconds": 59.92402734500013,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8512695120398892,
+        "bks_rate": 0.4512346518355822,
+        "near_bks_rate": 0.833642618242098,
+        "quality_mass": 0.8191077490274209,
+        "conditional_mean_size": 12.508847770008593,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9523478502144543,
+        "total_variation_distance": 0.06623964991579565,
+        "reference_norm": 0.9999999999999992,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.9870364408058605,
+        "raw_norm_drift": -0.012963559194139496
+      },
+      "simulation_seconds": 70.32166591200007,
+      "metric_seconds": 1.7733330710000246,
+      "elapsed_seconds": 72.0949989830001,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6519751867869412,
+        "bks_rate": 0.31414547231470935,
+        "near_bks_rate": 0.5952558928071394,
+        "quality_mass": 0.6213833807676434,
+        "conditional_mean_size": 12.390017463378047,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9443341456410809,
+        "total_variation_distance": 0.0897413628332881,
+        "reference_norm": 0.9999999999999923,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 1.295739705353309,
+        "raw_norm_drift": 0.29573970535330907
+      },
+      "simulation_seconds": 59.177299584000025,
+      "metric_seconds": 1.7576167820000137,
+      "elapsed_seconds": 60.93491636600004,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6841373119354585,
+        "bks_rate": 0.3712164996356021,
+        "near_bks_rate": 0.6267490090777237,
+        "quality_mass": 0.655440698167959,
+        "conditional_mean_size": 12.454705988886792,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.8072780994263451,
+        "total_variation_distance": 0.1972394282140078,
+        "reference_norm": 0.9999999999999933,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.9770302132967172,
+        "raw_norm_drift": -0.022969786703282757
+      },
+      "simulation_seconds": 70.35364111400008,
+      "metric_seconds": 1.9043758540001363,
+      "elapsed_seconds": 72.25801696800022,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5191175541219728,
+        "bks_rate": 0.3241004594179871,
+        "near_bks_rate": 0.49705564005290065,
+        "quality_mass": 0.5023262830968142,
+        "conditional_mean_size": 12.579504638990162,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9811106492268443,
+        "total_variation_distance": 0.05223729965641844,
+        "reference_norm": 0.9999999999999847,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 1.195802366530018,
+        "raw_norm_drift": 0.19580236653001792
+      },
+      "simulation_seconds": 58.24135707100004,
+      "metric_seconds": 1.8538504289999764,
+      "elapsed_seconds": 60.095207500000015,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5371961469873126,
+        "bks_rate": 0.354517451582681,
+        "near_bks_rate": 0.5151152689840102,
+        "quality_mass": 0.5213681616360053,
+        "conditional_mean_size": 12.616967078559753,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9007364078086916,
+        "total_variation_distance": 0.10798492371038763,
+        "reference_norm": 0.999999999999985,
+        "approximate_norm": 0.9999999999999998,
+        "raw_approximate_norm": 0.986035259022421,
+        "raw_norm_drift": -0.013964740977579049
+      },
+      "simulation_seconds": 70.41752667100002,
+      "metric_seconds": 1.846246447999988,
+      "elapsed_seconds": 72.263773119,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999998
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8291838562093126,
+        "bks_rate": 0.42132280067834244,
+        "near_bks_rate": 0.810473575928712,
+        "quality_mass": 0.7963221403698794,
+        "conditional_mean_size": 12.4847918194336,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9891592885618098,
+        "total_variation_distance": 0.03576873818993906,
+        "reference_norm": 0.9999999999999999,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.138705684684048,
+        "raw_norm_drift": 0.13870568468404798
+      },
+      "simulation_seconds": 54.62556985000003,
+      "metric_seconds": 2.229129972999999,
+      "elapsed_seconds": 56.85469982300003,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.85291705788902,
+        "bks_rate": 0.45087079610284764,
+        "near_bks_rate": 0.8360724670103787,
+        "quality_mass": 0.8206551324353075,
+        "conditional_mean_size": 12.508269852245315,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9475628021446519,
+        "total_variation_distance": 0.07189193246283451,
+        "reference_norm": 0.9999999999999992,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 0.9951851308553435,
+        "raw_norm_drift": -0.004814869144656453
+      },
+      "simulation_seconds": 56.441605021999976,
+      "metric_seconds": 2.4595792629999664,
+      "elapsed_seconds": 58.90118428499994,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6566876371397603,
+        "bks_rate": 0.31606243241069565,
+        "near_bks_rate": 0.6013999869459891,
+        "quality_mass": 0.6259866550921893,
+        "conditional_mean_size": 12.392233469847582,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9426766517271132,
+        "total_variation_distance": 0.09908437597986021,
+        "reference_norm": 0.9999999999999923,
+        "approximate_norm": 0.9999999999999993,
+        "raw_approximate_norm": 1.3118907574525247,
+        "raw_norm_drift": 0.3118907574525247
+      },
+      "simulation_seconds": 58.699373299,
+      "metric_seconds": 1.7809804539999732,
+      "elapsed_seconds": 60.480353752999974,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999993
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.676801924721867,
+        "bks_rate": 0.3587454091336961,
+        "near_bks_rate": 0.620333054182218,
+        "quality_mass": 0.6477778447496305,
+        "conditional_mean_size": 12.442505959488614,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.8125691157702588,
+        "total_variation_distance": 0.1815986864079214,
+        "reference_norm": 0.9999999999999933,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 0.9869425088367005,
+        "raw_norm_drift": -0.013057491163299462
+      },
+      "simulation_seconds": 65.62570160099995,
+      "metric_seconds": 1.8074086450000095,
+      "elapsed_seconds": 67.43311024599996,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5184669120237677,
+        "bks_rate": 0.32387388600135836,
+        "near_bks_rate": 0.4960926845737451,
+        "quality_mass": 0.5016857756438623,
+        "conditional_mean_size": 12.579231060112916,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9809440465422143,
+        "total_variation_distance": 0.053865972823545084,
+        "reference_norm": 0.9999999999999847,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 1.2069037508952531,
+        "raw_norm_drift": 0.20690375089525315
+      },
+      "simulation_seconds": 61.310044644000016,
+      "metric_seconds": 2.174794947999999,
+      "elapsed_seconds": 63.484839592000014,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.536248628676696,
+        "bks_rate": 0.35445233856846725,
+        "near_bks_rate": 0.5145911037026372,
+        "quality_mass": 0.5205149986329498,
+        "conditional_mean_size": 12.618577690215377,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9006690518789074,
+        "total_variation_distance": 0.10970951983722288,
+        "reference_norm": 0.999999999999985,
+        "approximate_norm": 0.9999999999999994,
+        "raw_approximate_norm": 0.977949854056899,
+        "raw_norm_drift": -0.02205014594310095
+      },
+      "simulation_seconds": 65.10389185900004,
+      "metric_seconds": 2.1592137889999776,
+      "elapsed_seconds": 67.26310564800002,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999994
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.828707151960379,
+        "bks_rate": 0.4253476949857863,
+        "near_bks_rate": 0.8123702818483263,
+        "quality_mass": 0.7963893183614928,
+        "conditional_mean_size": 12.493027379102902,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.99727624919217,
+        "total_variation_distance": 0.010526291754833042,
+        "reference_norm": 0.9999999999999999,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.0024905148490326,
+        "raw_norm_drift": 0.002490514849032621
+      },
+      "simulation_seconds": 254.34828703000017,
+      "metric_seconds": 1.8212478079999528,
+      "elapsed_seconds": 256.1695348380001,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8287278298390033,
+        "bks_rate": 0.4251054195258902,
+        "near_bks_rate": 0.8122710827323774,
+        "quality_mass": 0.7963794531460506,
+        "conditional_mean_size": 12.4925609085795,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.997210369058075,
+        "total_variation_distance": 0.010731208676283188,
+        "reference_norm": 0.9999999999999992,
+        "approximate_norm": 0.9999999999999998,
+        "raw_approximate_norm": 0.993143770005487,
+        "raw_norm_drift": -0.0068562299945129634
+      },
+      "simulation_seconds": 231.39573629300003,
+      "metric_seconds": 1.889861263000057,
+      "elapsed_seconds": 233.28559755600008,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999998
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.631276298882776,
+        "bks_rate": 0.31111840999792134,
+        "near_bks_rate": 0.5787317824312371,
+        "quality_mass": 0.602447603570479,
+        "conditional_mean_size": 12.406324869596515,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9999537627967767,
+        "total_variation_distance": 0.0023287122134486777,
+        "reference_norm": 0.9999999999999923,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.9996416740131558,
+        "raw_norm_drift": -0.0003583259868441546
+      },
+      "simulation_seconds": 257.59178226999984,
+      "metric_seconds": 1.8761723570000868,
+      "elapsed_seconds": 259.4679546269999,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6312792185470699,
+        "bks_rate": 0.3110685190827898,
+        "near_bks_rate": 0.5786324792365987,
+        "quality_mass": 0.6024381754215744,
+        "conditional_mean_size": 12.406073335513282,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9999715070150929,
+        "total_variation_distance": 0.0018009848336650203,
+        "reference_norm": 0.9999999999999933,
+        "approximate_norm": 0.9999999999999997,
+        "raw_approximate_norm": 0.9989653043410788,
+        "raw_norm_drift": -0.0010346956589212253
+      },
+      "simulation_seconds": 334.0222190720001,
+      "metric_seconds": 1.8164441210001314,
+      "elapsed_seconds": 335.83866319300023,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999997
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.514632452642389,
+        "bks_rate": 0.32314899191394186,
+        "near_bks_rate": 0.49374659541613736,
+        "quality_mass": 0.49822251610753227,
+        "conditional_mean_size": 12.585472750780106,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9998707414651744,
+        "total_variation_distance": 0.0036999855013200755,
+        "reference_norm": 0.9999999999999847,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.0003498690975847,
+        "raw_norm_drift": 0.00034986909758472073
+      },
+      "simulation_seconds": 295.6111254130001,
+      "metric_seconds": 1.8071966279999288,
+      "elapsed_seconds": 297.418322041,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5147878982836357,
+        "bks_rate": 0.32327567133918494,
+        "near_bks_rate": 0.4939615671816876,
+        "quality_mass": 0.4983808541561993,
+        "conditional_mean_size": 12.585670963968242,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9998713150190873,
+        "total_variation_distance": 0.004375416354773962,
+        "reference_norm": 0.999999999999985,
+        "approximate_norm": 0.9999999999999997,
+        "raw_approximate_norm": 0.9947532444565589,
+        "raw_norm_drift": -0.005246755543441117
+      },
+      "simulation_seconds": 334.39111318100004,
+      "metric_seconds": 1.8117089510001279,
+      "elapsed_seconds": 336.20282213200016,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999997
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8298617736129267,
+        "bks_rate": 0.4252560205971682,
+        "near_bks_rate": 0.813821239531475,
+        "quality_mass": 0.7974734040783429,
+        "conditional_mean_size": 12.492627787738082,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9999970663928354,
+        "total_variation_distance": 0.0004293336756224889,
+        "reference_norm": 0.9999999999999999,
+        "approximate_norm": 0.9999999999999999,
+        "raw_approximate_norm": 1.00007755687353,
+        "raw_norm_drift": 7.755687353006024e-05
+      },
+      "simulation_seconds": 320.31887524600006,
+      "metric_seconds": 1.871416038999996,
+      "elapsed_seconds": 322.19029128500006,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999999
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8297541788397738,
+        "bks_rate": 0.42513397154513993,
+        "near_bks_rate": 0.8137007125817305,
+        "quality_mass": 0.7973636842114924,
+        "conditional_mean_size": 12.492528701986846,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9999956481093629,
+        "total_variation_distance": 0.0005035963017219801,
+        "reference_norm": 0.9999999999999992,
+        "approximate_norm": 0.9999999999999999,
+        "raw_approximate_norm": 0.9999246699121486,
+        "raw_norm_drift": -7.533008785143291e-05
+      },
+      "simulation_seconds": 492.01136491700026,
+      "metric_seconds": 1.9679433740002423,
+      "elapsed_seconds": 493.9793082910005,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999999
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6314382891677,
+        "bks_rate": 0.3111186643550722,
+        "near_bks_rate": 0.5788672354783355,
+        "quality_mass": 0.6025949993768195,
+        "conditional_mean_size": 12.40617670211972,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9999977717309971,
+        "total_variation_distance": 0.00045277730003657855,
+        "reference_norm": 0.9999999999999923,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 1.0003584955060199,
+        "raw_norm_drift": 0.00035849550601985136
+      },
+      "simulation_seconds": 298.94254975399963,
+      "metric_seconds": 1.9553012329997728,
+      "elapsed_seconds": 300.8978509869994,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6309795591609405,
+        "bks_rate": 0.3109086898769503,
+        "near_bks_rate": 0.57839591442437,
+        "quality_mass": 0.6021543591528334,
+        "conditional_mean_size": 12.40611768691256,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9999820667643899,
+        "total_variation_distance": 0.0012404421681005645,
+        "reference_norm": 0.9999999999999933,
+        "approximate_norm": 0.9999999999999999,
+        "raw_approximate_norm": 1.00211695357284,
+        "raw_norm_drift": 0.00211695357284003
+      },
+      "simulation_seconds": 452.5946352970004,
+      "metric_seconds": 1.7851619299999584,
+      "elapsed_seconds": 454.3797972270004,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999999
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5150280130315363,
+        "bks_rate": 0.3232748616720705,
+        "near_bks_rate": 0.49424864234198385,
+        "quality_mass": 0.4986065913376246,
+        "conditional_mean_size": 12.585501222032015,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9999989642787837,
+        "total_variation_distance": 0.000328204093673349,
+        "reference_norm": 0.9999999999999847,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.000667740446415,
+        "raw_norm_drift": 0.0006677404464150438
+      },
+      "simulation_seconds": 326.4364500900001,
+      "metric_seconds": 1.8732483750000029,
+      "elapsed_seconds": 328.3096984650001,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5149806257903751,
+        "bks_rate": 0.32323232531538576,
+        "near_bks_rate": 0.49419740384471234,
+        "quality_mass": 0.49855931369827566,
+        "conditional_mean_size": 12.58546584763329,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9999960578154412,
+        "total_variation_distance": 0.00043814435006573493,
+        "reference_norm": 0.999999999999985,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.9994826587293186,
+        "raw_norm_drift": -0.0005173412706813707
+      },
+      "simulation_seconds": 376.78396403199986,
+      "metric_seconds": 1.9269215200001781,
+      "elapsed_seconds": 378.71088555200004,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8427991219861471,
+        "bks_rate": 0.41879486401402843,
+        "near_bks_rate": 0.8202319960544471,
+        "quality_mass": 0.8083391705235492,
+        "conditional_mean_size": 12.46846246356064,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9200354010184251,
+        "total_variation_distance": 0.1215686939731723,
+        "reference_norm": 0.9999999999999999,
+        "approximate_norm": 1.0000000000000007,
+        "raw_approximate_norm": 1.3311015740125767,
+        "raw_norm_drift": 0.33110157401257667
+      },
+      "simulation_seconds": 36.54182331299998,
+      "metric_seconds": 2.0349976330000175,
+      "elapsed_seconds": 38.576820946,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000007
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8573205599203793,
+        "bks_rate": 0.5016498098696838,
+        "near_bks_rate": 0.8410459420596081,
+        "quality_mass": 0.8286661560212518,
+        "conditional_mean_size": 12.565498288384392,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.8578591083318,
+        "total_variation_distance": 0.15424688981200244,
+        "reference_norm": 0.9999999999999992,
+        "approximate_norm": 0.9999999999999994,
+        "raw_approximate_norm": 0.8584462609842509,
+        "raw_norm_drift": -0.14155373901574908
+      },
+      "simulation_seconds": 31.718374459000017,
+      "metric_seconds": 1.9164444419999995,
+      "elapsed_seconds": 33.63481890100002,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999994
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.703335842126582,
+        "bks_rate": 0.32413801557633065,
+        "near_bks_rate": 0.6371808192937903,
+        "quality_mass": 0.66873382177949,
+        "conditional_mean_size": 12.36043887205845,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.7980875810258741,
+        "total_variation_distance": 0.2400048998794311,
+        "reference_norm": 0.9999999999999923,
+        "approximate_norm": 0.999999999999999,
+        "raw_approximate_norm": 1.3620564303175753,
+        "raw_norm_drift": 0.3620564303175753
+      },
+      "simulation_seconds": 43.390005530000025,
+      "metric_seconds": 2.035056721999979,
+      "elapsed_seconds": 45.425062252000004,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.999999999999999
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.7108846798540968,
+        "bks_rate": 0.42699664689681527,
+        "near_bks_rate": 0.6525265123830977,
+        "quality_mass": 0.6842749420657938,
+        "conditional_mean_size": 12.51338578386731,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.6980321133987444,
+        "total_variation_distance": 0.28289947873045534,
+        "reference_norm": 0.9999999999999933,
+        "approximate_norm": 0.9999999999999998,
+        "raw_approximate_norm": 0.7595410311575898,
+        "raw_norm_drift": -0.24045896884241025
+      },
+      "simulation_seconds": 39.65469916500001,
+      "metric_seconds": 2.0171457499999974,
+      "elapsed_seconds": 41.67184491500001,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999998
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5543770045845611,
+        "bks_rate": 0.33242458948436304,
+        "near_bks_rate": 0.5212177031399701,
+        "quality_mass": 0.534584423596322,
+        "conditional_mean_size": 12.53586900120447,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.8730425118138787,
+        "total_variation_distance": 0.16305524319579184,
+        "reference_norm": 0.9999999999999847,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 1.3275095317090235,
+        "raw_norm_drift": 0.3275095317090235
+      },
+      "simulation_seconds": 45.137045925,
+      "metric_seconds": 2.124763697000006,
+      "elapsed_seconds": 47.26180962200001,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 24,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5632238369484904,
+        "bks_rate": 0.41014763189120435,
+        "near_bks_rate": 0.5417023135819317,
+        "quality_mass": 0.5496939511852281,
+        "conditional_mean_size": 12.68771116670885,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.7641647983865868,
+        "total_variation_distance": 0.22505851711413405,
+        "reference_norm": 0.999999999999985,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 0.7638424558577211,
+        "raw_norm_drift": -0.23615754414227885
+      },
+      "simulation_seconds": 39.414378292,
+      "metric_seconds": 1.9258538910000027,
+      "elapsed_seconds": 41.340232183000005,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0
+      }
+    }
+  ],
+  "errors": []
+}

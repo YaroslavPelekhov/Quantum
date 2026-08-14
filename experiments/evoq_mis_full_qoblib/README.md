@@ -1,90 +1,123 @@
-# Full-instance QOBLIB research cycle
+# Exact and cross-backend QAOA rank stability on QOBLIB
 
-This experiment tests transfer of low-dimensional nonlinear-ramp QAOA
-schedules on the four real `es60fst` Maximum Independent Set instances in
-QOBLIB. The split is frozen before held-out evaluation:
+Advisor-ready research artifact for the manuscript **When Better QAOA
+Schedules Depend on the Simulator: Exact and Cross-Backend Rank Reversals on
+QOBLIB**.
 
-- train: `es60fst01` (123 vertices, BKS 60) and `es60fst03` (113, BKS 55);
-- validation: `es60fst04` (162, BKS 78);
-- blind test: `es60fst02` (186, BKS 88).
+## Main result
 
-All instances use the published degree-reduction/folding/pruning pipeline with
-`max_degree=4`. Samples are unfolded to the original graph and only raw valid
-independent sets are scored. Constraint repair is disabled.
+Approximate MPS simulation can change which depth-15 QAOA schedule appears
+better on rare best-known-solution (BKS) events. The final frozen replication
+contains five real QOBLIB MIS cases, five MPS settings, three schedules, two
+exact-equivalent qubit orderings, and two independent implementations (Qiskit
+Aer and NVIDIA cuTensorNet): 300 dense backend rows.
 
-The candidate schedule has four parameters:
+- 91/100 matched-random-vs-LR cohorts preserve the exact effect sign.
+- Aer and cuTensorNet agree in 45/50 matched cohorts.
+- For exact distributions `p_i,p_j` and approximate distributions `q_i,q_j`,
+  the event-effect error satisfies
+  `|approx_effect - exact_effect| <= TVD(q_i,p_i) + TVD(q_j,p_j)`.
+- All 100 measured inequalities hold.
+- The exact-margin certificate covers 77 cohorts; all 77/77 preserve the exact
+  sign. Outside it, 14/23 signs are correct (descriptive Fisher exact
+  `p=4.30e-7`).
+- All nine sign failures occur on the 24-qubit case with the smallest exact
+  effect margin.
 
-`beta_k = delta_beta * ((p-k+1)/p)^beta_power`
+The earlier 55-qubit blind experiment provides the motivating failure: the
+transferred schedule leads 101 to 41 BKS hits at the released Aer setting, but
+the ranking reverses when only the truncation cutoff is tightened. Strong
+classical controls dominate; this work makes no quantum-advantage claim.
 
-`gamma_k = delta_gamma * (k/p)^gamma_power`
+## Start here
 
-The benchmark compares the published linear ramp `(0.7, 0.4, 1, 1)`, a
-matched-budget uniform random search, and a robust evolutionary search. Search
-fitness is based on Wilson lower bounds for feasible, BKS-1, and BKS hit rates
-plus feasible quality mass. Search cost and deployment shots are reported
-separately.
+- `ADVISOR_BRIEF.md`: one-page interpretation and discussion prompts.
+- `paper/output/pdf/qaoa_mps_cross_backend_rank_reversal_manuscript.pdf`:
+  main paper.
+- `paper/output/pdf/qaoa_mps_cross_backend_rank_reversal_supplement.pdf`:
+  full tables, certificate derivation, controls, and artifact map.
+- `CROSS_CASE_REPLICATION_PROTOCOL.md`: protocol frozen before the 240 new
+  backend jobs.
+- `results/cross_case_replication/analysis.json`: complete machine-readable
+  cross-case analysis.
+- `results/figures/cross_case_replication.pdf`: publication figure.
 
-Run with the workspace Python environment:
+## Repository map
 
-```powershell
-..\..\.venv\Scripts\python.exe run_cycle.py --stage all
+```text
+paper/                         LaTeX sources and stable PDFs
+results/cross_case_replication/
+  export_manifest.json        hashes for circuits, exact states, and reused data
+  aer_jobs.json               120 new deterministic Aer rows
+  cutensornet_jobs.json       120 new deterministic cuTensorNet rows
+  combined_jobs.json          all 300 rows
+  analysis.json               100 cohort summaries and primary outcomes
+  paper_statistics.json       intervals and descriptive Fisher test
+results/mps_ladder/            exact 24-qubit references and Aer ladder
+results/independent_ladder/    independent 24-qubit cuTensorNet ladder
+run_cross_case_replication.py  export, self-test, execute, analyze, status
+plot_cross_case_replication.py paper figure and compact tables
+test_*.py                      integrity and numerical tests
+artifact_manifest.json         SHA-256 artifact inventory
 ```
 
-Regenerate the exact-state calibration, derived tables/figures, tests, and
-manifest with:
+## Reproduce the final analysis
+
+The completed backend checkpoints can be reanalyzed without rerunning any
+simulation:
 
 ```powershell
-..\..\.venv\Scripts\python.exe run_exact_mps_calibration.py
-..\..\.venv\Scripts\python.exe run_classical_baselines.py
-..\..\.venv\Scripts\python.exe analyze_results.py
-..\..\.venv\Scripts\python.exe analyze_extended_results.py
-..\..\.venv\Scripts\python.exe -m unittest -v test_full_cycle.py
-..\..\.venv\Scripts\python.exe build_manifest.py
+$py = "C:\Users\psgpe\Downloads\Taiwan\.venv\Scripts\python.exe"
+& $py run_cross_case_replication.py analyze
+& $py plot_cross_case_replication.py
+& $py -m unittest -v test_cross_case_replication.py test_independent_ladder_audit.py
+& $py build_manifest.py
 ```
 
-The independent backend audit uses cuTensorNet in the dedicated WSL
-environment. Export circuits on Windows, then validate or sample in WSL:
+Build the paper from `paper/`:
 
 ```powershell
-..\..\.venv\Scripts\python.exe run_cutensornet_audit.py export
-wsl.exe -d Ubuntu -- bash -lc "cd /mnt/c/Users/psgpe/Downloads/Taiwan/experiments/evoq_mis_full_qoblib && ~/.venvs/evoq-cuquantum/bin/python run_cutensornet_audit.py validate --hyper-samples 32"
-wsl.exe -d Ubuntu -- bash -lc "cd /mnt/c/Users/psgpe/Downloads/Taiwan/experiments/evoq_mis_full_qoblib && ~/.venvs/evoq-cuquantum/bin/python run_cutensornet_audit.py sample --ordering spectral --simulation-mode mps --bond 128 --cutoff 1e-4 --shots 5000"
+pdflatex -interaction=nonstopmode -halt-on-error -output-directory output/pdf main.tex
+pdflatex -interaction=nonstopmode -halt-on-error -output-directory output/pdf main.tex
+pdflatex -interaction=nonstopmode -halt-on-error -output-directory output/pdf supplement.tex
+pdflatex -interaction=nonstopmode -halt-on-error -output-directory output/pdf supplement.tex
 ```
 
-The released artifacts include all raw cuTensorNet samples, exact small-kernel
-cross-checks, failed-attempt audit entries, and the classical baseline trials.
+Tested Windows analysis environment: Python 3.13.0, Qiskit 2.5.1, Aer 0.17.2,
+NumPy 2.5.1, SciPy 1.18.0, and Matplotlib 3.11.1. The independent backend uses
+the recorded WSL cuQuantum/cuTensorNet 26.6.0 environment.
 
-The code imports the frozen QOBLIB submission utility module from the cloned
-`qoblib-solutions` repository and records its Git commit in every result file.
+## Full backend execution
 
-## Strict resource-aware extension
-
-`RESOURCE_AWARE_PROTOCOL.md` freezes an additional train/validation/blind cycle
-before held-out evaluation. It jointly tests reduction caps 2--6, QAOA depths
-3--15, 35 schedule genomes, sorted/spectral tensor orderings, and two MPS
-fidelities. Exact HiGHS optimization first certifies whether the QOBLIB BKS is
-even reachable after each reduction. Candidate acceptance then requires paired
-non-inferiority for BKS, near-BKS, and feasibility at *both* simulator
-fidelities, together with an actual depth or runtime reduction.
-
-Run or resume the checkpointed stages with:
+Export and validate immutable inputs on Windows:
 
 ```powershell
-$env:OPENBLAS_NUM_THREADS='1'
-$env:OMP_NUM_THREADS='1'
-$env:MKL_NUM_THREADS='1'
-$env:NUMEXPR_NUM_THREADS='1'
-....\.venv\Scripts\python.exe run_resource_aware_cycle.py --stage all
-....\.venv\Scripts\python.exe plot_resource_aware.py
+& $py run_cross_case_replication.py export
+& $py run_cross_case_replication.py self-test-aer
+wsl.exe -d Ubuntu -- /root/.venvs/evoq-cuquantum/bin/python `
+  /mnt/c/Users/psgpe/Downloads/Taiwan/experiments/evoq_mis_full_qoblib/run_cross_case_replication.py self-test-cutn
 ```
 
-The completed frozen cycle evaluated 210 exact schedule-depth configurations,
-100 confirmation jobs on validation, and 60 blind jobs (60,000 blind shots).
-The minimum BKS-preserving reduction cap was 4. No searched candidate satisfied
-the pre-registered quality gate at both MPS fidelities, so the controller
-returned `no_eligible_resource_champion` instead of making an unsafe resource
-claim. On the blind instance, the prior matched schedule's paired BKS effect
-against the published linear ramp reversed from +0.393 percentage points under
-the released approximation to -0.420 points under tight confirmation; both
-effects were statistically significant. See `RESOURCE_AWARE_REPORT.md` and
-`results/figures/resource_aware_cycle.png`.
+The protected sequential runner executes one heavy job at a time, resumes from
+atomic checkpoints, and never issues reboot or shutdown commands:
+
+```powershell
+& C:\Users\psgpe\Downloads\Taiwan\run_cross_case_replication_safely.ps1
+```
+
+## GitHub note
+
+Six exact 24-qubit `.npy` states are 256 MiB each and exceed GitHub's normal
+100 MB file limit. Put `results/mps_ladder/references/*.npy` under Git LFS or
+publish them as a versioned release/archive. Their identities are preserved in
+`results/mps_ladder/exact_references.json` and the export manifests; the paper,
+analysis JSON, circuits, compact tables, and figures remain independently
+reviewable without downloading those dense arrays.
+
+## Scope
+
+This is an exact-calibrated simulator study, not hardware evidence. The Fisher
+test treats correlated setting cohorts descriptively; the main guarantee is
+the deterministic TVD inequality. The 55-qubit circuit remains approximate,
+and the five-case replication is limited to one MIS reduction family, three
+frozen schedules, two simulator implementations, and one GPU platform.

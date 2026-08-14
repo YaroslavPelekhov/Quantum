@@ -1,0 +1,3078 @@
+{
+  "stage": "cross_case_replication_export",
+  "complete": true,
+  "created_at": "2026-08-11T20:19:20.610484+00:00",
+  "protocol_sha256": "94d14d8425650e04bca1030a9190ff00a162cff3200867b8b9c529df6f387751",
+  "runner_sha256": "71645572499d2d9b829afee40071c3a0cdf0397230d55adf22e67d0979466e8f",
+  "qiskit": "2.5.1",
+  "cases": [
+    {
+      "name": "karate",
+      "cap": 4,
+      "qubits": 3,
+      "expected_effect": 0.08641201
+    },
+    {
+      "name": "chesapeake",
+      "cap": 12,
+      "qubits": 7,
+      "expected_effect": -0.13421359
+    },
+    {
+      "name": "football",
+      "cap": 10,
+      "qubits": 7,
+      "expected_effect": 0.01926887
+    },
+    {
+      "name": "ibm32",
+      "cap": 8,
+      "qubits": 18,
+      "expected_effect": -0.246123
+    }
+  ],
+  "reused_case": "aves-sparrow-social",
+  "depth": 15,
+  "methods": [
+    "published_lr",
+    "prior_evolutionary",
+    "prior_matched_random"
+  ],
+  "orderings": [
+    "sorted",
+    "spectral"
+  ],
+  "settings": [
+    {
+      "name": "released",
+      "bond": 64,
+      "cutoff": 0.001
+    },
+    {
+      "name": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001
+    },
+    {
+      "name": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12
+    },
+    {
+      "name": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001
+    },
+    {
+      "name": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05
+    }
+  ],
+  "expected_new_per_backend": 120,
+  "expected_total": 300,
+  "max_exact_metric_error": 9.992007221626409e-16,
+  "state_convention": "Qiskit flat amplitudes; integer bit i is qubit i",
+  "rows": [
+    {
+      "case": "chesapeake",
+      "cap": 12,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "circuit_file": "results/cross_case_replication/circuits/chesapeake__prior_evolutionary__sorted.qpy",
+      "circuit_sha256": "a05c761436ce5fb138b6953d4c30d282f21e3826e585843f823fb86619915549",
+      "reference_file": "results/cross_case_replication/references/chesapeake__prior_evolutionary__sorted.npy",
+      "reference_sha256": "d18d90af1ed6d674fd791d1f96611739ab91585d08308988ad5ec9d1f408a2ab",
+      "exact_metrics": {
+        "feasible_rate": 0.9530604341497153,
+        "bks_rate": 0.5899775389653886,
+        "near_bks_rate": 0.9490710935409744,
+        "quality_mass": 0.9314670602626528,
+        "conditional_mean_size": 16.614833075714067,
+        "best_size_nonzero_probability": 17
+      },
+      "scorer": {
+        "constant_selected": 14,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            66,
+            66
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 17
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 0.9999999999999978
+      }
+    },
+    {
+      "case": "chesapeake",
+      "cap": 12,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "circuit_file": "results/cross_case_replication/circuits/chesapeake__prior_evolutionary__spectral.qpy",
+      "circuit_sha256": "9f27f8a1ac341110b2f4057999709399a30e596b6aff7ad49271aac3055bc328",
+      "reference_file": "results/cross_case_replication/references/chesapeake__prior_evolutionary__spectral.npy",
+      "reference_sha256": "f77f39f8d0f54e571923b18f92c3aaf9e8643a49027c083f2acdbfc2a1798d3c",
+      "exact_metrics": {
+        "feasible_rate": 0.953060434149715,
+        "bks_rate": 0.5899775389653886,
+        "near_bks_rate": 0.9490710935409741,
+        "quality_mass": 0.9314670602626527,
+        "conditional_mean_size": 16.61483307571407,
+        "best_size_nonzero_probability": 17
+      },
+      "scorer": {
+        "constant_selected": 14,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            40,
+            40
+          ],
+          [
+            48,
+            48
+          ],
+          [
+            72,
+            72
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 17
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 0.9999999999999977
+      }
+    },
+    {
+      "case": "chesapeake",
+      "cap": 12,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "circuit_file": "results/cross_case_replication/circuits/chesapeake__prior_matched_random__sorted.qpy",
+      "circuit_sha256": "f1d5e3cdd24d4be91b3e3a91da8105a8a12695da5251a86453a4a67a5d2b9672",
+      "reference_file": "results/cross_case_replication/references/chesapeake__prior_matched_random__sorted.npy",
+      "reference_sha256": "33319123140073d884ee12615177491b2f21a260d7ae4f2539de4004b98af56a",
+      "exact_metrics": {
+        "feasible_rate": 0.9245870995902232,
+        "bks_rate": 0.6640795390180093,
+        "near_bks_rate": 0.9160319825900785,
+        "quality_mass": 0.9087572455035602,
+        "conditional_mean_size": 16.70894303025368,
+        "best_size_nonzero_probability": 17
+      },
+      "scorer": {
+        "constant_selected": 14,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            66,
+            66
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 17
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 0.9999999999999971
+      }
+    },
+    {
+      "case": "chesapeake",
+      "cap": 12,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "circuit_file": "results/cross_case_replication/circuits/chesapeake__prior_matched_random__spectral.qpy",
+      "circuit_sha256": "2a8fea151092fa42dbafe5c2ded6d198206a7084ac9539fb5710e0d9724cf265",
+      "reference_file": "results/cross_case_replication/references/chesapeake__prior_matched_random__spectral.npy",
+      "reference_sha256": "db81d543f698635eefdcdcdca46d68e20a638d3e612395901138136957cd5876",
+      "exact_metrics": {
+        "feasible_rate": 0.9245870995902219,
+        "bks_rate": 0.6640795390180081,
+        "near_bks_rate": 0.9160319825900772,
+        "quality_mass": 0.9087572455035589,
+        "conditional_mean_size": 16.708943030253675,
+        "best_size_nonzero_probability": 17
+      },
+      "scorer": {
+        "constant_selected": 14,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            40,
+            40
+          ],
+          [
+            48,
+            48
+          ],
+          [
+            72,
+            72
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 17
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 0.9999999999999958
+      }
+    },
+    {
+      "case": "chesapeake",
+      "cap": 12,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "circuit_file": "results/cross_case_replication/circuits/chesapeake__published_lr__sorted.qpy",
+      "circuit_sha256": "02fcc7d04a10b262d867653a6d6b3876bccac57b1e1a22c457357575f111a2e9",
+      "reference_file": "results/cross_case_replication/references/chesapeake__published_lr__sorted.npy",
+      "reference_sha256": "3299bd37610b48305ad54e71b0c65d901396103ea87be2f834d9af057506883b",
+      "exact_metrics": {
+        "feasible_rate": 0.954310114446122,
+        "bks_rate": 0.7982931304718344,
+        "near_bks_rate": 0.9511588311654873,
+        "quality_mass": 0.9449360260011823,
+        "conditional_mean_size": 16.833010777993834,
+        "best_size_nonzero_probability": 17
+      },
+      "scorer": {
+        "constant_selected": 14,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            66,
+            66
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 17
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 0.9999999999999953
+      }
+    },
+    {
+      "case": "chesapeake",
+      "cap": 12,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "circuit_file": "results/cross_case_replication/circuits/chesapeake__published_lr__spectral.qpy",
+      "circuit_sha256": "b70b87114143b211075d18dfd2cee48379b8d9984347da8b9dbfa4d75782e677",
+      "reference_file": "results/cross_case_replication/references/chesapeake__published_lr__spectral.npy",
+      "reference_sha256": "bc467e7c2ae3c0423e9d2add9585271afdf4f144ba552634073f5c54a45ad9a2",
+      "exact_metrics": {
+        "feasible_rate": 0.9543101144461223,
+        "bks_rate": 0.7982931304718348,
+        "near_bks_rate": 0.9511588311654877,
+        "quality_mass": 0.9449360260011828,
+        "conditional_mean_size": 16.833010777993834,
+        "best_size_nonzero_probability": 17
+      },
+      "scorer": {
+        "constant_selected": 14,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            40,
+            40
+          ],
+          [
+            48,
+            48
+          ],
+          [
+            72,
+            72
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 17
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 0.9999999999999957
+      }
+    },
+    {
+      "case": "football",
+      "cap": 10,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "circuit_file": "results/cross_case_replication/circuits/football__prior_evolutionary__sorted.qpy",
+      "circuit_sha256": "29ef3525d5883bd922ab255dbd5d283717c43741552189dddf57d8554b3daacd",
+      "reference_file": "results/cross_case_replication/references/football__prior_evolutionary__sorted.npy",
+      "reference_sha256": "2ac7a8fba2f158b49b96dbf679680fe6dab0cd0fb702285d0dade5ecb0d8237c",
+      "exact_metrics": {
+        "feasible_rate": 0.9184193826026866,
+        "bks_rate": 0.8701031719799216,
+        "near_bks_rate": 0.9179062145508623,
+        "quality_mass": 0.9153674318106498,
+        "conditional_mean_size": 15.946831247687514,
+        "best_size_nonzero_probability": 16
+      },
+      "scorer": {
+        "constant_selected": 13,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            72,
+            72
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 16
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 0.9999999999999992
+      }
+    },
+    {
+      "case": "football",
+      "cap": 10,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "circuit_file": "results/cross_case_replication/circuits/football__prior_evolutionary__spectral.qpy",
+      "circuit_sha256": "489584a5e1842adac9d5978708b74fe0687046ee6a1e1e7458059245f45ce911",
+      "reference_file": "results/cross_case_replication/references/football__prior_evolutionary__spectral.npy",
+      "reference_sha256": "232353dcf55f075e30f7c7f9f7b745d5fe4d48ca11319b2389a417d33ae13ca2",
+      "exact_metrics": {
+        "feasible_rate": 0.9184193826026871,
+        "bks_rate": 0.8701031719799219,
+        "near_bks_rate": 0.9179062145508626,
+        "quality_mass": 0.9153674318106502,
+        "conditional_mean_size": 15.946831247687513,
+        "best_size_nonzero_probability": 16
+      },
+      "scorer": {
+        "constant_selected": 13,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            48,
+            48
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 16
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 0.9999999999999998
+      }
+    },
+    {
+      "case": "football",
+      "cap": 10,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "circuit_file": "results/cross_case_replication/circuits/football__prior_matched_random__sorted.qpy",
+      "circuit_sha256": "769b1bd4951dc0bbaf323209e3ea97e056cf3b3f338a3c7a54850ca6a1eb885d",
+      "reference_file": "results/cross_case_replication/references/football__prior_matched_random__sorted.npy",
+      "reference_sha256": "228d66ea463640617367900d3a03bd2f825b98ee164e6e7f1f5064acd5403d0f",
+      "exact_metrics": {
+        "feasible_rate": 0.9067699396991997,
+        "bks_rate": 0.8820366866508706,
+        "near_bks_rate": 0.9063420900838317,
+        "quality_mass": 0.9051949746683126,
+        "conditional_mean_size": 15.972209664887487,
+        "best_size_nonzero_probability": 16
+      },
+      "scorer": {
+        "constant_selected": 13,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            72,
+            72
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 16
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 0.999999999999997
+      }
+    },
+    {
+      "case": "football",
+      "cap": 10,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "circuit_file": "results/cross_case_replication/circuits/football__prior_matched_random__spectral.qpy",
+      "circuit_sha256": "49f11250c9649cf1d9f9885652767f4884c681083deebd0fc3b92443f8dc3deb",
+      "reference_file": "results/cross_case_replication/references/football__prior_matched_random__spectral.npy",
+      "reference_sha256": "51dc991e4cf139b0be4e0fd14836fd057c838eecbbd6e0c4e5b8a7eb4ec1ffa6",
+      "exact_metrics": {
+        "feasible_rate": 0.9067699396991988,
+        "bks_rate": 0.8820366866508698,
+        "near_bks_rate": 0.9063420900838308,
+        "quality_mass": 0.9051949746683117,
+        "conditional_mean_size": 15.972209664887487,
+        "best_size_nonzero_probability": 16
+      },
+      "scorer": {
+        "constant_selected": 13,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            48,
+            48
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 16
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 0.9999999999999961
+      }
+    },
+    {
+      "case": "football",
+      "cap": 10,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "circuit_file": "results/cross_case_replication/circuits/football__published_lr__sorted.qpy",
+      "circuit_sha256": "093e3201a84d816685dd2caa55a1d3dfdb2e7ec0acbc1e7e1ccb81e6a8c82533",
+      "reference_file": "results/cross_case_replication/references/football__published_lr__sorted.npy",
+      "reference_sha256": "8f8f81246c16c4b4b1696c5ea6647a2ecc45539b6b9d98956a456c8efa174bf0",
+      "exact_metrics": {
+        "feasible_rate": 0.8774172882228711,
+        "bks_rate": 0.8627678117715563,
+        "near_bks_rate": 0.8773091910464449,
+        "quality_mass": 0.8764939505891596,
+        "conditional_mean_size": 15.983162627021736,
+        "best_size_nonzero_probability": 16
+      },
+      "scorer": {
+        "constant_selected": 13,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            72,
+            72
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 16
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 0.9999999999999959
+      }
+    },
+    {
+      "case": "football",
+      "cap": 10,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "circuit_file": "results/cross_case_replication/circuits/football__published_lr__spectral.qpy",
+      "circuit_sha256": "aba61caf0209628f8fadd3af3bb5a6a6b44ca8c3f4ddc10dae649062e2d05dbe",
+      "reference_file": "results/cross_case_replication/references/football__published_lr__spectral.npy",
+      "reference_sha256": "07ef350b83cdc6d88bec579264c8df7964880d5701935d96faf56a4ffac51bdc",
+      "exact_metrics": {
+        "feasible_rate": 0.8774172882228716,
+        "bks_rate": 0.8627678117715568,
+        "near_bks_rate": 0.8773091910464453,
+        "quality_mass": 0.8764939505891601,
+        "conditional_mean_size": 15.98316262702174,
+        "best_size_nonzero_probability": 16
+      },
+      "scorer": {
+        "constant_selected": 13,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            48,
+            48
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 16
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 0.9999999999999963
+      }
+    },
+    {
+      "case": "ibm32",
+      "cap": 8,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 18,
+      "depth": 15,
+      "circuit_file": "results/cross_case_replication/circuits/ibm32__prior_evolutionary__sorted.qpy",
+      "circuit_sha256": "9008c4543d030ff582ce02aca4209ab6aabff00266581215b2b3ab7d1d42fb6c",
+      "reference_file": "results/cross_case_replication/references/ibm32__prior_evolutionary__sorted.npy",
+      "reference_sha256": "162d54a36067b88bcd5df873707faa0f8a8ed85eafe2b4ccda267909cc2dfcbb",
+      "exact_metrics": {
+        "feasible_rate": 0.6667729977673921,
+        "bks_rate": 0.1385548694210972,
+        "near_bks_rate": 0.32901278089261504,
+        "quality_mass": 0.5954190742685033,
+        "conditional_mean_size": 11.608820380262078,
+        "best_size_nonzero_probability": 13
+      },
+      "scorer": {
+        "constant_selected": 5,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            40,
+            40
+          ],
+          [
+            129,
+            129
+          ],
+          [
+            136,
+            136
+          ],
+          [
+            260,
+            260
+          ],
+          [
+            272,
+            272
+          ],
+          [
+            520,
+            520
+          ],
+          [
+            576,
+            576
+          ],
+          [
+            768,
+            768
+          ],
+          [
+            1040,
+            1040
+          ],
+          [
+            2050,
+            2050
+          ],
+          [
+            2064,
+            2064
+          ],
+          [
+            2176,
+            2176
+          ],
+          [
+            3072,
+            3072
+          ],
+          [
+            4128,
+            4128
+          ],
+          [
+            8196,
+            8196
+          ],
+          [
+            8208,
+            8208
+          ],
+          [
+            8256,
+            8256
+          ],
+          [
+            8448,
+            8448
+          ],
+          [
+            12288,
+            12288
+          ],
+          [
+            16386,
+            16386
+          ],
+          [
+            16392,
+            16392
+          ],
+          [
+            16400,
+            16400
+          ],
+          [
+            20480,
+            20480
+          ],
+          [
+            32770,
+            32770
+          ],
+          [
+            49152,
+            49152
+          ],
+          [
+            65568,
+            65568
+          ],
+          [
+            65664,
+            65664
+          ],
+          [
+            65792,
+            65792
+          ],
+          [
+            67584,
+            67584
+          ],
+          [
+            131136,
+            131136
+          ],
+          [
+            132096,
+            132096
+          ],
+          [
+            133120,
+            133120
+          ],
+          [
+            135168,
+            135168
+          ],
+          [
+            163840,
+            163840
+          ]
+        ],
+        "impossible": false,
+        "bks": 13
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 0.9999999999999958
+      }
+    },
+    {
+      "case": "ibm32",
+      "cap": 8,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 18,
+      "depth": 15,
+      "circuit_file": "results/cross_case_replication/circuits/ibm32__prior_evolutionary__spectral.qpy",
+      "circuit_sha256": "5b306ffb470ea21081577dcbaef94142d200e70d0d3700efee9222cf6177740e",
+      "reference_file": "results/cross_case_replication/references/ibm32__prior_evolutionary__spectral.npy",
+      "reference_sha256": "c87fd46c40b4fd9f758562f7b0ff658192ab8a40ba115f223f4e0481d05770b2",
+      "exact_metrics": {
+        "feasible_rate": 0.6667729977673919,
+        "bks_rate": 0.13855486942109704,
+        "near_bks_rate": 0.32901278089261465,
+        "quality_mass": 0.5954190742685029,
+        "conditional_mean_size": 11.608820380262076,
+        "best_size_nonzero_probability": 13
+      },
+      "scorer": {
+        "constant_selected": 5,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            48,
+            48
+          ],
+          [
+            96,
+            96
+          ],
+          [
+            130,
+            130
+          ],
+          [
+            160,
+            160
+          ],
+          [
+            192,
+            192
+          ],
+          [
+            272,
+            272
+          ],
+          [
+            288,
+            288
+          ],
+          [
+            520,
+            520
+          ],
+          [
+            640,
+            640
+          ],
+          [
+            1028,
+            1028
+          ],
+          [
+            1280,
+            1280
+          ],
+          [
+            1536,
+            1536
+          ],
+          [
+            2056,
+            2056
+          ],
+          [
+            2064,
+            2064
+          ],
+          [
+            3072,
+            3072
+          ],
+          [
+            4104,
+            4104
+          ],
+          [
+            4128,
+            4128
+          ],
+          [
+            4160,
+            4160
+          ],
+          [
+            8704,
+            8704
+          ],
+          [
+            12288,
+            12288
+          ],
+          [
+            16640,
+            16640
+          ],
+          [
+            20480,
+            20480
+          ],
+          [
+            24576,
+            24576
+          ],
+          [
+            33792,
+            33792
+          ],
+          [
+            40960,
+            40960
+          ],
+          [
+            49152,
+            49152
+          ],
+          [
+            65664,
+            65664
+          ],
+          [
+            73728,
+            73728
+          ],
+          [
+            133120,
+            133120
+          ],
+          [
+            147456,
+            147456
+          ],
+          [
+            196608,
+            196608
+          ]
+        ],
+        "impossible": false,
+        "bks": 13
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 0.9999999999999954
+      }
+    },
+    {
+      "case": "ibm32",
+      "cap": 8,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 18,
+      "depth": 15,
+      "circuit_file": "results/cross_case_replication/circuits/ibm32__prior_matched_random__sorted.qpy",
+      "circuit_sha256": "2d52084151b31f98e898b9bd15f204f028820269e96bab641c7da5eea7c1d044",
+      "reference_file": "results/cross_case_replication/references/ibm32__prior_matched_random__sorted.npy",
+      "reference_sha256": "098291368157b4b74c96881b6dabe7e10bd69fd52996aefdbb9877773e2ef6e9",
+      "exact_metrics": {
+        "feasible_rate": 0.5210999317025354,
+        "bks_rate": 0.13096339030811388,
+        "near_bks_rate": 0.28864157314617983,
+        "quality_mass": 0.46995858121419987,
+        "conditional_mean_size": 11.724164952054,
+        "best_size_nonzero_probability": 13
+      },
+      "scorer": {
+        "constant_selected": 5,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            40,
+            40
+          ],
+          [
+            129,
+            129
+          ],
+          [
+            136,
+            136
+          ],
+          [
+            260,
+            260
+          ],
+          [
+            272,
+            272
+          ],
+          [
+            520,
+            520
+          ],
+          [
+            576,
+            576
+          ],
+          [
+            768,
+            768
+          ],
+          [
+            1040,
+            1040
+          ],
+          [
+            2050,
+            2050
+          ],
+          [
+            2064,
+            2064
+          ],
+          [
+            2176,
+            2176
+          ],
+          [
+            3072,
+            3072
+          ],
+          [
+            4128,
+            4128
+          ],
+          [
+            8196,
+            8196
+          ],
+          [
+            8208,
+            8208
+          ],
+          [
+            8256,
+            8256
+          ],
+          [
+            8448,
+            8448
+          ],
+          [
+            12288,
+            12288
+          ],
+          [
+            16386,
+            16386
+          ],
+          [
+            16392,
+            16392
+          ],
+          [
+            16400,
+            16400
+          ],
+          [
+            20480,
+            20480
+          ],
+          [
+            32770,
+            32770
+          ],
+          [
+            49152,
+            49152
+          ],
+          [
+            65568,
+            65568
+          ],
+          [
+            65664,
+            65664
+          ],
+          [
+            65792,
+            65792
+          ],
+          [
+            67584,
+            67584
+          ],
+          [
+            131136,
+            131136
+          ],
+          [
+            132096,
+            132096
+          ],
+          [
+            133120,
+            133120
+          ],
+          [
+            135168,
+            135168
+          ],
+          [
+            163840,
+            163840
+          ]
+        ],
+        "impossible": false,
+        "bks": 13
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 0.9999999999999913
+      }
+    },
+    {
+      "case": "ibm32",
+      "cap": 8,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 18,
+      "depth": 15,
+      "circuit_file": "results/cross_case_replication/circuits/ibm32__prior_matched_random__spectral.qpy",
+      "circuit_sha256": "70203a10a5ad2fe8f7bbc45f7b0ac13419d910ee3acbfbeb84f5d0caef37fb62",
+      "reference_file": "results/cross_case_replication/references/ibm32__prior_matched_random__spectral.npy",
+      "reference_sha256": "b01287560f653ed3e9f3726f69db7e292192e8093cec910cb641fa6815c66e0c",
+      "exact_metrics": {
+        "feasible_rate": 0.5210999317025361,
+        "bks_rate": 0.1309633903081142,
+        "near_bks_rate": 0.28864157314618033,
+        "quality_mass": 0.46995858121420064,
+        "conditional_mean_size": 11.724164952054002,
+        "best_size_nonzero_probability": 13
+      },
+      "scorer": {
+        "constant_selected": 5,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            48,
+            48
+          ],
+          [
+            96,
+            96
+          ],
+          [
+            130,
+            130
+          ],
+          [
+            160,
+            160
+          ],
+          [
+            192,
+            192
+          ],
+          [
+            272,
+            272
+          ],
+          [
+            288,
+            288
+          ],
+          [
+            520,
+            520
+          ],
+          [
+            640,
+            640
+          ],
+          [
+            1028,
+            1028
+          ],
+          [
+            1280,
+            1280
+          ],
+          [
+            1536,
+            1536
+          ],
+          [
+            2056,
+            2056
+          ],
+          [
+            2064,
+            2064
+          ],
+          [
+            3072,
+            3072
+          ],
+          [
+            4104,
+            4104
+          ],
+          [
+            4128,
+            4128
+          ],
+          [
+            4160,
+            4160
+          ],
+          [
+            8704,
+            8704
+          ],
+          [
+            12288,
+            12288
+          ],
+          [
+            16640,
+            16640
+          ],
+          [
+            20480,
+            20480
+          ],
+          [
+            24576,
+            24576
+          ],
+          [
+            33792,
+            33792
+          ],
+          [
+            40960,
+            40960
+          ],
+          [
+            49152,
+            49152
+          ],
+          [
+            65664,
+            65664
+          ],
+          [
+            73728,
+            73728
+          ],
+          [
+            133120,
+            133120
+          ],
+          [
+            147456,
+            147456
+          ],
+          [
+            196608,
+            196608
+          ]
+        ],
+        "impossible": false,
+        "bks": 13
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 0.9999999999999925
+      }
+    },
+    {
+      "case": "ibm32",
+      "cap": 8,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 18,
+      "depth": 15,
+      "circuit_file": "results/cross_case_replication/circuits/ibm32__published_lr__sorted.qpy",
+      "circuit_sha256": "2649b1c828b2c4e5c5fd88023814d10f5b955110adbe244c4317dbc4b513922b",
+      "reference_file": "results/cross_case_replication/references/ibm32__published_lr__sorted.npy",
+      "reference_sha256": "e48a7861528e8f54f0636900c6731cd4436c6594a1dc3d273f0920e44fec225d",
+      "exact_metrics": {
+        "feasible_rate": 0.7207620860254875,
+        "bks_rate": 0.3770863914362438,
+        "near_bks_rate": 0.5741530159610277,
+        "quality_mass": 0.6823130499244873,
+        "conditional_mean_size": 12.306515313438213,
+        "best_size_nonzero_probability": 13
+      },
+      "scorer": {
+        "constant_selected": 5,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            40,
+            40
+          ],
+          [
+            129,
+            129
+          ],
+          [
+            136,
+            136
+          ],
+          [
+            260,
+            260
+          ],
+          [
+            272,
+            272
+          ],
+          [
+            520,
+            520
+          ],
+          [
+            576,
+            576
+          ],
+          [
+            768,
+            768
+          ],
+          [
+            1040,
+            1040
+          ],
+          [
+            2050,
+            2050
+          ],
+          [
+            2064,
+            2064
+          ],
+          [
+            2176,
+            2176
+          ],
+          [
+            3072,
+            3072
+          ],
+          [
+            4128,
+            4128
+          ],
+          [
+            8196,
+            8196
+          ],
+          [
+            8208,
+            8208
+          ],
+          [
+            8256,
+            8256
+          ],
+          [
+            8448,
+            8448
+          ],
+          [
+            12288,
+            12288
+          ],
+          [
+            16386,
+            16386
+          ],
+          [
+            16392,
+            16392
+          ],
+          [
+            16400,
+            16400
+          ],
+          [
+            20480,
+            20480
+          ],
+          [
+            32770,
+            32770
+          ],
+          [
+            49152,
+            49152
+          ],
+          [
+            65568,
+            65568
+          ],
+          [
+            65664,
+            65664
+          ],
+          [
+            65792,
+            65792
+          ],
+          [
+            67584,
+            67584
+          ],
+          [
+            131136,
+            131136
+          ],
+          [
+            132096,
+            132096
+          ],
+          [
+            133120,
+            133120
+          ],
+          [
+            135168,
+            135168
+          ],
+          [
+            163840,
+            163840
+          ]
+        ],
+        "impossible": false,
+        "bks": 13
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 0.9999999999999915
+      }
+    },
+    {
+      "case": "ibm32",
+      "cap": 8,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 18,
+      "depth": 15,
+      "circuit_file": "results/cross_case_replication/circuits/ibm32__published_lr__spectral.qpy",
+      "circuit_sha256": "90732484a9b56e80321268071d57977a4492b02d77f37ddf9cc0578c6b906ab3",
+      "reference_file": "results/cross_case_replication/references/ibm32__published_lr__spectral.npy",
+      "reference_sha256": "20f25054a94540cc82bb0103a6602379b80710dc798b9e145235715f5e64cc97",
+      "exact_metrics": {
+        "feasible_rate": 0.7207620860254884,
+        "bks_rate": 0.3770863914362447,
+        "near_bks_rate": 0.5741530159610284,
+        "quality_mass": 0.682313049924488,
+        "conditional_mean_size": 12.306515313438211,
+        "best_size_nonzero_probability": 13
+      },
+      "scorer": {
+        "constant_selected": 5,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            48,
+            48
+          ],
+          [
+            96,
+            96
+          ],
+          [
+            130,
+            130
+          ],
+          [
+            160,
+            160
+          ],
+          [
+            192,
+            192
+          ],
+          [
+            272,
+            272
+          ],
+          [
+            288,
+            288
+          ],
+          [
+            520,
+            520
+          ],
+          [
+            640,
+            640
+          ],
+          [
+            1028,
+            1028
+          ],
+          [
+            1280,
+            1280
+          ],
+          [
+            1536,
+            1536
+          ],
+          [
+            2056,
+            2056
+          ],
+          [
+            2064,
+            2064
+          ],
+          [
+            3072,
+            3072
+          ],
+          [
+            4104,
+            4104
+          ],
+          [
+            4128,
+            4128
+          ],
+          [
+            4160,
+            4160
+          ],
+          [
+            8704,
+            8704
+          ],
+          [
+            12288,
+            12288
+          ],
+          [
+            16640,
+            16640
+          ],
+          [
+            20480,
+            20480
+          ],
+          [
+            24576,
+            24576
+          ],
+          [
+            33792,
+            33792
+          ],
+          [
+            40960,
+            40960
+          ],
+          [
+            49152,
+            49152
+          ],
+          [
+            65664,
+            65664
+          ],
+          [
+            73728,
+            73728
+          ],
+          [
+            133120,
+            133120
+          ],
+          [
+            147456,
+            147456
+          ],
+          [
+            196608,
+            196608
+          ]
+        ],
+        "impossible": false,
+        "bks": 13
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 0.9999999999999925
+      }
+    },
+    {
+      "case": "karate",
+      "cap": 4,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 3,
+      "depth": 15,
+      "circuit_file": "results/cross_case_replication/circuits/karate__prior_evolutionary__sorted.qpy",
+      "circuit_sha256": "1e0d70b572b1e749d0cda6fb50bc650566d83cc2394995232929f3844448687b",
+      "reference_file": "results/cross_case_replication/references/karate__prior_evolutionary__sorted.npy",
+      "reference_sha256": "5553beb077b0c76c2644fd55751e6bef36eaf1c57e7d91d40ce20dcb1585491b",
+      "exact_metrics": {
+        "feasible_rate": 0.9991491390105716,
+        "bks_rate": 0.9988957280473394,
+        "near_bks_rate": 0.9991491390105716,
+        "quality_mass": 0.9991364684624098,
+        "conditional_mean_size": 19.999746373235645,
+        "best_size_nonzero_probability": 20
+      },
+      "scorer": {
+        "constant_selected": 19,
+        "weights": [
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "impossible": false,
+        "bks": 20
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 0.9999999999999988
+      }
+    },
+    {
+      "case": "karate",
+      "cap": 4,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 3,
+      "depth": 15,
+      "circuit_file": "results/cross_case_replication/circuits/karate__prior_evolutionary__spectral.qpy",
+      "circuit_sha256": "d77c3800a5f19724e5e149972d299287a6a9b3082217cb859a1c178c51f31b17",
+      "reference_file": "results/cross_case_replication/references/karate__prior_evolutionary__spectral.npy",
+      "reference_sha256": "fe3270e8cb3362f7278731f948468d564ab90fb8657c9513abb78e11f9d20bf6",
+      "exact_metrics": {
+        "feasible_rate": 0.9991491390105717,
+        "bks_rate": 0.9988957280473395,
+        "near_bks_rate": 0.9991491390105717,
+        "quality_mass": 0.9991364684624101,
+        "conditional_mean_size": 19.999746373235652,
+        "best_size_nonzero_probability": 20
+      },
+      "scorer": {
+        "constant_selected": 19,
+        "weights": [
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "impossible": false,
+        "bks": 20
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 0.9999999999999991
+      }
+    },
+    {
+      "case": "karate",
+      "cap": 4,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 3,
+      "depth": 15,
+      "circuit_file": "results/cross_case_replication/circuits/karate__prior_matched_random__sorted.qpy",
+      "circuit_sha256": "35a7e1b6ba9d9048981dd77d091e30b86f00d7b6f9e08b141d16718d567a7abe",
+      "reference_file": "results/cross_case_replication/references/karate__prior_matched_random__sorted.npy",
+      "reference_sha256": "334fd6cbba7b5e42a371156d831591db74b53d55456efcde998fb75de6a32b88",
+      "exact_metrics": {
+        "feasible_rate": 0.9956932700991106,
+        "bks_rate": 0.995234158667834,
+        "near_bks_rate": 0.9956932700991106,
+        "quality_mass": 0.9956703145275467,
+        "conditional_mean_size": 19.999538902747403,
+        "best_size_nonzero_probability": 20
+      },
+      "scorer": {
+        "constant_selected": 19,
+        "weights": [
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "impossible": false,
+        "bks": 20
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 0.9999999999999978
+      }
+    },
+    {
+      "case": "karate",
+      "cap": 4,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 3,
+      "depth": 15,
+      "circuit_file": "results/cross_case_replication/circuits/karate__prior_matched_random__spectral.qpy",
+      "circuit_sha256": "fa012348762c5c8f33a85b9bce1f1986ab4c8ea8ae98d009888d3580162f4123",
+      "reference_file": "results/cross_case_replication/references/karate__prior_matched_random__spectral.npy",
+      "reference_sha256": "256b7e0b4ab3cb210bae5ec8bcb696c0c09da7c57630bd2b22f958de65bcc0bf",
+      "exact_metrics": {
+        "feasible_rate": 0.9956932700991101,
+        "bks_rate": 0.9952341586678336,
+        "near_bks_rate": 0.9956932700991101,
+        "quality_mass": 0.9956703145275463,
+        "conditional_mean_size": 19.9995389027474,
+        "best_size_nonzero_probability": 20
+      },
+      "scorer": {
+        "constant_selected": 19,
+        "weights": [
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "impossible": false,
+        "bks": 20
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 0.9999999999999973
+      }
+    },
+    {
+      "case": "karate",
+      "cap": 4,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 3,
+      "depth": 15,
+      "circuit_file": "results/cross_case_replication/circuits/karate__published_lr__sorted.qpy",
+      "circuit_sha256": "16aaef638e6760a26466ae333df17b34cd5348ece69e1ec67624cfe091d17861",
+      "reference_file": "results/cross_case_replication/references/karate__published_lr__sorted.npy",
+      "reference_sha256": "3f952286c9e50f55f5a763c84d6b113ff3733bab9f93a6c5ab2324583cd76a70",
+      "exact_metrics": {
+        "feasible_rate": 0.9138506637050976,
+        "bks_rate": 0.9088221515603738,
+        "near_bks_rate": 0.9138506637050976,
+        "quality_mass": 0.9135992380978613,
+        "conditional_mean_size": 19.99449744652552,
+        "best_size_nonzero_probability": 20
+      },
+      "scorer": {
+        "constant_selected": 19,
+        "weights": [
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "impossible": false,
+        "bks": 20
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 0.9999999999999981
+      }
+    },
+    {
+      "case": "karate",
+      "cap": 4,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 3,
+      "depth": 15,
+      "circuit_file": "results/cross_case_replication/circuits/karate__published_lr__spectral.qpy",
+      "circuit_sha256": "932e6ec682400982adfaf96bbf0ad3e1254e30304217729e0694bbc2f4375960",
+      "reference_file": "results/cross_case_replication/references/karate__published_lr__spectral.npy",
+      "reference_sha256": "38e0f86d6ba0fcbfce7e0d17a2787f4c1148d9e095ef5c177679d9329d19e537",
+      "exact_metrics": {
+        "feasible_rate": 0.9138506637050978,
+        "bks_rate": 0.908822151560374,
+        "near_bks_rate": 0.9138506637050978,
+        "quality_mass": 0.9135992380978617,
+        "conditional_mean_size": 19.99449744652552,
+        "best_size_nonzero_probability": 20
+      },
+      "scorer": {
+        "constant_selected": 19,
+        "weights": [
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "impossible": false,
+        "bks": 20
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 0.9999999999999986
+      }
+    }
+  ],
+  "self_test": {
+    "qubits": 4,
+    "circuit_file": "results/cross_case_replication/circuits/self_test.qpy",
+    "circuit_sha256": "f38b2f2f3ca244b43f9fc960282ac5078bb22962cdd8c6c81dc3d2e22cfa4bc2",
+    "reference_file": "results/cross_case_replication/references/self_test_reference.npy",
+    "reference_sha256": "4d45f40488cdc2ef3ce4053d2f9d1fa8dd09b4482aac5c9563d0a1106cee1889",
+    "scorer": {
+      "constant_selected": 1,
+      "weights": [
+        2,
+        -1,
+        3,
+        1
+      ],
+      "forbidden": [
+        [
+          3,
+          3
+        ],
+        [
+          12,
+          4
+        ]
+      ],
+      "impossible": false,
+      "bks": 5
+    },
+    "exact_metrics": {
+      "feasible_rate": 0.5,
+      "bks_rate": 0.016918163598491395,
+      "near_bks_rate": 0.016918163598491395,
+      "quality_mass": 0.018190292224478943,
+      "conditional_mean_size": 0.24868454416388078,
+      "best_size_nonzero_probability": 7
+    }
+  },
+  "reused_artifacts": [
+    {
+      "file": "results/external_validity/exact_statevector.json",
+      "sha256": "88f04008a1d50e9057a4e46357e439c2ba9d08a71cc75f339cf8bd976d288670"
+    },
+    {
+      "file": "results/mps_ladder/mps_ladder.json",
+      "sha256": "05c9fa966ca9852aed16c6b3377b46275ebe2e4b1ac0da135b8ffb7635ec66a8"
+    },
+    {
+      "file": "results/independent_ladder/mps_jobs.json",
+      "sha256": "c033c083023e9065c8a14de37df4006d3d6b447d00752a2056bbfb04414faae4"
+    },
+    {
+      "file": "results/independent_ladder/export_manifest.json",
+      "sha256": "0acef4c08541207e7cef68df81c1a8561edd02a8e7ad5c8df9b773f91ab14877"
+    }
+  ]
+}

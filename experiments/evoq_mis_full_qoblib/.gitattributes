@@ -1,0 +1,9 @@
+# Dense 24-qubit exact states exceed GitHub's regular 100 MB object limit.
+results/mps_ladder/references/*.npy filter=lfs diff=lfs merge=lfs -text
+
+# Keep scientific source and compact artifacts diffable.
+*.py text eol=lf
+*.md text eol=lf
+*.tex text eol=lf
+*.json text eol=lf
+*.csv text eol=lf

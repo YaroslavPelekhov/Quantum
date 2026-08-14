@@ -31,3 +31,11 @@ Thumbs.db
 *.pem
 *.key
 
+# Dense exact states exceed GitHub's normal 100 MB object limit.
+experiments/evoq_mis_full_qoblib/results/mps_ladder/references/*.npy
+
+# Protected-runner runtime state is local, not a scientific result.
+experiments/evoq_mis_full_qoblib/results/**/safe_runner.lock
+experiments/evoq_mis_full_qoblib/results/**/safe_runner*.log
+experiments/evoq_mis_full_qoblib/results/**/resource_monitor.csv
+

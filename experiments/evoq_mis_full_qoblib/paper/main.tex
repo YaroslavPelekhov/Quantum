@@ -24,7 +24,7 @@
 \newcommand{\anon}{Anonymous Authors}
 
 \title{When Better QAOA Schedules Depend on the Simulator:\\
-Truncation-Induced Rank Reversals on a 55-Qubit QOBLIB Benchmark}
+Exact and Cross-Backend Rank Reversals on QOBLIB}
 \author{\anon\\\small Research draft; author names and affiliations withheld}
 \date{}
 
@@ -32,39 +32,24 @@ Truncation-Induced Rank Reversals on a 55-Qubit QOBLIB Benchmark}
 \maketitle
 
 \begin{abstract}
-Approximate tensor-network simulators make variational quantum algorithms
-accessible beyond the statevector limit, but algorithm rankings are often
-reported at a single approximation setting. We test whether such a ranking is
-stable for depth-15 Quantum Approximate Optimization Algorithm (QAOA)
-schedules on a real Maximum Independent Set benchmark. A four-parameter
-nonlinear ramp was selected on full QOBLIB ES60FST instances and deployed
-without retuning to \texttt{es60fst02}, a 186-vertex graph reduced by a
-published pipeline to 55 qubits and 91 edges. At the released Aer matrix
-product state (MPS) setting (bond dimension 64, truncation threshold
-$10^{-3}$), 15 paired jobs and 15,000 shots per method yielded 101 best-known
-solution (BKS) hits for the nonlinear ramp and 41 for the published linear
-ramp: probabilities $0.00673$ and $0.00273$, a paired difference of $0.00400$
-(bootstrap 95\% CI $[0.00247,0.00553]$, exact sign-flip $p=2.44\times10^{-4}$).
-However, tightening only the truncation threshold to $10^{-4}$ reversed the
-BKS ranking: in 10,000 shots, the linear and nonlinear ramps reached $0.0153$
-and $0.0109$, respectively. An intermediate threshold $3\times10^{-4}$ still
-favored the nonlinear ramp, while raising the bond cap from 64 to 96 at
-$10^{-3}$ did not reverse the ranking. Feasible probability and probability
-of BKS-1-or-better outcomes remained higher for the nonlinear ramp across all
-tested settings. Thus, a rare-event optimum-hit metric can rank transferred
-QAOA schedules differently as MPS truncation is tightened even when broader
-distributional metrics agree. Exact-state calibration on the 12- and 15-qubit
-donor kernels confirms that threshold $10^{-3}$ produces total-variation error
-$0.05$--$0.07$ and schedule-dependent positive BKS bias; at $10^{-6}$ all
-state fidelities exceed $0.99983$ and absolute BKS error is below
-$2.3\times10^{-4}$. An independent cuTensorNet implementation reproduces exact
-small-kernel states at unit fidelity. On the 55-qubit circuit, its spectral-order
-bond-128 MPS changes from 15 versus 6 nonlinear/LR BKS hits at cutoff $10^{-3}$
-to 11 versus 12 at $10^{-4}$ in 5,000 shots per method. Classical controls
-dominate both: HiGHS proves BKS 88 in 0.036 seconds, and randomized minimum-degree
-greedy reaches BKS in 7.55\% of 15,000 full-graph starts. The result motivates
-convergence sweeps and classical controls as required components of
-approximate-simulator optimization benchmarks.
+Approximate tensor-network simulators extend variational quantum algorithms
+beyond the statevector limit, but rankings are often reported at one accuracy
+setting. We test ranking stability for depth-15 QAOA schedules on real QOBLIB
+Maximum Independent Set benchmarks. On a 186-vertex graph reduced to 55 qubits,
+the released Aer MPS setting gives 101 best-known-solution (BKS) hits for a
+transferred nonlinear ramp and 41 for the published linear ramp in 15,000 shots
+each; tightening only the cutoff reverses the BKS ranking. We then freeze a
+five-case exact replication with five MPS settings, three schedules, two qubit
+orderings, and Aer and cuTensorNet: 300 dense backend rows, including 240 new
+executions. For schedules $i,j$, the event-effect error obeys
+$|\widetilde\Delta-\Delta|\leq\mathrm{TV}_i+\mathrm{TV}_j$. All 100 tested
+backend/setting/ordering inequalities hold. The certificate
+$(\mathrm{TV}_i+\mathrm{TV}_j)/|\Delta|<1$ covers 77 cohorts and all 77 preserve
+the exact sign; outside it, only 14 of 23 do (Fisher exact
+$p=4.30\times10^{-7}$). Overall sign correctness is 91/100 and cross-backend
+sign agreement is 45/50, with all nine sign failures concentrated in the
+24-qubit, smallest-margin case. Thus rare-event rankings require
+observable-level error budgets rather than a single nominal MPS setting.
 \end{abstract}
 
 \section{Introduction}
@@ -105,15 +90,22 @@ Our contributions are:
   showing that the random-search champion, not the evolutionary operator,
   transfers best;
   \item 15 paired MPS jobs at the published simulator setting, with bootstrap
-  intervals and an exact paired randomization test; and
+  intervals and an exact paired randomization test;
   \item a bond/threshold sensitivity audit that identifies a truncation-induced
-  BKS rank reversal while near-optimal and feasible-mass rankings remain stable.
+  BKS rank reversal while near-optimal and feasible-mass rankings remain stable;
+  and
+  \item dense exact adjudication on five real QOBLIB kernels (3--24 qubits),
+  followed by a frozen 300-row Aer/cuTensorNet replication; and
+  \item an observable-level TVD certificate that preserves the exact ranking in
+  all 77 certified cohorts and isolates all nine observed failures outside the
+  certified region.
 \end{enumerate}
 
 We do not claim quantum advantage, an exact simulation of the 55-qubit state,
 or universal superiority of the nonlinear ramp. The main claim is about
 benchmark validity: schedule rankings based on rare optimum hits can depend on
-an approximate simulator's truncation setting.
+the truncation setting, backend implementation, and qubit ordering even when
+all circuits are exactly equivalent before truncation.
 
 \section{Background and related work}
 
@@ -276,6 +268,40 @@ We report state fidelity, total-variation distance, Jensen-Shannon divergence,
 and signed errors in BKS, near-BKS, feasibility, and quality mass. These are
 probability-exact comparisons with no measurement noise.
 
+\subsection{Exact external adjudication and cross-backend ladder}
+
+After the 55-qubit study, we froze a separate exact cross-case experiment on
+five real QOBLIB instances: \texttt{karate}, \texttt{chesapeake},
+\texttt{football}, \texttt{ibm32}, and \texttt{aves-sparrow-social}. Their
+frozen reductions contain 3, 7, 7, 18, and 24 qubits. We evaluate the published
+LR, prior evolutionary, and prior matched-random depth-15 schedules under
+sorted and spectral qubit orderings. Dense statevectors enumerate every
+outcome; the QOBLIB unfolding and feasibility rules are compiled into bit
+literals and accumulated without shots or repair.
+
+The independent ladder fixes five points before execution: bond/cutoff
+$(64,10^{-3})$, $(128,10^{-4})$, $(128,10^{-12})$,
+$(1024,10^{-4})$, and $(1024,10^{-5})$. The six native circuits are exported as
+hashed QPY files to cuTensorNet 26.6. Both backends return dense approximate
+states, which are normalized and compared with the six exact states by fidelity,
+total variation, and application metrics. The design contains exactly
+$5\ \text{cases}\times5\ \text{settings}\times3\ \text{schedules}\times
+2\ \text{orderings}\times2\ \text{backends}=300$ dense rows. The completed
+60-row 24-qubit cohort was reused only after SHA-256 validation; the other 240
+rows were executed after the cross-case protocol was frozen. The primary
+estimand is the sign of matched-random-minus-LR BKS probability; incomplete
+cohorts are not interpreted.
+
+For BKS event $A$, exact distributions $p_i,p_j$, and approximate distributions
+$q_i,q_j$, we pre-specify the observable-rank certificate
+\begin{equation}
+|[q_i(A)-q_j(A)]-[p_i(A)-p_j(A)]|
+\leq \mathrm{TV}(q_i,p_i)+\mathrm{TV}(q_j,p_j).
+\label{eq:tvd-cert}
+\end{equation}
+The exact sign is certified whenever $|p_i(A)-p_j(A)|$ exceeds the right-hand
+side. Its derivation and complete cohort table are provided in the Supplement.
+
 \section{Results}
 
 \subsection{Search method is not the source of the gain}
@@ -401,7 +427,88 @@ rare-event bias is schedule-dependent and need not be monotone.}
 \label{fig:calibration}
 \end{figure*}
 
-\subsection{Independent backend and classical controls}
+\subsection{Cross-case replication and rank certificate}
+
+The five exact matched-random-minus-LR BKS effects are $+0.086412$ for
+\texttt{karate}, $-0.134214$ for \texttt{chesapeake}, $+0.019269$ for
+\texttt{football}, $-0.246123$ for \texttt{ibm32}, and $-0.012139$ for
+\texttt{aves-sparrow-social}. The design therefore spans both effect signs,
+3--24 qubits, and a 20-fold range of nonzero effect magnitudes.
+
+Figure~\ref{fig:crosscase} summarizes all 100 backend/setting/ordering cohorts.
+Equation~\ref{eq:tvd-cert} holds in every cohort; the largest numerical excess
+of observed error over its bound is $6.6\times10^{-16}$, consistent with
+floating-point accumulation. Overall, 91/100 approximate matched effects have
+the exact sign and Aer/cuTensorNet agree in 45/50 matched cohorts. The exact
+margin exceeds the TVD error budget in 77/100 cohorts. Every one of these 77
+certified cohorts is sign-correct (Clopper--Pearson 95\% lower bound 0.953),
+whereas 14/23 uncertified cohorts are correct. This contrast is descriptive but
+large (two-sided Fisher exact $p=4.30\times10^{-7}$); the guarantee itself comes
+from Eq.~\ref{eq:tvd-cert}, not from the test.
+
+The per-case pattern supports an effect-margin explanation rather than a qubit
+count rule. \texttt{karate} and \texttt{chesapeake} are universally certified
+from the released point; \texttt{football} first becomes universal at the
+confirm point and \texttt{ibm32} at bond 1024/cutoff $10^{-4}$. All 80 cohorts
+on these four cases preserve the exact sign, including three conservative false
+negatives of the certificate. The smallest-margin 24-qubit case accounts for
+all nine sign failures and all five cross-backend sign disagreements. Its
+tightest setting is sign-correct in all four backend/order combinations but is
+still not universally TVD-certified, illustrating that a sufficient
+certificate need not be necessary.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.98\textwidth]{../results/figures/cross_case_replication.pdf}
+\caption{Frozen five-case exact replication. (a) Observed matched-effect error
+never exceeds the sum of schedule TVDs. (b) The normalized TVD budget provides
+a deterministic sign certificate below one; crosses mark wrong-sign cohorts.
+(c) Correct and certified cohorts among the four backend/order combinations at
+each case and MPS setting.}
+\label{fig:crosscase}
+\end{figure*}
+
+\subsection{Exact 24-qubit cross-backend adjudication}
+
+The exact 24-qubit BKS probabilities are 0.323277 for LR, 0.311138 for the
+matched-random schedule, and 0.425256 for the evolutionary schedule. They are
+invariant to the two exact-equivalent qubit orderings. Thus the exact
+matched-random-minus-LR effect is $-0.012139$: the small positive advantages
+seen at several approximate settings have the wrong sign.
+
+Figure~\ref{fig:independent} gives all ten matched-effect cohorts. At the
+released point Aer reports $+0.138479$ and $+0.105273$ for sorted and spectral
+ordering. cuTensorNet instead reports $-0.008287$ and $+0.016849$, so even the
+direction of the error is backend- and ordering-dependent. The nominal confirm
+point remains sign-wrong for both Aer orderings and for spectral cuTensorNet.
+At bond 128 with cutoff $10^{-12}$ Aer has the correct sign in both orderings,
+whereas cuTensorNet does so only in sorted order.
+
+The sharpest cross-backend result occurs at bond 1024 and cutoff $10^{-4}$:
+cuTensorNet has the correct sign in both orderings, minimum state fidelity
+0.997210, and maximum BKS error 0.000150, while Aer has the wrong sign in both.
+Only cutoff $10^{-5}$ gives the correct sign for every tested backend and
+ordering. At that point cuTensorNet's minimum fidelity is 0.999982 and maximum
+BKS error is 0.000229; Aer's corresponding minimum fidelity is 0.990609. A
+named bond/cutoff pair therefore does not define a portable accuracy level
+across MPS implementations.
+
+Across 20 backend/setting/ordering cohorts, 11 realized signs are correct but
+only five satisfy the stricter TVD margin certificate; all five are correct.
+The complete certificate audit is given in the Supplement.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.88\textwidth]{../results/figures/independent_ladder.pdf}
+\caption{Exact-calibrated matched-random-minus-LR BKS effects on the 24-qubit
+\texttt{aves-sparrow-social} kernel. The dashed line is the dense exact effect;
+green rings mark cuTensorNet points with its correct sign. Aer and cuTensorNet
+can disagree in sign at the same nominal bond/cutoff, and qubit ordering changes
+the approximate ranking despite exact equivalence.}
+\label{fig:independent}
+\end{figure*}
+
+\subsection{55-qubit independent backend and classical controls}
 
 At spectral ordering and bond 128, independent cuTensorNet MPS yields 15 versus
 6 BKS hits for nonlinear versus LR at cutoff $10^{-3}$ in 5,000 shots per
@@ -440,17 +547,21 @@ this mechanism directly: global distribution error falls smoothly as the
 threshold tightens, while signed BKS error is schedule-specific and crosses
 zero for LR.
 
-The experiment does not identify which schedule is closer to the exact
-55-qubit state. Convergence would require tighter settings, an independent
-exact sampler, or quantum-hardware evidence. The correct conclusion is not that
-LR is truly better at $10^{-4}$, but that neither BKS ranking is established by
-a single approximate setting.
+The 55-qubit experiment does not identify which schedule is closer to its exact
+state. Convergence there would require tighter settings, an independent exact
+sampler, or quantum-hardware evidence. The five-case exact replication resolves
+the mechanism across a broader range: large-margin cases remain sign-stable,
+while failures concentrate where the accumulated event-error budget exceeds
+the exact schedule margin. The correct general conclusion remains that a BKS
+ranking is not established by a single approximate setting.
 
-The independent backend narrows this statement: changing implementation,
-qubit ordering, bond cap, and cutoff changes absolute tail probabilities and
-removes either schedule's stable BKS advantage. In contrast, the feasible-mass
-ordering survives. Qubit ordering must therefore be reported alongside the
-usual MPS truncation controls.
+The independent backend strengthens this statement. On the exact-calibrated
+24-qubit case, changing implementation or qubit ordering changes the sign at
+fixed nominal MPS controls. Across all cases, cross-backend sign agreement is
+45/50 rather than automatic. The cutoff needed for agreement is therefore an
+empirical property of the backend--circuit--observable triple, not a portable
+fidelity specification. Qubit ordering and backend version must be reported
+alongside the usual MPS truncation controls.
 
 \subsection{Implications for optimization benchmarks}
 
@@ -461,6 +572,10 @@ We recommend that approximate-simulator submissions report:
   \item at least three accuracy points bracketing the reported setting;
   \item ranking stability for every headline observable, not only average
   energy or a simulator fidelity proxy;
+  \item an exact-state or independent-backend anchor whenever the target size
+  permits one;
+  \item an observable-level error budget, such as the TVD rank certificate,
+  when a winner is declared by a probability difference;
   \item raw counts, shot budgets, and confidence intervals for rare-event
   metrics; and
   \item a distinction between conclusions stable across settings and those
@@ -475,17 +590,21 @@ first transpiled run remains archived rather than silently deleted.
 
 \subsection{Limitations}
 
-The study uses one four-instance graph family and one MIS reduction policy. The
+The transfer study uses one four-instance graph family and one MIS reduction
+policy. The
 high-degree pruning step is heuristic, although all reported samples are valid
 on the original graph and BKS values refer to the full instances. Only two
-principal schedules receive the full threshold sweep. For the 55-qubit circuit
+principal schedules receive the full 55-qubit threshold sweep. For that circuit
 we do not compute state fidelity, discarded-weight accumulation, or exact
-probabilities. Direct cuTensorNet contraction matches all small exact controls
-but its 55-qubit sampler returns an internal preparation error; the independent
-large-circuit results remain approximate. Both MPS simulators are noiseless and
-neither constitutes hardware evidence. Exact-state
-calibration is limited to the 12- and 15-qubit members of the same family and
-cannot certify convergence of the 55-qubit state. Finally, the
+probabilities. Direct cuTensorNet contraction matches the small exact controls
+but its 55-qubit exact sampler returns an internal preparation error; the
+independent large-circuit results remain approximate. The dense replication
+adds five exact instances but covers five selected MPS points, three frozen
+schedules, and two software backends on one GPU. Its 100 cohorts are not
+independent statistical samples of a population: settings and orderings share
+circuits, so the Fisher test is descriptive and the TVD theorem is the primary
+support. Both simulators are noiseless and neither constitutes hardware
+evidence. Finally, the
 10,000-shot sensitivity points are single simulator jobs, so their binomial
 precision is high but job-to-job implementation effects are not separately
 estimated.
@@ -496,28 +615,29 @@ The experiment records Python, Qiskit, Aer, cuTensorNet, NumPy, operating-system
 the cloned baseline commit, and a SHA-256 digest of the frozen protocol.
 Training, validation, blind testing, the discarded transpilation audit, every
 fidelity point, independent-backend job, and classical run are separate JSON
-artifacts. Checkpoints are written after long jobs. Eight integrity tests verify
+artifacts. Checkpoints are written after long jobs. The test suite verifies
 the published ramp formula, split disjointness, the 186-to-55 reduction,
 disabled repair, balanced blind artifacts, exact calibration, classical
-feasibility, cuTensorNet unit-fidelity controls, and both 5,000-shot independent
-points. Analysis scripts regenerate CSV tables and all three figures; the
-exact-calibration artifact contains 56 complete state comparisons.
+feasibility, cuTensorNet axis conventions and unit-fidelity controls, the two
+5,000-shot points, completeness of the 300-row replication, and NumPy-safe
+artifact serialization. Analysis scripts regenerate CSV tables and all five
+figures; export manifests hash every new QPY circuit, exact state, reused
+artifact, runner, and frozen protocol.
 
 \section{Conclusion}
 
 On a real 186-vertex QOBLIB instance executed as a 55-qubit, depth-15 QAOA
 circuit, a transferred nonlinear ramp appears to improve optimum-hit
-probability by 2.46 times at the released MPS setting. That headline does not
-survive a tighter truncation threshold: the optimum-hit ranking reverses, while
-near-optimal and feasible-mass rankings remain favorable to the nonlinear
-ramp. Exact small-kernel calibration confirms schedule-dependent BKS bias at
-the released threshold; independent cuTensorNet MPS likewise loses the
-nonlinear BKS advantage when tightened. Strong classical controls dominate in
-both success rate and runtime. The broader lesson is methodological, not a
-claim of quantum advantage. When approximate simulation stands
-between a variational algorithm and a benchmark claim, convergence of the
-\emph{ranking observable} is part of the algorithm evaluation, not an optional
-simulator appendix.
+probability by 2.46 times at the released MPS setting, but the ranking reverses
+when the truncation threshold is tightened. A frozen five-case, 300-row dense
+replication then shows 91/100 correct signs and only 45/50 cross-backend sign
+agreements. The observable-level TVD certificate is decisive: all 77 certified
+cohorts preserve the exact ranking, while every failure lies outside the
+certificate. Strong classical controls dominate in both success rate and
+runtime. The broader lesson is methodological, not a claim of quantum
+advantage. When approximate simulation stands between a variational algorithm
+and a benchmark claim, convergence of the \emph{ranking observable} is part of
+the algorithm evaluation, not an optional simulator appendix.
 
 \balance
 \begin{thebibliography}{99}

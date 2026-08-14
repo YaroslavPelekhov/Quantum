@@ -1,0 +1,10 @@
+﻿{
+    "state":  "guard_stopped",
+    "stopped_at":  "2026-08-09T07:53:11.0395222+03:00",
+    "reason":  {
+                   "free_ram_mb":  19714,
+                   "commit_percent":  92.76,
+                   "free_disk_gb":  15.14
+               },
+    "note":  "Only the experiment tree was terminated; completed atomic checkpoints remain valid."
+}

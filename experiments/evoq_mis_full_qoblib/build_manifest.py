@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 EXCLUDED_PARTS = {"__pycache__", "tmp"}
-EXCLUDED_SUFFIXES = {".aux", ".log", ".out"}
+EXCLUDED_SUFFIXES = {".aux", ".log", ".out", ".tmp"}
 
 
 def main():
@@ -27,7 +27,7 @@ def main():
                 "sha256": hashlib.sha256(data).hexdigest(),
             }
         )
-    payload = {"root": ".", "artifact_count": len(rows), "artifacts": rows}
+    payload = {"root": str(ROOT), "artifact_count": len(rows), "artifacts": rows}
     (ROOT / "artifact_manifest.json").write_text(
         json.dumps(payload, indent=2) + "\n", encoding="utf-8"
     )

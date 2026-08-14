@@ -3,7 +3,8 @@
 All commands below are run from the repository root unless stated otherwise.
 The archived results were produced on Windows with CPU Qiskit Aer and in WSL2
 Ubuntu with an NVIDIA RTX 4070 Ti SUPER (16 GB) for cuTensorNet. The host exposed
-about 15.8 GB system RAM; the WSL VM exposed about 7.6 GiB RAM plus 2 GiB swap.
+48 GB system RAM with XMP disabled; the cross-case runs used a protected
+single-job watchdog and a separate WSL cuTensorNet environment.
 
 ## 1. Obtain pinned benchmark code
 
@@ -35,6 +36,19 @@ Fast verification:
 ..\..\.venv\Scripts\python.exe analyze_extended_results.py
 ..\..\.venv\Scripts\python.exe build_manifest.py
 ```
+
+Final cross-case verification from the experiment directory:
+
+```powershell
+..\..\.venv\Scripts\python.exe -m unittest discover -v -p "test_*.py"
+..\..\.venv\Scripts\python.exe run_cross_case_replication.py analyze
+..\..\.venv\Scripts\python.exe plot_cross_case_replication.py
+```
+
+The completed public checkpoints contain all 300 compact backend rows. Six
+256-MiB dense 24-qubit `.npy` references are omitted from ordinary Git history;
+their SHA-256 identities are recorded in the manifests and they can be supplied
+through Git LFS or a release archive.
 
 Run the research cycle or individual audits:
 
@@ -109,13 +123,14 @@ pdflatex -interaction=nonstopmode -halt-on-error -output-directory output/pdf su
 ```
 
 The public deliverables use stable filenames beginning
-`qaoa_mps_rank_reversal_`; LaTeX intermediates and duplicate default filenames
-are intentionally not tracked.
+`qaoa_mps_cross_backend_rank_reversal_`; LaTeX intermediates and duplicate
+default filenames are intentionally not tracked.
 
 ## 5. Artifact integrity
 
 Run `build_manifest.py` only after all intended artifact changes. It records
 relative paths, byte counts, and SHA-256 values while excluding caches,
 temporary renders, and LaTeX intermediates. A clean verification run should
-also report eight passing unit tests.
+also report 29 passing integrity and numerical tests in the archived
+environment.
 

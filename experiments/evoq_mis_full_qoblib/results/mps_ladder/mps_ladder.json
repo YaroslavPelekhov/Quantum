@@ -1,0 +1,3323 @@
+{
+  "stage": "exact_calibrated_mps_ladder",
+  "complete": true,
+  "protocol_sha256": "5f16de391034ff63d9c9da41c0b6ac6fda0b80ae7d070750dfe26b1d2f03ebad",
+  "provenance": {
+    "python": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "qiskit": "2.5.1",
+    "qiskit_aer": "0.17.2",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "protocol_sha256": "5f16de391034ff63d9c9da41c0b6ac6fda0b80ae7d070750dfe26b1d2f03ebad",
+    "runner_sha256": "d37c153f276ff4fefaf704744036cdbe30b4307ddb643fece16a4cf8e7419d4d",
+    "exact_runner_sha256": "1afcc3858766107256f57c4ce085091d06d0dd8c50cfb377f9338d9692f24ca5",
+    "exact_artifact_sha256": "2a19cf573db0a552d34e47126950c1850958889d1ba7fa235f6c1e4469b0b068",
+    "qoblib_solutions_commit": "bd3e8a6d36b48b07d53dc605b020d4cb35da2147"
+  },
+  "settings": [
+    {
+      "name": "released",
+      "family": "anchor",
+      "bond": 64,
+      "cutoff": 0.001
+    },
+    {
+      "name": "confirm",
+      "family": "anchor",
+      "bond": 128,
+      "cutoff": 0.0001
+    },
+    {
+      "name": "bond64",
+      "family": "bond",
+      "bond": 64,
+      "cutoff": 1e-12
+    },
+    {
+      "name": "bond128",
+      "family": "bond",
+      "bond": 128,
+      "cutoff": 1e-12
+    },
+    {
+      "name": "bond256",
+      "family": "bond",
+      "bond": 256,
+      "cutoff": 1e-12
+    },
+    {
+      "name": "bond512",
+      "family": "bond",
+      "bond": 512,
+      "cutoff": 1e-12
+    },
+    {
+      "name": "bond1024",
+      "family": "bond",
+      "bond": 1024,
+      "cutoff": 1e-12
+    },
+    {
+      "name": "cutoff1e-3",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 0.001
+    },
+    {
+      "name": "cutoff1e-4",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 0.0001
+    },
+    {
+      "name": "cutoff1e-5",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 1e-05
+    },
+    {
+      "name": "cutoff1e-6",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 1e-06
+    }
+  ],
+  "rows": [
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "setting": "bond1024",
+      "family": "bond",
+      "bond": 1024,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8298825573042138,
+        "bks_rate": 0.42525570142638586,
+        "near_bks_rate": 0.8138369687449601,
+        "quality_mass": 0.7974921333472939,
+        "conditional_mean_size": 12.49260831218362,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999478343994,
+        "total_variation_distance": 4.452968005169081e-06,
+        "reference_norm": 0.9999999999999999,
+        "mps_norm": 1.0,
+        "raw_mps_norm": 0.9999999990774064,
+        "raw_norm_drift": -9.225935571066657e-10
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 3219.2091694999835,
+      "metric_seconds": 3.926103099976899,
+      "elapsed_seconds": 3223.1352725999604,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "setting": "bond128",
+      "family": "bond",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8325684050232944,
+        "bks_rate": 0.4266481189583477,
+        "near_bks_rate": 0.8165417411437429,
+        "quality_mass": 0.8000809657207915,
+        "conditional_mean_size": 12.492730316951288,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9981872640129659,
+        "total_variation_distance": 0.00673460965632534,
+        "reference_norm": 0.9999999999999999,
+        "mps_norm": 1.0000000000000004,
+        "raw_mps_norm": 0.9999999999999968,
+        "raw_norm_drift": -3.219646771412954e-15
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 71.85460920000332,
+      "metric_seconds": 3.855302900017705,
+      "elapsed_seconds": 75.70991210002103,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "setting": "bond256",
+      "family": "bond",
+      "bond": 256,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8301406559728276,
+        "bks_rate": 0.4253862033814658,
+        "near_bks_rate": 0.8140919050401745,
+        "quality_mass": 0.7977402133471607,
+        "conditional_mean_size": 12.492609172791244,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.99984220762132,
+        "total_variation_distance": 0.0011343064789512203,
+        "reference_norm": 0.9999999999999999,
+        "mps_norm": 1.0,
+        "raw_mps_norm": 0.9999999999999943,
+        "raw_norm_drift": -5.662137425588298e-15
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 344.1957021999988,
+      "metric_seconds": 3.8564990000159014,
+      "elapsed_seconds": 348.0522012000147,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "setting": "bond512",
+      "family": "bond",
+      "bond": 512,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8298937405881051,
+        "bks_rate": 0.42526133975071634,
+        "near_bks_rate": 0.8138479543304158,
+        "quality_mass": 0.7975028744845385,
+        "conditional_mean_size": 12.492608223496221,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9999937755197627,
+        "total_variation_distance": 0.00012128448244761536,
+        "reference_norm": 0.9999999999999999,
+        "mps_norm": 1.0,
+        "raw_mps_norm": 0.9999999999905613,
+        "raw_norm_drift": -9.438672066153231e-12
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 1358.8974970999989,
+      "metric_seconds": 3.842613800021354,
+      "elapsed_seconds": 1362.7401109000202,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "setting": "bond64",
+      "family": "bond",
+      "bond": 64,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8479475663467718,
+        "bks_rate": 0.4350669844980818,
+        "near_bks_rate": 0.8324766526469847,
+        "quality_mass": 0.8149740123278174,
+        "conditional_mean_size": 12.494477937954118,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9862306135645657,
+        "total_variation_distance": 0.027681449327448482,
+        "reference_norm": 0.9999999999999999,
+        "mps_norm": 1.0,
+        "raw_mps_norm": 0.99999999999998,
+        "raw_norm_drift": -1.9984014443252818e-14
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 22.694719799997984,
+      "metric_seconds": 3.7782230000011623,
+      "elapsed_seconds": 26.472942799999146,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "setting": "confirm",
+      "family": "anchor",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8905019669052368,
+        "bks_rate": 0.4658377279703276,
+        "near_bks_rate": 0.8780128809185521,
+        "quality_mass": 0.856864483465964,
+        "conditional_mean_size": 12.508942932231522,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9349277630606389,
+        "total_variation_distance": 0.08641768411357288,
+        "reference_norm": 0.9999999999999999,
+        "mps_norm": 1.0000000000000002,
+        "raw_mps_norm": 1.0000011679770573,
+        "raw_norm_drift": 1.1679770572925463e-06
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 8.003699399996549,
+      "metric_seconds": 3.7390989999985322,
+      "elapsed_seconds": 11.742798399995081,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "setting": "cutoff1e-3",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 0.001,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9652470590456013,
+        "bks_rate": 0.5751851442630456,
+        "near_bks_rate": 0.9577974476579285,
+        "quality_mass": 0.9346657966936732,
+        "conditional_mean_size": 12.588129891876434,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.7961790190295956,
+        "total_variation_distance": 0.23979083966600842,
+        "reference_norm": 0.9999999999999999,
+        "mps_norm": 0.9999999999999998,
+        "raw_mps_norm": 1.0000075917107243,
+        "raw_norm_drift": 7.591710724286216e-06
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 8.494634000002407,
+      "metric_seconds": 3.928968399995938,
+      "elapsed_seconds": 12.423602399998344,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999998
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "setting": "cutoff1e-4",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8905019669052368,
+        "bks_rate": 0.4658377279703276,
+        "near_bks_rate": 0.8780128809185521,
+        "quality_mass": 0.856864483465964,
+        "conditional_mean_size": 12.508942932231522,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9349277630606389,
+        "total_variation_distance": 0.08641768411357288,
+        "reference_norm": 0.9999999999999999,
+        "mps_norm": 1.0000000000000002,
+        "raw_mps_norm": 1.0000011679770573,
+        "raw_norm_drift": 1.1679770572925463e-06
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 8.832122699997853,
+      "metric_seconds": 3.9374416999635287,
+      "elapsed_seconds": 12.769564399961382,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "setting": "cutoff1e-5",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8356258059104616,
+        "bks_rate": 0.42965840641484065,
+        "near_bks_rate": 0.8201143108095119,
+        "quality_mass": 0.8031768576306227,
+        "conditional_mean_size": 12.49518513591345,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.994864107646815,
+        "total_variation_distance": 0.016547837421595265,
+        "reference_norm": 0.9999999999999999,
+        "mps_norm": 1.0000000000000004,
+        "raw_mps_norm": 0.9999999999999999,
+        "raw_norm_drift": -1.1102230246251565e-16
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 17.67660360003356,
+      "metric_seconds": 3.9076200000126846,
+      "elapsed_seconds": 21.584223600046244,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "setting": "cutoff1e-6",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 1e-06,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8307570730497731,
+        "bks_rate": 0.425704955494114,
+        "near_bks_rate": 0.8147455340398491,
+        "quality_mass": 0.7983363519364781,
+        "conditional_mean_size": 12.49266832850957,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9995959746750893,
+        "total_variation_distance": 0.003446680997803065,
+        "reference_norm": 0.9999999999999999,
+        "mps_norm": 1.0,
+        "raw_mps_norm": 1.0000000000000022,
+        "raw_norm_drift": 2.220446049250313e-15
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 67.2400864000083,
+      "metric_seconds": 4.2657911000424065,
+      "elapsed_seconds": 71.5058775000507,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "setting": "released",
+      "family": "anchor",
+      "bond": 64,
+      "cutoff": 0.001,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9652470590456013,
+        "bks_rate": 0.5751851442630456,
+        "near_bks_rate": 0.9577974476579285,
+        "quality_mass": 0.9346657966936732,
+        "conditional_mean_size": 12.588129891876434,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.7961790190295956,
+        "total_variation_distance": 0.23979083966600842,
+        "reference_norm": 0.9999999999999999,
+        "mps_norm": 0.9999999999999998,
+        "raw_mps_norm": 1.0000075917107243,
+        "raw_norm_drift": 7.591710724286216e-06
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 7.769308300019475,
+      "metric_seconds": 3.8868488000007346,
+      "elapsed_seconds": 11.65615710002021,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999998
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "setting": "bond1024",
+      "family": "bond",
+      "bond": 1024,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8298824664706593,
+        "bks_rate": 0.4252556781138573,
+        "near_bks_rate": 0.8138368708048683,
+        "quality_mass": 0.7974920470129745,
+        "conditional_mean_size": 12.49260832712774,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999996804904,
+        "total_variation_distance": 1.7084697106833962e-06,
+        "reference_norm": 0.9999999999999992,
+        "mps_norm": 1.0000000000000002,
+        "raw_mps_norm": 0.9999999991335773,
+        "raw_norm_drift": -8.664227113541756e-10
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 200.2241306999931,
+      "metric_seconds": 3.8686049999960233,
+      "elapsed_seconds": 204.09273569998913,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "setting": "bond128",
+      "family": "bond",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8298964749787798,
+        "bks_rate": 0.4252628150346137,
+        "near_bks_rate": 0.8138511041885057,
+        "quality_mass": 0.7975055516421226,
+        "conditional_mean_size": 12.492608998746123,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9999935704309358,
+        "total_variation_distance": 0.0001805710690215271,
+        "reference_norm": 0.9999999999999992,
+        "mps_norm": 1.0000000000000004,
+        "raw_mps_norm": 0.9999999997430175,
+        "raw_norm_drift": -2.5698254635386775e-10
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 39.99555300001521,
+      "metric_seconds": 3.7960673999914434,
+      "elapsed_seconds": 43.79162040000665,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "setting": "bond256",
+      "family": "bond",
+      "bond": 256,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8298825511386763,
+        "bks_rate": 0.42525572136810974,
+        "near_bks_rate": 0.8138369563584524,
+        "quality_mass": 0.7974921283467267,
+        "conditional_mean_size": 12.492608326663104,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999718384324,
+        "total_variation_distance": 7.333261708273053e-06,
+        "reference_norm": 0.9999999999999992,
+        "mps_norm": 1.0,
+        "raw_mps_norm": 0.999999999987799,
+        "raw_norm_drift": -1.2201017973723083e-11
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 123.56465889999527,
+      "metric_seconds": 3.870043499977328,
+      "elapsed_seconds": 127.4347023999726,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "setting": "bond512",
+      "family": "bond",
+      "bond": 512,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8298824664963478,
+        "bks_rate": 0.42525567817498644,
+        "near_bks_rate": 0.8138368707927408,
+        "quality_mass": 0.7974920470386131,
+        "conditional_mean_size": 12.492608327142664,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999996595835,
+        "total_variation_distance": 1.71550305912091e-06,
+        "reference_norm": 0.9999999999999992,
+        "mps_norm": 1.0000000000000004,
+        "raw_mps_norm": 0.999999999063237,
+        "raw_norm_drift": -9.367630005030492e-10
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 203.02540450001834,
+      "metric_seconds": 3.8936591999954544,
+      "elapsed_seconds": 206.9190637000138,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "setting": "bond64",
+      "family": "bond",
+      "bond": 64,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8305644017663195,
+        "bks_rate": 0.42558752837246794,
+        "near_bks_rate": 0.814521069507582,
+        "quality_mass": 0.7981478759438362,
+        "conditional_mean_size": 12.492616304291296,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9995399222754615,
+        "total_variation_distance": 0.0030562783875304413,
+        "reference_norm": 0.9999999999999992,
+        "mps_norm": 0.9999999999999999,
+        "raw_mps_norm": 1.0000000037811019,
+        "raw_norm_drift": 3.7811018760436355e-09
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 15.750091800000519,
+      "metric_seconds": 3.806724199996097,
+      "elapsed_seconds": 19.556815999996616,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999999
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "setting": "confirm",
+      "family": "anchor",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8745662817491824,
+        "bks_rate": 0.45431243496444285,
+        "near_bks_rate": 0.8592661751496644,
+        "quality_mass": 0.8410470760403914,
+        "conditional_mean_size": 12.501753402449088,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9520811685501801,
+        "total_variation_distance": 0.06967535355003,
+        "reference_norm": 0.9999999999999992,
+        "mps_norm": 1.0000000000000002,
+        "raw_mps_norm": 1.0000652964988013,
+        "raw_norm_drift": 6.529649880127053e-05
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 7.992059799988056,
+      "metric_seconds": 3.738614600006258,
+      "elapsed_seconds": 11.730674399994314,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "setting": "cutoff1e-3",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 0.001,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9588382166380764,
+        "bks_rate": 0.5448061972582722,
+        "near_bks_rate": 0.9520328622104639,
+        "quality_mass": 0.9264623923073039,
+        "conditional_mean_size": 12.561046160867706,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.8223016255439917,
+        "total_variation_distance": 0.2083059060364098,
+        "reference_norm": 0.9999999999999992,
+        "mps_norm": 1.0000000000000004,
+        "raw_mps_norm": 1.0000900348733166,
+        "raw_norm_drift": 9.003487331660232e-05
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 7.863251900009345,
+      "metric_seconds": 3.9112620999803767,
+      "elapsed_seconds": 11.774513999989722,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "setting": "cutoff1e-4",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8745662817491824,
+        "bks_rate": 0.45431243496444285,
+        "near_bks_rate": 0.8592661751496644,
+        "quality_mass": 0.8410470760403914,
+        "conditional_mean_size": 12.501753402449088,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9520811685501801,
+        "total_variation_distance": 0.06967535355003,
+        "reference_norm": 0.9999999999999992,
+        "mps_norm": 1.0000000000000002,
+        "raw_mps_norm": 1.0000652964988013,
+        "raw_norm_drift": 6.529649880127053e-05
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 8.67373039998347,
+      "metric_seconds": 3.9292026999755763,
+      "elapsed_seconds": 12.602933099959046,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "setting": "cutoff1e-5",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8338182399052163,
+        "bks_rate": 0.4284361818483293,
+        "near_bks_rate": 0.8182136973691347,
+        "quality_mass": 0.8014087208858247,
+        "conditional_mean_size": 12.494705528029726,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9943152412629429,
+        "total_variation_distance": 0.017221052592781345,
+        "reference_norm": 0.9999999999999992,
+        "mps_norm": 0.9999999999999998,
+        "raw_mps_norm": 1.0000173904895289,
+        "raw_norm_drift": 1.7390489528867903e-05
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 9.313253499974962,
+      "metric_seconds": 3.911514099978376,
+      "elapsed_seconds": 13.224767599953339,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999998
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "setting": "cutoff1e-6",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 1e-06,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8307257000462834,
+        "bks_rate": 0.4257375773959406,
+        "near_bks_rate": 0.8147327773899486,
+        "quality_mass": 0.7983112055685817,
+        "conditional_mean_size": 12.49274660915553,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9993939848667317,
+        "total_variation_distance": 0.004201419360566144,
+        "reference_norm": 0.9999999999999992,
+        "mps_norm": 1.0,
+        "raw_mps_norm": 1.0000007855349589,
+        "raw_norm_drift": 7.855349588581362e-07
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 11.230994899990037,
+      "metric_seconds": 3.923648800002411,
+      "elapsed_seconds": 15.154643699992448,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "setting": "released",
+      "family": "anchor",
+      "bond": 64,
+      "cutoff": 0.001,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9588382166380764,
+        "bks_rate": 0.5448061972582722,
+        "near_bks_rate": 0.9520328622104639,
+        "quality_mass": 0.9264623923073039,
+        "conditional_mean_size": 12.561046160867706,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.8223016255439917,
+        "total_variation_distance": 0.2083059060364098,
+        "reference_norm": 0.9999999999999992,
+        "mps_norm": 1.0000000000000004,
+        "raw_mps_norm": 1.0000900348733166,
+        "raw_norm_drift": 9.003487331660232e-05
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 7.197331100003794,
+      "metric_seconds": 3.8378463000117335,
+      "elapsed_seconds": 11.035177400015527,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "setting": "bond1024",
+      "family": "bond",
+      "bond": 1024,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6314357685808073,
+        "bks_rate": 0.31114020402164905,
+        "near_bks_rate": 0.5788669201603083,
+        "quality_mass": 0.60259445807258,
+        "conditional_mean_size": 12.406215081148078,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9999968402644369,
+        "total_variation_distance": 7.878240490161218e-05,
+        "reference_norm": 0.9999999999999923,
+        "mps_norm": 1.0000000000000004,
+        "raw_mps_norm": 0.9999999999887728,
+        "raw_norm_drift": -1.1227241358824358e-11
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 8084.415518399997,
+      "metric_seconds": 3.916485299996566,
+      "elapsed_seconds": 8088.332003699994,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "setting": "bond128",
+      "family": "bond",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6540749291269383,
+        "bks_rate": 0.3223472548477359,
+        "near_bks_rate": 0.5997512054979655,
+        "quality_mass": 0.6242132514711707,
+        "conditional_mean_size": 12.40648725056141,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9784772032150758,
+        "total_variation_distance": 0.0441935036579703,
+        "reference_norm": 0.9999999999999923,
+        "mps_norm": 1.0000000000000002,
+        "raw_mps_norm": 1.0000000000000038,
+        "raw_norm_drift": 3.774758283725532e-15
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 95.38345140000456,
+      "metric_seconds": 3.808978599990951,
+      "elapsed_seconds": 99.19242999999551,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "setting": "bond256",
+      "family": "bond",
+      "bond": 256,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.635026774602708,
+        "bks_rate": 0.3129042762237067,
+        "near_bks_rate": 0.58212905257773,
+        "quality_mass": 0.6060185034858538,
+        "conditional_mean_size": 12.406154921963669,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9969886929856311,
+        "total_variation_distance": 0.010880144977633304,
+        "reference_norm": 0.9999999999999923,
+        "mps_norm": 1.0000000000000002,
+        "raw_mps_norm": 1.0000000000000044,
+        "raw_norm_drift": 4.440892098500626e-15
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 532.2148455000133,
+      "metric_seconds": 3.8176321999926586,
+      "elapsed_seconds": 536.032477700006,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "setting": "bond512",
+      "family": "bond",
+      "bond": 512,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6316955870591562,
+        "bks_rate": 0.31126631274484634,
+        "near_bks_rate": 0.5791042839479691,
+        "quality_mass": 0.6028422299063942,
+        "conditional_mean_size": 12.406211392528247,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9998096924960571,
+        "total_variation_distance": 0.001558299220952695,
+        "reference_norm": 0.9999999999999923,
+        "mps_norm": 1.0000000000000007,
+        "raw_mps_norm": 0.9999999999981877,
+        "raw_norm_drift": -1.8123280653981055e-12
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 2650.699176299997,
+      "metric_seconds": 3.795000299985986,
+      "elapsed_seconds": 2654.494176599983,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000007
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "setting": "bond64",
+      "family": "bond",
+      "bond": 64,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.7142664061512748,
+        "bks_rate": 0.3539791485653369,
+        "near_bks_rate": 0.6588429207844932,
+        "quality_mass": 0.6821415331496404,
+        "conditional_mean_size": 12.415311506428601,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9152054460843367,
+        "total_variation_distance": 0.12004644241575455,
+        "reference_norm": 0.9999999999999923,
+        "mps_norm": 1.0,
+        "raw_mps_norm": 0.9999999999999882,
+        "raw_norm_drift": -1.176836406102666e-14
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 25.091575400001602,
+      "metric_seconds": 3.873301099985838,
+      "elapsed_seconds": 28.96487649998744,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "setting": "confirm",
+      "family": "anchor",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.7108426610922118,
+        "bks_rate": 0.35164885386894595,
+        "near_bks_rate": 0.6565203706221028,
+        "quality_mass": 0.6788783719995156,
+        "conditional_mean_size": 12.415432161082487,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9155541977518331,
+        "total_variation_distance": 0.12143817300657975,
+        "reference_norm": 0.9999999999999923,
+        "mps_norm": 1.0000000000000004,
+        "raw_mps_norm": 1.0000126555207898,
+        "raw_norm_drift": 1.2655520789772723e-05
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 13.294030099990778,
+      "metric_seconds": 3.709786100022029,
+      "elapsed_seconds": 17.003816200012807,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "setting": "cutoff1e-3",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 0.001,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9440094576748073,
+        "bks_rate": 0.5837322920149461,
+        "near_bks_rate": 0.9273785129122367,
+        "quality_mass": 0.9149600252213509,
+        "conditional_mean_size": 12.59995885758909,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.588579599668142,
+        "total_variation_distance": 0.4179077565040328,
+        "reference_norm": 0.9999999999999923,
+        "mps_norm": 0.9999999999999999,
+        "raw_mps_norm": 1.0000048278850466,
+        "raw_norm_drift": 4.827885046632119e-06
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 8.712280599982478,
+      "metric_seconds": 3.874110799981281,
+      "elapsed_seconds": 12.586391399963759,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999999
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "setting": "cutoff1e-4",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.7097969715051512,
+        "bks_rate": 0.35115995783611864,
+        "near_bks_rate": 0.6556659919010527,
+        "quality_mass": 0.677890696633894,
+        "conditional_mean_size": 12.415633498059615,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.916385853584275,
+        "total_variation_distance": 0.12040518697369168,
+        "reference_norm": 0.9999999999999923,
+        "mps_norm": 1.0000000000000002,
+        "raw_mps_norm": 1.0000103706404613,
+        "raw_norm_drift": 1.0370640461276892e-05
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 14.395545000035781,
+      "metric_seconds": 3.9395896999631077,
+      "elapsed_seconds": 18.33513469999889,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "setting": "cutoff1e-5",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6389348962750871,
+        "bks_rate": 0.31426852041822406,
+        "near_bks_rate": 0.5855856934303642,
+        "quality_mass": 0.6096929470257486,
+        "conditional_mean_size": 12.405032746751507,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9935690282257137,
+        "total_variation_distance": 0.02299206489347853,
+        "reference_norm": 0.9999999999999923,
+        "mps_norm": 1.0,
+        "raw_mps_norm": 0.9999999999999997,
+        "raw_norm_drift": -3.3306690738754696e-16
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 105.26868249999825,
+      "metric_seconds": 3.874081899994053,
+      "elapsed_seconds": 109.1427643999923,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "setting": "cutoff1e-6",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 1e-06,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6319191823460474,
+        "bks_rate": 0.31132334146482654,
+        "near_bks_rate": 0.5793109729191802,
+        "quality_mass": 0.603049785769184,
+        "conditional_mean_size": 12.406091528815619,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9995103257526977,
+        "total_variation_distance": 0.004972429377810521,
+        "reference_norm": 0.9999999999999923,
+        "mps_norm": 1.0000000000000007,
+        "raw_mps_norm": 0.9999999999999963,
+        "raw_norm_drift": -3.6637359812630166e-15
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 459.1534689000109,
+      "metric_seconds": 3.891212499991525,
+      "elapsed_seconds": 463.04468140000245,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000007
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "setting": "released",
+      "family": "anchor",
+      "bond": 64,
+      "cutoff": 0.001,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9440094576748073,
+        "bks_rate": 0.5837322920149461,
+        "near_bks_rate": 0.9273785129122367,
+        "quality_mass": 0.9149600252213509,
+        "conditional_mean_size": 12.59995885758909,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.588579599668142,
+        "total_variation_distance": 0.4179077565040328,
+        "reference_norm": 0.9999999999999923,
+        "mps_norm": 0.9999999999999999,
+        "raw_mps_norm": 1.0000048278850466,
+        "raw_norm_drift": 4.827885046632119e-06
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 7.723067700018873,
+      "metric_seconds": 3.696970399993006,
+      "elapsed_seconds": 11.42003810001188,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999999
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "setting": "bond1024",
+      "family": "bond",
+      "bond": 1024,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6314311034025555,
+        "bks_rate": 0.311137906699886,
+        "near_bks_rate": 0.5788626536544552,
+        "quality_mass": 0.6025900064849041,
+        "conditional_mean_size": 12.406215091545091,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999997601928,
+        "total_variation_distance": 1.875233296621588e-06,
+        "reference_norm": 0.9999999999999933,
+        "mps_norm": 0.9999999999999999,
+        "raw_mps_norm": 0.9999999994087224,
+        "raw_norm_drift": -5.912775824512551e-10
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 1259.2467605999555,
+      "metric_seconds": 3.8667158000171185,
+      "elapsed_seconds": 1263.1134763999726,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999999
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "setting": "bond128",
+      "family": "bond",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6319493163661271,
+        "bks_rate": 0.3113918334863283,
+        "near_bks_rate": 0.5793257161445173,
+        "quality_mass": 0.6030838276761272,
+        "conditional_mean_size": 12.406200239082793,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.999568529526042,
+        "total_variation_distance": 0.0032315846024135574,
+        "reference_norm": 0.9999999999999933,
+        "mps_norm": 1.0,
+        "raw_mps_norm": 1.0000000033858902,
+        "raw_norm_drift": 3.3858902348526954e-09
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 58.84532069999841,
+      "metric_seconds": 3.819600899994839,
+      "elapsed_seconds": 62.66492159999325,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "setting": "bond256",
+      "family": "bond",
+      "bond": 256,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6314436905089174,
+        "bks_rate": 0.3111440294668839,
+        "near_bks_rate": 0.5788740919820291,
+        "quality_mass": 0.6026020469381076,
+        "conditional_mean_size": 12.406215673612417,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9999926887798117,
+        "total_variation_distance": 0.00028397063434099144,
+        "reference_norm": 0.9999999999999933,
+        "mps_norm": 0.9999999999999997,
+        "raw_mps_norm": 0.9999999998408033,
+        "raw_norm_drift": -1.591966558578406e-10
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 263.4713765999768,
+      "metric_seconds": 3.8581208999967203,
+      "elapsed_seconds": 267.3294974999735,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999997
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "setting": "bond512",
+      "family": "bond",
+      "bond": 512,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6314311653144163,
+        "bks_rate": 0.31113793233586345,
+        "near_bks_rate": 0.5788627141432384,
+        "quality_mass": 0.6025900652882037,
+        "conditional_mean_size": 12.406215085766208,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999667662351,
+        "total_variation_distance": 1.0523303126378237e-05,
+        "reference_norm": 0.9999999999999933,
+        "mps_norm": 1.0000000000000007,
+        "raw_mps_norm": 0.9999999992734022,
+        "raw_norm_drift": -7.26597781941507e-10
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 918.0252920000057,
+      "metric_seconds": 3.880791900010081,
+      "elapsed_seconds": 921.9060839000158,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000007
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "setting": "bond64",
+      "family": "bond",
+      "bond": 64,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6389398799817336,
+        "bks_rate": 0.31464687257062063,
+        "near_bks_rate": 0.5858134162007075,
+        "quality_mass": 0.6097470176563924,
+        "conditional_mean_size": 12.406036119955,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9911647165802184,
+        "total_variation_distance": 0.022770113355200666,
+        "reference_norm": 0.9999999999999933,
+        "mps_norm": 0.9999999999999997,
+        "raw_mps_norm": 1.0000000311915735,
+        "raw_norm_drift": 3.1191573546252016e-08
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 18.272072500025388,
+      "metric_seconds": 3.820122300006915,
+      "elapsed_seconds": 22.092194800032303,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999997
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "setting": "confirm",
+      "family": "anchor",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6900747573009335,
+        "bks_rate": 0.3403850439572641,
+        "near_bks_rate": 0.6367888527801412,
+        "quality_mass": 0.6589028947079175,
+        "conditional_mean_size": 12.412767661152845,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.917794169271165,
+        "total_variation_distance": 0.11016932950133818,
+        "reference_norm": 0.9999999999999933,
+        "mps_norm": 0.9999999999999999,
+        "raw_mps_norm": 1.0000808901217495,
+        "raw_norm_drift": 8.08901217494995e-05
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 8.409035999997286,
+      "metric_seconds": 3.728210699977353,
+      "elapsed_seconds": 12.13724669997464,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999999
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "setting": "cutoff1e-3",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 0.001,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9372233040181142,
+        "bks_rate": 0.5315635864013039,
+        "near_bks_rate": 0.9065095228240773,
+        "quality_mass": 0.9035726373050156,
+        "conditional_mean_size": 12.533239660820652,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.6183577338028821,
+        "total_variation_distance": 0.38230126727901637,
+        "reference_norm": 0.9999999999999933,
+        "mps_norm": 1.0000000000000004,
+        "raw_mps_norm": 1.000176275210136,
+        "raw_norm_drift": 0.0001762752101359677
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 8.002425700018648,
+      "metric_seconds": 3.882699200010393,
+      "elapsed_seconds": 11.88512490002904,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "setting": "cutoff1e-4",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6900747573009335,
+        "bks_rate": 0.3403850439572641,
+        "near_bks_rate": 0.6367888527801412,
+        "quality_mass": 0.6589028947079175,
+        "conditional_mean_size": 12.412767661152845,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.917794169271165,
+        "total_variation_distance": 0.11016932950133818,
+        "reference_norm": 0.9999999999999933,
+        "mps_norm": 0.9999999999999999,
+        "raw_mps_norm": 1.0000808901217495,
+        "raw_norm_drift": 8.08901217494995e-05
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 8.945005399989896,
+      "metric_seconds": 3.902505600010045,
+      "elapsed_seconds": 12.84751099999994,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999999
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "setting": "cutoff1e-5",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6378877700917677,
+        "bks_rate": 0.31356621044999355,
+        "near_bks_rate": 0.5844419877683857,
+        "quality_mass": 0.6086641772944098,
+        "conditional_mean_size": 12.404430176940062,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9906085174031837,
+        "total_variation_distance": 0.02467314286376418,
+        "reference_norm": 0.9999999999999933,
+        "mps_norm": 1.0000000000000002,
+        "raw_mps_norm": 1.0000083285300474,
+        "raw_norm_drift": 8.328530047396754e-06
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 12.981446399993729,
+      "metric_seconds": 3.917344600020442,
+      "elapsed_seconds": 16.89879100001417,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "setting": "cutoff1e-6",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 1e-06,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6319591063400882,
+        "bks_rate": 0.3113031169723568,
+        "near_bks_rate": 0.5793329981359718,
+        "quality_mass": 0.6030836651447495,
+        "conditional_mean_size": 12.406004705409858,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9992135691302589,
+        "total_variation_distance": 0.005860730607942254,
+        "reference_norm": 0.9999999999999933,
+        "mps_norm": 0.9999999999999998,
+        "raw_mps_norm": 1.0000006651409703,
+        "raw_norm_drift": 6.651409703017919e-07
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 30.021634900011122,
+      "metric_seconds": 3.9348145000403747,
+      "elapsed_seconds": 33.9564494000515,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999998
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "setting": "released",
+      "family": "anchor",
+      "bond": 64,
+      "cutoff": 0.001,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9372233040181142,
+        "bks_rate": 0.5315635864013039,
+        "near_bks_rate": 0.9065095228240773,
+        "quality_mass": 0.9035726373050156,
+        "conditional_mean_size": 12.533239660820652,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.6183577338028821,
+        "total_variation_distance": 0.38230126727901637,
+        "reference_norm": 0.9999999999999933,
+        "mps_norm": 1.0000000000000004,
+        "raw_mps_norm": 1.000176275210136,
+        "raw_norm_drift": 0.0001762752101359677
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 7.33501549999346,
+      "metric_seconds": 3.717179800005397,
+      "elapsed_seconds": 11.052195299998857,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "setting": "bond1024",
+      "family": "bond",
+      "bond": 1024,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5150061271944525,
+        "bks_rate": 0.3232770297512799,
+        "near_bks_rate": 0.4942290661351342,
+        "quality_mass": 0.49858678316669086,
+        "conditional_mean_size": 12.585536052699606,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9999995551862648,
+        "total_variation_distance": 3.2034401913885804e-05,
+        "reference_norm": 0.9999999999999847,
+        "mps_norm": 1.0000000000000002,
+        "raw_mps_norm": 0.9999999999999805,
+        "raw_norm_drift": -1.9539925233402755e-14
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 4387.218756000017,
+      "metric_seconds": 3.834916099993279,
+      "elapsed_seconds": 4391.05367210001,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "setting": "bond128",
+      "family": "bond",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5191931334637315,
+        "bks_rate": 0.3260637636953805,
+        "near_bks_rate": 0.4983067560630351,
+        "quality_mass": 0.5026580578938417,
+        "conditional_mean_size": 12.585980690895283,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9947713196703707,
+        "total_variation_distance": 0.016080734866997765,
+        "reference_norm": 0.9999999999999847,
+        "mps_norm": 1.0000000000000007,
+        "raw_mps_norm": 0.999999999999986,
+        "raw_norm_drift": -1.3988810110276972e-14
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 81.84890080001787,
+      "metric_seconds": 3.8479972000059206,
+      "elapsed_seconds": 85.6968980000238,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000007
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "setting": "bond256",
+      "family": "bond",
+      "bond": 256,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.515561897872713,
+        "bks_rate": 0.32362323978787455,
+        "near_bks_rate": 0.4947572604261226,
+        "quality_mass": 0.49912417134366593,
+        "conditional_mean_size": 12.585519322201018,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9993610468543987,
+        "total_variation_distance": 0.003783955856170669,
+        "reference_norm": 0.9999999999999847,
+        "mps_norm": 1.0000000000000002,
+        "raw_mps_norm": 0.9999999999999859,
+        "raw_norm_drift": -1.4099832412739488e-14
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 412.6125024999783,
+      "metric_seconds": 3.817357100022491,
+      "elapsed_seconds": 416.4298596000008,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "setting": "bond512",
+      "family": "bond",
+      "bond": 512,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5150435504314576,
+        "bks_rate": 0.3233007466779449,
+        "near_bks_rate": 0.4942648196261797,
+        "quality_mass": 0.49862301366962736,
+        "conditional_mean_size": 12.585536062484483,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9999643753146586,
+        "total_variation_distance": 0.0005582724307415025,
+        "reference_norm": 0.9999999999999847,
+        "mps_norm": 1.0000000000000007,
+        "raw_mps_norm": 0.9999999999936392,
+        "raw_norm_drift": -6.360800774984909e-12
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 1795.3014258999901,
+      "metric_seconds": 3.843139800010249,
+      "elapsed_seconds": 1799.1445657000004,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000007
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "setting": "bond64",
+      "family": "bond",
+      "bond": 64,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5367933567770397,
+        "bks_rate": 0.3379818279993433,
+        "near_bks_rate": 0.5156458105082132,
+        "quality_mass": 0.5198002120832914,
+        "conditional_mean_size": 12.588461969154947,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9719687412430886,
+        "total_variation_distance": 0.051403586136534604,
+        "reference_norm": 0.9999999999999847,
+        "mps_norm": 0.9999999999999999,
+        "raw_mps_norm": 1.0000000000000218,
+        "raw_norm_drift": 2.1760371282653068e-14
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 23.721292000001995,
+      "metric_seconds": 3.7633789999817964,
+      "elapsed_seconds": 27.48467099998379,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999999
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "setting": "confirm",
+      "family": "anchor",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5575383357646128,
+        "bks_rate": 0.3503042571210123,
+        "near_bks_rate": 0.5362850432612253,
+        "quality_mass": 0.5398980908323204,
+        "conditional_mean_size": 12.588686249161139,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9355799064518037,
+        "total_variation_distance": 0.09497157705657942,
+        "reference_norm": 0.9999999999999847,
+        "mps_norm": 0.9999999999999999,
+        "raw_mps_norm": 1.0000253335869849,
+        "raw_norm_drift": 2.5333586984865875e-05
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 8.725068400002783,
+      "metric_seconds": 3.7105840999865904,
+      "elapsed_seconds": 12.435652499989374,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999999
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "setting": "cutoff1e-3",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 0.001,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6362085673395337,
+        "bks_rate": 0.44525326931071535,
+        "near_bks_rate": 0.622087872877058,
+        "quality_mass": 0.6203986570513917,
+        "conditional_mean_size": 12.676947396975,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.734678628313189,
+        "total_variation_distance": 0.2809379590822202,
+        "reference_norm": 0.9999999999999847,
+        "mps_norm": 1.0000000000000002,
+        "raw_mps_norm": 1.0000459850104852,
+        "raw_norm_drift": 4.5985010485249944e-05
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 8.886112799984403,
+      "metric_seconds": 3.920031999994535,
+      "elapsed_seconds": 12.806144799978938,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "setting": "cutoff1e-4",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5575383357646128,
+        "bks_rate": 0.3503042571210123,
+        "near_bks_rate": 0.5362850432612253,
+        "quality_mass": 0.5398980908323204,
+        "conditional_mean_size": 12.588686249161139,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9355799064518037,
+        "total_variation_distance": 0.09497157705657942,
+        "reference_norm": 0.9999999999999847,
+        "mps_norm": 0.9999999999999999,
+        "raw_mps_norm": 1.0000253335869849,
+        "raw_norm_drift": 2.5333586984865875e-05
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 9.557924899971113,
+      "metric_seconds": 3.856778099958319,
+      "elapsed_seconds": 13.414702999929432,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999999
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "setting": "cutoff1e-5",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5194543742595975,
+        "bks_rate": 0.326503290362469,
+        "near_bks_rate": 0.4983608784159735,
+        "quality_mass": 0.5029153389469452,
+        "conditional_mean_size": 12.586089809387126,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9943450869034284,
+        "total_variation_distance": 0.019562237798000315,
+        "reference_norm": 0.9999999999999847,
+        "mps_norm": 1.0,
+        "raw_mps_norm": 0.999999999999994,
+        "raw_norm_drift": -5.995204332975845e-15
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 30.479815200029407,
+      "metric_seconds": 3.9040290999691933,
+      "elapsed_seconds": 34.3838442999986,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "setting": "cutoff1e-6",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 1e-06,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5153204602232803,
+        "bks_rate": 0.323469328809607,
+        "near_bks_rate": 0.49454278504776594,
+        "quality_mass": 0.4988916545442349,
+        "conditional_mean_size": 12.58555017641828,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9994858037809905,
+        "total_variation_distance": 0.005356263695138202,
+        "reference_norm": 0.9999999999999847,
+        "mps_norm": 0.9999999999999999,
+        "raw_mps_norm": 1.0000000000000029,
+        "raw_norm_drift": 2.886579864025407e-15
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 154.74807279999368,
+      "metric_seconds": 3.876562899968121,
+      "elapsed_seconds": 158.6246356999618,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999999
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "setting": "released",
+      "family": "anchor",
+      "bond": 64,
+      "cutoff": 0.001,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6362085673395337,
+        "bks_rate": 0.44525326931071535,
+        "near_bks_rate": 0.622087872877058,
+        "quality_mass": 0.6203986570513917,
+        "conditional_mean_size": 12.676947396975,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.734678628313189,
+        "total_variation_distance": 0.2809379590822202,
+        "reference_norm": 0.9999999999999847,
+        "mps_norm": 1.0000000000000002,
+        "raw_mps_norm": 1.0000459850104852,
+        "raw_norm_drift": 4.5985010485249944e-05
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 7.555202900024597,
+      "metric_seconds": 3.8112322999804746,
+      "elapsed_seconds": 11.366435200005071,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "setting": "bond1024",
+      "family": "bond",
+      "bond": 1024,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5150056245983914,
+        "bks_rate": 0.32327672440278804,
+        "near_bks_rate": 0.4942285719553401,
+        "quality_mass": 0.498586297172226,
+        "conditional_mean_size": 12.585536067287414,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999996871781,
+        "total_variation_distance": 2.5580036276587664e-06,
+        "reference_norm": 0.999999999999985,
+        "mps_norm": 1.0000000000000002,
+        "raw_mps_norm": 0.9999999991590319,
+        "raw_norm_drift": -8.409680729570823e-10
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 458.28345859999536,
+      "metric_seconds": 3.8970677999895997,
+      "elapsed_seconds": 462.18052639998496,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "setting": "bond128",
+      "family": "bond",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5150399376672968,
+        "bks_rate": 0.3232991680052103,
+        "near_bks_rate": 0.4942606514854473,
+        "quality_mass": 0.4986195130948554,
+        "conditional_mean_size": 12.585535986959462,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9999605434771935,
+        "total_variation_distance": 0.0008118725717126374,
+        "reference_norm": 0.999999999999985,
+        "mps_norm": 1.0000000000000002,
+        "raw_mps_norm": 1.0000000012372683,
+        "raw_norm_drift": 1.2372682878236674e-09
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 47.29788749999716,
+      "metric_seconds": 3.7822044999920763,
+      "elapsed_seconds": 51.080091999989236,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "setting": "bond256",
+      "family": "bond",
+      "bond": 256,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5150062959091272,
+        "bks_rate": 0.32327696724665905,
+        "near_bks_rate": 0.4942293915895106,
+        "quality_mass": 0.49858694344477084,
+        "conditional_mean_size": 12.585535975516898,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9999995197127654,
+        "total_variation_distance": 6.532096002981345e-05,
+        "reference_norm": 0.999999999999985,
+        "mps_norm": 1.0000000000000004,
+        "raw_mps_norm": 0.999999999960483,
+        "raw_norm_drift": -3.9516945271600434e-11
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 173.62207879999187,
+      "metric_seconds": 3.8402848999830894,
+      "elapsed_seconds": 177.46236369997496,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "setting": "bond512",
+      "family": "bond",
+      "bond": 512,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5150056295003291,
+        "bks_rate": 0.3232767333122465,
+        "near_bks_rate": 0.4942285777191591,
+        "quality_mass": 0.4985863025566433,
+        "conditional_mean_size": 12.58553608341134,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999984929088,
+        "total_variation_distance": 3.378123203443199e-06,
+        "reference_norm": 0.999999999999985,
+        "mps_norm": 1.0000000000000004,
+        "raw_mps_norm": 0.9999999998081883,
+        "raw_norm_drift": -1.9181167765225382e-10
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 404.8101057999884,
+      "metric_seconds": 3.8436589000048116,
+      "elapsed_seconds": 408.6537646999932,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "setting": "bond64",
+      "family": "bond",
+      "bond": 64,
+      "cutoff": 1e-12,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5159373532366738,
+        "bks_rate": 0.32388523159476157,
+        "near_bks_rate": 0.49508793652817634,
+        "quality_mass": 0.4994874373476429,
+        "conditional_mean_size": 12.58551381245059,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9985770171161917,
+        "total_variation_distance": 0.006884243335385281,
+        "reference_norm": 0.999999999999985,
+        "mps_norm": 0.9999999999999992,
+        "raw_mps_norm": 1.000000035633075,
+        "raw_norm_drift": 3.5633074935148557e-08
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 16.821536000003107,
+      "metric_seconds": 3.7578032999881543,
+      "elapsed_seconds": 20.57933929999126,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 0.9999999999999992
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "setting": "confirm",
+      "family": "anchor",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5387475769474869,
+        "bks_rate": 0.33856841067195076,
+        "near_bks_rate": 0.5178600520763634,
+        "quality_mass": 0.5216762867995874,
+        "conditional_mean_size": 12.588069104310192,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9491274272388217,
+        "total_variation_distance": 0.0739993815135786,
+        "reference_norm": 0.999999999999985,
+        "mps_norm": 1.0000000000000002,
+        "raw_mps_norm": 1.000093385172119,
+        "raw_norm_drift": 9.338517211898711e-05
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 8.02780020001228,
+      "metric_seconds": 3.7630035000038333,
+      "elapsed_seconds": 11.790803700016113,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "setting": "cutoff1e-3",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 0.001,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6342390435185926,
+        "bks_rate": 0.4262910264834644,
+        "near_bks_rate": 0.6194710505140695,
+        "quality_mass": 0.6170743327458761,
+        "conditional_mean_size": 12.648174860369071,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.7793147456742319,
+        "total_variation_distance": 0.2325555786262703,
+        "reference_norm": 0.999999999999985,
+        "mps_norm": 1.0000000000000004,
+        "raw_mps_norm": 1.0003256498752293,
+        "raw_norm_drift": 0.0003256498752293169
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 8.009653899993282,
+      "metric_seconds": 3.909119700023439,
+      "elapsed_seconds": 11.91877360001672,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "setting": "cutoff1e-4",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5387475769474869,
+        "bks_rate": 0.33856841067195076,
+        "near_bks_rate": 0.5178600520763634,
+        "quality_mass": 0.5216762867995874,
+        "conditional_mean_size": 12.588069104310192,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9491274272388217,
+        "total_variation_distance": 0.0739993815135786,
+        "reference_norm": 0.999999999999985,
+        "mps_norm": 1.0000000000000002,
+        "raw_mps_norm": 1.000093385172119,
+        "raw_norm_drift": 9.338517211898711e-05
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 8.616668100003153,
+      "metric_seconds": 3.9549079000134952,
+      "elapsed_seconds": 12.571576000016648,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "setting": "cutoff1e-5",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5179699384303056,
+        "bks_rate": 0.3263971352445355,
+        "near_bks_rate": 0.49687515295170825,
+        "quality_mass": 0.5015365868584498,
+        "conditional_mean_size": 12.587556044118053,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9932843722224117,
+        "total_variation_distance": 0.0232386497240242,
+        "reference_norm": 0.999999999999985,
+        "mps_norm": 1.0000000000000002,
+        "raw_mps_norm": 1.0000166235235126,
+        "raw_norm_drift": 1.6623523512615535e-05
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 9.69321250001667,
+      "metric_seconds": 3.931552800000645,
+      "elapsed_seconds": 13.624765300017316,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "setting": "cutoff1e-6",
+      "family": "cutoff",
+      "bond": 1024,
+      "cutoff": 1e-06,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5150806891429652,
+        "bks_rate": 0.32334820019083493,
+        "near_bks_rate": 0.4942959409714034,
+        "quality_mass": 0.4986598622770856,
+        "conditional_mean_size": 12.585558624588263,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9992384171580128,
+        "total_variation_distance": 0.006358573990578107,
+        "reference_norm": 0.999999999999985,
+        "mps_norm": 1.0000000000000002,
+        "raw_mps_norm": 1.0000009906104559,
+        "raw_norm_drift": 9.906104558865536e-07
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 13.273505999997724,
+      "metric_seconds": 3.90745609998703,
+      "elapsed_seconds": 17.180962099984754,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "setting": "released",
+      "family": "anchor",
+      "bond": 64,
+      "cutoff": 0.001,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6342390435185926,
+        "bks_rate": 0.4262910264834644,
+        "near_bks_rate": 0.6194710505140695,
+        "quality_mass": 0.6170743327458761,
+        "conditional_mean_size": 12.648174860369071,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.7793147456742319,
+        "total_variation_distance": 0.2325555786262703,
+        "reference_norm": 0.999999999999985,
+        "mps_norm": 1.0000000000000004,
+        "raw_mps_norm": 1.0003256498752293,
+        "raw_norm_drift": 0.0003256498752293169
+      },
+      "resources": {
+        "circuit_depth": 189,
+        "circuit_size": 1653,
+        "rzz_gates": 885,
+        "rx_gates": 360,
+        "operations": {
+          "rzz": 885,
+          "rz": 360,
+          "rx": 360,
+          "h": 24,
+          "measure": 24
+        }
+      },
+      "simulation_seconds": 7.284899299993413,
+      "metric_seconds": 3.8526038999843877,
+      "elapsed_seconds": 11.1375031999778,
+      "accumulator": {
+        "implementation": "chunked_statevector_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 16777216,
+        "forbidden_patterns": 59,
+        "statevector_norm": 1.0000000000000004
+      }
+    }
+  ],
+  "errors": []
+}

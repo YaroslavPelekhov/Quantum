@@ -1,0 +1,6 @@
+case,sign_correct,sign_total,tvd_certified,cross_backend_same_sign,cross_backend_total,first_universal_setting,max_tvd_margin_ratio
+karate,20,20,20,10,10,released,0.135527573
+chesapeake,20,20,20,10,10,released,0.75457625
+football,20,20,18,10,10,confirm,4.10556909
+ibm32,20,20,14,10,10,cutoff1e-4,3.19624874
+aves-sparrow-social,11,20,5,5,10,none,57.5709896

@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "cohorts": 100,
+  "ratio_below_one": {
+    "correct": 77,
+    "wrong": 0,
+    "correct_fraction": 1.0,
+    "clopper_pearson_95": [
+      0.9532219318395959,
+      1.0
+    ]
+  },
+  "ratio_at_least_one": {
+    "correct": 14,
+    "wrong": 9,
+    "correct_fraction": 0.6086956521739131,
+    "clopper_pearson_95": [
+      0.3854189573888496,
+      0.8029235760309856
+    ]
+  },
+  "fisher_exact_two_sided": {
+    "odds_ratio": Infinity,
+    "p_value": 4.2959538179910497e-07
+  },
+  "maximum_tvd_bound_violation": 6.522560269672795e-16
+}

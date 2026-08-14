@@ -1,0 +1,44 @@
+{
+  "stage": "independent_ladder_self_test",
+  "complete": true,
+  "provenance": {
+    "created_at": "2026-08-11T12:34:22.560014+00:00",
+    "python": "3.12.3 (main, Mar 23 2026, 19:04:32) [GCC 13.3.0]",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "qiskit": "2.5.1",
+    "numpy": "2.5.1",
+    "cupy": "14.1.1",
+    "cuquantum": "26.6.0",
+    "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+    "gpu_total_bytes": 17170956288,
+    "gpu_free_bytes_at_start": 15727591424,
+    "network_memory_limit": "60%",
+    "runner_sha256": "6454f7a854f875ccb1655e960a37e112e25d0fffd236ce733419026c01aa4000",
+    "protocol_sha256": "39b381d49b1b222250e55c9cc457f86ab224f26b9fba8447bef489755d19227e",
+    "manifest_sha256": "0acef4c08541207e7cef68df81c1a8561edd02a8e7ad5c8df9b773f91ab14877"
+  },
+  "simulation_seconds": 1.0829115610000013,
+  "raw_norm": 0.9999999999999996,
+  "comparison": {
+    "state_fidelity": 1.0000000000000002,
+    "total_variation_distance": 2.368981746880827e-16,
+    "reference_norm": 1.0,
+    "approximate_norm": 0.9999999999999999
+  },
+  "metrics": {
+    "feasible_rate": 0.5000000000000002,
+    "bks_rate": 0.016918163598491416,
+    "near_bks_rate": 0.016918163598491416,
+    "quality_mass": 0.018190292224478963,
+    "conditional_mean_size": 0.24868454416388094,
+    "best_size_nonzero_probability": 7
+  },
+  "maximum_metric_error": 2.220446049250313e-16,
+  "accumulator": {
+    "implementation": "static_chunked_literal_accumulator",
+    "chunk_size": 262144,
+    "basis_states": 16,
+    "forbidden_patterns": 2,
+    "statevector_norm": 0.9999999999999999
+  }
+}

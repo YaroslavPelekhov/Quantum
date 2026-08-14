@@ -1,0 +1,6049 @@
+{
+  "stage": "cross_case_aer_mps_ladder",
+  "complete": true,
+  "manifest_sha256": "37339dd66645c16b9fc077ddb09e68cb5c70216e41f4b779aa9d50687d931f80",
+  "protocol_sha256": "94d14d8425650e04bca1030a9190ff00a162cff3200867b8b9c529df6f387751",
+  "provenance": {
+    "created_at": "2026-08-11T20:21:52.263633+00:00",
+    "python": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "qiskit": "2.5.1",
+    "qiskit_aer": "0.17.2",
+    "numpy": "2.5.1",
+    "max_parallel_experiments": 1,
+    "runner_sha256": "71645572499d2d9b829afee40071c3a0cdf0397230d55adf22e67d0979466e8f",
+    "protocol_sha256": "94d14d8425650e04bca1030a9190ff00a162cff3200867b8b9c529df6f387751",
+    "manifest_sha256": "37339dd66645c16b9fc077ddb09e68cb5c70216e41f4b779aa9d50687d931f80"
+  },
+  "settings": [
+    {
+      "name": "released",
+      "bond": 64,
+      "cutoff": 0.001
+    },
+    {
+      "name": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001
+    },
+    {
+      "name": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12
+    },
+    {
+      "name": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001
+    },
+    {
+      "name": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05
+    }
+  ],
+  "expected_jobs": 120,
+  "rows": [
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9530604433568974,
+        "bks_rate": 0.5899775360983395,
+        "near_bks_rate": 0.949071103736254,
+        "quality_mass": 0.9314670688245231,
+        "conditional_mean_size": 16.614833067924426,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999999985849,
+        "total_variation_distance": 5.821474920437318e-08,
+        "reference_norm": 0.9999999999999978,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 0.9999999999977577,
+        "raw_norm_drift": -2.2423174428354287e-12
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.009457300009671599,
+      "metric_seconds": 0.000639100035186857,
+      "elapsed_seconds": 0.010096400044858456,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9530604427984786,
+        "bks_rate": 0.5899775355778634,
+        "near_bks_rate": 0.9490711031732135,
+        "quality_mass": 0.9314670682679022,
+        "conditional_mean_size": 16.61483306773082,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999999985846,
+        "total_variation_distance": 5.89103479884527e-08,
+        "reference_norm": 0.9999999999999977,
+        "approximate_norm": 0.9999999999999998,
+        "raw_approximate_norm": 0.9999999999988489,
+        "raw_norm_drift": -1.1510792319313623e-12
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.008448300010059029,
+      "metric_seconds": 0.0006563999922946095,
+      "elapsed_seconds": 0.009104700002353638,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 0.9999999999999998
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9245870996714272,
+        "bks_rate": 0.6640795387702283,
+        "near_bks_rate": 0.916031982660159,
+        "quality_mass": 0.908757245564804,
+        "conditional_mean_size": 16.708943029912238,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 1.0000000000000002,
+        "total_variation_distance": 5.016836205377152e-10,
+        "reference_norm": 0.9999999999999971,
+        "approximate_norm": 0.9999999999999999,
+        "raw_approximate_norm": 1.000000000000051,
+        "raw_norm_drift": 5.10702591327572e-14
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.009976100001949817,
+      "metric_seconds": 0.0007184999994933605,
+      "elapsed_seconds": 0.010694600001443177,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 0.9999999999999999
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.92458709963366,
+        "bks_rate": 0.6640795387390086,
+        "near_bks_rate": 0.9160319826192849,
+        "quality_mass": 0.9087572455272194,
+        "conditional_mean_size": 16.708943029903708,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 1.0000000000000002,
+        "total_variation_distance": 6.153594433505586e-10,
+        "reference_norm": 0.9999999999999958,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 0.9999999999999908,
+        "raw_norm_drift": -9.2148511043888e-15
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.00862149999011308,
+      "metric_seconds": 0.0007078999769873917,
+      "elapsed_seconds": 0.009329399967100471,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.954310114483202,
+        "bks_rate": 0.7982931304079401,
+        "near_bks_rate": 0.951158831203568,
+        "quality_mass": 0.9449360260324307,
+        "conditional_mean_size": 16.833010777896433,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 1.0,
+        "total_variation_distance": 1.676028916640173e-10,
+        "reference_norm": 0.9999999999999953,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 0.9999999999999732,
+        "raw_norm_drift": -2.6756374893466273e-14
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.009398999973200262,
+      "metric_seconds": 0.0007181999972090125,
+      "elapsed_seconds": 0.010117199970409274,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9543101144850462,
+        "bks_rate": 0.7982931304060544,
+        "near_bks_rate": 0.9511588312096366,
+        "quality_mass": 0.9449360260342561,
+        "conditional_mean_size": 16.833010777896423,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 1.0000000000000002,
+        "total_variation_distance": 2.0512216061805355e-10,
+        "reference_norm": 0.9999999999999957,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.0000000000000644,
+        "raw_norm_drift": 6.439293542825908e-14
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.008507999998982996,
+      "metric_seconds": 0.0006186999962665141,
+      "elapsed_seconds": 0.00912669999524951,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9522362127286723,
+        "bks_rate": 0.589690689398068,
+        "near_bks_rate": 0.9481661969253796,
+        "quality_mass": 0.9306658603695119,
+        "conditional_mean_size": 16.614910685810884,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.9981940416193068,
+        "total_variation_distance": 0.006082273498922666,
+        "reference_norm": 0.9999999999999978,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 0.999999999999982,
+        "raw_norm_drift": -1.7985612998927536e-14
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.008641899970825762,
+      "metric_seconds": 0.0007304999744519591,
+      "elapsed_seconds": 0.00937239994527772,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9526944782598585,
+        "bks_rate": 0.5902165506668429,
+        "near_bks_rate": 0.9487725830538646,
+        "quality_mass": 0.9311363764533476,
+        "conditional_mean_size": 16.615314522048983,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.9985189380752184,
+        "total_variation_distance": 0.005930262803528891,
+        "reference_norm": 0.9999999999999977,
+        "approximate_norm": 0.9999999999999998,
+        "raw_approximate_norm": 1.0000000000000155,
+        "raw_norm_drift": 1.554312234475219e-14
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.008258899964857846,
+      "metric_seconds": 0.0007170999888330698,
+      "elapsed_seconds": 0.008975999953690916,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 0.9999999999999998
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.92185664763067,
+        "bks_rate": 0.6626502511927926,
+        "near_bks_rate": 0.9130337515830445,
+        "quality_mass": 0.9060855537942836,
+        "conditional_mean_size": 16.70916454753822,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.9990058734223156,
+        "total_variation_distance": 0.004997968625784659,
+        "reference_norm": 0.9999999999999971,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.9999999999999877,
+        "raw_norm_drift": -1.2323475573339238e-14
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.009487000002991408,
+      "metric_seconds": 0.0006364000146277249,
+      "elapsed_seconds": 0.010123400017619133,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9214172004873618,
+        "bks_rate": 0.6624474254702714,
+        "near_bks_rate": 0.9128008870934569,
+        "quality_mass": 0.9056723320928395,
+        "conditional_mean_size": 16.709509695971263,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.9989416804502752,
+        "total_variation_distance": 0.005541124563605981,
+        "reference_norm": 0.9999999999999958,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.0000000000000422,
+        "raw_norm_drift": 4.218847493575595e-14
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.008313000027555972,
+      "metric_seconds": 0.0007987000280991197,
+      "elapsed_seconds": 0.009111700055655092,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9554140818932605,
+        "bks_rate": 0.7986876857017404,
+        "near_bks_rate": 0.9521950401119219,
+        "quality_mass": 0.9459940975992,
+        "conditional_mean_size": 16.832387091593112,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.9983257811410274,
+        "total_variation_distance": 0.0030541974831094273,
+        "reference_norm": 0.9999999999999953,
+        "approximate_norm": 0.9999999999999998,
+        "raw_approximate_norm": 1.0000000000000084,
+        "raw_norm_drift": 8.43769498715119e-15
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.008839700021781027,
+      "metric_seconds": 0.0006953999982215464,
+      "elapsed_seconds": 0.009535100020002574,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 0.9999999999999998
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.956171150761999,
+        "bks_rate": 0.7985466006487338,
+        "near_bks_rate": 0.9526906309208236,
+        "quality_mass": 0.9466849769480786,
+        "conditional_mean_size": 16.831343003072067,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.9987847178892258,
+        "total_variation_distance": 0.003535640522257756,
+        "reference_norm": 0.9999999999999957,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 1.0000000000000284,
+        "raw_norm_drift": 2.842170943040401e-14
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.007910099986474961,
+      "metric_seconds": 0.0006122999475337565,
+      "elapsed_seconds": 0.008522399934008718,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9522362127286723,
+        "bks_rate": 0.589690689398068,
+        "near_bks_rate": 0.9481661969253796,
+        "quality_mass": 0.9306658603695119,
+        "conditional_mean_size": 16.614910685810884,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.9981940416193068,
+        "total_variation_distance": 0.006082273498922666,
+        "reference_norm": 0.9999999999999978,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 0.999999999999982,
+        "raw_norm_drift": -1.7985612998927536e-14
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.008637199993245304,
+      "metric_seconds": 0.0008618999854661524,
+      "elapsed_seconds": 0.009499099978711456,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9526944782598585,
+        "bks_rate": 0.5902165506668429,
+        "near_bks_rate": 0.9487725830538646,
+        "quality_mass": 0.9311363764533476,
+        "conditional_mean_size": 16.615314522048983,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.9985189380752184,
+        "total_variation_distance": 0.005930262803528891,
+        "reference_norm": 0.9999999999999977,
+        "approximate_norm": 0.9999999999999998,
+        "raw_approximate_norm": 1.0000000000000155,
+        "raw_norm_drift": 1.554312234475219e-14
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.007979599991813302,
+      "metric_seconds": 0.0007115000043995678,
+      "elapsed_seconds": 0.00869109999621287,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 0.9999999999999998
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.92185664763067,
+        "bks_rate": 0.6626502511927926,
+        "near_bks_rate": 0.9130337515830445,
+        "quality_mass": 0.9060855537942836,
+        "conditional_mean_size": 16.70916454753822,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.9990058734223156,
+        "total_variation_distance": 0.004997968625784659,
+        "reference_norm": 0.9999999999999971,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.9999999999999877,
+        "raw_norm_drift": -1.2323475573339238e-14
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.00937699998030439,
+      "metric_seconds": 0.0007982999668456614,
+      "elapsed_seconds": 0.010175299947150052,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9214172004873618,
+        "bks_rate": 0.6624474254702714,
+        "near_bks_rate": 0.9128008870934569,
+        "quality_mass": 0.9056723320928395,
+        "conditional_mean_size": 16.709509695971263,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.9989416804502752,
+        "total_variation_distance": 0.005541124563605981,
+        "reference_norm": 0.9999999999999958,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.0000000000000422,
+        "raw_norm_drift": 4.218847493575595e-14
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.008757400035392493,
+      "metric_seconds": 0.0006137000164017081,
+      "elapsed_seconds": 0.009371100051794201,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9554140818932605,
+        "bks_rate": 0.7986876857017404,
+        "near_bks_rate": 0.9521950401119219,
+        "quality_mass": 0.9459940975992,
+        "conditional_mean_size": 16.832387091593112,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.9983257811410274,
+        "total_variation_distance": 0.0030541974831094273,
+        "reference_norm": 0.9999999999999953,
+        "approximate_norm": 0.9999999999999998,
+        "raw_approximate_norm": 1.0000000000000084,
+        "raw_norm_drift": 8.43769498715119e-15
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.008810700033791363,
+      "metric_seconds": 0.0006484999903477728,
+      "elapsed_seconds": 0.009459200024139136,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 0.9999999999999998
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.956171150761999,
+        "bks_rate": 0.7985466006487338,
+        "near_bks_rate": 0.9526906309208236,
+        "quality_mass": 0.9466849769480786,
+        "conditional_mean_size": 16.831343003072067,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.9987847178892258,
+        "total_variation_distance": 0.003535640522257756,
+        "reference_norm": 0.9999999999999957,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 1.0000000000000284,
+        "raw_norm_drift": 2.842170943040401e-14
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.007915199967101216,
+      "metric_seconds": 0.0006107999943196774,
+      "elapsed_seconds": 0.008525999961420894,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9535083301384784,
+        "bks_rate": 0.5904397824034301,
+        "near_bks_rate": 0.9495846529318172,
+        "quality_mass": 0.9319195008955616,
+        "conditional_mean_size": 16.61509502798336,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.9998823577567376,
+        "total_variation_distance": 0.0018692995148280546,
+        "reference_norm": 0.9999999999999978,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 1.0000000000000246,
+        "raw_norm_drift": 2.4646951146678475e-14
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.009153099963441491,
+      "metric_seconds": 0.000652400020044297,
+      "elapsed_seconds": 0.009805499983485788,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9535989416164442,
+        "bks_rate": 0.5904378327146769,
+        "near_bks_rate": 0.9495916315963779,
+        "quality_mass": 0.9320000095730846,
+        "conditional_mean_size": 16.614951497204157,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.9999078259569736,
+        "total_variation_distance": 0.0015247133919695146,
+        "reference_norm": 0.9999999999999977,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.9999999999999677,
+        "raw_norm_drift": -3.2307490016592055e-14
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.00869689998216927,
+      "metric_seconds": 0.0006059000152163208,
+      "elapsed_seconds": 0.009302799997385591,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.923853336776949,
+        "bks_rate": 0.6638252542041261,
+        "near_bks_rate": 0.9152976267206594,
+        "quality_mass": 0.9080515887895118,
+        "conditional_mean_size": 16.709229046329362,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.9999029942325223,
+        "total_variation_distance": 0.001699486716333093,
+        "reference_norm": 0.9999999999999971,
+        "approximate_norm": 0.9999999999999999,
+        "raw_approximate_norm": 0.9999999999999633,
+        "raw_norm_drift": -3.674838211509268e-14
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.01691830001072958,
+      "metric_seconds": 0.001118500018492341,
+      "elapsed_seconds": 0.018036800029221922,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 0.9999999999999999
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9236704878229983,
+        "bks_rate": 0.6636589242033901,
+        "near_bks_rate": 0.9150874007388352,
+        "quality_mass": 0.9078683226889409,
+        "conditional_mean_size": 16.70916380806739,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.9999004896667126,
+        "total_variation_distance": 0.0019545838610036375,
+        "reference_norm": 0.9999999999999958,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 1.0000000000000189,
+        "raw_norm_drift": 1.887379141862766e-14
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.017792000027839094,
+      "metric_seconds": 0.0011390999425202608,
+      "elapsed_seconds": 0.018931099970359355,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9540766095204622,
+        "bks_rate": 0.7980862006421245,
+        "near_bks_rate": 0.9508965130460894,
+        "quality_mass": 0.9446995683311767,
+        "conditional_mean_size": 16.832917295501062,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.9999115523032538,
+        "total_variation_distance": 0.000612531408263289,
+        "reference_norm": 0.9999999999999953,
+        "approximate_norm": 0.9999999999999998,
+        "raw_approximate_norm": 1.0000000000000293,
+        "raw_norm_drift": 2.930988785010413e-14
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.009296300006099045,
+      "metric_seconds": 0.0007271000067703426,
+      "elapsed_seconds": 0.010023400012869388,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 0.9999999999999998
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9541915527432561,
+        "bks_rate": 0.7980059718068764,
+        "near_bks_rate": 0.9510304055544564,
+        "quality_mass": 0.9448082965656108,
+        "conditional_mean_size": 16.832826695477056,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.9999086393768077,
+        "total_variation_distance": 0.0008419344398854153,
+        "reference_norm": 0.9999999999999957,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.9999999999999922,
+        "raw_norm_drift": -7.771561172376096e-15
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.008392300049308687,
+      "metric_seconds": 0.0006393999792635441,
+      "elapsed_seconds": 0.009031700028572232,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9718720006094328,
+        "bks_rate": 0.6369195943045834,
+        "near_bks_rate": 0.9663556399230622,
+        "quality_mass": 0.9517951978865258,
+        "conditional_mean_size": 16.64881625761891,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.9732881387220498,
+        "total_variation_distance": 0.05748734143055133,
+        "reference_norm": 0.9999999999999978,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.9999999999999992,
+        "raw_norm_drift": -7.771561172376096e-16
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.007569100009277463,
+      "metric_seconds": 0.0006921000313013792,
+      "elapsed_seconds": 0.008261200040578842,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.965366553373626,
+        "bks_rate": 0.6192263055267794,
+        "near_bks_rate": 0.9586504519431178,
+        "quality_mass": 0.9446068178860403,
+        "conditional_mean_size": 16.63442331614283,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.977647207808772,
+        "total_variation_distance": 0.03814870253193085,
+        "reference_norm": 0.9999999999999977,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.0000000000000007,
+        "raw_norm_drift": 6.661338147750939e-16
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.007110599952284247,
+      "metric_seconds": 0.0006952999974600971,
+      "elapsed_seconds": 0.007805899949744344,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9812645511387021,
+        "bks_rate": 0.7206113313018295,
+        "near_bks_rate": 0.9682762424720989,
+        "quality_mass": 0.9651312844210487,
+        "conditional_mean_size": 16.720497867897258,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.9421890575633676,
+        "total_variation_distance": 0.06780305140321041,
+        "reference_norm": 0.9999999999999971,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.9999999999999997,
+        "raw_norm_drift": -3.3306690738754696e-16
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.008191100030671805,
+      "metric_seconds": 0.0006582000060006976,
+      "elapsed_seconds": 0.008849300036672503,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9662059364724397,
+        "bks_rate": 0.706761156777852,
+        "near_bks_rate": 0.9569840597054592,
+        "quality_mass": 0.9503557247333672,
+        "conditional_mean_size": 16.721121978873374,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.9506671858236989,
+        "total_variation_distance": 0.060392334497697604,
+        "reference_norm": 0.9999999999999958,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 1.0000000000000018,
+        "raw_norm_drift": 1.7763568394002505e-15
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.007666499994229525,
+      "metric_seconds": 0.0006841999711468816,
+      "elapsed_seconds": 0.008350699965376407,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9738011100094481,
+        "bks_rate": 0.8292799106578757,
+        "near_bks_rate": 0.9701397634928617,
+        "quality_mass": 0.9650788138957181,
+        "conditional_mean_size": 16.847731705777196,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.9815953334335049,
+        "total_variation_distance": 0.03347133707769006,
+        "reference_norm": 0.9999999999999953,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 0.9999999999999994,
+        "raw_norm_drift": -5.551115123125783e-16
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.00758590002078563,
+      "metric_seconds": 0.0006646999972872436,
+      "elapsed_seconds": 0.008250600018072873,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "chesapeake",
+      "backend": "aer",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9711905468743512,
+        "bks_rate": 0.8285608631066143,
+        "near_bks_rate": 0.9689227437183792,
+        "quality_mass": 0.9626630365133767,
+        "conditional_mean_size": 16.85073199424858,
+        "best_size_nonzero_probability": 17
+      },
+      "comparison": {
+        "state_fidelity": 0.9781316823539933,
+        "total_variation_distance": 0.03455214301658921,
+        "reference_norm": 0.9999999999999957,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.0000000000000002,
+        "raw_norm_drift": 2.220446049250313e-16
+      },
+      "resources": {
+        "circuit_depth": 139,
+        "circuit_size": 434,
+        "rzz_gates": 210,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 210,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.007004500017501414,
+      "metric_seconds": 0.0006602000212296844,
+      "elapsed_seconds": 0.007664700038731098,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 14,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9184194060864195,
+        "bks_rate": 0.8701032111431083,
+        "near_bks_rate": 0.9179062347699948,
+        "quality_mass": 0.9153674560641765,
+        "conditional_mean_size": 15.946831262457783,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999999984076,
+        "total_variation_distance": 2.0267482935148574e-07,
+        "reference_norm": 0.9999999999999992,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 0.9999999999959289,
+        "raw_norm_drift": -4.0710768089979865e-12
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.010863800009246916,
+      "metric_seconds": 0.0010617999942041934,
+      "elapsed_seconds": 0.011925600003451109,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9184193199190652,
+        "bks_rate": 0.8701031199529993,
+        "near_bks_rate": 0.9179061509524572,
+        "quality_mass": 0.9153673697461054,
+        "conditional_mean_size": 15.946831254843746,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999999977232,
+        "total_variation_distance": 5.940806912631673e-07,
+        "reference_norm": 0.9999999999999998,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 0.9999999999952246,
+        "raw_norm_drift": -4.775402295820186e-12
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.00656929996330291,
+      "metric_seconds": 0.0006335999933071434,
+      "elapsed_seconds": 0.007202899956610054,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9067699397151991,
+        "bks_rate": 0.8820366866994563,
+        "near_bks_rate": 0.9063420900975997,
+        "quality_mass": 0.9051949746862004,
+        "conditional_mean_size": 15.972209664921298,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 1.0000000000000002,
+        "total_variation_distance": 1.2929715255431913e-10,
+        "reference_norm": 0.999999999999997,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.0000000000000322,
+        "raw_norm_drift": 3.219646771412954e-14
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.015732200001366436,
+      "metric_seconds": 0.0011582000297494233,
+      "elapsed_seconds": 0.01689040003111586,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9067699397721878,
+        "bks_rate": 0.8820366867039678,
+        "near_bks_rate": 0.90634209015672,
+        "quality_mass": 0.905194974740056,
+        "conditional_mean_size": 15.97220966486776,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 1.0000000000000002,
+        "total_variation_distance": 2.1590992188442247e-10,
+        "reference_norm": 0.9999999999999961,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.9999999999999807,
+        "raw_norm_drift": -1.9317880628477724e-14
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.006666600005701184,
+      "metric_seconds": 0.0006717999931424856,
+      "elapsed_seconds": 0.00733839999884367,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8774172876067018,
+        "bks_rate": 0.8627678106768288,
+        "near_bks_rate": 0.877309190501269,
+        "quality_mass": 0.8764939499463162,
+        "conditional_mean_size": 15.983162626523503,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999999999348,
+        "total_variation_distance": 9.191171335935359e-09,
+        "reference_norm": 0.9999999999999959,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 0.999999999999962,
+        "raw_norm_drift": -3.7969627442180354e-14
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.015454300038982183,
+      "metric_seconds": 0.0010758000425994396,
+      "elapsed_seconds": 0.016530100081581622,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8774172877909382,
+        "bks_rate": 0.8627678112776701,
+        "near_bks_rate": 0.8773091908938229,
+        "quality_mass": 0.8764939501816961,
+        "conditional_mean_size": 15.983162627459656,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999999997583,
+        "total_variation_distance": 2.2397708706965874e-08,
+        "reference_norm": 0.9999999999999963,
+        "approximate_norm": 0.9999999999999998,
+        "raw_approximate_norm": 0.9999999999997402,
+        "raw_norm_drift": -2.5979218776228663e-13
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.014235599956009537,
+      "metric_seconds": 0.0011565000168047845,
+      "elapsed_seconds": 0.015392099972814322,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 0.9999999999999998
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9174191807965857,
+        "bks_rate": 0.8700910221284607,
+        "near_bks_rate": 0.9169808864964147,
+        "quality_mass": 0.9144337038113615,
+        "conditional_mean_size": 15.947932599662773,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.9988648037963495,
+        "total_variation_distance": 0.00500882478489224,
+        "reference_norm": 0.9999999999999992,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.0000000000000029,
+        "raw_norm_drift": 2.886579864025407e-15
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.01493139995727688,
+      "metric_seconds": 0.001134999969508499,
+      "elapsed_seconds": 0.01606639992678538,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9192553156224751,
+        "bks_rate": 0.8716190142593051,
+        "near_bks_rate": 0.9188578022964536,
+        "quality_mass": 0.9162529762368388,
+        "conditional_mean_size": 15.947743103190376,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.9982954168031677,
+        "total_variation_distance": 0.006202116556311552,
+        "reference_norm": 0.9999999999999998,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 0.9999999999999986,
+        "raw_norm_drift": -1.4432899320127035e-15
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.012965699948836118,
+      "metric_seconds": 0.0011525999871082604,
+      "elapsed_seconds": 0.014118299935944378,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.907159948689848,
+        "bks_rate": 0.882650191093082,
+        "near_bks_rate": 0.9066864147974066,
+        "quality_mass": 0.9055940879456302,
+        "conditional_mean_size": 15.972382189112661,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.998837142710922,
+        "total_variation_distance": 0.005328806366010425,
+        "reference_norm": 0.999999999999997,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 0.9999999999999868,
+        "raw_norm_drift": -1.3211653993039363e-14
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.015578599995933473,
+      "metric_seconds": 0.0010915999882854521,
+      "elapsed_seconds": 0.016670199984218925,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9079563473328074,
+        "bks_rate": 0.883748022460414,
+        "near_bks_rate": 0.90744789323951,
+        "quality_mass": 0.9064090122983965,
+        "conditional_mean_size": 15.97273287353153,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.9986267013279739,
+        "total_variation_distance": 0.00837206324288474,
+        "reference_norm": 0.9999999999999961,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.9999999999999949,
+        "raw_norm_drift": -5.10702591327572e-15
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.006433700036723167,
+      "metric_seconds": 0.0006157999741844833,
+      "elapsed_seconds": 0.00704950001090765,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.878196660281906,
+        "bks_rate": 0.8634577772877989,
+        "near_bks_rate": 0.8780592305267888,
+        "quality_mass": 0.8772665526218947,
+        "conditional_mean_size": 15.98305422551322,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.9983358965526227,
+        "total_variation_distance": 0.007860552783679347,
+        "reference_norm": 0.9999999999999959,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.0000000000000038,
+        "raw_norm_drift": 3.774758283725532e-15
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.013814800011459738,
+      "metric_seconds": 0.001109900011215359,
+      "elapsed_seconds": 0.014924700022675097,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.87786537542787,
+        "bks_rate": 0.8631528783755974,
+        "near_bks_rate": 0.8777174521770983,
+        "quality_mass": 0.8769365265794735,
+        "conditional_mean_size": 15.983070773730994,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.9979115924420975,
+        "total_variation_distance": 0.007546582451731409,
+        "reference_norm": 0.9999999999999963,
+        "approximate_norm": 0.9999999999999999,
+        "raw_approximate_norm": 1.0000000000000009,
+        "raw_norm_drift": 8.881784197001252e-16
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.013091400032863021,
+      "metric_seconds": 0.0012521000462584198,
+      "elapsed_seconds": 0.01434350007912144,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 0.9999999999999999
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9174191807965857,
+        "bks_rate": 0.8700910221284607,
+        "near_bks_rate": 0.9169808864964147,
+        "quality_mass": 0.9144337038113615,
+        "conditional_mean_size": 15.947932599662773,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.9988648037963495,
+        "total_variation_distance": 0.00500882478489224,
+        "reference_norm": 0.9999999999999992,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.0000000000000029,
+        "raw_norm_drift": 2.886579864025407e-15
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.013514600053895265,
+      "metric_seconds": 0.0018167000380344689,
+      "elapsed_seconds": 0.015331300091929734,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9192553156224751,
+        "bks_rate": 0.8716190142593051,
+        "near_bks_rate": 0.9188578022964536,
+        "quality_mass": 0.9162529762368388,
+        "conditional_mean_size": 15.947743103190376,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.9982954168031677,
+        "total_variation_distance": 0.006202116556311552,
+        "reference_norm": 0.9999999999999998,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 0.9999999999999986,
+        "raw_norm_drift": -1.4432899320127035e-15
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.011086500016972423,
+      "metric_seconds": 0.0011100000119768083,
+      "elapsed_seconds": 0.012196500028949231,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.907159948689848,
+        "bks_rate": 0.882650191093082,
+        "near_bks_rate": 0.9066864147974066,
+        "quality_mass": 0.9055940879456302,
+        "conditional_mean_size": 15.972382189112661,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.998837142710922,
+        "total_variation_distance": 0.005328806366010425,
+        "reference_norm": 0.999999999999997,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 0.9999999999999868,
+        "raw_norm_drift": -1.3211653993039363e-14
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.007472599972970784,
+      "metric_seconds": 0.0006443000165745616,
+      "elapsed_seconds": 0.008116899989545345,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9079563473328074,
+        "bks_rate": 0.883748022460414,
+        "near_bks_rate": 0.90744789323951,
+        "quality_mass": 0.9064090122983965,
+        "conditional_mean_size": 15.97273287353153,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.9986267013279739,
+        "total_variation_distance": 0.00837206324288474,
+        "reference_norm": 0.9999999999999961,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.9999999999999949,
+        "raw_norm_drift": -5.10702591327572e-15
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.008755999966524541,
+      "metric_seconds": 0.001108099997509271,
+      "elapsed_seconds": 0.009864099964033812,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.878196660281906,
+        "bks_rate": 0.8634577772877989,
+        "near_bks_rate": 0.8780592305267888,
+        "quality_mass": 0.8772665526218947,
+        "conditional_mean_size": 15.98305422551322,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.9983358965526227,
+        "total_variation_distance": 0.007860552783679347,
+        "reference_norm": 0.9999999999999959,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.0000000000000038,
+        "raw_norm_drift": 3.774758283725532e-15
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.009785300004296005,
+      "metric_seconds": 0.0011332000140100718,
+      "elapsed_seconds": 0.010918500018306077,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.87786537542787,
+        "bks_rate": 0.8631528783755974,
+        "near_bks_rate": 0.8777174521770983,
+        "quality_mass": 0.8769365265794735,
+        "conditional_mean_size": 15.983070773730994,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.9979115924420975,
+        "total_variation_distance": 0.007546582451731409,
+        "reference_norm": 0.9999999999999963,
+        "approximate_norm": 0.9999999999999999,
+        "raw_approximate_norm": 1.0000000000000009,
+        "raw_norm_drift": 8.881784197001252e-16
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.012326300027780235,
+      "metric_seconds": 0.0011177000124007463,
+      "elapsed_seconds": 0.013444000040180981,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 0.9999999999999999
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9178746665226593,
+        "bks_rate": 0.869611646580278,
+        "near_bks_rate": 0.9173426017721659,
+        "quality_mass": 0.9148249042529438,
+        "conditional_mean_size": 15.946837843885255,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.9999403424928802,
+        "total_variation_distance": 0.001446485237530399,
+        "reference_norm": 0.9999999999999992,
+        "approximate_norm": 0.9999999999999999,
+        "raw_approximate_norm": 0.9999999999999779,
+        "raw_norm_drift": -2.2093438190040615e-14
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.014378699997905642,
+      "metric_seconds": 0.0011799000203609467,
+      "elapsed_seconds": 0.015558600018266588,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 0.9999999999999999
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9182427776839859,
+        "bks_rate": 0.8699540773373393,
+        "near_bks_rate": 0.9177287701766483,
+        "quality_mass": 0.9151923370495534,
+        "conditional_mean_size": 15.946847335653407,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.9999239931650195,
+        "total_variation_distance": 0.0011169303226138017,
+        "reference_norm": 0.9999999999999998,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.0000000000000058,
+        "raw_norm_drift": 5.773159728050814e-15
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.012879999994765967,
+      "metric_seconds": 0.0011565000168047845,
+      "elapsed_seconds": 0.014036500011570752,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9066527162582947,
+        "bks_rate": 0.8819604462751129,
+        "near_bks_rate": 0.906219122322189,
+        "quality_mass": 0.9050798222415027,
+        "conditional_mean_size": 15.972242619674123,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.999932343495402,
+        "total_variation_distance": 0.0019859207956303936,
+        "reference_norm": 0.999999999999997,
+        "approximate_norm": 0.9999999999999999,
+        "raw_approximate_norm": 1.000000000000003,
+        "raw_norm_drift": 3.1086244689504383e-15
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.008052799967117608,
+      "metric_seconds": 0.0011070000473409891,
+      "elapsed_seconds": 0.009159800014458597,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 0.9999999999999999
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9065662541753929,
+        "bks_rate": 0.8818750503793547,
+        "near_bks_rate": 0.9061171636494665,
+        "quality_mass": 0.9049921442003397,
+        "conditional_mean_size": 15.972218511901525,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.9998883034412314,
+        "total_variation_distance": 0.002066840602273653,
+        "reference_norm": 0.9999999999999961,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 0.9999999999999982,
+        "raw_norm_drift": -1.7763568394002505e-15
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.0065814999979920685,
+      "metric_seconds": 0.0006848999764770269,
+      "elapsed_seconds": 0.0072663999744690955,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8773435749970055,
+        "bks_rate": 0.8625330849255892,
+        "near_bks_rate": 0.8772425899792494,
+        "quality_mass": 0.8764108356661027,
+        "conditional_mean_size": 15.982989754846615,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.9998853993484734,
+        "total_variation_distance": 0.0020340946418408654,
+        "reference_norm": 0.9999999999999959,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 1.0000000000000067,
+        "raw_norm_drift": 6.661338147750939e-15
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.0071721000131219625,
+      "metric_seconds": 0.0008076999802142382,
+      "elapsed_seconds": 0.0079797999933362,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8773461530638971,
+        "bks_rate": 0.8626734467236692,
+        "near_bks_rate": 0.8772346538254419,
+        "quality_mass": 0.8764215050290294,
+        "conditional_mean_size": 15.983137364304593,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.9998420169769651,
+        "total_variation_distance": 0.0017730772409994514,
+        "reference_norm": 0.9999999999999963,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 1.0000000000000075,
+        "raw_norm_drift": 7.549516567451064e-15
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.013028000015765429,
+      "metric_seconds": 0.0011618999997153878,
+      "elapsed_seconds": 0.014189900015480816,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9345576894309273,
+        "bks_rate": 0.8965124854297299,
+        "near_bks_rate": 0.9339107309627577,
+        "quality_mass": 0.9321378789268271,
+        "conditional_mean_size": 15.958571880041799,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.9781760964840683,
+        "total_variation_distance": 0.034062691901694545,
+        "reference_norm": 0.9999999999999992,
+        "approximate_norm": 0.9999999999999999,
+        "raw_approximate_norm": 0.9999999999999974,
+        "raw_norm_drift": -2.55351295663786e-15
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.01244710001628846,
+      "metric_seconds": 0.001214600051753223,
+      "elapsed_seconds": 0.013661700068041682,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 0.9999999999999999
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9324445682567372,
+        "bks_rate": 0.891268277257899,
+        "near_bks_rate": 0.9322617032639257,
+        "quality_mass": 0.929859531004873,
+        "conditional_mean_size": 15.955642836649096,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.981142573014092,
+        "total_variation_distance": 0.029250510543774914,
+        "reference_norm": 0.9999999999999998,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 0.9999999999999977,
+        "raw_norm_drift": -2.3314683517128287e-15
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.009452399972360581,
+      "metric_seconds": 0.0010656000231392682,
+      "elapsed_seconds": 0.01051799999549985,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9394825893068637,
+        "bks_rate": 0.9275085681689452,
+        "near_bks_rate": 0.9391148182690052,
+        "quality_mass": 0.9387112122323383,
+        "conditional_mean_size": 15.986862946335695,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.9586414046775091,
+        "total_variation_distance": 0.05396215722625784,
+        "reference_norm": 0.999999999999997,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.9999999999999988,
+        "raw_norm_drift": -1.2212453270876722e-15
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.006495199981145561,
+      "metric_seconds": 0.0007423999486491084,
+      "elapsed_seconds": 0.007237599929794669,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9299577957178313,
+        "bks_rate": 0.9150334353302749,
+        "near_bks_rate": 0.9296545427112199,
+        "quality_mass": 0.9290059432611613,
+        "conditional_mean_size": 15.983623300566059,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.9605018570083816,
+        "total_variation_distance": 0.048406721729185684,
+        "reference_norm": 0.9999999999999961,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 0.9999999999999943,
+        "raw_norm_drift": -5.662137425588298e-15
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.006682300008833408,
+      "metric_seconds": 0.0010781000019051135,
+      "elapsed_seconds": 0.007760400010738522,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.884317120198804,
+        "bks_rate": 0.875651250501455,
+        "near_bks_rate": 0.8842208417386261,
+        "quality_mass": 0.8837694599129136,
+        "conditional_mean_size": 15.99009115126904,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.9807600285228314,
+        "total_variation_distance": 0.025147539918522165,
+        "reference_norm": 0.9999999999999959,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.9999999999999988,
+        "raw_norm_drift": -1.2212453270876722e-15
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.0094822000246495,
+      "metric_seconds": 0.0010871000122278929,
+      "elapsed_seconds": 0.010569300036877394,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "football",
+      "backend": "aer",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 7,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8856972735245527,
+        "bks_rate": 0.8760224887262655,
+        "near_bks_rate": 0.885647448022828,
+        "quality_mass": 0.8850894804044169,
+        "conditional_mean_size": 15.989020300487688,
+        "best_size_nonzero_probability": 16
+      },
+      "comparison": {
+        "state_fidelity": 0.9821574552534507,
+        "total_variation_distance": 0.025665586557515926,
+        "reference_norm": 0.9999999999999963,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 1.0000000000000027,
+        "raw_norm_drift": 2.6645352591003757e-15
+      },
+      "resources": {
+        "circuit_depth": 124,
+        "circuit_size": 389,
+        "rzz_gates": 165,
+        "rx_gates": 105,
+        "operations": {
+          "rzz": 165,
+          "rz": 105,
+          "rx": 105,
+          "h": 7,
+          "measure": 7
+        }
+      },
+      "simulation_seconds": 0.011129399994388223,
+      "metric_seconds": 0.0012394000077620149,
+      "elapsed_seconds": 0.012368800002150238,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 128,
+        "forbidden_patterns": 11,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6799287971446599,
+        "bks_rate": 0.14131418030820034,
+        "near_bks_rate": 0.3357752084397511,
+        "quality_mass": 0.6073864243095751,
+        "conditional_mean_size": 11.613015288047192,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9875174698407634,
+        "total_variation_distance": 0.02403923533738734,
+        "reference_norm": 0.9999999999999958,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 1.0000000000000075,
+        "raw_norm_drift": 7.549516567451064e-15
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 145.30878930003382,
+      "metric_seconds": 0.06784720002906397,
+      "elapsed_seconds": 145.3766365000629,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6728854880653986,
+        "bks_rate": 0.13977389326819986,
+        "near_bks_rate": 0.3319931678911693,
+        "quality_mass": 0.6009304443858823,
+        "conditional_mean_size": 11.609844342871607,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9943095222714495,
+        "total_variation_distance": 0.012445774737133947,
+        "reference_norm": 0.9999999999999954,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 1.0000000000000049,
+        "raw_norm_drift": 4.884981308350689e-15
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 98.36526629998116,
+      "metric_seconds": 0.06297249998897314,
+      "elapsed_seconds": 98.42823879997013,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.553189632758409,
+        "bks_rate": 0.1397429660966381,
+        "near_bks_rate": 0.30831692229649904,
+        "quality_mass": 0.49961205887005505,
+        "conditional_mean_size": 11.740922787949671,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.954012520944179,
+        "total_variation_distance": 0.06626204831471014,
+        "reference_norm": 0.9999999999999913,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.9999999999999853,
+        "raw_norm_drift": -1.4654943925052066e-14
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 169.1891260999837,
+      "metric_seconds": 0.062036999966949224,
+      "elapsed_seconds": 169.25116309995065,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5408550460405438,
+        "bks_rate": 0.13579201309241984,
+        "near_bks_rate": 0.2996049697047356,
+        "quality_mass": 0.4879517681937334,
+        "conditional_mean_size": 11.728416020071704,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9727275584923873,
+        "total_variation_distance": 0.043242967764898554,
+        "reference_norm": 0.9999999999999925,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 0.9999999999999907,
+        "raw_norm_drift": -9.325873406851315e-15
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 121.86145570001099,
+      "metric_seconds": 0.06263370002852753,
+      "elapsed_seconds": 121.92408940003952,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.7258418061837095,
+        "bks_rate": 0.38041444234176314,
+        "near_bks_rate": 0.579090549573017,
+        "quality_mass": 0.6872871013976716,
+        "conditional_mean_size": 12.309476034655908,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9946665045847769,
+        "total_variation_distance": 0.008958949796579359,
+        "reference_norm": 0.9999999999999915,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.0000000000000056,
+        "raw_norm_drift": 5.551115123125783e-15
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 152.19810510001844,
+      "metric_seconds": 0.06518449995201081,
+      "elapsed_seconds": 152.26328959997045,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.7236131354418965,
+        "bks_rate": 0.37873206701299855,
+        "near_bks_rate": 0.5766590297765369,
+        "quality_mass": 0.6850532241004346,
+        "conditional_mean_size": 12.307255738063844,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9970006095093162,
+        "total_variation_distance": 0.005524647483555644,
+        "reference_norm": 0.9999999999999925,
+        "approximate_norm": 0.9999999999999999,
+        "raw_approximate_norm": 0.9999999999999885,
+        "raw_norm_drift": -1.1546319456101628e-14
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 107.84901349997381,
+      "metric_seconds": 0.06154009996680543,
+      "elapsed_seconds": 107.91055359994061,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 0.9999999999999999
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.7038560497794574,
+        "bks_rate": 0.15094712258719387,
+        "near_bks_rate": 0.3619924721128441,
+        "quality_mass": 0.6315044075449714,
+        "conditional_mean_size": 11.663687909846013,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9510092613243558,
+        "total_variation_distance": 0.08042004379987377,
+        "reference_norm": 0.9999999999999958,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 1.0000000000000007,
+        "raw_norm_drift": 6.661338147750939e-16
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 14.53566980001051,
+      "metric_seconds": 0.06172090000472963,
+      "elapsed_seconds": 14.59739070001524,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.697801960142373,
+        "bks_rate": 0.14729846323863371,
+        "near_bks_rate": 0.3532030370659448,
+        "quality_mass": 0.6249708572959142,
+        "conditional_mean_size": 11.64316182658646,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9611143142873018,
+        "total_variation_distance": 0.06596438653216097,
+        "reference_norm": 0.9999999999999954,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 0.9999999999999989,
+        "raw_norm_drift": -1.1102230246251565e-15
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 6.7494550999836065,
+      "metric_seconds": 0.065812399960123,
+      "elapsed_seconds": 6.8152674999437295,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5785095711934571,
+        "bks_rate": 0.1518482798770411,
+        "near_bks_rate": 0.33053676978349833,
+        "quality_mass": 0.5242822254942878,
+        "conditional_mean_size": 11.781428122900566,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9028147325604827,
+        "total_variation_distance": 0.1247481784112281,
+        "reference_norm": 0.9999999999999913,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.0000000000000027,
+        "raw_norm_drift": 2.6645352591003757e-15
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 36.84619719994953,
+      "metric_seconds": 0.06407469999976456,
+      "elapsed_seconds": 36.910271899949294,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5632548096114478,
+        "bks_rate": 0.1454400726573641,
+        "near_bks_rate": 0.31787465805027504,
+        "quality_mass": 0.5094786638469734,
+        "conditional_mean_size": 11.758839013872917,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9292221806990814,
+        "total_variation_distance": 0.09529711009535635,
+        "reference_norm": 0.9999999999999925,
+        "approximate_norm": 0.9999999999999998,
+        "raw_approximate_norm": 1.000000000000003,
+        "raw_norm_drift": 3.1086244689504383e-15
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 23.34667990001617,
+      "metric_seconds": 0.07751709996955469,
+      "elapsed_seconds": 23.424196999985725,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 0.9999999999999998
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.7413365100802359,
+        "bks_rate": 0.4067527171119508,
+        "near_bks_rate": 0.614420438378708,
+        "quality_mass": 0.7055605124450128,
+        "conditional_mean_size": 12.372635823362375,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9609280455670125,
+        "total_variation_distance": 0.06063402169974748,
+        "reference_norm": 0.9999999999999915,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.000000000000004,
+        "raw_norm_drift": 3.9968028886505635e-15
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 4.670355999958701,
+      "metric_seconds": 0.06729839998297393,
+      "elapsed_seconds": 4.737654399941675,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.7390015965852424,
+        "bks_rate": 0.39937569997379807,
+        "near_bks_rate": 0.6041659092471753,
+        "quality_mass": 0.7020848778389681,
+        "conditional_mean_size": 12.350586864873966,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9687459933746493,
+        "total_variation_distance": 0.05093083419374181,
+        "reference_norm": 0.9999999999999925,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.9999999999999973,
+        "raw_norm_drift": -2.6645352591003757e-15
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 2.121480900037568,
+      "metric_seconds": 0.0636355000315234,
+      "elapsed_seconds": 2.1851164000690915,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.7037948983022485,
+        "bks_rate": 0.1509243448554651,
+        "near_bks_rate": 0.3618413387114361,
+        "quality_mass": 0.6314309780731885,
+        "conditional_mean_size": 11.663345009679539,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9513158826489678,
+        "total_variation_distance": 0.08006324139196544,
+        "reference_norm": 0.9999999999999958,
+        "approximate_norm": 0.9999999999999999,
+        "raw_approximate_norm": 1.0000000000000013,
+        "raw_norm_drift": 1.3322676295501878e-15
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 14.471353500033729,
+      "metric_seconds": 0.06241219997173175,
+      "elapsed_seconds": 14.53376570000546,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 0.9999999999999999
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6977820069504241,
+        "bks_rate": 0.1472915598205038,
+        "near_bks_rate": 0.3531909022138786,
+        "quality_mass": 0.624952000999941,
+        "conditional_mean_size": 11.643143463251338,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9611355783127771,
+        "total_variation_distance": 0.06592262242776012,
+        "reference_norm": 0.9999999999999954,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 1.0000000000000044,
+        "raw_norm_drift": 4.440892098500626e-15
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 6.69064879999496,
+      "metric_seconds": 0.06420139997499064,
+      "elapsed_seconds": 6.754850199969951,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5743459418998734,
+        "bks_rate": 0.14994193262310754,
+        "near_bks_rate": 0.3264709151994105,
+        "quality_mass": 0.5201574496246987,
+        "conditional_mean_size": 11.773473706026325,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9110746922522173,
+        "total_variation_distance": 0.11521372826517745,
+        "reference_norm": 0.9999999999999913,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.0000000000000018,
+        "raw_norm_drift": 1.7763568394002505e-15
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 45.492902599973604,
+      "metric_seconds": 0.06392960000084713,
+      "elapsed_seconds": 45.55683219997445,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.562067651747747,
+        "bks_rate": 0.14502972043781512,
+        "near_bks_rate": 0.3168927141999287,
+        "quality_mass": 0.5083343448778872,
+        "conditional_mean_size": 11.757208341138128,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9314500987186409,
+        "total_variation_distance": 0.09277576707543064,
+        "reference_norm": 0.9999999999999925,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.9999999999999976,
+        "raw_norm_drift": -2.4424906541753444e-15
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 25.72786250000354,
+      "metric_seconds": 0.06225130002712831,
+      "elapsed_seconds": 25.790113800030667,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.7413365100802359,
+        "bks_rate": 0.4067527171119508,
+        "near_bks_rate": 0.614420438378708,
+        "quality_mass": 0.7055605124450128,
+        "conditional_mean_size": 12.372635823362375,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9609280455670125,
+        "total_variation_distance": 0.06063402169974748,
+        "reference_norm": 0.9999999999999915,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.000000000000004,
+        "raw_norm_drift": 3.9968028886505635e-15
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 4.644412100024056,
+      "metric_seconds": 0.06186020001769066,
+      "elapsed_seconds": 4.706272300041746,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.7390015965852424,
+        "bks_rate": 0.39937569997379807,
+        "near_bks_rate": 0.6041659092471753,
+        "quality_mass": 0.7020848778389681,
+        "conditional_mean_size": 12.350586864873966,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9687459933746493,
+        "total_variation_distance": 0.05093083419374181,
+        "reference_norm": 0.9999999999999925,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.9999999999999973,
+        "raw_norm_drift": -2.6645352591003757e-15
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 2.095889000047464,
+      "metric_seconds": 0.06384409999009222,
+      "elapsed_seconds": 2.159733100037556,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.671070051787271,
+        "bks_rate": 0.13941353114380794,
+        "near_bks_rate": 0.33141445154768845,
+        "quality_mass": 0.5993289282408978,
+        "conditional_mean_size": 11.610227645207903,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9956472677862579,
+        "total_variation_distance": 0.011235002310209252,
+        "reference_norm": 0.9999999999999958,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 0.9999999999999976,
+        "raw_norm_drift": -2.4424906541753444e-15
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 123.33683050004765,
+      "metric_seconds": 0.06575410004006699,
+      "elapsed_seconds": 123.40258460008772,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.6696948496994871,
+        "bks_rate": 0.13903863020455853,
+        "near_bks_rate": 0.3306957749095103,
+        "quality_mass": 0.5981030173180725,
+        "conditional_mean_size": 11.610271795615537,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9963653959413221,
+        "total_variation_distance": 0.010356891739130776,
+        "reference_norm": 0.9999999999999954,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 0.9999999999999998,
+        "raw_norm_drift": -2.220446049250313e-16
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 63.895975599996746,
+      "metric_seconds": 0.06381829996826127,
+      "elapsed_seconds": 63.95979389996501,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.526326339505193,
+        "bks_rate": 0.13249419532418255,
+        "near_bks_rate": 0.29153398022157223,
+        "quality_mass": 0.4746992095811729,
+        "conditional_mean_size": 11.724835451626413,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9933470189687511,
+        "total_variation_distance": 0.015098118787019875,
+        "reference_norm": 0.9999999999999913,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.000000000000005,
+        "raw_norm_drift": 5.10702591327572e-15
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 397.01990220003063,
+      "metric_seconds": 0.06573979998938739,
+      "elapsed_seconds": 397.08564200002,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.5249398575570776,
+        "bks_rate": 0.13221229631847237,
+        "near_bks_rate": 0.2907113585093682,
+        "quality_mass": 0.4734456679619594,
+        "conditional_mean_size": 11.724759693706913,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9944100665301087,
+        "total_variation_distance": 0.013848776915577427,
+        "reference_norm": 0.9999999999999925,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 1.0000000000000102,
+        "raw_norm_drift": 1.021405182655144e-14
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 242.1426837000181,
+      "metric_seconds": 0.06451599998399615,
+      "elapsed_seconds": 242.2071997000021,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.7250426414796874,
+        "bks_rate": 0.3808414221620339,
+        "near_bks_rate": 0.5784127495328325,
+        "quality_mass": 0.6865791119905651,
+        "conditional_mean_size": 12.310349688760203,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9947230545606182,
+        "total_variation_distance": 0.00992407853024448,
+        "reference_norm": 0.9999999999999915,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 1.000000000000002,
+        "raw_norm_drift": 1.9984014443252818e-15
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 67.10650190000888,
+      "metric_seconds": 0.06064459995832294,
+      "elapsed_seconds": 67.1671464999672,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.7238368124517202,
+        "bks_rate": 0.38003020720022507,
+        "near_bks_rate": 0.577228284619111,
+        "quality_mass": 0.6853979088223998,
+        "conditional_mean_size": 12.309643087246966,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.9956863080081354,
+        "total_variation_distance": 0.009463231819927365,
+        "reference_norm": 0.9999999999999925,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.999999999999997,
+        "raw_norm_drift": -2.9976021664879227e-15
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 34.11710309999762,
+      "metric_seconds": 0.06657379999523982,
+      "elapsed_seconds": 34.18367689999286,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.836438884866247,
+        "bks_rate": 0.3096008051416373,
+        "near_bks_rate": 0.6410612290416416,
+        "quality_mass": 0.7797284071750472,
+        "conditional_mean_size": 12.118601223204145,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.5701941996586066,
+        "total_variation_distance": 0.4255943216455871,
+        "reference_norm": 0.9999999999999958,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 1.0000000000000013,
+        "raw_norm_drift": 1.3322676295501878e-15
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 0.8878406999865547,
+      "metric_seconds": 0.06410979997599497,
+      "elapsed_seconds": 0.9519504999625497,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.8159043722324328,
+        "bks_rate": 0.2538823903014633,
+        "near_bks_rate": 0.5537113700478247,
+        "quality_mass": 0.7508028706559874,
+        "conditional_mean_size": 11.962722165370758,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.6771834928565365,
+        "total_variation_distance": 0.34639395087904645,
+        "reference_norm": 0.9999999999999954,
+        "approximate_norm": 0.9999999999999999,
+        "raw_approximate_norm": 1.0000000000000013,
+        "raw_norm_drift": 1.3322676295501878e-15
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 0.6677922999951988,
+      "metric_seconds": 0.06594090000726283,
+      "elapsed_seconds": 0.7337332000024617,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 0.9999999999999999
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.7175707033007606,
+        "bks_rate": 0.34419389048815446,
+        "near_bks_rate": 0.6359879871439298,
+        "quality_mass": 0.6822231514519118,
+        "conditional_mean_size": 12.359619655705991,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.47981505640650557,
+        "total_variation_distance": 0.5226093760202375,
+        "reference_norm": 0.9999999999999913,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.999999999999999,
+        "raw_norm_drift": -9.992007221626409e-16
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 0.7661393999587744,
+      "metric_seconds": 0.0684126999694854,
+      "elapsed_seconds": 0.8345520999282598,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.693726975435808,
+        "bks_rate": 0.2833267701483698,
+        "near_bks_rate": 0.5410973856988163,
+        "quality_mass": 0.6495020260651769,
+        "conditional_mean_size": 12.171252723080245,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.585241105554325,
+        "total_variation_distance": 0.4405180189465434,
+        "reference_norm": 0.9999999999999925,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 0.9999999999999996,
+        "raw_norm_drift": -4.440892098500626e-16
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 0.535525300016161,
+      "metric_seconds": 0.06270710000535473,
+      "elapsed_seconds": 0.5982324000215158,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.7740573365537058,
+        "bks_rate": 0.5638753205580647,
+        "near_bks_rate": 0.7438307188729589,
+        "quality_mass": 0.7554467986268779,
+        "conditional_mean_size": 12.687443059288183,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.7443436544659405,
+        "total_variation_distance": 0.2640609555632977,
+        "reference_norm": 0.9999999999999915,
+        "approximate_norm": 0.9999999999999998,
+        "raw_approximate_norm": 1.0000000000000013,
+        "raw_norm_drift": 1.3322676295501878e-15
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 0.3798110999632627,
+      "metric_seconds": 0.06572159996721894,
+      "elapsed_seconds": 0.4455326999304816,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 0.9999999999999998
+      }
+    },
+    {
+      "case": "ibm32",
+      "backend": "aer",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 18,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.7626203579899106,
+        "bks_rate": 0.5172668953201183,
+        "near_bks_rate": 0.7082235109210923,
+        "quality_mass": 0.7394045101119044,
+        "conditional_mean_size": 12.604251290629628,
+        "best_size_nonzero_probability": 13
+      },
+      "comparison": {
+        "state_fidelity": 0.8066090742649277,
+        "total_variation_distance": 0.21146205968734183,
+        "reference_norm": 0.9999999999999925,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.000000000000003,
+        "raw_norm_drift": 3.1086244689504383e-15
+      },
+      "resources": {
+        "circuit_depth": 159,
+        "circuit_size": 1131,
+        "rzz_gates": 555,
+        "rx_gates": 270,
+        "operations": {
+          "rzz": 555,
+          "rz": 270,
+          "rx": 270,
+          "h": 18,
+          "measure": 18
+        }
+      },
+      "simulation_seconds": 0.31586889998288825,
+      "metric_seconds": 0.06607120000990108,
+      "elapsed_seconds": 0.38194009999278933,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 262144,
+        "forbidden_patterns": 37,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9991491390105727,
+        "bks_rate": 0.9988957280473405,
+        "near_bks_rate": 0.9991491390105727,
+        "quality_mass": 0.9991364684624111,
+        "conditional_mean_size": 19.99974637323565,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 1.0000000000000002,
+        "total_variation_distance": 3.031630868110917e-15,
+        "reference_norm": 0.9999999999999988,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.000000000000009,
+        "raw_norm_drift": 9.103828801926284e-15
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.001812300004530698,
+      "metric_seconds": 0.0008134999661706388,
+      "elapsed_seconds": 0.002625799970701337,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9991491390105729,
+        "bks_rate": 0.9988957280473407,
+        "near_bks_rate": 0.9991491390105729,
+        "quality_mass": 0.9991364684624112,
+        "conditional_mean_size": 19.99974637323565,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999999999996,
+        "total_variation_distance": 1.9284720982658612e-15,
+        "reference_norm": 0.9999999999999991,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 0.9999999999999941,
+        "raw_norm_drift": -5.88418203051333e-15
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.0018150999676436186,
+      "metric_seconds": 0.0005993000231683254,
+      "elapsed_seconds": 0.002414399990811944,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9956932700991127,
+        "bks_rate": 0.995234158667836,
+        "near_bks_rate": 0.9956932700991127,
+        "quality_mass": 0.9956703145275488,
+        "conditional_mean_size": 19.999538902747396,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 1.0,
+        "total_variation_distance": 1.6096573672488151e-15,
+        "reference_norm": 0.9999999999999978,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 0.9999999999999898,
+        "raw_norm_drift": -1.021405182655144e-14
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.001914899970870465,
+      "metric_seconds": 0.0006609000265598297,
+      "elapsed_seconds": 0.0025757999974302948,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.995693270099113,
+        "bks_rate": 0.9952341586678366,
+        "near_bks_rate": 0.995693270099113,
+        "quality_mass": 0.9956703145275493,
+        "conditional_mean_size": 19.9995389027474,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999999999996,
+        "total_variation_distance": 4.194293702500587e-15,
+        "reference_norm": 0.9999999999999973,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 0.999999999999994,
+        "raw_norm_drift": -5.995204332975845e-15
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.001877599977888167,
+      "metric_seconds": 0.0005963000003248453,
+      "elapsed_seconds": 0.0024738999782130122,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9138506637050996,
+        "bks_rate": 0.9088221515603758,
+        "near_bks_rate": 0.9138506637050996,
+        "quality_mass": 0.9135992380978633,
+        "conditional_mean_size": 19.99449744652552,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999999999999,
+        "total_variation_distance": 1.5662215177136146e-15,
+        "reference_norm": 0.9999999999999981,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.9999999999999895,
+        "raw_norm_drift": -1.0547118733938987e-14
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.0018595000146888196,
+      "metric_seconds": 0.0006081999745219946,
+      "elapsed_seconds": 0.0024676999892108142,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9138506637050992,
+        "bks_rate": 0.9088221515603756,
+        "near_bks_rate": 0.9138506637050992,
+        "quality_mass": 0.9135992380978628,
+        "conditional_mean_size": 19.994497446525518,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 1.0000000000000002,
+        "total_variation_distance": 2.4054820906439095e-15,
+        "reference_norm": 0.9999999999999986,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 0.9999999999999949,
+        "raw_norm_drift": -5.10702591327572e-15
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.0020450999727472663,
+      "metric_seconds": 0.0006697999779134989,
+      "elapsed_seconds": 0.002714899950660765,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9991491390105727,
+        "bks_rate": 0.9988957280473405,
+        "near_bks_rate": 0.9991491390105727,
+        "quality_mass": 0.9991364684624111,
+        "conditional_mean_size": 19.99974637323565,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 1.0000000000000002,
+        "total_variation_distance": 3.031630868110917e-15,
+        "reference_norm": 0.9999999999999988,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.000000000000009,
+        "raw_norm_drift": 9.103828801926284e-15
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.0018400000408291817,
+      "metric_seconds": 0.0005727999960072339,
+      "elapsed_seconds": 0.0024128000368364155,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9991491390105729,
+        "bks_rate": 0.9988957280473407,
+        "near_bks_rate": 0.9991491390105729,
+        "quality_mass": 0.9991364684624112,
+        "conditional_mean_size": 19.99974637323565,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999999999996,
+        "total_variation_distance": 1.9284720982658612e-15,
+        "reference_norm": 0.9999999999999991,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 0.9999999999999941,
+        "raw_norm_drift": -5.88418203051333e-15
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.0018930000369437039,
+      "metric_seconds": 0.0006428000051528215,
+      "elapsed_seconds": 0.0025358000420965254,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9956932700991127,
+        "bks_rate": 0.995234158667836,
+        "near_bks_rate": 0.9956932700991127,
+        "quality_mass": 0.9956703145275488,
+        "conditional_mean_size": 19.999538902747396,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 1.0,
+        "total_variation_distance": 1.6096573672488151e-15,
+        "reference_norm": 0.9999999999999978,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 0.9999999999999898,
+        "raw_norm_drift": -1.021405182655144e-14
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.001950400008354336,
+      "metric_seconds": 0.0006219000206328928,
+      "elapsed_seconds": 0.002572300028987229,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.995693270099113,
+        "bks_rate": 0.9952341586678366,
+        "near_bks_rate": 0.995693270099113,
+        "quality_mass": 0.9956703145275493,
+        "conditional_mean_size": 19.9995389027474,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999999999996,
+        "total_variation_distance": 4.194293702500587e-15,
+        "reference_norm": 0.9999999999999973,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 0.999999999999994,
+        "raw_norm_drift": -5.995204332975845e-15
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.0018564999918453395,
+      "metric_seconds": 0.000623399973846972,
+      "elapsed_seconds": 0.0024798999656923115,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9138506637050996,
+        "bks_rate": 0.9088221515603758,
+        "near_bks_rate": 0.9138506637050996,
+        "quality_mass": 0.9135992380978633,
+        "conditional_mean_size": 19.99449744652552,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999999999999,
+        "total_variation_distance": 1.5662215177136146e-15,
+        "reference_norm": 0.9999999999999981,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.9999999999999895,
+        "raw_norm_drift": -1.0547118733938987e-14
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.0018425000016577542,
+      "metric_seconds": 0.0006422000005841255,
+      "elapsed_seconds": 0.0024847000022418797,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9138506637050992,
+        "bks_rate": 0.9088221515603756,
+        "near_bks_rate": 0.9138506637050992,
+        "quality_mass": 0.9135992380978628,
+        "conditional_mean_size": 19.994497446525518,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 1.0000000000000002,
+        "total_variation_distance": 2.4054820906439095e-15,
+        "reference_norm": 0.9999999999999986,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 0.9999999999999949,
+        "raw_norm_drift": -5.10702591327572e-15
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.0019691999768838286,
+      "metric_seconds": 0.0007069999701343477,
+      "elapsed_seconds": 0.0026761999470181763,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9991491390105727,
+        "bks_rate": 0.9988957280473405,
+        "near_bks_rate": 0.9991491390105727,
+        "quality_mass": 0.9991364684624111,
+        "conditional_mean_size": 19.99974637323565,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 1.0000000000000002,
+        "total_variation_distance": 3.031630868110917e-15,
+        "reference_norm": 0.9999999999999988,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.000000000000009,
+        "raw_norm_drift": 9.103828801926284e-15
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.001989200012758374,
+      "metric_seconds": 0.0005754000158049166,
+      "elapsed_seconds": 0.002564600028563291,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9991491390105729,
+        "bks_rate": 0.9988957280473407,
+        "near_bks_rate": 0.9991491390105729,
+        "quality_mass": 0.9991364684624112,
+        "conditional_mean_size": 19.99974637323565,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999999999996,
+        "total_variation_distance": 1.9284720982658612e-15,
+        "reference_norm": 0.9999999999999991,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 0.9999999999999941,
+        "raw_norm_drift": -5.88418203051333e-15
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.0018726999987848103,
+      "metric_seconds": 0.000603599997702986,
+      "elapsed_seconds": 0.0024762999964877963,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9956932700991127,
+        "bks_rate": 0.995234158667836,
+        "near_bks_rate": 0.9956932700991127,
+        "quality_mass": 0.9956703145275488,
+        "conditional_mean_size": 19.999538902747396,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 1.0,
+        "total_variation_distance": 1.6096573672488151e-15,
+        "reference_norm": 0.9999999999999978,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 0.9999999999999898,
+        "raw_norm_drift": -1.021405182655144e-14
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.001866999955382198,
+      "metric_seconds": 0.0006644999957643449,
+      "elapsed_seconds": 0.002531499951146543,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.995693270099113,
+        "bks_rate": 0.9952341586678366,
+        "near_bks_rate": 0.995693270099113,
+        "quality_mass": 0.9956703145275493,
+        "conditional_mean_size": 19.9995389027474,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999999999996,
+        "total_variation_distance": 4.194293702500587e-15,
+        "reference_norm": 0.9999999999999973,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 0.999999999999994,
+        "raw_norm_drift": -5.995204332975845e-15
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.001846600032877177,
+      "metric_seconds": 0.0005824000108987093,
+      "elapsed_seconds": 0.0024290000437758863,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9138506637050996,
+        "bks_rate": 0.9088221515603758,
+        "near_bks_rate": 0.9138506637050996,
+        "quality_mass": 0.9135992380978633,
+        "conditional_mean_size": 19.99449744652552,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999999999999,
+        "total_variation_distance": 1.5662215177136146e-15,
+        "reference_norm": 0.9999999999999981,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.9999999999999895,
+        "raw_norm_drift": -1.0547118733938987e-14
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.0018781000399030745,
+      "metric_seconds": 0.0006031999946571887,
+      "elapsed_seconds": 0.002481300034560263,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9138506637050992,
+        "bks_rate": 0.9088221515603756,
+        "near_bks_rate": 0.9138506637050992,
+        "quality_mass": 0.9135992380978628,
+        "conditional_mean_size": 19.994497446525518,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 1.0000000000000002,
+        "total_variation_distance": 2.4054820906439095e-15,
+        "reference_norm": 0.9999999999999986,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 0.9999999999999949,
+        "raw_norm_drift": -5.10702591327572e-15
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.0018105999915860593,
+      "metric_seconds": 0.0006163000361993909,
+      "elapsed_seconds": 0.0024269000277854502,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9991491390105727,
+        "bks_rate": 0.9988957280473405,
+        "near_bks_rate": 0.9991491390105727,
+        "quality_mass": 0.9991364684624111,
+        "conditional_mean_size": 19.99974637323565,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 1.0000000000000002,
+        "total_variation_distance": 3.031630868110917e-15,
+        "reference_norm": 0.9999999999999988,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.000000000000009,
+        "raw_norm_drift": 9.103828801926284e-15
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.0018791999900713563,
+      "metric_seconds": 0.0005771000287495553,
+      "elapsed_seconds": 0.0024563000188209116,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9991491390105729,
+        "bks_rate": 0.9988957280473407,
+        "near_bks_rate": 0.9991491390105729,
+        "quality_mass": 0.9991364684624112,
+        "conditional_mean_size": 19.99974637323565,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999999999996,
+        "total_variation_distance": 1.9284720982658612e-15,
+        "reference_norm": 0.9999999999999991,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 0.9999999999999941,
+        "raw_norm_drift": -5.88418203051333e-15
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.0018751000170595944,
+      "metric_seconds": 0.0006778000388294458,
+      "elapsed_seconds": 0.0025529000558890402,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9956932700991127,
+        "bks_rate": 0.995234158667836,
+        "near_bks_rate": 0.9956932700991127,
+        "quality_mass": 0.9956703145275488,
+        "conditional_mean_size": 19.999538902747396,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 1.0,
+        "total_variation_distance": 1.6096573672488151e-15,
+        "reference_norm": 0.9999999999999978,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 0.9999999999999898,
+        "raw_norm_drift": -1.021405182655144e-14
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.0018757000216282904,
+      "metric_seconds": 0.0006630999851040542,
+      "elapsed_seconds": 0.0025388000067323446,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.995693270099113,
+        "bks_rate": 0.9952341586678366,
+        "near_bks_rate": 0.995693270099113,
+        "quality_mass": 0.9956703145275493,
+        "conditional_mean_size": 19.9995389027474,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999999999996,
+        "total_variation_distance": 4.194293702500587e-15,
+        "reference_norm": 0.9999999999999973,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 0.999999999999994,
+        "raw_norm_drift": -5.995204332975845e-15
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.0018342999974265695,
+      "metric_seconds": 0.0005674000130966306,
+      "elapsed_seconds": 0.0024017000105232,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9138506637050996,
+        "bks_rate": 0.9088221515603758,
+        "near_bks_rate": 0.9138506637050996,
+        "quality_mass": 0.9135992380978633,
+        "conditional_mean_size": 19.99449744652552,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999999999999,
+        "total_variation_distance": 1.5662215177136146e-15,
+        "reference_norm": 0.9999999999999981,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.9999999999999895,
+        "raw_norm_drift": -1.0547118733938987e-14
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.0022829999797977507,
+      "metric_seconds": 0.0006993000279180706,
+      "elapsed_seconds": 0.0029823000077158213,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9138506637050992,
+        "bks_rate": 0.9088221515603756,
+        "near_bks_rate": 0.9138506637050992,
+        "quality_mass": 0.9135992380978628,
+        "conditional_mean_size": 19.994497446525518,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 1.0000000000000002,
+        "total_variation_distance": 2.4054820906439095e-15,
+        "reference_norm": 0.9999999999999986,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 0.9999999999999949,
+        "raw_norm_drift": -5.10702591327572e-15
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.0018470999784767628,
+      "metric_seconds": 0.0006151999696157873,
+      "elapsed_seconds": 0.00246229994809255,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "prior_evolutionary",
+      "ordering": "sorted",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9991491390105727,
+        "bks_rate": 0.9988957280473405,
+        "near_bks_rate": 0.9991491390105727,
+        "quality_mass": 0.9991364684624111,
+        "conditional_mean_size": 19.99974637323565,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 1.0000000000000002,
+        "total_variation_distance": 3.031630868110917e-15,
+        "reference_norm": 0.9999999999999988,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 1.000000000000009,
+        "raw_norm_drift": 9.103828801926284e-15
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.0018846000311896205,
+      "metric_seconds": 0.0006642999942414463,
+      "elapsed_seconds": 0.0025489000254310668,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "prior_evolutionary",
+      "ordering": "spectral",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9991491390105729,
+        "bks_rate": 0.9988957280473407,
+        "near_bks_rate": 0.9991491390105729,
+        "quality_mass": 0.9991364684624112,
+        "conditional_mean_size": 19.99974637323565,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999999999996,
+        "total_variation_distance": 1.9284720982658612e-15,
+        "reference_norm": 0.9999999999999991,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 0.9999999999999941,
+        "raw_norm_drift": -5.88418203051333e-15
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.001859900017734617,
+      "metric_seconds": 0.000598000013269484,
+      "elapsed_seconds": 0.002457900031004101,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9956932700991127,
+        "bks_rate": 0.995234158667836,
+        "near_bks_rate": 0.9956932700991127,
+        "quality_mass": 0.9956703145275488,
+        "conditional_mean_size": 19.999538902747396,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 1.0,
+        "total_variation_distance": 1.6096573672488151e-15,
+        "reference_norm": 0.9999999999999978,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 0.9999999999999898,
+        "raw_norm_drift": -1.021405182655144e-14
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.0020576000097207725,
+      "metric_seconds": 0.0006393000367097557,
+      "elapsed_seconds": 0.002696900046430528,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.995693270099113,
+        "bks_rate": 0.9952341586678366,
+        "near_bks_rate": 0.995693270099113,
+        "quality_mass": 0.9956703145275493,
+        "conditional_mean_size": 19.9995389027474,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999999999996,
+        "total_variation_distance": 4.194293702500587e-15,
+        "reference_norm": 0.9999999999999973,
+        "approximate_norm": 1.0000000000000004,
+        "raw_approximate_norm": 0.999999999999994,
+        "raw_norm_drift": -5.995204332975845e-15
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.0018284000107087195,
+      "metric_seconds": 0.0006217000191099942,
+      "elapsed_seconds": 0.0024501000298187137,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0000000000000004
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9138506637050996,
+        "bks_rate": 0.9088221515603758,
+        "near_bks_rate": 0.9138506637050996,
+        "quality_mass": 0.9135992380978633,
+        "conditional_mean_size": 19.99449744652552,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 0.9999999999999999,
+        "total_variation_distance": 1.5662215177136146e-15,
+        "reference_norm": 0.9999999999999981,
+        "approximate_norm": 1.0000000000000002,
+        "raw_approximate_norm": 0.9999999999999895,
+        "raw_norm_drift": -1.0547118733938987e-14
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.0025664999848231673,
+      "metric_seconds": 0.0008473999914713204,
+      "elapsed_seconds": 0.0034138999762944877,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0000000000000002
+      }
+    },
+    {
+      "case": "karate",
+      "backend": "aer",
+      "setting": "released",
+      "bond": 64,
+      "cutoff": 0.001,
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qubits": 3,
+      "depth": 15,
+      "metrics": {
+        "feasible_rate": 0.9138506637050992,
+        "bks_rate": 0.9088221515603756,
+        "near_bks_rate": 0.9138506637050992,
+        "quality_mass": 0.9135992380978628,
+        "conditional_mean_size": 19.994497446525518,
+        "best_size_nonzero_probability": 20
+      },
+      "comparison": {
+        "state_fidelity": 1.0000000000000002,
+        "total_variation_distance": 2.4054820906439095e-15,
+        "reference_norm": 0.9999999999999986,
+        "approximate_norm": 1.0,
+        "raw_approximate_norm": 0.9999999999999949,
+        "raw_norm_drift": -5.10702591327572e-15
+      },
+      "resources": {
+        "circuit_depth": 77,
+        "circuit_size": 141,
+        "rzz_gates": 45,
+        "rx_gates": 45,
+        "operations": {
+          "rz": 45,
+          "rzz": 45,
+          "rx": 45,
+          "h": 3,
+          "measure": 3
+        }
+      },
+      "simulation_seconds": 0.0019269000040367246,
+      "metric_seconds": 0.0006298000225797296,
+      "elapsed_seconds": 0.002556700026616454,
+      "accumulator": {
+        "implementation": "static_chunked_literal_accumulator",
+        "chunk_size": 262144,
+        "basis_states": 8,
+        "forbidden_patterns": 3,
+        "statevector_norm": 1.0
+      }
+    }
+  ],
+  "errors": []
+}

@@ -8,6 +8,8 @@
 \usepackage{amsmath,amssymb}
 \usepackage{booktabs}
 \usepackage{tabularx}
+\usepackage{float}
+\usepackage[section]{placeins}
 \usepackage{enumitem}
 \usepackage{xcolor}
 \usepackage[colorlinks=true,allcolors=blue!55!black]{hyperref}
@@ -21,9 +23,9 @@
 
 \title{Supplementary Information\\[2mm]
 \large When Better QAOA Schedules Depend on the Simulator:
-Truncation-Induced Rank Reversals on a 55-Qubit QOBLIB Benchmark}
+Exact and Cross-Backend Rank Reversals on QOBLIB}
 \author{Anonymous Authors}
-\date{Research artifact, 3 August 2026}
+\date{Advisor-ready research artifact, 12 August 2026}
 
 \begin{document}
 \maketitle
@@ -209,7 +211,131 @@ The signed LR BKS error crosses zero twice even while fidelity improves, so a
 monotone global state metric does not certify monotone convergence of a rare
 observable.
 
-\section{Independent cuTensorNet audit}
+\FloatBarrier
+\section{Exact 24-qubit cross-backend ladder}
+
+The external 	exttt{aves-sparrow-social} graph reduces to 24 qubits at the
+frozen cap 20. Dense statevectors give BKS probabilities 0.32327673 for LR,
+0.31113788 for matched random, and 0.42525564 for the evolutionary schedule.
+Both qubit orderings give the same exact probabilities, as required by their
+unitary equivalence. The primary exact matched-random-minus-LR effect is
+$-0.01213885$.
+
+The independent protocol fixed five MPS points, three schedules, and two
+orderings before cuTensorNet target execution. All 30 jobs completed without
+shots or errors. Table~\ref{tab:crossbackend} reports the full primary analysis.
+Fidelity and BKS error columns summarize the three cuTensorNet schedules in a
+cohort; ``sign'' compares its matched effect with exact.
+
+\begin{table}[h]
+\centering
+\caption{Exact-calibrated 24-qubit cross-backend ladder. Effects are
+matched-random minus LR BKS probability.}
+\label{tab:crossbackend}
+\small
+\begin{tabular}{llrrrrrr}
+\toprule
+Setting & Order & Aer effect & cuTN effect & Sign & Min fidelity & Max TV & Max BKS err. \\
+\midrule
+64/$10^{-3}$ & Sorted   & +.138479 & -.008287 & Yes & .798088 & .240005 & .013000 \\
+64/$10^{-3}$ & Spectral & +.105273 & +.016849 & No  & .698032 & .282899 & .115859 \\
+128/$10^{-4}$ & Sorted   & +.001345 & -.007811 & Yes & .942677 & .099084 & .004925 \\
+128/$10^{-4}$ & Spectral & +.001817 & +.004293 & No  & .812569 & .181599 & .047608 \\
+128/$10^{-12}$ & Sorted   & -.003717 & -.009955 & Yes & .944334 & .089741 & .004537 \\
+128/$10^{-12}$ & Spectral & -.011907 & +.016699 & No  & .807278 & .197239 & .060079 \\
+1024/$10^{-4}$ & Sorted   & +.000856 & -.012031 & Yes & .997276 & .010526 & .000128 \\
+1024/$10^{-4}$ & Spectral & +.001817 & -.012207 & Yes & .997210 & .010731 & .000150 \\
+1024/$10^{-5}$ & Sorted   & -.012235 & -.012156 & Yes & .999997 & .000453 & .000019 \\
+1024/$10^{-5}$ & Spectral & -.012831 & -.012324 & Yes & .999982 & .001240 & .000229 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The comparison separates three phenomena. First, cutoff dominates cap within
+each implementation but not identically. Second, exact-equivalent orderings can
+cross the zero-effect boundary after truncation. Third, a nominal MPS setting
+is not a cross-backend accuracy contract: at 1024/$10^{-4}$ cuTensorNet is
+sign-correct in both orderings while Aer is sign-wrong in both. The selected
+1024/$10^{-5}$ point is the only one sign-correct across exact, both backends,
+and both orderings.
+
+A separate post-hoc certificate audit applies the event-probability inequality
+$|\widetilde\Delta-\Delta|\leq\mathrm{TV}_{\rm LR}+\mathrm{TV}_{\rm matched}$.
+Of 20 backend/setting/ordering cohorts, 11 have the realized exact sign, five
+are certified by the TVD margin, and only two are certified by substituting the
+fidelity bound $\mathrm{TV}\leq\sqrt{1-F}$. Every certified cohort is
+sign-correct. The certificate is therefore conservative by design and is not
+presented as a replacement for the pre-registered exact comparison.
+
+\FloatBarrier
+\section{Frozen five-case exact replication}
+
+The cross-case protocol was frozen on 11 August 2026 before any new target row
+was generated. It retains the five MPS settings from the 24-qubit ladder and
+adds four QOBLIB instances with already completed exact adjudication. All cases
+use depth 15, the same three frozen schedules, sorted and spectral orderings,
+and no repair. Aer MPS and cuTensorNet each contribute 150 rows. Of these, 120
+per backend are newly executed; the 30 per backend from
+\texttt{aves-sparrow-social} are reused only after validating their recorded
+SHA-256 hashes. The final analysis therefore contains 300 unique rows and 100
+matched-random-versus-LR backend/setting/ordering cohorts.
+
+For event $A$, write $\Delta=p_i(A)-p_j(A)$ and
+$\widetilde\Delta=q_i(A)-q_j(A)$. The triangle inequality and the defining
+event characterization of total variation give
+\begin{align*}
+|\widetilde\Delta-\Delta|
+&=|[q_i(A)-p_i(A)]-[q_j(A)-p_j(A)]|\\
+&\leq |q_i(A)-p_i(A)|+|q_j(A)-p_j(A)|\\
+&\leq \mathrm{TV}(q_i,p_i)+\mathrm{TV}(q_j,p_j).
+\end{align*}
+Thus $|\Delta|>\mathrm{TV}_i+\mathrm{TV}_j$ is a sufficient condition for
+sign preservation. It is intentionally conservative: failure to certify does
+not imply an incorrect sign.
+
+\begin{table}[h]
+\centering
+\caption{Five-case exact replication. ``Sign'' counts correct signs across two
+backends, five settings, and two orderings. ``Cert.'' counts exact-margin TVD
+certificates. Backend agreement is across five settings and two orderings.}
+\label{tab:crosscase}
+\small
+\begin{tabular}{lrrrrrl}
+\toprule
+Case & Qubits & Exact effect & Sign & Cert. & Backend & First universal \\
+\midrule
+karate & 3 & +.086412 & 20/20 & 20/20 & 10/10 & released \\
+chesapeake & 7 & -.134214 & 20/20 & 20/20 & 10/10 & released \\
+football & 7 & +.019269 & 20/20 & 18/20 & 10/10 & confirm \\
+ibm32 & 18 & -.246123 & 20/20 & 14/20 & 10/10 & 1024/$10^{-4}$ \\
+aves-sparrow-social & 24 & -.012139 & 11/20 & 5/20 & 5/10 & none \\
+\midrule
+All & 3--24 & --- & 91/100 & 77/100 & 45/50 & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+All 100 observed effect errors satisfy the bound; the largest numerical excess
+is $6.6\times10^{-16}$. The normalized bound is below one in 77 cohorts and all
+77 have the correct sign (Clopper--Pearson 95\% CI $[0.953,1]$). Among the 23
+uncertified cohorts, 14 signs are correct and nine are wrong (95\% CI for the
+correct fraction $[0.385,0.803]$). The resulting $2\times2$ Fisher exact test is
+$p=4.30\times10^{-7}$. Because settings within a case share circuits and are
+not independent population draws, this test is reported only as a descriptive
+association. The deterministic implication below ratio one follows directly
+from the inequality and does not require statistical independence.
+
+The certificate is less conservative than substituting the fidelity relation
+$\mathrm{TV}\leq\sqrt{1-F}$: 77 cohorts are TVD-certified but only 58 are
+fidelity-certified. The per-case results also show why qubit count alone is not
+an error model. The 18-qubit \texttt{ibm32} case has a large exact margin and
+preserves all 20 signs, whereas the 24-qubit \texttt{aves-sparrow-social} case
+has the smallest margin and contains all nine failures. Three uncertified
+cohorts among the first four cases are correct, confirming that the certificate
+is sufficient rather than necessary.
+
+\FloatBarrier
+\section{55-qubit independent cuTensorNet audit}
 
 We exported the same native 55-qubit circuits to NVIDIA cuTensorNet 26.6 and
 decoded samples with the unchanged QOBLIB reduction map.  An independent
@@ -301,7 +427,7 @@ were not reselected after this discovery; the corrected pass reevaluated the
 already frozen schedules. Training was exact-statevector simulation, where the
 gate representation does not change the unitary.
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \caption{Machine-readable artifact map. Paths are relative to the artifact
 root.}
@@ -321,18 +447,32 @@ Extended comparison & \texttt{results/extended\_comparison.json} \\
 cuTensorNet sweep & \texttt{results/cutensornet\_sweep.csv} \\
 Independent exact check & \texttt{results/cutensornet/small\_exact\_validation.json} \\
 Independent attempt log & \texttt{results/cutensornet/ATTEMPTS.md} \\
+24q exact protocol & \texttt{EXACT\_EXTENSION\_PROTOCOL.md} \\
+24q MPS ladder protocol & \texttt{MPS\_LADDER\_PROTOCOL.md} \\
+Independent ladder protocol & \texttt{INDEPENDENT\_LADDER\_PROTOCOL.md} \\
+Cross-case protocol & \texttt{CROSS\_CASE\_REPLICATION\_PROTOCOL.md} \\
+Exact reference manifest & \texttt{results/mps\_ladder/exact\_references.json} \\
+Aer ladder & \texttt{results/mps\_ladder/mps\_ladder.json} \\
+cuTensorNet 30-job ladder & \texttt{results/independent\_ladder/mps\_jobs.json} \\
+Cross-backend analysis & \texttt{results/independent\_ladder/analysis.json} \\
+Rank certificates & \texttt{results/rank\_certificates.json} \\
+Cross-case backend rows & \texttt{results/cross\_case\_replication/*\_jobs.json} \\
+Cross-case analysis & \texttt{results/cross\_case\_replication/analysis.json} \\
+Cross-case paper statistics & \texttt{results/cross\_case\_replication/paper\_statistics.json} \\
 Transpiled audit & \texttt{results/blind\_test\_transpiled\_audit.json} \\
-Integrity tests & \texttt{test\_full\_cycle.py} \\
+Integrity tests & \texttt{test\_*.py} \\
 Checksums and provenance & \texttt{artifact\_manifest.json} \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-Eight integrity tests check the published ramp formula, split disjointness, the
-186-to-55 reduction, disabled repair, balanced 15,000-shot blind artifacts,
-the 56-row exact-calibration matrix, tight-threshold convergence, and bond
-invariance above 16. They also check the completeness and validity of the
-classical controls and the independent exact/sweep artifacts. The analysis
+The integrity and unit tests check the published ramp formula, split
+disjointness, the 186-to-55 reduction, disabled repair, balanced 15,000-shot
+blind artifacts, the 56-row exact-calibration matrix, tight-threshold
+convergence, axis conversion, literal decoding, and frozen design size. They
+also check the completeness and validity of the classical controls and both
+independent backend artifacts, frozen 300-row design, TVD computations, and
+NumPy-safe JSON serialization. The analysis
 scripts regenerate the CSV tables, figures, statistical summaries, and reports
 from the JSON artifacts.
 

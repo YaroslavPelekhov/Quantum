@@ -1,149 +1,142 @@
-# Quantum × Evolutionary Computing Research Artifact
+# Quantum x Evolutionary Computing Research Artifact
 
-This repository contains a complete research cycle on evolutionary transfer of
-QAOA schedules and the reliability of approximate tensor-network benchmarking.
-The central experiment uses the real QOBLIB Maximum Independent Set instance
-`es60fst02`: 186 vertices are reduced by the released QOBLIB pipeline to a
-55-qubit, depth-15 QAOA circuit.
+Reproducible research repository on evolutionary QAOA schedule transfer and
+the reliability of approximate tensor-network benchmarking on real QOBLIB
+Maximum Independent Set instances.
 
-The result is deliberately **not** presented as quantum advantage. Its main
-contribution is a reproducible cross-backend demonstration that a rare-event
-metric—probability of sampling a best-known solution (BKS)—can change the
-ranking of QAOA schedules when MPS truncation, bond dimension, implementation,
-or qubit ordering changes, even while broader feasible-mass metrics agree.
+The final contribution is not a quantum-advantage claim. It is an
+application-facing validation rule for approximate simulation: before declaring
+one QAOA schedule better than another, the simulator error must be small relative
+to the observed performance margin.
 
-## Headline results
+## Final headline result
 
-| Evaluation | Published linear ramp | Frozen nonlinear ramp | Interpretation |
-|---|---:|---:|---|
-| Aer MPS, bond 64, cutoff `1e-3`, 15,000 shots | 41 BKS (`0.273%`) | 101 BKS (`0.673%`) | nonlinear appears `2.46×` better; paired delta `+0.00400`, 95% CI `[0.00247, 0.00553]` |
-| Aer MPS, bond 64, cutoff `1e-4`, 10,000 shots | 153 BKS (`1.53%`) | 109 BKS (`1.09%`) | ranking reverses |
-| cuTensorNet MPS, spectral order, bond 128, cutoff `1e-3`, 5,000 shots | 6 BKS (`0.12%`) | 15 BKS (`0.30%`) | directional only, Fisher two-sided `p=0.078` |
-| cuTensorNet MPS, spectral order, bond 128, cutoff `1e-4`, 5,000 shots | 12 BKS (`0.24%`) | 11 BKS (`0.22%`) | no resolved difference, `p=1.0` |
+The frozen exact replication contains:
 
-Exact state checks on the real 12- and 15-qubit donor kernels converge above
-`0.99983` fidelity at cutoff `1e-6`. Independent cuTensorNet exact contractions
-match the Qiskit reference states to displayed unit fidelity. The attempted
-exact 55-qubit cuTensorNet sampler failed during contraction preparation after
-about 293 seconds; every completed 55-qubit tensor-network result is therefore
-explicitly labeled approximate.
+- five real QOBLIB MIS cases reduced to 3, 7, 7, 18, and 24 qubits;
+- five MPS bond/cutoff settings;
+- the published linear ramp, a prior evolutionary schedule, and an
+  equal-budget matched-random schedule;
+- sorted and spectral qubit orderings; and
+- Qiskit Aer MPS and NVIDIA cuTensorNet MPS.
 
-Strong classical controls establish the correct competitive context:
+This gives 300 dense backend rows: 240 newly executed after protocol freeze and
+60 reused only after SHA-256 validation.
 
-| Classical method | Trials | BKS rate | Wall time |
-|---|---:|---:|---:|
-| SciPy/HiGHS exact MILP | 1 | optimum 88 certified, zero reported gap | `0.036 s` |
-| Randomized minimum-residual-degree, full 186-vertex graph | 15,000 | `7.553%` | `19.95 s` |
-| Same heuristic on released 55-variable kernel | 15,000 | `40.420%` | `2.21 s` |
-| Best released-setting QAOA row | 15,000 | `0.673%` | about `183.04 s` allocated method time |
+| Primary outcome | Result |
+|---|---:|
+| Correct matched-random-vs-LR effect signs | **91/100** |
+| Aer/cuTensorNet sign agreement | **45/50** |
+| Verified event-effect TVD inequalities | **100/100** |
+| Exact-margin TVD certificates | **77/100** |
+| Correct signs inside certificate | **77/77** |
+| Correct signs outside certificate | **14/23** |
+| Fidelity-only certificates | **58/100** |
 
-The full-graph and kernel heuristics achieve respectively `11.2×` and `60.0×`
-the QAOA BKS rate while also running faster. The contribution is benchmarking
-methodology and simulator auditing, not solver superiority.
+For BKS event `A`, schedules `i,j`, exact distributions `p`, and approximate
+distributions `q`,
 
-## Research design
+```text
+|(q_i(A)-q_j(A)) - (p_i(A)-p_j(A))|
+    <= TVD(q_i,p_i) + TVD(q_j,p_j).
+```
 
-- Training: `es60fst01` and `es60fst03`.
-- Validation: `es60fst04`.
-- Blind test: `es60fst02`.
-- Frozen candidate: a four-parameter nonlinear power ramp.
-- Search controls: equal-budget evolutionary search and uniform random search.
-- Promotion: validation only; blind-test outcomes never reselect a schedule.
-- Scoring: unfolded samples must already be valid independent sets; repair,
-  greedy fill, local search, and archived-solution fallback are disabled.
-- Primary inference: 15 paired simulator jobs, 1,000 shots per method/job,
-  paired bootstrap intervals, and an exact two-sided sign-flip test.
+Therefore the approximate sign is certified whenever the exact effect magnitude
+exceeds the summed TVD budget. Every certified cohort preserves the exact sign.
+All nine observed failures occur on the 24-qubit case with the smallest exact
+effect margin. The descriptive Fisher comparison across the certificate
+threshold is `p=4.30e-7`; the guarantee itself is deterministic and does not
+depend on that statistical test.
 
-The strongest transferring schedule came from matched random search, not the
-evolutionary operator. This negative optimizer result is retained rather than
-hidden.
+## Motivating 55-qubit result
+
+On `es60fst02` (186 original vertices, 55-qubit depth-15 circuit), the released
+Aer MPS setting gives 101 BKS hits for the transferred nonlinear schedule and
+41 for the published ramp in 15,000 shots each. Tightening only the truncation
+cutoff reverses the ranking. Independent cuTensorNet sampling also loses the
+nonlinear advantage as accuracy is tightened.
+
+Strong classical controls dominate both QAOA schedules. Evolutionary search
+also fails to beat its matched random-search control. These negative results
+are retained: the contribution is benchmark validity and resource-aware
+simulation, not optimizer or solver superiority.
+
+## Start here
+
+- [Main manuscript](experiments/evoq_mis_full_qoblib/paper/output/pdf/qaoa_mps_cross_backend_rank_reversal_manuscript.pdf)
+- [Supplementary information](experiments/evoq_mis_full_qoblib/paper/output/pdf/qaoa_mps_cross_backend_rank_reversal_supplement.pdf)
+- [One-page advisor brief](experiments/evoq_mis_full_qoblib/ADVISOR_BRIEF.md)
+- [Frozen cross-case protocol](experiments/evoq_mis_full_qoblib/CROSS_CASE_REPLICATION_PROTOCOL.md)
+- [Complete cross-case analysis](experiments/evoq_mis_full_qoblib/results/cross_case_replication/analysis.json)
+- [Publication figure](experiments/evoq_mis_full_qoblib/results/figures/cross_case_replication.pdf)
+- [Detailed reproduction guide](REPRODUCIBILITY.md)
 
 ## Repository map
 
 ```text
 experiments/evoq_mis_full_qoblib/
-  run_cycle.py                    train/validate/blind QAOA cycle
-  run_exact_mps_calibration.py    exact-vs-MPS donor calibration
-  run_cutensornet_audit.py        QPY export, exact validation, MPS sampling
-  run_classical_baselines.py      HiGHS and randomized greedy controls
-  analyze_results.py              primary tables, figures, paired inference
-  analyze_extended_results.py     cross-backend/classical comparison
-  test_full_cycle.py              eight artifact-integrity tests
-  results/                        raw jobs, counts, states, CSVs, figures
-  paper/                          LaTeX, manuscript PDF, supplement PDF
-  FROZEN_PROTOCOL.md              precommitted split and promotion gate
-  PROTOCOL_DEVIATIONS.md          preserved protocol deviations
-  artifact_manifest.json          SHA-256 manifest
+  run_cross_case_replication.py   export, self-tests, Aer/cuTN execution, analysis
+  plot_cross_case_replication.py  paper statistics and final figure
+  results/cross_case_replication/ 300 rows, 100 cohorts, hashes and summaries
+  paper/                          LaTeX manuscript, supplement and stable PDFs
+  test_*.py                       29 integrity/numerical tests
+  *_PROTOCOL.md                   frozen decisions before target execution
+  artifact_manifest.json         SHA-256 inventory of public artifacts
 docs/QUANTUM_EVOLUTION_RESEARCH_MAP.md
 prior_work/evolutionary_computing_portfolio/
 QOBLIB, metriq-gym, baselines/    pinned upstream Git submodules
 ```
 
-## Start here
-
-Clone with the exact external revisions:
+## Quick verification
 
 ```bash
 git clone --recurse-submodules https://github.com/YaroslavPelekhov/Quantum.git
 cd Quantum
-```
-
-Create a Python 3.13 environment and install the CPU/Aer dependencies:
-
-```bash
 python -m venv .venv
 # Windows: .venv\Scripts\python -m pip install -r requirements.txt
 # Linux:   .venv/bin/python -m pip install -r requirements.txt
-```
-
-Run the fast integrity suite and regenerate derived results:
-
-```bash
 cd experiments/evoq_mis_full_qoblib
-python -m unittest -v test_full_cycle.py
-python analyze_results.py
-python analyze_extended_results.py
-python build_manifest.py
+python -m unittest discover -v -p "test_*.py"
+python run_cross_case_replication.py analyze
+python plot_cross_case_replication.py
 ```
 
-The full Aer MPS and cuTensorNet sweeps are substantially slower. Exact commands,
-environment separation, expected artifacts, and failure semantics are documented
-in [REPRODUCIBILITY.md](REPRODUCIBILITY.md).
+The completed JSON checkpoints allow the final analysis and paper figure to be
+regenerated without rerunning expensive backend simulations. Full Windows/WSL
+commands and safety assumptions are in [REPRODUCIBILITY.md](REPRODUCIBILITY.md).
 
-## Primary outputs
+## Large exact states
 
-- [Main manuscript](experiments/evoq_mis_full_qoblib/paper/output/pdf/qaoa_mps_rank_reversal_manuscript.pdf)
-- [Supplementary information](experiments/evoq_mis_full_qoblib/paper/output/pdf/qaoa_mps_rank_reversal_supplement.pdf)
-- [Extended baseline report](experiments/evoq_mis_full_qoblib/EXTENDED_BASELINE_REPORT.md)
-- [Classical raw summary](experiments/evoq_mis_full_qoblib/results/classical_baselines.json)
-- [cuTensorNet sweep](experiments/evoq_mis_full_qoblib/results/cutensornet_sweep.csv)
-- [Cross-backend comparison](experiments/evoq_mis_full_qoblib/results/extended_comparison.json)
-- [Independent attempt log](experiments/evoq_mis_full_qoblib/results/cutensornet/ATTEMPTS.md)
+Six dense 24-qubit reference states are 256 MiB each and exceed GitHub's normal
+100 MB object limit. They are intentionally omitted from ordinary Git history.
+Their filenames, byte sizes, and SHA-256 identities remain recorded in
+`results/mps_ladder/exact_references.json` and the export manifests. Publish
+them through Git LFS or a versioned release/archive when independent
+state-by-state recomputation is required. The paper, compact results, circuits,
+metrics, and certificate analysis are reviewable without them.
 
 ## Reproducibility status
 
-- Eight integrity tests pass.
-- Raw integer counts are retained; displayed rates are reconstructible.
-- Frozen schedules, seeds, simulator settings, host metadata, and wall times are
-  stored in JSON artifacts.
-- Small-kernel exact references and exported QPY circuits are included.
-- The checksum manifest excludes only caches, temporary renders, and LaTeX build
-  intermediates.
-- External repositories are pinned as Git submodules; see
-  [THIRD_PARTY.md](THIRD_PARTY.md).
+- 300/300 dense backend rows complete.
+- 29/29 integrity and numerical tests pass in the archived environment.
+- Both backend axis-convention self-tests pass at near-machine precision.
+- All long jobs use atomic checkpoints and hash-bound frozen manifests.
+- Manuscript and supplement were rendered and visually checked page by page.
+- Raw counts, errors, runtimes, software versions, and failed attempts are
+  retained rather than silently removed.
 
-## Limitations
+## Scope and limitations
 
-This is one four-instance MIS family and one reduction policy. The 55-qubit
-state is not exactly certified, both large-circuit MPS implementations are
-noiseless approximations, and no quantum hardware run is claimed. The
-10,000-shot Aer sensitivity points are single simulator jobs. The experiment
-does not establish which tested schedule is closer to the exact 55-qubit
-distribution.
+This is an exact-calibrated noiseless simulator study, not quantum hardware
+evidence. The 55-qubit target remains approximate. The five-case replication
+uses one MIS reduction family, three frozen schedules, two simulator
+implementations, and one GPU platform. Setting cohorts share circuits and are
+not independent population samples, so the Fisher test is descriptive. The TVD
+certificate is sufficient rather than necessary and currently requires an
+exact reference distribution.
 
 ## Citation
 
-The repository includes [CITATION.cff](CITATION.cff). The manuscript is a
-research draft dated 3 August 2026; author/affiliation metadata can be updated
-before submission without changing the frozen experimental artifacts.
-
+Citation metadata are provided in [CITATION.cff](CITATION.cff). Author,
+affiliation, venue, and DOI fields can be updated before submission without
+changing the frozen experimental artifacts.

@@ -10,6 +10,7 @@ from utils import qaoa_schedule
 
 
 RESOURCE_RESULTS = Path(__file__).resolve().parent / "results" / "resource_aware"
+EXTERNAL_RESULTS = Path(__file__).resolve().parent / "results" / "external_validity"
 
 
 class FullCycleTests(unittest.TestCase):
@@ -183,6 +184,39 @@ class FullCycleTests(unittest.TestCase):
         self.assertEqual(len(cells), 4)
         self.assertEqual(set(cells.values()), {15})
         self.assertEqual(sum(row["total_shots"] for row in blind["summary"]), 60_000)
+
+    def test_external_reachability_certification_is_complete(self):
+        payload = json.loads(
+            (EXTERNAL_RESULTS / "reachability.json").read_text(encoding="utf-8")
+        )
+        self.assertTrue(payload["complete"])
+        self.assertEqual(len(payload["rows"]), 33)
+        selected = [row for row in payload["rows"] if row["cohort"] == "selected"]
+        self.assertEqual(len(selected), 8)
+        self.assertTrue(all(row["bks_reachable"] for row in selected))
+        self.assertTrue(all(0 < row["qubits"] <= 64 for row in selected))
+
+        lookup = {
+            (row["name"], row["max_degree"]): row for row in payload["rows"]
+        }
+        self.assertEqual(lookup[("C125-9", 16)]["qubits"], 107)
+        self.assertEqual(lookup[("sloane_1dc_128", 32)]["qubits"], 124)
+        self.assertEqual(lookup[("sloane_1zc_128", 20)]["qubits"], 128)
+        self.assertEqual(lookup[("brock200-2", 128)]["qubits"], 200)
+        self.assertTrue(lookup[("brock200-2", 128)]["bks_reachable"])
+        self.assertFalse(lookup[("gen200_p0-9_44", 24)]["bks_reachable"])
+
+    def test_external_exact_audit_is_complete_and_order_invariant(self):
+        payload = json.loads(
+            (EXTERNAL_RESULTS / "exact_statevector.json").read_text(encoding="utf-8")
+        )
+        self.assertTrue(payload["complete"])
+        self.assertEqual(len(payload["rows"]), 24)
+        self.assertLess(payload["max_ordering_error"], 1e-10)
+        self.assertEqual(
+            {row["case"] for row in payload["rows"]},
+            {"chesapeake", "football", "ibm32", "karate"},
+        )
 
 
 if __name__ == "__main__":

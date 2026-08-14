@@ -1,0 +1,9 @@
+﻿{
+    "state":  "runner_failed",
+    "finished_at":  "2026-08-10T19:10:14.0544088+03:00",
+    "exit_code":  null,
+    "artifact_success":  false,
+    "reference_complete":  true,
+    "ladder_complete":  false,
+    "analysis_complete":  false
+}
