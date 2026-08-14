@@ -1,6 +1,6 @@
 {
   "root": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib",
-  "artifact_count": 219,
+  "artifact_count": 231,
   "artifacts": [
     {
       "path": ".gitattributes",
@@ -56,6 +56,16 @@
       "path": "EXACT_EXTENSION_REPORT.md",
       "bytes": 836,
       "sha256": "1a6f969539e580a40537c616f1908b08abf88bdab5050957f61fbbbe257e1633"
+    },
+    {
+      "path": "EXPANDED_QOBLIB_PILOT_PROTOCOL.md",
+      "bytes": 1346,
+      "sha256": "a20a40e0849a560de7e4c4aad127e442ece7806fbb5e9643279e67e0b4d5dbb8"
+    },
+    {
+      "path": "EXPANDED_QOBLIB_PILOT_REPORT.md",
+      "bytes": 1839,
+      "sha256": "468ccfb1578f54b5ca5ecc80fa32fb85ad1cb522b807c9e3863c12ebdb2a98a6"
     },
     {
       "path": "EXTENDED_BASELINE_REPORT.md",
@@ -143,19 +153,29 @@
       "sha256": "46659cc54b3b587a9c0a837cbee9d5e1d5778e023f3ac704b160988c9b95da34"
     },
     {
+      "path": "QOBLIB_COHORT_SCREEN_PROTOCOL.md",
+      "bytes": 2258,
+      "sha256": "92abd9330770deb1746e2d0a602bc3906ef441b3aad65f113e064681e6dbfeeb"
+    },
+    {
+      "path": "QOBLIB_COHORT_SCREEN_REPORT.md",
+      "bytes": 1502,
+      "sha256": "da61b3812666668cca61f89f02df220fe6a1f9dc9458be0a3281618f1edcbbdf"
+    },
+    {
       "path": "RANK_CERTIFICATE_REPORT.md",
       "bytes": 2438,
       "sha256": "1f7418564335b53147da7f3d9ae6e3a2d644995cac423d31706c642f4dd584c4"
     },
     {
       "path": "README.md",
-      "bytes": 5457,
-      "sha256": "18efb05414e6580de8dbefd1d2f3bb269570738bd15b22f6c344ecc3180a5c03"
+      "bytes": 6629,
+      "sha256": "0261ead717cd1d57c39b9dbe3ef1ed8f69ea472a10d864da18dbcfca010898fe"
     },
     {
       "path": "requirements-analysis.txt",
-      "bytes": 140,
-      "sha256": "75e56173feabfcf217380c8a3d9e179e4eb2c35305fa60bf81d45105ef5e7f96"
+      "bytes": 154,
+      "sha256": "9b029e3a6ed0e26791c2f0b6ff398247213d40395adf18a388acfb4256d7d425"
     },
     {
       "path": "RESEARCH_CYCLE_REPORT.md",
@@ -708,6 +728,21 @@
       "sha256": "084c2277baa3b5e98df59358d10dd7742a36ea908f6fecb897451a233f74f54c"
     },
     {
+      "path": "results/expanded_qoblib_pilot/analysis.json",
+      "bytes": 22985,
+      "sha256": "2b36894aec4a76635013292dc168d9b5ff72be5a657c830f6566b90489502fab"
+    },
+    {
+      "path": "results/expanded_qoblib_pilot/exact.json",
+      "bytes": 20502,
+      "sha256": "bb8d2fcc1f9a59c70842ec0c81cc81acba1a4cbd9462a60e9705dffde12a324a"
+    },
+    {
+      "path": "results/expanded_qoblib_pilot/mps.json",
+      "bytes": 609362,
+      "sha256": "8ef811f7c346e560c2e498b6a74338b833c2bb823b543617d9c1ab622132b33d"
+    },
+    {
       "path": "results/extended_comparison.json",
       "bytes": 12863,
       "sha256": "c17e488905484f722969f48a5229b51140da6a6e159bdfb351c9136c5957f89a"
@@ -948,6 +983,16 @@
       "sha256": "0f954ff9d5873eef50f68e192426cb057dc4ea22228b5d0330115dec17d6fc86"
     },
     {
+      "path": "results/qoblib_cohort_screen/screen.json",
+      "bytes": 267966,
+      "sha256": "7e5522bb6269729babfecd20e342f90753e0517fb008ccd303b942a862af70a3"
+    },
+    {
+      "path": "results/qoblib_cohort_screen/selected_cases.json",
+      "bytes": 12629,
+      "sha256": "21a4b000eab626d89d11dce09315a1dc14822fddc16ab8975097797735f63f49"
+    },
+    {
       "path": "results/rank_certificates.json",
       "bytes": 13599,
       "sha256": "af4550818570d89db235e1f5ad786c6a40456075ef216f05f8eccb76bf744f26"
@@ -1048,6 +1093,11 @@
       "sha256": "32d27c2da984d9186d53ca2335034a2f1d042a5ab5612892fd8c244eb1718e14"
     },
     {
+      "path": "run_expanded_qoblib_pilot.py",
+      "bytes": 11361,
+      "sha256": "1999500f215ae7b32ab9eaa61120a7b06b96eac1a9c86bb5ec46eb5acd1857db"
+    },
+    {
       "path": "run_external_validity_cycle.py",
       "bytes": 19921,
       "sha256": "ae6f47fee4f69ecb3674db61b7a03784aef355da029b151552efd34b7184eafb"
@@ -1068,6 +1118,11 @@
       "sha256": "d37c153f276ff4fefaf704744036cdbe30b4307ddb643fece16a4cf8e7419d4d"
     },
     {
+      "path": "run_qoblib_cohort_screen.py",
+      "bytes": 12424,
+      "sha256": "172be11f493f2f9df218280cec79e8ebf6abb658e5a96e206795bcd905c10a09"
+    },
+    {
       "path": "run_resource_aware_cycle.py",
       "bytes": 40655,
       "sha256": "75c8e8fbc86c2f3d69e47be7f69c6eccbe3a14def59a603ba7dfe1b2202574a5"
@@ -1081,6 +1136,11 @@
       "path": "test_exact_extension.py",
       "bytes": 3386,
       "sha256": "5b5136b4ca7477a1fd5a6d1dbb5e4754ad36daf52d2f2b756a43b88a3ca21e58"
+    },
+    {
+      "path": "test_expanded_qoblib_pilot.py",
+      "bytes": 951,
+      "sha256": "b099b573e03bda467f8434b17eefab12f3e1735f2336be8b66f83cf26a044ebe"
     },
     {
       "path": "test_full_cycle.py",

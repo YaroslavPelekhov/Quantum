@@ -1,0 +1,762 @@
+{
+  "complete": true,
+  "provenance": {
+    "created_at": "2026-08-14T21:29:47.753557+00:00",
+    "python": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "qiskit": "2.5.1",
+    "qiskit_aer": "0.17.2",
+    "numpy": "2.5.1",
+    "protocol_sha256": "a20a40e0849a560de7e4c4aad127e442ece7806fbb5e9643279e67e0b4d5dbb8",
+    "screen_sha256": "21a4b000eab626d89d11dce09315a1dc14822fddc16ab8975097797735f63f49",
+    "qoblib_commit": "52407861bcbab7cee26c4b3a564ea6f8fd80de7d",
+    "qoblib_solutions_commit": "bd3e8a6d36b48b07d53dc605b020d4cb35da2147"
+  },
+  "cases": {
+    "es60fst01": 4,
+    "es60fst03": 4,
+    "mammalia-kangaroo-interactions": 32
+  },
+  "expected_rows": 18,
+  "rows": [
+    {
+      "case": "es60fst01",
+      "bks": 60,
+      "cap": 4,
+      "qubits": 15,
+      "method": "prior_evolutionary",
+      "genome": [
+        0.5175030726816078,
+        0.7719741612274684,
+        1.0773373543262421,
+        1.7543477389249704
+      ],
+      "ordering": "sorted",
+      "depth": 15,
+      "memory_before": {
+        "available_gib": 14.185714721679688,
+        "process_rss_gib": 0.16411590576171875
+      },
+      "metrics": {
+        "feasible_rate": 0.9612929327780064,
+        "bks_rate": 0.9524840857553756,
+        "near_bks_rate": 0.961255713615871,
+        "quality_mass": 0.9611454969533838,
+        "conditional_mean_size": 59.99079765472552,
+        "best_size_nonzero_probability": 60
+      },
+      "resources": {
+        "circuit_depth": 110,
+        "circuit_size": 795,
+        "rzz_gates": 315,
+        "rx_gates": 225,
+        "operations": {
+          "rzz": 315,
+          "rz": 225,
+          "rx": 225,
+          "h": 15,
+          "measure": 15
+        }
+      },
+      "elapsed_seconds": 0.10058470000512898
+    },
+    {
+      "case": "es60fst01",
+      "bks": 60,
+      "cap": 4,
+      "qubits": 15,
+      "method": "prior_evolutionary",
+      "genome": [
+        0.5175030726816078,
+        0.7719741612274684,
+        1.0773373543262421,
+        1.7543477389249704
+      ],
+      "ordering": "spectral",
+      "depth": 15,
+      "memory_before": {
+        "available_gib": 14.181377410888672,
+        "process_rss_gib": 0.16311264038085938
+      },
+      "metrics": {
+        "feasible_rate": 0.9612929327780071,
+        "bks_rate": 0.9524840857553764,
+        "near_bks_rate": 0.9612557136158719,
+        "quality_mass": 0.9611454969533858,
+        "conditional_mean_size": 59.99079765472566,
+        "best_size_nonzero_probability": 60
+      },
+      "resources": {
+        "circuit_depth": 110,
+        "circuit_size": 795,
+        "rzz_gates": 315,
+        "rx_gates": 225,
+        "operations": {
+          "rzz": 315,
+          "rz": 225,
+          "rx": 225,
+          "h": 15,
+          "measure": 15
+        }
+      },
+      "elapsed_seconds": 0.08929540001554415
+    },
+    {
+      "case": "es60fst01",
+      "bks": 60,
+      "cap": 4,
+      "qubits": 15,
+      "method": "prior_matched_random",
+      "genome": [
+        0.6424738670407446,
+        0.7593921349176262,
+        1.776791693083474,
+        0.9917239502490107
+      ],
+      "ordering": "sorted",
+      "depth": 15,
+      "memory_before": {
+        "available_gib": 14.175487518310547,
+        "process_rss_gib": 0.16455078125
+      },
+      "metrics": {
+        "feasible_rate": 0.934683731601562,
+        "bks_rate": 0.9289841944672763,
+        "near_bks_rate": 0.9345190296011593,
+        "quality_mass": 0.9345859750128753,
+        "conditional_mean_size": 59.993724727281666,
+        "best_size_nonzero_probability": 60
+      },
+      "resources": {
+        "circuit_depth": 110,
+        "circuit_size": 795,
+        "rzz_gates": 315,
+        "rx_gates": 225,
+        "operations": {
+          "rzz": 315,
+          "rz": 225,
+          "rx": 225,
+          "h": 15,
+          "measure": 15
+        }
+      },
+      "elapsed_seconds": 0.09400280000409111
+    },
+    {
+      "case": "es60fst01",
+      "bks": 60,
+      "cap": 4,
+      "qubits": 15,
+      "method": "prior_matched_random",
+      "genome": [
+        0.6424738670407446,
+        0.7593921349176262,
+        1.776791693083474,
+        0.9917239502490107
+      ],
+      "ordering": "spectral",
+      "depth": 15,
+      "memory_before": {
+        "available_gib": 14.169296264648438,
+        "process_rss_gib": 0.16524124145507812
+      },
+      "metrics": {
+        "feasible_rate": 0.9346837316015613,
+        "bks_rate": 0.9289841944672763,
+        "near_bks_rate": 0.9345190296011592,
+        "quality_mass": 0.9345859750128751,
+        "conditional_mean_size": 59.993724727281645,
+        "best_size_nonzero_probability": 60
+      },
+      "resources": {
+        "circuit_depth": 110,
+        "circuit_size": 795,
+        "rzz_gates": 315,
+        "rx_gates": 225,
+        "operations": {
+          "rzz": 315,
+          "rz": 225,
+          "rx": 225,
+          "h": 15,
+          "measure": 15
+        }
+      },
+      "elapsed_seconds": 0.09319799998775125
+    },
+    {
+      "case": "es60fst01",
+      "bks": 60,
+      "cap": 4,
+      "qubits": 15,
+      "method": "published_lr",
+      "genome": [
+        0.7,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "ordering": "sorted",
+      "depth": 15,
+      "memory_before": {
+        "available_gib": 14.197479248046875,
+        "process_rss_gib": 0.131988525390625
+      },
+      "metrics": {
+        "feasible_rate": 0.697941413625566,
+        "bks_rate": 0.6860999427699063,
+        "near_bks_rate": 0.6978214674919418,
+        "quality_mass": 0.6977420436525904,
+        "conditional_mean_size": 59.98286074139593,
+        "best_size_nonzero_probability": 60
+      },
+      "resources": {
+        "circuit_depth": 110,
+        "circuit_size": 795,
+        "rzz_gates": 315,
+        "rx_gates": 225,
+        "operations": {
+          "rzz": 315,
+          "rz": 225,
+          "rx": 225,
+          "h": 15,
+          "measure": 15
+        }
+      },
+      "elapsed_seconds": 0.10058610001578927
+    },
+    {
+      "case": "es60fst01",
+      "bks": 60,
+      "cap": 4,
+      "qubits": 15,
+      "method": "published_lr",
+      "genome": [
+        0.7,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "ordering": "spectral",
+      "depth": 15,
+      "memory_before": {
+        "available_gib": 14.190044403076172,
+        "process_rss_gib": 0.14943695068359375
+      },
+      "metrics": {
+        "feasible_rate": 0.6979414136255663,
+        "bks_rate": 0.6860999427699063,
+        "near_bks_rate": 0.6978214674919423,
+        "quality_mass": 0.6977420436525891,
+        "conditional_mean_size": 59.98286074139595,
+        "best_size_nonzero_probability": 60
+      },
+      "resources": {
+        "circuit_depth": 110,
+        "circuit_size": 795,
+        "rzz_gates": 315,
+        "rx_gates": 225,
+        "operations": {
+          "rzz": 315,
+          "rz": 225,
+          "rx": 225,
+          "h": 15,
+          "measure": 15
+        }
+      },
+      "elapsed_seconds": 0.1014193000155501
+    },
+    {
+      "case": "es60fst03",
+      "bks": 55,
+      "cap": 4,
+      "qubits": 12,
+      "method": "prior_evolutionary",
+      "genome": [
+        0.5175030726816078,
+        0.7719741612274684,
+        1.0773373543262421,
+        1.7543477389249704
+      ],
+      "ordering": "sorted",
+      "depth": 15,
+      "memory_before": {
+        "available_gib": 14.18975830078125,
+        "process_rss_gib": 0.14403533935546875
+      },
+      "metrics": {
+        "feasible_rate": 0.9766292046869941,
+        "bks_rate": 0.9709954078849156,
+        "near_bks_rate": 0.9766116598630323,
+        "quality_mass": 0.9765264527521484,
+        "conditional_mean_size": 54.994213406286235,
+        "best_size_nonzero_probability": 55
+      },
+      "resources": {
+        "circuit_depth": 103,
+        "circuit_size": 624,
+        "rzz_gates": 240,
+        "rx_gates": 180,
+        "operations": {
+          "rzz": 240,
+          "rz": 180,
+          "rx": 180,
+          "h": 12,
+          "measure": 12
+        }
+      },
+      "elapsed_seconds": 0.01921800000127405
+    },
+    {
+      "case": "es60fst03",
+      "bks": 55,
+      "cap": 4,
+      "qubits": 12,
+      "method": "prior_evolutionary",
+      "genome": [
+        0.5175030726816078,
+        0.7719741612274684,
+        1.0773373543262421,
+        1.7543477389249704
+      ],
+      "ordering": "spectral",
+      "depth": 15,
+      "memory_before": {
+        "available_gib": 14.18838119506836,
+        "process_rss_gib": 0.14414596557617188
+      },
+      "metrics": {
+        "feasible_rate": 0.9766292046869952,
+        "bks_rate": 0.9709954078849157,
+        "near_bks_rate": 0.976611659863033,
+        "quality_mass": 0.9765264527521489,
+        "conditional_mean_size": 54.99421340628622,
+        "best_size_nonzero_probability": 55
+      },
+      "resources": {
+        "circuit_depth": 103,
+        "circuit_size": 624,
+        "rzz_gates": 240,
+        "rx_gates": 180,
+        "operations": {
+          "rzz": 240,
+          "rz": 180,
+          "rx": 180,
+          "h": 12,
+          "measure": 12
+        }
+      },
+      "elapsed_seconds": 0.027894600003492087
+    },
+    {
+      "case": "es60fst03",
+      "bks": 55,
+      "cap": 4,
+      "qubits": 12,
+      "method": "prior_matched_random",
+      "genome": [
+        0.6424738670407446,
+        0.7593921349176262,
+        1.776791693083474,
+        0.9917239502490107
+      ],
+      "ordering": "sorted",
+      "depth": 15,
+      "memory_before": {
+        "available_gib": 14.186382293701172,
+        "process_rss_gib": 0.144317626953125
+      },
+      "metrics": {
+        "feasible_rate": 0.9609443594948209,
+        "bks_rate": 0.9553002289632541,
+        "near_bks_rate": 0.9607790469915174,
+        "quality_mass": 0.9608387186711168,
+        "conditional_mean_size": 54.99395360902393,
+        "best_size_nonzero_probability": 55
+      },
+      "resources": {
+        "circuit_depth": 103,
+        "circuit_size": 624,
+        "rzz_gates": 240,
+        "rx_gates": 180,
+        "operations": {
+          "rzz": 240,
+          "rz": 180,
+          "rx": 180,
+          "h": 12,
+          "measure": 12
+        }
+      },
+      "elapsed_seconds": 0.017790800018701702
+    },
+    {
+      "case": "es60fst03",
+      "bks": 55,
+      "cap": 4,
+      "qubits": 12,
+      "method": "prior_matched_random",
+      "genome": [
+        0.6424738670407446,
+        0.7593921349176262,
+        1.776791693083474,
+        0.9917239502490107
+      ],
+      "ordering": "spectral",
+      "depth": 15,
+      "memory_before": {
+        "available_gib": 14.186210632324219,
+        "process_rss_gib": 0.1444854736328125
+      },
+      "metrics": {
+        "feasible_rate": 0.9609443594948218,
+        "bks_rate": 0.955300228963255,
+        "near_bks_rate": 0.9607790469915183,
+        "quality_mass": 0.9608387186711177,
+        "conditional_mean_size": 54.99395360902396,
+        "best_size_nonzero_probability": 55
+      },
+      "resources": {
+        "circuit_depth": 103,
+        "circuit_size": 624,
+        "rzz_gates": 240,
+        "rx_gates": 180,
+        "operations": {
+          "rzz": 240,
+          "rz": 180,
+          "rx": 180,
+          "h": 12,
+          "measure": 12
+        }
+      },
+      "elapsed_seconds": 0.019667799992021173
+    },
+    {
+      "case": "es60fst03",
+      "bks": 55,
+      "cap": 4,
+      "qubits": 12,
+      "method": "published_lr",
+      "genome": [
+        0.7,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "ordering": "sorted",
+      "depth": 15,
+      "memory_before": {
+        "available_gib": 14.193546295166016,
+        "process_rss_gib": 0.14361953735351562
+      },
+      "metrics": {
+        "feasible_rate": 0.7464112169078106,
+        "bks_rate": 0.7358264320618405,
+        "near_bks_rate": 0.746306460414784,
+        "quality_mass": 0.7462168483982838,
+        "conditional_mean_size": 54.98567777683157,
+        "best_size_nonzero_probability": 55
+      },
+      "resources": {
+        "circuit_depth": 103,
+        "circuit_size": 624,
+        "rzz_gates": 240,
+        "rx_gates": 180,
+        "operations": {
+          "rzz": 240,
+          "rz": 180,
+          "rx": 180,
+          "h": 12,
+          "measure": 12
+        }
+      },
+      "elapsed_seconds": 0.02242239998304285
+    },
+    {
+      "case": "es60fst03",
+      "bks": 55,
+      "cap": 4,
+      "qubits": 12,
+      "method": "published_lr",
+      "genome": [
+        0.7,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "ordering": "spectral",
+      "depth": 15,
+      "memory_before": {
+        "available_gib": 14.191852569580078,
+        "process_rss_gib": 0.14402389526367188
+      },
+      "metrics": {
+        "feasible_rate": 0.7464112169078118,
+        "bks_rate": 0.7358264320618411,
+        "near_bks_rate": 0.7463064604147851,
+        "quality_mass": 0.7462168483982845,
+        "conditional_mean_size": 54.985677776831515,
+        "best_size_nonzero_probability": 55
+      },
+      "resources": {
+        "circuit_depth": 103,
+        "circuit_size": 624,
+        "rzz_gates": 240,
+        "rx_gates": 180,
+        "operations": {
+          "rzz": 240,
+          "rz": 180,
+          "rx": 180,
+          "h": 12,
+          "measure": 12
+        }
+      },
+      "elapsed_seconds": 0.022456400009104982
+    },
+    {
+      "case": "mammalia-kangaroo-interactions",
+      "bks": 4,
+      "cap": 32,
+      "qubits": 15,
+      "method": "prior_evolutionary",
+      "genome": [
+        0.5175030726816078,
+        0.7719741612274684,
+        1.0773373543262421,
+        1.7543477389249704
+      ],
+      "ordering": "sorted",
+      "depth": 15,
+      "memory_before": {
+        "available_gib": 14.147911071777344,
+        "process_rss_gib": 0.15967941284179688
+      },
+      "metrics": {
+        "feasible_rate": 0.6239547332269281,
+        "bks_rate": 0.5702005503296744,
+        "near_bks_rate": 0.6082069468322271,
+        "quality_mass": 0.6065758615325277,
+        "conditional_mean_size": 3.888588894232622,
+        "best_size_nonzero_probability": 4
+      },
+      "resources": {
+        "circuit_depth": 267,
+        "circuit_size": 1665,
+        "rzz_gates": 1185,
+        "rx_gates": 225,
+        "operations": {
+          "rzz": 1185,
+          "rz": 225,
+          "rx": 225,
+          "h": 15,
+          "measure": 15
+        }
+      },
+      "elapsed_seconds": 0.22701110001071356
+    },
+    {
+      "case": "mammalia-kangaroo-interactions",
+      "bks": 4,
+      "cap": 32,
+      "qubits": 15,
+      "method": "prior_evolutionary",
+      "genome": [
+        0.5175030726816078,
+        0.7719741612274684,
+        1.0773373543262421,
+        1.7543477389249704
+      ],
+      "ordering": "spectral",
+      "depth": 15,
+      "memory_before": {
+        "available_gib": 14.130599975585938,
+        "process_rss_gib": 0.159698486328125
+      },
+      "metrics": {
+        "feasible_rate": 0.6239547332269273,
+        "bks_rate": 0.5702005503296736,
+        "near_bks_rate": 0.6082069468322263,
+        "quality_mass": 0.6065758615325271,
+        "conditional_mean_size": 3.8885888942326226,
+        "best_size_nonzero_probability": 4
+      },
+      "resources": {
+        "circuit_depth": 267,
+        "circuit_size": 1665,
+        "rzz_gates": 1185,
+        "rx_gates": 225,
+        "operations": {
+          "rzz": 1185,
+          "rz": 225,
+          "rx": 225,
+          "h": 15,
+          "measure": 15
+        }
+      },
+      "elapsed_seconds": 0.23452840000391006
+    },
+    {
+      "case": "mammalia-kangaroo-interactions",
+      "bks": 4,
+      "cap": 32,
+      "qubits": 15,
+      "method": "prior_matched_random",
+      "genome": [
+        0.6424738670407446,
+        0.7593921349176262,
+        1.776791693083474,
+        0.9917239502490107
+      ],
+      "ordering": "sorted",
+      "depth": 15,
+      "memory_before": {
+        "available_gib": 14.11581039428711,
+        "process_rss_gib": 0.16165542602539062
+      },
+      "metrics": {
+        "feasible_rate": 0.19103476258059796,
+        "bks_rate": 0.15205889581708984,
+        "near_bks_rate": 0.18435475949083885,
+        "quality_mass": 0.17959844162948727,
+        "conditional_mean_size": 3.760539478854574,
+        "best_size_nonzero_probability": 4
+      },
+      "resources": {
+        "circuit_depth": 267,
+        "circuit_size": 1665,
+        "rzz_gates": 1185,
+        "rx_gates": 225,
+        "operations": {
+          "rzz": 1185,
+          "rz": 225,
+          "rx": 225,
+          "h": 15,
+          "measure": 15
+        }
+      },
+      "elapsed_seconds": 0.22795890000998043
+    },
+    {
+      "case": "mammalia-kangaroo-interactions",
+      "bks": 4,
+      "cap": 32,
+      "qubits": 15,
+      "method": "prior_matched_random",
+      "genome": [
+        0.6424738670407446,
+        0.7593921349176262,
+        1.776791693083474,
+        0.9917239502490107
+      ],
+      "ordering": "spectral",
+      "depth": 15,
+      "memory_before": {
+        "available_gib": 14.123199462890625,
+        "process_rss_gib": 0.16222381591796875
+      },
+      "metrics": {
+        "feasible_rate": 0.19103476258059787,
+        "bks_rate": 0.15205889581708976,
+        "near_bks_rate": 0.18435475949083877,
+        "quality_mass": 0.1795984416294872,
+        "conditional_mean_size": 3.7605394788545743,
+        "best_size_nonzero_probability": 4
+      },
+      "resources": {
+        "circuit_depth": 267,
+        "circuit_size": 1665,
+        "rzz_gates": 1185,
+        "rx_gates": 225,
+        "operations": {
+          "rzz": 1185,
+          "rz": 225,
+          "rx": 225,
+          "h": 15,
+          "measure": 15
+        }
+      },
+      "elapsed_seconds": 0.21353859998635016
+    },
+    {
+      "case": "mammalia-kangaroo-interactions",
+      "bks": 4,
+      "cap": 32,
+      "qubits": 15,
+      "method": "published_lr",
+      "genome": [
+        0.7,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "ordering": "sorted",
+      "depth": 15,
+      "memory_before": {
+        "available_gib": 14.185359954833984,
+        "process_rss_gib": 0.14459609985351562
+      },
+      "metrics": {
+        "feasible_rate": 0.4590766830828392,
+        "bks_rate": 0.421547795021309,
+        "near_bks_rate": 0.4471881031175796,
+        "quality_mass": 0.44668518129958434,
+        "conditional_mean_size": 3.8920310942386167,
+        "best_size_nonzero_probability": 4
+      },
+      "resources": {
+        "circuit_depth": 267,
+        "circuit_size": 1665,
+        "rzz_gates": 1185,
+        "rx_gates": 225,
+        "operations": {
+          "rzz": 1185,
+          "rz": 225,
+          "rx": 225,
+          "h": 15,
+          "measure": 15
+        }
+      },
+      "elapsed_seconds": 0.2295618999924045
+    },
+    {
+      "case": "mammalia-kangaroo-interactions",
+      "bks": 4,
+      "cap": 32,
+      "qubits": 15,
+      "method": "published_lr",
+      "genome": [
+        0.7,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "ordering": "spectral",
+      "depth": 15,
+      "memory_before": {
+        "available_gib": 14.166328430175781,
+        "process_rss_gib": 0.15121078491210938
+      },
+      "metrics": {
+        "feasible_rate": 0.459076683082839,
+        "bks_rate": 0.42154779502130874,
+        "near_bks_rate": 0.44718810311757945,
+        "quality_mass": 0.44668518129958407,
+        "conditional_mean_size": 3.8920310942386163,
+        "best_size_nonzero_probability": 4
+      },
+      "resources": {
+        "circuit_depth": 267,
+        "circuit_size": 1665,
+        "rzz_gates": 1185,
+        "rx_gates": 225,
+        "operations": {
+          "rzz": 1185,
+          "rz": 225,
+          "rx": 225,
+          "h": 15,
+          "measure": 15
+        }
+      },
+      "elapsed_seconds": 0.22972429997753352
+    }
+  ],
+  "errors": []
+}

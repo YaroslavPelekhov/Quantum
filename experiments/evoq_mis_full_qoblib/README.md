@@ -29,6 +29,19 @@ transferred schedule leads 101 to 41 BKS hits at the released Aer setting, but
 the ranking reverses when only the truncation cutoff is tightened. Strong
 classical controls dominate; this work makes no quantum-advantage claim.
 
+## Post-manuscript extension
+
+A preregistered all-instance screen has now audited all 50 QOBLIB MIS graphs.
+Under the fixed requirements of a non-empty kernel, at most 24 qubits, exact
+BKS reachability without repair, and an optimal QOBLIB status, only 8/50 cases
+are eligible.  Three are new relative to the manuscript cohort:
+`es60fst01`, `es60fst03`, and `mammalia-kangaroo-interactions`.
+
+The follow-up Aer pilot completed 18 exact references and 108 seeded MPS jobs
+(54,000 shots, zero failures). All 24/24 candidate-vs-LR comparisons preserved
+the exact BKS-effect sign. These results extend the instance audit but are not
+silently pooled with the frozen five-case/two-backend manuscript experiment.
+
 ## Start here
 
 - `ADVISOR_BRIEF.md`: one-page interpretation and discussion prompts.
@@ -41,6 +54,9 @@ classical controls dominate; this work makes no quantum-advantage claim.
 - `results/cross_case_replication/analysis.json`: complete machine-readable
   cross-case analysis.
 - `results/figures/cross_case_replication.pdf`: publication figure.
+- `QOBLIB_COHORT_SCREEN_REPORT.md`: complete 50-instance eligibility audit.
+- `EXPANDED_QOBLIB_PILOT_REPORT.md`: exact and seeded-MPS results on three new
+  eligible cases.
 
 ## Repository map
 
@@ -55,7 +71,11 @@ results/cross_case_replication/
   paper_statistics.json       intervals and descriptive Fisher test
 results/mps_ladder/            exact 24-qubit references and Aer ladder
 results/independent_ladder/    independent 24-qubit cuTensorNet ladder
+results/qoblib_cohort_screen/  all 50 instances and frozen case selection
+results/expanded_qoblib_pilot/ 18 exact rows, 108 MPS rows, and analysis
 run_cross_case_replication.py  export, self-test, execute, analyze, status
+run_qoblib_cohort_screen.py    checkpointed all-instance eligibility screen
+run_expanded_qoblib_pilot.py   exact plus seeded Aer extension pilot
 plot_cross_case_replication.py paper figure and compact tables
 test_*.py                      integrity and numerical tests
 artifact_manifest.json         SHA-256 artifact inventory
