@@ -1,0 +1,168 @@
+{
+  "stage": "compressed_observable_telescope_summary",
+  "complete": true,
+  "case": "ibm32",
+  "setting": "confirm",
+  "ordering": "sorted",
+  "mps_gap": -0.2549044372349163,
+  "exact_gap": -0.2461230011281299,
+  "proposed_bound_mathematically_valid_under_stated_conditions": true,
+  "forward_checkpoint_transitions_audited": 1112,
+  "forward_group_bound_violations": 0,
+  "sum_group_radius": {
+    "published_lr": 39.939935250108725,
+    "prior_matched_random": 42.87172368535802
+  },
+  "sum_actual_checkpoint_trace_norm": {
+    "published_lr": 15.126668657060046,
+    "prior_matched_random": 16.606752978005606
+  },
+  "bond_ladder": [
+    {
+      "backward_bond": 8,
+      "lr_operator_correction": 58.36438398339257,
+      "mr_operator_correction": 48.845692429982584,
+      "paired_operator_correction": 107.21007641337516,
+      "paired_correction_over_mps_gap": 420.5892905448793,
+      "certificate_possible_before_first_term": false,
+      "oracle_actual_radius_lr_correction": 22.140792504478746,
+      "oracle_actual_radius_mr_correction": 18.646071322916928,
+      "oracle_actual_radius_paired_correction": 40.78686382739568
+    },
+    {
+      "backward_bond": 16,
+      "lr_operator_correction": 53.25800878720576,
+      "mr_operator_correction": 42.76465193346172,
+      "paired_operator_correction": 96.02266072066749,
+      "paired_correction_over_mps_gap": 376.70062460377795,
+      "certificate_possible_before_first_term": false,
+      "oracle_actual_radius_lr_correction": 20.235831713426375,
+      "oracle_actual_radius_mr_correction": 16.26603202151642,
+      "oracle_actual_radius_paired_correction": 36.501863734942795
+    },
+    {
+      "backward_bond": 32,
+      "lr_operator_correction": 47.06442181519084,
+      "mr_operator_correction": 36.957866588493985,
+      "paired_operator_correction": 84.02228840368483,
+      "paired_correction_over_mps_gap": 329.6226982751622,
+      "certificate_possible_before_first_term": false,
+      "oracle_actual_radius_lr_correction": 17.93920106113807,
+      "oracle_actual_radius_mr_correction": 14.015365359277256,
+      "oracle_actual_radius_paired_correction": 31.954566420415325
+    },
+    {
+      "backward_bond": 64,
+      "lr_operator_correction": 40.32706333960816,
+      "mr_operator_correction": 31.17598546191836,
+      "paired_operator_correction": 71.50304880152652,
+      "paired_correction_over_mps_gap": 280.5092354497946,
+      "certificate_possible_before_first_term": false,
+      "oracle_actual_radius_lr_correction": 15.454671581047146,
+      "oracle_actual_radius_mr_correction": 11.800609548823973,
+      "oracle_actual_radius_paired_correction": 27.25528112987112
+    }
+  ],
+  "small_bond_certificate_survives": false,
+  "fixed_bond_8_64_certificate_survives": false,
+  "residual_aware_fixed_D64_pair_correction_R128": 65.25909469759523,
+  "adaptive_primary_schedule": [
+    [
+      1,
+      319,
+      512
+    ],
+    [
+      320,
+      383,
+      384
+    ],
+    [
+      384,
+      447,
+      256
+    ],
+    [
+      448,
+      511,
+      128
+    ],
+    [
+      512,
+      555,
+      64
+    ]
+  ],
+  "adaptive_pair_rows": [
+    {
+      "residual_backward_bond": 128,
+      "compressed_first_term_pair_sum": 0.06756830635354205,
+      "operator_correction_pair_sum": 0.21919816464699163,
+      "certified_pair_width": 0.28676651100053363,
+      "mps_gap_absolute": 0.2549044372349163,
+      "certified": false,
+      "certificate_margin": -0.03186207376561734,
+      "correct_sign": true
+    },
+    {
+      "residual_backward_bond": 256,
+      "compressed_first_term_pair_sum": 0.06756830635354205,
+      "operator_correction_pair_sum": 0.14304864269016626,
+      "certified_pair_width": 0.21061698904370832,
+      "mps_gap_absolute": 0.2549044372349163,
+      "certified": true,
+      "certificate_margin": 0.04428744819120797,
+      "correct_sign": true
+    },
+    {
+      "residual_backward_bond": 512,
+      "compressed_first_term_pair_sum": 0.06756830635354205,
+      "operator_correction_pair_sum": 0.024084064845764724,
+      "certified_pair_width": 0.09165241119930678,
+      "mps_gap_absolute": 0.2549044372349163,
+      "certified": true,
+      "certificate_margin": 0.1632520260356095,
+      "correct_sign": true
+    }
+  ],
+  "adaptive_certificate_survives": true,
+  "minimum_certifying_residual_bond": 256,
+  "spectral_heldout_protocol_frozen": true,
+  "spectral_heldout_pair_rows": [
+    {
+      "residual_backward_bond": 128,
+      "compressed_first_term_pair_sum": 0.051574684673403454,
+      "operator_correction_pair_sum": 0.017854361282276493,
+      "certified_pair_width": 0.06942908595567995,
+      "mps_gap_absolute": 0.2539356273164466,
+      "certified": true,
+      "certificate_margin": 0.18450654136076663,
+      "correct_sign": true
+    },
+    {
+      "residual_backward_bond": 256,
+      "compressed_first_term_pair_sum": 0.051574684673403454,
+      "operator_correction_pair_sum": 0.009321621653354711,
+      "certified_pair_width": 0.060896346326758166,
+      "mps_gap_absolute": 0.2539356273164466,
+      "certified": true,
+      "certificate_margin": 0.19303928098968842,
+      "correct_sign": true
+    },
+    {
+      "residual_backward_bond": 512,
+      "compressed_first_term_pair_sum": 0.051574684673403454,
+      "operator_correction_pair_sum": 0.003034976023180253,
+      "certified_pair_width": 0.054609700696583705,
+      "mps_gap_absolute": 0.2539356273164466,
+      "certified": true,
+      "certificate_margin": 0.19932592661986287,
+      "correct_sign": true
+    }
+  ],
+  "spectral_heldout_prespecified_R256_certified": true,
+  "first_term_evaluation_required": true,
+  "maximum_actual_recursive_projector_error_bond64": 0.4289324689607019,
+  "maximum_finite_eta_over_actual_bond64": 12.687427368884691,
+  "verdict": "Fixed bonds 8-64 fail, while residual-aware depth-adaptive COT certifies the ibm32 ranking at residual bond 256 with full width 0.210617 below gap 0.254904."
+}

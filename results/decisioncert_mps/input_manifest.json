@@ -1,0 +1,55 @@
+{
+  "stage": "decisioncert_input_manifest",
+  "created_at": "2026-08-18T13:13:38.429430+00:00",
+  "inputs_are_immutable": true,
+  "exploratory_only": true,
+  "inputs": [
+    {
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\results\\rankcert_mps\\rankcert_schedule_rows.json",
+      "sha256": "a87c748b7449042e90818008f91af80cbd96272a1e29f6aa160843aeab222c9f",
+      "bytes": 6063598
+    },
+    {
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\results\\rankcert_mps\\rankcert_pair_rows.json",
+      "sha256": "909ea875f5d80a1c11a77ae0815c2801aa529e284535642e7cc4a03032188599",
+      "bytes": 45508
+    },
+    {
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\results\\rankcert_mps\\rankcert_summary.json",
+      "sha256": "5b37c929f1a36cb47c576faf7ff4242be7337b22b4c2a2e05577850e7947604b",
+      "bytes": 1104839
+    },
+    {
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\analysis_summary.json",
+      "sha256": "bc2b7c52b811d941716815d95f7438e9c1f3345bbf35667893007d8193e8851c",
+      "bytes": 25772
+    },
+    {
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\aer_jobs.json",
+      "sha256": "39e5361bad6a568abc6b7a667ee99d50b27b9d4aa406e9af8ed14953629d9d11",
+      "bytes": 182886
+    },
+    {
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\mps_ladder\\mps_ladder.json",
+      "sha256": "05c9fa966ca9852aed16c6b3377b46275ebe2e4b1ac0da135b8ffb7635ec66a8",
+      "bytes": 101100
+    },
+    {
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\export_manifest.json",
+      "sha256": "37339dd66645c16b9fc077ddb09e68cb5c70216e41f4b779aa9d50687d931f80",
+      "bytes": 65654
+    },
+    {
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\independent_ladder\\export_manifest.json",
+      "sha256": "0acef4c08541207e7cef68df81c1a8561edd02a8e7ad5c8df9b773f91ab14877",
+      "bytes": 31732
+    }
+  ],
+  "numerical_floor": 1e-07,
+  "surrogates": [
+    "sum_w",
+    "sqrt_sum_w",
+    "product_trace",
+    "rss_angle"
+  ]
+}

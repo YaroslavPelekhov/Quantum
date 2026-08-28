@@ -1,0 +1,79 @@
+{
+  "stage": "decision_certified_allocation_manifest",
+  "complete": true,
+  "created_at": "2026-08-20T12:33:51.364474+00:00",
+  "sources": {
+    "experiments/decision_certified_allocation/analyze_allocation.py": {
+      "bytes": 12529,
+      "sha256": "f6ee4cc9da643114481db84b1bb9f5f931a807db4541c9972a82fed8bd4586b1"
+    },
+    "experiments/decision_certified_allocation/test_allocation.py": {
+      "bytes": 2427,
+      "sha256": "c44ba4e68f6fda7de1be5a7444d0a8fd4e30154f8979b7148eea70f2beb9b18d"
+    },
+    "experiments/decision_certified_allocation/README.md": {
+      "bytes": 493,
+      "sha256": "8a74604bd0327e95fdcbdbc07b4e6c16a15363267f81a0eadfca8596329aeaa4"
+    },
+    "experiments/decision_certified_allocation/NOVELTY_AND_THEOREM.md": {
+      "bytes": 2211,
+      "sha256": "0819b90466cdb6016e723fb8e7c0ba9162aac73463bd1bd1359115460cf25d50"
+    },
+    "experiments/decision_certified_allocation/LITERATURE_POSITIONING.md": {
+      "bytes": 2075,
+      "sha256": "61cb0e2799db9ff8e43fd04d17d78211d7bb62977048432d3608b657c1d8788b"
+    },
+    "experiments/decision_certified_allocation/SPECTRAL_HELDOUT_PROTOCOL.md": {
+      "bytes": 1070,
+      "sha256": "4ce376e1d0059fbd449e5ec95cc7c1aed22c359381d8f4def8c81daf40ca458f"
+    }
+  },
+  "inputs": {
+    "results/rankcert_mps/rankcert_schedule_rows.json": {
+      "bytes": 6063598,
+      "sha256": "a87c748b7449042e90818008f91af80cbd96272a1e29f6aa160843aeab222c9f"
+    },
+    "results/observable_telescope/ibm32_released_sorted.json": {
+      "bytes": 399745,
+      "sha256": "8abf257f0b59dc202de3c4f59d4b3f264dbea76c1118d08850d073af26693409"
+    },
+    "results/observable_telescope/ibm32_confirm_sorted.json": {
+      "bytes": 400340,
+      "sha256": "4eb7747e510ceae553584dcc0bf751561ece50840df670c67bc4f3d667f886ac"
+    },
+    "results/observable_telescope/ibm32_bond128_sorted.json": {
+      "bytes": 400304,
+      "sha256": "c4bdfb74570c32d261c98d4559104889472dd28bc586fa59ea613290ff2e79ee"
+    },
+    "results/observable_telescope/ibm32_cutoff1e-4_sorted.json": {
+      "bytes": 400317,
+      "sha256": "1074d00b7ed6acc7d2367e35faf0aa5fd6e71675a58d0bad95f14af5a4b678d6"
+    },
+    "results/observable_telescope/ibm32_cutoff1e-5_sorted.json": {
+      "bytes": 399930,
+      "sha256": "a321cddaf05b88785c93e92db3b727799bbb1f5e0e2ecb853f627668f71c49bc"
+    },
+    "results/observable_telescope/ibm32_released_spectral.json": {
+      "bytes": 399739,
+      "sha256": "eaf2455ef376446940fccd48c11dd7ff84f379ca29ef76311ecaf9534c313666"
+    },
+    "results/observable_telescope/ibm32_confirm_spectral.json": {
+      "bytes": 400065,
+      "sha256": "54710b85607c72fe4a937ec5738e8bbb32dca1a4d336a7eb7a3926934e9d0ca9"
+    }
+  },
+  "artifacts": {
+    "results/decision_certified_allocation/summary.json": {
+      "bytes": 57225,
+      "sha256": "bbc04c7585ee24f62730e35953a9b1a5d72ad0e9a953f719eaf914e746e6f492"
+    },
+    "results/decision_certified_allocation/pairs_sorted.json": {
+      "bytes": 26224,
+      "sha256": "a156553abd40fff47a77d2d1f73ea6ab77513df08152835d5a66fd382622474c"
+    },
+    "results/decision_certified_allocation/REPORT.md": {
+      "bytes": 1100,
+      "sha256": "79c39ec290e6731a47a4ee2c1e1ffb30a1c71f35228e511b70f000032cf7210c"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "complete": true,
+  "created_at": "2026-08-20T19:32:32.129450+00:00",
+  "sources": {
+    "experiments/decision_certified_bond_allocation/analyze_bond_allocation.py": {
+      "bytes": 10693,
+      "sha256": "afa29c1fae5480555ebdb763983719712f1c4c1f9992378499620590cf6d1e9d"
+    },
+    "experiments/decision_certified_bond_allocation/test_bond_allocation.py": {
+      "bytes": 1993,
+      "sha256": "6466c2a9bede8d2643f6d777aa34dc9d680fa1a6e0f21a4edc83e24200767322"
+    },
+    "experiments/decision_certified_bond_allocation/THEORY.md": {
+      "bytes": 2784,
+      "sha256": "8ac6d66029815706d71b3e294c4b72b8dba7da635f5cdbc11af3f617cab8bd65"
+    },
+    "experiments/decision_certified_bond_allocation/SORTED_PROTOCOL.md": {
+      "bytes": 1588,
+      "sha256": "da2b967510451e0e4d8989fce59755962ce8b730b9f1cf90604eedade3df9493"
+    },
+    "experiments/decision_certified_bond_allocation/CAUSAL_RESCUE_PROTOCOL.md": {
+      "bytes": 1791,
+      "sha256": "205b23154277e3ac53cfc7e376e07d6d0e684bd5cf47e0507b7ef897e95950a3"
+    },
+    "experiments/decision_certified_bond_allocation/SPECTRAL_TRANSFER_PROTOCOL.md": {
+      "bytes": 1039,
+      "sha256": "9d08aa0f87ab5591a52b6a924eb5cc3ab1dcdef2a872a544f1aacf4a895dd8f1"
+    },
+    "experiments/decision_certified_bond_allocation/LITERATURE_POSITIONING.md": {
+      "bytes": 2214,
+      "sha256": "f0a1f0307462c6aee505aab80276f1ac3524ca08fe2b07e72e87649201e3b7a5"
+    },
+    "experiments/decision_certified_bond_allocation/README.md": {
+      "bytes": 532,
+      "sha256": "9dcd638489b117b7b6c09a4f3c2b777b894eda1771050d2d4f4dc2012f65a41d"
+    }
+  },
+  "inputs": {
+    "results/compressed_observable_telescope/compressed_first_term_ibm32_confirm_sorted_adaptive.json": {
+      "bytes": 364968,
+      "sha256": "f227b255262b8aee812b4da6e14486a3d3ac50ad54f374e2c3e29a51fddd4eb4"
+    },
+    "results/compressed_observable_telescope/residual_cot_ibm32_confirm_sorted_adaptive.json": {
+      "bytes": 3645881,
+      "sha256": "cd027f1a50e5d27482222c1bfc9103e19c50b96d78990eada602a2e7ae97e378"
+    },
+    "results/compressed_observable_telescope/residual_cot_ibm32_confirm_sorted_adaptive_residual-adaptive.json": {
+      "bytes": 1607287,
+      "sha256": "d68b7a55e2e517be5680e944a9fa595d038a3eb896d048e5d8b1a16597db9bb6"
+    },
+    "results/compressed_observable_telescope/residual_cot_ibm32_confirm_sorted_adaptive_residual-adaptive_causal319.json": {
+      "bytes": 803396,
+      "sha256": "f173197a28191f658ebd2a30d4994f20b53011779bc398ce1be8f0b52b41c4f2"
+    },
+    "results/compressed_observable_telescope/compressed_first_term_ibm32_confirm_spectral_adaptive.json": {
+      "bytes": 365021,
+      "sha256": "85b32377809cf1f044bf32d79b615f481e7227c89fc0f01a1cb56021beba2982"
+    },
+    "results/compressed_observable_telescope/residual_cot_ibm32_confirm_spectral_adaptive.json": {
+      "bytes": 3655491,
+      "sha256": "0e74a8b12f8326370c8a85f3459c4dbd260bd5dceac41f554757fc1d1e909bf2"
+    },
+    "results/compressed_observable_telescope/residual_cot_ibm32_confirm_spectral_adaptive_residual-adaptive_causal319.json": {
+      "bytes": 807980,
+      "sha256": "b538a4a3d14248178b6e62457d6c83121012c5296f2d48af5c79cbae4a825688"
+    }
+  },
+  "artifacts": {
+    "results/decision_certified_bond_allocation/summary.json": {
+      "bytes": 1959,
+      "sha256": "b8019639367d97c7674ba7fff6ec63efd2d8f0987eb626c3d85728982f8f2bc6"
+    },
+    "results/decision_certified_bond_allocation/REPORT.md": {
+      "bytes": 1440,
+      "sha256": "e904f9b27e930fc86346ee4c8333165e61ba70e7b33c1f101ea9917bd6c915b0"
+    }
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "stage": "compressed_observable_telescope_recursive_eta_oracle_audit",
+  "complete": true,
+  "created_at": "2026-08-19T14:15:56.376920+00:00",
+  "backward_bond": 64,
+  "rows": [
+    {
+      "method": "published_lr",
+      "rows": [
+        {
+          "checkpoint_position": 64,
+          "operation_count": 148,
+          "backward_bond": 64,
+          "certified_eta": 2.0,
+          "actual_recursive_projector_error": 0.31620522970067977,
+          "eta_over_actual": 6.325006078783714,
+          "accumulated_vector_angles": [
+            1.5707963267948966,
+            1.5707963267948966
+          ],
+          "local_compression_angles": [
+            1.3377404860396687e-14,
+            8.747046091223227e-15
+          ]
+        },
+        {
+          "checkpoint_position": 128,
+          "operation_count": 274,
+          "backward_bond": 64,
+          "certified_eta": 2.0,
+          "actual_recursive_projector_error": 0.29001871827188985,
+          "eta_over_actual": 6.896106609660341,
+          "accumulated_vector_angles": [
+            1.5707963267948966,
+            1.5707963267948966
+          ],
+          "local_compression_angles": [
+            0.027694583888728364,
+            0.026768390045820552
+          ]
+        },
+        {
+          "checkpoint_position": 192,
+          "operation_count": 402,
+          "backward_bond": 64,
+          "certified_eta": 2.0,
+          "actual_recursive_projector_error": 0.24458638279256822,
+          "eta_over_actual": 8.177070109811405,
+          "accumulated_vector_angles": [
+            1.5707963267948966,
+            1.5707963267948966
+          ],
+          "local_compression_angles": [
+            0.02518557820363828,
+            0.023331228544450376
+          ]
+        },
+        {
+          "checkpoint_position": 256,
+          "operation_count": 526,
+          "backward_bond": 64,
+          "certified_eta": 1.9590701703324807,
+          "actual_recursive_projector_error": 0.15619886351303072,
+          "eta_over_actual": 12.54215380490939,
+          "accumulated_vector_angles": [
+            1.3644949084129805,
+            1.3718478475247176
+          ],
+          "local_compression_angles": [
+            1.943073061010828e-14,
+            2.5493287494206068e-14
+          ]
+        },
+        {
+          "checkpoint_position": 320,
+          "operation_count": 650,
+          "backward_bond": 64,
+          "certified_eta": 0.7496069891128416,
+          "actual_recursive_projector_error": 0.059082662490838524,
+          "eta_over_actual": 12.687427368884691,
+          "accumulated_vector_angles": [
+            0.3835361747694441,
+            0.3848336139089512
+          ],
+          "local_compression_angles": [
+            0.017758902283536358,
+            0.018172373380378668
+          ]
+        },
+        {
+          "checkpoint_position": 384,
+          "operation_count": 780,
+          "backward_bond": 64,
+          "certified_eta": 0.1127097641823093,
+          "actual_recursive_projector_error": 0.010264723946176975,
+          "eta_over_actual": 10.980301542769425,
+          "accumulated_vector_angles": [
+            0.05698289676833236,
+            0.05578663167449739
+          ],
+          "local_compression_angles": [
+            0.002303588514647007,
+            0.0023230589622564328
+          ]
+        },
+        {
+          "checkpoint_position": 448,
+          "operation_count": 902,
+          "backward_bond": 64,
+          "certified_eta": 0.004233158545133782,
+          "actual_recursive_projector_error": 0.0005269863484934501,
+          "eta_over_actual": 8.032766991470549,
+          "accumulated_vector_angles": [
+            0.0022544323509974718,
+            0.0019787293950575342
+          ],
+          "local_compression_angles": [
+            3.463687637108155e-14,
+            3.213813188374088e-14
+          ]
+        },
+        {
+          "checkpoint_position": 512,
+          "operation_count": 1032,
+          "backward_bond": 64,
+          "certified_eta": 1.1827337074838956e-06,
+          "actual_recursive_projector_error": 3.4867963701358157e-07,
+          "eta_over_actual": 3.39203550174003,
+          "accumulated_vector_angles": [
+            6.043739498114385e-07,
+            5.783597576725263e-07
+          ],
+          "local_compression_angles": [
+            1.6365194944573192e-14,
+            3.262224788454872e-14
+          ]
+        }
+      ]
+    },
+    {
+      "method": "prior_matched_random",
+      "rows": [
+        {
+          "checkpoint_position": 64,
+          "operation_count": 148,
+          "backward_bond": 64,
+          "certified_eta": 2.0,
+          "actual_recursive_projector_error": 0.4289324689607019,
+          "eta_over_actual": 4.6627386470555034,
+          "accumulated_vector_angles": [
+            1.5707963267948966,
+            1.5707963267948966
+          ],
+          "local_compression_angles": [
+            1.6144244385383506e-14,
+            1.5490701196091313e-14
+          ]
+        },
+        {
+          "checkpoint_position": 128,
+          "operation_count": 274,
+          "backward_bond": 64,
+          "certified_eta": 2.0,
+          "actual_recursive_projector_error": 0.295870485661823,
+          "eta_over_actual": 6.759714459271818,
+          "accumulated_vector_angles": [
+            1.5707963267948966,
+            1.5707963267948966
+          ],
+          "local_compression_angles": [
+            0.04721722667281552,
+            0.04588846644869878
+          ]
+        },
+        {
+          "checkpoint_position": 192,
+          "operation_count": 402,
+          "backward_bond": 64,
+          "certified_eta": 1.322869752670074,
+          "actual_recursive_projector_error": 0.11801158855481646,
+          "eta_over_actual": 11.209659736557144,
+          "accumulated_vector_angles": [
+            0.8070731449881642,
+            0.6442559971317036
+          ],
+          "local_compression_angles": [
+            0.026167648127496265,
+            0.02319508182497814
+          ]
+        },
+        {
+          "checkpoint_position": 256,
+          "operation_count": 526,
+          "backward_bond": 64,
+          "certified_eta": 0.19582136063685024,
+          "actual_recursive_projector_error": 0.019356498761566997,
+          "eta_over_actual": 10.116569274690336,
+          "accumulated_vector_angles": [
+            0.10993513662780555,
+            0.08621429546306497
+          ],
+          "local_compression_angles": [
+            1.6589368052996706e-14,
+            1.518993926732824e-14
+          ]
+        },
+        {
+          "checkpoint_position": 320,
+          "operation_count": 650,
+          "backward_bond": 64,
+          "certified_eta": 0.012882640714616925,
+          "actual_recursive_projector_error": 0.0014393249682025265,
+          "eta_over_actual": 8.950474006370616,
+          "accumulated_vector_angles": [
+            0.00682355560611064,
+            0.006059175135834695
+          ],
+          "local_compression_angles": [
+            0.0006338189515145931,
+            0.0005642077153302451
+          ]
+        },
+        {
+          "checkpoint_position": 384,
+          "operation_count": 780,
+          "backward_bond": 64,
+          "certified_eta": 0.0003560906557837383,
+          "actual_recursive_projector_error": 4.343072330026001e-05,
+          "eta_over_actual": 8.199049629495958,
+          "accumulated_vector_angles": [
+            0.00017944469606302342,
+            0.00017664596160241736
+          ],
+          "local_compression_angles": [
+            1.436683582627407e-05,
+            1.2493772173680524e-05
+          ]
+        },
+        {
+          "checkpoint_position": 448,
+          "operation_count": 902,
+          "backward_bond": 64,
+          "certified_eta": 1.1541808130419955e-06,
+          "actual_recursive_projector_error": 1.7689586778344747e-07,
+          "eta_over_actual": 6.524634111040522,
+          "accumulated_vector_angles": [
+            5.40766479316693e-07,
+            6.134143337253673e-07
+          ],
+          "local_compression_angles": [
+            1.6645225048402664e-14,
+            1.5712245237869028e-14
+          ]
+        },
+        {
+          "checkpoint_position": 512,
+          "operation_count": 1032,
+          "backward_bond": 64,
+          "certified_eta": 9.476163868317324e-11,
+          "actual_recursive_projector_error": 2.2393576801748126e-12,
+          "eta_over_actual": 42.316437218629495,
+          "accumulated_vector_angles": [
+            4.7351713166914117e-11,
+            4.740992551625912e-11
+          ],
+          "local_compression_angles": [
+            1.004659830729436e-14,
+            9.286822744037772e-15
+          ]
+        }
+      ]
+    }
+  ]
+}

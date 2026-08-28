@@ -1,0 +1,16 @@
+{
+  "complete": true,
+  "development_success": false,
+  "development_passed_rows": 2,
+  "transfer_promoted": false,
+  "files": {
+    "experiments\\global_decision_balanced_contraction\\PROTOCOL.md": "06b1f006b649add27830dcd25a7f838778ab0f70cb393ca1b3d896fa633c70d4",
+    "experiments\\global_decision_balanced_contraction\\gdbc_core.py": "1acf65641339a3b5ec1843bab390acd6c96e6b13a0cb3e739b622e9105a82ad2",
+    "experiments\\global_decision_balanced_contraction\\run_gdbc.py": "fff8d4efdab1ad650a55828def03ef0193e449b46819b5a734f7478d0aace800",
+    "experiments\\global_decision_balanced_contraction\\analyze_gdbc.py": "0e101e23f38dd2d25a86f3ca4de84614597113233fe2eeb23073f605030de152",
+    "experiments\\global_decision_balanced_contraction\\test_gdbc.py": "408f46b5e90eaff78567f36ed4b1db0f7376a1315158ac8c4b69118bfa90c635",
+    "experiments\\global_decision_balanced_contraction\\README.md": "89fcabc5e92742ab4cd6e1ac6857e2faeaf14dbc20377d5b6d9365e5ca20149d",
+    "results\\global_decision_balanced_contraction\\development.json": "533c306d899ea10ef82656dfaa5eb4e4509cb29a59f8b43a1ae33b123d7fc6c8",
+    "results\\global_decision_balanced_contraction\\REPORT.md": "c2e704fe24cb21e763ad6f5f48850ae5505169b10b6fc5fbd1f3c1c9ab440505"
+  }
+}

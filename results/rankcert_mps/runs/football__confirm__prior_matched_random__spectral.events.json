@@ -1,0 +1,1560 @@
+{
+  "raw_log_sha256": "78da8832326142c8c62cbb50bc7aee56c285350186f11c22050069383160898e",
+  "number_of_truncations": 74,
+  "events": [
+    {
+      "event_index": 0,
+      "discarded_weight": 7.19143e-06,
+      "reported_text": "7.19143e-06",
+      "certificate_weight_upper_bound": 7.191435000000001e-06,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        4,
+        3
+      ],
+      "bond_dimensions": [
+        2,
+        2,
+        2,
+        3,
+        2,
+        2
+      ],
+      "segment": "internal_swap on qubits 4,3, BD=[2 2 2 3 2 2],"
+    },
+    {
+      "event_index": 1,
+      "discarded_weight": 7.17212e-06,
+      "reported_text": "7.17212e-06",
+      "certificate_weight_upper_bound": 7.172125000000001e-06,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        5,
+        4
+      ],
+      "bond_dimensions": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        2
+      ],
+      "segment": "internal_swap on qubits 5,4, BD=[2 2 2 3 3 2],  discarded_value=1.42868e-05,"
+    },
+    {
+      "event_index": 2,
+      "discarded_weight": 1.42868e-05,
+      "reported_text": "1.42868e-05",
+      "certificate_weight_upper_bound": 1.4286850000000002e-05,
+      "instruction_index": 8,
+      "gate": "rzz",
+      "qubits": [
+        4,
+        6
+      ],
+      "bond_dimensions": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        2
+      ],
+      "segment": "I8:rzz on qubits 4,6, BD=[2 2 2 3 3 2],  discarded_value=7.15281e-06,"
+    },
+    {
+      "event_index": 3,
+      "discarded_weight": 7.15281e-06,
+      "reported_text": "7.15281e-06",
+      "certificate_weight_upper_bound": 7.152815000000001e-06,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        5,
+        4
+      ],
+      "bond_dimensions": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        2
+      ],
+      "segment": "internal_swap on qubits 5,4, BD=[2 2 2 3 3 2],  discarded_value=7.22907e-06,"
+    },
+    {
+      "event_index": 4,
+      "discarded_weight": 7.22907e-06,
+      "reported_text": "7.22907e-06",
+      "certificate_weight_upper_bound": 7.229075000000002e-06,
+      "instruction_index": 9,
+      "gate": "rzz",
+      "qubits": [
+        3,
+        4
+      ],
+      "bond_dimensions": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        2
+      ],
+      "segment": "I9:rzz on qubits 3,4, BD=[2 2 2 3 3 2],  discarded_value=4.25741e-05,"
+    },
+    {
+      "event_index": 5,
+      "discarded_weight": 4.25741e-05,
+      "reported_text": "4.25741e-05",
+      "certificate_weight_upper_bound": 4.2574150000000006e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        3,
+        2
+      ],
+      "bond_dimensions": [
+        2,
+        2,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "internal_swap on qubits 3,2, BD=[2 2 3 3 3 2],  discarded_value=7.13442e-06,"
+    },
+    {
+      "event_index": 6,
+      "discarded_weight": 7.13442e-06,
+      "reported_text": "7.13442e-06",
+      "certificate_weight_upper_bound": 7.134425000000002e-06,
+      "instruction_index": 10,
+      "gate": "rzz",
+      "qubits": [
+        1,
+        4
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "I10:rzz on qubits 1,4, BD=[2 3 3 3 3 2],"
+    },
+    {
+      "event_index": 7,
+      "discarded_weight": 1.41164e-05,
+      "reported_text": "1.41164e-05",
+      "certificate_weight_upper_bound": 1.4116450000000001e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        5,
+        4
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "internal_swap on qubits 5,4, BD=[2 3 3 3 3 2],  discarded_value=8.57166e-05,"
+    },
+    {
+      "event_index": 8,
+      "discarded_weight": 8.57166e-05,
+      "reported_text": "8.57166e-05",
+      "certificate_weight_upper_bound": 8.571665000000002e-05,
+      "instruction_index": 11,
+      "gate": "rzz",
+      "qubits": [
+        2,
+        5
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "I11:rzz on qubits 2,5, BD=[2 3 3 3 3 2],  discarded_value=7.97168e-05,"
+    },
+    {
+      "event_index": 9,
+      "discarded_weight": 7.97168e-05,
+      "reported_text": "7.97168e-05",
+      "certificate_weight_upper_bound": 7.971685000000001e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        3,
+        2
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "internal_swap on qubits 3,2, BD=[2 3 3 3 3 2],  discarded_value=2.16609e-05,"
+    },
+    {
+      "event_index": 10,
+      "discarded_weight": 2.16609e-05,
+      "reported_text": "2.16609e-05",
+      "certificate_weight_upper_bound": 2.1660950000000005e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        2,
+        1
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "internal_swap on qubits 2,1, BD=[2 3 3 3 3 2],"
+    },
+    {
+      "event_index": 11,
+      "discarded_weight": 4.31558e-05,
+      "reported_text": "4.31558e-05",
+      "certificate_weight_upper_bound": 4.315585e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        2,
+        1
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "internal_swap on qubits 2,1, BD=[2 3 3 3 3 2],"
+    },
+    {
+      "event_index": 12,
+      "discarded_weight": 1.2587e-05,
+      "reported_text": "1.2587e-05",
+      "certificate_weight_upper_bound": 1.2587050000000002e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        5,
+        4
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "internal_swap on qubits 5,4, BD=[2 3 3 3 3 2],  discarded_value=1.80166e-05,"
+    },
+    {
+      "event_index": 13,
+      "discarded_weight": 1.80166e-05,
+      "reported_text": "1.80166e-05",
+      "certificate_weight_upper_bound": 1.8016650000000003e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        4,
+        3
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "internal_swap on qubits 4,3, BD=[2 3 3 3 3 2],  discarded_value=3.87303e-05,"
+    },
+    {
+      "event_index": 14,
+      "discarded_weight": 3.87303e-05,
+      "reported_text": "3.87303e-05",
+      "certificate_weight_upper_bound": 3.873035e-05,
+      "instruction_index": 14,
+      "gate": "rzz",
+      "qubits": [
+        2,
+        3
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "I14:rzz on qubits 2,3, BD=[2 3 3 3 3 2],  discarded_value=1.14052e-06,"
+    },
+    {
+      "event_index": 15,
+      "discarded_weight": 1.14052e-06,
+      "reported_text": "1.14052e-06",
+      "certificate_weight_upper_bound": 1.1405250000000002e-06,
+      "instruction_index": 15,
+      "gate": "rzz",
+      "qubits": [
+        1,
+        2
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "I15:rzz on qubits 1,2, BD=[2 3 3 3 3 2],"
+    },
+    {
+      "event_index": 16,
+      "discarded_weight": 2.03596e-06,
+      "reported_text": "2.03596e-06",
+      "certificate_weight_upper_bound": 2.035965e-06,
+      "instruction_index": 17,
+      "gate": "rzz",
+      "qubits": [
+        4,
+        5
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "I17:rzz on qubits 4,5, BD=[2 3 3 3 3 2],  discarded_value=6.09558e-05,"
+    },
+    {
+      "event_index": 17,
+      "discarded_weight": 6.09558e-05,
+      "reported_text": "6.09558e-05",
+      "certificate_weight_upper_bound": 6.095585e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        4,
+        3
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "internal_swap on qubits 4,3, BD=[2 3 3 3 3 2],  discarded_value=1.6472e-06,"
+    },
+    {
+      "event_index": 18,
+      "discarded_weight": 1.6472e-06,
+      "reported_text": "1.6472e-06",
+      "certificate_weight_upper_bound": 1.6472050000000002e-06,
+      "instruction_index": 18,
+      "gate": "rzz",
+      "qubits": [
+        2,
+        4
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "I18:rzz on qubits 2,4, BD=[2 3 3 3 3 2],"
+    },
+    {
+      "event_index": 19,
+      "discarded_weight": 2.66407e-05,
+      "reported_text": "2.66407e-05",
+      "certificate_weight_upper_bound": 2.6640750000000004e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        5,
+        4
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "internal_swap on qubits 5,4, BD=[2 3 3 3 3 2],  discarded_value=8.68057e-05,"
+    },
+    {
+      "event_index": 20,
+      "discarded_weight": 8.68057e-05,
+      "reported_text": "8.68057e-05",
+      "certificate_weight_upper_bound": 8.680575000000002e-05,
+      "instruction_index": 19,
+      "gate": "rzz",
+      "qubits": [
+        4,
+        6
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "I19:rzz on qubits 4,6, BD=[2 3 3 3 3 2],  discarded_value=2.03e-05,"
+    },
+    {
+      "event_index": 21,
+      "discarded_weight": 2.03e-05,
+      "reported_text": "2.03e-05",
+      "certificate_weight_upper_bound": 2.0300050000000002e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        5,
+        4
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "internal_swap on qubits 5,4, BD=[2 3 3 3 3 2],  discarded_value=3.29235e-05,"
+    },
+    {
+      "event_index": 22,
+      "discarded_weight": 3.29235e-05,
+      "reported_text": "3.29235e-05",
+      "certificate_weight_upper_bound": 3.292355e-05,
+      "instruction_index": 20,
+      "gate": "rzz",
+      "qubits": [
+        3,
+        4
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "I20:rzz on qubits 3,4, BD=[2 3 3 3 3 2],  discarded_value=9.22764e-05,"
+    },
+    {
+      "event_index": 23,
+      "discarded_weight": 9.22764e-05,
+      "reported_text": "9.22764e-05",
+      "certificate_weight_upper_bound": 9.227645000000001e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        3,
+        2
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "internal_swap on qubits 3,2, BD=[2 3 3 3 3 2],  discarded_value=2.34332e-05,"
+    },
+    {
+      "event_index": 24,
+      "discarded_weight": 2.34332e-05,
+      "reported_text": "2.34332e-05",
+      "certificate_weight_upper_bound": 2.3433250000000005e-05,
+      "instruction_index": 21,
+      "gate": "rzz",
+      "qubits": [
+        1,
+        4
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "I21:rzz on qubits 1,4, BD=[2 3 3 3 3 2],"
+    },
+    {
+      "event_index": 25,
+      "discarded_weight": 3.35401e-05,
+      "reported_text": "3.35401e-05",
+      "certificate_weight_upper_bound": 3.3540150000000004e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        5,
+        4
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "internal_swap on qubits 5,4, BD=[2 3 3 3 3 2],  discarded_value=5.07891e-05,"
+    },
+    {
+      "event_index": 26,
+      "discarded_weight": 5.07891e-05,
+      "reported_text": "5.07891e-05",
+      "certificate_weight_upper_bound": 5.078915e-05,
+      "instruction_index": 22,
+      "gate": "rzz",
+      "qubits": [
+        2,
+        5
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        4,
+        3,
+        2
+      ],
+      "segment": "I22:rzz on qubits 2,5, BD=[2 3 3 4 3 2],  discarded_value=3.08511e-05,"
+    },
+    {
+      "event_index": 27,
+      "discarded_weight": 3.08511e-05,
+      "reported_text": "3.08511e-05",
+      "certificate_weight_upper_bound": 3.0851150000000004e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        3,
+        2
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        4,
+        4,
+        3,
+        2
+      ],
+      "segment": "internal_swap on qubits 3,2, BD=[2 3 4 4 3 2],  discarded_value=8.37716e-05,"
+    },
+    {
+      "event_index": 28,
+      "discarded_weight": 8.37716e-05,
+      "reported_text": "8.37716e-05",
+      "certificate_weight_upper_bound": 8.377165000000001e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        2,
+        1
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        4,
+        4,
+        3,
+        2
+      ],
+      "segment": "internal_swap on qubits 2,1, BD=[2 3 4 4 3 2],"
+    },
+    {
+      "event_index": 29,
+      "discarded_weight": 4.14609e-05,
+      "reported_text": "4.14609e-05",
+      "certificate_weight_upper_bound": 4.1460950000000005e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        2,
+        1
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        4,
+        4,
+        3,
+        2
+      ],
+      "segment": "internal_swap on qubits 2,1, BD=[2 3 4 4 3 2],"
+    },
+    {
+      "event_index": 30,
+      "discarded_weight": 2.51714e-05,
+      "reported_text": "2.51714e-05",
+      "certificate_weight_upper_bound": 2.5171450000000004e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        5,
+        4
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        4,
+        4,
+        3,
+        2
+      ],
+      "segment": "internal_swap on qubits 5,4, BD=[2 3 4 4 3 2],  discarded_value=5.55107e-05,"
+    },
+    {
+      "event_index": 31,
+      "discarded_weight": 5.55107e-05,
+      "reported_text": "5.55107e-05",
+      "certificate_weight_upper_bound": 5.551075e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        4,
+        3
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "segment": "internal_swap on qubits 4,3, BD=[2 3 4 3 3 2],  discarded_value=4.10442e-05,"
+    },
+    {
+      "event_index": 32,
+      "discarded_weight": 4.10442e-05,
+      "reported_text": "4.10442e-05",
+      "certificate_weight_upper_bound": 4.1044250000000006e-05,
+      "instruction_index": 25,
+      "gate": "rzz",
+      "qubits": [
+        2,
+        3
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "I25:rzz on qubits 2,3, BD=[2 3 3 3 3 2],  discarded_value=3.67373e-06,"
+    },
+    {
+      "event_index": 33,
+      "discarded_weight": 3.67373e-06,
+      "reported_text": "3.67373e-06",
+      "certificate_weight_upper_bound": 3.6737350000000004e-06,
+      "instruction_index": 26,
+      "gate": "rzz",
+      "qubits": [
+        1,
+        2
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "I26:rzz on qubits 1,2, BD=[2 3 3 3 3 2],"
+    },
+    {
+      "event_index": 34,
+      "discarded_weight": 4.27646e-06,
+      "reported_text": "4.27646e-06",
+      "certificate_weight_upper_bound": 4.276465000000001e-06,
+      "instruction_index": 28,
+      "gate": "rzz",
+      "qubits": [
+        4,
+        5
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "I28:rzz on qubits 4,5, BD=[2 3 3 3 3 2],  discarded_value=8.91535e-05,"
+    },
+    {
+      "event_index": 35,
+      "discarded_weight": 8.91535e-05,
+      "reported_text": "8.91535e-05",
+      "certificate_weight_upper_bound": 8.915355000000002e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        4,
+        3
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "internal_swap on qubits 4,3, BD=[2 3 3 3 3 2],  discarded_value=3.42167e-06,"
+    },
+    {
+      "event_index": 36,
+      "discarded_weight": 3.42167e-06,
+      "reported_text": "3.42167e-06",
+      "certificate_weight_upper_bound": 3.421675e-06,
+      "instruction_index": 29,
+      "gate": "rzz",
+      "qubits": [
+        2,
+        4
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "I29:rzz on qubits 2,4, BD=[2 3 3 3 3 2],"
+    },
+    {
+      "event_index": 37,
+      "discarded_weight": 6.72892e-05,
+      "reported_text": "6.72892e-05",
+      "certificate_weight_upper_bound": 6.728925000000002e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        5,
+        4
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "segment": "internal_swap on qubits 5,4, BD=[2 3 3 3 3 2],  discarded_value=8.49589e-06,"
+    },
+    {
+      "event_index": 38,
+      "discarded_weight": 8.49589e-06,
+      "reported_text": "8.49589e-06",
+      "certificate_weight_upper_bound": 8.495895000000002e-06,
+      "instruction_index": 30,
+      "gate": "rzz",
+      "qubits": [
+        4,
+        6
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        4,
+        3,
+        2
+      ],
+      "segment": "I30:rzz on qubits 4,6, BD=[2 3 3 4 3 2],"
+    },
+    {
+      "event_index": 39,
+      "discarded_weight": 9.46744e-07,
+      "reported_text": "9.46744e-07",
+      "certificate_weight_upper_bound": 9.467445000000001e-07,
+      "instruction_index": 31,
+      "gate": "rzz",
+      "qubits": [
+        3,
+        4
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        3,
+        4,
+        4,
+        2
+      ],
+      "segment": "I31:rzz on qubits 3,4, BD=[2 3 3 4 4 2],  discarded_value=3.44297e-05,"
+    },
+    {
+      "event_index": 40,
+      "discarded_weight": 3.44297e-05,
+      "reported_text": "3.44297e-05",
+      "certificate_weight_upper_bound": 3.4429750000000004e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        3,
+        2
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        4,
+        4,
+        4,
+        2
+      ],
+      "segment": "internal_swap on qubits 3,2, BD=[2 3 4 4 4 2],  discarded_value=4.6932e-05,"
+    },
+    {
+      "event_index": 41,
+      "discarded_weight": 4.6932e-05,
+      "reported_text": "4.6932e-05",
+      "certificate_weight_upper_bound": 4.693205e-05,
+      "instruction_index": 32,
+      "gate": "rzz",
+      "qubits": [
+        1,
+        4
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        4,
+        4,
+        4,
+        2
+      ],
+      "segment": "I32:rzz on qubits 1,4, BD=[2 3 4 4 4 2],"
+    },
+    {
+      "event_index": 42,
+      "discarded_weight": 5.42594e-05,
+      "reported_text": "5.42594e-05",
+      "certificate_weight_upper_bound": 5.425945e-05,
+      "instruction_index": 33,
+      "gate": "rzz",
+      "qubits": [
+        2,
+        5
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        4,
+        4,
+        4,
+        2
+      ],
+      "segment": "I33:rzz on qubits 2,5, BD=[2 3 4 4 4 2],  discarded_value=6.3326e-05,"
+    },
+    {
+      "event_index": 43,
+      "discarded_weight": 6.3326e-05,
+      "reported_text": "6.3326e-05",
+      "certificate_weight_upper_bound": 6.332605000000001e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        3,
+        2
+      ],
+      "bond_dimensions": [
+        2,
+        3,
+        4,
+        4,
+        4,
+        2
+      ],
+      "segment": "internal_swap on qubits 3,2, BD=[2 3 4 4 4 2],"
+    },
+    {
+      "event_index": 44,
+      "discarded_weight": 6.0882e-05,
+      "reported_text": "6.0882e-05",
+      "certificate_weight_upper_bound": 6.088205e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        4,
+        3
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        4,
+        4,
+        4,
+        2
+      ],
+      "segment": "internal_swap on qubits 4,3, BD=[2 4 4 4 4 2],  discarded_value=1.88846e-05,"
+    },
+    {
+      "event_index": 45,
+      "discarded_weight": 1.88846e-05,
+      "reported_text": "1.88846e-05",
+      "certificate_weight_upper_bound": 1.8884650000000002e-05,
+      "instruction_index": 36,
+      "gate": "rzz",
+      "qubits": [
+        2,
+        3
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        4,
+        4,
+        4,
+        2
+      ],
+      "segment": "I36:rzz on qubits 2,3, BD=[2 4 4 4 4 2],"
+    },
+    {
+      "event_index": 46,
+      "discarded_weight": 8.77117e-05,
+      "reported_text": "8.77117e-05",
+      "certificate_weight_upper_bound": 8.771175000000001e-05,
+      "instruction_index": 39,
+      "gate": "rzz",
+      "qubits": [
+        4,
+        5
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        4,
+        4,
+        3,
+        2
+      ],
+      "segment": "I39:rzz on qubits 4,5, BD=[2 4 4 4 3 2],  discarded_value=7.34886e-05,"
+    },
+    {
+      "event_index": 47,
+      "discarded_weight": 7.34886e-05,
+      "reported_text": "7.34886e-05",
+      "certificate_weight_upper_bound": 7.348865000000002e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        4,
+        3
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        4,
+        4,
+        3,
+        2
+      ],
+      "segment": "internal_swap on qubits 4,3, BD=[2 4 4 4 3 2],  discarded_value=1.12771e-06,"
+    },
+    {
+      "event_index": 48,
+      "discarded_weight": 1.12771e-06,
+      "reported_text": "1.12771e-06",
+      "certificate_weight_upper_bound": 1.1277150000000002e-06,
+      "instruction_index": 40,
+      "gate": "rzz",
+      "qubits": [
+        2,
+        4
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        4,
+        4,
+        3,
+        2
+      ],
+      "segment": "I40:rzz on qubits 2,4, BD=[2 4 4 4 3 2],"
+    },
+    {
+      "event_index": 49,
+      "discarded_weight": 8.8495e-05,
+      "reported_text": "8.8495e-05",
+      "certificate_weight_upper_bound": 8.849505000000002e-05,
+      "instruction_index": 41,
+      "gate": "rzz",
+      "qubits": [
+        4,
+        6
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        4,
+        4,
+        4,
+        2
+      ],
+      "segment": "I41:rzz on qubits 4,6, BD=[2 4 4 4 4 2],"
+    },
+    {
+      "event_index": 50,
+      "discarded_weight": 1.31363e-05,
+      "reported_text": "1.31363e-05",
+      "certificate_weight_upper_bound": 1.3136350000000002e-05,
+      "instruction_index": 42,
+      "gate": "rzz",
+      "qubits": [
+        3,
+        4
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        4,
+        4,
+        4,
+        2
+      ],
+      "segment": "I42:rzz on qubits 3,4, BD=[2 4 4 4 4 2],  discarded_value=5.22303e-05,"
+    },
+    {
+      "event_index": 51,
+      "discarded_weight": 5.22303e-05,
+      "reported_text": "5.22303e-05",
+      "certificate_weight_upper_bound": 5.2230350000000004e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        3,
+        2
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        4,
+        4,
+        4,
+        2
+      ],
+      "segment": "internal_swap on qubits 3,2, BD=[2 4 4 4 4 2],"
+    },
+    {
+      "event_index": 52,
+      "discarded_weight": 5.40715e-05,
+      "reported_text": "5.40715e-05",
+      "certificate_weight_upper_bound": 5.407155e-05,
+      "instruction_index": 44,
+      "gate": "rzz",
+      "qubits": [
+        2,
+        5
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        4,
+        5,
+        4,
+        2
+      ],
+      "segment": "I44:rzz on qubits 2,5, BD=[2 4 4 5 4 2],  discarded_value=6.53477e-05,"
+    },
+    {
+      "event_index": 53,
+      "discarded_weight": 6.53477e-05,
+      "reported_text": "6.53477e-05",
+      "certificate_weight_upper_bound": 6.534775000000002e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        3,
+        2
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        5,
+        5,
+        4,
+        2
+      ],
+      "segment": "internal_swap on qubits 3,2, BD=[2 4 5 5 4 2],"
+    },
+    {
+      "event_index": 54,
+      "discarded_weight": 2.79876e-05,
+      "reported_text": "2.79876e-05",
+      "certificate_weight_upper_bound": 2.7987650000000003e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        4,
+        3
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        5,
+        5,
+        4,
+        2
+      ],
+      "segment": "internal_swap on qubits 4,3, BD=[2 4 5 5 4 2],  discarded_value=4.22234e-05,"
+    },
+    {
+      "event_index": 55,
+      "discarded_weight": 4.22234e-05,
+      "reported_text": "4.22234e-05",
+      "certificate_weight_upper_bound": 4.222345e-05,
+      "instruction_index": 47,
+      "gate": "rzz",
+      "qubits": [
+        2,
+        3
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        5,
+        5,
+        4,
+        2
+      ],
+      "segment": "I47:rzz on qubits 2,3, BD=[2 4 5 5 4 2],"
+    },
+    {
+      "event_index": 56,
+      "discarded_weight": 3.44038e-05,
+      "reported_text": "3.44038e-05",
+      "certificate_weight_upper_bound": 3.440385e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        4,
+        3
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        5,
+        6,
+        4,
+        2
+      ],
+      "segment": "internal_swap on qubits 4,3, BD=[2 4 5 6 4 2],  discarded_value=9.15933e-06,"
+    },
+    {
+      "event_index": 57,
+      "discarded_weight": 9.15933e-06,
+      "reported_text": "9.15933e-06",
+      "certificate_weight_upper_bound": 9.159335000000001e-06,
+      "instruction_index": 51,
+      "gate": "rzz",
+      "qubits": [
+        2,
+        4
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        5,
+        6,
+        4,
+        2
+      ],
+      "segment": "I51:rzz on qubits 2,4, BD=[2 4 5 6 4 2],"
+    },
+    {
+      "event_index": 58,
+      "discarded_weight": 2.48646e-06,
+      "reported_text": "2.48646e-06",
+      "certificate_weight_upper_bound": 2.4864650000000003e-06,
+      "instruction_index": 52,
+      "gate": "rzz",
+      "qubits": [
+        4,
+        6
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        5,
+        7,
+        4,
+        2
+      ],
+      "segment": "I52:rzz on qubits 4,6, BD=[2 4 5 7 4 2],"
+    },
+    {
+      "event_index": 59,
+      "discarded_weight": 4.1697e-05,
+      "reported_text": "4.1697e-05",
+      "certificate_weight_upper_bound": 4.169705e-05,
+      "instruction_index": 53,
+      "gate": "rzz",
+      "qubits": [
+        3,
+        4
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        5,
+        6,
+        4,
+        2
+      ],
+      "segment": "I53:rzz on qubits 3,4, BD=[2 4 5 6 4 2],  discarded_value=1.54809e-05,"
+    },
+    {
+      "event_index": 60,
+      "discarded_weight": 1.54809e-05,
+      "reported_text": "1.54809e-05",
+      "certificate_weight_upper_bound": 1.5480950000000003e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        3,
+        2
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        7,
+        6,
+        4,
+        2
+      ],
+      "segment": "internal_swap on qubits 3,2, BD=[2 4 7 6 4 2],"
+    },
+    {
+      "event_index": 61,
+      "discarded_weight": 5.32015e-05,
+      "reported_text": "5.32015e-05",
+      "certificate_weight_upper_bound": 5.3201550000000006e-05,
+      "instruction_index": 55,
+      "gate": "rzz",
+      "qubits": [
+        2,
+        5
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        7,
+        7,
+        4,
+        2
+      ],
+      "segment": "I55:rzz on qubits 2,5, BD=[2 4 7 7 4 2],  discarded_value=2.68816e-05,"
+    },
+    {
+      "event_index": 62,
+      "discarded_weight": 2.68816e-05,
+      "reported_text": "2.68816e-05",
+      "certificate_weight_upper_bound": 2.6881650000000004e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        3,
+        2
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        7,
+        7,
+        4,
+        2
+      ],
+      "segment": "internal_swap on qubits 3,2, BD=[2 4 7 7 4 2],"
+    },
+    {
+      "event_index": 63,
+      "discarded_weight": 4.98194e-05,
+      "reported_text": "4.98194e-05",
+      "certificate_weight_upper_bound": 4.981945e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        4,
+        3
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        7,
+        7,
+        4,
+        2
+      ],
+      "segment": "internal_swap on qubits 4,3, BD=[2 4 7 7 4 2],  discarded_value=9.72093e-05,"
+    },
+    {
+      "event_index": 64,
+      "discarded_weight": 9.72093e-05,
+      "reported_text": "9.72093e-05",
+      "certificate_weight_upper_bound": 9.720935000000002e-05,
+      "instruction_index": 58,
+      "gate": "rzz",
+      "qubits": [
+        2,
+        3
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        6,
+        7,
+        4,
+        2
+      ],
+      "segment": "I58:rzz on qubits 2,3, BD=[2 4 6 7 4 2],"
+    },
+    {
+      "event_index": 65,
+      "discarded_weight": 8.71801e-05,
+      "reported_text": "8.71801e-05",
+      "certificate_weight_upper_bound": 8.718015000000001e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        4,
+        3
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        6,
+        7,
+        4,
+        2
+      ],
+      "segment": "internal_swap on qubits 4,3, BD=[2 4 6 7 4 2],  discarded_value=2.82588e-05,"
+    },
+    {
+      "event_index": 66,
+      "discarded_weight": 2.82588e-05,
+      "reported_text": "2.82588e-05",
+      "certificate_weight_upper_bound": 2.8258850000000005e-05,
+      "instruction_index": 62,
+      "gate": "rzz",
+      "qubits": [
+        2,
+        4
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        6,
+        7,
+        4,
+        2
+      ],
+      "segment": "I62:rzz on qubits 2,4, BD=[2 4 6 7 4 2],"
+    },
+    {
+      "event_index": 67,
+      "discarded_weight": 4.19863e-05,
+      "reported_text": "4.19863e-05",
+      "certificate_weight_upper_bound": 4.1986350000000005e-05,
+      "instruction_index": 63,
+      "gate": "rzz",
+      "qubits": [
+        4,
+        6
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        6,
+        7,
+        4,
+        2
+      ],
+      "segment": "I63:rzz on qubits 4,6, BD=[2 4 6 7 4 2],"
+    },
+    {
+      "event_index": 68,
+      "discarded_weight": 9.3208e-05,
+      "reported_text": "9.3208e-05",
+      "certificate_weight_upper_bound": 9.320805000000002e-05,
+      "instruction_index": 64,
+      "gate": "rzz",
+      "qubits": [
+        3,
+        4
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        6,
+        6,
+        4,
+        2
+      ],
+      "segment": "I64:rzz on qubits 3,4, BD=[2 4 6 6 4 2],  discarded_value=6.61766e-05,"
+    },
+    {
+      "event_index": 69,
+      "discarded_weight": 6.61766e-05,
+      "reported_text": "6.61766e-05",
+      "certificate_weight_upper_bound": 6.617665000000002e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        3,
+        2
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        7,
+        6,
+        4,
+        2
+      ],
+      "segment": "internal_swap on qubits 3,2, BD=[2 4 7 6 4 2],"
+    },
+    {
+      "event_index": 70,
+      "discarded_weight": 8.68371e-05,
+      "reported_text": "8.68371e-05",
+      "certificate_weight_upper_bound": 8.683715000000002e-05,
+      "instruction_index": 66,
+      "gate": "rzz",
+      "qubits": [
+        2,
+        5
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        7,
+        7,
+        4,
+        2
+      ],
+      "segment": "I66:rzz on qubits 2,5, BD=[2 4 7 7 4 2],  discarded_value=7.82705e-05,"
+    },
+    {
+      "event_index": 71,
+      "discarded_weight": 7.82705e-05,
+      "reported_text": "7.82705e-05",
+      "certificate_weight_upper_bound": 7.827055000000002e-05,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        3,
+        2
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        7,
+        7,
+        4,
+        2
+      ],
+      "segment": "internal_swap on qubits 3,2, BD=[2 4 7 7 4 2],"
+    },
+    {
+      "event_index": 72,
+      "discarded_weight": 3.8592e-05,
+      "reported_text": "3.8592e-05",
+      "certificate_weight_upper_bound": 3.859205e-05,
+      "instruction_index": 69,
+      "gate": "rzz",
+      "qubits": [
+        2,
+        3
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        7,
+        8,
+        4,
+        2
+      ],
+      "segment": "I69:rzz on qubits 2,3, BD=[2 4 7 8 4 2],"
+    },
+    {
+      "event_index": 73,
+      "discarded_weight": 4.22636e-06,
+      "reported_text": "4.22636e-06",
+      "certificate_weight_upper_bound": 4.226365000000001e-06,
+      "instruction_index": 73,
+      "gate": "rzz",
+      "qubits": [
+        2,
+        4
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        7,
+        8,
+        4,
+        2
+      ],
+      "segment": "I73:rzz on qubits 2,4, BD=[2 4 7 8 4 2],"
+    }
+  ]
+}

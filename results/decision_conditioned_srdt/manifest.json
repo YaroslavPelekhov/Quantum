@@ -1,0 +1,17 @@
+{
+  "complete": true,
+  "development_success": true,
+  "transfer_success": true,
+  "files": {
+    "experiments\\decision_conditioned_srdt\\PROTOCOL.md": "24f49b94878d732bfe16d12772b8fcd8ca38f40a51706a995edd110cb70c0136",
+    "experiments\\decision_conditioned_srdt\\PRIOR_ART.md": "836d5428c8dd26e7d2c8dcead24dd9259da7419436f475f796fddc7900131507",
+    "experiments\\decision_conditioned_srdt\\dcsrdt_core.py": "23bbef926241f5f204cf305894bb815612735fc15e7e542431b78c01cec5c95d",
+    "experiments\\decision_conditioned_srdt\\run_dcsrdt.py": "8f33d24141043ff04abac5e62fbd7333534a754d0d9e7f6534b87fc9a8c10e13",
+    "experiments\\decision_conditioned_srdt\\analyze_dcsrdt.py": "b1b7005f5817c1d0764d59f78750d603fdfa6b1df5422e66b4535bbfce2078a0",
+    "experiments\\decision_conditioned_srdt\\test_dcsrdt.py": "9e8d3a8a6cbf90a8cf5e62210076f1ca91dc38e9a13cccc66edd5428625719fa",
+    "experiments\\decision_conditioned_srdt\\README.md": "a57978f0499578c435a2974b73d2fab2b704c25b5196c9040de921960d0bfb4e",
+    "results\\decision_conditioned_srdt\\development.json": "de364906313b6a7cd5c0c06eeb40e02ab708b959b2f81c220fb153448414cc22",
+    "results\\decision_conditioned_srdt\\transfer.json": "4e496b6e9a29e8d424e3181bbbe128f1cd6e931792140e0201f2bc4598385c85",
+    "results\\decision_conditioned_srdt\\REPORT.md": "48c63ac95dd3369ba5623bab0924008a1cdf8386bba4a04d5c1107b6f4d7784d"
+  }
+}

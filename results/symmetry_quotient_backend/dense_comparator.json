@@ -1,0 +1,18 @@
+{
+  "complete": true,
+  "case": "aves-sparrow-social",
+  "ordering": "sorted",
+  "method": "published_lr",
+  "dense_evolve_seconds": 101.95573119993787,
+  "dense_state_bytes": 268435456,
+  "quotient_two_state_evolve_seconds": 8.530405800091103,
+  "quotient_per_state_seconds_estimate": 4.265202900045551,
+  "quotient_compile_seconds": 2.584922599955462,
+  "steady_state_evolution_speedup": 23.90407527830599,
+  "first_state_speedup_including_compile": 14.88377566220105,
+  "quotient_coefficient_bytes": 26542080,
+  "state_representation_compression": 10.11358024691358,
+  "sample_amplitude_error": 6.30316018095939e-17,
+  "sample_probability_error": 7.318364664277155e-19,
+  "timing_scope": "single local Windows CPU run; quotient per-state time is half of the measured paired evolution"
+}

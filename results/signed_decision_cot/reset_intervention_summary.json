@@ -1,0 +1,279 @@
+{
+  "stage": "equal_work_residual_reset_intervention_analysis",
+  "complete": true,
+  "created_at": "2026-08-22T03:32:20.273038+00:00",
+  "exact_values_used_for_construction": false,
+  "orderings": [
+    {
+      "ordering": "sorted",
+      "input": "results\\signed_decision_cot\\reset_intervention_sorted.json",
+      "mps_gap": -0.2549044372349163,
+      "exact_gap_audit_only": -0.2461230011281299,
+      "paired_signed_center": -0.008781498499478901,
+      "recentered_gap": -0.2461229387354374,
+      "methods": {
+        "published_lr": {
+          "reset_129_192": {
+            "operator_correction": 0.21566171818008673,
+            "work_ratio_vs_R256": 0.11081081081081082,
+            "post_window_position": 128,
+            "post_window_eta": 0.011090033799768832,
+            "dense_checks": 9,
+            "dense_violations": 0
+          },
+          "reset_193_256": {
+            "operator_correction": 0.2054456281234752,
+            "work_ratio_vs_R256": 0.11081081081081082,
+            "post_window_position": 192,
+            "post_window_eta": 0.009708997752390935,
+            "dense_checks": 9,
+            "dense_violations": 0
+          },
+          "reset_257_320": {
+            "operator_correction": 0.17567626105625228,
+            "work_ratio_vs_R256": 0.11081081081081082,
+            "post_window_position": 256,
+            "post_window_eta": 0.007349806224589356,
+            "dense_checks": 9,
+            "dense_violations": 0
+          },
+          "reset_321_384": {
+            "operator_correction": 0.2030369359721082,
+            "work_ratio_vs_R256": 0.11081081081081082,
+            "post_window_position": 320,
+            "post_window_eta": 0.006309702718622242,
+            "dense_checks": 9,
+            "dense_violations": 0
+          }
+        },
+        "prior_matched_random": {
+          "reset_129_192": {
+            "operator_correction": 0.00011111876312645824,
+            "work_ratio_vs_R256": 0.11081081081081082,
+            "post_window_position": 128,
+            "post_window_eta": 5.417129357704391e-06,
+            "dense_checks": 9,
+            "dense_violations": 0
+          },
+          "reset_193_256": {
+            "operator_correction": 0.00010005046660774961,
+            "work_ratio_vs_R256": 0.11081081081081082,
+            "post_window_position": 192,
+            "post_window_eta": 4.3415333836125255e-06,
+            "dense_checks": 9,
+            "dense_violations": 0
+          },
+          "reset_257_320": {
+            "operator_correction": 7.260251598859825e-05,
+            "work_ratio_vs_R256": 0.11081081081081082,
+            "post_window_position": 256,
+            "post_window_eta": 2.6688630856817122e-06,
+            "dense_checks": 9,
+            "dense_violations": 0
+          },
+          "reset_321_384": {
+            "operator_correction": 0.00011682304949749547,
+            "work_ratio_vs_R256": 0.11081081081081082,
+            "post_window_position": 320,
+            "post_window_eta": 1.8575287918800515e-06,
+            "dense_checks": 9,
+            "dense_violations": 0
+          }
+        }
+      },
+      "pair_rows": [
+        {
+          "policy": "reset_129_192",
+          "paired_remainder": 0.2157728769432132,
+          "interval_lower": -0.46189581567865057,
+          "interval_upper": -0.030350061792224187,
+          "certified": true,
+          "margin": 0.030350061792224187,
+          "exact_gap_inside_interval_audit": true,
+          "work_ratio_vs_R256_R256": 0.11081081081081082
+        },
+        {
+          "policy": "reset_193_256",
+          "paired_remainder": 0.20554571859008294,
+          "interval_lower": -0.4516686573255203,
+          "interval_upper": -0.04057722014535445,
+          "certified": true,
+          "margin": 0.04057722014535445,
+          "exact_gap_inside_interval_audit": true,
+          "work_ratio_vs_R256_R256": 0.11081081081081082
+        },
+        {
+          "policy": "reset_257_320",
+          "paired_remainder": 0.17574890357224088,
+          "interval_lower": -0.42187184230767827,
+          "interval_upper": -0.07037403516319651,
+          "certified": true,
+          "margin": 0.07037403516319651,
+          "exact_gap_inside_interval_audit": true,
+          "work_ratio_vs_R256_R256": 0.11081081081081082
+        },
+        {
+          "policy": "reset_321_384",
+          "paired_remainder": 0.2031537990216057,
+          "interval_lower": -0.44927673775704313,
+          "interval_upper": -0.04296913971383168,
+          "certified": true,
+          "margin": 0.04296913971383168,
+          "exact_gap_inside_interval_audit": true,
+          "work_ratio_vs_R256_R256": 0.11081081081081082
+        }
+      ],
+      "prediction": {
+        "expected_policy": "reset_193_256",
+        "adjacent_controls": [
+          "reset_129_192",
+          "reset_257_320"
+        ],
+        "lr_minimum_policy": "reset_257_320",
+        "pair_minimum_policy": "reset_257_320",
+        "expected_beats_adjacent_lr": false,
+        "expected_beats_adjacent_pair": false,
+        "lr_prediction_passes": false,
+        "pair_prediction_passes": false,
+        "mechanism_prediction_passes": false
+      },
+      "dense_checks": 72,
+      "dense_violations": 0
+    },
+    {
+      "ordering": "spectral",
+      "input": "results\\signed_decision_cot\\reset_intervention_spectral.json",
+      "mps_gap": -0.25393562731643615,
+      "exact_gap_audit_only": -0.24612300112813046,
+      "paired_signed_center": -0.007812623445612205,
+      "recentered_gap": -0.24612300387082395,
+      "methods": {
+        "published_lr": {
+          "reset_129_192": {
+            "operator_correction": 0.01769732243952324,
+            "work_ratio_vs_R256": 0.11081081081081082,
+            "post_window_position": 128,
+            "post_window_eta": 0.001447477554824155,
+            "dense_checks": 9,
+            "dense_violations": 0
+          },
+          "reset_193_256": {
+            "operator_correction": 0.01676054494910861,
+            "work_ratio_vs_R256": 0.11081081081081082,
+            "post_window_position": 192,
+            "post_window_eta": 0.001214805226472037,
+            "dense_checks": 9,
+            "dense_violations": 0
+          },
+          "reset_257_320": {
+            "operator_correction": 0.01519521314859372,
+            "work_ratio_vs_R256": 0.11081081081081082,
+            "post_window_position": 256,
+            "post_window_eta": 0.0009301859446933664,
+            "dense_checks": 9,
+            "dense_violations": 0
+          },
+          "reset_321_384": {
+            "operator_correction": 0.015362792981032722,
+            "work_ratio_vs_R256": 0.11081081081081082,
+            "post_window_position": 320,
+            "post_window_eta": 0.0007582158786892532,
+            "dense_checks": 9,
+            "dense_violations": 0
+          }
+        },
+        "prior_matched_random": {
+          "reset_129_192": {
+            "operator_correction": 7.805943159221442e-06,
+            "work_ratio_vs_R256": 0.11081081081081082,
+            "post_window_position": 128,
+            "post_window_eta": 5.360112856337996e-07,
+            "dense_checks": 9,
+            "dense_violations": 0
+          },
+          "reset_193_256": {
+            "operator_correction": 7.2968154213028525e-06,
+            "work_ratio_vs_R256": 0.11081081081081082,
+            "post_window_position": 192,
+            "post_window_eta": 4.3069535623453294e-07,
+            "dense_checks": 9,
+            "dense_violations": 0
+          },
+          "reset_257_320": {
+            "operator_correction": 6.503959253948109e-06,
+            "work_ratio_vs_R256": 0.11081081081081082,
+            "post_window_position": 256,
+            "post_window_eta": 3.152754222446826e-07,
+            "dense_checks": 9,
+            "dense_violations": 0
+          },
+          "reset_321_384": {
+            "operator_correction": 6.937835204612658e-06,
+            "work_ratio_vs_R256": 0.11081081081081082,
+            "post_window_position": 320,
+            "post_window_eta": 2.2313893722502251e-07,
+            "dense_checks": 9,
+            "dense_violations": 0
+          }
+        }
+      },
+      "pair_rows": [
+        {
+          "policy": "reset_129_192",
+          "paired_remainder": 0.01770516838268246,
+          "interval_lower": -0.2638281722535064,
+          "interval_upper": -0.22841783548814149,
+          "certified": true,
+          "margin": 0.22841783548814149,
+          "exact_gap_inside_interval_audit": true,
+          "work_ratio_vs_R256_R256": 0.11081081081081082
+        },
+        {
+          "policy": "reset_193_256",
+          "paired_remainder": 0.016767881764529913,
+          "interval_lower": -0.26289088563535384,
+          "interval_upper": -0.22935512210629402,
+          "certified": true,
+          "margin": 0.22935512210629402,
+          "exact_gap_inside_interval_audit": true,
+          "work_ratio_vs_R256_R256": 0.11081081081081082
+        },
+        {
+          "policy": "reset_257_320",
+          "paired_remainder": 0.015201757107847668,
+          "interval_lower": -0.26132476097867163,
+          "interval_upper": -0.2309212467629763,
+          "certified": true,
+          "margin": 0.2309212467629763,
+          "exact_gap_inside_interval_audit": true,
+          "work_ratio_vs_R256_R256": 0.11081081081081082
+        },
+        {
+          "policy": "reset_321_384",
+          "paired_remainder": 0.015369770816237334,
+          "interval_lower": -0.2614927746870613,
+          "interval_upper": -0.23075323305458662,
+          "certified": true,
+          "margin": 0.23075323305458662,
+          "exact_gap_inside_interval_audit": true,
+          "work_ratio_vs_R256_R256": 0.11081081081081082
+        }
+      ],
+      "prediction": {
+        "expected_policy": "reset_129_192",
+        "adjacent_controls": [
+          "reset_193_256"
+        ],
+        "lr_minimum_policy": "reset_257_320",
+        "pair_minimum_policy": "reset_257_320",
+        "expected_beats_adjacent_lr": false,
+        "expected_beats_adjacent_pair": false,
+        "lr_prediction_passes": false,
+        "pair_prediction_passes": false,
+        "mechanism_prediction_passes": false
+      },
+      "dense_checks": 72,
+      "dense_violations": 0
+    }
+  ]
+}

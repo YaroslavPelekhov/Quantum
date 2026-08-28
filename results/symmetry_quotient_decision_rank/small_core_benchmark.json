@@ -1,0 +1,17 @@
+{
+  "complete": true,
+  "case": "triangle_ring6",
+  "ordering": "spectral",
+  "cut": 9,
+  "left_dimension": 512,
+  "event_support": 416,
+  "low_rank_seconds": 0.008228500024415553,
+  "dense_seconds": 0.11825089994817972,
+  "speedup": 14.37089379562574,
+  "dense_operator_bytes": 4194304,
+  "low_rank_factor_columns": 44,
+  "decision_rank": 10,
+  "trace_error": 2.220446049250313e-16,
+  "trace_norm_error": 8.43769498715119e-15,
+  "timing_scope": "single local Windows run; descriptive, not a cross-platform benchmark"
+}

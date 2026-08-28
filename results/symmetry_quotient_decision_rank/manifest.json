@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "structural_audit_complete": true,
+  "coherence_audit_success": true,
+  "broad_ansatz_hypothesis_success": false,
+  "symmetry_development_success": true,
+  "symmetry_transfer_success": true,
+  "files": {
+    "experiments/dcsrdt_structural_audit/PROTOCOL.md": "3bd9f2511486b3c7d598d2663a302ddf207cd7d088bd461d892efc9b4ffa1195",
+    "experiments/dcsrdt_structural_audit/structural_core.py": "4fac9779e7e2f5c465b18a40151168eb91f84a345bbd3809c0d6a1d0a5b80ee1",
+    "experiments/dcsrdt_structural_audit/run_audit.py": "b2e3eeffa48754604ea0ca5f0990c25b8719ed9de4c2c9dca3d4ca7e13771a39",
+    "results/dcsrdt_structural_audit/audit.json": "328e503fc164406131f0a28e62251effc7daf32fe19175a6e72e6ddcce36059e",
+    "results/dcsrdt_structural_audit/REPORT.md": "3c4289bf95eb6b4719f2be67d7ecebb2d12c2affc374423cbd3ac0b5188fe3e7",
+    "experiments/coherent_frontier_rank/PROTOCOL.md": "542db7e95ace27c01bc0caca76c2cfc4a2d4c0508598c3fbcfc8d6c290fb420d",
+    "experiments/coherent_frontier_rank/run_coherence.py": "decffc06454984cc88c3b0c8a57f4865cba0521942c1c4616b4116ecd8a7393d",
+    "results/coherent_frontier_rank/coherence.json": "57c6c757b82e6013b8297947fa4aa3452b3cdda646de9b04132f759c5b2dcd49",
+    "results/coherent_frontier_rank/REPORT.md": "68212373139240a84e6505b4f1f4593fda954df00b16342a02e3aff3ee605fe7",
+    "experiments/ansatz_event_rank/PROTOCOL.md": "7e75f2ff7f9738ce9a539d905b877f9bf7ca53df3afda56a807a9cb0e64515f6",
+    "experiments/ansatz_event_rank/run_rank_signature.py": "fd89d5c733feb7219b4081352e594702d22f08924ab93b40474b109e516f470a",
+    "results/ansatz_event_rank/development.json": "86b912421c574c4487ae0d25347b7f5784373e90267928606ecfef75e57489f8",
+    "results/ansatz_event_rank/REPORT.md": "4842c31992637273fd12ce47eb0873e9f4ba330b900fb3ccfc3476f55b3c7372",
+    "experiments/symmetry_quotient_decision_rank/PROTOCOL.md": "55102eadffabdefde3912accfbb0d0b16aec32f918b656b0cff90fca2d75a8aa",
+    "experiments/symmetry_quotient_decision_rank/run_symmetry_rank.py": "8f15fcbccfb139fff13ae97da4e95c685ee5ed9d46aed1f4575500ec7fac8f25",
+    "results/symmetry_quotient_decision_rank/development.json": "9e6780b0a0fa94bd7d7c0d018b08e66974477e01848ba818c8c36b611faa063e",
+    "results/symmetry_quotient_decision_rank/transfer.json": "69eed905a8e9642f1073ff26aa96808fca8f6e8306a1b6b031a487f341135ca1",
+    "experiments/symmetry_quotient_decision_rank/quotient_core.py": "0165397daf064477220b8eff8e9d3f118216c5ef599e46338befa41b584a9ee1",
+    "results/symmetry_quotient_decision_rank/REPORT.md": "ee09b34a2861e5cb9eb40c732056d4c01f17af50c4dd6eb8cb20b6f7c6830eb3",
+    "results/symmetry_quotient_decision_rank/small_core_benchmark.json": "faa98c0252d26089eb31638f5ffb0f5595926332a84bef5d44baa947cb412215"
+  }
+}

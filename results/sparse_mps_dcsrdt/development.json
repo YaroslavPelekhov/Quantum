@@ -1,0 +1,301 @@
+{
+  "complete": true,
+  "stage": "development",
+  "protocol_sha256": "215811cf47a7a2688174835ae4214014993822681f03b0e4ccd2c1e58a9ff209",
+  "cases": [
+    "chesapeake",
+    "football"
+  ],
+  "bond": 128,
+  "cutoff": 0.0,
+  "cut": 3,
+  "rank": 4,
+  "rows": [
+    {
+      "case": "chesapeake",
+      "ordering": "sorted",
+      "qubits": 7,
+      "support_rank": 1,
+      "simulation": {
+        "published_lr": {
+          "simulation_seconds": 0.020498600031714886,
+          "epsilon_mps": 0.0,
+          "certificate_saturated": false,
+          "number_of_truncations": 0,
+          "maximum_bond": 8,
+          "storage_bytes": 4960,
+          "norm": 0.999999999999977
+        },
+        "prior_matched_random": {
+          "simulation_seconds": 0.014409799943678081,
+          "epsilon_mps": 0.0,
+          "certificate_saturated": false,
+          "number_of_truncations": 0,
+          "maximum_bond": 8,
+          "storage_bytes": 4960,
+          "norm": 1.0000000000000548
+        }
+      },
+      "construction": {
+        "a": {
+          "support_rank": 1,
+          "distinct_right_slices": 1,
+          "amplitude_queries": 8,
+          "left_dimension": 8
+        },
+        "b": {
+          "support_rank": 1,
+          "distinct_right_slices": 1,
+          "amplitude_queries": 8,
+          "left_dimension": 8
+        },
+        "total_amplitude_queries": 16
+      },
+      "construction_seconds": 0.00020920002134516835,
+      "spectral": {
+        "rank": 4,
+        "estimate": -0.13421359164192825,
+        "tail_trace_norm": 1.0790160293823904e-17,
+        "operator_trace": -0.13421359164192825,
+        "operator_trace_norm": 0.4408672865034813,
+        "eigenvalues_by_absolute_value": [
+          -0.28754043907270477,
+          0.15332684743077651,
+          1.1247145501519954e-17,
+          -8.19005408093679e-18,
+          -5.39457961611922e-18,
+          5.394578528584482e-18,
+          1.002139108333354e-21,
+          -1.0011868384733425e-26
+        ]
+      },
+      "direct_mps_delta": -0.13421359164192825,
+      "exact_delta": -0.13421359145382505,
+      "actual_mps_gap_error": 1.881031996830984e-10,
+      "epsilon_pair": 0.0,
+      "combined_rank_bound": 2.0000000001079016e-07,
+      "rank_estimate_sign_certified": true,
+      "dense_pair_bytes": 4096,
+      "resident_algorithm_bytes": 11072,
+      "storage_reduction_factor": 0.3699421965317919,
+      "dense_operator_frobenius_error": 3.3257769413755076e-10,
+      "same_mps_representation_error": 1.1275202181742495e-16,
+      "development_pass": false
+    },
+    {
+      "case": "chesapeake",
+      "ordering": "spectral",
+      "qubits": 7,
+      "support_rank": 1,
+      "simulation": {
+        "published_lr": {
+          "simulation_seconds": 0.014888199977576733,
+          "epsilon_mps": 0.0,
+          "certificate_saturated": false,
+          "number_of_truncations": 0,
+          "maximum_bond": 8,
+          "storage_bytes": 4960,
+          "norm": 1.0000000000000657
+        },
+        "prior_matched_random": {
+          "simulation_seconds": 0.01640560000669211,
+          "epsilon_mps": 0.0,
+          "certificate_saturated": false,
+          "number_of_truncations": 0,
+          "maximum_bond": 8,
+          "storage_bytes": 4960,
+          "norm": 0.9999999999999909
+        }
+      },
+      "construction": {
+        "a": {
+          "support_rank": 1,
+          "distinct_right_slices": 1,
+          "amplitude_queries": 8,
+          "left_dimension": 8
+        },
+        "b": {
+          "support_rank": 1,
+          "distinct_right_slices": 1,
+          "amplitude_queries": 8,
+          "left_dimension": 8
+        },
+        "total_amplitude_queries": 16
+      },
+      "construction_seconds": 0.00016830000095069408,
+      "spectral": {
+        "rank": 4,
+        "estimate": -0.13421359173794037,
+        "tail_trace_norm": 8.85003069022431e-18,
+        "operator_trace": -0.13421359173794037,
+        "operator_trace_norm": 0.30522390215883927,
+        "eigenvalues_by_absolute_value": [
+          -0.21971874694838978,
+          0.08550515521044945,
+          -1.8120673445744516e-17,
+          -9.86623976961809e-18,
+          7.304984652741746e-18,
+          -1.5450460374825643e-18,
+          -2.1121028620805912e-35,
+          2.1121028620805912e-35
+        ]
+      },
+      "direct_mps_delta": -0.13421359173794037,
+      "exact_delta": -0.13421359145382672,
+      "actual_mps_gap_error": 2.841136492737206e-10,
+      "epsilon_pair": 0.0,
+      "combined_rank_bound": 2.0000000000885003e-07,
+      "rank_estimate_sign_certified": true,
+      "dense_pair_bytes": 4096,
+      "resident_algorithm_bytes": 11072,
+      "storage_reduction_factor": 0.3699421965317919,
+      "dense_operator_frobenius_error": 3.081728902177975e-10,
+      "same_mps_representation_error": 1.9979936975357275e-17,
+      "development_pass": false
+    },
+    {
+      "case": "football",
+      "ordering": "sorted",
+      "qubits": 7,
+      "support_rank": 4,
+      "simulation": {
+        "published_lr": {
+          "simulation_seconds": 0.017206199991051108,
+          "epsilon_mps": 0.0,
+          "certificate_saturated": false,
+          "number_of_truncations": 0,
+          "maximum_bond": 8,
+          "storage_bytes": 4960,
+          "norm": 0.9999999999999657
+        },
+        "prior_matched_random": {
+          "simulation_seconds": 0.017585899971891195,
+          "epsilon_mps": 0.0,
+          "certificate_saturated": false,
+          "number_of_truncations": 0,
+          "maximum_bond": 8,
+          "storage_bytes": 4960,
+          "norm": 1.00000000000003
+        }
+      },
+      "construction": {
+        "a": {
+          "support_rank": 4,
+          "distinct_right_slices": 4,
+          "amplitude_queries": 32,
+          "left_dimension": 8
+        },
+        "b": {
+          "support_rank": 4,
+          "distinct_right_slices": 4,
+          "amplitude_queries": 32,
+          "left_dimension": 8
+        },
+        "total_amplitude_queries": 64
+      },
+      "construction_seconds": 0.0006069000228308141,
+      "spectral": {
+        "rank": 4,
+        "estimate": 0.0192688749602405,
+        "tail_trace_norm": 1.9975599614202897e-17,
+        "operator_trace": 0.0192688749602405,
+        "operator_trace_norm": 0.27245074222870264,
+        "eigenvalues_by_absolute_value": [
+          0.13804763959487554,
+          -0.11535180019353711,
+          -0.011239133440693968,
+          0.007812168999596038,
+          1.0023414107000278e-17,
+          -5.548994070437624e-18,
+          -2.3357571308245667e-18,
+          -2.0674343059404284e-18
+        ]
+      },
+      "direct_mps_delta": 0.0192688749602405,
+      "exact_delta": 0.01926887487931439,
+      "actual_mps_gap_error": 8.092610956356161e-11,
+      "epsilon_pair": 0.0,
+      "combined_rank_bound": 2.000000000199756e-07,
+      "rank_estimate_sign_certified": true,
+      "dense_pair_bytes": 4096,
+      "resident_algorithm_bytes": 11072,
+      "storage_reduction_factor": 0.3699421965317919,
+      "dense_operator_frobenius_error": 1.7591323352581205e-10,
+      "same_mps_representation_error": 5.653909023839081e-17,
+      "development_pass": false
+    },
+    {
+      "case": "football",
+      "ordering": "spectral",
+      "qubits": 7,
+      "support_rank": 4,
+      "simulation": {
+        "published_lr": {
+          "simulation_seconds": 0.033741099992766976,
+          "epsilon_mps": 0.0,
+          "certificate_saturated": false,
+          "number_of_truncations": 0,
+          "maximum_bond": 8,
+          "storage_bytes": 4960,
+          "norm": 1.0000000000000073
+        },
+        "prior_matched_random": {
+          "simulation_seconds": 0.017683900019619614,
+          "epsilon_mps": 0.0,
+          "certificate_saturated": false,
+          "number_of_truncations": 0,
+          "maximum_bond": 8,
+          "storage_bytes": 4960,
+          "norm": 0.9999999999999807
+        }
+      },
+      "construction": {
+        "a": {
+          "support_rank": 4,
+          "distinct_right_slices": 2,
+          "amplitude_queries": 16,
+          "left_dimension": 8
+        },
+        "b": {
+          "support_rank": 4,
+          "distinct_right_slices": 2,
+          "amplitude_queries": 16,
+          "left_dimension": 8
+        },
+        "total_amplitude_queries": 32
+      },
+      "construction_seconds": 0.0003315000212751329,
+      "spectral": {
+        "rank": 4,
+        "estimate": 0.019268874966661572,
+        "tail_trace_norm": 6.786455891756392e-18,
+        "operator_trace": 0.019268874966661565,
+        "operator_trace_norm": 0.2926535366592922,
+        "eigenvalues_by_absolute_value": [
+          0.15544013697915016,
+          -0.13627397603088648,
+          0.0005210688338267451,
+          -0.00041835481542885314,
+          -5.476601721551719e-18,
+          1.0294393192837326e-18,
+          2.1001176143967083e-19,
+          -7.040308948126978e-20
+        ]
+      },
+      "direct_mps_delta": 0.019268874966661565,
+      "exact_delta": 0.019268874879312947,
+      "actual_mps_gap_error": 8.734861792203397e-11,
+      "epsilon_pair": 0.0,
+      "combined_rank_bound": 2.0000000000678645e-07,
+      "rank_estimate_sign_certified": true,
+      "dense_pair_bytes": 4096,
+      "resident_algorithm_bytes": 11072,
+      "storage_reduction_factor": 0.3699421965317919,
+      "dense_operator_frobenius_error": 3.789279276971286e-10,
+      "same_mps_representation_error": 1.6674761532375247e-16,
+      "development_pass": false
+    }
+  ],
+  "passed_rows": 0,
+  "success": false
+}

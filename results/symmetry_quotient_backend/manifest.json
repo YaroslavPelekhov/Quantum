@@ -1,0 +1,17 @@
+{
+  "complete": true,
+  "backend_success": true,
+  "passed_rows": 2,
+  "files": {
+    "experiments/symmetry_quotient_backend/PROTOCOL.md": "f899758c9b7dc0470f47484b7a8a2eb51e585bf25e7fc82274f150577b9413cd",
+    "experiments/symmetry_quotient_backend/run_backend.py": "1d64de460dc963c55d935873934e335bc9eb8836fb640e827e33a5df82c55514",
+    "experiments/symmetry_quotient_decision_rank/quotient_core.py": "0165397daf064477220b8eff8e9d3f118216c5ef599e46338befa41b584a9ee1",
+    "results/symmetry_quotient_backend/backend.json": "c29612aec3395b98fffcb8fa25c5e9e4eb286f4717db26d2978a71d307bfe961",
+    "results/symmetry_quotient_backend/dense_comparator.json": "1a100b07b8672cb00b87996bda54d426e1da68d11d406d82d48178c4091c1e64",
+    "experiments/symmetry_quotient_backend/scan_qoblib_twins.py": "49274e1b955375ed95b088e52a6f8cda038515471eb668fd6c9319be953d6c63",
+    "experiments/symmetry_quotient_backend/PRIOR_ART.md": "dea013b1510e395290ef4df2e2eff482dfc293dd2638cd8aac5311b63ecff24f",
+    "results/symmetry_quotient_backend/qoblib_twin_census.json": "4b21ed210d8c593621a93ea1681cb8df74a1fabdff189701e8fe754151866caf",
+    "results/symmetry_quotient_backend/REPORT.md": "dde333997c21b19fe9264d8873fecd4e9653e4cd9949e37713d0449455dba14f",
+    "results/symmetry_quotient_backend/COMPLETION_AUDIT.md": "ea31ea1a187b18f5507d692b093fc5a77a2187339882f0512d33e7cf031a14b2"
+  }
+}

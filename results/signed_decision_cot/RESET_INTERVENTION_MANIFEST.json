@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "created_at": "2026-08-22T03:32:20.273947+00:00",
+  "files": [
+    {
+      "path": "results\\signed_decision_cot\\reset_intervention_summary.json",
+      "sha256": "4ed060ad60d1bf112a6f4abcfe1f7295a86ed42f3399df5f8c84015e04a0c733"
+    },
+    {
+      "path": "results\\signed_decision_cot\\RESET_INTERVENTION_REPORT.md",
+      "sha256": "63f3cc33becb63807f8130a83e8b5946526ef532a8f57c835bccdf927773bcaf"
+    },
+    {
+      "path": "experiments\\signed_decision_cot\\RESET_INTERVENTION_PROTOCOL.md",
+      "sha256": "70cf7db4a278e08e4b45c8b28498d7eb950d2b9ac287ba9f12e6bbe980e62271"
+    },
+    {
+      "path": "experiments\\signed_decision_cot\\SORTED_RESET_RESULT_FREEZE.md",
+      "sha256": "e6ec7c5caed35ec580787d23460c53d3be798af44045cce74541313036cd0e73"
+    },
+    {
+      "path": "experiments\\signed_decision_cot\\run_reset_intervention.py",
+      "sha256": "5125a3d396d12a7fa2efcd33d9207cf10096c480b278ac7f4820f885c23b2993"
+    },
+    {
+      "path": "experiments\\signed_decision_cot\\analyze_reset_intervention.py",
+      "sha256": "92265f27c72e3db8b63beecf3b482f52d01c03843e5d40a89f97c2cc8b5ff794"
+    },
+    {
+      "path": "results\\signed_decision_cot\\reset_intervention_sorted.json",
+      "sha256": "831e26a82a88e13b7fc82b3f611f98fd923e4c52d6a3454f18c1768b22fa1efc"
+    },
+    {
+      "path": "results\\signed_decision_cot\\reset_intervention_spectral.json",
+      "sha256": "60604082a2aebb4d7f876c7e124aec10a104bb131a4548bb26738df6b9facb19"
+    }
+  ]
+}

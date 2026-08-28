@@ -1,0 +1,100 @@
+{
+  "stage": "rankcert_mps_environment_audit",
+  "created_at": "2026-08-17T17:53:34.852952+00:00",
+  "repository": {
+    "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
+    "initial_state_before_modification": {
+      "commit": "506c4f2504311fb854365d3917877a72227043e5",
+      "branch": "main",
+      "upstream": "origin/main",
+      "ahead": 0,
+      "behind": 0,
+      "dirty_entries": [
+        {
+          "path": "baselines/qoblib-solutions",
+          "porcelain_v2": "1 .M S.MU 160000 160000 160000 bd3e8a6d36b48b07d53dc605b020d4cb35da2147 bd3e8a6d36b48b07d53dc605b020d4cb35da2147 baselines/qoblib-solutions",
+          "note": "pre-existing dirty submodule working tree; not modified"
+        }
+      ],
+      "untracked_entries": []
+    },
+    "current_commit": "506c4f2504311fb854365d3917877a72227043e5",
+    "current_branch": "main",
+    "current_status_porcelain_v2": [
+      "# branch.oid 506c4f2504311fb854365d3917877a72227043e5",
+      "# branch.head main",
+      "# branch.upstream origin/main",
+      "# branch.ab +0 -0",
+      "1 .M S.MU 160000 160000 160000 bd3e8a6d36b48b07d53dc605b020d4cb35da2147 bd3e8a6d36b48b07d53dc605b020d4cb35da2147 baselines/qoblib-solutions",
+      "? experiments/rankcert_mps/"
+    ]
+  },
+  "host": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu_model": "Intel(R) Core(TM) i7-14700KF",
+    "logical_cpu_count": 28,
+    "physical_cpu_count": 20,
+    "ram_total_bytes": 51317493760,
+    "ram_total_gib": 47.79314041137695,
+    "ram_available_at_audit_bytes": 660385792,
+    "ram_available_at_audit_gib": 0.6150321960449219
+  },
+  "python": {
+    "executable": "C:\\Users\\psgpe\\Downloads\\Taiwan\\.venv\\Scripts\\python.exe",
+    "version": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
+    "qiskit": "2.5.1",
+    "qiskit_aer": "0.17.2",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "psutil": "7.2.2"
+  },
+  "aer": {
+    "available_methods": [
+      "automatic",
+      "statevector",
+      "density_matrix",
+      "stabilizer",
+      "matrix_product_state",
+      "extended_stabilizer",
+      "unitary",
+      "superop"
+    ],
+    "available_devices": [
+      "CPU"
+    ]
+  },
+  "gpu": {
+    "model": "NVIDIA GeForce RTX 4070 Ti SUPER",
+    "driver_version": "560.94",
+    "vram_mib": 16376.0,
+    "nvidia_smi_returncode": 0,
+    "nvcc": {
+      "command": [
+        "nvcc",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Wed_Jul_16_20:06:48_Pacific_Daylight_Time_2025\nCuda compilation tools, release 13.0, V13.0.48\nBuild cuda_13.0.r13.0/compiler.36260728_0",
+      "stderr": ""
+    }
+  },
+  "cutensornet_wsl": {
+    "command": [
+      "wsl.exe",
+      "-d",
+      "Ubuntu",
+      "--",
+      "/root/.venvs/evoq-cuquantum/bin/python",
+      "-c",
+      "import importlib.metadata as m, json; names=['cuquantum-python','cuquantum','cupy-cuda12x']; print(json.dumps({n:(m.version(n) if any(d.metadata['Name'].lower()==n.lower() for d in m.distributions()) else None) for n in names}))"
+    ],
+    "returncode": 0,
+    "stdout": "{\"cuquantum-python\": null, \"cuquantum\": null, \"cupy-cuda12x\": \"14.1.1\"}",
+    "stderr": "w\u0000s\u0000l\u0000:\u0000 \u0000\u001a\u0004>\u0004=\u0004D\u00048\u00043\u0004C\u0004@\u00040\u0004F\u00048\u0004O\u0004 \u0000?\u0004@\u0004>\u0004:\u0004A\u00048\u0004-\u0000A\u00045\u0004@\u00042\u00045\u0004@\u00040\u0004 \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000>\u00041\u0004=\u00040\u0004@\u0004C\u00046\u00045\u0004=\u00040\u0004,\u0000 \u0000=\u0004>\u0004 \u0000=\u00045\u0004 \u0000>\u0004B\u0004@\u00040\u00046\u00045\u0004=\u00040\u0004 \u00002\u0004 \u0000W\u0000S\u0000L\u0000.\u0000 \u0000W\u0000S\u0000L\u0000 \u00002\u0004 \u0000@\u00045\u00046\u00048\u0004<\u00045\u0004 \u0000N\u0000A\u0000T\u0000 \u0000=\u00045\u0004 \u0000?\u0004>\u00044\u00044\u00045\u0004@\u00046\u00048\u00042\u00040\u00045\u0004B\u0004 \u0000?\u0004@\u0004>\u0004:\u0004A\u00048\u0004-\u0000A\u00045\u0004@\u00042\u00045\u0004@\u0004K\u0004 \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000.\u0000\n\u0000\n\u0000"
+  },
+  "constraints": {
+    "remote_compute_forbidden": true,
+    "aer_mps_gpu_available": false,
+    "preexisting_low_memory_cause": "Telegram.exe working set approximately 24.9 GiB"
+  }
+}

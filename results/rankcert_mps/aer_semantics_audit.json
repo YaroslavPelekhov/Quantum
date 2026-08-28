@@ -1,0 +1,1176 @@
+{
+  "stage": "aer_semantics_audit",
+  "complete": true,
+  "created_at": "2026-08-17T17:57:06.277143+00:00",
+  "process_isolation": true,
+  "analytic_weight": 0.0001,
+  "test_a": {
+    "0.0": {
+      "circuit": "published_4q",
+      "bond": null,
+      "cutoff": 0.0,
+      "chop_threshold": 0.0,
+      "qiskit_aer": "0.17.2",
+      "success": true,
+      "statevector": [
+        [
+          0.4999999999999999,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4999999999999999,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4999999999999999,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4999999999999999,
+          0.0
+        ]
+      ],
+      "metadata": {
+        "batched_shots_optimization": false,
+        "required_memory_mb": 0,
+        "method": "matrix_product_state",
+        "active_input_qubits": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "device": "CPU",
+        "remapped_qubits": false,
+        "num_qubits": 4,
+        "num_clbits": 0,
+        "time_taken": 0.0096101,
+        "input_qubit_map": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "max_memory_mb": 48940,
+        "measure_sampling": true,
+        "noise": "ideal",
+        "matrix_product_state_truncation_threshold": 0.0,
+        "matrix_product_state_max_bond_dimension": 18446744073709551615,
+        "matrix_product_state_sample_measure_algorithm": 0,
+        "MPS_log_data": "{I0:cx on qubits 1,2, BD=[1 2 1],  I1:swap on qubits 0,1, BD=[2 2 1],  I2:swap on qubits 2,3, BD=[2 2 2],  I3:cx on qubits 1,2, BD=[2 4 2],  }",
+        "matrix_product_state_lapack": false,
+        "parallel_shots": 1,
+        "parallel_state_update": 1,
+        "runtime_parameter_bind": false,
+        "num_bind_params": 1,
+        "fusion": {
+          "enabled": false
+        },
+        "result_subtypes": {
+          "statevector": "single"
+        },
+        "result_types": {
+          "statevector": "save_statevector"
+        }
+      },
+      "raw_mps_log": "{I0:cx on qubits 1,2, BD=[1 2 1],  I1:swap on qubits 0,1, BD=[2 2 1],  I2:swap on qubits 2,3, BD=[2 2 2],  I3:cx on qubits 1,2, BD=[2 4 2],  }",
+      "parsed_log": {
+        "raw_log": "{I0:cx on qubits 1,2, BD=[1 2 1],  I1:swap on qubits 0,1, BD=[2 2 1],  I2:swap on qubits 2,3, BD=[2 2 2],  I3:cx on qubits 1,2, BD=[2 4 2],  }",
+        "segments": [
+          {
+            "instruction_index": 0,
+            "gate": "cx",
+            "qubits": [
+              1,
+              2
+            ],
+            "bond_dimensions": [
+              1,
+              2,
+              1
+            ],
+            "raw": "I0:cx on qubits 1,2, BD=[1 2 1],",
+            "discarded_weights": []
+          },
+          {
+            "instruction_index": 1,
+            "gate": "swap",
+            "qubits": [
+              0,
+              1
+            ],
+            "bond_dimensions": [
+              2,
+              2,
+              1
+            ],
+            "raw": "I1:swap on qubits 0,1, BD=[2 2 1],",
+            "discarded_weights": []
+          },
+          {
+            "instruction_index": 2,
+            "gate": "swap",
+            "qubits": [
+              2,
+              3
+            ],
+            "bond_dimensions": [
+              2,
+              2,
+              2
+            ],
+            "raw": "I2:swap on qubits 2,3, BD=[2 2 2],",
+            "discarded_weights": []
+          },
+          {
+            "instruction_index": 3,
+            "gate": "cx",
+            "qubits": [
+              1,
+              2
+            ],
+            "bond_dimensions": [
+              2,
+              4,
+              2
+            ],
+            "raw": "I3:cx on qubits 1,2, BD=[2 4 2],",
+            "discarded_weights": []
+          }
+        ],
+        "events": [],
+        "discarded_weights": [],
+        "number_of_truncations": 0,
+        "sum_discarded_weight": 0,
+        "max_discarded_weight": 0.0,
+        "max_bond_seen": 4
+      }
+    },
+    "0.5": {
+      "circuit": "published_4q",
+      "bond": null,
+      "cutoff": 0.5,
+      "chop_threshold": 0.0,
+      "qiskit_aer": "0.17.2",
+      "success": true,
+      "statevector": [
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "metadata": {
+        "batched_shots_optimization": false,
+        "required_memory_mb": 0,
+        "method": "matrix_product_state",
+        "active_input_qubits": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "device": "CPU",
+        "remapped_qubits": false,
+        "num_qubits": 4,
+        "num_clbits": 0,
+        "time_taken": 0.0078088,
+        "input_qubit_map": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "max_memory_mb": 48940,
+        "measure_sampling": true,
+        "noise": "ideal",
+        "matrix_product_state_truncation_threshold": 0.5,
+        "matrix_product_state_max_bond_dimension": 18446744073709551615,
+        "matrix_product_state_sample_measure_algorithm": 0,
+        "MPS_log_data": "{I0:cx on qubits 1,2, BD=[1 2 1],  I1:swap on qubits 0,1, BD=[2 2 1],  I2:swap on qubits 2,3, BD=[2 2 2],  discarded_value=0.5, I3:cx on qubits 1,2, BD=[2 2 2],  }",
+        "matrix_product_state_lapack": false,
+        "parallel_shots": 1,
+        "parallel_state_update": 1,
+        "runtime_parameter_bind": false,
+        "num_bind_params": 1,
+        "fusion": {
+          "enabled": false
+        },
+        "result_subtypes": {
+          "statevector": "single"
+        },
+        "result_types": {
+          "statevector": "save_statevector"
+        }
+      },
+      "raw_mps_log": "{I0:cx on qubits 1,2, BD=[1 2 1],  I1:swap on qubits 0,1, BD=[2 2 1],  I2:swap on qubits 2,3, BD=[2 2 2],  discarded_value=0.5, I3:cx on qubits 1,2, BD=[2 2 2],  }",
+      "parsed_log": {
+        "raw_log": "{I0:cx on qubits 1,2, BD=[1 2 1],  I1:swap on qubits 0,1, BD=[2 2 1],  I2:swap on qubits 2,3, BD=[2 2 2],  discarded_value=0.5, I3:cx on qubits 1,2, BD=[2 2 2],  }",
+        "segments": [
+          {
+            "instruction_index": 0,
+            "gate": "cx",
+            "qubits": [
+              1,
+              2
+            ],
+            "bond_dimensions": [
+              1,
+              2,
+              1
+            ],
+            "raw": "I0:cx on qubits 1,2, BD=[1 2 1],",
+            "discarded_weights": []
+          },
+          {
+            "instruction_index": 1,
+            "gate": "swap",
+            "qubits": [
+              0,
+              1
+            ],
+            "bond_dimensions": [
+              2,
+              2,
+              1
+            ],
+            "raw": "I1:swap on qubits 0,1, BD=[2 2 1],",
+            "discarded_weights": []
+          },
+          {
+            "instruction_index": 2,
+            "gate": "swap",
+            "qubits": [
+              2,
+              3
+            ],
+            "bond_dimensions": [
+              2,
+              2,
+              2
+            ],
+            "raw": "I2:swap on qubits 2,3, BD=[2 2 2],  discarded_value=0.5,",
+            "discarded_weights": []
+          },
+          {
+            "instruction_index": 3,
+            "gate": "cx",
+            "qubits": [
+              1,
+              2
+            ],
+            "bond_dimensions": [
+              2,
+              2,
+              2
+            ],
+            "raw": "I3:cx on qubits 1,2, BD=[2 2 2],",
+            "discarded_weights": [
+              0.5
+            ]
+          }
+        ],
+        "events": [
+          {
+            "event_index": 0,
+            "discarded_weight": 0.5,
+            "instruction_index": 3,
+            "gate": "cx",
+            "qubits": [
+              1,
+              2
+            ],
+            "bond_dimensions": [
+              2,
+              2,
+              2
+            ],
+            "segment": "I3:cx on qubits 1,2, BD=[2 2 2],"
+          }
+        ],
+        "discarded_weights": [
+          0.5
+        ],
+        "number_of_truncations": 1,
+        "sum_discarded_weight": 0.5,
+        "max_discarded_weight": 0.5,
+        "max_bond_seen": 2
+      }
+    },
+    "0.9": {
+      "circuit": "published_4q",
+      "bond": null,
+      "cutoff": 0.9,
+      "chop_threshold": 0.0,
+      "qiskit_aer": "0.17.2",
+      "success": true,
+      "statevector": [
+        [
+          0.4999999999999999,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4999999999999999,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4999999999999999,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4999999999999999,
+          0.0
+        ]
+      ],
+      "metadata": {
+        "batched_shots_optimization": false,
+        "required_memory_mb": 0,
+        "method": "matrix_product_state",
+        "active_input_qubits": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "device": "CPU",
+        "remapped_qubits": false,
+        "num_qubits": 4,
+        "num_clbits": 0,
+        "time_taken": 0.0072607,
+        "input_qubit_map": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "max_memory_mb": 48940,
+        "measure_sampling": true,
+        "noise": "ideal",
+        "matrix_product_state_truncation_threshold": 0.9,
+        "matrix_product_state_max_bond_dimension": 18446744073709551615,
+        "matrix_product_state_sample_measure_algorithm": 0,
+        "MPS_log_data": "{I0:cx on qubits 1,2, BD=[1 2 1],  I1:swap on qubits 0,1, BD=[2 2 1],  I2:swap on qubits 2,3, BD=[2 2 2],  I3:cx on qubits 1,2, BD=[2 4 2],  }",
+        "matrix_product_state_lapack": false,
+        "parallel_shots": 1,
+        "parallel_state_update": 1,
+        "runtime_parameter_bind": false,
+        "num_bind_params": 1,
+        "fusion": {
+          "enabled": false
+        },
+        "result_subtypes": {
+          "statevector": "single"
+        },
+        "result_types": {
+          "statevector": "save_statevector"
+        }
+      },
+      "raw_mps_log": "{I0:cx on qubits 1,2, BD=[1 2 1],  I1:swap on qubits 0,1, BD=[2 2 1],  I2:swap on qubits 2,3, BD=[2 2 2],  I3:cx on qubits 1,2, BD=[2 4 2],  }",
+      "parsed_log": {
+        "raw_log": "{I0:cx on qubits 1,2, BD=[1 2 1],  I1:swap on qubits 0,1, BD=[2 2 1],  I2:swap on qubits 2,3, BD=[2 2 2],  I3:cx on qubits 1,2, BD=[2 4 2],  }",
+        "segments": [
+          {
+            "instruction_index": 0,
+            "gate": "cx",
+            "qubits": [
+              1,
+              2
+            ],
+            "bond_dimensions": [
+              1,
+              2,
+              1
+            ],
+            "raw": "I0:cx on qubits 1,2, BD=[1 2 1],",
+            "discarded_weights": []
+          },
+          {
+            "instruction_index": 1,
+            "gate": "swap",
+            "qubits": [
+              0,
+              1
+            ],
+            "bond_dimensions": [
+              2,
+              2,
+              1
+            ],
+            "raw": "I1:swap on qubits 0,1, BD=[2 2 1],",
+            "discarded_weights": []
+          },
+          {
+            "instruction_index": 2,
+            "gate": "swap",
+            "qubits": [
+              2,
+              3
+            ],
+            "bond_dimensions": [
+              2,
+              2,
+              2
+            ],
+            "raw": "I2:swap on qubits 2,3, BD=[2 2 2],",
+            "discarded_weights": []
+          },
+          {
+            "instruction_index": 3,
+            "gate": "cx",
+            "qubits": [
+              1,
+              2
+            ],
+            "bond_dimensions": [
+              2,
+              4,
+              2
+            ],
+            "raw": "I3:cx on qubits 1,2, BD=[2 4 2],",
+            "discarded_weights": []
+          }
+        ],
+        "events": [],
+        "discarded_weights": [],
+        "number_of_truncations": 0,
+        "sum_discarded_weight": 0,
+        "max_discarded_weight": 0.0,
+        "max_bond_seen": 4
+      }
+    }
+  },
+  "test_b": {
+    "B1": {
+      "circuit": "analytic_2q",
+      "bond": null,
+      "cutoff": 0.0,
+      "chop_threshold": 0.0,
+      "qiskit_aer": "0.17.2",
+      "success": true,
+      "statevector": [
+        [
+          0.9999499987499375,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.01,
+          0.0
+        ]
+      ],
+      "metadata": {
+        "batched_shots_optimization": false,
+        "required_memory_mb": 0,
+        "method": "matrix_product_state",
+        "active_input_qubits": [
+          0,
+          1
+        ],
+        "device": "CPU",
+        "remapped_qubits": false,
+        "num_qubits": 2,
+        "num_clbits": 0,
+        "time_taken": 0.0076862,
+        "input_qubit_map": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "max_memory_mb": 48940,
+        "measure_sampling": true,
+        "noise": "ideal",
+        "matrix_product_state_truncation_threshold": 0.0,
+        "matrix_product_state_max_bond_dimension": 18446744073709551615,
+        "matrix_product_state_sample_measure_algorithm": 0,
+        "MPS_log_data": "{I0:cx on qubits 0,1, BD=[2],  }",
+        "matrix_product_state_lapack": false,
+        "parallel_shots": 1,
+        "parallel_state_update": 1,
+        "runtime_parameter_bind": false,
+        "num_bind_params": 1,
+        "fusion": {
+          "enabled": false
+        },
+        "result_subtypes": {
+          "statevector": "single"
+        },
+        "result_types": {
+          "statevector": "save_statevector"
+        }
+      },
+      "raw_mps_log": "{I0:cx on qubits 0,1, BD=[2],  }",
+      "parsed_log": {
+        "raw_log": "{I0:cx on qubits 0,1, BD=[2],  }",
+        "segments": [
+          {
+            "instruction_index": 0,
+            "gate": "cx",
+            "qubits": [
+              0,
+              1
+            ],
+            "bond_dimensions": [
+              2
+            ],
+            "raw": "I0:cx on qubits 0,1, BD=[2],",
+            "discarded_weights": []
+          }
+        ],
+        "events": [],
+        "discarded_weights": [],
+        "number_of_truncations": 0,
+        "sum_discarded_weight": 0,
+        "max_discarded_weight": 0.0,
+        "max_bond_seen": 2
+      },
+      "fidelity_to_untruncated": 1.0,
+      "state_norm": 1.0
+    },
+    "B2": {
+      "circuit": "analytic_2q",
+      "bond": 1,
+      "cutoff": 0.0,
+      "chop_threshold": 0.0,
+      "qiskit_aer": "0.17.2",
+      "success": true,
+      "statevector": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "metadata": {
+        "batched_shots_optimization": false,
+        "required_memory_mb": 0,
+        "method": "matrix_product_state",
+        "active_input_qubits": [
+          0,
+          1
+        ],
+        "device": "CPU",
+        "remapped_qubits": false,
+        "num_qubits": 2,
+        "num_clbits": 0,
+        "time_taken": 0.007844,
+        "input_qubit_map": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "max_memory_mb": 48940,
+        "measure_sampling": true,
+        "noise": "ideal",
+        "matrix_product_state_truncation_threshold": 0.0,
+        "matrix_product_state_max_bond_dimension": 1,
+        "matrix_product_state_sample_measure_algorithm": 0,
+        "MPS_log_data": "{discarded_value=0.0001, I0:cx on qubits 0,1, BD=[1],  }",
+        "matrix_product_state_lapack": false,
+        "parallel_shots": 1,
+        "parallel_state_update": 1,
+        "runtime_parameter_bind": false,
+        "num_bind_params": 1,
+        "fusion": {
+          "enabled": false
+        },
+        "result_subtypes": {
+          "statevector": "single"
+        },
+        "result_types": {
+          "statevector": "save_statevector"
+        }
+      },
+      "raw_mps_log": "{discarded_value=0.0001, I0:cx on qubits 0,1, BD=[1],  }",
+      "parsed_log": {
+        "raw_log": "{discarded_value=0.0001, I0:cx on qubits 0,1, BD=[1],  }",
+        "segments": [
+          {
+            "instruction_index": 0,
+            "gate": "cx",
+            "qubits": [
+              0,
+              1
+            ],
+            "bond_dimensions": [
+              1
+            ],
+            "raw": "I0:cx on qubits 0,1, BD=[1],",
+            "discarded_weights": [
+              0.0001
+            ]
+          }
+        ],
+        "events": [
+          {
+            "event_index": 0,
+            "discarded_weight": 0.0001,
+            "instruction_index": 0,
+            "gate": "cx",
+            "qubits": [
+              0,
+              1
+            ],
+            "bond_dimensions": [
+              1
+            ],
+            "segment": "I0:cx on qubits 0,1, BD=[1],"
+          }
+        ],
+        "discarded_weights": [
+          0.0001
+        ],
+        "number_of_truncations": 1,
+        "sum_discarded_weight": 0.0001,
+        "max_discarded_weight": 0.0001,
+        "max_bond_seen": 1
+      },
+      "fidelity_to_untruncated": 0.9999,
+      "state_norm": 1.0
+    },
+    "B3": {
+      "circuit": "analytic_2q",
+      "bond": null,
+      "cutoff": 0.0002,
+      "chop_threshold": 0.0,
+      "qiskit_aer": "0.17.2",
+      "success": true,
+      "statevector": [
+        [
+          0.9999499987499375,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.01,
+          0.0
+        ]
+      ],
+      "metadata": {
+        "batched_shots_optimization": false,
+        "required_memory_mb": 0,
+        "method": "matrix_product_state",
+        "active_input_qubits": [
+          0,
+          1
+        ],
+        "device": "CPU",
+        "remapped_qubits": false,
+        "num_qubits": 2,
+        "num_clbits": 0,
+        "time_taken": 0.008327,
+        "input_qubit_map": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "max_memory_mb": 48940,
+        "measure_sampling": true,
+        "noise": "ideal",
+        "matrix_product_state_truncation_threshold": 0.0002,
+        "matrix_product_state_max_bond_dimension": 18446744073709551615,
+        "matrix_product_state_sample_measure_algorithm": 0,
+        "MPS_log_data": "{I0:cx on qubits 0,1, BD=[2],  }",
+        "matrix_product_state_lapack": false,
+        "parallel_shots": 1,
+        "parallel_state_update": 1,
+        "runtime_parameter_bind": false,
+        "num_bind_params": 1,
+        "fusion": {
+          "enabled": false
+        },
+        "result_subtypes": {
+          "statevector": "single"
+        },
+        "result_types": {
+          "statevector": "save_statevector"
+        }
+      },
+      "raw_mps_log": "{I0:cx on qubits 0,1, BD=[2],  }",
+      "parsed_log": {
+        "raw_log": "{I0:cx on qubits 0,1, BD=[2],  }",
+        "segments": [
+          {
+            "instruction_index": 0,
+            "gate": "cx",
+            "qubits": [
+              0,
+              1
+            ],
+            "bond_dimensions": [
+              2
+            ],
+            "raw": "I0:cx on qubits 0,1, BD=[2],",
+            "discarded_weights": []
+          }
+        ],
+        "events": [],
+        "discarded_weights": [],
+        "number_of_truncations": 0,
+        "sum_discarded_weight": 0,
+        "max_discarded_weight": 0.0,
+        "max_bond_seen": 2
+      },
+      "fidelity_to_untruncated": 1.0,
+      "state_norm": 1.0
+    }
+  },
+  "chop_threshold_regression": {
+    "visible": {
+      "circuit": "analytic_2q",
+      "bond": 1,
+      "cutoff": 0.0,
+      "chop_threshold": 0.0,
+      "qiskit_aer": "0.17.2",
+      "success": true,
+      "statevector": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "metadata": {
+        "batched_shots_optimization": false,
+        "required_memory_mb": 0,
+        "method": "matrix_product_state",
+        "active_input_qubits": [
+          0,
+          1
+        ],
+        "device": "CPU",
+        "remapped_qubits": false,
+        "num_qubits": 2,
+        "num_clbits": 0,
+        "time_taken": 0.007844,
+        "input_qubit_map": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "max_memory_mb": 48940,
+        "measure_sampling": true,
+        "noise": "ideal",
+        "matrix_product_state_truncation_threshold": 0.0,
+        "matrix_product_state_max_bond_dimension": 1,
+        "matrix_product_state_sample_measure_algorithm": 0,
+        "MPS_log_data": "{discarded_value=0.0001, I0:cx on qubits 0,1, BD=[1],  }",
+        "matrix_product_state_lapack": false,
+        "parallel_shots": 1,
+        "parallel_state_update": 1,
+        "runtime_parameter_bind": false,
+        "num_bind_params": 1,
+        "fusion": {
+          "enabled": false
+        },
+        "result_subtypes": {
+          "statevector": "single"
+        },
+        "result_types": {
+          "statevector": "save_statevector"
+        }
+      },
+      "raw_mps_log": "{discarded_value=0.0001, I0:cx on qubits 0,1, BD=[1],  }",
+      "parsed_log": {
+        "raw_log": "{discarded_value=0.0001, I0:cx on qubits 0,1, BD=[1],  }",
+        "segments": [
+          {
+            "instruction_index": 0,
+            "gate": "cx",
+            "qubits": [
+              0,
+              1
+            ],
+            "bond_dimensions": [
+              1
+            ],
+            "raw": "I0:cx on qubits 0,1, BD=[1],",
+            "discarded_weights": [
+              0.0001
+            ]
+          }
+        ],
+        "events": [
+          {
+            "event_index": 0,
+            "discarded_weight": 0.0001,
+            "instruction_index": 0,
+            "gate": "cx",
+            "qubits": [
+              0,
+              1
+            ],
+            "bond_dimensions": [
+              1
+            ],
+            "segment": "I0:cx on qubits 0,1, BD=[1],"
+          }
+        ],
+        "discarded_weights": [
+          0.0001
+        ],
+        "number_of_truncations": 1,
+        "sum_discarded_weight": 0.0001,
+        "max_discarded_weight": 0.0001,
+        "max_bond_seen": 1
+      },
+      "fidelity_to_untruncated": 0.9999,
+      "state_norm": 1.0
+    },
+    "hidden": {
+      "circuit": "analytic_2q",
+      "bond": 1,
+      "cutoff": 0.0,
+      "chop_threshold": 0.001,
+      "qiskit_aer": "0.17.2",
+      "success": true,
+      "statevector": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "metadata": {
+        "batched_shots_optimization": false,
+        "required_memory_mb": 0,
+        "method": "matrix_product_state",
+        "active_input_qubits": [
+          0,
+          1
+        ],
+        "device": "CPU",
+        "remapped_qubits": false,
+        "num_qubits": 2,
+        "num_clbits": 0,
+        "time_taken": 0.0074709,
+        "input_qubit_map": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "max_memory_mb": 48940,
+        "measure_sampling": true,
+        "noise": "ideal",
+        "matrix_product_state_truncation_threshold": 0.0,
+        "matrix_product_state_max_bond_dimension": 1,
+        "matrix_product_state_sample_measure_algorithm": 0,
+        "MPS_log_data": "{I0:cx on qubits 0,1, BD=[1],  }",
+        "matrix_product_state_lapack": false,
+        "parallel_shots": 1,
+        "parallel_state_update": 1,
+        "runtime_parameter_bind": false,
+        "num_bind_params": 1,
+        "fusion": {
+          "enabled": false
+        },
+        "result_subtypes": {
+          "statevector": "single"
+        },
+        "result_types": {
+          "statevector": "save_statevector"
+        }
+      },
+      "raw_mps_log": "{I0:cx on qubits 0,1, BD=[1],  }",
+      "parsed_log": {
+        "raw_log": "{I0:cx on qubits 0,1, BD=[1],  }",
+        "segments": [
+          {
+            "instruction_index": 0,
+            "gate": "cx",
+            "qubits": [
+              0,
+              1
+            ],
+            "bond_dimensions": [
+              1
+            ],
+            "raw": "I0:cx on qubits 0,1, BD=[1],",
+            "discarded_weights": []
+          }
+        ],
+        "events": [],
+        "discarded_weights": [],
+        "number_of_truncations": 0,
+        "sum_discarded_weight": 0,
+        "max_discarded_weight": 0.0,
+        "max_bond_seen": 1
+      },
+      "fidelity_to_untruncated": 0.9999,
+      "state_norm": 1.0
+    },
+    "states_equal": true,
+    "visible_event_count": 1,
+    "hidden_event_count": 0
+  },
+  "checks": {
+    "B1_no_approximation": true,
+    "B2_one_event": true,
+    "B2_discarded_value_matches_w": true,
+    "B2_fidelity_matches_one_minus_w": true,
+    "B3_threshold_edge_case_present": true,
+    "chop_only_changes_logging": true
+  }
+}

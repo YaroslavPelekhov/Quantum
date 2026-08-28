@@ -1,0 +1,420 @@
+{
+  "stage": "causal_certification_debt_identity_audit",
+  "complete": true,
+  "created_at": "2026-08-21T14:15:05.823995+00:00",
+  "index_orientation": "local error at j propagates to all t<=j",
+  "numeric_floor_per_vector_per_checkpoint": 1e-10,
+  "cases": [
+    {
+      "label": "sorted_rescue_lr",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "rank": 2,
+      "checkpoint_count_with_residual_update": 555,
+      "maximum_tail_recurrence_error": 0.0,
+      "direct_uncapped_debt": 0.162648290903715,
+      "shadow_price_debt": 0.16264829090371516,
+      "debt_identity_absolute_error": 1.6653345369377348e-16,
+      "represented_residual_component": 0.017380764194660163,
+      "capped_tail_component": 0.162648290903715,
+      "cap_active": false,
+      "reconstructed_operator_correction": 0.18002905509837516,
+      "recorded_operator_correction": 0.18002905509837516,
+      "correction_reconstruction_error": 0.0,
+      "tail_fraction_of_correction": 0.9034557828170424,
+      "maximum_causal_price": 39.93993515010876,
+      "minimum_causal_price": 1e-07,
+      "top_shadow_debt_checkpoints": [
+        {
+          "checkpoint_position": 320,
+          "debt": 0.003806816781551934
+        },
+        {
+          "checkpoint_position": 332,
+          "debt": 0.0036397458158070662
+        },
+        {
+          "checkpoint_position": 326,
+          "debt": 0.0036041225356582985
+        },
+        {
+          "checkpoint_position": 338,
+          "debt": 0.0032910767945695525
+        },
+        {
+          "checkpoint_position": 321,
+          "debt": 0.0032514769040429387
+        },
+        {
+          "checkpoint_position": 340,
+          "debt": 0.0030288515385833805
+        },
+        {
+          "checkpoint_position": 335,
+          "debt": 0.002871722494127142
+        },
+        {
+          "checkpoint_position": 351,
+          "debt": 0.00278436056201233
+        },
+        {
+          "checkpoint_position": 346,
+          "debt": 0.002697880011721283
+        },
+        {
+          "checkpoint_position": 386,
+          "debt": 0.0026812199780189326
+        },
+        {
+          "checkpoint_position": 349,
+          "debt": 0.0026276593164281247
+        },
+        {
+          "checkpoint_position": 388,
+          "debt": 0.002590496768666975
+        },
+        {
+          "checkpoint_position": 339,
+          "debt": 0.0025365746780524104
+        },
+        {
+          "checkpoint_position": 345,
+          "debt": 0.0024925561835618163
+        },
+        {
+          "checkpoint_position": 342,
+          "debt": 0.0024308694630172717
+        },
+        {
+          "checkpoint_position": 344,
+          "debt": 0.0022566885799903294
+        },
+        {
+          "checkpoint_position": 352,
+          "debt": 0.002131478302215702
+        },
+        {
+          "checkpoint_position": 355,
+          "debt": 0.002045160248453495
+        },
+        {
+          "checkpoint_position": 350,
+          "debt": 0.00201316556850749
+        },
+        {
+          "checkpoint_position": 357,
+          "debt": 0.001970304050905685
+        }
+      ]
+    },
+    {
+      "label": "sorted_fixed_mr_R128",
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "rank": 2,
+      "checkpoint_count_with_residual_update": 555,
+      "maximum_tail_recurrence_error": 0.0,
+      "direct_uncapped_debt": 0.0001082903304234877,
+      "shadow_price_debt": 0.00010829033042348825,
+      "debt_identity_absolute_error": 5.421010862427522e-19,
+      "represented_residual_component": 8.033489743727506e-06,
+      "capped_tail_component": 0.0001082903304234877,
+      "cap_active": false,
+      "reconstructed_operator_correction": 0.00011632382016721521,
+      "recorded_operator_correction": 0.00011632382016721521,
+      "correction_reconstruction_error": 0.0,
+      "tail_fraction_of_correction": 0.9309385667339727,
+      "maximum_causal_price": 42.87172358535805,
+      "minimum_causal_price": 1e-07,
+      "top_shadow_debt_checkpoints": [
+        {
+          "checkpoint_position": 320,
+          "debt": 1.945647429532552e-06
+        },
+        {
+          "checkpoint_position": 312,
+          "debt": 1.8608029026239952e-06
+        },
+        {
+          "checkpoint_position": 314,
+          "debt": 1.8188989197351412e-06
+        },
+        {
+          "checkpoint_position": 318,
+          "debt": 1.6343280462437224e-06
+        },
+        {
+          "checkpoint_position": 313,
+          "debt": 1.6178909775551477e-06
+        },
+        {
+          "checkpoint_position": 319,
+          "debt": 1.602190569316148e-06
+        },
+        {
+          "checkpoint_position": 309,
+          "debt": 1.5911759806588936e-06
+        },
+        {
+          "checkpoint_position": 315,
+          "debt": 1.5527458557467675e-06
+        },
+        {
+          "checkpoint_position": 301,
+          "debt": 1.5036461220297397e-06
+        },
+        {
+          "checkpoint_position": 305,
+          "debt": 1.4666209871958584e-06
+        },
+        {
+          "checkpoint_position": 321,
+          "debt": 1.4554454946507351e-06
+        },
+        {
+          "checkpoint_position": 289,
+          "debt": 1.3893534820239734e-06
+        },
+        {
+          "checkpoint_position": 295,
+          "debt": 1.3813362216329716e-06
+        },
+        {
+          "checkpoint_position": 308,
+          "debt": 1.312342650445135e-06
+        },
+        {
+          "checkpoint_position": 311,
+          "debt": 1.2864482398115978e-06
+        },
+        {
+          "checkpoint_position": 310,
+          "debt": 1.2841332530267429e-06
+        },
+        {
+          "checkpoint_position": 307,
+          "debt": 1.2587023849242293e-06
+        },
+        {
+          "checkpoint_position": 281,
+          "debt": 1.256765004815546e-06
+        },
+        {
+          "checkpoint_position": 284,
+          "debt": 1.2204948142195457e-06
+        },
+        {
+          "checkpoint_position": 283,
+          "debt": 1.2122640421968492e-06
+        }
+      ]
+    },
+    {
+      "label": "spectral_transfer_lr",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "rank": 2,
+      "checkpoint_count_with_residual_update": 555,
+      "maximum_tail_recurrence_error": 0.0,
+      "direct_uncapped_debt": 0.009345469816359421,
+      "shadow_price_debt": 0.009345469816359451,
+      "debt_identity_absolute_error": 2.949029909160572e-17,
+      "represented_residual_component": 0.00267915385650296,
+      "capped_tail_component": 0.009345469816359421,
+      "cap_active": false,
+      "reconstructed_operator_correction": 0.012024623672862382,
+      "recorded_operator_correction": 0.01202462367286238,
+      "correction_reconstruction_error": 1.734723475976807e-18,
+      "tail_fraction_of_correction": 0.7771943697041119,
+      "maximum_causal_price": 29.162816506073465,
+      "minimum_causal_price": 1e-07,
+      "top_shadow_debt_checkpoints": [
+        {
+          "checkpoint_position": 321,
+          "debt": 0.0005283254501094523
+        },
+        {
+          "checkpoint_position": 322,
+          "debt": 0.00047391983203568053
+        },
+        {
+          "checkpoint_position": 324,
+          "debt": 0.00047299628772140984
+        },
+        {
+          "checkpoint_position": 327,
+          "debt": 0.00038902934596074615
+        },
+        {
+          "checkpoint_position": 331,
+          "debt": 0.00030987970446823
+        },
+        {
+          "checkpoint_position": 336,
+          "debt": 0.00023590676625792774
+        },
+        {
+          "checkpoint_position": 339,
+          "debt": 0.00023040736821658016
+        },
+        {
+          "checkpoint_position": 345,
+          "debt": 0.0002130846310377412
+        },
+        {
+          "checkpoint_position": 349,
+          "debt": 0.00019800992100148622
+        },
+        {
+          "checkpoint_position": 361,
+          "debt": 0.00017077605680509506
+        },
+        {
+          "checkpoint_position": 348,
+          "debt": 0.00016585044103899912
+        },
+        {
+          "checkpoint_position": 344,
+          "debt": 0.00016216296645557592
+        },
+        {
+          "checkpoint_position": 358,
+          "debt": 0.00015519843576038082
+        },
+        {
+          "checkpoint_position": 359,
+          "debt": 0.00014953111376457513
+        },
+        {
+          "checkpoint_position": 364,
+          "debt": 0.00014893010779597934
+        },
+        {
+          "checkpoint_position": 386,
+          "debt": 0.00012495797625695503
+        },
+        {
+          "checkpoint_position": 385,
+          "debt": 0.00011901686701033982
+        },
+        {
+          "checkpoint_position": 368,
+          "debt": 0.00011170850807497361
+        },
+        {
+          "checkpoint_position": 287,
+          "debt": 0.00010934947337373024
+        },
+        {
+          "checkpoint_position": 250,
+          "debt": 0.00010387497233382069
+        }
+      ]
+    },
+    {
+      "label": "spectral_fixed_mr_R128",
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "rank": 2,
+      "checkpoint_count_with_residual_update": 555,
+      "maximum_tail_recurrence_error": 0.0,
+      "direct_uncapped_debt": 7.141848969919363e-06,
+      "shadow_price_debt": 7.141848969919345e-06,
+      "debt_identity_absolute_error": 1.7787691892340307e-20,
+      "represented_residual_component": 7.931306429490474e-07,
+      "capped_tail_component": 7.141848969919363e-06,
+      "cap_active": false,
+      "reconstructed_operator_correction": 7.93497961286841e-06,
+      "recorded_operator_correction": 7.93497961286841e-06,
+      "correction_reconstruction_error": 0.0,
+      "tail_fraction_of_correction": 0.9000462910247681,
+      "maximum_causal_price": 30.63123499163653,
+      "minimum_causal_price": 1e-07,
+      "top_shadow_debt_checkpoints": [
+        {
+          "checkpoint_position": 308,
+          "debt": 1.4724264198355453e-07
+        },
+        {
+          "checkpoint_position": 321,
+          "debt": 1.4646004731793785e-07
+        },
+        {
+          "checkpoint_position": 312,
+          "debt": 1.316371479095978e-07
+        },
+        {
+          "checkpoint_position": 287,
+          "debt": 1.239363550116715e-07
+        },
+        {
+          "checkpoint_position": 290,
+          "debt": 1.2191947051557297e-07
+        },
+        {
+          "checkpoint_position": 322,
+          "debt": 1.2136034678115436e-07
+        },
+        {
+          "checkpoint_position": 311,
+          "debt": 1.1645032174776091e-07
+        },
+        {
+          "checkpoint_position": 302,
+          "debt": 1.1460976078716386e-07
+        },
+        {
+          "checkpoint_position": 294,
+          "debt": 1.1432495009853098e-07
+        },
+        {
+          "checkpoint_position": 307,
+          "debt": 1.1213977714296563e-07
+        },
+        {
+          "checkpoint_position": 271,
+          "debt": 1.0832902816867895e-07
+        },
+        {
+          "checkpoint_position": 285,
+          "debt": 1.0391660989191761e-07
+        },
+        {
+          "checkpoint_position": 299,
+          "debt": 1.0088676969078483e-07
+        },
+        {
+          "checkpoint_position": 275,
+          "debt": 9.939901671511697e-08
+        },
+        {
+          "checkpoint_position": 274,
+          "debt": 9.773363385007213e-08
+        },
+        {
+          "checkpoint_position": 284,
+          "debt": 9.452587490294287e-08
+        },
+        {
+          "checkpoint_position": 250,
+          "debt": 9.449594533895629e-08
+        },
+        {
+          "checkpoint_position": 324,
+          "debt": 9.425535761049991e-08
+        },
+        {
+          "checkpoint_position": 253,
+          "debt": 9.089076858288277e-08
+        },
+        {
+          "checkpoint_position": 234,
+          "debt": 8.810005224621687e-08
+        }
+      ]
+    }
+  ],
+  "maximum_identity_error": 1.6653345369377348e-16,
+  "maximum_recurrence_error": 0.0,
+  "maximum_correction_reconstruction_error": 1.734723475976807e-18
+}

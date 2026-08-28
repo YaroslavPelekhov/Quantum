@@ -1,0 +1,98 @@
+{
+  "stage": "dot_mps_local_kill_test_summary",
+  "complete": true,
+  "created_at": "2026-08-20T11:18:15.977999+00:00",
+  "protocol_primary_passed": false,
+  "primary_cut": 11,
+  "primary_chi": 40,
+  "primary_standard_bks_error": 9.959530253295101e-05,
+  "primary_goal_aware_bks_error": 9.77657472832072e-05,
+  "primary_improvement_factor": 1.018713663021917,
+  "primary_standard_fidelity": 0.9997587638449316,
+  "primary_goal_aware_fidelity": 0.9997539397791948,
+  "primary_mass_importance_spearman": 0.999437460934787,
+  "actual_aer_checkpoint_bks_error": 0.00044794278118653885,
+  "maximum_exploratory_improvement_factor_chi40": 1.0489225019544393,
+  "minimum_exploratory_mass_importance_spearman": 0.9979284929500092,
+  "exploratory_tenfold_successes": 0,
+  "sensitivity_rows": [
+    {
+      "cut": 6,
+      "standard_bks_error": 3.7576510046599676e-05,
+      "goal_aware_bks_error": 3.7576510046599676e-05,
+      "improvement_factor": 1.0,
+      "standard_fidelity": 0.9999046164417176,
+      "goal_aware_fidelity": 0.9999046164417176,
+      "selected_mode_overlap": 40,
+      "mass_importance_spearman": 0.9983058608058608,
+      "tenfold_success": false
+    },
+    {
+      "cut": 7,
+      "standard_bks_error": 0.00047976610938399444,
+      "goal_aware_bks_error": 0.000478492043704315,
+      "improvement_factor": 1.0026626684736826,
+      "standard_fidelity": 0.9989397103715771,
+      "goal_aware_fidelity": 0.9989326251475465,
+      "selected_mode_overlap": 39,
+      "mass_importance_spearman": 0.9979284929500092,
+      "tenfold_success": false
+    },
+    {
+      "cut": 8,
+      "standard_bks_error": 0.0003992374810457555,
+      "goal_aware_bks_error": 0.00038061675700717945,
+      "improvement_factor": 1.0489225019544393,
+      "standard_fidelity": 0.9990572976759617,
+      "goal_aware_fidelity": 0.998982128640807,
+      "selected_mode_overlap": 39,
+      "mass_importance_spearman": 0.9985286964980544,
+      "tenfold_success": false
+    },
+    {
+      "cut": 9,
+      "standard_bks_error": 0.00041312009027960617,
+      "goal_aware_bks_error": 0.00039443806316363794,
+      "improvement_factor": 1.0473636518903038,
+      "standard_fidelity": 0.9990714283911741,
+      "goal_aware_fidelity": 0.9990518659515725,
+      "selected_mode_overlap": 39,
+      "mass_importance_spearman": 0.998919889562293,
+      "tenfold_success": false
+    },
+    {
+      "cut": 10,
+      "standard_bks_error": 0.0001269758483897765,
+      "goal_aware_bks_error": 0.00012342687076438708,
+      "improvement_factor": 1.0287536871299618,
+      "standard_fidelity": 0.9997014212567357,
+      "goal_aware_fidelity": 0.9996889632395171,
+      "selected_mode_overlap": 39,
+      "mass_importance_spearman": 0.9980919807635547,
+      "tenfold_success": false
+    },
+    {
+      "cut": 11,
+      "standard_bks_error": 9.959530253295101e-05,
+      "goal_aware_bks_error": 9.77657472832072e-05,
+      "improvement_factor": 1.018713663021917,
+      "standard_fidelity": 0.9997587638449316,
+      "goal_aware_fidelity": 0.9997539397791948,
+      "selected_mode_overlap": 39,
+      "mass_importance_spearman": 0.999437460934787,
+      "tenfold_success": false
+    },
+    {
+      "cut": 12,
+      "standard_bks_error": 1.4566548037497906e-05,
+      "goal_aware_bks_error": 1.4566548037497906e-05,
+      "improvement_factor": 1.0,
+      "standard_fidelity": 0.9999675603350122,
+      "goal_aware_fidelity": 0.9999675603350122,
+      "selected_mode_overlap": 40,
+      "mass_importance_spearman": 0.9979994442900808,
+      "tenfold_success": false
+    }
+  ],
+  "verdict": "The frozen Schmidt-subset DOT endpoint fails: top-Schmidt and decision importance are nearly aligned at the diagnosed real checkpoint. Do not implement a DOT-MPS simulator from this evidence."
+}

@@ -1,0 +1,198 @@
+{
+  "stage": "frozen_causal_shadow_price_controller_audit",
+  "complete": true,
+  "created_at": "2026-08-21T14:09:08.474083+00:00",
+  "policy_class": "fixed primary schedule; residual bonds {128,256,512}; greedy cost-plus-causal-debt score; lambda=500",
+  "dcc_interpretation": "Certified work is a feasible upper bound on decision-certification cost in this policy class, not a global minimum.",
+  "runs": [
+    {
+      "label": "ibm32_sorted",
+      "case": "ibm32",
+      "ordering": "sorted",
+      "setting": "confirm",
+      "complete": true,
+      "shadow_price": 500.0,
+      "candidate_bonds": [
+        128,
+        256,
+        512
+      ],
+      "uses_dense_exact_errors_for_selection": false,
+      "first_term_source": "compressed COT",
+      "first_term_pair": 0.06756830635354205,
+      "operator_correction_pair": 0.1442109341368307,
+      "certified_pair_width": 0.21177924049037275,
+      "mps_gap": 0.2549044372349163,
+      "certificate_margin": 0.04312519674454354,
+      "certified": true,
+      "paired_work_ratio_vs_fixed_R256_R256": 0.4545045045045045,
+      "paired_work_saving_fraction": 0.5454954954954955,
+      "methods": [
+        {
+          "method": "published_lr",
+          "bond_counts": {
+            "128": 137,
+            "256": 418,
+            "512": 0
+          },
+          "bond_transitions": 2,
+          "work_ratio_vs_fixed_R256": 0.784009009009009,
+          "causal_debt": 0.12342693865892349,
+          "operator_correction": 0.14409461031666349,
+          "debt_reconstruction_error": 4.163336342344337e-17,
+          "score_argmin_violations": 0,
+          "dense_checkpoints_audited": 9,
+          "dense_operator_violations": 0,
+          "dense_residual_violations": 0
+        },
+        {
+          "method": "prior_matched_random",
+          "bond_counts": {
+            "128": 555,
+            "256": 0,
+            "512": 0
+          },
+          "bond_transitions": 0,
+          "work_ratio_vs_fixed_R256": 0.125,
+          "causal_debt": 0.00010829033042348829,
+          "operator_correction": 0.00011632382016721521,
+          "debt_reconstruction_error": 4.0657581468206416e-20,
+          "score_argmin_violations": 0,
+          "dense_checkpoints_audited": 9,
+          "dense_operator_violations": 0,
+          "dense_residual_violations": 0
+        }
+      ]
+    },
+    {
+      "label": "ibm32_spectral",
+      "case": "ibm32",
+      "ordering": "spectral",
+      "setting": "confirm",
+      "complete": true,
+      "shadow_price": 500.0,
+      "candidate_bonds": [
+        128,
+        256,
+        512
+      ],
+      "uses_dense_exact_errors_for_selection": false,
+      "first_term_source": "compressed COT",
+      "first_term_pair": 0.051574684673403454,
+      "operator_correction_pair": 0.011469486680003905,
+      "certified_pair_width": 0.06304417135340736,
+      "mps_gap": 0.2539356273164466,
+      "certificate_margin": 0.19089145596303925,
+      "certified": true,
+      "paired_work_ratio_vs_fixed_R256_R256": 0.29605855855855856,
+      "paired_work_saving_fraction": 0.7039414414414414,
+      "methods": [
+        {
+          "method": "published_lr",
+          "bond_counts": {
+            "128": 338,
+            "256": 217,
+            "512": 0
+          },
+          "bond_transitions": 2,
+          "work_ratio_vs_fixed_R256": 0.4671171171171171,
+          "causal_debt": 0.008700408246396774,
+          "operator_correction": 0.011461551700391037,
+          "debt_reconstruction_error": 3.469446951953614e-18,
+          "score_argmin_violations": 0,
+          "dense_checkpoints_audited": 9,
+          "dense_operator_violations": 0,
+          "dense_residual_violations": 0
+        },
+        {
+          "method": "prior_matched_random",
+          "bond_counts": {
+            "128": 555,
+            "256": 0,
+            "512": 0
+          },
+          "bond_transitions": 0,
+          "work_ratio_vs_fixed_R256": 0.125,
+          "causal_debt": 7.141848969919343e-06,
+          "operator_correction": 7.93497961286841e-06,
+          "debt_reconstruction_error": 1.6940658945086007e-21,
+          "score_argmin_violations": 0,
+          "dense_checkpoints_audited": 9,
+          "dense_operator_violations": 0,
+          "dense_residual_violations": 0
+        }
+      ]
+    },
+    {
+      "label": "chesapeake_sorted",
+      "case": "chesapeake",
+      "ordering": "sorted",
+      "setting": "confirm",
+      "complete": true,
+      "shadow_price": 500.0,
+      "candidate_bonds": [
+        128,
+        256,
+        512
+      ],
+      "uses_dense_exact_errors_for_selection": false,
+      "first_term_source": "exact telescope",
+      "first_term_pair": 0.015652463329865085,
+      "operator_correction_pair": 4.368207506986738e-08,
+      "certified_pair_width": 0.015652507011940153,
+      "mps_gap": 0.13603743450894812,
+      "certificate_margin": 0.12038492749700797,
+      "certified": true,
+      "paired_work_ratio_vs_fixed_R256_R256": 0.125,
+      "paired_work_saving_fraction": 0.875,
+      "methods": [
+        {
+          "method": "published_lr",
+          "bond_counts": {
+            "128": 210,
+            "256": 0,
+            "512": 0
+          },
+          "bond_transitions": 0,
+          "work_ratio_vs_fixed_R256": 0.125,
+          "causal_debt": 2.61513318444084e-08,
+          "operator_correction": 2.6151332672596283e-08,
+          "debt_reconstruction_error": 1.9852334701272664e-23,
+          "score_argmin_violations": 0,
+          "dense_checkpoints_audited": 210,
+          "dense_operator_violations": 0,
+          "dense_residual_violations": 0
+        },
+        {
+          "method": "prior_matched_random",
+          "bond_counts": {
+            "128": 210,
+            "256": 0,
+            "512": 0
+          },
+          "bond_transitions": 0,
+          "work_ratio_vs_fixed_R256": 0.125,
+          "causal_debt": 1.7530741358979875e-08,
+          "operator_correction": 1.7530742397271102e-08,
+          "debt_reconstruction_error": 9.926167350636332e-24,
+          "score_argmin_violations": 0,
+          "dense_checkpoints_audited": 210,
+          "dense_operator_violations": 0,
+          "dense_residual_violations": 0
+        }
+      ]
+    }
+  ],
+  "comparisons": {
+    "sorted_controller_work_vs_manual": 1.2072988333831887,
+    "spectral_controller_work_vs_manual": 0.7864193837870176,
+    "spectral_controller_work_multiple_vs_all_R128": 2.3684684684684685
+  },
+  "audit_totals": {
+    "score_argmin_violations": 0,
+    "dense_checkpoints_audited": 456,
+    "dense_operator_violations": 0,
+    "dense_residual_violations": 0,
+    "maximum_debt_reconstruction_error": 4.163336342344337e-17
+  }
+}

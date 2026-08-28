@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "claim_rejected": true,
+  "ansatz_rank_claim_killed": true,
+  "old_runtime_claim_killed": true,
+  "memory_compression_survives": true,
+  "files": {
+    "experiments/symmetry_claim_falsification/PROTOCOL.md": "a6de297ac1759bbb39ad65a721bebd57cf962884b61135f5fceae36f04bb48cc",
+    "experiments/symmetry_claim_falsification/run_symmetry_only.py": "3990e1c5c02f9080be54722e45ad29a339524b7adc1193a72cb4f731e6d02756",
+    "experiments/symmetry_claim_falsification/BOUND_PROTOCOL.md": "8f59b1b4de47ccd08830254769ecbacece01bba3b628b6333a736bee0f55c8cd",
+    "experiments/symmetry_claim_falsification/twin_structural.py": "bc4753b6ee7226ca3a1ab6b03759dfa4d224f7c47a303637cba7a93ba7307e3e",
+    "experiments/symmetry_claim_falsification/run_twin_bound.py": "242587c15f7614800361a2efd3205fe69dee9b19113b85854f2198bf97449efe",
+    "experiments/symmetry_claim_falsification/REAL_BOUND_PROTOCOL.md": "6870642ac940826522b7140066ef8c0c6a9a26dee14d2de167f91f41564a546c",
+    "experiments/symmetry_claim_falsification/run_real_bound.py": "bd0ceb86ac1cd67fa53e615d117672ba0379a2bd086dd821efc3ac3173c4ef2c",
+    "experiments/symmetry_claim_falsification/PERFORMANCE_PROTOCOL.md": "879009a92114120d0d8903f8f81b16ee1d3ad282d6a85db5485f0ea79d82c72b",
+    "experiments/symmetry_claim_falsification/run_performance.py": "c940e1d54e2d9f79ec692c7261cb5afc19280e5e25ce464e460fb968c36634dc",
+    "results/symmetry_claim_falsification/symmetry_only.json": "4e8e5444a738915128524aba18d7cb5fc5783c05416a03d12435f4dbed83528b",
+    "results/symmetry_claim_falsification/twin_bound.json": "78c5f2812d3dba7e1a120c206d2b43941e30c4f727bafd0e9d774385d2ab246f",
+    "results/symmetry_claim_falsification/real_bound.json": "269258e415c099965fc998b2781c24072395784947ae35a8f059634e8d2a5d06",
+    "results/symmetry_claim_falsification/performance.json": "d6f3981c58abbd123fa965683c01c82b805f515abb7c1815892451355d88843f",
+    "results/symmetry_claim_falsification/REPORT.md": "d886886baec34b32faff95cad72d18024945d0d170465570f3b22f43392a10fe"
+  }
+}

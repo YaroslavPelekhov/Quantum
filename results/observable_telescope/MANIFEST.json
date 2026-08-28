@@ -1,0 +1,66 @@
+{
+  "stage": "observable_telescope_manifest",
+  "complete": true,
+  "created_at": "2026-08-20T12:32:37.159708+00:00",
+  "git_head": "506c4f2504311fb854365d3917877a72227043e5",
+  "git_worktree_dirty_at_manifest_time": true,
+  "software": {
+    "python": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "qiskit": "2.5.1",
+    "qiskit_aer": "0.17.2",
+    "numpy": "2.5.1"
+  },
+  "sources": {
+    "experiments/observable_telescope/run_observable_telescope.py": {
+      "bytes": 17515,
+      "sha256": "0656bb8e091e11d9d05df6c48a232714ddf65452e6d6be794f64187c3b38567c"
+    },
+    "experiments/observable_telescope/run_observable_telescope_18q.py": {
+      "bytes": 12360,
+      "sha256": "e466d3aad59e521409045f97637a655281815efb437a75c8a847eabebe73afc8"
+    },
+    "experiments/observable_telescope/build_report.py": {
+      "bytes": 8259,
+      "sha256": "e44b0646ed97a15999aff095d2cb423ff3da71674d8b9fc86dff3283491bbce1"
+    },
+    "experiments/observable_telescope/test_observable_telescope.py": {
+      "bytes": 3779,
+      "sha256": "9c3882e5961908cba50b50170e238d02480500e25d881b23b29039e578aa9bb9"
+    },
+    "experiments/observable_telescope/README.md": {
+      "bytes": 906,
+      "sha256": "7cf1af4530f58a11a0c39badd15dfa78b25a2d2be7d28d9b23bf8d5157d62c4c"
+    }
+  },
+  "artifacts": {
+    "results/observable_telescope/schedule_rows.json": {
+      "bytes": 3085622,
+      "sha256": "ee5d7f4f8ce598f077324d1e6202b88a28c88aa1e4a2cbdff2829cd8e6d7f44a"
+    },
+    "results/observable_telescope/pair_rows.json": {
+      "bytes": 8409,
+      "sha256": "0078ddcaccceb2da4ae270479e43ce78c7b9131f7a06479a3d93edb3ebe7276c"
+    },
+    "results/observable_telescope/summary.json": {
+      "bytes": 661,
+      "sha256": "6f27c5abbe4e4f538ae2107a7a1f8e788b1c39b421a7625a09ad6d7bd9c8d139"
+    },
+    "results/observable_telescope/ibm32_released_sorted.json": {
+      "bytes": 399745,
+      "sha256": "8abf257f0b59dc202de3c4f59d4b3f264dbea76c1118d08850d073af26693409"
+    },
+    "results/observable_telescope/ibm32_confirm_sorted.json": {
+      "bytes": 400340,
+      "sha256": "4eb7747e510ceae553584dcc0bf751561ece50840df670c67bc4f3d667f886ac"
+    },
+    "results/observable_telescope/ibm32_cutoff1e-5_sorted.json": {
+      "bytes": 399930,
+      "sha256": "a321cddaf05b88785c93e92db3b727799bbb1f5e0e2ecb853f627668f71c49bc"
+    },
+    "results/observable_telescope/REPORT.md": {
+      "bytes": 4071,
+      "sha256": "0de1ec394a1d0558e6f8ffc756664680f288226d6a2e2327f3b95746e75e17f1"
+    }
+  }
+}

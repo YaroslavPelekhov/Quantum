@@ -1,0 +1,57 @@
+{
+  "complete": true,
+  "protocol_sha256": "879009a92114120d0d8903f8f81b16ee1d3ad282d6a85db5485f0ea79d82c72b",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "logical_cpus": 28,
+  "python": "3.13.0",
+  "numpy": "2.5.1",
+  "qiskit": "2.5.1",
+  "qiskit_aer": "0.17.2",
+  "aer_repetitions": 3,
+  "quotient_repetitions": 7,
+  "aer_transpile_seconds": 0.12178540008608252,
+  "quotient_compile_seconds": 2.263840699917637,
+  "aer_seconds": [
+    5.428897199919447,
+    4.63627080002334,
+    5.284837399958633
+  ],
+  "quotient_seconds": [
+    4.168823000043631,
+    4.17515609995462,
+    4.208350799977779,
+    4.306352499988861,
+    4.253559899982065,
+    4.290964300045744,
+    4.327307599945925
+  ],
+  "decision_three_cut_seconds": [
+    0.12338689994066954,
+    0.13058770005591214,
+    0.13537409994751215,
+    0.11535460001323372,
+    0.11583709996193647,
+    0.11695489997509867,
+    0.1155139000620693
+  ],
+  "aer_median_seconds": 5.284837399958633,
+  "quotient_median_seconds": 4.253559899982065,
+  "decision_median_seconds": 0.11695489997509867,
+  "median_steady_speedup": 1.2424504472079767,
+  "conservative_speedup": 1.0713984834545331,
+  "old_reported_speedup": 23.90407527830599,
+  "old_numeric_claim_survives": false,
+  "weaker_practical_speedup_survives": false,
+  "aer_errors": {
+    "amplitude": 4.544048461037981e-16,
+    "probability": 1.5287250632045613e-17
+  },
+  "quotient_errors": {
+    "amplitude": 5.928593550334434e-17,
+    "probability": 1.3010426069826053e-18
+  },
+  "exactness_pass": true,
+  "dense_state_bytes": 268435456,
+  "quotient_state_bytes": 26542080,
+  "representation_compression": 10.11358024691358
+}

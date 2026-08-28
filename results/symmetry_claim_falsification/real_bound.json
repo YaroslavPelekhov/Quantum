@@ -1,0 +1,278 @@
+{
+  "complete": true,
+  "protocol_sha256": "6870642ac940826522b7140066ef8c0c6a9a26dee14d2de167f91f41564a546c",
+  "selection_was_preexisting": true,
+  "rows": [
+    {
+      "case": "chesapeake",
+      "ordering": "reduced-natural",
+      "cuts": [
+        3
+      ],
+      "ranks": [
+        2
+      ],
+      "bounds": [
+        2
+      ],
+      "violations": 0,
+      "residual_cuts": []
+    },
+    {
+      "case": "football",
+      "ordering": "reduced-natural",
+      "cuts": [
+        3
+      ],
+      "ranks": [
+        4
+      ],
+      "bounds": [
+        4
+      ],
+      "violations": 0,
+      "residual_cuts": []
+    },
+    {
+      "case": "ibm32",
+      "ordering": "reduced-natural",
+      "cuts": [
+        9
+      ],
+      "ranks": [
+        4
+      ],
+      "bounds": [
+        4
+      ],
+      "violations": 0,
+      "residual_cuts": []
+    },
+    {
+      "case": "karate",
+      "ordering": "reduced-natural",
+      "cuts": [
+        1
+      ],
+      "ranks": [
+        2
+      ],
+      "bounds": [
+        2
+      ],
+      "violations": 0,
+      "residual_cuts": []
+    },
+    {
+      "case": "es60fst03",
+      "ordering": "reduced-natural",
+      "cuts": [
+        6
+      ],
+      "ranks": [
+        32
+      ],
+      "bounds": [
+        32
+      ],
+      "violations": 0,
+      "residual_cuts": []
+    },
+    {
+      "case": "mammalia-kangaroo-interactions",
+      "ordering": "reduced-natural",
+      "cuts": [
+        7
+      ],
+      "ranks": [
+        8
+      ],
+      "bounds": [
+        8
+      ],
+      "violations": 0,
+      "residual_cuts": []
+    },
+    {
+      "case": "es60fst01",
+      "ordering": "reduced-natural",
+      "cuts": [
+        7
+      ],
+      "ranks": [
+        22
+      ],
+      "bounds": [
+        22
+      ],
+      "violations": 0,
+      "residual_cuts": []
+    },
+    {
+      "case": "aves-sparrow-social",
+      "ordering": "sorted",
+      "cuts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "ranks": [
+        2,
+        4,
+        6,
+        8,
+        16,
+        16,
+        16,
+        16,
+        12,
+        12,
+        10,
+        16,
+        14,
+        8,
+        16,
+        8,
+        12,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "bounds": [
+        2,
+        4,
+        6,
+        8,
+        16,
+        16,
+        16,
+        16,
+        12,
+        12,
+        10,
+        16,
+        14,
+        8,
+        16,
+        8,
+        12,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "violations": 0,
+      "residual_cuts": []
+    },
+    {
+      "case": "aves-sparrow-social",
+      "ordering": "spectral",
+      "cuts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "ranks": [
+        2,
+        4,
+        6,
+        6,
+        4,
+        4,
+        6,
+        6,
+        8,
+        8,
+        8,
+        8,
+        8,
+        10,
+        10,
+        14,
+        14,
+        28,
+        14,
+        16,
+        8,
+        8,
+        8
+      ],
+      "bounds": [
+        2,
+        4,
+        6,
+        6,
+        4,
+        4,
+        6,
+        6,
+        8,
+        8,
+        8,
+        8,
+        8,
+        10,
+        10,
+        14,
+        14,
+        28,
+        14,
+        16,
+        8,
+        8,
+        8
+      ],
+      "violations": 0,
+      "residual_cuts": []
+    }
+  ],
+  "tested_rank_rows": 53,
+  "bound_violations": 0,
+  "residual_rows": 0,
+  "all_ranks_equal_bound": true
+}

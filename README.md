@@ -1,5 +1,9 @@
 # Quantum x Evolutionary Computing Research Artifact
 
+Latest comparison-native result: [Signed reduced-density truncation](results/signed_reduced_density_truncation/REPORT.md) provides a sharp local-observable minimax certificate, a pure-state rank separation, and a frozen `ibm32`/`aves` transfer benchmark. Its global-BKS end-to-end extension remains open.
+
+The subsequent [decision-balanced truncation](results/decision_balanced_truncation/REPORT.md) study found a 6/6 equal-work development result, but only 3/6 on a frozen held-out schedule pair; the universal end-to-end claim is therefore closed.
+
 Reproducible research repository on evolutionary QAOA schedule transfer and
 the reliability of approximate tensor-network benchmarking on real QOBLIB
 Maximum Independent Set instances.
@@ -48,6 +52,114 @@ effect margin. The descriptive Fisher comparison across the certificate
 threshold is `p=4.30e-7`; the guarantee itself is deterministic and does not
 depend on that statistical test.
 
+## Observable-Telescope RankCert follow-up
+
+The latest follow-up replaces the globally accumulated MPS angle with a
+BKS-observable-specific exact telescope. On the identical 7-qubit cohort it
+strictly certifies **14/20** LR-vs-MR rankings, versus **4/20** for the original
+accumulated-angle bound, with zero wrong certified signs. A memory-bounded 18q
+pilot on the real `ibm32` circuit certifies the `confirm` (bond 128, cutoff
+`1e-4`) and `cutoff1e-5` settings; the released low-resource setting correctly
+remains uncertified.
+
+This is an a posteriori exact-backward verifier and still scales exponentially;
+it is evidence for an observable-aware certificate design, not yet the final
+scalable algorithm. See the [combined research report](results/observable_telescope/REPORT.md)
+and [reproduction commands](experiments/observable_telescope/README.md).
+
+A subsequent [Certified Compressed Observable Telescope audit](results/compressed_observable_telescope/REPORT.md)
+proved and tested the proposed compressed bound on `ibm32`. Fixed backward
+bonds 8-64 fail, but the residual-aware depth-adaptive construction preserves
+the ranking certificate with residual bond 256: full paired width `0.210617`
+versus MPS gap `0.254904`, leaving margin `0.044287`. Residual bond 128 fails,
+providing a measured compression threshold rather than a post-hoc success-only
+claim. The primary backward bond rises from 64 on the easy suffix to the exact
+18-qubit central rank 512 only where entanglement requires it. Without retuning,
+the prespecified R256 endpoint also passes a frozen spectral-ordering held-out
+test with width `0.060896` versus gap `0.253936`.
+
+A subsequent frozen local test evaluated whether forward Schmidt modes should
+instead be selected directly for BKS accuracy. On the diagnosed `ibm32`
+checkpoint, the goal-aware subset improved BKS error by only `1.019x` at the
+same rank, while Schmidt mass and decision importance had Spearman correlation
+`0.99944`. Neighboring cuts gave at most `1.049x`. This negative kill-test does
+not support building a decision-optimal MPS simulator from the current
+single-observable subset objective; see the
+[DOT report](results/dot_mps_kill_test/REPORT.md).
+
+The current A*-level direction is joint decision-certified resource allocation,
+not a new Schmidt truncation heuristic. On the complete 5 x 5 `ibm32/sorted`
+portfolio, allowing different accuracy levels for the two competing trajectories
+finds `released/confirm` as the minimum-cost certified pair: 20.024 s versus
+22.451 s for the best symmetric `confirm/confirm` pair, a 10.81% measured
+forward-simulation saving. The allocation was then frozen before a spectral
+held-out run; it again certified the correct direction and used 12.742 s versus
+13.759 s, a 7.39% saving. See the
+[allocation report](results/decision_certified_allocation/REPORT.md),
+[theorem and novelty boundary](experiments/decision_certified_allocation/NOVELTY_AND_THEOREM.md),
+and [frozen held-out protocol](experiments/decision_certified_allocation/SPECTRAL_HELDOUT_PROTOCOL.md).
+
+The next refinement allocates the COT residual-witness bond jointly across
+trajectory and checkpoint. A prespecified schedule built by independently
+mixing fixed R128/R256 checkpoint diagnostics failed by `1.95e-4`, demonstrating
+the irreversible residual-tail effect. A causal asymmetric rescue then used
+R256/R128 only on the difficult LR witness and fixed R128 on matched-random. On
+`ibm32/sorted` it retained a strict certificate (width `0.247714` versus gap
+`0.254904`, margin `0.007191`) with **62.35% lower paired cubic bond-work** than
+R256/R256. The schedule retained soundness on the frozen spectral transfer, but
+used `3.012x` the work of the already sufficient spectral R128/R128 baseline;
+resource optimality therefore did not transfer. See the
+[causal allocation report](results/decision_certified_bond_allocation/REPORT.md),
+[proof](experiments/decision_certified_bond_allocation/THEORY.md), and
+[literature boundary](experiments/decision_certified_bond_allocation/LITERATURE_POSITIONING.md).
+
+The central methodological refinement is now **causal certification debt**.
+For local certified residual increments `e_kj`, checkpoint weights `a_t`, and
+backward propagation `j -> {t:t<=j}`, the exact finite-sum identity
+
+```text
+sum_t,k a_t xi_kt = sum_j,k Lambda_j e_kj,
+Lambda_j = sum_{t<=j} a_t
+```
+
+turns an irreversible future error burden into a price available at the moment
+of compression. The proof includes the rank-two observable, explicit numerical
+floor, capped enclosure, placement theorem, and KKT relaxation. An oracle-free
+controller with one frozen shadow price then chooses residual bonds from
+`{128,256,512}` without using dense errors or the exact answer.
+
+On `ibm32/sorted` it certifies width `0.211779 < 0.254904` while saving **54.55%**
+paired cubic bond-work versus R256/R256. With no retuning, spectral certifies
+`0.063044 < 0.253936` at **70.39%** saving. On the separate QOBLIB `chesapeake`
+control it selects R128 at every checkpoint and certifies with 87.5% nominal
+saving. Across 456 dense audit checkpoints there are zero enclosure violations,
+and every selected bond is the argmin of the frozen score. These are feasible
+upper bounds within the stated policy class, not proofs of globally minimal
+decision-certification cost; spectral still uses `2.368x` the already sufficient
+all-R128 baseline. See the [proof and identity audit](experiments/causal_certification_debt/THEOREMS.md),
+[frozen protocol](experiments/causal_certification_debt/CONTROLLER_PROTOCOL.md), and
+[controller report](results/causal_certification_debt/CONTROLLER_REPORT.md).
+
+The latest follow-up retains the signed compressed telescope contributions
+instead of replacing every local term by its absolute value. This gives a
+rigorous interval centered at the MPS gap corrected by the paired signed
+telescope residual, while the unknown compressed-observable remainder remains
+fully adversarial. On `ibm32/sorted`, the frozen R32/R32 residual policy is
+certified with interval `[-0.453426,-0.038820]`; the legacy absolute-sum COT
+abstains at the same resource point. The policy uses **99.80% less nominal
+paired cubic residual work** than R256/R256. After hash freeze it transfers to
+spectral ordering with interval `[-0.265197,-0.227049]` and no retuning.
+
+The low-bond ladder also reveals a certified residual-policy rank reversal:
+R32 has a smaller integrated sorted LR remainder than R64, R96, and R128.
+Spectral ordering retains a later-depth version of the reversal. Across 144
+dense low-bond audit rows there are zero operator violations. This is a
+path-dependent certificate result, not a claim that lower-bond MPS states are
+generally more accurate or that total COT runtime falls by 99.80%. See the
+[signed decision report](results/signed_decision_cot/RESEARCH_REPORT.md),
+[proof](experiments/signed_decision_cot/THEORY.md), and
+[frozen transfer protocol](experiments/signed_decision_cot/SPECTRAL_TRANSFER_PROTOCOL.md).
+
 ## Motivating 55-qubit result
 
 On `es60fst02` (186 original vertices, 55-qubit depth-15 circuit), the released
@@ -69,6 +181,16 @@ simulation, not optimizer or solver superiority.
 - [Frozen cross-case protocol](experiments/evoq_mis_full_qoblib/CROSS_CASE_REPLICATION_PROTOCOL.md)
 - [Complete cross-case analysis](experiments/evoq_mis_full_qoblib/results/cross_case_replication/analysis.json)
 - [Publication figure](experiments/evoq_mis_full_qoblib/results/figures/cross_case_replication.pdf)
+- [Signed decision-COT research report](results/signed_decision_cot/RESEARCH_REPORT.md)
+- [Equal-work reset-intervention report](results/signed_decision_cot/RESET_INTERVENTION_REPORT.md)
+- [Frozen reset-intervention protocol](experiments/signed_decision_cot/RESET_INTERVENTION_PROTOCOL.md)
+- [Contrastive tensor simulation kill-test](results/contrastive_tensor_simulation/REPORT.md)
+- [Frozen contrastive protocol](experiments/contrastive_tensor_simulation/PROTOCOL.md)
+- [Signed reduced-density truncation report](results/signed_reduced_density_truncation/REPORT.md)
+- [Decision-balanced truncation report](results/decision_balanced_truncation/REPORT.md)
+- [Global decision-balanced contraction report](results/global_decision_balanced_contraction/REPORT.md)
+- [Decision-conditioned SRDT report](results/decision_conditioned_srdt/REPORT.md)
+- [Sparse-MPS DCS-RDT constructibility kill test](results/sparse_mps_dcsrdt/REPORT.md)
 - [Detailed reproduction guide](REPRODUCIBILITY.md)
 
 ## Repository map
@@ -82,6 +204,46 @@ experiments/evoq_mis_full_qoblib/
   test_*.py                       29 integrity/numerical tests
   *_PROTOCOL.md                   frozen decisions before target execution
   artifact_manifest.json         SHA-256 inventory of public artifacts
+experiments/rankcert_mps/         accumulated-angle certificate and Aer audit
+experiments/decisioncert_mps/     decision-aware bounds and held-out checks
+experiments/observable_telescope/ exact-backward 7q/18q verifier
+experiments/compressed_observable_telescope/ compressed-bound proof and 18q audit
+experiments/decision_certified_allocation/ joint asymmetric decision allocation
+experiments/decision_certified_bond_allocation/ causal per-witness bond allocation
+experiments/causal_certification_debt/ proof, frozen controller, tests
+experiments/signed_decision_cot/ signed interval, low-bond and reset protocols
+experiments/contrastive_tensor_simulation/ comparison-native TT/M-D kill tests
+experiments/signed_reduced_density_truncation/ signed local truncation and certificate
+experiments/decision_balanced_truncation/ local Petrov--Galerkin transfer test
+experiments/global_decision_balanced_contraction/ global linear contraction kill test
+experiments/decision_conditioned_srdt/ target-conditioned SRDT theorem and transfer
+experiments/sparse_mps_dcsrdt/ direct MPS construction and frozen kill test
+experiments/dcsrdt_structural_audit/ event-support and Haar falsification
+experiments/coherent_frontier_rank/ phase and schedule-pair controls
+experiments/ansatz_event_rank/ broad synthetic QAOA kill test
+experiments/symmetry_quotient_decision_rank/ symmetry-rich MIS rank transfer
+experiments/symmetry_quotient_backend/ exact twin-orbit QAOA and decision core
+experiments/symmetry_quotient_breadth/ all-case QOBLIB exact controls
+experiments/symmetry_claim_falsification/ symmetry-preserving rank and optimized-baseline kill tests
+results/observable_telescope/     compact tables, raw contributions, report
+results/compressed_observable_telescope/ bond ladder, oracle audits, verdict
+results/decision_certified_allocation/ 5x5 grid and frozen held-out result
+results/decision_certified_bond_allocation/ causal schedules, proofs, and audits
+results/causal_certification_debt/ identity/controller audits and manifests
+results/signed_decision_cot/ signed intervals, path/reset audits, hash manifests
+results/contrastive_tensor_simulation/ equal-budget benchmark and full-M/D audit
+results/signed_reduced_density_truncation/ local theorem and real/synthetic benchmarks
+results/decision_balanced_truncation/ development and held-out transfer verdict
+results/global_decision_balanced_contraction/ frozen development failure and manifest
+results/decision_conditioned_srdt/ global-gap local operator benchmark and manifest
+results/sparse_mps_dcsrdt/ constructibility identity failure and diagnosis
+results/dcsrdt_structural_audit/ structural matching audit and corrected verdict
+results/coherent_frontier_rank/ probability/phase/schedule controls
+results/ansatz_event_rank/ failed broad generalization
+results/symmetry_quotient_decision_rank/ 4/4 development and 2/2 transfer
+results/symmetry_quotient_backend/ real 24q statevector-free 2/2 validation and completion audit
+results/symmetry_quotient_breadth/ pre-existing cohort 7/7 breadth validation
+results/symmetry_claim_falsification/ current verdict: prior symmetry/event claim rejected
 docs/QUANTUM_EVOLUTION_RESEARCH_MAP.md
 prior_work/evolutionary_computing_portfolio/
 QOBLIB, metriq-gym, baselines/    pinned upstream Git submodules
@@ -122,8 +284,9 @@ metrics, and certificate analysis are reviewable without them.
 - Both backend axis-convention self-tests pass at near-machine precision.
 - All long jobs use atomic checkpoints and hash-bound frozen manifests.
 - Manuscript and supplement were rendered and visually checked page by page.
-- Raw counts, errors, runtimes, software versions, and failed attempts are
-  retained rather than silently removed.
+- Structured event records, errors, runtimes, software versions, and failed
+  attempts are retained. Verbose ignored `.mps.log` streams can be regenerated
+  from the frozen inputs and are not part of the portable artifact.
 
 ## Scope and limitations
 

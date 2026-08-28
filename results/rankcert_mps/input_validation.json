@@ -1,0 +1,593 @@
+{
+  "stage": "rankcert_frozen_input_validation",
+  "complete": true,
+  "created_at": "2026-08-17T19:48:09.435297+00:00",
+  "immutable_inputs_only": true,
+  "manifests": [
+    {
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\export_manifest.json",
+      "sha256": "37339dd66645c16b9fc077ddb09e68cb5c70216e41f4b779aa9d50687d931f80"
+    },
+    {
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\independent_ladder\\export_manifest.json",
+      "sha256": "0acef4c08541207e7cef68df81c1a8561edd02a8e7ad5c8df9b773f91ab14877"
+    },
+    {
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\external_validity\\exact_statevector.json",
+      "sha256": "88f04008a1d50e9057a4e46357e439c2ba9d08a71cc75f339cf8bd976d288670"
+    },
+    {
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\mps_ladder\\exact_references.json",
+      "sha256": "8ac5cbb8976794ac6bde9a1009f995526c89e805787691b158886928d5027130"
+    },
+    {
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\mps_ladder\\mps_ladder.json",
+      "sha256": "05c9fa966ca9852aed16c6b3377b46275ebe2e4b1ac0da135b8ffb7635ec66a8"
+    },
+    {
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\aer_jobs.json",
+      "sha256": "39e5361bad6a568abc6b7a667ee99d50b27b9d4aa406e9af8ed14953629d9d11"
+    }
+  ],
+  "settings": [
+    {
+      "name": "released",
+      "bond": 64,
+      "cutoff": 0.001
+    },
+    {
+      "name": "confirm",
+      "bond": 128,
+      "cutoff": 0.0001
+    },
+    {
+      "name": "bond128",
+      "bond": 128,
+      "cutoff": 1e-12
+    },
+    {
+      "name": "cutoff1e-4",
+      "bond": 1024,
+      "cutoff": 0.0001
+    },
+    {
+      "name": "cutoff1e-5",
+      "bond": 1024,
+      "cutoff": 1e-05
+    }
+  ],
+  "effects": [
+    {
+      "case": "karate",
+      "ordering": "sorted",
+      "p_bks_exact_lr": 0.9088221515603738,
+      "p_bks_exact_mr": 0.995234158667834,
+      "exact_delta": 0.08641200710746022,
+      "rounded_target": 0.086412,
+      "rounded_agreement": true
+    },
+    {
+      "case": "karate",
+      "ordering": "spectral",
+      "p_bks_exact_lr": 0.908822151560374,
+      "p_bks_exact_mr": 0.9952341586678336,
+      "exact_delta": 0.08641200710745955,
+      "rounded_target": 0.086412,
+      "rounded_agreement": true
+    },
+    {
+      "case": "chesapeake",
+      "ordering": "sorted",
+      "p_bks_exact_lr": 0.7982931304718344,
+      "p_bks_exact_mr": 0.6640795390180093,
+      "exact_delta": -0.13421359145382505,
+      "rounded_target": -0.134214,
+      "rounded_agreement": true
+    },
+    {
+      "case": "chesapeake",
+      "ordering": "spectral",
+      "p_bks_exact_lr": 0.7982931304718348,
+      "p_bks_exact_mr": 0.6640795390180081,
+      "exact_delta": -0.13421359145382672,
+      "rounded_target": -0.134214,
+      "rounded_agreement": true
+    },
+    {
+      "case": "football",
+      "ordering": "sorted",
+      "p_bks_exact_lr": 0.8627678117715563,
+      "p_bks_exact_mr": 0.8820366866508706,
+      "exact_delta": 0.01926887487931439,
+      "rounded_target": 0.019269,
+      "rounded_agreement": true
+    },
+    {
+      "case": "football",
+      "ordering": "spectral",
+      "p_bks_exact_lr": 0.8627678117715568,
+      "p_bks_exact_mr": 0.8820366866508698,
+      "exact_delta": 0.019268874879312947,
+      "rounded_target": 0.019269,
+      "rounded_agreement": true
+    },
+    {
+      "case": "ibm32",
+      "ordering": "sorted",
+      "p_bks_exact_lr": 0.3770863914362438,
+      "p_bks_exact_mr": 0.13096339030811388,
+      "exact_delta": -0.2461230011281299,
+      "rounded_target": -0.246123,
+      "rounded_agreement": true
+    },
+    {
+      "case": "ibm32",
+      "ordering": "spectral",
+      "p_bks_exact_lr": 0.3770863914362447,
+      "p_bks_exact_mr": 0.1309633903081142,
+      "exact_delta": -0.24612300112813046,
+      "rounded_target": -0.246123,
+      "rounded_agreement": true
+    },
+    {
+      "case": "aves-sparrow-social",
+      "ordering": "sorted",
+      "p_bks_exact_lr": 0.323276729620773,
+      "p_bks_exact_mr": 0.3111378777293451,
+      "exact_delta": -0.012138851891427882,
+      "rounded_target": -0.012139,
+      "rounded_agreement": true
+    },
+    {
+      "case": "aves-sparrow-social",
+      "ordering": "spectral",
+      "p_bks_exact_lr": 0.32327672962077314,
+      "p_bks_exact_mr": 0.31113787772934526,
+      "exact_delta": -0.012138851891427882,
+      "rounded_target": -0.012139,
+      "rounded_agreement": true
+    }
+  ],
+  "files": [
+    {
+      "case": "karate",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "kind": "circuit",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\circuits\\karate__published_lr__sorted.qpy",
+      "bytes": 8788,
+      "expected_sha256": "16aaef638e6760a26466ae333df17b34cd5348ece69e1ec67624cfe091d17861",
+      "actual_sha256": "16aaef638e6760a26466ae333df17b34cd5348ece69e1ec67624cfe091d17861",
+      "valid": true
+    },
+    {
+      "case": "karate",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "kind": "reference",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\references\\karate__published_lr__sorted.npy",
+      "bytes": 256,
+      "expected_sha256": "3f952286c9e50f55f5a763c84d6b113ff3733bab9f93a6c5ab2324583cd76a70",
+      "actual_sha256": "3f952286c9e50f55f5a763c84d6b113ff3733bab9f93a6c5ab2324583cd76a70",
+      "valid": true
+    },
+    {
+      "case": "karate",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "kind": "circuit",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\circuits\\karate__published_lr__spectral.qpy",
+      "bytes": 8788,
+      "expected_sha256": "932e6ec682400982adfaf96bbf0ad3e1254e30304217729e0694bbc2f4375960",
+      "actual_sha256": "932e6ec682400982adfaf96bbf0ad3e1254e30304217729e0694bbc2f4375960",
+      "valid": true
+    },
+    {
+      "case": "karate",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "kind": "reference",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\references\\karate__published_lr__spectral.npy",
+      "bytes": 256,
+      "expected_sha256": "38e0f86d6ba0fcbfce7e0d17a2787f4c1148d9e095ef5c177679d9329d19e537",
+      "actual_sha256": "38e0f86d6ba0fcbfce7e0d17a2787f4c1148d9e095ef5c177679d9329d19e537",
+      "valid": true
+    },
+    {
+      "case": "karate",
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "kind": "circuit",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\circuits\\karate__prior_matched_random__sorted.qpy",
+      "bytes": 8788,
+      "expected_sha256": "35a7e1b6ba9d9048981dd77d091e30b86f00d7b6f9e08b141d16718d567a7abe",
+      "actual_sha256": "35a7e1b6ba9d9048981dd77d091e30b86f00d7b6f9e08b141d16718d567a7abe",
+      "valid": true
+    },
+    {
+      "case": "karate",
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "kind": "reference",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\references\\karate__prior_matched_random__sorted.npy",
+      "bytes": 256,
+      "expected_sha256": "334fd6cbba7b5e42a371156d831591db74b53d55456efcde998fb75de6a32b88",
+      "actual_sha256": "334fd6cbba7b5e42a371156d831591db74b53d55456efcde998fb75de6a32b88",
+      "valid": true
+    },
+    {
+      "case": "karate",
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "kind": "circuit",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\circuits\\karate__prior_matched_random__spectral.qpy",
+      "bytes": 8788,
+      "expected_sha256": "fa012348762c5c8f33a85b9bce1f1986ab4c8ea8ae98d009888d3580162f4123",
+      "actual_sha256": "fa012348762c5c8f33a85b9bce1f1986ab4c8ea8ae98d009888d3580162f4123",
+      "valid": true
+    },
+    {
+      "case": "karate",
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "kind": "reference",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\references\\karate__prior_matched_random__spectral.npy",
+      "bytes": 256,
+      "expected_sha256": "256b7e0b4ab3cb210bae5ec8bcb696c0c09da7c57630bd2b22f958de65bcc0bf",
+      "actual_sha256": "256b7e0b4ab3cb210bae5ec8bcb696c0c09da7c57630bd2b22f958de65bcc0bf",
+      "valid": true
+    },
+    {
+      "case": "chesapeake",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "kind": "circuit",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\circuits\\chesapeake__published_lr__sorted.qpy",
+      "bytes": 27367,
+      "expected_sha256": "02fcc7d04a10b262d867653a6d6b3876bccac57b1e1a22c457357575f111a2e9",
+      "actual_sha256": "02fcc7d04a10b262d867653a6d6b3876bccac57b1e1a22c457357575f111a2e9",
+      "valid": true
+    },
+    {
+      "case": "chesapeake",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "kind": "reference",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\references\\chesapeake__published_lr__sorted.npy",
+      "bytes": 2176,
+      "expected_sha256": "3299bd37610b48305ad54e71b0c65d901396103ea87be2f834d9af057506883b",
+      "actual_sha256": "3299bd37610b48305ad54e71b0c65d901396103ea87be2f834d9af057506883b",
+      "valid": true
+    },
+    {
+      "case": "chesapeake",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "kind": "circuit",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\circuits\\chesapeake__published_lr__spectral.qpy",
+      "bytes": 27367,
+      "expected_sha256": "b70b87114143b211075d18dfd2cee48379b8d9984347da8b9dbfa4d75782e677",
+      "actual_sha256": "b70b87114143b211075d18dfd2cee48379b8d9984347da8b9dbfa4d75782e677",
+      "valid": true
+    },
+    {
+      "case": "chesapeake",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "kind": "reference",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\references\\chesapeake__published_lr__spectral.npy",
+      "bytes": 2176,
+      "expected_sha256": "bc467e7c2ae3c0423e9d2add9585271afdf4f144ba552634073f5c54a45ad9a2",
+      "actual_sha256": "bc467e7c2ae3c0423e9d2add9585271afdf4f144ba552634073f5c54a45ad9a2",
+      "valid": true
+    },
+    {
+      "case": "chesapeake",
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "kind": "circuit",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\circuits\\chesapeake__prior_matched_random__sorted.qpy",
+      "bytes": 27367,
+      "expected_sha256": "f1d5e3cdd24d4be91b3e3a91da8105a8a12695da5251a86453a4a67a5d2b9672",
+      "actual_sha256": "f1d5e3cdd24d4be91b3e3a91da8105a8a12695da5251a86453a4a67a5d2b9672",
+      "valid": true
+    },
+    {
+      "case": "chesapeake",
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "kind": "reference",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\references\\chesapeake__prior_matched_random__sorted.npy",
+      "bytes": 2176,
+      "expected_sha256": "33319123140073d884ee12615177491b2f21a260d7ae4f2539de4004b98af56a",
+      "actual_sha256": "33319123140073d884ee12615177491b2f21a260d7ae4f2539de4004b98af56a",
+      "valid": true
+    },
+    {
+      "case": "chesapeake",
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "kind": "circuit",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\circuits\\chesapeake__prior_matched_random__spectral.qpy",
+      "bytes": 27367,
+      "expected_sha256": "2a8fea151092fa42dbafe5c2ded6d198206a7084ac9539fb5710e0d9724cf265",
+      "actual_sha256": "2a8fea151092fa42dbafe5c2ded6d198206a7084ac9539fb5710e0d9724cf265",
+      "valid": true
+    },
+    {
+      "case": "chesapeake",
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "kind": "reference",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\references\\chesapeake__prior_matched_random__spectral.npy",
+      "bytes": 2176,
+      "expected_sha256": "db81d543f698635eefdcdcdca46d68e20a638d3e612395901138136957cd5876",
+      "actual_sha256": "db81d543f698635eefdcdcdca46d68e20a638d3e612395901138136957cd5876",
+      "valid": true
+    },
+    {
+      "case": "football",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "kind": "circuit",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\circuits\\football__published_lr__sorted.qpy",
+      "bytes": 24352,
+      "expected_sha256": "093e3201a84d816685dd2caa55a1d3dfdb2e7ec0acbc1e7e1ccb81e6a8c82533",
+      "actual_sha256": "093e3201a84d816685dd2caa55a1d3dfdb2e7ec0acbc1e7e1ccb81e6a8c82533",
+      "valid": true
+    },
+    {
+      "case": "football",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "kind": "reference",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\references\\football__published_lr__sorted.npy",
+      "bytes": 2176,
+      "expected_sha256": "8f8f81246c16c4b4b1696c5ea6647a2ecc45539b6b9d98956a456c8efa174bf0",
+      "actual_sha256": "8f8f81246c16c4b4b1696c5ea6647a2ecc45539b6b9d98956a456c8efa174bf0",
+      "valid": true
+    },
+    {
+      "case": "football",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "kind": "circuit",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\circuits\\football__published_lr__spectral.qpy",
+      "bytes": 24352,
+      "expected_sha256": "aba61caf0209628f8fadd3af3bb5a6a6b44ca8c3f4ddc10dae649062e2d05dbe",
+      "actual_sha256": "aba61caf0209628f8fadd3af3bb5a6a6b44ca8c3f4ddc10dae649062e2d05dbe",
+      "valid": true
+    },
+    {
+      "case": "football",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "kind": "reference",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\references\\football__published_lr__spectral.npy",
+      "bytes": 2176,
+      "expected_sha256": "07ef350b83cdc6d88bec579264c8df7964880d5701935d96faf56a4ffac51bdc",
+      "actual_sha256": "07ef350b83cdc6d88bec579264c8df7964880d5701935d96faf56a4ffac51bdc",
+      "valid": true
+    },
+    {
+      "case": "football",
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "kind": "circuit",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\circuits\\football__prior_matched_random__sorted.qpy",
+      "bytes": 24352,
+      "expected_sha256": "769b1bd4951dc0bbaf323209e3ea97e056cf3b3f338a3c7a54850ca6a1eb885d",
+      "actual_sha256": "769b1bd4951dc0bbaf323209e3ea97e056cf3b3f338a3c7a54850ca6a1eb885d",
+      "valid": true
+    },
+    {
+      "case": "football",
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "kind": "reference",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\references\\football__prior_matched_random__sorted.npy",
+      "bytes": 2176,
+      "expected_sha256": "228d66ea463640617367900d3a03bd2f825b98ee164e6e7f1f5064acd5403d0f",
+      "actual_sha256": "228d66ea463640617367900d3a03bd2f825b98ee164e6e7f1f5064acd5403d0f",
+      "valid": true
+    },
+    {
+      "case": "football",
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "kind": "circuit",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\circuits\\football__prior_matched_random__spectral.qpy",
+      "bytes": 24352,
+      "expected_sha256": "49f11250c9649cf1d9f9885652767f4884c681083deebd0fc3b92443f8dc3deb",
+      "actual_sha256": "49f11250c9649cf1d9f9885652767f4884c681083deebd0fc3b92443f8dc3deb",
+      "valid": true
+    },
+    {
+      "case": "football",
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "kind": "reference",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\references\\football__prior_matched_random__spectral.npy",
+      "bytes": 2176,
+      "expected_sha256": "51dc991e4cf139b0be4e0fd14836fd057c838eecbbd6e0c4e5b8a7eb4ec1ffa6",
+      "actual_sha256": "51dc991e4cf139b0be4e0fd14836fd057c838eecbbd6e0c4e5b8a7eb4ec1ffa6",
+      "valid": true
+    },
+    {
+      "case": "ibm32",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "kind": "circuit",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\circuits\\ibm32__published_lr__sorted.qpy",
+      "bytes": 71174,
+      "expected_sha256": "2649b1c828b2c4e5c5fd88023814d10f5b955110adbe244c4317dbc4b513922b",
+      "actual_sha256": "2649b1c828b2c4e5c5fd88023814d10f5b955110adbe244c4317dbc4b513922b",
+      "valid": true
+    },
+    {
+      "case": "ibm32",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "kind": "reference",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\references\\ibm32__published_lr__sorted.npy",
+      "bytes": 4194432,
+      "expected_sha256": "e48a7861528e8f54f0636900c6731cd4436c6594a1dc3d273f0920e44fec225d",
+      "actual_sha256": "e48a7861528e8f54f0636900c6731cd4436c6594a1dc3d273f0920e44fec225d",
+      "valid": true
+    },
+    {
+      "case": "ibm32",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "kind": "circuit",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\circuits\\ibm32__published_lr__spectral.qpy",
+      "bytes": 71174,
+      "expected_sha256": "90732484a9b56e80321268071d57977a4492b02d77f37ddf9cc0578c6b906ab3",
+      "actual_sha256": "90732484a9b56e80321268071d57977a4492b02d77f37ddf9cc0578c6b906ab3",
+      "valid": true
+    },
+    {
+      "case": "ibm32",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "kind": "reference",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\references\\ibm32__published_lr__spectral.npy",
+      "bytes": 4194432,
+      "expected_sha256": "20f25054a94540cc82bb0103a6602379b80710dc798b9e145235715f5e64cc97",
+      "actual_sha256": "20f25054a94540cc82bb0103a6602379b80710dc798b9e145235715f5e64cc97",
+      "valid": true
+    },
+    {
+      "case": "ibm32",
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "kind": "circuit",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\circuits\\ibm32__prior_matched_random__sorted.qpy",
+      "bytes": 71174,
+      "expected_sha256": "2d52084151b31f98e898b9bd15f204f028820269e96bab641c7da5eea7c1d044",
+      "actual_sha256": "2d52084151b31f98e898b9bd15f204f028820269e96bab641c7da5eea7c1d044",
+      "valid": true
+    },
+    {
+      "case": "ibm32",
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "kind": "reference",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\references\\ibm32__prior_matched_random__sorted.npy",
+      "bytes": 4194432,
+      "expected_sha256": "098291368157b4b74c96881b6dabe7e10bd69fd52996aefdbb9877773e2ef6e9",
+      "actual_sha256": "098291368157b4b74c96881b6dabe7e10bd69fd52996aefdbb9877773e2ef6e9",
+      "valid": true
+    },
+    {
+      "case": "ibm32",
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "kind": "circuit",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\circuits\\ibm32__prior_matched_random__spectral.qpy",
+      "bytes": 71174,
+      "expected_sha256": "70203a10a5ad2fe8f7bbc45f7b0ac13419d910ee3acbfbeb84f5d0caef37fb62",
+      "actual_sha256": "70203a10a5ad2fe8f7bbc45f7b0ac13419d910ee3acbfbeb84f5d0caef37fb62",
+      "valid": true
+    },
+    {
+      "case": "ibm32",
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "kind": "reference",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\references\\ibm32__prior_matched_random__spectral.npy",
+      "bytes": 4194432,
+      "expected_sha256": "b01287560f653ed3e9f3726f69db7e292192e8093cec910cb641fa6815c66e0c",
+      "actual_sha256": "b01287560f653ed3e9f3726f69db7e292192e8093cec910cb641fa6815c66e0c",
+      "valid": true
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "kind": "circuit",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\independent_ladder\\circuits\\published_lr__sorted.qpy",
+      "bytes": 104569,
+      "expected_sha256": "8f1f52511d2e7ddb511280c0651a154f65f72bc78bb82519a7c2481c8da38bcc",
+      "actual_sha256": "8f1f52511d2e7ddb511280c0651a154f65f72bc78bb82519a7c2481c8da38bcc",
+      "valid": true
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "kind": "reference",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\experiments\\evoq_mis_full_qoblib\\results\\mps_ladder\\references\\published_lr__sorted.npy",
+      "bytes": 268435584,
+      "expected_sha256": "f3a635daddfcc3bbcb88919eb0546cc5eac2219235d044dff8ed03633a4327b5",
+      "actual_sha256": "f3a635daddfcc3bbcb88919eb0546cc5eac2219235d044dff8ed03633a4327b5",
+      "valid": true
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "kind": "circuit",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\independent_ladder\\circuits\\published_lr__spectral.qpy",
+      "bytes": 104569,
+      "expected_sha256": "9b1c1d2a925d983cb94924134518dce4f0b15014f9c8e816ec312a43d8f9d4a1",
+      "actual_sha256": "9b1c1d2a925d983cb94924134518dce4f0b15014f9c8e816ec312a43d8f9d4a1",
+      "valid": true
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "kind": "reference",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\experiments\\evoq_mis_full_qoblib\\results\\mps_ladder\\references\\published_lr__spectral.npy",
+      "bytes": 268435584,
+      "expected_sha256": "783c5253dcfb7446b9c56af88f2ed9a6442b56fd84197a85c805003d605ed0ba",
+      "actual_sha256": "783c5253dcfb7446b9c56af88f2ed9a6442b56fd84197a85c805003d605ed0ba",
+      "valid": true
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "kind": "circuit",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\independent_ladder\\circuits\\prior_matched_random__sorted.qpy",
+      "bytes": 104569,
+      "expected_sha256": "b47569c2855a3e48c5358e5f98edb5b2be7b1e9181ea0596a1522c474efd2a8d",
+      "actual_sha256": "b47569c2855a3e48c5358e5f98edb5b2be7b1e9181ea0596a1522c474efd2a8d",
+      "valid": true
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "kind": "reference",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\experiments\\evoq_mis_full_qoblib\\results\\mps_ladder\\references\\prior_matched_random__sorted.npy",
+      "bytes": 268435584,
+      "expected_sha256": "8bb23194f7f81b486247460cb83c7fd931cc2c0c49fd275aac80b10606d8f092",
+      "actual_sha256": "8bb23194f7f81b486247460cb83c7fd931cc2c0c49fd275aac80b10606d8f092",
+      "valid": true
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "kind": "circuit",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\independent_ladder\\circuits\\prior_matched_random__spectral.qpy",
+      "bytes": 104569,
+      "expected_sha256": "ce6eb8f0be2542da966e4bba251ae7d12ddc697ea9ab4528ca13ffffe449469f",
+      "actual_sha256": "ce6eb8f0be2542da966e4bba251ae7d12ddc697ea9ab4528ca13ffffe449469f",
+      "valid": true
+    },
+    {
+      "case": "aves-sparrow-social",
+      "method": "prior_matched_random",
+      "ordering": "spectral",
+      "kind": "reference",
+      "path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\experiments\\evoq_mis_full_qoblib\\results\\mps_ladder\\references\\prior_matched_random__spectral.npy",
+      "bytes": 268435584,
+      "expected_sha256": "95c3f6503b6756deb85375f3ce61b7703f5d887f45f8f777238b62aa406c6afd",
+      "actual_sha256": "95c3f6503b6756deb85375f3ce61b7703f5d887f45f8f777238b62aa406c6afd",
+      "valid": true
+    }
+  ]
+}

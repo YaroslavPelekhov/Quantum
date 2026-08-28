@@ -1,0 +1,1608 @@
+{
+  "complete": true,
+  "protocol_sha256": "542db7e95ace27c01bc0caca76c2cfc4a2d4c0508598c3fbcfc8d6c290fb420d",
+  "rank_tolerance": 1e-12,
+  "rows": [
+    {
+      "case": "aves-sparrow-social",
+      "ordering": "sorted",
+      "qubits": 24,
+      "event_support": 132,
+      "cuts": [
+        {
+          "cut": 1,
+          "left_dimension": 2,
+          "s_left": 2,
+          "s_right": 132,
+          "left_bound": 4,
+          "right_bound": 528,
+          "paired_matching_width": 2,
+          "matching_bound": 4,
+          "structural_bound": 2,
+          "transformation_ranks": {
+            "original": 2,
+            "magnitude_only": 2,
+            "independent_phase": 2,
+            "common_diagonal_phase": 2,
+            "local_product_phase": 2
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 2,
+            "published_lr__vs__prior_evolutionary": 2,
+            "prior_matched_random__vs__prior_evolutionary": 2
+          },
+          "original_deficit": 0.0
+        },
+        {
+          "cut": 2,
+          "left_dimension": 4,
+          "s_left": 3,
+          "s_right": 114,
+          "left_bound": 6,
+          "right_bound": 456,
+          "paired_matching_width": 3,
+          "matching_bound": 6,
+          "structural_bound": 4,
+          "transformation_ranks": {
+            "original": 4,
+            "magnitude_only": 4,
+            "independent_phase": 4,
+            "common_diagonal_phase": 4,
+            "local_product_phase": 4
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 4,
+            "published_lr__vs__prior_evolutionary": 4,
+            "prior_matched_random__vs__prior_evolutionary": 4
+          },
+          "original_deficit": 0.0
+        },
+        {
+          "cut": 3,
+          "left_dimension": 8,
+          "s_left": 4,
+          "s_right": 96,
+          "left_bound": 8,
+          "right_bound": 384,
+          "paired_matching_width": 4,
+          "matching_bound": 8,
+          "structural_bound": 8,
+          "transformation_ranks": {
+            "original": 6,
+            "magnitude_only": 6,
+            "independent_phase": 8,
+            "common_diagonal_phase": 8,
+            "local_product_phase": 6
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 6,
+            "published_lr__vs__prior_evolutionary": 6,
+            "prior_matched_random__vs__prior_evolutionary": 6
+          },
+          "original_deficit": 0.25
+        },
+        {
+          "cut": 4,
+          "left_dimension": 16,
+          "s_left": 5,
+          "s_right": 96,
+          "left_bound": 10,
+          "right_bound": 384,
+          "paired_matching_width": 5,
+          "matching_bound": 10,
+          "structural_bound": 10,
+          "transformation_ranks": {
+            "original": 8,
+            "magnitude_only": 8,
+            "independent_phase": 10,
+            "common_diagonal_phase": 10,
+            "local_product_phase": 8
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 8,
+            "published_lr__vs__prior_evolutionary": 8,
+            "prior_matched_random__vs__prior_evolutionary": 8
+          },
+          "original_deficit": 0.19999999999999996
+        },
+        {
+          "cut": 5,
+          "left_dimension": 32,
+          "s_left": 10,
+          "s_right": 96,
+          "left_bound": 20,
+          "right_bound": 384,
+          "paired_matching_width": 10,
+          "matching_bound": 20,
+          "structural_bound": 20,
+          "transformation_ranks": {
+            "original": 16,
+            "magnitude_only": 16,
+            "independent_phase": 20,
+            "common_diagonal_phase": 20,
+            "local_product_phase": 16
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 16,
+            "published_lr__vs__prior_evolutionary": 16,
+            "prior_matched_random__vs__prior_evolutionary": 16
+          },
+          "original_deficit": 0.19999999999999996
+        },
+        {
+          "cut": 6,
+          "left_dimension": 64,
+          "s_left": 10,
+          "s_right": 96,
+          "left_bound": 20,
+          "right_bound": 384,
+          "paired_matching_width": 10,
+          "matching_bound": 20,
+          "structural_bound": 20,
+          "transformation_ranks": {
+            "original": 16,
+            "magnitude_only": 16,
+            "independent_phase": 20,
+            "common_diagonal_phase": 20,
+            "local_product_phase": 16
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 16,
+            "published_lr__vs__prior_evolutionary": 16,
+            "prior_matched_random__vs__prior_evolutionary": 16
+          },
+          "original_deficit": 0.19999999999999996
+        },
+        {
+          "cut": 7,
+          "left_dimension": 128,
+          "s_left": 15,
+          "s_right": 60,
+          "left_bound": 30,
+          "right_bound": 240,
+          "paired_matching_width": 15,
+          "matching_bound": 30,
+          "structural_bound": 30,
+          "transformation_ranks": {
+            "original": 16,
+            "magnitude_only": 16,
+            "independent_phase": 30,
+            "common_diagonal_phase": 30,
+            "local_product_phase": 16
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 16,
+            "published_lr__vs__prior_evolutionary": 16,
+            "prior_matched_random__vs__prior_evolutionary": 16
+          },
+          "original_deficit": 0.4666666666666667
+        },
+        {
+          "cut": 8,
+          "left_dimension": 256,
+          "s_left": 18,
+          "s_right": 48,
+          "left_bound": 36,
+          "right_bound": 192,
+          "paired_matching_width": 18,
+          "matching_bound": 36,
+          "structural_bound": 36,
+          "transformation_ranks": {
+            "original": 16,
+            "magnitude_only": 16,
+            "independent_phase": 36,
+            "common_diagonal_phase": 36,
+            "local_product_phase": 16
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 16,
+            "published_lr__vs__prior_evolutionary": 16,
+            "prior_matched_random__vs__prior_evolutionary": 16
+          },
+          "original_deficit": 0.5555555555555556
+        },
+        {
+          "cut": 9,
+          "left_dimension": 512,
+          "s_left": 18,
+          "s_right": 36,
+          "left_bound": 36,
+          "right_bound": 144,
+          "paired_matching_width": 18,
+          "matching_bound": 36,
+          "structural_bound": 36,
+          "transformation_ranks": {
+            "original": 12,
+            "magnitude_only": 12,
+            "independent_phase": 36,
+            "common_diagonal_phase": 32,
+            "local_product_phase": 12
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 12,
+            "published_lr__vs__prior_evolutionary": 12,
+            "prior_matched_random__vs__prior_evolutionary": 12
+          },
+          "original_deficit": 0.6666666666666667
+        },
+        {
+          "cut": 10,
+          "left_dimension": 1024,
+          "s_left": 18,
+          "s_right": 24,
+          "left_bound": 36,
+          "right_bound": 96,
+          "paired_matching_width": 15,
+          "matching_bound": 30,
+          "structural_bound": 30,
+          "transformation_ranks": {
+            "original": 12,
+            "magnitude_only": 12,
+            "independent_phase": 30,
+            "common_diagonal_phase": 30,
+            "local_product_phase": 12
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 12,
+            "published_lr__vs__prior_evolutionary": 12,
+            "prior_matched_random__vs__prior_evolutionary": 12
+          },
+          "original_deficit": 0.6
+        },
+        {
+          "cut": 11,
+          "left_dimension": 2048,
+          "s_left": 18,
+          "s_right": 18,
+          "left_bound": 36,
+          "right_bound": 72,
+          "paired_matching_width": 14,
+          "matching_bound": 28,
+          "structural_bound": 28,
+          "transformation_ranks": {
+            "original": 10,
+            "magnitude_only": 10,
+            "independent_phase": 28,
+            "common_diagonal_phase": 28,
+            "local_product_phase": 10
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 10,
+            "published_lr__vs__prior_evolutionary": 10,
+            "prior_matched_random__vs__prior_evolutionary": 10
+          },
+          "original_deficit": 0.6428571428571428
+        },
+        {
+          "cut": 12,
+          "left_dimension": 4096,
+          "s_left": 36,
+          "s_right": 18,
+          "left_bound": 72,
+          "right_bound": 72,
+          "paired_matching_width": 16,
+          "matching_bound": 32,
+          "structural_bound": 32,
+          "transformation_ranks": {
+            "original": 16,
+            "magnitude_only": 16,
+            "independent_phase": 32,
+            "common_diagonal_phase": 32,
+            "local_product_phase": 16
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 16,
+            "published_lr__vs__prior_evolutionary": 16,
+            "prior_matched_random__vs__prior_evolutionary": 16
+          },
+          "original_deficit": 0.5
+        },
+        {
+          "cut": 13,
+          "left_dimension": 8192,
+          "s_left": 54,
+          "s_right": 12,
+          "left_bound": 108,
+          "right_bound": 48,
+          "paired_matching_width": 14,
+          "matching_bound": 28,
+          "structural_bound": 28,
+          "transformation_ranks": {
+            "original": 14,
+            "magnitude_only": 14,
+            "independent_phase": 28,
+            "common_diagonal_phase": 28,
+            "local_product_phase": 14
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 14,
+            "published_lr__vs__prior_evolutionary": 14,
+            "prior_matched_random__vs__prior_evolutionary": 14
+          },
+          "original_deficit": 0.5
+        },
+        {
+          "cut": 14,
+          "left_dimension": 16384,
+          "s_left": 54,
+          "s_right": 6,
+          "left_bound": 108,
+          "right_bound": 24,
+          "paired_matching_width": 10,
+          "matching_bound": 20,
+          "structural_bound": 20,
+          "transformation_ranks": {
+            "original": 8,
+            "magnitude_only": 8,
+            "independent_phase": 20,
+            "common_diagonal_phase": 20,
+            "local_product_phase": 8
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 8,
+            "published_lr__vs__prior_evolutionary": 8,
+            "prior_matched_random__vs__prior_evolutionary": 8
+          },
+          "original_deficit": 0.6
+        },
+        {
+          "cut": 15,
+          "left_dimension": 32768,
+          "s_left": 108,
+          "s_right": 6,
+          "left_bound": 216,
+          "right_bound": 24,
+          "paired_matching_width": 12,
+          "matching_bound": 24,
+          "structural_bound": 24,
+          "transformation_ranks": {
+            "original": 16,
+            "magnitude_only": 16,
+            "independent_phase": 24,
+            "common_diagonal_phase": 24,
+            "local_product_phase": 16
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 16,
+            "published_lr__vs__prior_evolutionary": 16,
+            "prior_matched_random__vs__prior_evolutionary": 16
+          },
+          "original_deficit": 0.33333333333333337
+        },
+        {
+          "cut": 16,
+          "left_dimension": 65536,
+          "s_left": 108,
+          "s_right": 3,
+          "left_bound": 216,
+          "right_bound": 12,
+          "paired_matching_width": 6,
+          "matching_bound": 12,
+          "structural_bound": 12,
+          "transformation_ranks": {
+            "original": 8,
+            "magnitude_only": 8,
+            "independent_phase": 12,
+            "common_diagonal_phase": 12,
+            "local_product_phase": 8
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 8,
+            "published_lr__vs__prior_evolutionary": 8,
+            "prior_matched_random__vs__prior_evolutionary": 8
+          },
+          "original_deficit": 0.33333333333333337
+        },
+        {
+          "cut": 17,
+          "left_dimension": 131072,
+          "s_left": 120,
+          "s_right": 3,
+          "left_bound": 240,
+          "right_bound": 12,
+          "paired_matching_width": 6,
+          "matching_bound": 12,
+          "structural_bound": 12,
+          "transformation_ranks": {
+            "original": 12,
+            "magnitude_only": 12,
+            "independent_phase": 12,
+            "common_diagonal_phase": 12,
+            "local_product_phase": 12
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 12,
+            "published_lr__vs__prior_evolutionary": 12,
+            "prior_matched_random__vs__prior_evolutionary": 12
+          },
+          "original_deficit": 0.0
+        },
+        {
+          "cut": 18,
+          "left_dimension": 262144,
+          "s_left": 120,
+          "s_right": 2,
+          "left_bound": 240,
+          "right_bound": 8,
+          "paired_matching_width": 4,
+          "matching_bound": 8,
+          "structural_bound": 8,
+          "transformation_ranks": {
+            "original": 8,
+            "magnitude_only": 8,
+            "independent_phase": 8,
+            "common_diagonal_phase": 8,
+            "local_product_phase": 8
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 8,
+            "published_lr__vs__prior_evolutionary": 8,
+            "prior_matched_random__vs__prior_evolutionary": 8
+          },
+          "original_deficit": 0.0
+        },
+        {
+          "cut": 19,
+          "left_dimension": 524288,
+          "s_left": 120,
+          "s_right": 2,
+          "left_bound": 240,
+          "right_bound": 8,
+          "paired_matching_width": 4,
+          "matching_bound": 8,
+          "structural_bound": 8,
+          "transformation_ranks": {
+            "original": 8,
+            "magnitude_only": 8,
+            "independent_phase": 8,
+            "common_diagonal_phase": 8,
+            "local_product_phase": 8
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 8,
+            "published_lr__vs__prior_evolutionary": 8,
+            "prior_matched_random__vs__prior_evolutionary": 8
+          },
+          "original_deficit": 0.0
+        },
+        {
+          "cut": 20,
+          "left_dimension": 1048576,
+          "s_left": 120,
+          "s_right": 2,
+          "left_bound": 240,
+          "right_bound": 8,
+          "paired_matching_width": 4,
+          "matching_bound": 8,
+          "structural_bound": 8,
+          "transformation_ranks": {
+            "original": 8,
+            "magnitude_only": 8,
+            "independent_phase": 8,
+            "common_diagonal_phase": 8,
+            "local_product_phase": 8
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 8,
+            "published_lr__vs__prior_evolutionary": 8,
+            "prior_matched_random__vs__prior_evolutionary": 8
+          },
+          "original_deficit": 0.0
+        },
+        {
+          "cut": 21,
+          "left_dimension": 2097152,
+          "s_left": 132,
+          "s_right": 2,
+          "left_bound": 264,
+          "right_bound": 8,
+          "paired_matching_width": 4,
+          "matching_bound": 8,
+          "structural_bound": 8,
+          "transformation_ranks": {
+            "original": 8,
+            "magnitude_only": 8,
+            "independent_phase": 8,
+            "common_diagonal_phase": 8,
+            "local_product_phase": 8
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 8,
+            "published_lr__vs__prior_evolutionary": 8,
+            "prior_matched_random__vs__prior_evolutionary": 8
+          },
+          "original_deficit": 0.0
+        },
+        {
+          "cut": 22,
+          "left_dimension": 4194304,
+          "s_left": 132,
+          "s_right": 2,
+          "left_bound": 264,
+          "right_bound": 8,
+          "paired_matching_width": 4,
+          "matching_bound": 8,
+          "structural_bound": 8,
+          "transformation_ranks": {
+            "original": 8,
+            "magnitude_only": 8,
+            "independent_phase": 8,
+            "common_diagonal_phase": 8,
+            "local_product_phase": 8
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 8,
+            "published_lr__vs__prior_evolutionary": 8,
+            "prior_matched_random__vs__prior_evolutionary": 8
+          },
+          "original_deficit": 0.0
+        },
+        {
+          "cut": 23,
+          "left_dimension": 8388608,
+          "s_left": 132,
+          "s_right": 2,
+          "left_bound": 264,
+          "right_bound": 8,
+          "paired_matching_width": 4,
+          "matching_bound": 8,
+          "structural_bound": 8,
+          "transformation_ranks": {
+            "original": 8,
+            "magnitude_only": 8,
+            "independent_phase": 8,
+            "common_diagonal_phase": 8,
+            "local_product_phase": 8
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 8,
+            "published_lr__vs__prior_evolutionary": 8,
+            "prior_matched_random__vs__prior_evolutionary": 8
+          },
+          "original_deficit": 0.0
+        }
+      ]
+    },
+    {
+      "case": "aves-sparrow-social",
+      "ordering": "spectral",
+      "qubits": 24,
+      "event_support": 132,
+      "cuts": [
+        {
+          "cut": 1,
+          "left_dimension": 2,
+          "s_left": 2,
+          "s_right": 132,
+          "left_bound": 4,
+          "right_bound": 528,
+          "paired_matching_width": 2,
+          "matching_bound": 4,
+          "structural_bound": 2,
+          "transformation_ranks": {
+            "original": 2,
+            "magnitude_only": 2,
+            "independent_phase": 2,
+            "common_diagonal_phase": 2,
+            "local_product_phase": 2
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 2,
+            "published_lr__vs__prior_evolutionary": 2,
+            "prior_matched_random__vs__prior_evolutionary": 2
+          },
+          "original_deficit": 0.0
+        },
+        {
+          "cut": 2,
+          "left_dimension": 4,
+          "s_left": 3,
+          "s_right": 114,
+          "left_bound": 6,
+          "right_bound": 456,
+          "paired_matching_width": 3,
+          "matching_bound": 6,
+          "structural_bound": 4,
+          "transformation_ranks": {
+            "original": 4,
+            "magnitude_only": 4,
+            "independent_phase": 4,
+            "common_diagonal_phase": 4,
+            "local_product_phase": 4
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 4,
+            "published_lr__vs__prior_evolutionary": 4,
+            "prior_matched_random__vs__prior_evolutionary": 4
+          },
+          "original_deficit": 0.0
+        },
+        {
+          "cut": 3,
+          "left_dimension": 8,
+          "s_left": 4,
+          "s_right": 96,
+          "left_bound": 8,
+          "right_bound": 384,
+          "paired_matching_width": 4,
+          "matching_bound": 8,
+          "structural_bound": 8,
+          "transformation_ranks": {
+            "original": 6,
+            "magnitude_only": 6,
+            "independent_phase": 8,
+            "common_diagonal_phase": 8,
+            "local_product_phase": 6
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 6,
+            "published_lr__vs__prior_evolutionary": 6,
+            "prior_matched_random__vs__prior_evolutionary": 6
+          },
+          "original_deficit": 0.25
+        },
+        {
+          "cut": 4,
+          "left_dimension": 16,
+          "s_left": 5,
+          "s_right": 78,
+          "left_bound": 10,
+          "right_bound": 312,
+          "paired_matching_width": 5,
+          "matching_bound": 10,
+          "structural_bound": 10,
+          "transformation_ranks": {
+            "original": 6,
+            "magnitude_only": 6,
+            "independent_phase": 10,
+            "common_diagonal_phase": 10,
+            "local_product_phase": 6
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 6,
+            "published_lr__vs__prior_evolutionary": 6,
+            "prior_matched_random__vs__prior_evolutionary": 6
+          },
+          "original_deficit": 0.4
+        },
+        {
+          "cut": 5,
+          "left_dimension": 32,
+          "s_left": 5,
+          "s_right": 60,
+          "left_bound": 10,
+          "right_bound": 240,
+          "paired_matching_width": 5,
+          "matching_bound": 10,
+          "structural_bound": 10,
+          "transformation_ranks": {
+            "original": 4,
+            "magnitude_only": 4,
+            "independent_phase": 10,
+            "common_diagonal_phase": 10,
+            "local_product_phase": 4
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 4,
+            "published_lr__vs__prior_evolutionary": 4,
+            "prior_matched_random__vs__prior_evolutionary": 4
+          },
+          "original_deficit": 0.6
+        },
+        {
+          "cut": 6,
+          "left_dimension": 64,
+          "s_left": 5,
+          "s_right": 60,
+          "left_bound": 10,
+          "right_bound": 240,
+          "paired_matching_width": 5,
+          "matching_bound": 10,
+          "structural_bound": 10,
+          "transformation_ranks": {
+            "original": 4,
+            "magnitude_only": 4,
+            "independent_phase": 10,
+            "common_diagonal_phase": 10,
+            "local_product_phase": 4
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 4,
+            "published_lr__vs__prior_evolutionary": 4,
+            "prior_matched_random__vs__prior_evolutionary": 4
+          },
+          "original_deficit": 0.6
+        },
+        {
+          "cut": 7,
+          "left_dimension": 128,
+          "s_left": 6,
+          "s_right": 60,
+          "left_bound": 12,
+          "right_bound": 240,
+          "paired_matching_width": 6,
+          "matching_bound": 12,
+          "structural_bound": 12,
+          "transformation_ranks": {
+            "original": 6,
+            "magnitude_only": 6,
+            "independent_phase": 12,
+            "common_diagonal_phase": 12,
+            "local_product_phase": 6
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 6,
+            "published_lr__vs__prior_evolutionary": 6,
+            "prior_matched_random__vs__prior_evolutionary": 6
+          },
+          "original_deficit": 0.5
+        },
+        {
+          "cut": 8,
+          "left_dimension": 256,
+          "s_left": 6,
+          "s_right": 42,
+          "left_bound": 12,
+          "right_bound": 168,
+          "paired_matching_width": 6,
+          "matching_bound": 12,
+          "structural_bound": 12,
+          "transformation_ranks": {
+            "original": 6,
+            "magnitude_only": 6,
+            "independent_phase": 12,
+            "common_diagonal_phase": 12,
+            "local_product_phase": 6
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 6,
+            "published_lr__vs__prior_evolutionary": 6,
+            "prior_matched_random__vs__prior_evolutionary": 6
+          },
+          "original_deficit": 0.5
+        },
+        {
+          "cut": 9,
+          "left_dimension": 512,
+          "s_left": 7,
+          "s_right": 42,
+          "left_bound": 14,
+          "right_bound": 168,
+          "paired_matching_width": 7,
+          "matching_bound": 14,
+          "structural_bound": 14,
+          "transformation_ranks": {
+            "original": 8,
+            "magnitude_only": 8,
+            "independent_phase": 14,
+            "common_diagonal_phase": 14,
+            "local_product_phase": 8
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 8,
+            "published_lr__vs__prior_evolutionary": 8,
+            "prior_matched_random__vs__prior_evolutionary": 8
+          },
+          "original_deficit": 0.4285714285714286
+        },
+        {
+          "cut": 10,
+          "left_dimension": 1024,
+          "s_left": 7,
+          "s_right": 30,
+          "left_bound": 14,
+          "right_bound": 120,
+          "paired_matching_width": 7,
+          "matching_bound": 14,
+          "structural_bound": 14,
+          "transformation_ranks": {
+            "original": 8,
+            "magnitude_only": 8,
+            "independent_phase": 14,
+            "common_diagonal_phase": 14,
+            "local_product_phase": 8
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 8,
+            "published_lr__vs__prior_evolutionary": 8,
+            "prior_matched_random__vs__prior_evolutionary": 8
+          },
+          "original_deficit": 0.4285714285714286
+        },
+        {
+          "cut": 11,
+          "left_dimension": 2048,
+          "s_left": 7,
+          "s_right": 30,
+          "left_bound": 14,
+          "right_bound": 120,
+          "paired_matching_width": 7,
+          "matching_bound": 14,
+          "structural_bound": 14,
+          "transformation_ranks": {
+            "original": 8,
+            "magnitude_only": 8,
+            "independent_phase": 14,
+            "common_diagonal_phase": 14,
+            "local_product_phase": 8
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 8,
+            "published_lr__vs__prior_evolutionary": 8,
+            "prior_matched_random__vs__prior_evolutionary": 8
+          },
+          "original_deficit": 0.4285714285714286
+        },
+        {
+          "cut": 12,
+          "left_dimension": 4096,
+          "s_left": 7,
+          "s_right": 30,
+          "left_bound": 14,
+          "right_bound": 120,
+          "paired_matching_width": 7,
+          "matching_bound": 14,
+          "structural_bound": 14,
+          "transformation_ranks": {
+            "original": 8,
+            "magnitude_only": 8,
+            "independent_phase": 14,
+            "common_diagonal_phase": 14,
+            "local_product_phase": 8
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 8,
+            "published_lr__vs__prior_evolutionary": 8,
+            "prior_matched_random__vs__prior_evolutionary": 8
+          },
+          "original_deficit": 0.4285714285714286
+        },
+        {
+          "cut": 13,
+          "left_dimension": 8192,
+          "s_left": 7,
+          "s_right": 30,
+          "left_bound": 14,
+          "right_bound": 120,
+          "paired_matching_width": 7,
+          "matching_bound": 14,
+          "structural_bound": 14,
+          "transformation_ranks": {
+            "original": 8,
+            "magnitude_only": 8,
+            "independent_phase": 14,
+            "common_diagonal_phase": 14,
+            "local_product_phase": 8
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 8,
+            "published_lr__vs__prior_evolutionary": 8,
+            "prior_matched_random__vs__prior_evolutionary": 8
+          },
+          "original_deficit": 0.4285714285714286
+        },
+        {
+          "cut": 14,
+          "left_dimension": 16384,
+          "s_left": 8,
+          "s_right": 30,
+          "left_bound": 16,
+          "right_bound": 120,
+          "paired_matching_width": 8,
+          "matching_bound": 16,
+          "structural_bound": 16,
+          "transformation_ranks": {
+            "original": 10,
+            "magnitude_only": 10,
+            "independent_phase": 16,
+            "common_diagonal_phase": 16,
+            "local_product_phase": 10
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 10,
+            "published_lr__vs__prior_evolutionary": 10,
+            "prior_matched_random__vs__prior_evolutionary": 10
+          },
+          "original_deficit": 0.375
+        },
+        {
+          "cut": 15,
+          "left_dimension": 32768,
+          "s_left": 8,
+          "s_right": 18,
+          "left_bound": 16,
+          "right_bound": 72,
+          "paired_matching_width": 8,
+          "matching_bound": 16,
+          "structural_bound": 16,
+          "transformation_ranks": {
+            "original": 10,
+            "magnitude_only": 10,
+            "independent_phase": 16,
+            "common_diagonal_phase": 16,
+            "local_product_phase": 10
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 10,
+            "published_lr__vs__prior_evolutionary": 10,
+            "prior_matched_random__vs__prior_evolutionary": 10
+          },
+          "original_deficit": 0.375
+        },
+        {
+          "cut": 16,
+          "left_dimension": 65536,
+          "s_left": 14,
+          "s_right": 18,
+          "left_bound": 28,
+          "right_bound": 72,
+          "paired_matching_width": 14,
+          "matching_bound": 28,
+          "structural_bound": 28,
+          "transformation_ranks": {
+            "original": 14,
+            "magnitude_only": 14,
+            "independent_phase": 28,
+            "common_diagonal_phase": 28,
+            "local_product_phase": 14
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 14,
+            "published_lr__vs__prior_evolutionary": 14,
+            "prior_matched_random__vs__prior_evolutionary": 14
+          },
+          "original_deficit": 0.5
+        },
+        {
+          "cut": 17,
+          "left_dimension": 131072,
+          "s_left": 14,
+          "s_right": 18,
+          "left_bound": 28,
+          "right_bound": 72,
+          "paired_matching_width": 14,
+          "matching_bound": 28,
+          "structural_bound": 28,
+          "transformation_ranks": {
+            "original": 14,
+            "magnitude_only": 14,
+            "independent_phase": 28,
+            "common_diagonal_phase": 28,
+            "local_product_phase": 14
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 14,
+            "published_lr__vs__prior_evolutionary": 14,
+            "prior_matched_random__vs__prior_evolutionary": 14
+          },
+          "original_deficit": 0.5
+        },
+        {
+          "cut": 18,
+          "left_dimension": 262144,
+          "s_left": 28,
+          "s_right": 18,
+          "left_bound": 56,
+          "right_bound": 72,
+          "paired_matching_width": 28,
+          "matching_bound": 56,
+          "structural_bound": 56,
+          "transformation_ranks": {
+            "original": 28,
+            "magnitude_only": 28,
+            "independent_phase": 56,
+            "common_diagonal_phase": 52,
+            "local_product_phase": 28
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 28,
+            "published_lr__vs__prior_evolutionary": 28,
+            "prior_matched_random__vs__prior_evolutionary": 28
+          },
+          "original_deficit": 0.5
+        },
+        {
+          "cut": 19,
+          "left_dimension": 524288,
+          "s_left": 28,
+          "s_right": 9,
+          "left_bound": 56,
+          "right_bound": 36,
+          "paired_matching_width": 18,
+          "matching_bound": 36,
+          "structural_bound": 36,
+          "transformation_ranks": {
+            "original": 14,
+            "magnitude_only": 14,
+            "independent_phase": 36,
+            "common_diagonal_phase": 36,
+            "local_product_phase": 14
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 14,
+            "published_lr__vs__prior_evolutionary": 14,
+            "prior_matched_random__vs__prior_evolutionary": 14
+          },
+          "original_deficit": 0.6111111111111112
+        },
+        {
+          "cut": 20,
+          "left_dimension": 1048576,
+          "s_left": 44,
+          "s_right": 6,
+          "left_bound": 88,
+          "right_bound": 24,
+          "paired_matching_width": 12,
+          "matching_bound": 24,
+          "structural_bound": 24,
+          "transformation_ranks": {
+            "original": 16,
+            "magnitude_only": 16,
+            "independent_phase": 24,
+            "common_diagonal_phase": 24,
+            "local_product_phase": 16
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 16,
+            "published_lr__vs__prior_evolutionary": 16,
+            "prior_matched_random__vs__prior_evolutionary": 16
+          },
+          "original_deficit": 0.33333333333333337
+        },
+        {
+          "cut": 21,
+          "left_dimension": 2097152,
+          "s_left": 44,
+          "s_right": 3,
+          "left_bound": 88,
+          "right_bound": 12,
+          "paired_matching_width": 6,
+          "matching_bound": 12,
+          "structural_bound": 12,
+          "transformation_ranks": {
+            "original": 8,
+            "magnitude_only": 8,
+            "independent_phase": 12,
+            "common_diagonal_phase": 12,
+            "local_product_phase": 8
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 8,
+            "published_lr__vs__prior_evolutionary": 8,
+            "prior_matched_random__vs__prior_evolutionary": 8
+          },
+          "original_deficit": 0.33333333333333337
+        },
+        {
+          "cut": 22,
+          "left_dimension": 4194304,
+          "s_left": 88,
+          "s_right": 3,
+          "left_bound": 176,
+          "right_bound": 12,
+          "paired_matching_width": 6,
+          "matching_bound": 12,
+          "structural_bound": 12,
+          "transformation_ranks": {
+            "original": 8,
+            "magnitude_only": 8,
+            "independent_phase": 12,
+            "common_diagonal_phase": 12,
+            "local_product_phase": 8
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 8,
+            "published_lr__vs__prior_evolutionary": 8,
+            "prior_matched_random__vs__prior_evolutionary": 8
+          },
+          "original_deficit": 0.33333333333333337
+        },
+        {
+          "cut": 23,
+          "left_dimension": 8388608,
+          "s_left": 132,
+          "s_right": 2,
+          "left_bound": 264,
+          "right_bound": 8,
+          "paired_matching_width": 4,
+          "matching_bound": 8,
+          "structural_bound": 8,
+          "transformation_ranks": {
+            "original": 8,
+            "magnitude_only": 8,
+            "independent_phase": 8,
+            "common_diagonal_phase": 8,
+            "local_product_phase": 8
+          },
+          "pair_ranks": {
+            "published_lr__vs__prior_matched_random": 8,
+            "published_lr__vs__prior_evolutionary": 8,
+            "prior_matched_random__vs__prior_evolutionary": 8
+          },
+          "original_deficit": 0.0
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "eligible_cuts": 40,
+    "independent_phase_saturation_fraction": 1.0,
+    "local_product_rank_invariance": true,
+    "qualifying_cuts_by_pair": {
+      "published_lr__vs__prior_matched_random": [
+        [
+          "sorted",
+          7
+        ],
+        [
+          "sorted",
+          8
+        ],
+        [
+          "sorted",
+          9
+        ],
+        [
+          "sorted",
+          10
+        ],
+        [
+          "sorted",
+          11
+        ],
+        [
+          "sorted",
+          12
+        ],
+        [
+          "sorted",
+          13
+        ],
+        [
+          "sorted",
+          14
+        ],
+        [
+          "sorted",
+          15
+        ],
+        [
+          "sorted",
+          16
+        ],
+        [
+          "spectral",
+          4
+        ],
+        [
+          "spectral",
+          5
+        ],
+        [
+          "spectral",
+          6
+        ],
+        [
+          "spectral",
+          7
+        ],
+        [
+          "spectral",
+          8
+        ],
+        [
+          "spectral",
+          9
+        ],
+        [
+          "spectral",
+          10
+        ],
+        [
+          "spectral",
+          11
+        ],
+        [
+          "spectral",
+          12
+        ],
+        [
+          "spectral",
+          13
+        ],
+        [
+          "spectral",
+          14
+        ],
+        [
+          "spectral",
+          15
+        ],
+        [
+          "spectral",
+          16
+        ],
+        [
+          "spectral",
+          17
+        ],
+        [
+          "spectral",
+          18
+        ],
+        [
+          "spectral",
+          19
+        ],
+        [
+          "spectral",
+          20
+        ],
+        [
+          "spectral",
+          21
+        ],
+        [
+          "spectral",
+          22
+        ]
+      ],
+      "published_lr__vs__prior_evolutionary": [
+        [
+          "sorted",
+          7
+        ],
+        [
+          "sorted",
+          8
+        ],
+        [
+          "sorted",
+          9
+        ],
+        [
+          "sorted",
+          10
+        ],
+        [
+          "sorted",
+          11
+        ],
+        [
+          "sorted",
+          12
+        ],
+        [
+          "sorted",
+          13
+        ],
+        [
+          "sorted",
+          14
+        ],
+        [
+          "sorted",
+          15
+        ],
+        [
+          "sorted",
+          16
+        ],
+        [
+          "spectral",
+          4
+        ],
+        [
+          "spectral",
+          5
+        ],
+        [
+          "spectral",
+          6
+        ],
+        [
+          "spectral",
+          7
+        ],
+        [
+          "spectral",
+          8
+        ],
+        [
+          "spectral",
+          9
+        ],
+        [
+          "spectral",
+          10
+        ],
+        [
+          "spectral",
+          11
+        ],
+        [
+          "spectral",
+          12
+        ],
+        [
+          "spectral",
+          13
+        ],
+        [
+          "spectral",
+          14
+        ],
+        [
+          "spectral",
+          15
+        ],
+        [
+          "spectral",
+          16
+        ],
+        [
+          "spectral",
+          17
+        ],
+        [
+          "spectral",
+          18
+        ],
+        [
+          "spectral",
+          19
+        ],
+        [
+          "spectral",
+          20
+        ],
+        [
+          "spectral",
+          21
+        ],
+        [
+          "spectral",
+          22
+        ]
+      ],
+      "prior_matched_random__vs__prior_evolutionary": [
+        [
+          "sorted",
+          7
+        ],
+        [
+          "sorted",
+          8
+        ],
+        [
+          "sorted",
+          9
+        ],
+        [
+          "sorted",
+          10
+        ],
+        [
+          "sorted",
+          11
+        ],
+        [
+          "sorted",
+          12
+        ],
+        [
+          "sorted",
+          13
+        ],
+        [
+          "sorted",
+          14
+        ],
+        [
+          "sorted",
+          15
+        ],
+        [
+          "sorted",
+          16
+        ],
+        [
+          "spectral",
+          4
+        ],
+        [
+          "spectral",
+          5
+        ],
+        [
+          "spectral",
+          6
+        ],
+        [
+          "spectral",
+          7
+        ],
+        [
+          "spectral",
+          8
+        ],
+        [
+          "spectral",
+          9
+        ],
+        [
+          "spectral",
+          10
+        ],
+        [
+          "spectral",
+          11
+        ],
+        [
+          "spectral",
+          12
+        ],
+        [
+          "spectral",
+          13
+        ],
+        [
+          "spectral",
+          14
+        ],
+        [
+          "spectral",
+          15
+        ],
+        [
+          "spectral",
+          16
+        ],
+        [
+          "spectral",
+          17
+        ],
+        [
+          "spectral",
+          18
+        ],
+        [
+          "spectral",
+          19
+        ],
+        [
+          "spectral",
+          20
+        ],
+        [
+          "spectral",
+          21
+        ],
+        [
+          "spectral",
+          22
+        ]
+      ]
+    },
+    "common_qualifying_cuts": [
+      [
+        "sorted",
+        7
+      ],
+      [
+        "sorted",
+        8
+      ],
+      [
+        "sorted",
+        9
+      ],
+      [
+        "sorted",
+        10
+      ],
+      [
+        "sorted",
+        11
+      ],
+      [
+        "sorted",
+        12
+      ],
+      [
+        "sorted",
+        13
+      ],
+      [
+        "sorted",
+        14
+      ],
+      [
+        "sorted",
+        15
+      ],
+      [
+        "sorted",
+        16
+      ],
+      [
+        "spectral",
+        4
+      ],
+      [
+        "spectral",
+        5
+      ],
+      [
+        "spectral",
+        6
+      ],
+      [
+        "spectral",
+        7
+      ],
+      [
+        "spectral",
+        8
+      ],
+      [
+        "spectral",
+        9
+      ],
+      [
+        "spectral",
+        10
+      ],
+      [
+        "spectral",
+        11
+      ],
+      [
+        "spectral",
+        12
+      ],
+      [
+        "spectral",
+        13
+      ],
+      [
+        "spectral",
+        14
+      ],
+      [
+        "spectral",
+        15
+      ],
+      [
+        "spectral",
+        16
+      ],
+      [
+        "spectral",
+        17
+      ],
+      [
+        "spectral",
+        18
+      ],
+      [
+        "spectral",
+        19
+      ],
+      [
+        "spectral",
+        20
+      ],
+      [
+        "spectral",
+        21
+      ],
+      [
+        "spectral",
+        22
+      ]
+    ],
+    "pairs_with_at_least_five_qualifying_cuts": 3
+  },
+  "success": true
+}

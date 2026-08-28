@@ -1,0 +1,428 @@
+{
+  "complete": true,
+  "stage": "transfer",
+  "protocol_sha256": "24f49b94878d732bfe16d12772b8fcd8ca38f40a51706a995edd110cb70c0136",
+  "cases": [
+    "chesapeake",
+    "football"
+  ],
+  "cut": 3,
+  "ranks": [
+    1,
+    2,
+    4
+  ],
+  "fixed_rank": 4,
+  "rows": [
+    {
+      "case": "chesapeake",
+      "ordering": "sorted",
+      "qubits": 7,
+      "bks_projector_rank": 1,
+      "cut": 3,
+      "left_dimension": 8,
+      "exact_delta": -0.13421359145382505,
+      "operator_trace": -0.13421359145382517,
+      "operator_hermiticity_error": 0.0,
+      "decision_trace_norm": 0.44086728645124595,
+      "rows": [
+        {
+          "rank": 1,
+          "methods": {
+            "decision_conditioned": {
+              "estimate": -0.28754043895253545,
+              "absolute_error": 0.1533268474987104,
+              "trace_norm_bound": 0.15332684749871053,
+              "sign_correct": true,
+              "sign_certified": true,
+              "spectral_tail": 0.15332684749871042
+            },
+            "srdt_basis": {
+              "estimate": -0.2840050283962681,
+              "absolute_error": 0.14979143694244307,
+              "trace_norm_bound": 0.20388188325050638,
+              "sign_correct": true,
+              "sign_certified": true
+            },
+            "state_averaged_basis": {
+              "estimate": -0.10359866368174869,
+              "absolute_error": 0.03061492777207636,
+              "trace_norm_bound": 0.4367807760932282,
+              "sign_correct": true,
+              "sign_certified": false
+            }
+          }
+        },
+        {
+          "rank": 2,
+          "methods": {
+            "decision_conditioned": {
+              "estimate": -0.13421359145382503,
+              "absolute_error": 2.7755575615628914e-17,
+              "trace_norm_bound": 1.8691627929425924e-16,
+              "sign_correct": true,
+              "sign_certified": true,
+              "spectral_tail": 4.5336592723435297e-17
+            },
+            "srdt_basis": {
+              "estimate": -0.13364457493588663,
+              "absolute_error": 0.0005690165179384199,
+              "trace_norm_bound": 0.07412956409635896,
+              "sign_correct": true,
+              "sign_certified": true
+            },
+            "state_averaged_basis": {
+              "estimate": -0.1361448962400677,
+              "absolute_error": 0.0019313047862426491,
+              "trace_norm_bound": 0.19828360008792414,
+              "sign_correct": true,
+              "sign_certified": false
+            }
+          }
+        },
+        {
+          "rank": 4,
+          "methods": {
+            "decision_conditioned": {
+              "estimate": -0.13421359145382503,
+              "absolute_error": 2.7755575615628914e-17,
+              "trace_norm_bound": 2.1647216043928107e-16,
+              "sign_correct": true,
+              "sign_certified": true,
+              "spectral_tail": 2.418906680058478e-18
+            },
+            "srdt_basis": {
+              "estimate": -0.13408391386423896,
+              "absolute_error": 0.00012967758958609688,
+              "trace_norm_bound": 0.061841345558677194,
+              "sign_correct": true,
+              "sign_certified": true
+            },
+            "state_averaged_basis": {
+              "estimate": -0.13737536182652482,
+              "absolute_error": 0.003161770372699768,
+              "trace_norm_bound": 0.09208538613224435,
+              "sign_correct": true,
+              "sign_certified": true
+            }
+          }
+        }
+      ],
+      "fixed_rank_factors": {
+        "srdt_basis": 61841345558677.19,
+        "state_averaged_basis": 92085386132244.34
+      },
+      "fixed_rank_factor_is_lower_bound": true,
+      "fixed_rank_pass": true
+    },
+    {
+      "case": "chesapeake",
+      "ordering": "spectral",
+      "qubits": 7,
+      "bks_projector_rank": 1,
+      "cut": 3,
+      "left_dimension": 8,
+      "exact_delta": -0.13421359145382705,
+      "operator_trace": -0.13421359145382683,
+      "operator_hermiticity_error": 0.0,
+      "decision_trace_norm": 0.30522390199014093,
+      "rows": [
+        {
+          "rank": 1,
+          "methods": {
+            "decision_conditioned": {
+              "estimate": -0.2197187467219838,
+              "absolute_error": 0.08550515526815675,
+              "trace_norm_bound": 0.08550515526815726,
+              "sign_correct": true,
+              "sign_certified": true,
+              "spectral_tail": 0.08550515526815719
+            },
+            "srdt_basis": {
+              "estimate": -0.2120195103363996,
+              "absolute_error": 0.07780591888257254,
+              "trace_norm_bound": 0.14281447697653654,
+              "sign_correct": true,
+              "sign_certified": true
+            },
+            "state_averaged_basis": {
+              "estimate": -0.11264896147481182,
+              "absolute_error": 0.021564629979015232,
+              "trace_norm_bound": 0.2927304234400294,
+              "sign_correct": true,
+              "sign_certified": false
+            }
+          }
+        },
+        {
+          "rank": 2,
+          "methods": {
+            "decision_conditioned": {
+              "estimate": -0.13421359145382683,
+              "absolute_error": 2.220446049250313e-16,
+              "trace_norm_bound": 2.6074722088070453e-16,
+              "sign_correct": true,
+              "sign_certified": true,
+              "spectral_tail": 1.6640981752255187e-16
+            },
+            "srdt_basis": {
+              "estimate": -0.13326942748798445,
+              "absolute_error": 0.0009441639658425982,
+              "trace_norm_bound": 0.06308736357500214,
+              "sign_correct": true,
+              "sign_certified": true
+            },
+            "state_averaged_basis": {
+              "estimate": -0.1315666774848116,
+              "absolute_error": 0.002646913969015452,
+              "trace_norm_bound": 0.08869966036574475,
+              "sign_correct": true,
+              "sign_certified": true
+            }
+          }
+        },
+        {
+          "rank": 4,
+          "methods": {
+            "decision_conditioned": {
+              "estimate": -0.13421359145382677,
+              "absolute_error": 2.7755575615628914e-16,
+              "trace_norm_bound": 1.0977280588908705e-16,
+              "sign_correct": true,
+              "sign_certified": true,
+              "spectral_tail": 1.7397002626710444e-20
+            },
+            "srdt_basis": {
+              "estimate": -0.13430952188887116,
+              "absolute_error": 9.593043504410592e-05,
+              "trace_norm_bound": 0.03274889389469597,
+              "sign_correct": true,
+              "sign_certified": true
+            },
+            "state_averaged_basis": {
+              "estimate": -0.1332392737584208,
+              "absolute_error": 0.0009743176954062627,
+              "trace_norm_bound": 0.06958186612474554,
+              "sign_correct": true,
+              "sign_certified": true
+            }
+          }
+        }
+      ],
+      "fixed_rank_factors": {
+        "srdt_basis": 32748893894695.97,
+        "state_averaged_basis": 69581866124745.53
+      },
+      "fixed_rank_factor_is_lower_bound": true,
+      "fixed_rank_pass": true
+    },
+    {
+      "case": "football",
+      "ordering": "sorted",
+      "qubits": 7,
+      "bks_projector_rank": 4,
+      "cut": 3,
+      "left_dimension": 8,
+      "exact_delta": 0.019268874879314613,
+      "operator_trace": 0.019268874879314446,
+      "operator_hermiticity_error": 0.0,
+      "decision_trace_norm": 0.2724507421870318,
+      "rows": [
+        {
+          "rank": 1,
+          "methods": {
+            "decision_conditioned": {
+              "estimate": 0.13804763952545052,
+              "absolute_error": 0.1187787646461359,
+              "trace_norm_bound": 0.13440310266158156,
+              "sign_correct": true,
+              "sign_certified": true,
+              "spectral_tail": 0.13440310266158095
+            },
+            "srdt_basis": {
+              "estimate": -0.114783293616876,
+              "absolute_error": 0.13405216849619062,
+              "trace_norm_bound": 0.16977690081061822,
+              "sign_correct": false,
+              "sign_certified": false
+            },
+            "state_averaged_basis": {
+              "estimate": -0.08683890392222611,
+              "absolute_error": 0.10610777880154072,
+              "trace_norm_bound": 0.23008514262694127,
+              "sign_correct": false,
+              "sign_certified": false
+            }
+          }
+        },
+        {
+          "rank": 2,
+          "methods": {
+            "decision_conditioned": {
+              "estimate": 0.022695839307839125,
+              "absolute_error": 0.003426964428524512,
+              "trace_norm_bound": 0.01905130244397013,
+              "sign_correct": true,
+              "sign_certified": true,
+              "spectral_tail": 0.019051302443969798
+            },
+            "srdt_basis": {
+              "estimate": 0.022496961887635326,
+              "absolute_error": 0.003228087008320713,
+              "trace_norm_bound": 0.04576848321527566,
+              "sign_correct": true,
+              "sign_certified": false
+            },
+            "state_averaged_basis": {
+              "estimate": 0.02649087236498354,
+              "absolute_error": 0.007221997485668926,
+              "trace_norm_bound": 0.12852386332861843,
+              "sign_correct": true,
+              "sign_certified": false
+            }
+          }
+        },
+        {
+          "rank": 4,
+          "methods": {
+            "decision_conditioned": {
+              "estimate": 0.019268874879314692,
+              "absolute_error": 7.979727989493313e-17,
+              "trace_norm_bound": 3.046614530344629e-16,
+              "sign_correct": true,
+              "sign_certified": true,
+              "spectral_tail": 2.806400354366419e-17
+            },
+            "srdt_basis": {
+              "estimate": 0.01953095334636846,
+              "absolute_error": 0.0002620784670538459,
+              "trace_norm_bound": 0.02369853483860166,
+              "sign_correct": true,
+              "sign_certified": false
+            },
+            "state_averaged_basis": {
+              "estimate": 0.019337806786274926,
+              "absolute_error": 6.893190696031365e-05,
+              "trace_norm_bound": 0.04298106889690704,
+              "sign_correct": true,
+              "sign_certified": false
+            }
+          }
+        }
+      ],
+      "fixed_rank_factors": {
+        "srdt_basis": 23698534838601.66,
+        "state_averaged_basis": 42981068896907.04
+      },
+      "fixed_rank_factor_is_lower_bound": true,
+      "fixed_rank_pass": true
+    },
+    {
+      "case": "football",
+      "ordering": "spectral",
+      "qubits": 7,
+      "bks_projector_rank": 4,
+      "cut": 3,
+      "left_dimension": 8,
+      "exact_delta": 0.01926887487931314,
+      "operator_trace": 0.019268874879313058,
+      "operator_hermiticity_error": 0.0,
+      "decision_trace_norm": 0.29265353672417527,
+      "rows": [
+        {
+          "rank": 1,
+          "methods": {
+            "decision_conditioned": {
+              "estimate": 0.1554401369695398,
+              "absolute_error": 0.13617126209022665,
+              "trace_norm_bound": 0.1372133997546355,
+              "sign_correct": true,
+              "sign_certified": true,
+              "spectral_tail": 0.13721339975463498
+            },
+            "srdt_basis": {
+              "estimate": -0.13514342102701157,
+              "absolute_error": 0.15441229590632471,
+              "trace_norm_bound": 0.18013751227972719,
+              "sign_correct": false,
+              "sign_certified": false
+            },
+            "state_averaged_basis": {
+              "estimate": -0.00512093769151992,
+              "absolute_error": 0.02438981257083306,
+              "trace_norm_bound": 0.2921913761637841,
+              "sign_correct": false,
+              "sign_certified": false
+            }
+          }
+        },
+        {
+          "rank": 2,
+          "methods": {
+            "decision_conditioned": {
+              "estimate": 0.01916616086269333,
+              "absolute_error": 0.00010271401661980997,
+              "trace_norm_bound": 0.0009394236477891817,
+              "sign_correct": true,
+              "sign_certified": true,
+              "spectral_tail": 0.0009394236477890987
+            },
+            "srdt_basis": {
+              "estimate": 0.01878946211444786,
+              "absolute_error": 0.00047941276486528073,
+              "trace_norm_bound": 0.054161337995514355,
+              "sign_correct": true,
+              "sign_certified": false
+            },
+            "state_averaged_basis": {
+              "estimate": 0.014735251358015188,
+              "absolute_error": 0.004533623521297953,
+              "trace_norm_bound": 0.09904565028857323,
+              "sign_correct": true,
+              "sign_certified": false
+            }
+          }
+        },
+        {
+          "rank": 4,
+          "methods": {
+            "decision_conditioned": {
+              "estimate": 0.019268874879312944,
+              "absolute_error": 1.97758476261356e-16,
+              "trace_norm_bound": 2.385553044445055e-16,
+              "sign_correct": true,
+              "sign_certified": true,
+              "spectral_tail": 3.1585011570165605e-17
+            },
+            "srdt_basis": {
+              "estimate": 0.01920970605905595,
+              "absolute_error": 5.916882025719036e-05,
+              "trace_norm_bound": 0.026196559325987794,
+              "sign_correct": true,
+              "sign_certified": false
+            },
+            "state_averaged_basis": {
+              "estimate": 0.018765190832070667,
+              "absolute_error": 0.0005036840472424746,
+              "trace_norm_bound": 0.04529347519630992,
+              "sign_correct": true,
+              "sign_certified": false
+            }
+          }
+        }
+      ],
+      "fixed_rank_factors": {
+        "srdt_basis": 26196559325987.793,
+        "state_averaged_basis": 45293475196309.914
+      },
+      "fixed_rank_factor_is_lower_bound": true,
+      "fixed_rank_pass": true
+    }
+  ],
+  "passed_rows": 4,
+  "geometric_mean_factors": {
+    "srdt_basis": 33485773046899.633,
+    "state_averaged_basis": 59429203579470.75
+  },
+  "success": true
+}

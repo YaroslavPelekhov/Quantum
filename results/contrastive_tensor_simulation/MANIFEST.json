@@ -1,0 +1,78 @@
+{
+  "complete": true,
+  "created_at": "2026-08-22T20:46:47.217529+00:00",
+  "files": [
+    {
+      "path": "results\\contrastive_tensor_simulation\\summary.json",
+      "sha256": "037966418dd87cd277f892e73155d550844454f5184bb8a6f2218be572d45b20"
+    },
+    {
+      "path": "results\\contrastive_tensor_simulation\\REPORT.md",
+      "sha256": "a718ebc8870265241d81429d62caba8f20751e5bfb0c704bbd6c9d5effdd3414"
+    },
+    {
+      "path": "results\\contrastive_tensor_simulation\\small_md_dynamics.json",
+      "sha256": "7d4987437f94bced5868d56e928702b72f2ff9f1537cfa0487a14cf06721a36e"
+    },
+    {
+      "path": "results\\contrastive_tensor_simulation\\structural_diagnostics.json",
+      "sha256": "4df1b2cdeb4ecd4a60919a46bf1c03fb4e68549c79593400189dedd1e275a905"
+    },
+    {
+      "path": "results\\contrastive_tensor_simulation\\equal_budget_benchmark.json",
+      "sha256": "18e7afb19a791c99517953cfb9208adc9a1ddf95cce7af2ff7baa2610597ce25"
+    },
+    {
+      "path": "results\\contrastive_tensor_simulation\\sparse_completion.json",
+      "sha256": "d7dab01da7f5d944c79d6ea6f277cc68d8098c6a1c92b2e41a4001b20d299e73"
+    },
+    {
+      "path": "experiments\\contrastive_tensor_simulation\\PROTOCOL.md",
+      "sha256": "190dea9cfa4445d728a54c5a6ce2f141282b7ac4c3c1fbebcafd1d97d5333a84"
+    },
+    {
+      "path": "experiments\\contrastive_tensor_simulation\\THEORY.md",
+      "sha256": "7f7fced41ab15834fbbb04ffb408c80960aae79d42f58db617452fa6bef6f8c4"
+    },
+    {
+      "path": "experiments\\contrastive_tensor_simulation\\SPARSE_CONSTRUCTION_PROTOCOL.md",
+      "sha256": "268a48777e974239070161259f1e981cae52999f4e633bea343dbe6289418799"
+    },
+    {
+      "path": "experiments\\contrastive_tensor_simulation\\contrastive_core.py",
+      "sha256": "a4df3f8cdc089597eb851b99f2b40db36635b0903abe39e23e9950e17baf0710"
+    },
+    {
+      "path": "experiments\\contrastive_tensor_simulation\\run_contrastive.py",
+      "sha256": "cfa41475e4dda10da1a5c3880fa5ce9d597d5c530b9c71ed85b1352c0574001f"
+    },
+    {
+      "path": "experiments\\contrastive_tensor_simulation\\sparse_tt_completion.py",
+      "sha256": "7d98666b30b87202662a5ab6342dc2a1517c2effdfb2be508f2c84cb230cf22a"
+    },
+    {
+      "path": "experiments\\contrastive_tensor_simulation\\run_sparse_completion.py",
+      "sha256": "9a0f366e9f8fb340df458abd6502767e144b1a49efdbfe7099de5cd201051929"
+    },
+    {
+      "path": "experiments\\contrastive_tensor_simulation\\analyze_contrastive.py",
+      "sha256": "bb211b83e8976df6e6fc05a6730b951676cf600ec9edb52d491089495ee96386"
+    },
+    {
+      "path": "experiments\\contrastive_tensor_simulation\\test_contrastive.py",
+      "sha256": "64961ea6174d8c465247d306ee1b1cb592ef38a2d4d1cee2423d3a720b3edfca"
+    },
+    {
+      "path": "experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\export_manifest.json",
+      "sha256": "37339dd66645c16b9fc077ddb09e68cb5c70216e41f4b779aa9d50687d931f80"
+    },
+    {
+      "path": "experiments\\evoq_mis_full_qoblib\\results\\independent_ladder\\export_manifest.json",
+      "sha256": "0acef4c08541207e7cef68df81c1a8561edd02a8e7ad5c8df9b773f91ab14877"
+    },
+    {
+      "path": "results\\rankcert_mps\\input_validation.json",
+      "sha256": "02d9832c4877c8a4b7ece488abf12efe85f21128fbea0364e2bf892147cb7ad5"
+    }
+  ]
+}

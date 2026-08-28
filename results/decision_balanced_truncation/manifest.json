@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "fixed_rank_success": false,
+  "adaptive_transfer_success": false,
+  "files": {
+    "experiments\\decision_balanced_truncation\\PROTOCOL.md": "27f040b94e62e76fa6d0d2f76f96b8435074590d7ed590d90da3bae7c0597de7",
+    "experiments\\decision_balanced_truncation\\ADAPTIVE_TRANSFER_PROTOCOL.md": "02792383eb116f27d31539d22b5c657c0afc64a4453f9d69dd381dbd92075b01",
+    "experiments\\decision_balanced_truncation\\dbt_core.py": "9c2aa45bc1700368590577d56138b4ee32fb7a7c787c652388b3b6d213be1b1e",
+    "experiments\\decision_balanced_truncation\\run_prospective.py": "996aa79e6d83c554bee16e8cfb94de66c148062365a85f980a302ef1e71138a4",
+    "experiments\\decision_balanced_truncation\\run_adaptive_exploratory.py": "c3cfbd4626dccf215a1e3e6e98dea5e2bbd16463c3e43d1c0e25d2c1e8346c4c",
+    "experiments\\decision_balanced_truncation\\run_adaptive_transfer.py": "6d16378d573a837bb2dd0b638426e6201463b1bd91983bdb9fe7e0bb7b87e01c",
+    "experiments\\decision_balanced_truncation\\analyze_dbt.py": "dc3b054b6688e1509ef2a31381ef28d6e06644fd4d34261712688a11422c81f1",
+    "experiments\\decision_balanced_truncation\\test_dbt.py": "41402b15bf78d43f1acc5d8ca2e70e60b593be69b529422cc69b4d4e03b4d57d",
+    "experiments\\decision_balanced_truncation\\README.md": "704781c74e47985f50a1c43349c120472663a74d047471b43b871ff7da697111",
+    "results\\decision_balanced_truncation\\prospective.json": "ec98c41c7ca76690c73d88a1cd9ed25721d89df73b13576d33bd3612a0c1eeb1",
+    "results\\decision_balanced_truncation\\adaptive_exploratory.json": "72e69a61df892cce749c27a23c1243f2d06fed07e27d525923e1de73e3a4b752",
+    "results\\decision_balanced_truncation\\adaptive_transfer.json": "8e3f452d09bad25cbaf295a43b097ea67dc9b044f63f83ab5b98ade2a59a7cb5",
+    "results\\decision_balanced_truncation\\REPORT.md": "353fe7c0ce20ee9d66477a0ab7918b8de91625af7af2e7b2fbbd6933f3a6d475"
+  }
+}

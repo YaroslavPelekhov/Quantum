@@ -1,0 +1,1082 @@
+{
+  "stage": "compressed_observable_telescope_backward_oracle_audit",
+  "complete": true,
+  "created_at": "2026-08-19T13:16:13.075316+00:00",
+  "interpretation": "Direct compression of exact backward vectors; diagnostic oracle, not scalable certificate",
+  "rows": [
+    {
+      "case": "ibm32",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qubits": 18,
+      "checkpoint_count": 557,
+      "rows": [
+        {
+          "checkpoint_position": 512,
+          "operation_count": 1032,
+          "backward_bond": 4,
+          "direct_vector_angles": [
+            0.010014384444746068,
+            0.009981444626690551
+          ],
+          "direct_eta_upper_bound": 0.01999549594555918,
+          "actual_projector_operator_norm_error": 0.011131340511631201
+        },
+        {
+          "checkpoint_position": 512,
+          "operation_count": 1032,
+          "backward_bond": 8,
+          "direct_vector_angles": [
+            0.0012416900085691993,
+            0.0011390261986793078
+          ],
+          "direct_eta_upper_bound": 0.0023807156418850666,
+          "actual_projector_operator_norm_error": 0.0012974417032207439
+        },
+        {
+          "checkpoint_position": 512,
+          "operation_count": 1032,
+          "backward_bond": 16,
+          "direct_vector_angles": [
+            0.00011590839133137556,
+            0.0001108038785276977
+          ],
+          "direct_eta_upper_bound": 0.00022671226937280735,
+          "actual_projector_operator_norm_error": 0.00011689968538955496
+        },
+        {
+          "checkpoint_position": 512,
+          "operation_count": 1032,
+          "backward_bond": 32,
+          "direct_vector_angles": [
+            1.3446152995176882e-05,
+            1.3905587844159807e-05
+          ],
+          "direct_eta_upper_bound": 2.735174083848337e-05,
+          "actual_projector_operator_norm_error": 1.3910446219932122e-05
+        },
+        {
+          "checkpoint_position": 512,
+          "operation_count": 1032,
+          "backward_bond": 64,
+          "direct_vector_angles": [
+            3.4538849432479647e-07,
+            3.228545931290376e-07
+          ],
+          "direct_eta_upper_bound": 6.682430874538215e-07,
+          "actual_projector_operator_norm_error": 3.4547785012317667e-07
+        },
+        {
+          "checkpoint_position": 512,
+          "operation_count": 1032,
+          "backward_bond": 128,
+          "direct_vector_angles": [
+            2.8764826751864713e-09,
+            2.7130936727148384e-09
+          ],
+          "direct_eta_upper_bound": 5.589576347901309e-09,
+          "actual_projector_operator_norm_error": 2.8755215074125645e-09
+        },
+        {
+          "checkpoint_position": 448,
+          "operation_count": 902,
+          "backward_bond": 4,
+          "direct_vector_angles": [
+            0.08717397778186003,
+            0.07266469731003572
+          ],
+          "direct_eta_upper_bound": 0.15966437683024945,
+          "actual_projector_operator_norm_error": 0.08888290435334409
+        },
+        {
+          "checkpoint_position": 448,
+          "operation_count": 902,
+          "backward_bond": 8,
+          "direct_vector_angles": [
+            0.030815792391088268,
+            0.02948160419295531
+          ],
+          "direct_eta_upper_bound": 0.06028824909170136,
+          "actual_projector_operator_norm_error": 0.032770386599784165
+        },
+        {
+          "checkpoint_position": 448,
+          "operation_count": 902,
+          "backward_bond": 16,
+          "direct_vector_angles": [
+            0.010964973230715026,
+            0.009962116830445017
+          ],
+          "direct_eta_upper_bound": 0.020926705562669325,
+          "actual_projector_operator_norm_error": 0.011068291560583851
+        },
+        {
+          "checkpoint_position": 448,
+          "operation_count": 902,
+          "backward_bond": 32,
+          "direct_vector_angles": [
+            0.0026417514202324677,
+            0.0023340079857395676
+          ],
+          "direct_eta_upper_bound": 0.00497575421412125,
+          "actual_projector_operator_norm_error": 0.0026509299205661925
+        },
+        {
+          "checkpoint_position": 448,
+          "operation_count": 902,
+          "backward_bond": 64,
+          "direct_vector_angles": [
+            0.0004376486255662067,
+            0.00038531955727775076
+          ],
+          "direct_eta_upper_bound": 0.0008229681593382161,
+          "actual_projector_operator_norm_error": 0.0004379894257164002
+        },
+        {
+          "checkpoint_position": 448,
+          "operation_count": 902,
+          "backward_bond": 128,
+          "direct_vector_angles": [
+            4.117399722033834e-05,
+            3.4233787447615315e-05
+          ],
+          "direct_eta_upper_bound": 7.540778464963324e-05,
+          "actual_projector_operator_norm_error": 4.119518942903469e-05
+        },
+        {
+          "checkpoint_position": 384,
+          "operation_count": 780,
+          "backward_bond": 4,
+          "direct_vector_angles": [
+            0.2036035587517568,
+            0.21383245784501254
+          ],
+          "direct_eta_upper_bound": 0.41440638274546127,
+          "actual_projector_operator_norm_error": 0.2362503256721271
+        },
+        {
+          "checkpoint_position": 384,
+          "operation_count": 780,
+          "backward_bond": 8,
+          "direct_vector_angles": [
+            0.1267074921036742,
+            0.12952862625010228
+          ],
+          "direct_eta_upper_bound": 0.2555354524846929,
+          "actual_projector_operator_norm_error": 0.131166256075793
+        },
+        {
+          "checkpoint_position": 384,
+          "operation_count": 780,
+          "backward_bond": 16,
+          "direct_vector_angles": [
+            0.06294225858476589,
+            0.06257113747976047
+          ],
+          "direct_eta_upper_bound": 0.12543102306818454,
+          "actual_projector_operator_norm_error": 0.06623424723420306
+        },
+        {
+          "checkpoint_position": 384,
+          "operation_count": 780,
+          "backward_bond": 32,
+          "direct_vector_angles": [
+            0.024908267142890846,
+            0.025117222895265887
+          ],
+          "direct_eta_upper_bound": 0.050020273625296874,
+          "actual_projector_operator_norm_error": 0.025529070250257337
+        },
+        {
+          "checkpoint_position": 384,
+          "operation_count": 780,
+          "backward_bond": 64,
+          "direct_vector_angles": [
+            0.00809201684443265,
+            0.007983990935324533
+          ],
+          "direct_eta_upper_bound": 0.016075834646378316,
+          "actual_projector_operator_norm_error": 0.008143830276533252
+        },
+        {
+          "checkpoint_position": 384,
+          "operation_count": 780,
+          "backward_bond": 128,
+          "direct_vector_angles": [
+            0.0017447848155702113,
+            0.0016889173111154093
+          ],
+          "direct_eta_upper_bound": 0.003433700438495657,
+          "actual_projector_operator_norm_error": 0.0017488342602540766
+        },
+        {
+          "checkpoint_position": 320,
+          "operation_count": 650,
+          "backward_bond": 4,
+          "direct_vector_angles": [
+            0.3840027445497355,
+            0.39931967398571844
+          ],
+          "direct_eta_upper_bound": 0.763426325844353,
+          "actual_projector_operator_norm_error": 0.39733406373288194
+        },
+        {
+          "checkpoint_position": 320,
+          "operation_count": 650,
+          "backward_bond": 8,
+          "direct_vector_angles": [
+            0.2779144404602348,
+            0.2929468817160209
+          ],
+          "direct_eta_upper_bound": 0.5631255214215161,
+          "actual_projector_operator_norm_error": 0.29683450892157753
+        },
+        {
+          "checkpoint_position": 320,
+          "operation_count": 650,
+          "backward_bond": 16,
+          "direct_vector_angles": [
+            0.18851021247305544,
+            0.1864915361237865
+          ],
+          "direct_eta_upper_bound": 0.3728081215723864,
+          "actual_projector_operator_norm_error": 0.19600375020032393
+        },
+        {
+          "checkpoint_position": 320,
+          "operation_count": 650,
+          "backward_bond": 32,
+          "direct_vector_angles": [
+            0.10324552157074128,
+            0.10657244175754954
+          ],
+          "direct_eta_upper_bound": 0.20943301291226982,
+          "actual_projector_operator_norm_error": 0.10762064998074253
+        },
+        {
+          "checkpoint_position": 320,
+          "operation_count": 650,
+          "backward_bond": 64,
+          "direct_vector_angles": [
+            0.04691911751321092,
+            0.047645886697097586
+          ],
+          "direct_eta_upper_bound": 0.09452976643524903,
+          "actual_projector_operator_norm_error": 0.047934672443369
+        },
+        {
+          "checkpoint_position": 320,
+          "operation_count": 650,
+          "backward_bond": 128,
+          "direct_vector_angles": [
+            0.014855362375732855,
+            0.014652025127252456
+          ],
+          "direct_eta_upper_bound": 0.02950631687602507,
+          "actual_projector_operator_norm_error": 0.01489050583477799
+        },
+        {
+          "checkpoint_position": 256,
+          "operation_count": 526,
+          "backward_bond": 4,
+          "direct_vector_angles": [
+            0.5566183405798676,
+            0.5555536692227147
+          ],
+          "direct_eta_upper_bound": 1.055731821063524,
+          "actual_projector_operator_norm_error": 0.5720826959788091
+        },
+        {
+          "checkpoint_position": 256,
+          "operation_count": 526,
+          "backward_bond": 8,
+          "direct_vector_angles": [
+            0.43457739904213016,
+            0.43287439977555986
+          ],
+          "direct_eta_upper_bound": 0.8405089272492259,
+          "actual_projector_operator_norm_error": 0.4591827173630464
+        },
+        {
+          "checkpoint_position": 256,
+          "operation_count": 526,
+          "backward_bond": 16,
+          "direct_vector_angles": [
+            0.32072184124906605,
+            0.3089297488190923
+          ],
+          "direct_eta_upper_bound": 0.6192909016806929,
+          "actual_projector_operator_norm_error": 0.3315099854574287
+        },
+        {
+          "checkpoint_position": 256,
+          "operation_count": 526,
+          "backward_bond": 32,
+          "direct_vector_angles": [
+            0.21524105532090543,
+            0.20503754525989465
+          ],
+          "direct_eta_upper_bound": 0.41718684631857034,
+          "actual_projector_operator_norm_error": 0.21926111319672373
+        },
+        {
+          "checkpoint_position": 256,
+          "operation_count": 526,
+          "backward_bond": 64,
+          "direct_vector_angles": [
+            0.11791838808331574,
+            0.11183507862225284
+          ],
+          "direct_eta_upper_bound": 0.22924740969152796,
+          "actual_projector_operator_norm_error": 0.11916930421346052
+        },
+        {
+          "checkpoint_position": 256,
+          "operation_count": 526,
+          "backward_bond": 128,
+          "direct_vector_angles": [
+            0.047423788226445864,
+            0.04542361116267595
+          ],
+          "direct_eta_upper_bound": 0.09281400640221718,
+          "actual_projector_operator_norm_error": 0.047660669764374886
+        },
+        {
+          "checkpoint_position": 192,
+          "operation_count": 402,
+          "backward_bond": 4,
+          "direct_vector_angles": [
+            0.6237649818451146,
+            0.6035781406314
+          ],
+          "direct_eta_upper_bound": 1.1516872922152075,
+          "actual_projector_operator_norm_error": 0.5966201437855093
+        },
+        {
+          "checkpoint_position": 192,
+          "operation_count": 402,
+          "backward_bond": 8,
+          "direct_vector_angles": [
+            0.5167018136923774,
+            0.4967066670650937
+          ],
+          "direct_eta_upper_bound": 0.9705479835024111,
+          "actual_projector_operator_norm_error": 0.5249233025207385
+        },
+        {
+          "checkpoint_position": 192,
+          "operation_count": 402,
+          "backward_bond": 16,
+          "direct_vector_angles": [
+            0.40315108173865916,
+            0.3798970851124771
+          ],
+          "direct_eta_upper_bound": 0.7631436366890316,
+          "actual_projector_operator_norm_error": 0.4142448317798996
+        },
+        {
+          "checkpoint_position": 192,
+          "operation_count": 402,
+          "backward_bond": 32,
+          "direct_vector_angles": [
+            0.28905519646061567,
+            0.2711366859244472
+          ],
+          "direct_eta_upper_bound": 0.552873514355605,
+          "actual_projector_operator_norm_error": 0.29202668818214444
+        },
+        {
+          "checkpoint_position": 192,
+          "operation_count": 402,
+          "backward_bond": 64,
+          "direct_vector_angles": [
+            0.1767615213787572,
+            0.16617260415655244
+          ],
+          "direct_eta_upper_bound": 0.3412513794875024,
+          "actual_projector_operator_norm_error": 0.17929795398151005
+        },
+        {
+          "checkpoint_position": 192,
+          "operation_count": 402,
+          "backward_bond": 128,
+          "direct_vector_angles": [
+            0.07810487099375722,
+            0.07462070074848715
+          ],
+          "direct_eta_upper_bound": 0.15257695268502292,
+          "actual_projector_operator_norm_error": 0.07889469151623155
+        },
+        {
+          "checkpoint_position": 128,
+          "operation_count": 274,
+          "backward_bond": 4,
+          "direct_vector_angles": [
+            0.5688167349948148,
+            0.5571106620618347
+          ],
+          "direct_eta_upper_bound": 1.0673714569800692,
+          "actual_projector_operator_norm_error": 0.5445615767564402
+        },
+        {
+          "checkpoint_position": 128,
+          "operation_count": 274,
+          "backward_bond": 8,
+          "direct_vector_angles": [
+            0.5028331975743086,
+            0.4875024640128707
+          ],
+          "direct_eta_upper_bound": 0.9503307404759247,
+          "actual_projector_operator_norm_error": 0.49312950409503414
+        },
+        {
+          "checkpoint_position": 128,
+          "operation_count": 274,
+          "backward_bond": 16,
+          "direct_vector_angles": [
+            0.4152295393066858,
+            0.3973721346846217
+          ],
+          "direct_eta_upper_bound": 0.7903965511850708,
+          "actual_projector_operator_norm_error": 0.4139973457654556
+        },
+        {
+          "checkpoint_position": 128,
+          "operation_count": 274,
+          "backward_bond": 32,
+          "direct_vector_angles": [
+            0.31565285333038845,
+            0.29752935698142413
+          ],
+          "direct_eta_upper_bound": 0.6035961474381587,
+          "actual_projector_operator_norm_error": 0.31977708592868354
+        },
+        {
+          "checkpoint_position": 128,
+          "operation_count": 274,
+          "backward_bond": 64,
+          "direct_vector_angles": [
+            0.20381875463212482,
+            0.19455248375671705
+          ],
+          "direct_eta_upper_bound": 0.39573798770478447,
+          "actual_projector_operator_norm_error": 0.2088720183835234
+        },
+        {
+          "checkpoint_position": 128,
+          "operation_count": 274,
+          "backward_bond": 128,
+          "direct_vector_angles": [
+            0.09396076996430551,
+            0.09019462896905348
+          ],
+          "direct_eta_upper_bound": 0.18389496231006136,
+          "actual_projector_operator_norm_error": 0.0958885712134196
+        },
+        {
+          "checkpoint_position": 64,
+          "operation_count": 148,
+          "backward_bond": 4,
+          "direct_vector_angles": [
+            0.5634655200158759,
+            0.5553002815722673
+          ],
+          "direct_eta_upper_bound": 1.0613176677479434,
+          "actual_projector_operator_norm_error": 0.5356732002087167
+        },
+        {
+          "checkpoint_position": 64,
+          "operation_count": 148,
+          "backward_bond": 8,
+          "direct_vector_angles": [
+            0.5145327845973275,
+            0.5000100998999385
+          ],
+          "direct_eta_upper_bound": 0.9715625832042514,
+          "actual_projector_operator_norm_error": 0.49785638581340746
+        },
+        {
+          "checkpoint_position": 64,
+          "operation_count": 148,
+          "backward_bond": 16,
+          "direct_vector_angles": [
+            0.4375623323773156,
+            0.4176302771338231
+          ],
+          "direct_eta_upper_bound": 0.8293282603386258,
+          "actual_projector_operator_norm_error": 0.432508548825528
+        },
+        {
+          "checkpoint_position": 64,
+          "operation_count": 148,
+          "backward_bond": 32,
+          "direct_vector_angles": [
+            0.33719101633917925,
+            0.32170732317474676
+          ],
+          "direct_eta_upper_bound": 0.647024350484281,
+          "actual_projector_operator_norm_error": 0.3410822504268011
+        },
+        {
+          "checkpoint_position": 64,
+          "operation_count": 148,
+          "backward_bond": 64,
+          "direct_vector_angles": [
+            0.2229438105156149,
+            0.21532142055944345
+          ],
+          "direct_eta_upper_bound": 0.43476296808848214,
+          "actual_projector_operator_norm_error": 0.22994408552992915
+        },
+        {
+          "checkpoint_position": 64,
+          "operation_count": 148,
+          "backward_bond": 128,
+          "direct_vector_angles": [
+            0.10344604222225723,
+            0.09949436859669553
+          ],
+          "direct_eta_upper_bound": 0.20259194200872904,
+          "actual_projector_operator_norm_error": 0.10598695273748006
+        }
+      ]
+    },
+    {
+      "case": "ibm32",
+      "method": "prior_matched_random",
+      "ordering": "sorted",
+      "qubits": 18,
+      "checkpoint_count": 557,
+      "rows": [
+        {
+          "checkpoint_position": 512,
+          "operation_count": 1032,
+          "backward_bond": 4,
+          "direct_vector_angles": [
+            0.00017025889289582654,
+            0.00016929978504613886
+          ],
+          "direct_eta_upper_bound": 0.0003395586763106285,
+          "actual_projector_operator_norm_error": 0.00019902126991673118
+        },
+        {
+          "checkpoint_position": 512,
+          "operation_count": 1032,
+          "backward_bond": 8,
+          "direct_vector_angles": [
+            1.4360446888978288e-05,
+            1.435572212981493e-05
+          ],
+          "direct_eta_upper_bound": 2.8716169017806557e-05,
+          "actual_projector_operator_norm_error": 1.6256026067421498e-05
+        },
+        {
+          "checkpoint_position": 512,
+          "operation_count": 1032,
+          "backward_bond": 16,
+          "direct_vector_angles": [
+            3.967292292132202e-08,
+            4.066382545692775e-08
+          ],
+          "direct_eta_upper_bound": 8.033674837824973e-08,
+          "actual_projector_operator_norm_error": 4.118305071389435e-08
+        },
+        {
+          "checkpoint_position": 512,
+          "operation_count": 1032,
+          "backward_bond": 32,
+          "direct_vector_angles": [
+            3.954716309271172e-09,
+            3.970223045691095e-09
+          ],
+          "direct_eta_upper_bound": 7.924939354962266e-09,
+          "actual_projector_operator_norm_error": 3.969227989748258e-09
+        },
+        {
+          "checkpoint_position": 512,
+          "operation_count": 1032,
+          "backward_bond": 64,
+          "direct_vector_angles": [
+            3.1790945401371327e-12,
+            3.215710714312116e-12
+          ],
+          "direct_eta_upper_bound": 6.3948052544492486e-12,
+          "actual_projector_operator_norm_error": 2.2171545193525386e-12
+        },
+        {
+          "checkpoint_position": 512,
+          "operation_count": 1032,
+          "backward_bond": 128,
+          "direct_vector_angles": [
+            1.0110873261515788e-12,
+            1.009689664698475e-12
+          ],
+          "direct_eta_upper_bound": 2.0207769908500537e-12,
+          "actual_projector_operator_norm_error": 1.2094446735554664e-14
+        },
+        {
+          "checkpoint_position": 448,
+          "operation_count": 902,
+          "backward_bond": 4,
+          "direct_vector_angles": [
+            0.006055290326034627,
+            0.006667774012204134
+          ],
+          "direct_eta_upper_bound": 0.012722977926663517,
+          "actual_projector_operator_norm_error": 0.007476196786568498
+        },
+        {
+          "checkpoint_position": 448,
+          "operation_count": 902,
+          "backward_bond": 8,
+          "direct_vector_angles": [
+            0.0006037206466894944,
+            0.0005311331929340822
+          ],
+          "direct_eta_upper_bound": 0.0011348537779773686,
+          "actual_projector_operator_norm_error": 0.0006041299763248623
+        },
+        {
+          "checkpoint_position": 448,
+          "operation_count": 902,
+          "backward_bond": 16,
+          "direct_vector_angles": [
+            5.341293033906586e-05,
+            6.728971739113738e-05
+          ],
+          "direct_eta_upper_bound": 0.00012070264765402566,
+          "actual_projector_operator_norm_error": 6.73592567293314e-05
+        },
+        {
+          "checkpoint_position": 448,
+          "operation_count": 902,
+          "backward_bond": 32,
+          "direct_vector_angles": [
+            4.980244925481162e-06,
+            4.693748300329749e-06
+          ],
+          "direct_eta_upper_bound": 9.673993225773088e-06,
+          "actual_projector_operator_norm_error": 4.9829911316765e-06
+        },
+        {
+          "checkpoint_position": 448,
+          "operation_count": 902,
+          "backward_bond": 64,
+          "direct_vector_angles": [
+            1.2826503409032355e-07,
+            1.5225527744982723e-07
+          ],
+          "direct_eta_upper_bound": 2.8052031154014983e-07,
+          "actual_projector_operator_norm_error": 1.5226145717179385e-07
+        },
+        {
+          "checkpoint_position": 448,
+          "operation_count": 902,
+          "backward_bond": 128,
+          "direct_vector_angles": [
+            1.6481147544060655e-09,
+            1.7337183897328715e-09
+          ],
+          "direct_eta_upper_bound": 3.381833144138937e-09,
+          "actual_projector_operator_norm_error": 1.7327343577977218e-09
+        },
+        {
+          "checkpoint_position": 384,
+          "operation_count": 780,
+          "backward_bond": 4,
+          "direct_vector_angles": [
+            0.030438825194250542,
+            0.03536055412803253
+          ],
+          "direct_eta_upper_bound": 0.06578731067123947,
+          "actual_projector_operator_norm_error": 0.039859317259775894
+        },
+        {
+          "checkpoint_position": 384,
+          "operation_count": 780,
+          "backward_bond": 8,
+          "direct_vector_angles": [
+            0.008751995499041052,
+            0.007466044745329526
+          ],
+          "direct_eta_upper_bound": 0.01621785915311282,
+          "actual_projector_operator_norm_error": 0.008951144032522269
+        },
+        {
+          "checkpoint_position": 384,
+          "operation_count": 780,
+          "backward_bond": 16,
+          "direct_vector_angles": [
+            0.0017450814126009388,
+            0.0017915581466591962
+          ],
+          "direct_eta_upper_bound": 0.0035366377151534595,
+          "actual_projector_operator_norm_error": 0.0018217231281099902
+        },
+        {
+          "checkpoint_position": 384,
+          "operation_count": 780,
+          "backward_bond": 32,
+          "direct_vector_angles": [
+            0.0002930236676597574,
+            0.00028186858833366944
+          ],
+          "direct_eta_upper_bound": 0.0005748922480677128,
+          "actual_projector_operator_norm_error": 0.00029366508111224466
+        },
+        {
+          "checkpoint_position": 384,
+          "operation_count": 780,
+          "backward_bond": 64,
+          "direct_vector_angles": [
+            3.24359862141316e-05,
+            2.8046970924617122e-05
+          ],
+          "direct_eta_upper_bound": 6.048295712938399e-05,
+          "actual_projector_operator_norm_error": 3.244262502704608e-05
+        },
+        {
+          "checkpoint_position": 384,
+          "operation_count": 780,
+          "backward_bond": 128,
+          "direct_vector_angles": [
+            1.6775838575835572e-06,
+            1.4442105778942754e-06
+          ],
+          "direct_eta_upper_bound": 3.121794435476544e-06,
+          "actual_projector_operator_norm_error": 1.6777042803933233e-06
+        },
+        {
+          "checkpoint_position": 320,
+          "operation_count": 650,
+          "backward_bond": 4,
+          "direct_vector_angles": [
+            0.10688253961379861,
+            0.1100577344497388
+          ],
+          "direct_eta_upper_bound": 0.2165148398147212,
+          "actual_projector_operator_norm_error": 0.11881419187727559
+        },
+        {
+          "checkpoint_position": 320,
+          "operation_count": 650,
+          "backward_bond": 8,
+          "direct_vector_angles": [
+            0.045301965723539256,
+            0.04408021275069467
+          ],
+          "direct_eta_upper_bound": 0.08935241103357147,
+          "actual_projector_operator_norm_error": 0.046763994078788056
+        },
+        {
+          "checkpoint_position": 320,
+          "operation_count": 650,
+          "backward_bond": 16,
+          "direct_vector_angles": [
+            0.01757130904953654,
+            0.016514892500105804
+          ],
+          "direct_eta_upper_bound": 0.034084546664347515,
+          "actual_projector_operator_norm_error": 0.01772830241599487
+        },
+        {
+          "checkpoint_position": 320,
+          "operation_count": 650,
+          "backward_bond": 32,
+          "direct_vector_angles": [
+            0.0050919144760874155,
+            0.004618383291859289
+          ],
+          "direct_eta_upper_bound": 0.009710259346538153,
+          "actual_projector_operator_norm_error": 0.005115527041946488
+        },
+        {
+          "checkpoint_position": 320,
+          "operation_count": 650,
+          "backward_bond": 64,
+          "direct_vector_angles": [
+            0.0011393219648032724,
+            0.0010099598234265626
+          ],
+          "direct_eta_upper_bound": 0.0021492813700498426,
+          "actual_projector_operator_norm_error": 0.0011405703570186378
+        },
+        {
+          "checkpoint_position": 320,
+          "operation_count": 650,
+          "backward_bond": 128,
+          "direct_vector_angles": [
+            0.00015076305211071103,
+            0.00012681575654774935
+          ],
+          "direct_eta_upper_bound": 0.0002775788077474188,
+          "actual_projector_operator_norm_error": 0.00015083107414610146
+        },
+        {
+          "checkpoint_position": 256,
+          "operation_count": 526,
+          "backward_bond": 4,
+          "direct_vector_angles": [
+            0.283558905408176,
+            0.23962984854462646
+          ],
+          "direct_eta_upper_bound": 0.5171172645952463,
+          "actual_projector_operator_norm_error": 0.2814613388542512
+        },
+        {
+          "checkpoint_position": 256,
+          "operation_count": 526,
+          "backward_bond": 8,
+          "direct_vector_angles": [
+            0.17946056390814674,
+            0.15551056134750282
+          ],
+          "direct_eta_upper_bound": 0.33338334625328336,
+          "actual_projector_operator_norm_error": 0.17971641222561174
+        },
+        {
+          "checkpoint_position": 256,
+          "operation_count": 526,
+          "backward_bond": 16,
+          "direct_vector_angles": [
+            0.09933554105290411,
+            0.07845041613507453
+          ],
+          "direct_eta_upper_bound": 0.17754222603770137,
+          "actual_projector_operator_norm_error": 0.09939390875902587
+        },
+        {
+          "checkpoint_position": 256,
+          "operation_count": 526,
+          "backward_bond": 32,
+          "direct_vector_angles": [
+            0.0453167958141164,
+            0.0343277754670505
+          ],
+          "direct_eta_upper_bound": 0.07962232079860976,
+          "actual_projector_operator_norm_error": 0.045370416339255815
+        },
+        {
+          "checkpoint_position": 256,
+          "operation_count": 526,
+          "backward_bond": 64,
+          "direct_vector_angles": [
+            0.015711836872452697,
+            0.012084355720942918
+          ],
+          "direct_eta_upper_bound": 0.02779525204501273,
+          "actual_projector_operator_norm_error": 0.015727362338182525
+        },
+        {
+          "checkpoint_position": 256,
+          "operation_count": 526,
+          "backward_bond": 128,
+          "direct_vector_angles": [
+            0.0036656158325650413,
+            0.002839691228337039
+          ],
+          "direct_eta_upper_bound": 0.006505295035449414,
+          "actual_projector_operator_norm_error": 0.003668672687410975
+        },
+        {
+          "checkpoint_position": 192,
+          "operation_count": 402,
+          "backward_bond": 4,
+          "direct_vector_angles": [
+            0.671373550263724,
+            0.5426836342924972
+          ],
+          "direct_eta_upper_bound": 1.1384979333108443,
+          "actual_projector_operator_norm_error": 0.6547576244009106
+        },
+        {
+          "checkpoint_position": 192,
+          "operation_count": 402,
+          "backward_bond": 8,
+          "direct_vector_angles": [
+            0.4864342433708546,
+            0.4125896585919791
+          ],
+          "direct_eta_upper_bound": 0.868459737233034,
+          "actual_projector_operator_norm_error": 0.46754962152766544
+        },
+        {
+          "checkpoint_position": 192,
+          "operation_count": 402,
+          "backward_bond": 16,
+          "direct_vector_angles": [
+            0.3242884661725167,
+            0.27769592172993185
+          ],
+          "direct_eta_upper_bound": 0.5927749895522596,
+          "actual_projector_operator_norm_error": 0.3190727653592666
+        },
+        {
+          "checkpoint_position": 192,
+          "operation_count": 402,
+          "backward_bond": 32,
+          "direct_vector_angles": [
+            0.19075773342659114,
+            0.16253725246347148
+          ],
+          "direct_eta_upper_bound": 0.3514254740879831,
+          "actual_projector_operator_norm_error": 0.18958752103071144
+        },
+        {
+          "checkpoint_position": 192,
+          "operation_count": 402,
+          "backward_bond": 64,
+          "direct_vector_angles": [
+            0.09261308119476618,
+            0.07741241611556274
+          ],
+          "direct_eta_upper_bound": 0.16981586601832344,
+          "actual_projector_operator_norm_error": 0.09251632274564134
+        },
+        {
+          "checkpoint_position": 192,
+          "operation_count": 402,
+          "backward_bond": 128,
+          "direct_vector_angles": [
+            0.03235658094239958,
+            0.028149084174987297
+          ],
+          "direct_eta_upper_bound": 0.06049630219609343,
+          "actual_projector_operator_norm_error": 0.03236630403713407
+        },
+        {
+          "checkpoint_position": 128,
+          "operation_count": 274,
+          "backward_bond": 4,
+          "direct_vector_angles": [
+            0.9116108029524964,
+            0.797407048383193
+          ],
+          "direct_eta_upper_bound": 1.5060384930722723,
+          "actual_projector_operator_norm_error": 0.8800123717931132
+        },
+        {
+          "checkpoint_position": 128,
+          "operation_count": 274,
+          "backward_bond": 8,
+          "direct_vector_angles": [
+            0.7440575638623191,
+            0.684460234019945
+          ],
+          "direct_eta_upper_bound": 1.3095336503891888,
+          "actual_projector_operator_norm_error": 0.6842537733734882
+        },
+        {
+          "checkpoint_position": 128,
+          "operation_count": 274,
+          "backward_bond": 16,
+          "direct_vector_angles": [
+            0.5649152217011844,
+            0.5327682025356474
+          ],
+          "direct_eta_upper_bound": 1.043264037241312,
+          "actual_projector_operator_norm_error": 0.5408540374106867
+        },
+        {
+          "checkpoint_position": 128,
+          "operation_count": 274,
+          "backward_bond": 32,
+          "direct_vector_angles": [
+            0.39639473387508956,
+            0.369361277893991
+          ],
+          "direct_eta_upper_bound": 0.747115008841901,
+          "actual_projector_operator_norm_error": 0.39115259154908694
+        },
+        {
+          "checkpoint_position": 128,
+          "operation_count": 274,
+          "backward_bond": 64,
+          "direct_vector_angles": [
+            0.24134579955511848,
+            0.22453597571004008
+          ],
+          "direct_eta_upper_bound": 0.4616636469714114,
+          "actual_projector_operator_norm_error": 0.23977431908442276
+        },
+        {
+          "checkpoint_position": 128,
+          "operation_count": 274,
+          "backward_bond": 128,
+          "direct_vector_angles": [
+            0.11195994742882963,
+            0.10488087352942492
+          ],
+          "direct_eta_upper_bound": 0.21641488813419968,
+          "actual_projector_operator_norm_error": 0.11194706996779806
+        },
+        {
+          "checkpoint_position": 64,
+          "operation_count": 148,
+          "backward_bond": 4,
+          "direct_vector_angles": [
+            0.9920686495863138,
+            0.8660782075356886
+          ],
+          "direct_eta_upper_bound": 1.5989534257950795,
+          "actual_projector_operator_norm_error": 1.003130618687843
+        },
+        {
+          "checkpoint_position": 64,
+          "operation_count": 148,
+          "backward_bond": 8,
+          "direct_vector_angles": [
+            0.863712612631563,
+            0.7596049837776274
+          ],
+          "direct_eta_upper_bound": 1.4488946514500216,
+          "actual_projector_operator_norm_error": 0.7854186604098359
+        },
+        {
+          "checkpoint_position": 64,
+          "operation_count": 148,
+          "backward_bond": 16,
+          "direct_vector_angles": [
+            0.702893265609372,
+            0.6322172217804358
+          ],
+          "direct_eta_upper_bound": 1.2373627639071247,
+          "actual_projector_operator_norm_error": 0.6708671780276313
+        },
+        {
+          "checkpoint_position": 64,
+          "operation_count": 148,
+          "backward_bond": 32,
+          "direct_vector_angles": [
+            0.5252561844492217,
+            0.474119576753573
+          ],
+          "direct_eta_upper_bound": 0.9579899868046287,
+          "actual_projector_operator_norm_error": 0.5132414175257439
+        },
+        {
+          "checkpoint_position": 64,
+          "operation_count": 148,
+          "backward_bond": 64,
+          "direct_vector_angles": [
+            0.34252567056889116,
+            0.3161944695770614
+          ],
+          "direct_eta_upper_bound": 0.6468190609529043,
+          "actual_projector_operator_norm_error": 0.33942244082870715
+        },
+        {
+          "checkpoint_position": 64,
+          "operation_count": 148,
+          "backward_bond": 128,
+          "direct_vector_angles": [
+            0.17239342129743684,
+            0.16055935525084297
+          ],
+          "direct_eta_upper_bound": 0.3314111742355661,
+          "actual_projector_operator_norm_error": 0.17207357582065058
+        }
+      ]
+    }
+  ]
+}

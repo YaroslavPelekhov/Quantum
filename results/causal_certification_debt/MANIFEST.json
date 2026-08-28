@@ -1,0 +1,50 @@
+{
+  "complete": true,
+  "created_at": "2026-08-21T14:15:05.826806+00:00",
+  "sources": {
+    "experiments/causal_certification_debt/THEOREMS.md": {
+      "bytes": 3836,
+      "sha256": "28698dcb882fb2de3c6543e0b0d388ebf5dc6d7189477a5bc6a4c360d0278aec"
+    },
+    "experiments/causal_certification_debt/analyze_debt.py": {
+      "bytes": 8957,
+      "sha256": "5f84e607f8fcc6ab69a860143341b487d4e7c62ebce03127633a81be81a17bbc"
+    },
+    "experiments/causal_certification_debt/test_debt.py": {
+      "bytes": 1448,
+      "sha256": "9a2aa65a94cfd8234c87d2496a568db68684595e49ba50b2a9ee6e5ea3c78fa1"
+    },
+    "experiments/causal_certification_debt/README.md": {
+      "bytes": 831,
+      "sha256": "bf3bd0a13c4cf53e0bd6e67003eb711c0c481fb4fd196c0bf72a089901f41b13"
+    }
+  },
+  "inputs": {
+    "results/compressed_observable_telescope/residual_cot_ibm32_confirm_sorted_adaptive_residual-adaptive_causal319.json": {
+      "bytes": 803396,
+      "sha256": "f173197a28191f658ebd2a30d4994f20b53011779bc398ce1be8f0b52b41c4f2"
+    },
+    "results/compressed_observable_telescope/residual_cot_ibm32_confirm_sorted_adaptive.json": {
+      "bytes": 3645881,
+      "sha256": "cd027f1a50e5d27482222c1bfc9103e19c50b96d78990eada602a2e7ae97e378"
+    },
+    "results/compressed_observable_telescope/residual_cot_ibm32_confirm_spectral_adaptive_residual-adaptive_causal319.json": {
+      "bytes": 807980,
+      "sha256": "b538a4a3d14248178b6e62457d6c83121012c5296f2d48af5c79cbae4a825688"
+    },
+    "results/compressed_observable_telescope/residual_cot_ibm32_confirm_spectral_adaptive.json": {
+      "bytes": 3655491,
+      "sha256": "0e74a8b12f8326370c8a85f3459c4dbd260bd5dceac41f554757fc1d1e909bf2"
+    }
+  },
+  "artifacts": {
+    "results/causal_certification_debt/summary.json": {
+      "bytes": 12388,
+      "sha256": "8da6111ec10e36bc7c47680ce7db6e15ed92b005afe8c8e7d152bba91f3fb499"
+    },
+    "results/causal_certification_debt/REPORT.md": {
+      "bytes": 1038,
+      "sha256": "f714609bfb7e57a18b664854440f8a5693c872399ecce446b248b2de72209798"
+    }
+  }
+}

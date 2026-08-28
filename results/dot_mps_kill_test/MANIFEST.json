@@ -1,0 +1,57 @@
+{
+  "stage": "dot_mps_local_kill_test_manifest",
+  "complete": true,
+  "created_at": "2026-08-20T11:18:15.984880+00:00",
+  "sources": {
+    "experiments/compressed_observable_telescope/DOT_KILL_TEST_PROTOCOL.md": {
+      "bytes": 1712,
+      "sha256": "a2d52291fefc3c64a4a78bab6608165c21c489b2ba1db21bb73a57ce235a022b"
+    },
+    "experiments/compressed_observable_telescope/run_dot_kill_test.py": {
+      "bytes": 13186,
+      "sha256": "f48f30125e9819ccccd93926c0379200912e721e16fe4e1e14fb7822458de49b"
+    },
+    "experiments/compressed_observable_telescope/analyze_dot_kill_test.py": {
+      "bytes": 8528,
+      "sha256": "55853314fc103588b1b417889767bd627920b9785bf1b213a7cc774189668ed5"
+    }
+  },
+  "artifacts": {
+    "results/dot_mps_kill_test/ibm32_confirm_sorted_lr_position502_cut6.json": {
+      "bytes": 45115,
+      "sha256": "0f3d9ee8a949e49f7717b7f999ccf9632f52ce43e43edeed335a0503301ace9f"
+    },
+    "results/dot_mps_kill_test/ibm32_confirm_sorted_lr_position502_cut7.json": {
+      "bytes": 60941,
+      "sha256": "e691912f1656c3fdfcdd961e84ca9d03f87806d082f75c350d49c914c8468a5a"
+    },
+    "results/dot_mps_kill_test/ibm32_confirm_sorted_lr_position502_cut8.json": {
+      "bytes": 92836,
+      "sha256": "83564f9745c81ff1fd9c916a3fc3f8b23349fea4b9b827ada78f24f5bf3b68da"
+    },
+    "results/dot_mps_kill_test/ibm32_confirm_sorted_lr_position502_cut9.json": {
+      "bytes": 148819,
+      "sha256": "abeabaff1d120ed9ee315cef75addeabd60ccdfe672c0e42a2a5c6ca34cbd674"
+    },
+    "results/dot_mps_kill_test/ibm32_confirm_sorted_lr_position502_cut10.json": {
+      "bytes": 88977,
+      "sha256": "f4b837c6478603c585d0e984d8757938874a0e769c68016cd71230ca374a932b"
+    },
+    "results/dot_mps_kill_test/ibm32_confirm_sorted_lr_position502_cut11.json": {
+      "bytes": 150761,
+      "sha256": "c1f91ef31f755aad6978a835afe166cc25831f64fa7f04d03d22b023c31e26d7"
+    },
+    "results/dot_mps_kill_test/ibm32_confirm_sorted_lr_position502_cut12.json": {
+      "bytes": 44109,
+      "sha256": "cbe537c26f1f8c06ca3ba4bb03688e24230c01ee8f5e7d69d29eba3a0cde712d"
+    },
+    "results/dot_mps_kill_test/summary.json": {
+      "bytes": 3752,
+      "sha256": "9f8a73b40be9d8fc300cee4a2e447fb3b0103125ffc2e02e440f2ef250cfaee4"
+    },
+    "results/dot_mps_kill_test/REPORT.md": {
+      "bytes": 3043,
+      "sha256": "faab26624d06b5100a8df0ad7e12c2791574e71e869548e9fdbc3a21f325aa7c"
+    }
+  }
+}

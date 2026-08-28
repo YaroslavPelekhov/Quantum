@@ -1,0 +1,192 @@
+{
+  "complete": true,
+  "created_at": "2026-08-22T22:51:49.510426+00:00",
+  "protocol_sha256": "27f040b94e62e76fa6d0d2f76f96b8435074590d7ed590d90da3bae7c0597de7",
+  "cut": 4,
+  "rank": 2,
+  "depth": 15,
+  "rows": [
+    {
+      "case": "es60fst01",
+      "ordering": "sorted",
+      "qubits": 15,
+      "bks_support_size": 108,
+      "paired_gates": 780,
+      "exact_delta": 0.24288425169737038,
+      "methods": {
+        "state_averaged": {
+          "delta": 0.2855889747546612,
+          "absolute_error": 0.04270472305729084,
+          "sign_correct": true,
+          "runtime_seconds": 1.7633361999760382,
+          "paired_gates": 780,
+          "max_biorthogonality_error": 0.0,
+          "fallback_count": 0
+        },
+        "decision_balanced": {
+          "delta": -0.006012705668734311,
+          "absolute_error": 0.24889695736610468,
+          "sign_correct": false,
+          "runtime_seconds": 78.7288737000199,
+          "paired_gates": 780,
+          "max_biorthogonality_error": 8.666960596244292e-09,
+          "fallback_count": 47
+        }
+      },
+      "candidate_strictly_better": false,
+      "candidate_pass": false
+    },
+    {
+      "case": "es60fst01",
+      "ordering": "spectral",
+      "qubits": 15,
+      "bks_support_size": 108,
+      "paired_gates": 780,
+      "exact_delta": 0.2428842516973706,
+      "methods": {
+        "state_averaged": {
+          "delta": 0.26459236488965654,
+          "absolute_error": 0.02170811319228594,
+          "sign_correct": true,
+          "runtime_seconds": 1.7315297999884933,
+          "paired_gates": 780,
+          "max_biorthogonality_error": 0.0,
+          "fallback_count": 0
+        },
+        "decision_balanced": {
+          "delta": 0.23338646122518944,
+          "absolute_error": 0.009497790472181161,
+          "sign_correct": true,
+          "runtime_seconds": 78.1243079000269,
+          "paired_gates": 780,
+          "max_biorthogonality_error": 1.0287386193875307e-08,
+          "fallback_count": 69
+        }
+      },
+      "candidate_strictly_better": true,
+      "candidate_pass": true
+    },
+    {
+      "case": "es60fst03",
+      "ordering": "sorted",
+      "qubits": 12,
+      "bks_support_size": 48,
+      "paired_gates": 612,
+      "exact_delta": 0.21947379690141336,
+      "methods": {
+        "state_averaged": {
+          "delta": 0.44325862114680864,
+          "absolute_error": 0.22378482424539528,
+          "sign_correct": true,
+          "runtime_seconds": 0.1918362999567762,
+          "paired_gates": 612,
+          "max_biorthogonality_error": 0.0,
+          "fallback_count": 0
+        },
+        "decision_balanced": {
+          "delta": 0.3153924274909673,
+          "absolute_error": 0.09591863058955394,
+          "sign_correct": true,
+          "runtime_seconds": 3.813090200012084,
+          "paired_gates": 612,
+          "max_biorthogonality_error": 3.5725364565200765e-09,
+          "fallback_count": 27
+        }
+      },
+      "candidate_strictly_better": true,
+      "candidate_pass": true
+    },
+    {
+      "case": "es60fst03",
+      "ordering": "spectral",
+      "qubits": 12,
+      "bks_support_size": 48,
+      "paired_gates": 612,
+      "exact_delta": 0.21947379690141394,
+      "methods": {
+        "state_averaged": {
+          "delta": 0.18548967396240662,
+          "absolute_error": 0.03398412293900732,
+          "sign_correct": true,
+          "runtime_seconds": 0.1911824000417255,
+          "paired_gates": 612,
+          "max_biorthogonality_error": 0.0,
+          "fallback_count": 0
+        },
+        "decision_balanced": {
+          "delta": 0.15919166996613424,
+          "absolute_error": 0.060282126935279706,
+          "sign_correct": true,
+          "runtime_seconds": 3.795715299958829,
+          "paired_gates": 612,
+          "max_biorthogonality_error": 3.241468119732544e-09,
+          "fallback_count": 152
+        }
+      },
+      "candidate_strictly_better": false,
+      "candidate_pass": false
+    },
+    {
+      "case": "mammalia-kangaroo-interactions",
+      "ordering": "sorted",
+      "qubits": 15,
+      "bks_support_size": 13,
+      "paired_gates": 1650,
+      "exact_delta": -0.2694888992042193,
+      "methods": {
+        "state_averaged": {
+          "delta": -0.1991409189415026,
+          "absolute_error": 0.07034798026271671,
+          "sign_correct": true,
+          "runtime_seconds": 3.7031453999807127,
+          "paired_gates": 1650,
+          "max_biorthogonality_error": 0.0,
+          "fallback_count": 0
+        },
+        "decision_balanced": {
+          "delta": -0.012229936512260418,
+          "absolute_error": 0.2572589626919589,
+          "sign_correct": true,
+          "runtime_seconds": 24.361516700009815,
+          "paired_gates": 1650,
+          "max_biorthogonality_error": 1.279650973644003e-09,
+          "fallback_count": 61
+        }
+      },
+      "candidate_strictly_better": false,
+      "candidate_pass": false
+    },
+    {
+      "case": "mammalia-kangaroo-interactions",
+      "ordering": "spectral",
+      "qubits": 15,
+      "bks_support_size": 13,
+      "paired_gates": 1650,
+      "exact_delta": -0.26948889920421965,
+      "methods": {
+        "state_averaged": {
+          "delta": -0.4082635803485054,
+          "absolute_error": 0.13877468114428576,
+          "sign_correct": true,
+          "runtime_seconds": 3.7074365000007674,
+          "paired_gates": 1650,
+          "max_biorthogonality_error": 0.0,
+          "fallback_count": 0
+        },
+        "decision_balanced": {
+          "delta": -0.14822601873884123,
+          "absolute_error": 0.12126288046537842,
+          "sign_correct": true,
+          "runtime_seconds": 24.09525129996473,
+          "paired_gates": 1650,
+          "max_biorthogonality_error": 3.613543622423883e-09,
+          "fallback_count": 22
+        }
+      },
+      "candidate_strictly_better": true,
+      "candidate_pass": true
+    }
+  ],
+  "success": false,
+  "passed_rows": 3
+}

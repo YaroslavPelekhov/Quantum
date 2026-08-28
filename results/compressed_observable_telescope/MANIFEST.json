@@ -1,0 +1,118 @@
+{
+  "stage": "compressed_observable_telescope_manifest",
+  "complete": true,
+  "created_at": "2026-08-20T19:37:54.870021+00:00",
+  "git_head": "506c4f2504311fb854365d3917877a72227043e5",
+  "git_worktree_dirty_at_manifest_time": true,
+  "software": {
+    "python": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.5.1",
+    "qiskit": "2.5.1",
+    "qiskit_aer": "0.17.2"
+  },
+  "sources": {
+    "experiments/compressed_observable_telescope/cot_core.py": {
+      "bytes": 9698,
+      "sha256": "09bf7082367fca98a780835f97c01fbfde9ce1f14eae012014aee5dc5b5a44a5"
+    },
+    "experiments/compressed_observable_telescope/run_backward_feasibility.py": {
+      "bytes": 8854,
+      "sha256": "1844dc8e053173270dca351549c33dbcdcf252ed31803942aaab5b34e12e5934"
+    },
+    "experiments/compressed_observable_telescope/audit_forward_groups.py": {
+      "bytes": 5352,
+      "sha256": "8fef2a2ec35eae993ab42585f4ce0a7d7e1732cb65947c20d237aefe949a65bf"
+    },
+    "experiments/compressed_observable_telescope/audit_backward_oracle.py": {
+      "bytes": 4333,
+      "sha256": "2d87f2756828cd8af1594990d83891c29161c92d7c3f806c4097d44acefd0b76"
+    },
+    "experiments/compressed_observable_telescope/audit_recursive_eta.py": {
+      "bytes": 3984,
+      "sha256": "ed41415b92e5dd653f92b73f86fde24ed48016ea7d192b6dff02c975a54c489b"
+    },
+    "experiments/compressed_observable_telescope/run_residual_cot.py": {
+      "bytes": 14816,
+      "sha256": "b63b5d05503f398bff176e7638a8f04a12e18562e3e41e64eb67eb97274238e0"
+    },
+    "experiments/compressed_observable_telescope/run_compressed_first_term.py": {
+      "bytes": 9587,
+      "sha256": "1f30d350aa74a1ff879994cc7af239552b5f6afbd7cf7d82c5ae682c5c21a2a9"
+    },
+    "experiments/compressed_observable_telescope/analyze_cot.py": {
+      "bytes": 14950,
+      "sha256": "fa72f69b6e3d8c36e5ebc538cbdc0a1040fe5c482ce59adeac4c9a0c04213956"
+    },
+    "experiments/compressed_observable_telescope/test_cot_core.py": {
+      "bytes": 5361,
+      "sha256": "893b02183b0b933a3a62c83d224145e599a6f57e3ba9cd6d1f7e96c1226609aa"
+    },
+    "experiments/compressed_observable_telescope/THEORY.md": {
+      "bytes": 4519,
+      "sha256": "6145fc27dbba7bbcb3be103f8e3029b4bf52316acc009ae03d79a2ee589c5577"
+    },
+    "experiments/compressed_observable_telescope/README.md": {
+      "bytes": 1841,
+      "sha256": "3b5a46b5add5b7f9dd058276588a3f667cd2fffe79e940ea42773cb3de4ef0cf"
+    },
+    "experiments/compressed_observable_telescope/SPECTRAL_HELDOUT_PROTOCOL.md": {
+      "bytes": 1444,
+      "sha256": "dd0ecf6242ea652faa089da585d84d7fa138b0fc0a1faadb243a3603f5ad71b4"
+    }
+  },
+  "artifacts": {
+    "results/compressed_observable_telescope/backward_feasibility_ibm32_confirm_sorted.json": {
+      "bytes": 2788368,
+      "sha256": "a10a07ba606e9fb98110492767707f62f224c53a59b452fa3fc6ddee60485579"
+    },
+    "results/compressed_observable_telescope/forward_group_audit_ibm32_confirm_sorted.json": {
+      "bytes": 680451,
+      "sha256": "c3830a5578ef1c36d5a7016c55904df778cc592e672373ca48d4f599eca233aa"
+    },
+    "results/compressed_observable_telescope/backward_oracle_ibm32_sorted.json": {
+      "bytes": 35797,
+      "sha256": "dd4dc8d8b54e81e90b47ef7cd0056114fc9e07c0b14048a466ba1e24393974c2"
+    },
+    "results/compressed_observable_telescope/recursive_eta_oracle_ibm32_sorted_bond64.json": {
+      "bytes": 8711,
+      "sha256": "e5b684c02f735f58482bff3095cfcfd844390d5014a50a746765808e420a84ce"
+    },
+    "results/compressed_observable_telescope/residual_cot_ibm32_confirm_sorted_D64.json": {
+      "bytes": 3509787,
+      "sha256": "6762f01293b2f0b51159c593b295b644c26886a6ba6a68116ccfbe1fc2182286"
+    },
+    "results/compressed_observable_telescope/residual_cot_ibm32_confirm_sorted_adaptive.json": {
+      "bytes": 3645881,
+      "sha256": "cd027f1a50e5d27482222c1bfc9103e19c50b96d78990eada602a2e7ae97e378"
+    },
+    "results/compressed_observable_telescope/compressed_first_term_ibm32_confirm_sorted_adaptive.json": {
+      "bytes": 364968,
+      "sha256": "f227b255262b8aee812b4da6e14486a3d3ac50ad54f374e2c3e29a51fddd4eb4"
+    },
+    "results/compressed_observable_telescope/backward_oracle_ibm32_sorted_D256.json": {
+      "bytes": 5036,
+      "sha256": "d33c05cf519cdcd981d894def6d1a3c001b1eff04ae3dce7bae20f329a28ed51"
+    },
+    "results/compressed_observable_telescope/backward_oracle_ibm32_sorted_D384.json": {
+      "bytes": 5074,
+      "sha256": "52d2279df4c85189e17681db0bcde7b5c9bf5bb448e7dc89d5576d0f085b27bc"
+    },
+    "results/compressed_observable_telescope/residual_cot_ibm32_confirm_spectral_adaptive.json": {
+      "bytes": 3655491,
+      "sha256": "0e74a8b12f8326370c8a85f3459c4dbd260bd5dceac41f554757fc1d1e909bf2"
+    },
+    "results/compressed_observable_telescope/compressed_first_term_ibm32_confirm_spectral_adaptive.json": {
+      "bytes": 365021,
+      "sha256": "85b32377809cf1f044bf32d79b615f481e7227c89fc0f01a1cb56021beba2982"
+    },
+    "results/compressed_observable_telescope/summary.json": {
+      "bytes": 5910,
+      "sha256": "918153dfba5ca426a39626c310b3d596cb23b797dcc2be31e2e4e7b097ded6dc"
+    },
+    "results/compressed_observable_telescope/REPORT.md": {
+      "bytes": 4928,
+      "sha256": "79f344467ee64d6836a1e406bcec8cd95886df6b7cab91398cd70acb903342ba"
+    }
+  }
+}

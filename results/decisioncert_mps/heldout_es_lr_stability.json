@@ -1,0 +1,246 @@
+{
+  "ordering_rows": [
+    {
+      "case": "karate",
+      "ordering": "sorted",
+      "schedule_pair": "ES_minus_LR",
+      "mps_deltas": [
+        0.09007357648696468,
+        0.09007357648696468,
+        0.09007357648696468,
+        0.09007357648696468,
+        0.09007357648696468
+      ],
+      "envelope_lower": 0.09007337648696467,
+      "envelope_upper": 0.09007377648696469,
+      "exact_delta": 0.09007357648696557,
+      "exact_contained": true,
+      "decision": 1,
+      "accepted": true,
+      "accepted_correct": true
+    },
+    {
+      "case": "karate",
+      "ordering": "spectral",
+      "schedule_pair": "ES_minus_LR",
+      "mps_deltas": [
+        0.09007357648696512,
+        0.09007357648696512,
+        0.09007357648696512,
+        0.09007357648696512,
+        0.09007357648696512
+      ],
+      "envelope_lower": 0.09007337648696512,
+      "envelope_upper": 0.09007377648696513,
+      "exact_delta": 0.09007357648696546,
+      "exact_contained": true,
+      "decision": 1,
+      "accepted": true,
+      "accepted_correct": true
+    },
+    {
+      "case": "chesapeake",
+      "ordering": "sorted",
+      "schedule_pair": "ES_minus_LR",
+      "mps_deltas": [
+        -0.1923603163532922,
+        -0.2089969963036724,
+        -0.20831559430960067,
+        -0.2089969963036724,
+        -0.20764641823869445
+      ],
+      "envelope_lower": -0.20899719630367242,
+      "envelope_upper": -0.1923601163532922,
+      "exact_delta": -0.20831559150644574,
+      "exact_contained": true,
+      "decision": -1,
+      "accepted": true,
+      "accepted_correct": true
+    },
+    {
+      "case": "chesapeake",
+      "ordering": "spectral",
+      "schedule_pair": "ES_minus_LR",
+      "mps_deltas": [
+        -0.20933455757983488,
+        -0.20833004998189097,
+        -0.20831559482819106,
+        -0.20833004998189097,
+        -0.2075681390921995
+      ],
+      "envelope_lower": -0.20933475757983488,
+      "envelope_upper": -0.2075679390921995,
+      "exact_delta": -0.20831559150644618,
+      "exact_contained": true,
+      "decision": -1,
+      "accepted": true,
+      "accepted_correct": true
+    },
+    {
+      "case": "football",
+      "ordering": "sorted",
+      "schedule_pair": "ES_minus_LR",
+      "mps_deltas": [
+        0.020861234928274963,
+        0.006633244840661745,
+        0.007335400466279451,
+        0.006633244840661745,
+        0.007078561654688786
+      ],
+      "envelope_lower": 0.006633044840661745,
+      "envelope_upper": 0.020861434928274962,
+      "exact_delta": 0.007335360208365338,
+      "exact_contained": true,
+      "decision": 1,
+      "accepted": true,
+      "accepted_correct": true
+    },
+    {
+      "case": "football",
+      "ordering": "spectral",
+      "schedule_pair": "ES_minus_LR",
+      "mps_deltas": [
+        0.015245788531633497,
+        0.008466135883707704,
+        0.007335308675329166,
+        0.008466135883707704,
+        0.007280630613670125
+      ],
+      "envelope_lower": 0.007280430613670125,
+      "envelope_upper": 0.015245988531633498,
+      "exact_delta": 0.007335360208365116,
+      "exact_contained": true,
+      "decision": 1,
+      "accepted": true,
+      "accepted_correct": true
+    },
+    {
+      "case": "ibm32",
+      "ordering": "sorted",
+      "schedule_pair": "ES_minus_LR",
+      "mps_deltas": [
+        -0.25427451541642737,
+        -0.25580559452475693,
+        -0.2391002620335628,
+        -0.2558283722564857,
+        -0.24142789101822598
+      ],
+      "envelope_lower": -0.2558285722564857,
+      "envelope_upper": -0.2391000620335628,
+      "exact_delta": -0.23853152201514657,
+      "exact_contained": false,
+      "decision": -1,
+      "accepted": true,
+      "accepted_correct": true
+    },
+    {
+      "case": "ibm32",
+      "ordering": "spectral",
+      "schedule_pair": "ES_minus_LR",
+      "mps_deltas": [
+        -0.26338450501865496,
+        -0.25207723673516436,
+        -0.2389581737447987,
+        -0.2520841401532943,
+        -0.24099157699566653
+      ],
+      "envelope_lower": -0.26338470501865496,
+      "envelope_upper": -0.23895797374479869,
+      "exact_delta": -0.23853152201514763,
+      "exact_contained": false,
+      "decision": -1,
+      "accepted": true,
+      "accepted_correct": true
+    },
+    {
+      "case": "aves-sparrow-social",
+      "ordering": "sorted",
+      "schedule_pair": "ES_minus_LR",
+      "mps_deltas": [
+        0.12993187495233022,
+        0.11553347084931526,
+        0.10058435526296722,
+        0.11553347084931526,
+        0.10315511605237165
+      ],
+      "envelope_lower": 0.10058415526296721,
+      "envelope_upper": 0.12993207495233022,
+      "exact_delta": 0.10197890937648041,
+      "exact_contained": true,
+      "decision": 1,
+      "accepted": true,
+      "accepted_correct": true
+    },
+    {
+      "case": "aves-sparrow-social",
+      "ordering": "spectral",
+      "schedule_pair": "ES_minus_LR",
+      "mps_deltas": [
+        0.11851517077480778,
+        0.11574402429249209,
+        0.10196364702940341,
+        0.11574402429249209,
+        0.10203904660379381
+      ],
+      "envelope_lower": 0.10196344702940341,
+      "envelope_upper": 0.11851537077480778,
+      "exact_delta": 0.10197890937648024,
+      "exact_contained": true,
+      "decision": 1,
+      "accepted": true,
+      "accepted_correct": true
+    }
+  ],
+  "case_rows": [
+    {
+      "case": "karate",
+      "schedule_pair": "ES_minus_LR",
+      "envelope_lower": 0.09007337648696467,
+      "envelope_upper": 0.09007377648696513,
+      "exact_delta": 0.09007357648696557,
+      "decision": 1,
+      "accepted": true,
+      "accepted_correct": true
+    },
+    {
+      "case": "chesapeake",
+      "schedule_pair": "ES_minus_LR",
+      "envelope_lower": -0.20933475757983488,
+      "envelope_upper": -0.1923601163532922,
+      "exact_delta": -0.20831559150644574,
+      "decision": -1,
+      "accepted": true,
+      "accepted_correct": true
+    },
+    {
+      "case": "football",
+      "schedule_pair": "ES_minus_LR",
+      "envelope_lower": 0.006633044840661745,
+      "envelope_upper": 0.020861434928274962,
+      "exact_delta": 0.007335360208365338,
+      "decision": 1,
+      "accepted": true,
+      "accepted_correct": true
+    },
+    {
+      "case": "ibm32",
+      "schedule_pair": "ES_minus_LR",
+      "envelope_lower": -0.26338470501865496,
+      "envelope_upper": -0.23895797374479869,
+      "exact_delta": -0.23853152201514657,
+      "decision": -1,
+      "accepted": true,
+      "accepted_correct": true
+    },
+    {
+      "case": "aves-sparrow-social",
+      "schedule_pair": "ES_minus_LR",
+      "envelope_lower": 0.10058415526296721,
+      "envelope_upper": 0.12993207495233022,
+      "exact_delta": 0.10197890937648041,
+      "decision": 1,
+      "accepted": true,
+      "accepted_correct": true
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "complete": true,
+  "created_at": "2026-08-21T20:35:46.376390+00:00",
+  "files": [
+    {
+      "path": "experiments\\signed_decision_cot\\NOVELTY_POSITIONING.md",
+      "sha256": "b46e210215c024401a96450fbe09e5bc9f324e1b76d875964cff4738e5a01943"
+    },
+    {
+      "path": "experiments\\signed_decision_cot\\PROTOCOL.md",
+      "sha256": "fd6812e1e589a000f7dba9322fb161d123d4c5441e873db5e10589eadda08b84"
+    },
+    {
+      "path": "experiments\\signed_decision_cot\\SPECTRAL_TRANSFER_PROTOCOL.md",
+      "sha256": "7a72d364eff9660f6680d39a870568b2c459d2458f7e0fc27240bfec8ee26df9"
+    },
+    {
+      "path": "experiments\\signed_decision_cot\\THEORY.md",
+      "sha256": "a956554afa4a5dce558c4e3e566fb6eed4636c4176dcc1d76706ba9515168f8d"
+    },
+    {
+      "path": "results\\compressed_observable_telescope\\compressed_first_term_ibm32_confirm_sorted_adaptive.json",
+      "sha256": "f227b255262b8aee812b4da6e14486a3d3ac50ad54f374e2c3e29a51fddd4eb4"
+    },
+    {
+      "path": "results\\compressed_observable_telescope\\compressed_first_term_ibm32_confirm_spectral_adaptive.json",
+      "sha256": "85b32377809cf1f044bf32d79b615f481e7227c89fc0f01a1cb56021beba2982"
+    },
+    {
+      "path": "results\\compressed_observable_telescope\\residual_cot_ibm32_confirm_sorted_adaptive.json",
+      "sha256": "cd027f1a50e5d27482222c1bfc9103e19c50b96d78990eada602a2e7ae97e378"
+    },
+    {
+      "path": "results\\compressed_observable_telescope\\residual_cot_ibm32_confirm_sorted_adaptive_signed-gap-lowbond.json",
+      "sha256": "5c3718baddbed623367e9d91008c7160b522dfca77dde271b0570d2d9b4eed17"
+    },
+    {
+      "path": "results\\compressed_observable_telescope\\residual_cot_ibm32_confirm_spectral_adaptive.json",
+      "sha256": "0e74a8b12f8326370c8a85f3459c4dbd260bd5dceac41f554757fc1d1e909bf2"
+    },
+    {
+      "path": "results\\compressed_observable_telescope\\residual_cot_ibm32_confirm_spectral_adaptive_signed-gap-lowbond.json",
+      "sha256": "b992deb7afd3ad0294d0b36f094e209a8da44919236cc4279aa267768d1fca70"
+    },
+    {
+      "path": "results\\signed_decision_cot\\REPORT.md",
+      "sha256": "38ade6239934b6e890ab5fc4aae07559a048d68431c66918513daf72d27881dc"
+    },
+    {
+      "path": "results\\signed_decision_cot\\RESEARCH_REPORT.md",
+      "sha256": "84762f58d8b50f33b0971d3a1e4181f955e379735a27ef0d2179c7244c719233"
+    },
+    {
+      "path": "results\\signed_decision_cot\\summary.json",
+      "sha256": "a597214e191e1621204f32cb6c506d4278226d6ad51261959598857bb533311c"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "complete": true,
+  "case": "ibm32",
+  "ordering": "sorted",
+  "bond": 128,
+  "cutoff": 0.0001,
+  "rows": {
+    "published_lr": {
+      "save_statevector_probability": 0.40675271711194627,
+      "save_matrix_product_state_probability": 0.40885511447129386,
+      "archived_save_statevector_probability": 0.40675271711194516,
+      "fresh_vs_archive_error": 1.1102230246251565e-15,
+      "snapshot_path_difference": 0.0021023973593475853,
+      "mps_info": {
+        "simulation_seconds": 3.373069100023713,
+        "epsilon_mps": 1.0,
+        "certificate_saturated": true,
+        "number_of_truncations": 5601,
+        "maximum_bond": 38,
+        "storage_bytes": 260968,
+        "norm": 1.000011070424243
+      }
+    },
+    "prior_matched_random": {
+      "save_statevector_probability": 0.15184827987702962,
+      "save_matrix_product_state_probability": 0.1526492796747086,
+      "archived_save_statevector_probability": 0.15184827987702956,
+      "fresh_vs_archive_error": 5.551115123125783e-17,
+      "snapshot_path_difference": 0.0008009997976789751,
+      "mps_info": {
+        "simulation_seconds": 22.412519700010307,
+        "epsilon_mps": 1.0,
+        "certificate_saturated": true,
+        "number_of_truncations": 10797,
+        "maximum_bond": 82,
+        "storage_bytes": 951000,
+        "norm": 1.0000096621147778
+      }
+    }
+  },
+  "save_statevector_gap": -0.2549044372349166,
+  "save_matrix_product_state_gap": -0.25620583479658526,
+  "gap_difference": 0.001301397561668638
+}

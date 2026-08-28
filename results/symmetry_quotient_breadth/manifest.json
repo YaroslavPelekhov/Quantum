@@ -1,0 +1,11 @@
+{
+  "complete": true,
+  "success": true,
+  "passed_rows": 7,
+  "files": {
+    "experiments/symmetry_quotient_breadth/PROTOCOL.md": "1097c192c48d0a7c3863290b63a78f7cd952d4613bdaac9150fa3ff5fd1556e1",
+    "experiments/symmetry_quotient_breadth/run_breadth.py": "5ec8e119a03fd85b5d5c34bd330b31b3e60a19756b3c64d729364366560e2759",
+    "results/symmetry_quotient_breadth/breadth.json": "e1d8d2901d7f2c604fdfe61270cbd979038319f624410e6ca8cf7e2a17cd00a0",
+    "results/symmetry_quotient_breadth/REPORT.md": "9d992d61a45fc04ef1de4f97e5d24c7c090eb3249dd5395582118c6fa1ed2db0"
+  }
+}

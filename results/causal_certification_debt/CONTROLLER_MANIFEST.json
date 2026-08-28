@@ -1,0 +1,74 @@
+{
+  "complete": true,
+  "created_at": "2026-08-21T14:09:08.475332+00:00",
+  "sources": {
+    "experiments/causal_certification_debt/THEOREMS.md": {
+      "bytes": 3836,
+      "sha256": "28698dcb882fb2de3c6543e0b0d388ebf5dc6d7189477a5bc6a4c360d0278aec"
+    },
+    "experiments/causal_certification_debt/NOVELTY_POSITIONING.md": {
+      "bytes": 3290,
+      "sha256": "faebcb36d3cc0f2b5d9fe325b2d25db4233e298c0038deca05556ae1d08c5559"
+    },
+    "experiments/causal_certification_debt/CONTROLLER_PROTOCOL.md": {
+      "bytes": 1539,
+      "sha256": "cff06d36dd225f90e9ee30085a10eb2a9392a5be41b7f9898e45b8c338d79eb5"
+    },
+    "experiments/causal_certification_debt/run_shadow_price_controller.py": {
+      "bytes": 11988,
+      "sha256": "573702097c11965703998dea0d54d88b3decfc5c8a81b9d602818ef33e42e21e"
+    },
+    "experiments/causal_certification_debt/analyze_controller.py": {
+      "bytes": 8538,
+      "sha256": "7108ed1d4d02ce4a0ecf46356094b3b0a26a227a482123fce77a653de4eb3ea7"
+    },
+    "experiments/causal_certification_debt/test_controller.py": {
+      "bytes": 2097,
+      "sha256": "bb2ff6175a8eb75905fbe65194422cee3d61a9f4d712cbbac200991b61f3f0dc"
+    },
+    "experiments/causal_certification_debt/README.md": {
+      "bytes": 831,
+      "sha256": "bf3bd0a13c4cf53e0bd6e67003eb711c0c481fb4fd196c0bf72a089901f41b13"
+    }
+  },
+  "inputs": {
+    "results/causal_certification_debt/controller_ibm32_confirm_sorted.json": {
+      "bytes": 3163158,
+      "sha256": "cbbcdbae30459ff7366d06282c94a0337783bc0647d8748a0b7da2194771bdef"
+    },
+    "results/causal_certification_debt/controller_ibm32_confirm_spectral.json": {
+      "bytes": 3171154,
+      "sha256": "b661232797e14f6c75ec5d0530761ea3c12861aecdf843c90cba0b2ae5ef89ba"
+    },
+    "results/causal_certification_debt/controller_chesapeake_confirm_sorted.json": {
+      "bytes": 1101602,
+      "sha256": "74db924af8f3317d0c794044d4c571dff04d177335669f61eccfa9f182a2ffa5"
+    },
+    "results/compressed_observable_telescope/compressed_first_term_ibm32_confirm_sorted_adaptive.json": {
+      "bytes": 364968,
+      "sha256": "f227b255262b8aee812b4da6e14486a3d3ac50ad54f374e2c3e29a51fddd4eb4"
+    },
+    "results/compressed_observable_telescope/compressed_first_term_ibm32_confirm_spectral_adaptive.json": {
+      "bytes": 365021,
+      "sha256": "85b32377809cf1f044bf32d79b615f481e7227c89fc0f01a1cb56021beba2982"
+    },
+    "results/observable_telescope/pair_rows.json": {
+      "bytes": 8409,
+      "sha256": "0078ddcaccceb2da4ae270479e43ce78c7b9131f7a06479a3d93edb3ebe7276c"
+    },
+    "results/decision_certified_bond_allocation/summary.json": {
+      "bytes": 1959,
+      "sha256": "b8019639367d97c7674ba7fff6ec63efd2d8f0987eb626c3d85728982f8f2bc6"
+    }
+  },
+  "artifacts": {
+    "results/causal_certification_debt/controller_summary.json": {
+      "bytes": 6836,
+      "sha256": "c6f1b2fb42703e2916964682bd3661d9ca6217a7ddcab4f82ac08b8a86e75d5f"
+    },
+    "results/causal_certification_debt/CONTROLLER_REPORT.md": {
+      "bytes": 1136,
+      "sha256": "c16de5f9b4fa81a25284b76ab1eddc0e5c9387c4e037db0bee2443e4794a9b66"
+    }
+  }
+}

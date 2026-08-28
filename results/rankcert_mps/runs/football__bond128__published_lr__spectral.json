@@ -1,0 +1,149 @@
+{
+  "stage": "rankcert_aer_schedule_run",
+  "complete": true,
+  "created_at": "2026-08-17T19:48:32.546163+00:00",
+  "git_sha": "506c4f2504311fb854365d3917877a72227043e5",
+  "python": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "qiskit": "2.5.1",
+  "qiskit_aer": "0.17.2",
+  "numpy": "2.5.1",
+  "case": "football",
+  "backend": "AerSimulator/matrix_product_state",
+  "ordering": "spectral",
+  "bond": 128,
+  "cutoff": 1e-12,
+  "setting": "bond128",
+  "schedule": "LR",
+  "method": "published_lr",
+  "schedule_parameters": [
+    0.7,
+    0.4,
+    1.0,
+    1.0
+  ],
+  "qubits": 7,
+  "depth": 15,
+  "circuit_file": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\circuits\\football__published_lr__spectral.qpy",
+  "circuit_sha256": "aba61caf0209628f8fadd3af3bb5a6a6b44ca8c3f4ddc10dae649062e2d05dbe",
+  "reference_file": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib\\results\\cross_case_replication\\references\\football__published_lr__spectral.npy",
+  "reference_sha256": "07ef350b83cdc6d88bec579264c8df7964880d5701935d96faf56a4ffac51bdc",
+  "seed": null,
+  "shots": null,
+  "deterministic_statevector_readout": true,
+  "raw_log_path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\results\\rankcert_mps\\runs\\football__bond128__published_lr__spectral.mps.log",
+  "raw_log_sha256": "0341cb49de41fc45e8a829be766f588182f362e94e3eb25c90fd86f6f1bed2f1",
+  "events_path": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\results\\rankcert_mps\\runs\\football__bond128__published_lr__spectral.events.json",
+  "number_of_truncations": 2,
+  "discarded_weights": [
+    6.51461e-14,
+    1.74056e-13
+  ],
+  "discarded_weights_semantics": "Aer-reported values rounded to six significant digits",
+  "certificate_discarded_weight_upper_bounds": [
+    6.514615000000002e-14,
+    1.7405650000000004e-13
+  ],
+  "certificate_rounding_policy": "upper endpoint of each six-significant-digit decimal rounding bin",
+  "max_discarded_weight": 1.74056e-13,
+  "sum_discarded_weight": 2.3920210000000003e-13,
+  "sum_sqrt_discarded_weight_heuristic": 6.724375322828896e-07,
+  "sqrt_sum_discarded_weight_heuristic": 4.890829173054402e-07,
+  "product_survival_loss_heuristic": 2.3925306180672123e-13,
+  "max_bond_seen": 8,
+  "top_truncation_events": [
+    {
+      "event_index": 1,
+      "discarded_weight": 1.74056e-13,
+      "reported_text": "1.74056e-13",
+      "certificate_weight_upper_bound": 1.7405650000000004e-13,
+      "instruction_index": 18,
+      "gate": "rzz",
+      "qubits": [
+        2,
+        4
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        7,
+        8,
+        4,
+        2
+      ],
+      "segment": "I18:rzz on qubits 2,4, BD=[2 4 7 8 4 2],"
+    },
+    {
+      "event_index": 0,
+      "discarded_weight": 6.51461e-14,
+      "reported_text": "6.51461e-14",
+      "certificate_weight_upper_bound": 6.514615000000002e-14,
+      "instruction_index": null,
+      "gate": "internal_swap",
+      "qubits": [
+        4,
+        3
+      ],
+      "bond_dimensions": [
+        2,
+        4,
+        8,
+        7,
+        4,
+        2
+      ],
+      "segment": "internal_swap on qubits 4,3, BD=[2 4 8 7 4 2],"
+    }
+  ],
+  "raw_angle_sum": 6.724382294632127e-07,
+  "accumulated_angle": 6.724382294632127e-07,
+  "epsilon_mps": 6.724382294631619e-07,
+  "epsilon_with_numerical_floor": 7.724382294631619e-07,
+  "certificate_saturated": false,
+  "p_bks_exact": 0.8627678117715568,
+  "p_bks_mps": 0.8627678112776701,
+  "actual_bks_error": 4.938867093073895e-10,
+  "certificate_slack_bks": 6.719443427538546e-07,
+  "true_tvd": 2.2397708706965874e-08,
+  "certificate_slack_tvd": 6.50040520756196e-07,
+  "bks_bound_holds": true,
+  "tvd_bound_holds": true,
+  "soundness_tolerance": 1e-07,
+  "metrics": {
+    "feasible_rate": 0.8774172877909382,
+    "bks_rate": 0.8627678112776701,
+    "near_bks_rate": 0.8773091908938229,
+    "quality_mass": 0.8764939501816961,
+    "conditional_mean_size": 15.983162627459656,
+    "best_size_nonzero_probability": 16
+  },
+  "comparison": {
+    "state_fidelity": 0.9999999999997583,
+    "total_variation_distance": 2.2397708706965874e-08,
+    "reference_norm": 0.9999999999999963,
+    "approximate_norm": 0.9999999999999998,
+    "raw_mps_norm": 0.9999999999997402,
+    "raw_norm_drift": -2.5979218776228663e-13
+  },
+  "accumulator": {
+    "implementation": "static_chunked_literal_accumulator",
+    "chunk_size": 262144,
+    "basis_states": 128,
+    "forbidden_patterns": 11,
+    "statevector_norm": 0.9999999999999998
+  },
+  "simulation_seconds": 0.01520560000790283,
+  "metric_seconds": 0.0008495000074617565,
+  "runtime_seconds": 0.016055100015364587,
+  "peak_memory_bytes": 95354880,
+  "aer_options": {
+    "method": "matrix_product_state",
+    "mps_log_data": true,
+    "chop_threshold": 0.0,
+    "matrix_product_state_max_bond_dimension": 128,
+    "matrix_product_state_truncation_threshold": 1e-12,
+    "max_parallel_experiments": 1,
+    "max_parallel_threads": 1,
+    "mps_omp_threads": 1
+  }
+}

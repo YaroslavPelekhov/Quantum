@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "frozen_transfer_pass": true,
+  "end_to_end_heldout_success": false,
+  "files": {
+    "experiments\\signed_reduced_density_truncation\\PROTOCOL.md": "3a4b234c9293ba221637904e1fcaa1040e188a41c3f2f63ba469263336e050b5",
+    "experiments\\signed_reduced_density_truncation\\THEORY.md": "55eb8cc78fdc7d788839b16fe4fb7814b880cff684039f89e74b80bd18902962",
+    "experiments\\signed_reduced_density_truncation\\NOVELTY_POSITIONING.md": "097e79e000c262bd359c7c92f32590b7b19387fe540b544f43698e0fa08b12a6",
+    "experiments\\signed_reduced_density_truncation\\srdt_core.py": "e5f33ad00ff31d89c9e53f39640af5bd50d04c7a8764116bf0da562dac8fc12f",
+    "experiments\\signed_reduced_density_truncation\\run_srdt.py": "e59ab962d9cc5072e31d95c364e568e91df4bd25259c35472f225687e7f47093",
+    "experiments\\signed_reduced_density_truncation\\analyze_srdt.py": "e0441dadc4a8872312a8a60198839951bca6a0508abff8cb55af21ced1896248",
+    "experiments\\signed_reduced_density_truncation\\END_TO_END_HELDOUT_PROTOCOL.md": "9e62d6f063aac129c3a895439f7b8fc43483634291112e4cad6df3782c672423",
+    "experiments\\signed_reduced_density_truncation\\contrast_augmented.py": "b6f8f6796c88bd36552bb6f6d054bd7df40b594753ccf71f7fb81a5912c0f1ca",
+    "experiments\\signed_reduced_density_truncation\\run_end_to_end_heldout.py": "1699fe59d105004174167cd02d6e48a92b22438a6eaafb05b4a6868d6ca7b05b",
+    "experiments\\signed_reduced_density_truncation\\test_srdt.py": "814e8081c8ec0672e275329d00298918d4972a322bafea020446a5b124cccfe6",
+    "results\\signed_reduced_density_truncation\\benchmark.json": "8d5948a05cf16a9736cf154d8463f2d2840c5f5a33f548c03c16fe79fc26dc58",
+    "results\\signed_reduced_density_truncation\\end_to_end_heldout.json": "b4a47d5fb4c283f2e5bf619a88cb4087353c296f6be188ee884476be7caec71c",
+    "results\\signed_reduced_density_truncation\\REPORT.md": "19a0639066be9fbdf04142a75ce2c4b31bf68f3dd137fe83b288ba2713016cdb"
+  }
+}

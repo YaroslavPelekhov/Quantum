@@ -1,0 +1,25 @@
+{
+  "complete": true,
+  "development_success": false,
+  "development_passed_rows": 0,
+  "transfer_promoted": false,
+  "calibrated_replication_success": false,
+  "calibrated_replication_passed_rows": 0,
+  "same_mps_identity_validated": true,
+  "snapshot_path_gap_difference": 0.001301397561668638,
+  "files": {
+    "experiments\\sparse_mps_dcsrdt\\PROTOCOL.md": "215811cf47a7a2688174835ae4214014993822681f03b0e4ccd2c1e58a9ff209",
+    "experiments\\sparse_mps_dcsrdt\\CALIBRATED_REPLICATION_PROTOCOL.md": "5e892a56ec1c4744c33c33c2cb61159b4d9ecfff6ae0ec6fd9d4e5dca0adcb08",
+    "experiments\\sparse_mps_dcsrdt\\sparse_mps_core.py": "8389e95599e2bd5397a3e9925e634294eb7d9385dcca5855f910bbb2b044c06d",
+    "experiments\\sparse_mps_dcsrdt\\run_sparse_mps.py": "290f11bb1d06cba6d0ff626528b84932824006cba6fc2bf97edf7acf0ec50891",
+    "experiments\\sparse_mps_dcsrdt\\run_calibrated_replication.py": "5e591161f84c5b0bbcfdbca699b7afbe35874ebfa5fd20a132cbf213b4b6964b",
+    "experiments\\sparse_mps_dcsrdt\\run_snapshot_semantics.py": "4f7ec3fbeef0c2bbebecc0d5c7e46e60c43395e185b0c3024a9f456ac5555692",
+    "experiments\\sparse_mps_dcsrdt\\analyze_sparse_mps.py": "055eb20e52ca0d808fd2e6dc56a217a91171a0d49aac7c982b230c801c5ee7f7",
+    "experiments\\sparse_mps_dcsrdt\\test_sparse_mps.py": "00716aa5e07bfd10b4bd3eae395651222b8b00e1ab40b3fe32e99fa0e65fa4e5",
+    "experiments\\sparse_mps_dcsrdt\\README.md": "5058fb03bf580719ad4d00fa235172a0707da81328488f4386e6e580bb5cc866",
+    "results\\sparse_mps_dcsrdt\\development.json": "b7f524d90ba3e566cc7516304e4d1f4ef25f876c13953b9fa6bb4c328c814c98",
+    "results\\sparse_mps_dcsrdt\\calibrated_replication.json": "b98d75bad8b48a7545cf4de607b720e24a6ddfc1a03faabe928555da49f3c5ad",
+    "results\\sparse_mps_dcsrdt\\snapshot_semantics.json": "8b0cc5fc3fd5b342f2003821513f7731217cc608fa5a9af35429a8ac21d2cbe2",
+    "results\\sparse_mps_dcsrdt\\REPORT.md": "c5ee7f1d6b8ef07e4ad21f3b0d0b1eeda804079881b2d5498fbf0c9c6c851166"
+  }
+}

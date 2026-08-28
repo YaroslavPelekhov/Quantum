@@ -1,0 +1,97 @@
+{
+  "complete": true,
+  "selection_source": "experiments/evoq_mis_full_qoblib/results/qoblib_cohort_screen/selected_cases.json",
+  "selection_was_preexisting": true,
+  "rows": [
+    {
+      "case": "aves-sparrow-social",
+      "family": "animal_network",
+      "qubits": 24,
+      "nontrivial_twin_class_sizes": [
+        2,
+        2,
+        2,
+        4,
+        2
+      ],
+      "quotient_dimension": 1658880,
+      "full_dimension": 16777216,
+      "dimension_compression": 10.11358024691358
+    },
+    {
+      "case": "chesapeake",
+      "family": "named_network",
+      "qubits": 7,
+      "nontrivial_twin_class_sizes": [],
+      "quotient_dimension": 128,
+      "full_dimension": 128,
+      "dimension_compression": 1.0
+    },
+    {
+      "case": "football",
+      "family": "named_network",
+      "qubits": 7,
+      "nontrivial_twin_class_sizes": [],
+      "quotient_dimension": 128,
+      "full_dimension": 128,
+      "dimension_compression": 1.0
+    },
+    {
+      "case": "ibm32",
+      "family": "hardware_graph",
+      "qubits": 18,
+      "nontrivial_twin_class_sizes": [],
+      "quotient_dimension": 262144,
+      "full_dimension": 262144,
+      "dimension_compression": 1.0
+    },
+    {
+      "case": "karate",
+      "family": "named_network",
+      "qubits": 3,
+      "nontrivial_twin_class_sizes": [
+        3
+      ],
+      "quotient_dimension": 4,
+      "full_dimension": 8,
+      "dimension_compression": 2.0
+    },
+    {
+      "case": "es60fst03",
+      "family": "es60",
+      "qubits": 12,
+      "nontrivial_twin_class_sizes": [
+        3
+      ],
+      "quotient_dimension": 2048,
+      "full_dimension": 4096,
+      "dimension_compression": 2.0
+    },
+    {
+      "case": "mammalia-kangaroo-interactions",
+      "family": "animal_network",
+      "qubits": 15,
+      "nontrivial_twin_class_sizes": [
+        4
+      ],
+      "quotient_dimension": 10240,
+      "full_dimension": 32768,
+      "dimension_compression": 3.2
+    },
+    {
+      "case": "es60fst01",
+      "family": "es60",
+      "qubits": 15,
+      "nontrivial_twin_class_sizes": [
+        2,
+        2,
+        2
+      ],
+      "quotient_dimension": 13824,
+      "full_dimension": 32768,
+      "dimension_compression": 2.3703703703703702
+    }
+  ],
+  "cases_with_nontrivial_twins": 5,
+  "cases_with_at_least_2x_compression": 5
+}

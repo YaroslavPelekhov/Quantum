@@ -1,0 +1,58 @@
+command: nvidia-smi
+returncode: 0
+
+Mon Aug 17 20:53:34 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 560.94                 Driver Version: 560.94         CUDA Version: 12.6     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 4070 ...  WDDM  |   00000000:01:00.0  On |                  N/A |
+|  0%   39C    P8             10W /  285W |    3153MiB /  16376MiB |     22%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A      2788    C+G   ...cw5n1h2txyewy\CrossDeviceResume.exe      N/A      |
+|    0   N/A  N/A      3500    C+G   ...crosoft\Edge\Application\msedge.exe      N/A      |
+|    0   N/A  N/A      3628    C+G   ...s\System32\ApplicationFrameHost.exe      N/A      |
+|    0   N/A  N/A      4080    C+G   ...Charm 2025.2\jbr\bin\cef_server.exe      N/A      |
+|    0   N/A  N/A      6352    C+G   C:\Windows\explorer.exe                     N/A      |
+|    0   N/A  N/A      9416    C+G   C:\Windows\System32\ShellHost.exe           N/A      |
+|    0   N/A  N/A      9516    C+G   ...0_x64__pzs8sxrjxfjjc\app\claude.exe      N/A      |
+|    0   N/A  N/A     10472    C+G   ...on\151.0.4129.86\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A     11636    C+G   ...n\NVIDIA App\CEF\NVIDIA Overlay.exe      N/A      |
+|    0   N/A  N/A     11928    C+G   ...aming\Telegram Desktop\Telegram.exe      N/A      |
+|    0   N/A  N/A     12148    C+G   ..._x64__8wekyb3d8bbwe\M365Copilot.exe      N/A      |
+|    0   N/A  N/A     13680    C+G   ...n\NVIDIA App\CEF\NVIDIA Overlay.exe      N/A      |
+|    0   N/A  N/A     15704    C+G   ...nt.CBS_cw5n1h2txyewy\SearchHost.exe      N/A      |
+|    0   N/A  N/A     15712    C+G   ...2txyewy\StartMenuExperienceHost.exe      N/A      |
+|    0   N/A  N/A     15788    C+G   ..._x64__cw5n1h2txyewy\WidgetBoard.exe      N/A      |
+|    0   N/A  N/A     18340    C+G   ...on\151.0.4129.78\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A     20660    C+G   ...inaries\Win64\EpicGamesLauncher.exe      N/A      |
+|    0   N/A  N/A     21612    C+G   ...CBS_cw5n1h2txyewy\TextInputHost.exe      N/A      |
+|    0   N/A  N/A     21740    C+G   ...5425\EA Desktop\EACefSubProcess.exe      N/A      |
+|    0   N/A  N/A     23056    C+G   ...B\system_tray\lghub_system_tray.exe      N/A      |
+|    0   N/A  N/A     24464    C+G   ...in\cef\cef.win64\steamwebhelper.exe      N/A      |
+|    0   N/A  N/A     25316    C+G   ...ndexBrowser\Application\browser.exe      N/A      |
+|    0   N/A  N/A     26436    C+G   ...gram Files\FlyFrogLLC\Happ\Happ.exe      N/A      |
+|    0   N/A  N/A     27300    C+G   ...ne\Binaries\Win64\EpicWebHelper.exe      N/A      |
+|    0   N/A  N/A     27988    C+G   ...on\151.0.4129.78\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A     28332    C+G   ...672_x64__8wekyb3d8bbwe\ms-teams.exe      N/A      |
+|    0   N/A  N/A     32480    C+G   ...1786565425\EA Desktop\EADesktop.exe      N/A      |
+|    0   N/A  N/A     33768    C+G   ...5myjd26we8sq4\FuryCTRL\FURYCTRL.exe      N/A      |
+|    0   N/A  N/A     33864    C+G   ...2nqsd0c76g0\app\ChatGPT Classic.exe      N/A      |
+|    0   N/A  N/A     34404    C+G   ....0_x64__kzh8wxbdkxb8p\DCv2\DCv2.exe      N/A      |
+|    0   N/A  N/A     37108    C+G   ..._x64__2p2nqsd0c76g0\app\ChatGPT.exe      N/A      |
+|    0   N/A  N/A     38856    C+G   ...on\151.0.4129.78\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A     39932    C+G   ...SOverlayRenderer-Win64-Shipping.exe      N/A      |
+|    0   N/A  N/A     40776    C+G   ...crosoft\Edge\Application\msedge.exe      N/A      |
+|    0   N/A  N/A     45044    C+G   ...0_x64__pzs8sxrjxfjjc\app\claude.exe      N/A      |
++-----------------------------------------------------------------------------------------+
+
