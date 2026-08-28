@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "root": ".",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "experiments/hardware_model_witness_phase0/__init__.py",
+      "bytes": 55,
+      "sha256": "7419f91508055c8ce93da74604ca053ecc47c296fa1454b1909c98dba056924b"
+    },
+    {
+      "path": "experiments/hardware_model_witness_phase0/build_manifest.py",
+      "bytes": 1328,
+      "sha256": "4647bb774667c9910356649a32a83274abdf65495ed134b7c408fe3cee33c018"
+    },
+    {
+      "path": "experiments/hardware_model_witness_phase0/PREREGISTRATION.md",
+      "bytes": 3376,
+      "sha256": "2688e1718c2eb28e548fe1e607fc67dc548b909b6ebd864ef25299bd69d6f783"
+    },
+    {
+      "path": "experiments/hardware_model_witness_phase0/PRIOR_ART_AUDIT.md",
+      "bytes": 2997,
+      "sha256": "14f19d586397f7b2d47e203aff4f0d6c011a83d95c017fd1e35876dbfb4e5cc0"
+    },
+    {
+      "path": "experiments/hardware_model_witness_phase0/README.md",
+      "bytes": 1406,
+      "sha256": "21395aea40f86924299fd63059a4f395f159910087c0aa23595b73d3e63bee1c"
+    },
+    {
+      "path": "experiments/hardware_model_witness_phase0/run_phase0.py",
+      "bytes": 12484,
+      "sha256": "2991cc6e11d3176e5fa50bdbb7b32d769540d233a14041da53a790c171f6f8af"
+    },
+    {
+      "path": "experiments/hardware_model_witness_phase0/test_witness_core.py",
+      "bytes": 1526,
+      "sha256": "f4cdf78e6583eee25bc8ec30831372f31a6519fcbb26f4e1dff3f7930439602a"
+    },
+    {
+      "path": "experiments/hardware_model_witness_phase0/witness_core.py",
+      "bytes": 8354,
+      "sha256": "9a53c5124eda59ad73e2d109a7914926c7a44153d09827f5f3430fe12e0f176b"
+    },
+    {
+      "path": "results/hardware_model_witness_phase0/FINAL_REPORT.md",
+      "bytes": 2013,
+      "sha256": "c1d168926ffd5e3ffa734159ce0bfde5b27c4d4acf1849f5d9d1387e6cdb0e07"
+    },
+    {
+      "path": "results/hardware_model_witness_phase0/heldout_transfer.csv",
+      "bytes": 1568,
+      "sha256": "eaed5299db3d6b70d0d53ce17673e17ad33b17761e10bb00bc77b3e3429f4a80"
+    },
+    {
+      "path": "results/hardware_model_witness_phase0/phase0_results.json",
+      "bytes": 9425,
+      "sha256": "1db49af747bdd4e1acaef5c6bfd0803e8d151f1e1ae4f66f1f64ce33b4a43b91"
+    },
+    {
+      "path": "results/hardware_model_witness_phase0/random_baseline_trials.csv",
+      "bytes": 24682,
+      "sha256": "934ad5929528684eb6048cf376401626a184b79ac495f1d011826dd0f0e6c77b"
+    },
+    {
+      "path": "results/hardware_model_witness_phase0/run_manifest.json",
+      "bytes": 510,
+      "sha256": "257b67394d92df4c93bd6c2579e90f0b8c93afcc12d6d6a682414d6eeab9a53e"
+    }
+  ]
+}

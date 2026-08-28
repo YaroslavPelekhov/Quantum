@@ -6,6 +6,23 @@ Ubuntu with an NVIDIA RTX 4070 Ti SUPER (16 GB) for cuTensorNet. The host expose
 48 GB system RAM with XMP disabled; the cross-case runs used a protected
 single-job watchdog and a separate WSL cuTensorNet environment.
 
+## 0. Reproduce the hardware-witness Phase-0 closure
+
+This small exact falsification screen is independent of Qiskit and does not use
+hardware credentials.  With the pinned NumPy/SciPy environment installed:
+
+```powershell
+python -m unittest experiments.hardware_model_witness_phase0.test_witness_core
+python experiments/hardware_model_witness_phase0/run_phase0.py
+```
+
+The run deterministically enumerates 87,296 sequences, executes 128 fixed-seed
+random-search trials at four budgets, and rewrites
+`results/hardware_model_witness_phase0/`.  Its 10,000-shot calculation uses
+expected binomial counts and exact intervals; it does not claim sampled or QPU
+observations.  Read the frozen protocol before interpreting or changing the
+search space.
+
 ## 1. Obtain pinned benchmark code
 
 ```bash

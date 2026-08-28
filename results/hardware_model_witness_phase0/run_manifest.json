@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-08-28T20:28:44.706311+00:00",
+  "git_head_before_results_commit": "fb0ff721c49958df3167048e9fc1dfd65bfe7d18",
+  "python": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.4.1",
+  "command": "python experiments/hardware_model_witness_phase0/run_phase0.py",
+  "hardware_queries": 0,
+  "simulated_shots_executed": 0,
+  "note": "Expected counts only; no hardware or sampled-shot data."
+}

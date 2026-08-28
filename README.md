@@ -1,5 +1,13 @@
 # Quantum x Evolutionary Computing Research Artifact
 
+Latest research-cycle verdict: the
+[matched hardware noise-model witness Phase 0](results/hardware_model_witness_phase0/FINAL_REPORT.md)
+is **closed as an A* direction**.  Exact enumeration found a valid matched
+counterexample (`P(0)` gap `0.010490330501` under an exact declared-model tie),
+but long-sequence GST/iterative RB already supply the core error-amplification
+capability and random matched-pair search recovered at least 90% of the optimum
+in 128/128 trials at 1,024 queries.  No QPU run is authorized from this branch.
+
 Latest comparison-native result: [Signed reduced-density truncation](results/signed_reduced_density_truncation/REPORT.md) provides a sharp local-observable minimax certificate, a pure-state rank separation, and a frozen `ibm32`/`aves` transfer benchmark. Its global-BKS end-to-end extension remains open.
 
 The subsequent [decision-balanced truncation](results/decision_balanced_truncation/REPORT.md) study found a 6/6 equal-work development result, but only 3/6 on a frozen held-out schedule pair; the universal end-to-end claim is therefore closed.
@@ -193,7 +201,9 @@ simulation, not optimizer or solver superiority.
 - [Sparse-MPS DCS-RDT constructibility kill test](results/sparse_mps_dcsrdt/REPORT.md)
 - [Detailed reproduction guide](REPRODUCIBILITY.md)
 - [Binding QAOA/MPS branch closure](docs/QAOA_MPS_BRANCH_CLOSURE.md)
-- [Next A* adversarial screen: hardware noise-model witnesses](docs/NEXT_ASTAR_ADVERSARIAL_SCREEN.md)
+- [Closed A* adversarial screen: hardware noise-model witnesses](docs/NEXT_ASTAR_ADVERSARIAL_SCREEN.md)
+- [Hardware witness Phase-0 frozen protocol](experiments/hardware_model_witness_phase0/PREREGISTRATION.md)
+- [Hardware witness Phase-0 final report](results/hardware_model_witness_phase0/FINAL_REPORT.md)
 
 ## Repository map
 
@@ -215,6 +225,7 @@ experiments/decision_certified_bond_allocation/ causal per-witness bond allocati
 experiments/causal_certification_debt/ proof, frozen controller, tests
 experiments/signed_decision_cot/ signed interval, low-bond and reset protocols
 experiments/contrastive_tensor_simulation/ comparison-native TT/M-D kill tests
+experiments/hardware_model_witness_phase0/ matched-pair model-falsification kill test
 experiments/signed_reduced_density_truncation/ signed local truncation and certificate
 experiments/decision_balanced_truncation/ local Petrov--Galerkin transfer test
 experiments/global_decision_balanced_contraction/ global linear contraction kill test

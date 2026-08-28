@@ -1,7 +1,31 @@
-# Next A* adversarial screen: hardware noise-model witnesses
+# Closed A* adversarial screen: hardware noise-model witnesses
 
-Status: **provisional direction, not a novelty claim**.  This replaces the old
-EvoQBench/QAOA-schedule recommendation for the next primary research cycle.
+Status: **closed as an A* direction after the frozen Phase-0 screen on
+2026-08-28**.  The simulator result is technically valid, but the proposed new
+capability was falsified before hardware spending.
+
+## Final Phase-0 outcome
+
+The exact enumerator searched 87,296 native-pulse sequences and retained 6,048
+ideal-identity candidates in 124 matched equivalence classes.  The strongest
+pair has identical native gate counts and an exact declared-model tie, but its
+hidden coherent oracle probabilities differ by `0.010490330501`.
+
+That positive construction is not sufficient for novelty:
+
+- long-sequence GST, iterative RB, and context/model-violation protocols
+  already design circuits to amplify hidden coherent or contextual errors;
+- uniform random matched-pair sampling reached at least 90% of the exhaustive
+  optimum in 128/128 trials at 1,024 pair queries; and
+- the effect itself survives corrected shot intervals and preserves its order
+  on every held-out draw, so the negative verdict is about novelty and search
+  advantage, not an underpowered experiment.
+
+The binding artifacts are the
+[frozen protocol](../experiments/hardware_model_witness_phase0/PREREGISTRATION.md),
+[prior-art audit](../experiments/hardware_model_witness_phase0/PRIOR_ART_AUDIT.md),
+and [final report](../results/hardware_model_witness_phase0/FINAL_REPORT.md).
+No QPU run is authorized from this branch.
 
 ## Research object
 
@@ -95,9 +119,9 @@ The local machine currently has AWS CLI but no configured AWS profile and no
 Braket Python SDK.  This is an explicit external dependency, not something to
 silently bypass with simulator-only evidence.
 
-## Current recommendation
+## Historical pre-run recommendation
 
-Run only the Phase-0 prior-art and exact-small-instance screen next.  If it
-survives, obtain explicit QPU credentials/budget and register the held-out
-hardware protocol.  If it fails, close it immediately and move to a different
-scientific object rather than weakening the claim.
+This screen has now been run and failed two frozen kill gates.  Do not continue
+it on hardware and do not weaken or rename the claim.  The next research cycle
+must begin from a different scientific object after its own adversarial
+prior-art and structural screen.
