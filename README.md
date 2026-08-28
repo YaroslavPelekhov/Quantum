@@ -192,6 +192,8 @@ simulation, not optimizer or solver superiority.
 - [Decision-conditioned SRDT report](results/decision_conditioned_srdt/REPORT.md)
 - [Sparse-MPS DCS-RDT constructibility kill test](results/sparse_mps_dcsrdt/REPORT.md)
 - [Detailed reproduction guide](REPRODUCIBILITY.md)
+- [Binding QAOA/MPS branch closure](docs/QAOA_MPS_BRANCH_CLOSURE.md)
+- [Next A* adversarial screen: hardware noise-model witnesses](docs/NEXT_ASTAR_ADVERSARIAL_SCREEN.md)
 
 ## Repository map
 
