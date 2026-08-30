@@ -1,0 +1,100 @@
+{
+  "counts": {
+    "atlas_graphs": 411,
+    "endpoint_projector_obstructions": 210,
+    "oriented_leaf_reductions": 793,
+    "sibling_leaf_endpoint_bijections": 182,
+    "unit_disk_graphs": 120
+  },
+  "criteria": {
+    "nontrivial_whole_path_safe_rule": false,
+    "not_generic_same_size_deletion": true,
+    "phase0_survives": false,
+    "prior_art_clear_for_narrow_claim": true,
+    "strong_separation": true,
+    "survives_driver_control": true
+  },
+  "frozen_configuration": {
+    "dynamics_steps": 240,
+    "dynamics_times": [
+      5.0,
+      10.0,
+      20.0,
+      40.0
+    ],
+    "gap_points": 49,
+    "seed": 20260830,
+    "top_candidates_per_source": 6,
+    "unit_disk_graphs_per_size": 24
+  },
+  "quarter_success_difference_count": 6,
+  "robust_fivefold_gap_count": 35,
+  "strongest_finite_time_difference": {
+    "absolute_success_difference": 0.4475702446712345,
+    "candidate_rank": 9,
+    "graph6": "G`k|x{",
+    "leaf": 1,
+    "n": 8,
+    "neighbour": 0,
+    "omega_scale": 1.3333333333333333,
+    "original_success": 0.5520461546005906,
+    "reduced_success": 0.9996163992718251,
+    "source": "unit_disk",
+    "steps": 240,
+    "total_time": 5.0
+  },
+  "strongest_native_gap_distortion": {
+    "alpha": 3,
+    "endpoint_projector_obstruction": true,
+    "graph6": "F^NI?",
+    "graph_index": 357,
+    "initial_projector_distance": 1.0,
+    "leaf": 6,
+    "lifted_optimum_count": 3,
+    "lifted_optimum_coverage": 0.75,
+    "m": 11,
+    "n": 7,
+    "native_gap_distortion": 100.63330251831522,
+    "neighbour": 1,
+    "neighbour_degree": 4,
+    "optimum_count": 4,
+    "original_minimum_gap": 4.932213608910274e-05,
+    "original_minimum_gap_s": 0.98,
+    "reduced_alpha_plus_offset": 3,
+    "reduced_graph6": "Dzc",
+    "reduced_m": 7,
+    "reduced_minimum_gap": 0.004963449441904189,
+    "reduced_minimum_gap_s": 0.98,
+    "reduced_n": 5,
+    "scale_controls": [
+      {
+        "gap_distortion": 100.63330251831522,
+        "minimum_gap": 0.004963449441904189,
+        "minimum_gap_s": 0.98,
+        "omega_scale": 1.0
+      },
+      {
+        "gap_distortion": 140.48630363293654,
+        "minimum_gap": 0.006929084586438705,
+        "minimum_gap_s": 0.98,
+        "omega_scale": 1.1832159566199232
+      },
+      {
+        "gap_distortion": 195.91515531958584,
+        "minimum_gap": 0.009662953952590314,
+        "minimum_gap_s": 0.98,
+        "omega_scale": 1.4
+      }
+    ],
+    "sibling_leaf_count": 1,
+    "source": "atlas"
+  },
+  "structural_findings": {
+    "forced_static_lift_initial_distance": 1.0,
+    "nontrivial_whole_path_safe_rule_found": false,
+    "only_exhaustively_verified_endpoint_local_condition": "a neighbour with at least two leaf children makes those leaves persistent at the classical endpoint; it does not remove finite-Omega coupling",
+    "reason": "negative-detuning initial ground state is empty, while the lift forces a selected leaf"
+  },
+  "top_deletion_control_pass_count": 3,
+  "verdict": "KILL_NAIVE_WHOLE_PATH_FORMULATION"
+}

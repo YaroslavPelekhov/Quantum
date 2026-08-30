@@ -1,0 +1,87 @@
+{
+  "dynamics_convergence": [
+    {
+      "absolute_difference": 0.44717946026047506,
+      "original_success": 0.5524383008642951,
+      "reduced_success": 0.9996177611247702,
+      "steps": 120
+    },
+    {
+      "absolute_difference": 0.4475702446712345,
+      "original_success": 0.5520461546005906,
+      "reduced_success": 0.9996163992718251,
+      "steps": 240
+    },
+    {
+      "absolute_difference": 0.44766793826645257,
+      "original_success": 0.5519481183918695,
+      "reduced_success": 0.9996160566583221,
+      "steps": 480
+    },
+    {
+      "absolute_difference": 0.44769236150637837,
+      "original_success": 0.5519236093639731,
+      "reduced_success": 0.9996159708703515,
+      "steps": 960
+    }
+  ],
+  "fivefold_cutoff_count": 0,
+  "fivefold_endpoint_bijective_cutoff_count": 0,
+  "interpretation": "The preregistered extreme is dominated by the final driver ramp-down and different perturbative splitting of classically degenerate optima.  Any surviving mid-schedule difference must still be judged against textbook motifs and generic same-size deletion.",
+  "strongest_endpoint_bijective_gap_after_removing_driver_rampdown": {
+    "coverage": 1.0,
+    "cutoff_gap_distortion": 1.3985497223527337,
+    "graph6": "Bo",
+    "leaf": 1,
+    "n": 3,
+    "original_argmin_s": 0.54,
+    "original_gap_s_le_0p9": 0.7150264191663728,
+    "preregistered_gap_distortion": 1.3985497223527337,
+    "reduced_argmin_s": 0.5,
+    "reduced_gap_s_le_0p9": 1.0,
+    "source": "atlas"
+  },
+  "strongest_gap_after_removing_driver_rampdown": {
+    "coverage": 0.75,
+    "cutoff_gap_distortion": 4.798120540871207,
+    "graph6": "F^NI?",
+    "leaf": 6,
+    "n": 7,
+    "original_argmin_s": 0.9,
+    "original_gap_s_le_0p9": 0.023215124028512335,
+    "preregistered_gap_distortion": 100.63330251831522,
+    "reduced_argmin_s": 0.9,
+    "reduced_gap_s_le_0p9": 0.11138896346007776,
+    "source": "atlas"
+  },
+  "strongest_success_same_size_deletion_control": {
+    "graph6": "G`k|x{",
+    "n": 8,
+    "original_success": 0.5519481183918695,
+    "records": [
+      {
+        "deletion_max": 0.3037002399750277,
+        "deletion_median": 0.27402040973525854,
+        "deletion_p90": 0.3037002399750264,
+        "leaf_difference": 0.04643463307047646,
+        "leaf_percentile": 0.03571428571428571,
+        "omega_scale": 1.0
+      },
+      {
+        "deletion_max": 0.44766793826645257,
+        "deletion_median": 0.036184793905651436,
+        "deletion_p90": 0.27807334493999125,
+        "leaf_difference": 0.44766793826645257,
+        "leaf_percentile": 1.0,
+        "omega_scale": 1.3333333333333333
+      }
+    ],
+    "total_time": 5.0
+  },
+  "strongest_textbook_motif_gap_distortion": 1.4119834635260904,
+  "strongest_textbook_motif_success_difference": 0.24945038010510956,
+  "top_endpoint_original_gap_power_histogram": {
+    "2": 8,
+    "4": 4
+  }
+}

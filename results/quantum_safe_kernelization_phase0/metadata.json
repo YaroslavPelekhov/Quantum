@@ -1,0 +1,8 @@
+{
+  "git_revision_before_results": "d59d8b5cd1d47a1bb5ade13f493effb14083e4a3",
+  "networkx": "3.5",
+  "numpy": "2.2.6",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "timestamp_utc": "2026-08-30T13:36:53.991368+00:00"
+}

@@ -1,6 +1,17 @@
 # Quantum x Evolutionary Computing Research Artifact
 
 Latest research-cycle verdict: the
+[quantum-safe Rydberg MIS kernelization Phase 0](results/quantum_safe_kernelization_phase0/FINAL_REPORT.md)
+is **closed as an A* direction in its static graph-reduction form**.  Across 793
+exact leaf reductions, an apparent `100.633x` gap effect vanished after removing
+the final driver ramp-down: zero cases retained `5x`, and the strongest
+endpoint-bijective case was `1.399x`.  A broad native-driver screen did find a
+real `0.394655` finite-time success difference, but its strongest example is
+already a four-vertex triangle-plus-leaf reduced to a single edge.  Static
+forced-selection lifts also have exact initial projector distance one and
+finite-drive leakage norm `|Omega|/2`.  No H200 or QPU run is authorised.
+
+The preceding research-cycle verdict: the
 [matched hardware noise-model witness Phase 0](results/hardware_model_witness_phase0/FINAL_REPORT.md)
 is **closed as an A* direction**.  Exact enumeration found a valid matched
 counterexample (`P(0)` gap `0.010490330501` under an exact declared-model tie),
