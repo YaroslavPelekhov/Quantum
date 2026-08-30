@@ -1,0 +1,641 @@
+[
+  {
+    "best_time": 10.0,
+    "confirmed_differences": [
+      0.17287898524305256,
+      0.14935096048336619,
+      0.1065757124713457
+    ],
+    "confirmed_log_ratios": [
+      0.34349654530067336,
+      0.5487588645560306,
+      0.7068243511777651
+    ],
+    "confirmed_r2": 0.9944066601753574,
+    "confirmed_slope": 0.1816639029385458,
+    "gap_records": [
+      {
+        "distortion": 1.07015698236067,
+        "original_gap": 0.9344423448923264,
+        "original_s": 0.475,
+        "reduced_gap": 1.0000000000000004,
+        "reduced_s": 0.5
+      },
+      {
+        "distortion": 1.0051589887296029,
+        "original_gap": 0.9948674898325076,
+        "original_s": 0.5,
+        "reduced_gap": 1.0000000000000018,
+        "reduced_s": 0.5
+      },
+      {
+        "distortion": 1.000572831899648,
+        "original_gap": 0.99942749604888,
+        "original_s": 0.5,
+        "reduced_gap": 1.0000000000000022,
+        "reduced_s": 0.5
+      }
+    ],
+    "hub_neighbors": [
+      0,
+      1,
+      2
+    ],
+    "internal_edges": [],
+    "leaf_count": 1,
+    "passes_all_gates": false,
+    "petal_size": 3,
+    "product_fractional_separation": 0.3140888306372345,
+    "rank": 0
+  },
+  {
+    "best_time": 10.0,
+    "confirmed_differences": [
+      0.17287898524305256,
+      0.1536206820112786,
+      0.14092396776942917
+    ],
+    "confirmed_log_ratios": [
+      0.34349654530067336,
+      0.45461134604254094,
+      0.6422372643656813
+    ],
+    "confirmed_r2": 0.9786033544339344,
+    "confirmed_slope": 0.14937035953250397,
+    "gap_records": [
+      {
+        "distortion": 1.07015698236067,
+        "original_gap": 0.9344423448923264,
+        "original_s": 0.475,
+        "reduced_gap": 1.0000000000000004,
+        "reduced_s": 0.5
+      },
+      {
+        "distortion": 1.011433375332886,
+        "original_gap": 0.9886958690392025,
+        "original_s": 0.475,
+        "reduced_gap": 1.0000000000000016,
+        "reduced_s": 0.5
+      },
+      {
+        "distortion": 1.0024459011704132,
+        "original_gap": 0.9975600666653852,
+        "original_s": 0.5,
+        "reduced_gap": 0.9999999999999996,
+        "reduced_s": 0.5
+      }
+    ],
+    "hub_neighbors": [
+      0,
+      1
+    ],
+    "internal_edges": [],
+    "leaf_count": 2,
+    "passes_all_gates": false,
+    "petal_size": 2,
+    "product_fractional_separation": 0.3767649455265887,
+    "rank": 1
+  },
+  {
+    "best_time": 10.0,
+    "confirmed_differences": [
+      0.15738973054182942,
+      0.14092396776942917,
+      0.0827711919677956
+    ],
+    "confirmed_log_ratios": [
+      0.3779459279334688,
+      0.6422372643656813,
+      0.631205321871678
+    ],
+    "confirmed_r2": 0.7173894031766513,
+    "confirmed_slope": 0.12662969696910453,
+    "gap_records": [
+      {
+        "distortion": 1.0301352632110896,
+        "original_gap": 0.9707463045996945,
+        "original_s": 0.475,
+        "reduced_gap": 0.9999999999999989,
+        "reduced_s": 0.5
+      },
+      {
+        "distortion": 1.0024459011704128,
+        "original_gap": 0.9975600666653857,
+        "original_s": 0.5,
+        "reduced_gap": 0.9999999999999996,
+        "reduced_s": 0.5
+      },
+      {
+        "distortion": 1.000280493726074,
+        "original_gap": 0.9997195849285916,
+        "original_s": 0.5,
+        "reduced_gap": 0.9999999999999973,
+        "reduced_s": 0.5
+      }
+    ],
+    "hub_neighbors": [
+      0,
+      1,
+      2
+    ],
+    "internal_edges": [],
+    "leaf_count": 2,
+    "passes_all_gates": false,
+    "petal_size": 3,
+    "product_fractional_separation": 0.443301915944273,
+    "rank": 2
+  },
+  {
+    "best_time": 10.0,
+    "confirmed_differences": [
+      0.19280722497822478,
+      0.15738973054182942,
+      0.14935096048336619
+    ],
+    "confirmed_log_ratios": [
+      0.31834780169851734,
+      0.3779459279334688,
+      0.5487588645560306
+    ],
+    "confirmed_r2": 0.9279364616857454,
+    "confirmed_slope": 0.11520553142875661,
+    "gap_records": [
+      {
+        "distortion": 1.1550905179052682,
+        "original_gap": 0.8657330178880513,
+        "original_s": 0.475,
+        "reduced_gap": 1.0,
+        "reduced_s": 0.5
+      },
+      {
+        "distortion": 1.0301352632110896,
+        "original_gap": 0.9707463045996945,
+        "original_s": 0.475,
+        "reduced_gap": 0.9999999999999989,
+        "reduced_s": 0.5
+      },
+      {
+        "distortion": 1.0051589887296029,
+        "original_gap": 0.9948674898325076,
+        "original_s": 0.5,
+        "reduced_gap": 1.0000000000000018,
+        "reduced_s": 0.5
+      }
+    ],
+    "hub_neighbors": [
+      0,
+      1
+    ],
+    "internal_edges": [],
+    "leaf_count": 1,
+    "passes_all_gates": false,
+    "petal_size": 2,
+    "product_fractional_separation": 0.4254095032454286,
+    "rank": 3
+  },
+  {
+    "best_time": 10.0,
+    "confirmed_differences": [
+      0.21332135594777946,
+      0.1462001924250776,
+      0.08764861588136212
+    ],
+    "confirmed_log_ratios": [
+      0.5587666653121828,
+      0.6834109990734871,
+      0.6949524196110846
+    ],
+    "confirmed_r2": 0.8130658361589307,
+    "confirmed_slope": 0.06809287714945084,
+    "gap_records": [
+      {
+        "distortion": 1.0078304333834582,
+        "original_gap": 0.711141790305615,
+        "original_s": 0.525,
+        "reduced_gap": 0.7167103387207963,
+        "reduced_s": 0.525
+      },
+      {
+        "distortion": 1.0109229051689739,
+        "original_gap": 0.7089663663333452,
+        "original_s": 0.525,
+        "reduced_gap": 0.7167103387207963,
+        "reduced_s": 0.525
+      },
+      {
+        "distortion": 1.0124645161188044,
+        "original_gap": 0.70788687140191,
+        "original_s": 0.525,
+        "reduced_gap": 0.7167103387207892,
+        "reduced_s": 0.525
+      }
+    ],
+    "hub_neighbors": [
+      2
+    ],
+    "internal_edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "leaf_count": 2,
+    "passes_all_gates": false,
+    "petal_size": 3,
+    "product_fractional_separation": 0.5854247919252575,
+    "rank": 4
+  },
+  {
+    "best_time": 10.0,
+    "confirmed_differences": [
+      0.2133213559477794,
+      0.14620019242507698,
+      0.08764861588136166
+    ],
+    "confirmed_log_ratios": [
+      0.5587666653121819,
+      0.6834109990734838,
+      0.6949524196110823
+    ],
+    "confirmed_r2": 0.8130658361589369,
+    "confirmed_slope": 0.06809287714945013,
+    "gap_records": [
+      {
+        "distortion": 1.007830433383462,
+        "original_gap": 0.7111417903056125,
+        "original_s": 0.525,
+        "reduced_gap": 0.7167103387207965,
+        "reduced_s": 0.525
+      },
+      {
+        "distortion": 1.0109229051689654,
+        "original_gap": 0.7089663663333523,
+        "original_s": 0.525,
+        "reduced_gap": 0.7167103387207976,
+        "reduced_s": 0.525
+      },
+      {
+        "distortion": 1.0124645161187815,
+        "original_gap": 0.7078868714019277,
+        "original_s": 0.525,
+        "reduced_gap": 0.7167103387207909,
+        "reduced_s": 0.525
+      }
+    ],
+    "hub_neighbors": [
+      1
+    ],
+    "internal_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "leaf_count": 2,
+    "passes_all_gates": false,
+    "petal_size": 3,
+    "product_fractional_separation": 0.5854247919252581,
+    "rank": 5
+  },
+  {
+    "best_time": 10.0,
+    "confirmed_differences": [
+      0.21332135594777962,
+      0.14620019242507634,
+      0.08764861588136177
+    ],
+    "confirmed_log_ratios": [
+      0.5587666653121822,
+      0.6834109990734816,
+      0.6949524196110819
+    ],
+    "confirmed_r2": 0.8130658361589469,
+    "confirmed_slope": 0.06809287714944968,
+    "gap_records": [
+      {
+        "distortion": 1.0078304333834587,
+        "original_gap": 0.7111417903056161,
+        "original_s": 0.525,
+        "reduced_gap": 0.7167103387207978,
+        "reduced_s": 0.525
+      },
+      {
+        "distortion": 1.0109229051689852,
+        "original_gap": 0.7089663663333381,
+        "original_s": 0.525,
+        "reduced_gap": 0.7167103387207971,
+        "reduced_s": 0.525
+      },
+      {
+        "distortion": 1.0124645161187935,
+        "original_gap": 0.7078868714019277,
+        "original_s": 0.525,
+        "reduced_gap": 0.7167103387207994,
+        "reduced_s": 0.525
+      }
+    ],
+    "hub_neighbors": [
+      0
+    ],
+    "internal_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "leaf_count": 2,
+    "passes_all_gates": false,
+    "petal_size": 3,
+    "product_fractional_separation": 0.5854247919252586,
+    "rank": 6
+  },
+  {
+    "best_time": 10.0,
+    "confirmed_differences": [
+      0.10716137179932955,
+      0.061963935426187305,
+      0.051494704258995466
+    ],
+    "confirmed_log_ratios": [
+      0.24213242936493293,
+      0.2355215541513776,
+      0.34854570372922067
+    ],
+    "confirmed_r2": 0.7035752927240628,
+    "confirmed_slope": 0.05320663718214381,
+    "gap_records": [
+      {
+        "distortion": 1.049093118080799,
+        "original_gap": 0.6831713280437293,
+        "original_s": 0.525,
+        "reduced_gap": 0.7167103387207963,
+        "reduced_s": 0.525
+      },
+      {
+        "distortion": 1.0145020379367367,
+        "original_gap": 0.7064651542528391,
+        "original_s": 0.525,
+        "reduced_gap": 0.7167103387207963,
+        "reduced_s": 0.525
+      },
+      {
+        "distortion": 1.0042063466332496,
+        "original_gap": 0.7137082344915133,
+        "original_s": 0.525,
+        "reduced_gap": 0.7167103387207892,
+        "reduced_s": 0.525
+      }
+    ],
+    "hub_neighbors": [
+      0,
+      1
+    ],
+    "internal_edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "leaf_count": 2,
+    "passes_all_gates": false,
+    "petal_size": 3,
+    "product_fractional_separation": 0.520172074646108,
+    "rank": 7
+  },
+  {
+    "best_time": 10.0,
+    "confirmed_differences": [
+      0.10716137179932977,
+      0.06196393542618589,
+      0.05149470425899459
+    ],
+    "confirmed_log_ratios": [
+      0.24213242936493312,
+      0.23552155415137216,
+      0.34854570372921406
+    ],
+    "confirmed_r2": 0.7035752927240206,
+    "confirmed_slope": 0.05320663718214042,
+    "gap_records": [
+      {
+        "distortion": 1.0490931180807925,
+        "original_gap": 0.6831713280437348,
+        "original_s": 0.525,
+        "reduced_gap": 0.7167103387207978,
+        "reduced_s": 0.525
+      },
+      {
+        "distortion": 1.0145020379367482,
+        "original_gap": 0.706465154252832,
+        "original_s": 0.525,
+        "reduced_gap": 0.7167103387207971,
+        "reduced_s": 0.525
+      },
+      {
+        "distortion": 1.0042063466332731,
+        "original_gap": 0.7137082344915067,
+        "original_s": 0.525,
+        "reduced_gap": 0.7167103387207994,
+        "reduced_s": 0.525
+      }
+    ],
+    "hub_neighbors": [
+      1,
+      2
+    ],
+    "internal_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "leaf_count": 2,
+    "passes_all_gates": false,
+    "petal_size": 3,
+    "product_fractional_separation": 0.5201720746461175,
+    "rank": 8
+  },
+  {
+    "best_time": 10.0,
+    "confirmed_differences": [
+      0.10716137179933,
+      0.06196393542618661,
+      0.05149470425899408
+    ],
+    "confirmed_log_ratios": [
+      0.24213242936493382,
+      0.23552155415137477,
+      0.3485457037292106
+    ],
+    "confirmed_r2": 0.7035752927240326,
+    "confirmed_slope": 0.05320663718213833,
+    "gap_records": [
+      {
+        "distortion": 1.0490931180807992,
+        "original_gap": 0.6831713280437293,
+        "original_s": 0.525,
+        "reduced_gap": 0.7167103387207965,
+        "reduced_s": 0.525
+      },
+      {
+        "distortion": 1.0145020379367475,
+        "original_gap": 0.7064651542528328,
+        "original_s": 0.525,
+        "reduced_gap": 0.7167103387207976,
+        "reduced_s": 0.525
+      },
+      {
+        "distortion": 1.0042063466332531,
+        "original_gap": 0.7137082344915124,
+        "original_s": 0.525,
+        "reduced_gap": 0.7167103387207909,
+        "reduced_s": 0.525
+      }
+    ],
+    "hub_neighbors": [
+      0,
+      2
+    ],
+    "internal_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "leaf_count": 2,
+    "passes_all_gates": false,
+    "petal_size": 3,
+    "product_fractional_separation": 0.5201720746461236,
+    "rank": 9
+  },
+  {
+    "best_time": 10.0,
+    "confirmed_differences": [
+      0.19870452123422544,
+      0.18055743861426876,
+      0.1481302454791436
+    ],
+    "confirmed_log_ratios": [
+      0.35062954982613515,
+      0.41003837620544686,
+      0.42374753630483025
+    ],
+    "confirmed_r2": 0.884788501336412,
+    "confirmed_slope": 0.036558993239347484,
+    "gap_records": [
+      {
+        "distortion": 1.0000008151137636,
+        "original_gap": 0.2247450545842291,
+        "original_s": 0.9,
+        "reduced_gap": 0.22474487139159116,
+        "reduced_s": 0.9
+      },
+      {
+        "distortion": 1.0000002910882175,
+        "original_gap": 0.22474480597101198,
+        "original_s": 0.9,
+        "reduced_gap": 0.22474487139157695,
+        "reduced_s": 0.9
+      },
+      {
+        "distortion": 1.000000012684078,
+        "original_gap": 0.22474486854089903,
+        "original_s": 0.9,
+        "reduced_gap": 0.2247448713915805,
+        "reduced_s": 0.9
+      }
+    ],
+    "hub_neighbors": [
+      1,
+      2
+    ],
+    "internal_edges": [
+      [
+        0,
+        1
+      ]
+    ],
+    "leaf_count": 2,
+    "passes_all_gates": false,
+    "petal_size": 3,
+    "product_fractional_separation": 0.5971555197263972,
+    "rank": 10
+  },
+  {
+    "best_time": 10.0,
+    "confirmed_differences": [
+      0.19870452123422594,
+      0.1805574386142691,
+      0.14813024547914222
+    ],
+    "confirmed_log_ratios": [
+      0.35062954982613653,
+      0.410038376205447,
+      0.4237475363048268
+    ],
+    "confirmed_r2": 0.8847885013363883,
+    "confirmed_slope": 0.036558993239345104,
+    "gap_records": [
+      {
+        "distortion": 1.0000008151137674,
+        "original_gap": 0.22474505458423089,
+        "original_s": 0.9,
+        "reduced_gap": 0.22474487139159205,
+        "reduced_s": 0.9
+      },
+      {
+        "distortion": 1.0000002910882648,
+        "original_gap": 0.2247448059710191,
+        "original_s": 0.9,
+        "reduced_gap": 0.2247448713915947,
+        "reduced_s": 0.9
+      },
+      {
+        "distortion": 1.0000000126843864,
+        "original_gap": 0.22474486854085995,
+        "original_s": 0.9,
+        "reduced_gap": 0.2247448713916107,
+        "reduced_s": 0.9
+      }
+    ],
+    "hub_neighbors": [
+      1,
+      2
+    ],
+    "internal_edges": [
+      [
+        0,
+        2
+      ]
+    ],
+    "leaf_count": 2,
+    "passes_all_gates": false,
+    "petal_size": 3,
+    "product_fractional_separation": 0.597155519726402,
+    "rank": 11
+  }
+]

@@ -1,0 +1,111 @@
+{
+  "best_confirmed_candidate": {
+    "best_time": 10.0,
+    "confirmed_differences": [
+      0.17287898524305256,
+      0.14935096048336619,
+      0.1065757124713457
+    ],
+    "confirmed_log_ratios": [
+      0.34349654530067336,
+      0.5487588645560306,
+      0.7068243511777651
+    ],
+    "confirmed_r2": 0.9944066601753574,
+    "confirmed_slope": 0.1816639029385458,
+    "gap_records": [
+      {
+        "distortion": 1.07015698236067,
+        "original_gap": 0.9344423448923264,
+        "original_s": 0.475,
+        "reduced_gap": 1.0000000000000004,
+        "reduced_s": 0.5
+      },
+      {
+        "distortion": 1.0051589887296029,
+        "original_gap": 0.9948674898325076,
+        "original_s": 0.5,
+        "reduced_gap": 1.0000000000000018,
+        "reduced_s": 0.5
+      },
+      {
+        "distortion": 1.000572831899648,
+        "original_gap": 0.99942749604888,
+        "original_s": 0.5,
+        "reduced_gap": 1.0000000000000022,
+        "reduced_s": 0.5
+      }
+    ],
+    "hub_neighbors": [
+      0,
+      1,
+      2
+    ],
+    "internal_edges": [],
+    "leaf_count": 1,
+    "passes_all_gates": false,
+    "petal_size": 3,
+    "product_fractional_separation": 0.3140888306372345,
+    "rank": 0
+  },
+  "best_screen_candidate": {
+    "best_r2": 0.9947495567124875,
+    "best_slope": 0.18091954788818096,
+    "best_time": 10.0,
+    "hub_neighbors": [
+      0,
+      1,
+      2
+    ],
+    "internal_edges": [],
+    "k3_difference": 0.10664013919957772,
+    "leaf_count": 1,
+    "petal_size": 3,
+    "screen_records": {
+      "10.0": {
+        "absolute_differences": [
+          0.17265651295632362,
+          0.1491324634787458,
+          0.10664013919957772
+        ],
+        "fit": {
+          "intercept": 0.16923426450785323,
+          "r2": 0.9947495567124875,
+          "slope": 0.18091954788818096
+        },
+        "log_ratios": [
+          0.3425651370204904,
+          0.5462507110353029,
+          0.7044042327968525
+        ]
+      },
+      "5.0": {
+        "absolute_differences": [
+          0.15219926544072926,
+          0.1273247364837582,
+          0.10619627226489137
+        ],
+        "fit": {
+          "intercept": 0.19644010841288087,
+          "r2": 0.9990330050782557,
+          "slope": -0.019485938754549237
+        },
+        "log_ratios": [
+          0.17730418161819506,
+          0.15676820698405558,
+          0.13833230410909664
+        ]
+      }
+    },
+    "signatures": [
+      "Ds_",
+      "GsaCC?",
+      "JsaCCA?_C??"
+    ]
+  },
+  "confirmed_count": 12,
+  "endpoint_bijective_families": 73,
+  "survivor_count": 0,
+  "unique_grammar_families": 84,
+  "verdict": "KILL_ROOTED_PETAL_GRAMMAR"
+}

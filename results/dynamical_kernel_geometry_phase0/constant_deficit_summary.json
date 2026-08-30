@@ -1,0 +1,56 @@
+{
+  "action_differences_k1_to_k3": [
+    0.45847089750069636,
+    0.38380624894992565,
+    0.33461236467837296
+  ],
+  "best_fit": {
+    "intercept": 0.05801517400396787,
+    "r2": 0.5409413875684461,
+    "slope": -0.002816925483379194
+  },
+  "best_time": 20.0,
+  "criteria": {
+    "beats_disconnected_product_baseline": true,
+    "geometry_monotone_with_success": false,
+    "interior_gap_at_most_1p25": true,
+    "k4_absolute_difference_at_least_0p25": false,
+    "log_ratio_slope_and_r2": false,
+    "phase0_survives": false
+  },
+  "family": "constant-deficit hub with two leaves and k one-sided edges",
+  "fits": {
+    "10.0": {
+      "intercept": 0.483000140858069,
+      "r2": 0.757236764987272,
+      "slope": -0.02603354437625926
+    },
+    "20.0": {
+      "intercept": 0.05801517400396787,
+      "r2": 0.5409413875684461,
+      "slope": -0.002816925483379194
+    },
+    "5.0": {
+      "intercept": 0.17511952629692984,
+      "r2": 0.8635014486012911,
+      "slope": -0.020563900968045307
+    }
+  },
+  "k4_at_best_time": {
+    "absolute_difference": 0.04219724794242097,
+    "disconnected_log_success_ratio": 0.21551214775763755,
+    "k": 4,
+    "log_success_ratio": 0.043712499556747476,
+    "original_success": 0.9443910484046283,
+    "reduced_success": 0.9865882963470493,
+    "total_time": 20.0
+  },
+  "k4_product_fractional_separation": 0.7971692082717025,
+  "maximum_interior_gap_distortion": 1.000347690834906,
+  "success_differences_k1_to_k3": [
+    0.0522636634251018,
+    0.05031007774987206,
+    0.052328831107896656
+  ],
+  "verdict": "KILL_CONSTANT_DEFICIT_FAMILY"
+}

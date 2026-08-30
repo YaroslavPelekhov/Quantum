@@ -1,0 +1,40 @@
+{
+  "best_fit": {
+    "intercept": 0.13831947480351045,
+    "r2": 0.865854416241892,
+    "slope": -0.011974969486521325
+  },
+  "best_time": 5.0,
+  "criteria_before_geometry_analysis": {
+    "beats_disconnected_product_baseline": true,
+    "geometry_monotone_while_gap_flat": false,
+    "interior_gap_at_most_1p25": true,
+    "log_ratio_slope_and_r2": false,
+    "phase0_survives": false,
+    "prior_art_clear": true
+  },
+  "family": "shared-hub windmill plus one leaf",
+  "fits": {
+    "10.0": {
+      "intercept": 0.5962903728275472,
+      "r2": 0.926128941192872,
+      "slope": -0.10560173645160012
+    },
+    "20.0": {
+      "intercept": 0.09445481269854084,
+      "r2": 0.6383297809231583,
+      "slope": -0.013207383605522462
+    },
+    "5.0": {
+      "intercept": 0.13831947480351045,
+      "r2": 0.865854416241892,
+      "slope": -0.011974969486521325
+    }
+  },
+  "k5_product_log_ratio_fractional_separation": 0.8813733946174983,
+  "k_range": [
+    1,
+    5
+  ],
+  "maximum_interior_gap_distortion": 1.0023600296273738
+}

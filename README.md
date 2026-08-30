@@ -1,6 +1,16 @@
 # Quantum x Evolutionary Computing Research Artifact
 
 Latest research-cycle verdict: the
+[dynamical kernel geometry Phase 0](results/dynamical_kernel_geometry_phase0/FINAL_REPORT.md)
+is **closed as an A* separation family**.  Two connected constant-deletion
+families and an exhaustive grammar of 84 rooted-petal families were tested; 73
+were endpoint-bijective and the top 12 received high-accuracy dynamics and gap
+confirmation.  Zero passed all frozen gates.  The closest near miss has
+log-success slope `0.181664` with `R2=0.994407` and gap distortion at most
+`1.07016x`, but its absolute effect falls to `0.10658` and the graph is only a
+star reduced to independent vertices.  No H200 or QPU run is authorised.
+
+The preceding research-cycle verdict: the
 [quantum-safe Rydberg MIS kernelization Phase 0](results/quantum_safe_kernelization_phase0/FINAL_REPORT.md)
 is **closed as an A* direction in its static graph-reduction form**.  Across 793
 exact leaf reductions, an apparent `100.633x` gap effect vanished after removing
