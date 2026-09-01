@@ -1,0 +1,64 @@
+{
+  "decisions": [
+    {
+      "atoms": 3,
+      "best_parameters": "[-0.6550166556306831, 0.5786214613149321, 0.7521758603300355, 0.007142126962455642]",
+      "best_topology_code": "001110",
+      "case_passes": false,
+      "horizon": 5.0,
+      "prefix_improvement_factor": 5.264826005873542,
+      "refined_runs": 16,
+      "regime": "uniform",
+      "same_budget_prefix_max_error": 0.2042645211656906,
+      "topologies_screened": 16,
+      "validation_max_error": 0.038797962351995896,
+      "validation_relative_l2_error": 0.01500191760957441
+    },
+    {
+      "atoms": 4,
+      "best_parameters": "[0.8024086693627153, 0.4186728885520665, 0.3433633704160175, -0.46948992927619937, -0.0014315853214847962]",
+      "best_topology_code": "0001011100",
+      "case_passes": true,
+      "horizon": 5.0,
+      "prefix_improvement_factor": 10.322667946314327,
+      "refined_runs": 15,
+      "regime": "uniform",
+      "same_budget_prefix_max_error": 0.061895719086752954,
+      "topologies_screened": 79,
+      "validation_max_error": 0.005996097075742187,
+      "validation_relative_l2_error": 0.0028574450554617035
+    },
+    {
+      "atoms": 3,
+      "best_parameters": "[0.028027302898393724, 0.3968288919961491, 0.6118330698084615, -0.0043141574815039885]",
+      "best_topology_code": "001110",
+      "case_passes": false,
+      "horizon": 5.0,
+      "prefix_improvement_factor": 7.699996743327838,
+      "refined_runs": 16,
+      "regime": "perturbed",
+      "same_budget_prefix_max_error": 0.20365389074162119,
+      "topologies_screened": 16,
+      "validation_max_error": 0.026448568425446455,
+      "validation_relative_l2_error": 0.011991926278814118
+    },
+    {
+      "atoms": 4,
+      "best_parameters": "[0.1461643007298985, 0.4025594562354793, 0.3706173451410466, 0.6608462812383262, 0.0005343733714817667]",
+      "best_topology_code": "0001011100",
+      "case_passes": true,
+      "horizon": 5.0,
+      "prefix_improvement_factor": 154.35562455763997,
+      "refined_runs": 15,
+      "regime": "perturbed",
+      "same_budget_prefix_max_error": 0.06191337717494868,
+      "topologies_screened": 79,
+      "validation_max_error": 0.00040110865640551237,
+      "validation_relative_l2_error": 0.00037493916042637083
+    }
+  ],
+  "four_atom_capacity_survives": true,
+  "static_branch_survives": true,
+  "three_atom_optimizer_recovery": false,
+  "verdict": "ADVANCE_TO_AQUILA_PROJECTION"
+}

@@ -1,0 +1,35 @@
+{
+  "decisions": [
+    {
+      "case_passes": false,
+      "host_count": 30,
+      "median_max_trace_distance": 0.011020078756182362,
+      "median_prefix_improvement": 1.3859551457909973,
+      "p90_max_port_population_error": 0.0019611077949742125,
+      "p90_max_trace_distance": 0.013152560139492684,
+      "prefix_win_rate": 0.8666666666666667,
+      "regime": "uniform",
+      "worst_max_trace_distance": 0.013984219212988081
+    },
+    {
+      "case_passes": true,
+      "host_count": 30,
+      "median_max_trace_distance": 0.0025286570161588365,
+      "median_prefix_improvement": 5.4319509735175515,
+      "p90_max_port_population_error": 0.0002496296296435635,
+      "p90_max_trace_distance": 0.0031805777300050976,
+      "prefix_win_rate": 1.0,
+      "regime": "perturbed",
+      "worst_max_trace_distance": 0.003526547379948226
+    }
+  ],
+  "host_counts": {
+    "2": 1,
+    "3": 3,
+    "4": 8,
+    "5": 18
+  },
+  "host_transfer_survives": false,
+  "rng_seed": 20260903,
+  "verdict": "FALSIFIED_NONTRANSFERABLE_RESPONSE_SLICE"
+}

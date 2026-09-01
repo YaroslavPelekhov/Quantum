@@ -1,0 +1,65 @@
+{
+  "decisions": [
+    {
+      "case_passes": false,
+      "horizon": 5.0,
+      "horizon_passes_both_controls": false,
+      "regime": "uniform",
+      "three_atom_max_error": 0.02298864108843502,
+      "three_atom_prefix_improvement": 8.885454358955158,
+      "three_atom_relative_l2_error": 0.01662990876688676
+    },
+    {
+      "case_passes": false,
+      "horizon": 5.0,
+      "horizon_passes_both_controls": false,
+      "regime": "perturbed",
+      "three_atom_max_error": 0.027354821229533918,
+      "three_atom_prefix_improvement": 7.444899348190371,
+      "three_atom_relative_l2_error": 0.020115541272538933
+    },
+    {
+      "case_passes": false,
+      "horizon": 10.0,
+      "horizon_passes_both_controls": false,
+      "regime": "uniform",
+      "three_atom_max_error": 0.048603433123182035,
+      "three_atom_prefix_improvement": 5.916685517999102,
+      "three_atom_relative_l2_error": 0.050007381804232996
+    },
+    {
+      "case_passes": false,
+      "horizon": 10.0,
+      "horizon_passes_both_controls": false,
+      "regime": "perturbed",
+      "three_atom_max_error": 0.1523303772654348,
+      "three_atom_prefix_improvement": 1.8678304423986567,
+      "three_atom_relative_l2_error": 0.0865298362339778
+    },
+    {
+      "case_passes": false,
+      "horizon": 20.0,
+      "horizon_passes_both_controls": false,
+      "regime": "uniform",
+      "three_atom_max_error": 0.18543373707460006,
+      "three_atom_prefix_improvement": 1.7000514005578973,
+      "three_atom_relative_l2_error": 0.1556816400756523
+    },
+    {
+      "case_passes": false,
+      "horizon": 20.0,
+      "horizon_passes_both_controls": false,
+      "regime": "perturbed",
+      "three_atom_max_error": 0.1822154778123759,
+      "three_atom_prefix_improvement": 1.7725653100949956,
+      "three_atom_relative_l2_error": 0.15263885482410525
+    }
+  ],
+  "physical_synthesis_survives": false,
+  "topology_counts": {
+    "1": 1,
+    "2": 4,
+    "3": 16
+  },
+  "verdict": "FALSIFIED_IN_OPTIMISTIC_PHYSICAL_ENVELOPE"
+}

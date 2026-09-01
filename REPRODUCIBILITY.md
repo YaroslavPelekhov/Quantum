@@ -6,7 +6,26 @@ Ubuntu with an NVIDIA RTX 4070 Ti SUPER (16 GB) for cuTensorNet. The host expose
 48 GB system RAM with XMP disabled; the cross-case runs used a protected
 single-job watchdog and a separate WSL cuTensorNet environment.
 
-## 0. Reproduce the hardware-witness Phase-0 closure
+## 0. Reproduce the causal boundary-response closure
+
+This CPU-only exact cycle has no cloud credentials or QPU dependency:
+
+```powershell
+python -m experiments.causal_boundary_response_phase0.run_phase0
+python -m experiments.causal_boundary_response_phase0.run_rank_audit
+python -m experiments.causal_boundary_response_phase0.run_physical_surrogate
+python -m experiments.causal_boundary_response_phase0.run_capacity_audit
+python -m experiments.causal_boundary_response_phase0.run_host_transfer
+python -m experiments.causal_boundary_response_phase0.run_process_gram
+python -m unittest experiments.causal_boundary_response_phase0.test_phase0 -v
+python -m experiments.causal_boundary_response_phase0.build_manifest
+```
+
+Read each preregistration before interpreting a rerun.  The capacity audit is
+the slowest step.  The final A-star verdict is determined by the frozen
+process-Gram gate, not by the positive isolated-response fit.
+
+## 0a. Reproduce the hardware-witness Phase-0 closure
 
 This small exact falsification screen is independent of Qiskit and does not use
 hardware credentials.  With the pinned NumPy/SciPy environment installed:

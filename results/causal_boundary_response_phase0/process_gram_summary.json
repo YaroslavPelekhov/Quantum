@@ -1,0 +1,26 @@
+{
+  "decisions": [
+    {
+      "all_multiswitch_cases_pass": false,
+      "all_two_bin_splits_pass": false,
+      "minimum_max_error_improvement": 3.2377709275404865,
+      "regime": "uniform",
+      "worst_split_improvement": 2.9632325065369356,
+      "worst_split_max_gram_error": 0.020887904999092516,
+      "worst_split_tau": 3.1,
+      "worst_surrogate_max_gram_error": 0.020825051448594627
+    },
+    {
+      "all_multiswitch_cases_pass": true,
+      "all_two_bin_splits_pass": true,
+      "minimum_max_error_improvement": 8.647131002908734,
+      "regime": "perturbed",
+      "worst_split_improvement": 8.978123669434948,
+      "worst_split_max_gram_error": 0.007748043481874139,
+      "worst_split_tau": 1.9000000000000001,
+      "worst_surrogate_max_gram_error": 0.008422667029319965
+    }
+  ],
+  "process_gram_survives": false,
+  "verdict": "FALSIFIED_BY_CONTROLLED_BOUNDARY_HISTORIES"
+}

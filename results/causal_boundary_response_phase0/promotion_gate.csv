@@ -1,0 +1,7 @@
+horizon,regime,rank64_relative_residual,best_prefix_max_time_error,best_prefix_relative_hankel_error,prefix_to_rank64_error_ratio,arbitrary_three_atom_not_ruled_out,all_prefixes_fail_5pct,fivefold_nonlocal_separation,regime_passes,failure_class,horizon_passes_both_controls
+5.0,uniform,2.631686329021943e-16,0.20426452116568694,0.08486322585036693,84863225850366.92,True,True,True,True,promotion_window,True
+5.0,perturbed,2.5370544745387985e-16,0.20365389074163032,0.08466242316478773,84662423164787.72,True,True,True,True,promotion_window,True
+10.0,uniform,5.51034593093087e-16,0.2875702010367684,0.3125663675498329,312566367549832.9,True,True,True,True,promotion_window,True
+10.0,perturbed,5.626314665808942e-16,0.28452408914600597,0.31055679263437097,310556792634370.94,True,True,True,True,promotion_window,True
+20.0,uniform,6.120737481824545e-16,0.3152495789999174,0.37664158048303964,376641580483039.6,True,True,True,True,promotion_window,True
+20.0,perturbed,5.983426573784767e-16,0.3229840142584912,0.3762559280091878,376255928009187.75,True,True,True,True,promotion_window,True

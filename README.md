@@ -1,6 +1,18 @@
 # Quantum x Evolutionary Computing Research Artifact
 
 Latest research-cycle verdict: the
+[causal boundary-response kernelization cycle](results/causal_boundary_response_phase0/FINAL_REPORT.md)
+is **closed as an A* quantum-simulation primitive**.  A tuned four-atom path
+does approximate a 13-atom path at `T=5` (maximum complex response errors
+`0.005996` uniform and `0.000401` after a 3% perturbation) and transfers with
+small absolute error to 30 held-out UDG hosts.  The robust separation fails:
+uniform-host median gain over an inherited P4 is only `1.386x`, and the final
+multi-switch process-Gram audit reduces the apparent `10.32x` one-slice gain to
+`2.963x` at its adversarial two-bin split.  Closely related fitted bath
+terminations, Rydberg boundary sinks, and interacting-spin-chain reduced models
+already exist.  No QPU run is authorised.
+
+The preceding research-cycle verdict: the
 [dynamical kernel geometry Phase 0](results/dynamical_kernel_geometry_phase0/FINAL_REPORT.md)
 is **closed as an A* separation family**.  Two connected constant-deletion
 families and an exhaustive grammar of 84 rooted-petal families were tested; 73
