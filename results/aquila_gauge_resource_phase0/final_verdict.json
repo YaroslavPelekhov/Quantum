@@ -1,0 +1,14 @@
+{
+  "verdict": "KILL_GAUGE_RESOURCE_ASTAR_RETAIN_WEAK_DRIVE_QTV_THEOREM",
+  "weak_drive_qtv_theorem_valid": true,
+  "frozen_numerical_gates_pass": false,
+  "explicit_succinct_hard_family": false,
+  "matching_stronger_control_compiler": false,
+  "naive_full_propagator_extension_falsified": true,
+  "full_propagator_resource_separation_established": false,
+  "astar_novelty": false,
+  "qpu_eligible": false,
+  "qpu_tasks_submitted": 0,
+  "binding_scope": "WEAK_DRIVE_ONLY",
+  "next_action": "change the research object; do not rebrand the QAOA/MPS-to-curvature lineage"
+}

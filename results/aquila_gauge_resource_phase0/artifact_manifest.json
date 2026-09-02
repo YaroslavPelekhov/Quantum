@@ -1,0 +1,175 @@
+{
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "experiments/aquila_gauge_resource_phase0/__init__.py",
+      "bytes": 78,
+      "sha256": "d33a32c24b5f431db91960bf81a07b005592276f6f1c0b2eafd0bf52755016f4"
+    },
+    {
+      "path": "experiments/aquila_gauge_resource_phase0/audit_theorem_constants.py",
+      "bytes": 2240,
+      "sha256": "22773ce966f615a74a34c718e4d22100f6cec9b48909b547251cc94fb9af3641"
+    },
+    {
+      "path": "experiments/aquila_gauge_resource_phase0/build_manifest.py",
+      "bytes": 1971,
+      "sha256": "904b33d3c5eff916c4257d21e0a18ff99c203843c28c5f6e2ccbe4119671b4ed"
+    },
+    {
+      "path": "experiments/aquila_gauge_resource_phase0/EXPLORATORY_OPTIMIZATION.md",
+      "bytes": 3772,
+      "sha256": "94fc2ed5c86fed59d1c0e35bf6d2b2cbc6c270bb162b1781d69927bc7659609b"
+    },
+    {
+      "path": "experiments/aquila_gauge_resource_phase0/full_dynamics_audit.py",
+      "bytes": 18571,
+      "sha256": "5374d8371d7a3d97bcad55ec018c4213e1df67afe45cf7df4d090f90242cc0f4"
+    },
+    {
+      "path": "experiments/aquila_gauge_resource_phase0/FULL_DYNAMICS_FALSIFICATION.md",
+      "bytes": 5147,
+      "sha256": "bcb104f011fbc5a24272716f10a3ca2620b0d265dd60a4529ed7e8f970031045"
+    },
+    {
+      "path": "experiments/aquila_gauge_resource_phase0/gauge_core.py",
+      "bytes": 9419,
+      "sha256": "f8ac6b10a4b3f0fb8febfd8eee97adbfc9fb320110ecdb9fc772d4a467d7a7e7"
+    },
+    {
+      "path": "experiments/aquila_gauge_resource_phase0/optimize_full_dynamics.py",
+      "bytes": 15414,
+      "sha256": "37a827b912120013eaa93626ae1111c404282b11cd0fe24bb825c8d114a11c29"
+    },
+    {
+      "path": "experiments/aquila_gauge_resource_phase0/plot_results.py",
+      "bytes": 5434,
+      "sha256": "05c1bd16a9a6e4af0537ed61854df5cf53696bcc794cf34910a9650773008da7"
+    },
+    {
+      "path": "experiments/aquila_gauge_resource_phase0/POSTHOC_MICROPERTURBATION.md",
+      "bytes": 757,
+      "sha256": "ccecd57856b494c96a3fabd84436a6d76dae7aa4af524defe58c1b1deea7b5de"
+    },
+    {
+      "path": "experiments/aquila_gauge_resource_phase0/PREREGISTRATION.md",
+      "bytes": 3951,
+      "sha256": "3a5914f1ddd10dcc0892936fdd5bf992b3c084f14d013804314054dcb2d0fd16"
+    },
+    {
+      "path": "experiments/aquila_gauge_resource_phase0/PRIOR_ART_AUDIT.md",
+      "bytes": 3512,
+      "sha256": "c577087dfcf17ffce141da7715e86ba143679ce02fc5e8eed0694a96c44a8097"
+    },
+    {
+      "path": "experiments/aquila_gauge_resource_phase0/protocol.json",
+      "bytes": 2395,
+      "sha256": "09d4955a380acb7e09f3d1b3065dff74a07b63a23e3b80c9a3eddd252dedb805"
+    },
+    {
+      "path": "experiments/aquila_gauge_resource_phase0/README.md",
+      "bytes": 1470,
+      "sha256": "882d4809ab881aa78d5ad06e489ddd223f72008983318db9493b2d5c7f9c2816"
+    },
+    {
+      "path": "experiments/aquila_gauge_resource_phase0/run_phase0.py",
+      "bytes": 12828,
+      "sha256": "cae7240771357f5d238f4fff53e8fe5e15bdb359f37d0e1d3dfa7f096a590ba2"
+    },
+    {
+      "path": "experiments/aquila_gauge_resource_phase0/run_posthoc_microperturbation.py",
+      "bytes": 5694,
+      "sha256": "2438eaddf7a78c5110e18183e90d080477580302f48a5bf1e4060e8791445df8"
+    },
+    {
+      "path": "experiments/aquila_gauge_resource_phase0/test_full_dynamics.py",
+      "bytes": 3391,
+      "sha256": "a70b2eb598efa5575aaea70f59afc407481ff3ea93468f9a0a872ff36d43a689"
+    },
+    {
+      "path": "experiments/aquila_gauge_resource_phase0/test_phase0.py",
+      "bytes": 3672,
+      "sha256": "03f50fa7ebfe246a05e039d1e31eb0054c4e576fd6a6fdc6d0831f6ffdd026d0"
+    },
+    {
+      "path": "experiments/aquila_gauge_resource_phase0/THEORY_AND_SCOPE.md",
+      "bytes": 6419,
+      "sha256": "018689d224cf1b06cbe636a4bbcdb731f13fd24dc703580f8b77ff4668b4dbda"
+    },
+    {
+      "path": "results/aquila_gauge_resource_phase0/ATTEMPTS.md",
+      "bytes": 1693,
+      "sha256": "53ee513c48fa7a1b9d3463691064c98083f5750dc97e1045e81a1f1ecadf2267"
+    },
+    {
+      "path": "results/aquila_gauge_resource_phase0/FINAL_REPORT.md",
+      "bytes": 6050,
+      "sha256": "d406b97ea9b43236fb407b3daf7be917011218ba12faf5300378a0f8b2f2d716"
+    },
+    {
+      "path": "results/aquila_gauge_resource_phase0/final_verdict.json",
+      "bytes": 571,
+      "sha256": "3a7209e163946b79b7de1b174d680419cc2e35b18fcff2e911c8a0152ed7bf60"
+    },
+    {
+      "path": "results/aquila_gauge_resource_phase0/full_dynamics_audit.json",
+      "bytes": 20042,
+      "sha256": "22cdc5ee4383044dda0e0aa79f787766e40e03440511a2f7ba3f629e2c3eb369"
+    },
+    {
+      "path": "results/aquila_gauge_resource_phase0/full_dynamics_optimizer_search.json",
+      "bytes": 53190,
+      "sha256": "a958f31b9477b08f6a0b6dbc39c81ac94c5f233c93743f88b3de0adc260c0184"
+    },
+    {
+      "path": "results/aquila_gauge_resource_phase0/milp_instances.csv",
+      "bytes": 12377,
+      "sha256": "86223f47f4496776dc920ffc2e717980e7d56eda7bb0926a32dee218d5111d99"
+    },
+    {
+      "path": "results/aquila_gauge_resource_phase0/phase0_diagnostics.png",
+      "bytes": 226027,
+      "sha256": "621692d8c7824b4de0096a7e0f102a5e3351be33ca1d573d38207f7a02347b74"
+    },
+    {
+      "path": "results/aquila_gauge_resource_phase0/phase0_summary.json",
+      "bytes": 945,
+      "sha256": "921bfe6d54359296113589aca806452388111940e1830ff7397a40c8fedc3ad7"
+    },
+    {
+      "path": "results/aquila_gauge_resource_phase0/posthoc_milp_instances.csv",
+      "bytes": 6629,
+      "sha256": "459d256a9833739c37db49840d60c19d0652a08b64daf0c07c52b445fccd0d5b"
+    },
+    {
+      "path": "results/aquila_gauge_resource_phase0/posthoc_scaling_aggregate.csv",
+      "bytes": 616,
+      "sha256": "b52a5490cf1374befe690de164c70eaada68ff906df926d3003191d1cf5fb9c3"
+    },
+    {
+      "path": "results/aquila_gauge_resource_phase0/posthoc_summary.json",
+      "bytes": 350,
+      "sha256": "ebfd45da734b07d8c314b1f5f45b48da0ab5de7b15d78865f3bb9ee715602fee"
+    },
+    {
+      "path": "results/aquila_gauge_resource_phase0/run_manifest.json",
+      "bytes": 349,
+      "sha256": "c9a5aa3e3690f25661ae972ce71a885502c5efcea6d90c3edf9bc4b2916d47a3"
+    },
+    {
+      "path": "results/aquila_gauge_resource_phase0/scaling_aggregate.csv",
+      "bytes": 1125,
+      "sha256": "4fb09faf4e2f785ed441bb796dd37533d70eb3f09db679952e3e56c5f0de5d3d"
+    },
+    {
+      "path": "results/aquila_gauge_resource_phase0/theorem_audit.json",
+      "bytes": 290,
+      "sha256": "deba443e7624265c21a167f0149a8d0f65621b5b3dd9c53995da6bd5b8d9e8e5"
+    },
+    {
+      "path": "results/aquila_gauge_resource_phase0/theorem_union_bound.csv",
+      "bytes": 1046,
+      "sha256": "5083c789b9d02ede82785c0fc9b1464b84a6eb0613110b3c4c763d706ffaecd7"
+    }
+  ]
+}

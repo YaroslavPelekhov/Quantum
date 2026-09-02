@@ -1,0 +1,33 @@
+{
+  "protocol_version": "1.0-frozen-before-validation",
+  "instances": 40,
+  "fits": {
+    "development": {
+      "slope": 1.9648609651296922,
+      "intercept": -1.408650260012875,
+      "r_squared": 0.9894226669977458
+    },
+    "heldout": {
+      "slope": null,
+      "intercept": null,
+      "r_squared": null
+    }
+  },
+  "gate_results": {
+    "all_frequency_collisions_absent": false,
+    "all_solver_relative_gaps_at_most": false,
+    "development_log2_median_cost_slope_min": true,
+    "development_log2_fit_r2_min": true,
+    "heldout_log2_median_cost_slope_min": false,
+    "heldout_log2_fit_r2_min": false,
+    "median_max_abs_flux_rad_min": true
+  },
+  "all_numerical_gates_pass": false,
+  "astar_status": "NOT_EVALUATED_BY_NUMERICS_ALONE",
+  "qpu_eligible": false,
+  "qpu_tasks_submitted": 0,
+  "failure_counts": {
+    "frequency_collision_instances": 16,
+    "solver_nonoptimal_instances": 1
+  }
+}

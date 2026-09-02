@@ -1,0 +1,9 @@
+{
+  "net_points_per_vertex_circle": 87,
+  "net_radius_upper_rad": 0.036110260386089575,
+  "required_net_radius_rad": 0.036116479680966304,
+  "first_n_certified": 7,
+  "n6_log_union_bound": 16.569988501339708,
+  "n7_log_union_bound": -52.50324835145898,
+  "all_checks_pass": true
+}

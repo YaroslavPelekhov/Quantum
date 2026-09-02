@@ -1,0 +1,652 @@
+{
+  "frozen_pulse": {
+    "global_detuning_rad_per_us": [
+      0.0,
+      3.9372317790985107,
+      48.30323791503906,
+      17.753358840942383,
+      12.636280059814453,
+      0.48222070932388306,
+      -30.90934181213379,
+      27.0598087310791,
+      0.8030229806900024,
+      -18.29681396484375,
+      80.4147720336914,
+      -11.640413284301758,
+      0.0
+    ],
+    "local_detuning_rad_per_us": [
+      0.0,
+      -30.70500373840332,
+      -57.10270309448242,
+      -32.954010009765625,
+      -11.961651802062988,
+      -47.258758544921875,
+      -30.70797348022461,
+      -62.70475769042969,
+      -11.82868766784668,
+      -25.05221176147461,
+      -80.18392944335938,
+      -39.39570236206055,
+      0.0
+    ],
+    "omega_rad_per_us": [
+      0.0,
+      13.561246871948242,
+      11.104994773864746,
+      8.143071174621582,
+      3.490602970123291,
+      0.5192868709564209,
+      2.817172050476074,
+      9.636846542358398,
+      3.9511234760284424,
+      4.266055107116699,
+      2.8116137981414795,
+      14.024016380310059,
+      0.0
+    ],
+    "phase_rad": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "times_us": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0,
+      1.1,
+      1.2
+    ]
+  },
+  "hardware_quantized_geometry_and_waveform": {
+    "forward": {
+      "clockwise_mean": 0.9825087650392601,
+      "clockwise_minimum": 0.9729517503830204,
+      "clockwise_probabilities": [
+        0.9729517503830204,
+        0.9780706200837126,
+        0.9909020316598515,
+        0.9881106580304564
+      ],
+      "counterclockwise_mean": 0.000741572390267534,
+      "cycle_wilson_phase_rad": 2.5598046756655486,
+      "orientation_contrast": 0.9817671926489926,
+      "spectator_leakage_mean": 0.003710258782595219,
+      "unitarity_error_operator_norm": 1.3038276954808879e-11
+    },
+    "interaction_diagonal_rad_per_us": [
+      0.0,
+      0.0,
+      0.0,
+      7.373227849638951,
+      0.0,
+      2.467000455166137,
+      1.245775302394734,
+      11.086003607199821
+    ],
+    "native_ground_state": {
+      "forward_target_site_0": 0.9729517503830204,
+      "forward_wrong_site_1": 0.0015842860244000476,
+      "reverse_target_site_1": 0.9881106580292115,
+      "reverse_wrong_site_0": 0.00014512182379398567,
+      "two_schedule_router_contrast": 1.9593330005640377
+    },
+    "reverse": {
+      "clockwise_mean": 0.000741572390464461,
+      "clockwise_minimum": 0.00011914128260913517,
+      "clockwise_probabilities": [
+        0.00014512182379398565,
+        0.0011177404314823003,
+        0.00011914128260913517,
+        0.0015842860239724229
+      ],
+      "counterclockwise_mean": 0.9825087650202126,
+      "cycle_wilson_phase_rad": -2.387067788840343,
+      "orientation_contrast": -0.9817671926297481,
+      "spectator_leakage_mean": 0.0037102587829750252,
+      "unitarity_error_operator_norm": 9.249307040571187e-12
+    }
+  },
+  "metadata": {
+    "audit_type": "post-hoc adversarial falsification",
+    "native_measurement_caveat": "The complete four-leg population cycle uses non-native input configurations; only its forward/reverse ground-state routing legs are directly counts-measurable as two Aquila schedules.",
+    "optimizer_included": false,
+    "primary_atol": 5e-14,
+    "primary_rtol": 5e-12,
+    "primary_solver": "DOP853",
+    "robustness_draws": 128,
+    "robustness_seed": 241109,
+    "scope": "Does not refute the weak-drive Fourier-response theorem or an all-edge response-margin bound.",
+    "verdict": "KILL_NAIVE_FULL_DYNAMICS_EXTENSION_OF_WEAK_DRIVE_QTV_BOUND"
+  },
+  "midpoint_convergence": [
+    {
+      "clockwise_mean": 0.8366213748584903,
+      "clockwise_minimum": 0.7413103473026721,
+      "clockwise_probabilities": [
+        0.7413103473026721,
+        0.8314173919421299,
+        0.9233500201050286,
+        0.8504077400841304
+      ],
+      "counterclockwise_mean": 0.011213703718236344,
+      "cycle_wilson_phase_rad": 2.225008703026112,
+      "operator_norm_error": 0.9438655441071496,
+      "orientation_contrast": 0.8254076711402539,
+      "spectator_leakage_mean": 0.005561390415117122,
+      "substeps_per_interval": 1,
+      "unitarity_error_operator_norm": 3.5143916618502192e-15
+    },
+    {
+      "clockwise_mean": 0.9955367147325568,
+      "clockwise_minimum": 0.993670940746359,
+      "clockwise_probabilities": [
+        0.993670940746359,
+        0.9963576853109352,
+        0.9971749136969986,
+        0.9949433191759344
+      ],
+      "counterclockwise_mean": 0.00023183204025642532,
+      "cycle_wilson_phase_rad": 2.368909675092088,
+      "operator_norm_error": 0.22799085540058808,
+      "orientation_contrast": 0.9953048826923003,
+      "spectator_leakage_mean": 0.003584183260350795,
+      "substeps_per_interval": 2,
+      "unitarity_error_operator_norm": 3.2335716198835838e-15
+    },
+    {
+      "clockwise_mean": 0.9891082261960875,
+      "clockwise_minimum": 0.9832109601097132,
+      "clockwise_probabilities": [
+        0.9832109601097132,
+        0.9876924645358989,
+        0.9943202172625509,
+        0.9912092628761868
+      ],
+      "counterclockwise_mean": 0.0004123667328047721,
+      "cycle_wilson_phase_rad": 2.3980180099959973,
+      "operator_norm_error": 0.05560928607679128,
+      "orientation_contrast": 0.9886958594632828,
+      "spectator_leakage_mean": 0.003684296351762114,
+      "substeps_per_interval": 4,
+      "unitarity_error_operator_norm": 3.33477199780668e-15
+    },
+    {
+      "clockwise_mean": 0.9853031269902044,
+      "clockwise_minimum": 0.9770361627293909,
+      "clockwise_probabilities": [
+        0.9770361627293909,
+        0.9828497898175602,
+        0.9923753234657804,
+        0.9889512319480862
+      ],
+      "counterclockwise_mean": 0.0006918037483107229,
+      "cycle_wilson_phase_rad": 2.4047858748934963,
+      "operator_norm_error": 0.013818888939797994,
+      "orientation_contrast": 0.9846113232418937,
+      "spectator_leakage_mean": 0.0037364761869255834,
+      "substeps_per_interval": 8,
+      "unitarity_error_operator_norm": 3.4335432811715515e-15
+    },
+    {
+      "clockwise_mean": 0.9842288099688538,
+      "clockwise_minimum": 0.9752924130994304,
+      "clockwise_probabilities": [
+        0.9752924130994304,
+        0.9814862147922215,
+        0.991814506182387,
+        0.9883221058013762
+      ],
+      "counterclockwise_mean": 0.0007785669691789392,
+      "cycle_wilson_phase_rad": 2.4064416739668046,
+      "operator_norm_error": 0.003449605203214303,
+      "orientation_contrast": 0.9834502429996749,
+      "spectator_leakage_mean": 0.003751203728739179,
+      "substeps_per_interval": 16,
+      "unitarity_error_operator_norm": 6.89966004586712e-15
+    },
+    {
+      "clockwise_mean": 0.9839527273862834,
+      "clockwise_minimum": 0.9748442687933486,
+      "clockwise_probabilities": [
+        0.9748442687933486,
+        0.9811359569740085,
+        0.9916696765789753,
+        0.9881610071988011
+      ],
+      "counterclockwise_mean": 0.0008013434461358497,
+      "cycle_wilson_phase_rad": 2.406853289249895,
+      "operator_norm_error": 0.0008620830584817282,
+      "orientation_contrast": 0.9831513839401476,
+      "spectator_leakage_mean": 0.0037549904103287373,
+      "substeps_per_interval": 32,
+      "unitarity_error_operator_norm": 9.991309978661771e-15
+    },
+    {
+      "clockwise_mean": 0.9838832405962195,
+      "clockwise_minimum": 0.9747314742550788,
+      "clockwise_probabilities": [
+        0.9747314742550788,
+        0.9810478101816743,
+        0.9916331806932364,
+        0.9881204972548883
+      ],
+      "counterclockwise_mean": 0.0008071058510871703,
+      "cycle_wilson_phase_rad": 2.4069560460065085,
+      "operator_norm_error": 0.0002155010599969909,
+      "orientation_contrast": 0.9830761347451323,
+      "spectator_leakage_mean": 0.0037559436239579733,
+      "substeps_per_interval": 64,
+      "unitarity_error_operator_norm": 1.0172037381848175e-14
+    }
+  ],
+  "model": {
+    "c6_rad_per_us_um6": 5420000.0,
+    "configuration_dimension": 8,
+    "face_cycle": [
+      0,
+      1,
+      3,
+      2,
+      0
+    ],
+    "hardware_quantized_positions_um": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        9.5,
+        0.0
+      ],
+      [
+        3.0,
+        11.0
+      ]
+    ],
+    "nominal_positions_um": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        9.4730465146837,
+        0.0
+      ],
+      [
+        3.0,
+        11.0
+      ]
+    ],
+    "static_mask": [
+      0.0,
+      0.4,
+      1.0
+    ]
+  },
+  "nominal_adaptive": {
+    "clockwise_mean": 0.9838600369536639,
+    "clockwise_minimum": 0.9746938087506548,
+    "clockwise_probabilities": [
+      0.9746938087506548,
+      0.9810183762103216,
+      0.9916209897620423,
+      0.9881069730916368
+    ],
+    "counterclockwise_mean": 0.0008090327315255245,
+    "cycle_wilson_phase_rad": 2.406990285820746,
+    "orientation_contrast": 0.9830510042221383,
+    "spectator_leakage_mean": 0.003756261943387359,
+    "unitarity_error_operator_norm": 1.3479831953125163e-11
+  },
+  "null_controls": [
+    {
+      "case": "nominal",
+      "clockwise_mean": 0.9838600369536639,
+      "clockwise_minimum": 0.9746938087506548,
+      "clockwise_probabilities": [
+        0.9746938087506548,
+        0.9810183762103216,
+        0.9916209897620423,
+        0.9881069730916368
+      ],
+      "counterclockwise_mean": 0.0008090327315255245,
+      "cycle_wilson_phase_rad": 2.406990285820746,
+      "orientation_contrast": 0.9830510042221383,
+      "spectator_leakage_mean": 0.003756261943387359,
+      "unitarity_error_operator_norm": 1.3479831953125163e-11
+    },
+    {
+      "case": "interaction_off",
+      "clockwise_mean": 0.24839406315824802,
+      "clockwise_minimum": 0.2289208270874274,
+      "clockwise_probabilities": [
+        0.2289208270874274,
+        0.2678672992292295,
+        0.22892082708789485,
+        0.2678672992284404
+      ],
+      "counterclockwise_mean": 0.24839406315804294,
+      "cycle_wilson_phase_rad": 2.378415688112326,
+      "orientation_contrast": 2.0508594822388204e-13,
+      "spectator_leakage_mean": 0.0022219483225798023,
+      "unitarity_error_operator_norm": 1.1264814077310497e-11
+    },
+    {
+      "case": "equal_mask",
+      "clockwise_mean": 0.06167227468522325,
+      "clockwise_minimum": 0.021012052151191115,
+      "clockwise_probabilities": [
+        0.021012052151191115,
+        0.03687393401333286,
+        0.1293527398548126,
+        0.05945037272155644
+      ],
+      "counterclockwise_mean": 0.029451439976086617,
+      "cycle_wilson_phase_rad": -2.865730135310356,
+      "orientation_contrast": 0.032220834709136635,
+      "spectator_leakage_mean": 0.5689769230824673,
+      "unitarity_error_operator_norm": 1.4488620059032182e-11
+    },
+    {
+      "case": "interaction_off_equal_mask",
+      "clockwise_mean": 0.12941237276259157,
+      "clockwise_minimum": 0.1294123727623054,
+      "clockwise_probabilities": [
+        0.12941237276269862,
+        0.12941237276278975,
+        0.12941237276257248,
+        0.1294123727623054
+      ],
+      "counterclockwise_mean": 0.12941237276259154,
+      "cycle_wilson_phase_rad": 1.3636871403965398,
+      "orientation_contrast": 2.7755575615628914e-17,
+      "spectator_leakage_mean": 0.4816525456389085,
+      "unitarity_error_operator_norm": 9.988481896496446e-12
+    },
+    {
+      "case": "local_waveform_off",
+      "clockwise_mean": 0.12605943880029424,
+      "clockwise_minimum": 0.032937514327159065,
+      "clockwise_probabilities": [
+        0.032937514327159065,
+        0.2637138115968975,
+        0.16620741917358214,
+        0.04137901010353831
+      ],
+      "counterclockwise_mean": 0.14754882736735142,
+      "cycle_wilson_phase_rad": -0.6307314338045346,
+      "orientation_contrast": -0.021489388567057177,
+      "spectator_leakage_mean": 0.4468349009965761,
+      "unitarity_error_operator_norm": 1.2301734131621806e-11
+    },
+    {
+      "case": "time_reversed_waveform",
+      "clockwise_mean": 0.0008090327323017293,
+      "clockwise_minimum": 5.125875055049564e-05,
+      "clockwise_probabilities": [
+        5.125875055049564e-05,
+        0.00128381827960966,
+        0.00013772103014637307,
+        0.0017633328689003888
+      ],
+      "counterclockwise_mean": 0.9838600369589832,
+      "cycle_wilson_phase_rad": -2.4986587931077215,
+      "orientation_contrast": -0.9830510042266815,
+      "spectator_leakage_mean": 0.003756261943347203,
+      "unitarity_error_operator_norm": 9.312621693353238e-12
+    }
+  ],
+  "quantized_waveform": {
+    "nominal_geometry": {
+      "clockwise_mean": 0.98385900498114,
+      "clockwise_minimum": 0.9746904938117967,
+      "clockwise_probabilities": [
+        0.9746904938117967,
+        0.9810184756752622,
+        0.9916214771666519,
+        0.988105573270849
+      ],
+      "counterclockwise_mean": 0.0008090620603870441,
+      "cycle_wilson_phase_rad": 2.406976748751657,
+      "orientation_contrast": 0.983049942920753,
+      "spectator_leakage_mean": 0.0037561839023219166,
+      "unitarity_error_operator_norm": 1.3449669004393892e-11
+    },
+    "operator_norm_change": 3.708169274628595e-05,
+    "pulse": {
+      "global_detuning_rad_per_us": [
+        0.0,
+        3.9372317999999997,
+        48.303238,
+        17.7533588,
+        12.63628,
+        0.4822208,
+        -30.9093418,
+        27.0598088,
+        0.8030229999999999,
+        -18.296813999999998,
+        80.414772,
+        -11.6404132,
+        0.0
+      ],
+      "local_detuning_rad_per_us": [
+        0.0,
+        -30.7050038,
+        -57.102703,
+        -32.95401,
+        -11.9616518,
+        -47.2587586,
+        -30.7079734,
+        -62.7047576,
+        -11.8286876,
+        -25.0522118,
+        -80.1839294,
+        -39.3957024,
+        0.0
+      ],
+      "omega_rad_per_us": [
+        0.0,
+        13.561200000000001,
+        11.104800000000001,
+        8.1432,
+        3.4908,
+        0.5192,
+        2.8172,
+        9.636800000000001,
+        3.9512,
+        4.266,
+        2.8116000000000003,
+        14.024000000000001,
+        0.0
+      ],
+      "phase_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "times_us": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7000000000000001,
+        0.8,
+        0.9,
+        1.0,
+        1.1,
+        1.2
+      ]
+    },
+    "validation_errors": []
+  },
+  "reversal": {
+    "reverse": {
+      "clockwise_mean": 0.0008090327323017293,
+      "clockwise_minimum": 5.125875055049564e-05,
+      "clockwise_probabilities": [
+        5.125875055049564e-05,
+        0.00128381827960966,
+        0.00013772103014637307,
+        0.0017633328689003888
+      ],
+      "counterclockwise_mean": 0.9838600369589832,
+      "cycle_wilson_phase_rad": -2.4986587931077215,
+      "orientation_contrast": -0.9830510042266815,
+      "spectator_leakage_mean": 0.003756261943347203,
+      "unitarity_error_operator_norm": 9.312621693353238e-12
+    },
+    "reverse_equals_transpose_operator_norm": 3.5663140629396767e-10
+  },
+  "robustness": {
+    "adaptive_spot_checks": [
+      {
+        "absolute_clockwise_mean_error": 0.00035843984638428417,
+        "adaptive": {
+          "clockwise_mean": 0.8062602475036862,
+          "clockwise_minimum": 0.6925797010218593,
+          "clockwise_probabilities": [
+            0.7546651261281001,
+            0.6925797010218593,
+            0.8627403535477275,
+            0.915055809317058
+          ],
+          "counterclockwise_mean": 0.010918214981813654,
+          "cycle_wilson_phase_rad": -0.5570247010627734,
+          "orientation_contrast": 0.7953420325218725,
+          "spectator_leakage_mean": 0.012509133658272635,
+          "unitarity_error_operator_norm": 1.4938409199481085e-11
+        },
+        "draw": 27,
+        "midpoint_clockwise_mean": 0.8066186873500705
+      },
+      {
+        "absolute_clockwise_mean_error": 9.364989853932748e-06,
+        "adaptive": {
+          "clockwise_mean": 0.8742813059120289,
+          "clockwise_minimum": 0.8122450998091328,
+          "clockwise_probabilities": [
+            0.8259700594788509,
+            0.8122450998091328,
+            0.9099551065074752,
+            0.9489549578526564
+          ],
+          "counterclockwise_mean": 0.010754327547279709,
+          "cycle_wilson_phase_rad": -0.42034175016319814,
+          "orientation_contrast": 0.8635269783647492,
+          "spectator_leakage_mean": 0.005393074396059693,
+          "unitarity_error_operator_norm": 1.4681627209627287e-11
+        },
+        "draw": 49,
+        "midpoint_clockwise_mean": 0.874271940922175
+      },
+      {
+        "absolute_clockwise_mean_error": 0.00019753314676818068,
+        "adaptive": {
+          "clockwise_mean": 0.956785830543531,
+          "clockwise_minimum": 0.9315467397428489,
+          "clockwise_probabilities": [
+            0.9381213194316511,
+            0.9315467397428489,
+            0.9703518406320513,
+            0.9871234223675728
+          ],
+          "counterclockwise_mean": 0.0026723793984197376,
+          "cycle_wilson_phase_rad": 2.9452503612637693,
+          "orientation_contrast": 0.9541134511451113,
+          "spectator_leakage_mean": 0.0029787091488885794,
+          "unitarity_error_operator_norm": 1.2758492976576756e-11
+        },
+        "draw": 67,
+        "midpoint_clockwise_mean": 0.9569833636902991
+      },
+      {
+        "absolute_clockwise_mean_error": 0.00012906961515279924,
+        "adaptive": {
+          "clockwise_mean": 0.9850776230605417,
+          "clockwise_minimum": 0.9790667233886899,
+          "clockwise_probabilities": [
+            0.9790667233886899,
+            0.9820362784903823,
+            0.9899451720767848,
+            0.9892623182863097
+          ],
+          "counterclockwise_mean": 0.0007539454411422155,
+          "cycle_wilson_phase_rad": 2.0589279934285654,
+          "orientation_contrast": 0.9843236776193994,
+          "spectator_leakage_mean": 0.003981231912027105,
+          "unitarity_error_operator_norm": 1.3283775942299984e-11
+        },
+        "draw": 77,
+        "midpoint_clockwise_mean": 0.9852066926756945
+      }
+    ],
+    "perturbations": {
+      "global_detuning_fraction_sigma": 0.01,
+      "local_detuning_fraction_sigma": 0.01,
+      "mask_additive_sigma": 0.01,
+      "midpoint_substeps_per_interval": 24,
+      "position_sigma_um": 0.03,
+      "rabi_fraction_sigma": 0.01
+    },
+    "summary": {
+      "clockwise_mean": {
+        "median": 0.9563426602305439,
+        "p05": 0.8745681667845261,
+        "p95": 0.9812072946931445
+      },
+      "clockwise_minimum": {
+        "median": 0.941486530760177,
+        "p05": 0.8134171360141039,
+        "p95": 0.9731725246007278
+      },
+      "counterclockwise_mean": {
+        "median": 0.0026819557001116485,
+        "p05": 0.0008302367991351296,
+        "p95": 0.010246213691028098
+      },
+      "orientation_contrast": {
+        "median": 0.9538119013994169,
+        "p05": 0.8654105550417498,
+        "p95": 0.9791693798014164
+      },
+      "spectator_leakage_mean": {
+        "median": 0.0043149759279230634,
+        "p05": 0.003513438346821271,
+        "p95": 0.008091075429908284
+      }
+    }
+  },
+  "waveform_validation_errors": []
+}

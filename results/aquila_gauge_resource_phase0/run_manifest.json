@@ -1,0 +1,9 @@
+{
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "numpy": "2.2.6",
+  "scipy": "1.16.3",
+  "milp_solver": "scipy.optimize.milp / HiGHS",
+  "git_commit_before_result_commit": "7ac153beda5bcae68d0e326b2a846c5a48fd4a64",
+  "qpu_tasks_submitted": 0
+}

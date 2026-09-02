@@ -8,7 +8,30 @@ single-job watchdog and a separate WSL cuTensorNet environment.
 
 ## 0. Reproduce the latest Aquila falsification cycles
 
-Both cycles are exact CPU simulations and submit zero QPU tasks:
+These exact CPU cycles submit zero QPU tasks.  Reproduce the latest
+gauge-resource cycle first:
+
+```powershell
+python -m unittest experiments.aquila_gauge_resource_phase0.test_phase0 -v
+python -m unittest experiments.aquila_gauge_resource_phase0.test_full_dynamics -v
+python -m experiments.aquila_gauge_resource_phase0.audit_theorem_constants
+python -m experiments.aquila_gauge_resource_phase0.run_phase0
+python -m experiments.aquila_gauge_resource_phase0.run_posthoc_microperturbation
+python -m experiments.aquila_gauge_resource_phase0.full_dynamics_audit
+python -m experiments.aquila_gauge_resource_phase0.plot_results
+python -m experiments.aquila_gauge_resource_phase0.build_manifest
+```
+
+The registered MILPs can be resumed after interruption.  The held-out
+microperturbation is explicitly post-hoc and cannot reverse the frozen failed
+verdict.  The full-dynamics audit is also post-hoc; it demonstrates why the
+theorem applies only to scalar weak-drive response and cannot be extrapolated
+to the complete finite-amplitude propagator.
+The optional Torch discovery run is documented in
+`experiments/aquila_gauge_resource_phase0/EXPLORATORY_OPTIMIZATION.md`; it is
+not required to validate the frozen pulse.
+
+The two preceding Aquila cycles are:
 
 ```powershell
 python -m unittest experiments.aquila_one_mask_phase0.test_phase0 -v

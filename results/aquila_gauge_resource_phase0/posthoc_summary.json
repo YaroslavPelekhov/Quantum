@@ -1,0 +1,13 @@
+{
+  "posthoc": true,
+  "change": "geometry B site 4 x coordinate +0.001 um",
+  "does_not_change_frozen_verdict": true,
+  "instances": 16,
+  "optimal_instances": 11,
+  "fit_log2_median_dual_lower": {
+    "slope": 1.146229152546551,
+    "intercept": 3.860239107205528,
+    "r_squared": 0.6215613716107842
+  },
+  "qpu_tasks_submitted": 0
+}

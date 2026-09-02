@@ -1,6 +1,23 @@
 # Quantum x Evolutionary Computing Research Artifact
 
 Latest research-cycle verdict: the
+[Aquila gauge-quotiented resource screen](results/aquila_gauge_resource_phase0/FINAL_REPORT.md)
+is **closed as an A-star direction**.  A new weak-drive theorem survives:
+for any integrable scalar waveform with constant response margin, the physical
+time-bandwidth product is lower-bounded by the minimum spectral total
+variation over the complete vertex-gauge orbit.  A probabilistic argument
+gives worst-case cost proportional to the `n 2^(n-1)` configuration edges.
+The frozen held-out numerical gates nevertheless fail, the hard target has
+exponential description length, no matching stronger-control compiler is
+known, and the theorem does not cover finite-amplitude many-body dynamics.  A
+post-hoc exact three-atom test makes that last boundary concrete: a `1.2 us`
+one-mask pulse valid under the recorded provisional limits realizes an
+oriented population cycle with `0.983860`
+mean fidelity, while the time-reversed pulse realizes the inverse cycle.
+Zero QPU tasks were submitted.  The retained result is therefore a scoped
+technical theorem and falsification artifact, not a quantum-advantage claim.
+
+The preceding
 [Aquila configuration-curvature validation](results/aquila_configuration_curvature_phase0/FINAL_REPORT.md)
 reproduces a strong branch-free interaction-by-mask directional response
 (`chi=0.242291`) with exact zero-interaction, equal-mask, local-envelope-off,
@@ -16,7 +33,7 @@ only the perturbative tangent is low rank.  The remaining exponential
 time-bandwidth bound is conditional on fixing independent edge responses; a
 curvature-only, gauge-quotiented hardware separation remains unproved.
 
-The immediately preceding
+The earlier
 [Aquila one-static-mask control screen](results/aquila_one_mask_phase0/FINAL_REPORT.md)
 found full small-system Lie rank but killed the practical claim.  Its frozen
 optimizer reported near-unit fidelity on a coarse grid; an independent adaptive
