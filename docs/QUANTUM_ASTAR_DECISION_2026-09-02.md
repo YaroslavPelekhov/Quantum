@@ -7,7 +7,7 @@ not a stalled result: several tempting mechanisms have now been closed by exact
 counterarguments or aggressive controls before hardware selection could turn
 them into expensive false positives.
 
-The strongest surviving mathematical object is now a gauge-invariant
+The strongest retained mathematical object is a gauge-invariant
 weak-drive time-bandwidth theorem.  It repairs the previous closest-frequency
 argument by minimizing over the complete vertex-gauge orbit and proves hard
 worst-case curvature targets.  It still cannot support an A-star claim: those
@@ -25,6 +25,9 @@ lie outside the theorem.
 | configuration curvature | counts witness `chi=0.242291`, exact nulls, 100% sign retention in 256 perturbations | logarithmic flux is branch dependent and the branch-free mechanism is known density-dependent Peierls hopping | closed as A-star |
 | one-mask curvature compiler | exact attainable space `image(d1 P)` and a conditional edge-response bound | generic one-mask rank is already full; the observed low rank is only a perturbative tangent | closed as A-star centerpiece |
 | gauge-quotiented resource bound | exact QTV theorem for arbitrary integrable weak drives; worst-case `Omega(n 2^n/W)` existence bound | held-out numerical gates fail; hard target is not succinct; full finite-amplitude propagator admits nonlinear routes outside scalar response | closed as A-star; retain theorem |
+| exact event-conditioned contraction | exact depth-2 probability for all 384 decoded 55-qubit BKS solutions; explicit shape-only reduction tests | proposed width is an ordinary TT-rank ordering objective; actual depth-15 comparison remains computationally unresolved | closed as formulated; retain implementation |
+| decision-certified resource allocation | sound signed certificates and measured savings inside fixed portfolios | standard goal-oriented error allocation/KKT structure; savings do not establish a new algorithmic primitive or separation | engineering result only |
+| CMRT hardware-rank transfer | held-out spread/residual Spearman `0.780`; exact-equivalence and archive-ingestion checks pass | only `27/108` signs accepted, `9/12` block coverage, zero matched error reduction over strong baselines, `7/9` shifted accuracy, and `1/108` contrasts resolved at 4,096 shots | closed as A-star; no QPU spend |
 
 ## What the last theorem establishes
 
@@ -71,16 +74,15 @@ unrestricted step from a scalar response obstruction to all full propagators.
 
 ## Hardware decision
 
-No real-server task was submitted.  The current hardware-facing curvature
-packet would be suitable only as an engineering replication of known physics,
-not as validation of a new A-star mechanism.  The gauge-resource theorem has
-no direct constant-shot hardware observable and the frozen held-out gate
-already fails, so running it on Aquila cannot repair the claim.  Any later
-engineering replication must use interleaved forward, reverse,
-zero-interaction/large-distance, equal-mask, and palindromic schedules; preserve
-the counts-only estimator; and revalidate live device constraints immediately
-before submission.  Ideal shot estimates do not include local-detuning
-decoherence or device drift.
+No real-server task was submitted.  The later hardware-native CMRT hypothesis
+was preregistered and screened offline before credential or shot use.  It passes
+only 4/10 binding gates.  Its selected schedule gaps are so small that a
+descriptive 4,096-shot audit resolves only `1/108` contrasts, while the shifted
+noise stress already fails.  Real hardware cannot repair those failures without
+post-hoc redesign, so neither IBM nor Aquila execution is authorized.  The
+legacy `ibm_boston` archive smoke test contains two jobs but only one graph and
+backend, a changed penalty, and no complete transpilation/calibration provenance;
+it validates ingestion only.
 
 ## Adjacent resource-bound screen: closed
 
@@ -100,15 +102,19 @@ the conditions needed for a resource separation:
    concrete bypass risk.
 
 This closes the surrounding QAOA/MPS-to-one-mask-curvature lineage as a source
-of A-star novelty.  The next cycle must change the research object.  The most
-defensible quantum continuation is a hardware-native prediction problem with
-held-out device validation—for example, predicting simulator-to-hardware
-ranking reversals before spending shots—rather than another reformulation of
-configuration-edge phases.  It requires a fresh preregistration and real
-hardware data budget; it is not authorized by the present result.
+of A-star novelty.  The proposed hardware-native continuation was then tested
+as CMRT and also failed its frozen offline escalation gates.  The present
+repository therefore has no live A-star candidate.  A future cycle must change
+the computational object or acquire a genuinely richer multi-device dataset;
+retuning CMRT, changing its event after inspecting the gaps, or relabeling the
+same simulator-disagreement signal is not a valid continuation.
 
 ## Repository entry points
 
+- CMRT final report: `results/cmrt_phase0/FINAL_REPORT.md`
+- CMRT preregistration: `experiments/cmrt_phase0/PREREGISTRATION.md`
+- CMRT correction log: `experiments/cmrt_phase0/CORRECTION_LOG.md`
+- CMRT machine-readable result: `results/cmrt_phase0/phase0_results.json`
 - Gauge-resource final report: `results/aquila_gauge_resource_phase0/FINAL_REPORT.md`
 - Gauge-resource theorem: `experiments/aquila_gauge_resource_phase0/THEORY_AND_SCOPE.md`
 - Frozen quotient protocol: `experiments/aquila_gauge_resource_phase0/PREREGISTRATION.md`

@@ -1,5 +1,18 @@
 # Quantum x Evolutionary Computing Research Artifact
 
+Latest hardware-transfer continuation: the preregistered
+[CMRT offline Phase-0 report](results/cmrt_phase0/FINAL_REPORT.md) closes
+simulator-disagreement scaling as a source of A-star novelty and as a reason to
+spend QPU shots.  Approximate-representation spread does predict held-out
+simulator-to-noise-surrogate residual magnitude (Spearman `0.780`), but the
+conformal rule accepts only `27/108` signs, covers only `9/12` graph blocks,
+has zero matched error reduction over exact-noiseless and nominal-noise
+baselines, and drops to `7/9` accepted-sign accuracy under the frozen shifted
+noise stress.  All 108 schedule comparisons required the preregistered fallback,
+and a nonbinding 4,096-shot audit resolves only one contrast.  The complete
+negative result, correction log, tests, hashes, and read-only legacy IBM archive
+smoke audit are retained; zero QPU jobs were submitted.
+
 Latest exact-event continuation: the
 [event-conditioned-width Phase-0 report](results/event_conditioned_width_phase0/FALSIFICATION_REPORT.md)
 closes the natural product proxy
@@ -192,8 +205,9 @@ not support building a decision-optimal MPS simulator from the current
 single-observable subset objective; see the
 [DOT report](results/dot_mps_kill_test/REPORT.md).
 
-The current A*-level direction is joint decision-certified resource allocation,
-not a new Schmidt truncation heuristic. On the complete 5 x 5 `ibm32/sorted`
+One tested engineering direction was joint decision-certified resource
+allocation, rather than a new Schmidt truncation heuristic. On the complete
+5 x 5 `ibm32/sorted`
 portfolio, allowing different accuracy levels for the two competing trajectories
 finds `released/confirm` as the minimum-cost certified pair: 20.024 s versus
 22.451 s for the best symmetric `confirm/confirm` pair, a 10.81% measured
@@ -203,6 +217,10 @@ held-out run; it again certified the correct direction and used 12.742 s versus
 [allocation report](results/decision_certified_allocation/REPORT.md),
 [theorem and novelty boundary](experiments/decision_certified_allocation/NOVELTY_AND_THEOREM.md),
 and [frozen held-out protocol](experiments/decision_certified_allocation/SPECTRAL_HELDOUT_PROTOCOL.md).
+These savings remain valid within the measured portfolio, but a subsequent
+adversarial novelty audit places the optimization in established
+goal-oriented error allocation/KKT territory.  It is therefore not the current
+A-star direction and is not evidence of an algorithmic separation.
 
 The next refinement allocates the COT residual-witness bond jointly across
 trajectory and checkpoint. A prespecified schedule built by independently
@@ -218,7 +236,7 @@ resource optimality therefore did not transfer. See the
 [proof](experiments/decision_certified_bond_allocation/THEORY.md), and
 [literature boundary](experiments/decision_certified_bond_allocation/LITERATURE_POSITIONING.md).
 
-The central methodological refinement is now **causal certification debt**.
+The subsequent methodological refinement was **causal certification debt**.
 For local certified residual increments `e_kj`, checkpoint weights `a_t`, and
 backward propagation `j -> {t:t<=j}`, the exact finite-sum identity
 

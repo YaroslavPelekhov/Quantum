@@ -1,0 +1,43 @@
+"""Deterministic statistical utilities for CMRT Phase 0."""
+
+from .cmrt_core import (
+    BlockedSplit,
+    ConformalCalibration,
+    MatchedCoverageMetrics,
+    ProportionInterval,
+    SelectiveMetrics,
+    blocked_calibration_test_split,
+    calibrate_heteroscedastic_conformal,
+    certification_margins,
+    finite_sample_quantile,
+    finite_sample_quantile_level,
+    heteroscedastic_nonconformity_scores,
+    matched_coverage_metrics,
+    rolling_blocked_splits,
+    selective_metrics,
+    sign_or_abstain,
+    split_conformal_intervals,
+    wilson_difference_interval,
+    wilson_interval,
+)
+
+__all__ = [
+    "BlockedSplit",
+    "ConformalCalibration",
+    "MatchedCoverageMetrics",
+    "ProportionInterval",
+    "SelectiveMetrics",
+    "blocked_calibration_test_split",
+    "calibrate_heteroscedastic_conformal",
+    "certification_margins",
+    "finite_sample_quantile",
+    "finite_sample_quantile_level",
+    "heteroscedastic_nonconformity_scores",
+    "matched_coverage_metrics",
+    "rolling_blocked_splits",
+    "selective_metrics",
+    "sign_or_abstain",
+    "split_conformal_intervals",
+    "wilson_difference_interval",
+    "wilson_interval",
+]

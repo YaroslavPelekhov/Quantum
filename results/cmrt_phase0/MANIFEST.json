@@ -1,0 +1,28 @@
+{
+  "experiment": "conformal_metamorphic_rank_transfer_phase0",
+  "files": {
+    "experiments/cmrt_phase0/CORRECTION_LOG.md": "a46e4336e54858f18e51b5b9a7c8296d396749d58617803ff322b12fa908879e",
+    "experiments/cmrt_phase0/PREREGISTRATION.md": "69c8043d40862af6032e005f449a13c1cabfe73bb01205dfa1c0d600032a761a",
+    "experiments/cmrt_phase0/PRIOR_ART_AUDIT.md": "31ea4b7297db5c2adf50f50dfd1f3f289f835393a0d6ce5a0338d669dbc041e7",
+    "experiments/cmrt_phase0/README.md": "0ff0ca9d8709b5d3fff647f6d0f2eb2dcfe4d5780bb8430f17b1d97670509e2e",
+    "experiments/cmrt_phase0/__init__.py": "d76c4203f5cc7e4af513fc32daafbf0d81f55554aa3572a6773af521d4601d4d",
+    "experiments/cmrt_phase0/cmrt_core.py": "caf98e96f753fe65666ec8efdd24f6e6e0b8df9986696970d6b7288004a62479",
+    "experiments/cmrt_phase0/finalize_phase0.py": "2e4fbbd1fb1d382140811d651526c5f2bfef5912baa28446b0c4f6ebdc7acacb",
+    "experiments/cmrt_phase0/legacy_ibm_archive.py": "eb88278659e51dbec865541cda9b42a75dccc4cc1ca03a826a8fad5ea068c0c1",
+    "experiments/cmrt_phase0/protocol.json": "0ca11368c7546a89a76fa919b97de0283caa3e60765333be2269b8fcc02da8e6",
+    "experiments/cmrt_phase0/run_phase0.py": "6fb11d3f5b100e22dc3de52771084c8c59fd2cca9912ca35a02b638169d06017",
+    "experiments/cmrt_phase0/synthetic_qaoa.py": "09669d26a078b111d463efbd03d7ee751bc6fbb458155c69867432319dabaec6",
+    "experiments/cmrt_phase0/test_cmrt_core.py": "039ac98f079fe17c19aa6d7ff0801f8648bb9bccdc7b681ab50dc7123a3132a3",
+    "experiments/cmrt_phase0/test_legacy_ibm_archive.py": "fda78713012317a8b6b0989ef331916b486c9473d28d4b61fd99c1c387d0d51f",
+    "experiments/cmrt_phase0/test_phase0_integrity.py": "2488191c0d16803d28ecb797a2b5ec6bc80a92c8cb025dbf17e19369ddc4a4ef",
+    "experiments/cmrt_phase0/test_synthetic_qaoa.py": "a5674e7683a932ab54ea471126fe4448c2a4e88af4233caec68e0c3bef31182e",
+    "results/cmrt_phase0/FINAL_REPORT.md": "355337a3a7459c2a0e9522e80c33a86a5929e877f94bb5e14c4acff4ce443ff7",
+    "results/cmrt_phase0/cmrt_diagnostics.png": "184f72403d249df0e3b5514de562b9cd5436be8105d708ee654232e0da94d6cf",
+    "results/cmrt_phase0/heldout_cmrt_rows.csv": "66c06fb1b81df219e17c03305a53fc288b25a8ee6e35069771970bdb2f3349f6",
+    "results/cmrt_phase0/heldout_method_summary.csv": "ea19e257ff65face8ddd8d64247acca4859fe0f049e8ecf6f3d74952799b8756",
+    "results/cmrt_phase0/legacy_ibm_smoke.json": "48f99adef59ece785b2af3f7c618bd2ee0c900da9039851862ed96462f8545a6",
+    "results/cmrt_phase0/phase0_results.json": "a50a089b2a71c66ae4a0a5eef3b6e9042ceddaac4aee9661e08e681b03006ab4"
+  },
+  "qpu_jobs_submitted": 0,
+  "terminal_label": "KILL_CMRT_AS_ASTAR_SOURCE"
+}
