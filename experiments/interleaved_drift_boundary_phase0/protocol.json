@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "frozen_utc": "2026-09-02T00:00:00Z",
+  "seed": 20260903,
+  "theta_values": [0.173, 0.231, 0.317],
+  "reference_theta": 0.113,
+  "depths": [1, 3, 7, 15, 31, 63, 127, 255],
+  "layer_time": 1.0,
+  "visibility": 0.9,
+  "shots_per_quadrature_per_circuit": 256,
+  "monte_carlo_trials": 4096,
+  "curvatures": [0.0, 1e-9, 3e-9, 1e-8, 3e-8, 1e-7, 3e-7, 1e-6],
+  "numeric_tolerance": 1e-10,
+  "slope_windows": {
+    "small_crossover_max": 0.2,
+    "large_crossover_min": 5.0
+  },
+  "gates": {
+    "affine_cancellation_tolerance": 1e-10,
+    "quadratic_ratio_tolerance": 1e-8,
+    "bump_probability_tolerance": 1e-10,
+    "ideal_amplified_slope_range": [-1.1, -0.9],
+    "direct_slope_range": [-0.6, -0.4],
+    "minimum_collapse_r_squared": 0.98
+  }
+}
+
