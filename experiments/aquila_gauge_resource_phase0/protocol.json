@@ -1,0 +1,61 @@
+{
+  "version": "1.0-frozen-before-validation",
+  "frozen_date": "2026-09-02",
+  "parent_result": "KILL_ONE_MASK_LOW_RANK_CURVATURE_HYPOTHESIS",
+  "model": {
+    "c6_rad_per_us_um6": 5420000.0,
+    "local_detuning_span_rad_per_us": 20.0,
+    "interaction": "V_ij=C6/||r_i-r_j||^6",
+    "configuration_space": "full n-cube",
+    "frequency_normalization": "(omega-min(omega))/(max(omega)-min(omega))"
+  },
+  "development": {
+    "name": "geometry_A",
+    "n_values": [3, 4, 5, 6, 7],
+    "positions_um": [[0, 0], [10, 2], [4, 14], [18, 12], [24, 4], [12, 26], [30, 22], [2, 30]],
+    "mask": [0.0, 0.137, 0.419, 0.733, 1.0, 0.286, 0.864, 0.572],
+    "target_tag": "astar-gauge-dev-v1",
+    "target_ids": [0, 1, 2, 3]
+  },
+  "heldout": {
+    "name": "geometry_B",
+    "n_values": [4, 5, 6, 7, 8],
+    "positions_um": [[2, 4], [14, 0], [8, 16], [22, 14], [30, 6], [16, 28], [34, 24], [4, 32]],
+    "mask": [0.052, 0.881, 0.314, 0.647, 0.0, 1.0, 0.493, 0.759],
+    "target_tag": "astar-gauge-heldout-v1",
+    "target_ids": [0, 1, 2, 3]
+  },
+  "targets": {
+    "edge_phase_half_range_rad": 0.35,
+    "construction": "0.35*(2u-1), where u is the first 64 SHA-256 bits of tag|n|target_id|state|site divided by 2^64",
+    "normalization_after_hashing": false
+  },
+  "circular_milp": {
+    "vertex_phase_bounds_rad": [-3.141592653589793, 3.141592653589793],
+    "winding_bounds": [-3, 3],
+    "relative_mip_gap": 1e-07,
+    "time_limit_seconds_per_instance": 120,
+    "response_margin_rho_for_bound": 0.2
+  },
+  "registered_numerical_gates": {
+    "all_frequency_collisions_absent": true,
+    "all_solver_relative_gaps_at_most": 1e-05,
+    "development_log2_median_cost_slope_min": 0.5,
+    "development_log2_fit_r2_min": 0.9,
+    "heldout_log2_median_cost_slope_min": 0.4,
+    "heldout_log2_fit_r2_min": 0.85,
+    "median_max_abs_flux_rad_min": 0.1
+  },
+  "astar_gates": [
+    "gauge-quotiented lower bound for arbitrary admissible waveforms",
+    "explicit scalable physical geometry and target family",
+    "matching polynomial constructive upper bound for a meaningful stronger control resource",
+    "nonvanishing response margin, bounded leakage, and polynomial shot cost",
+    "adversarial primary-source novelty audit passes",
+    "frozen heldout geometry passes without retuning"
+  ],
+  "qpu_policy": {
+    "eligible_only_if_all_astar_gates_pass": true,
+    "tasks_authorized_in_phase0": 0
+  }
+}
