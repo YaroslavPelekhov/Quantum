@@ -1,0 +1,25 @@
+{
+  "freeze_date": "2026-09-03",
+  "primary_exponent": 4.0,
+  "control_exponents": [2.0, 2.05, 2.07598, 2.1, 2.25, 2.5, 3.0],
+  "seeds": {
+    "development": [20260903, 20260904, 20260905],
+    "held_out": [731993, 982451653, 2147483629]
+  },
+  "numerics": {
+    "lp_primal_dual_tolerance": 1e-9,
+    "candidate_violation_margin": 1e-7,
+    "symbolic_or_interval_recheck_margin": 1e-5,
+    "state_iteration_tolerance": 1e-12,
+    "state_iteration_limit": 500,
+    "random_restarts": 64
+  },
+  "held_out": {
+    "full_pauli_qubits": 5,
+    "lagrangian_contexts": 75735,
+    "haar_states": 128,
+    "near_stabilizer_paths": 24,
+    "angles_per_path": 41,
+    "alternating_seeds": 32
+  }
+}
