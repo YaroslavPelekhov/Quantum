@@ -1,0 +1,120 @@
+{
+  "a_star_novelty": "KILL_DENSITY_DEPENDENT_PEIERLS_PRIOR_ART",
+  "branch_diagnostics": {
+    "all_archived_branch_count": 81,
+    "branch_independent_effective_flux": false,
+    "continuous_scaling": {
+      "edge_geometric_mean_rad_per_us": 1.470295111321912,
+      "flux_rad": -1.3607165201202567,
+      "minimum_edge_rad_per_us": 0.6931787668027831,
+      "sin_flux": -0.9780142751181725,
+      "two_bit_leakage_ratio": 0.8112856809683932,
+      "wilson_product_imag": -4.570495089651207,
+      "wilson_product_real": 0.9745478287059579
+    },
+    "continuous_scaling_diagnostics": {
+      "detected_phase_wraps": 2,
+      "scaling_steps": 1001
+    },
+    "inequivalent_branch_count": 27,
+    "maximum_gauge_rephase_circular_error_rad": 4.440892098500626e-16,
+    "principal": {
+      "edge_geometric_mean_rad_per_us": 1.9945678355348673,
+      "flux_rad": 1.5705057445696031,
+      "minimum_edge_rad_per_us": 1.1403416029935833,
+      "sin_flux": 0.9999999577809855,
+      "two_bit_leakage_ratio": 0.31286595460395594,
+      "wilson_product_imag": 15.826876989293629,
+      "wilson_product_real": 0.004599009264438791
+    },
+    "principal_minus_continuous_circular_error_rad": 2.93122226468986,
+    "reduced_branch_sin_flux_max": 0.9999999577809855,
+    "reduced_branch_sin_flux_min": -0.9988094737973415
+  },
+  "development": {
+    "counts": {
+      "chi": 0.2422913613617108,
+      "first_asymmetry": 0.10683960902543344,
+      "p_forward_first": 0.8061719165896503,
+      "p_forward_second": 0.020029114069658113,
+      "p_reverse_first": 0.6993323075642168,
+      "p_reverse_second": 0.15548086640593548,
+      "second_asymmetry": -0.13545175233627738
+    },
+    "principal_log_diagnostics": {
+      "branch_cut_margin_rad": 0.9846288517323125,
+      "reconstruction_error": 1.9579408538082677e-15,
+      "unitarity_error_before_polar": 1.187976791276817e-11
+    },
+    "principal_plaquette": {
+      "edge_geometric_mean_rad_per_us": 1.9945678355348673,
+      "flux_rad": 1.5705057445696031,
+      "minimum_edge_rad_per_us": 1.1403416029935833,
+      "sin_flux": 0.9999999577809855,
+      "two_bit_leakage_ratio": 0.31286595460395594,
+      "wilson_product_imag": 15.826876989293629,
+      "wilson_product_real": 0.004599009264438791
+    },
+    "reverse_transpose_error": 6.058482374982702e-10
+  },
+  "heldout": {
+    "L3": {
+      "maximum_abs_pair_chi": 0.11417226772708347,
+      "passes_gate": true
+    },
+    "irregular4": {
+      "maximum_abs_pair_chi": 0.0761365770162677,
+      "passes_gate": true
+    }
+  },
+  "mechanism_validation_pass": false,
+  "mixed_term": {
+    "coefficient": 0.03149711670711669,
+    "r_squared_centered": 0.9986099654925094,
+    "r_squared_uncentered": 0.9989613117402043
+  },
+  "next_a_star_requirement": "complete rank-one curvature compiler/resource-separation theorem plus scalable phase-sensitive hardware capability",
+  "numerical_gate_checks": {
+    "branch_cut_margin": true,
+    "development_counts_witness": true,
+    "development_sin_flux": true,
+    "distance_slope": false,
+    "edge_strength": true,
+    "gauge_invariance": true,
+    "heldout_instances": true,
+    "mixed_term": true,
+    "null_counts_witness": true,
+    "null_sin_flux": true,
+    "pulse_validation": true,
+    "reverse_chi": true,
+    "reverse_flux": true,
+    "robustness_p05": true,
+    "robustness_sign": true,
+    "weak_formula": true
+  },
+  "pulse_validation_errors": [],
+  "qpu_eligible": false,
+  "qpu_tasks_submitted": 0,
+  "robustness": {
+    "abs_chi_p05": 0.2102240952428464,
+    "chi_median": 0.24350162351634946,
+    "chi_p05": 0.2102240952428464,
+    "chi_p95": 0.27821147599400475,
+    "sign_retention": 1.0
+  },
+  "scientific_claim": "branch-free interaction-by-mask directional response; effective-log flux is branch dependent",
+  "shot_audit": {
+    "multinomial_variance_coefficient": 0.7672193086255338,
+    "nominal_z_at_1000_shots_per_schedule": 8.74738351747445,
+    "scope": "ideal-model planning value; drift and hardware decoherence are not included",
+    "shots_per_schedule_for_nominal_five_sigma": 327
+  },
+  "verdict": "MECHANISM_PARTIAL_ASTAR_KILL",
+  "weak_response": {
+    "heldout_distance_log_intercept": 13.881374917618013,
+    "heldout_distance_log_slope": -6.662408988324338,
+    "maximum_formula_error_rad": 1.2620723910394815e-11,
+    "primary_analytic_flux_rad": 0.10338281006244943,
+    "protocol_predicted_flux_rad": 0.103383
+  }
+}

@@ -1,6 +1,25 @@
 # Quantum x Evolutionary Computing Research Artifact
 
 Latest research-cycle verdict: the
+[Aquila configuration-curvature validation](results/aquila_configuration_curvature_phase0/FINAL_REPORT.md)
+reproduces a strong branch-free interaction-by-mask directional response
+(`chi=0.242291`) with exact zero-interaction, equal-mask, local-envelope-off,
+and palindrome nulls, 100% sign retention across 256 perturbations, and
+unretuned transfer to frozen three- and four-atom geometries.  A principal-log
+Wilson diagnostic has flux `1.570506 rad`, but the effective flux is logarithm-
+branch dependent.  The mechanism is density-dependent Peierls hopping with
+direct prior art, so the A-star claim is closed and no QPU run is authorised.
+
+The immediately preceding
+[Aquila one-static-mask control screen](results/aquila_one_mask_phase0/FINAL_REPORT.md)
+found full small-system Lie rank but killed the practical claim.  Its frozen
+optimizer reported near-unit fidelity on a coarse grid; an independent adaptive
+ODE audit reduced the two hardware-facing target fidelities to `0.787188` and
+`0.683809`, with robustness fifth percentiles near `0.11--0.13`.  This branch is
+also closed as novelty because the algebraic mechanism is standard finite-
+ensemble/frequency-selective control.
+
+Latest research-cycle verdict: the
 [causal boundary-response kernelization cycle](results/causal_boundary_response_phase0/FINAL_REPORT.md)
 is **closed as an A* quantum-simulation primitive**.  A tuned four-atom path
 does approximate a 13-atom path at `T=5` (maximum complex response errors

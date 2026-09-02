@@ -219,6 +219,7 @@ def continuous_log_by_scaling(
     duration = pulse["times_us"][-1] - pulse["times_us"][0]
     previous_vectors = None
     previous_phases = None
+    previous_windings = None
     branch_crossings = 0
     final_vectors = None
     final_phases = None
@@ -232,10 +233,12 @@ def continuous_log_by_scaling(
             permutation = columns[np.argsort(rows)]
             vectors = vectors[:, permutation]
             phases = phases[permutation]
-            raw_delta = phases - previous_phases
-            wraps = np.round(raw_delta / (2.0 * pi))
-            branch_crossings += int(np.count_nonzero(wraps))
-            phases = phases - 2.0 * pi * wraps
+            windings = np.round((previous_phases - phases) / (2.0 * pi)).astype(int)
+            branch_crossings += int(np.count_nonzero(windings - previous_windings))
+            phases = phases + 2.0 * pi * windings
+            previous_windings = windings
+        else:
+            previous_windings = np.zeros_like(phases, dtype=int)
         previous_vectors = vectors
         previous_phases = phases
         final_vectors = vectors
@@ -297,4 +300,3 @@ def analytic_weak_flux(
 def gauge_rephase(effective: np.ndarray, phases: np.ndarray) -> np.ndarray:
     diagonal = np.diag(np.exp(1j * np.asarray(phases)))
     return diagonal.conj().T @ effective @ diagonal
-

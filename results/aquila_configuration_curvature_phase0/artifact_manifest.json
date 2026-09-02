@@ -1,0 +1,145 @@
+{
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "experiments/aquila_configuration_curvature_phase0/__init__.py",
+      "bytes": 81,
+      "sha256": "41dfb205b4957b0dfac9aec56ea31c75edf4c0834630b3cc1645ad27e07519d5"
+    },
+    {
+      "path": "experiments/aquila_configuration_curvature_phase0/build_manifest.py",
+      "bytes": 1920,
+      "sha256": "384a4c476a73ef3aeff209b467868c930006dacb84938418df8c49e8f0ca3484"
+    },
+    {
+      "path": "experiments/aquila_configuration_curvature_phase0/curvature_core.py",
+      "bytes": 11714,
+      "sha256": "fe346a00c9c8103e1d748143948d613cd14bb8d5faaa27723d8ab1c002d3d43b"
+    },
+    {
+      "path": "experiments/aquila_configuration_curvature_phase0/EXPLORATORY_DISCLOSURE.md",
+      "bytes": 1148,
+      "sha256": "392b8eb6c5677dcc862384a364be15560fec15a87c6e1f7879a5b98534c574c1"
+    },
+    {
+      "path": "experiments/aquila_configuration_curvature_phase0/plot_results.py",
+      "bytes": 3620,
+      "sha256": "577ad4cc542ff77ffac50fef42e3c9f0c32b9f27958454d9b0fe51077fec2297"
+    },
+    {
+      "path": "experiments/aquila_configuration_curvature_phase0/posthoc_asymptotic.py",
+      "bytes": 2844,
+      "sha256": "f54d33a1452c6084dc5a0eaedcc32138cc5697a5e746c95458b8faefd82bed28"
+    },
+    {
+      "path": "experiments/aquila_configuration_curvature_phase0/PREREGISTRATION.md",
+      "bytes": 4051,
+      "sha256": "a9a3ddb5a39858d82787994bab2845e7a2115778fb6315e1f26692e5e1e47574"
+    },
+    {
+      "path": "experiments/aquila_configuration_curvature_phase0/PRIOR_ART_AUDIT.md",
+      "bytes": 1977,
+      "sha256": "4620cea0b3590cef33a22f7228bd5030d5220e1d559e4fbede6fd18e8dfb87b8"
+    },
+    {
+      "path": "experiments/aquila_configuration_curvature_phase0/protocol.json",
+      "bytes": 3043,
+      "sha256": "1da417078397080adb6a32317e8eabd7966262dea12f352a8e0ddc385020daa5"
+    },
+    {
+      "path": "experiments/aquila_configuration_curvature_phase0/README.md",
+      "bytes": 1161,
+      "sha256": "046a50c4d9c8f3a9a1c4750d088ad2d5c23a49ef1cd47fc00fd8671a8fb54f70"
+    },
+    {
+      "path": "experiments/aquila_configuration_curvature_phase0/run_phase0.py",
+      "bytes": 28859,
+      "sha256": "4ae80dd615a3fb0d4a71bcc7a15848fd2fd579a673a26841d58d396023004c02"
+    },
+    {
+      "path": "experiments/aquila_configuration_curvature_phase0/test_phase0.py",
+      "bytes": 4224,
+      "sha256": "94c614a7e67a23646dc8dae0c09502655a8bc45956f8fee2a5e491825652c99d"
+    },
+    {
+      "path": "results/aquila_configuration_curvature_phase0/branch_diagnostics.json",
+      "bytes": 1198,
+      "sha256": "fb61cdd3e03b54036dbd801bac2a1a179040b8e02bef59a0a4a213239105c2bb"
+    },
+    {
+      "path": "results/aquila_configuration_curvature_phase0/distance_scaling.csv",
+      "bytes": 623,
+      "sha256": "d4ee0034d13a861a12f018ce804b1bcc5830c0556aa17e070a32b9aeb0852684"
+    },
+    {
+      "path": "results/aquila_configuration_curvature_phase0/exact_controls.csv",
+      "bytes": 1041,
+      "sha256": "c0b18207da48b39167944e02ff4ef3838602e304f33020fb87d74197779a7d4e"
+    },
+    {
+      "path": "results/aquila_configuration_curvature_phase0/FINAL_REPORT.md",
+      "bytes": 3139,
+      "sha256": "ff04f63ea9f5dee0985a5a4fd8074c2e50fb6fdf52e7e7c3e8c50cdb75554146"
+    },
+    {
+      "path": "results/aquila_configuration_curvature_phase0/heldout_pair_witnesses.csv",
+      "bytes": 624,
+      "sha256": "2881bc0d1c8d5caeb6d0e7213a9ba94a6321bf00ebae1b3efcba909723253288"
+    },
+    {
+      "path": "results/aquila_configuration_curvature_phase0/heldout_plaquettes.csv",
+      "bytes": 4772,
+      "sha256": "8fbf665694e67662b6a0d0e52d4e2efc66fd7f250772b67c678352bb123a831c"
+    },
+    {
+      "path": "results/aquila_configuration_curvature_phase0/log_branches.csv",
+      "bytes": 14274,
+      "sha256": "632ec65a74eab7219ae968333fb7fd0e45363b3b844345dd84dab6a4c804dfad"
+    },
+    {
+      "path": "results/aquila_configuration_curvature_phase0/mixed_term_grid.csv",
+      "bytes": 2073,
+      "sha256": "e80672f8d76800bdfece8ad1e1bdb71252dcb4fdfc99af972685faa8febe3142"
+    },
+    {
+      "path": "results/aquila_configuration_curvature_phase0/phase0_diagnostics.png",
+      "bytes": 192323,
+      "sha256": "4c3d3558c9da6174b12a40e54b10b7e64d2e9eca652461dfed6d1fecf7be5968"
+    },
+    {
+      "path": "results/aquila_configuration_curvature_phase0/phase0_summary.json",
+      "bytes": 4525,
+      "sha256": "329c6055673080dfb26bd5b8786cfaefabc1d293c432c95ad2b1fed091f35af3"
+    },
+    {
+      "path": "results/aquila_configuration_curvature_phase0/posthoc_asymptotic_distance.csv",
+      "bytes": 351,
+      "sha256": "a87d5bd7715b249fb1880d36927c58b815df1cd682d3c83f53ff52ec941df5e3"
+    },
+    {
+      "path": "results/aquila_configuration_curvature_phase0/POSTHOC_ASYMPTOTIC_NOTE.md",
+      "bytes": 934,
+      "sha256": "51efb076fc8147eb447570a897e62b803d969b146caf44f2f0a837b0d50d197a"
+    },
+    {
+      "path": "results/aquila_configuration_curvature_phase0/robustness.csv",
+      "bytes": 41602,
+      "sha256": "2ec6e99beed1ad88f209bce676c14a402e1d5cee7908fc39f985e4cbb1c022d0"
+    },
+    {
+      "path": "results/aquila_configuration_curvature_phase0/run_manifest.json",
+      "bytes": 322,
+      "sha256": "9f91046ca23f16b33297185f687fe108f1c829154083efd2c2962d9f11095fb7"
+    },
+    {
+      "path": "results/aquila_configuration_curvature_phase0/solver_convergence.csv",
+      "bytes": 837,
+      "sha256": "27d8709e4759c202a4115e7c718065cedda1fcfc810588a6d8d51b2dad90cca4"
+    },
+    {
+      "path": "results/aquila_configuration_curvature_phase0/weak_formula_validation.csv",
+      "bytes": 387,
+      "sha256": "fadd886c618db31afe58db0ab517db4fe12ac4e54c7f0105b97f7470606a6461"
+    }
+  ]
+}

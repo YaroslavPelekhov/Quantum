@@ -1,0 +1,31 @@
+{
+  "all_archived_branch_count": 81,
+  "branch_independent_effective_flux": false,
+  "continuous_scaling": {
+    "edge_geometric_mean_rad_per_us": 1.470295111321912,
+    "flux_rad": -1.3607165201202567,
+    "minimum_edge_rad_per_us": 0.6931787668027831,
+    "sin_flux": -0.9780142751181725,
+    "two_bit_leakage_ratio": 0.8112856809683932,
+    "wilson_product_imag": -4.570495089651207,
+    "wilson_product_real": 0.9745478287059579
+  },
+  "continuous_scaling_diagnostics": {
+    "detected_phase_wraps": 2,
+    "scaling_steps": 1001
+  },
+  "inequivalent_branch_count": 27,
+  "maximum_gauge_rephase_circular_error_rad": 4.440892098500626e-16,
+  "principal": {
+    "edge_geometric_mean_rad_per_us": 1.9945678355348673,
+    "flux_rad": 1.5705057445696031,
+    "minimum_edge_rad_per_us": 1.1403416029935833,
+    "sin_flux": 0.9999999577809855,
+    "two_bit_leakage_ratio": 0.31286595460395594,
+    "wilson_product_imag": 15.826876989293629,
+    "wilson_product_real": 0.004599009264438791
+  },
+  "principal_minus_continuous_circular_error_rad": 2.93122226468986,
+  "reduced_branch_sin_flux_max": 0.9999999577809855,
+  "reduced_branch_sin_flux_min": -0.9988094737973415
+}
