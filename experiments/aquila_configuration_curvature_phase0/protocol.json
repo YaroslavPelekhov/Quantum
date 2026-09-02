@@ -1,0 +1,83 @@
+{
+  "version": "1.0-heldout-validation",
+  "frozen_date": "2026-09-02",
+  "exploratory_preflight_disclosed": true,
+  "c6_rad_per_us_um6": 5420000.0,
+  "development_case": {
+    "interaction_rad_per_us": 7.5,
+    "distance_um": 9.4730465146837,
+    "mask": [0.0, 1.0],
+    "duration_us": 0.4,
+    "times_us": [0.0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4],
+    "omega_rad_per_us": [0.0, 10.3973, 3.2806, 10.2935, 5.4793, 10.4957, 7.0624, 9.2707, 0.0],
+    "phase_rad": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+    "global_detuning_rad_per_us": [0.0, -9.825, -6.3889, 0.9495, -13.0211, 8.0888, 3.0803, 10.0013, 0.0],
+    "local_detuning_rad_per_us": [0.0, -19.6617, -7.1161, -2.2495, -19.3653, -10.3652, -0.3021, -20.4105, 0.0]
+  },
+  "weak_drive_case": {
+    "duration_us": 1.0,
+    "distance_um": 12.0,
+    "mask": [0.2, 0.8],
+    "local_detuning_rad_per_us": -3.0,
+    "global_detuning_rad_per_us": 0.4,
+    "kick_centers_us": [0.25, 0.75],
+    "kick_halfwidth_us": 0.05,
+    "kick_peaks_rad_per_us": [0.8, 2.4],
+    "finite_difference_scales": [0.0001, 0.0003, 0.001],
+    "predicted_flux_rad": 0.103383,
+    "heldout_distances_um": [14.0, 15.0, 16.0, 18.0, 20.0, 22.0]
+  },
+  "mixed_term_grid": {
+    "interaction_rad_per_us": [0.02, 0.05, 0.1, 0.2, 0.4, 0.8],
+    "mask_contrast": [0.01, 0.02, 0.05, 0.1, 0.2],
+    "fit": "chi = beta * interaction * mask_contrast through the origin",
+    "r_squared_min": 0.98
+  },
+  "heldout_instances": [
+    {
+      "name": "L3",
+      "coordinates_um": [[0.0, 0.0], [9.4730465146837, 0.0], [0.0, 12.0]],
+      "mask": [0.0, 0.4, 1.0],
+      "minimum_abs_pair_witness_gate": 0.05
+    },
+    {
+      "name": "irregular4",
+      "coordinates_um": [[0.0, 0.0], [9.4730465146837, 0.0], [3.0, 11.0], [13.0, 12.0]],
+      "mask": [0.0, 0.27, 0.69, 1.0],
+      "minimum_abs_pair_witness_gate": 0.05
+    }
+  ],
+  "reference_solver": {
+    "method": "DOP853",
+    "rtol": 2e-11,
+    "atol": 2e-13,
+    "max_step_fraction_of_knot_interval": 0.125
+  },
+  "robustness": {
+    "seed": 6200,
+    "draws": 256,
+    "distance_sigma_um": 0.03,
+    "rabi_fraction_sigma": 0.03,
+    "global_detuning_fraction_sigma": 0.03,
+    "local_detuning_fraction_sigma": 0.03,
+    "mask_additive_sigma": 0.01
+  },
+  "mechanism_gates": {
+    "development_abs_sin_flux_min": 0.9,
+    "development_abs_counts_witness_min": 0.15,
+    "geometric_mean_edge_min_rad_per_us": 0.5,
+    "branch_cut_margin_min_rad": 0.5,
+    "null_abs_sin_flux_max": 1e-6,
+    "null_abs_counts_witness_max": 1e-6,
+    "reverse_circular_error_max_rad": 1e-6,
+    "gauge_rephase_circular_error_max_rad": 1e-9,
+    "weak_formula_error_max_rad": 1e-5,
+    "distance_log_slope_target": -6.0,
+    "distance_log_slope_tolerance": 0.25,
+    "robustness_abs_counts_witness_p05_min": 0.1,
+    "robustness_sign_retention_min": 0.95,
+    "mixed_term_r_squared_min": 0.98
+  },
+  "novelty_gate": "FROZEN_KILL_DENSITY_DEPENDENT_PEIERLS_PRIOR_ART",
+  "qpu_policy": "No QPU submission. A passing mechanism is an Aquila integration benchmark, not an A-star result."
+}

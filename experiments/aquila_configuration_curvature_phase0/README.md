@@ -1,0 +1,11 @@
+# Aquila configuration-space curvature Phase 0
+
+This CPU-only experiment validates or falsifies an Aquila-native realization of
+interaction-conditioned Wilson curvature using one static local-detuning mask.
+The development pulse is explicitly disclosed; held-out solver, branch,
+robustness, null-control, and distance-scaling tests are preregistered.
+
+The broad mechanism has direct density-dependent Peierls-phase prior art.  A
+positive result is therefore an integration benchmark, not an A-star novelty
+claim.  No QPU task is submitted.
+
