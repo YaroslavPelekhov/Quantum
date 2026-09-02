@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "frozen_utc": "2026-09-02T00:00:00Z",
+  "seed": 20260902,
+  "theta_values": [0.173, 0.231, 0.317],
+  "theta_bounds": [0.08, 0.42],
+  "levels": [3, 4, 5, 6, 7, 8, 9],
+  "target_shots_per_depth": 128,
+  "anchor_shots_per_depth": 128,
+  "monte_carlo_trials": 512,
+  "readout_model": {
+    "visibility_center": 0.78,
+    "visibility_bounds": [0.55, 0.95],
+    "total_variation": 0.18,
+    "heldout_phases": [0.31, 0.87, 1.49]
+  },
+  "gate_model": {
+    "rate_center": 0.02,
+    "rate_bounds": [0.008, 0.035],
+    "total_variation": 0.012,
+    "heldout_phases": [0.19, 0.73, 1.31]
+  },
+  "confounding_search": {
+    "theta_points": 12001,
+    "visibility_bounds": [0.55, 0.95],
+    "variation_budget": 0.18,
+    "separation_over_inverse_max_depth": [0.002, 0.005, 0.01, 0.02, 0.05]
+  },
+  "gates": {
+    "superclassical_slope_threshold": -0.6,
+    "maximum_branch_failure_rate": 0.05,
+    "minimum_anchor_efficiency_fraction": 0.1,
+    "probability_identity_tolerance": 1e-10
+  }
+}
+
