@@ -9,6 +9,12 @@ unretuned transfer to frozen three- and four-atom geometries.  A principal-log
 Wilson diagnostic has flux `1.570506 rad`, but the effective flux is logarithm-
 branch dependent.  The mechanism is density-dependent Peierls hopping with
 direct prior art, so the A-star claim is closed and no QPU run is authorised.
+The subsequent exact compiler audit also falsifies the tempting replacement
+claim that one static mask enforces a globally low-rank curvature tensor:
+generic ranks are already the full `5,17,49,129` for three through six atoms;
+only the perturbative tangent is low rank.  The remaining exponential
+time-bandwidth bound is conditional on fixing independent edge responses; a
+curvature-only, gauge-quotiented hardware separation remains unproved.
 
 The immediately preceding
 [Aquila one-static-mask control screen](results/aquila_one_mask_phase0/FINAL_REPORT.md)
@@ -238,6 +244,10 @@ simulation, not optimizer or solver superiority.
 - [Main manuscript](experiments/evoq_mis_full_qoblib/paper/output/pdf/qaoa_mps_cross_backend_rank_reversal_manuscript.pdf)
 - [Supplementary information](experiments/evoq_mis_full_qoblib/paper/output/pdf/qaoa_mps_cross_backend_rank_reversal_supplement.pdf)
 - [One-page advisor brief](experiments/evoq_mis_full_qoblib/ADVISOR_BRIEF.md)
+- [Aquila curvature terminal compiler theorem](experiments/aquila_configuration_curvature_phase0/COMPILER_THEOREM_AND_KILL.md)
+- [Aquila curvature final report](results/aquila_configuration_curvature_phase0/FINAL_REPORT.md)
+- [Aquila one-mask control final report](results/aquila_one_mask_phase0/FINAL_REPORT.md)
+- [Current quantum A-star decision and next gates](docs/QUANTUM_ASTAR_DECISION_2026-09-02.md)
 - [Frozen cross-case protocol](experiments/evoq_mis_full_qoblib/CROSS_CASE_REPLICATION_PROTOCOL.md)
 - [Complete cross-case analysis](experiments/evoq_mis_full_qoblib/results/cross_case_replication/analysis.json)
 - [Publication figure](experiments/evoq_mis_full_qoblib/results/figures/cross_case_replication.pdf)
@@ -290,6 +300,8 @@ experiments/symmetry_quotient_decision_rank/ symmetry-rich MIS rank transfer
 experiments/symmetry_quotient_backend/ exact twin-orbit QAOA and decision core
 experiments/symmetry_quotient_breadth/ all-case QOBLIB exact controls
 experiments/symmetry_claim_falsification/ symmetry-preserving rank and optimized-baseline kill tests
+experiments/aquila_one_mask_phase0/ exact one-mask control and adaptive-ODE falsification
+experiments/aquila_configuration_curvature_phase0/ branch-free curvature and compiler-rank falsification
 results/observable_telescope/     compact tables, raw contributions, report
 results/compressed_observable_telescope/ bond ladder, oracle audits, verdict
 results/decision_certified_allocation/ 5x5 grid and frozen held-out result
@@ -309,6 +321,8 @@ results/symmetry_quotient_decision_rank/ 4/4 development and 2/2 transfer
 results/symmetry_quotient_backend/ real 24q statevector-free 2/2 validation and completion audit
 results/symmetry_quotient_breadth/ pre-existing cohort 7/7 breadth validation
 results/symmetry_claim_falsification/ current verdict: prior symmetry/event claim rejected
+results/aquila_one_mask_phase0/ pulse audit, robustness, diagnostics, terminal verdict
+results/aquila_configuration_curvature_phase0/ exact controls, ranks, plots, terminal verdict
 docs/QUANTUM_EVOLUTION_RESEARCH_MAP.md
 prior_work/evolutionary_computing_portfolio/
 QOBLIB, metriq-gym, baselines/    pinned upstream Git submodules

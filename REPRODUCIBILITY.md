@@ -20,6 +20,7 @@ python experiments/aquila_one_mask_phase0/build_manifest.py
 python -m unittest experiments.aquila_configuration_curvature_phase0.test_phase0 -v
 python experiments/aquila_configuration_curvature_phase0/run_phase0.py
 python experiments/aquila_configuration_curvature_phase0/posthoc_asymptotic.py
+python experiments/aquila_configuration_curvature_phase0/compiler_rank_audit.py
 python experiments/aquila_configuration_curvature_phase0/plot_results.py
 python experiments/aquila_configuration_curvature_phase0/build_manifest.py
 ```
@@ -28,7 +29,10 @@ Read each preregistration and the curvature cycle's exploratory disclosure
 before interpreting outputs.  The one-mask adaptive-ODE audit is mandatory: it
 is what detects the coarse-grid pulse-optimization false positive.  The
 curvature post-hoc distance extension diagnoses one failed finite-range gate
-and does not change the frozen verdict.
+and does not change the frozen verdict.  The compiler audit is an exact
+finite-field falsifier of the post-validation low-rank conjecture for
+`n=3,4,5,6`; its polynomial rank profile is a tested-size witness, not an
+all-size proof.
 
 ## 0. Reproduce the causal boundary-response closure
 

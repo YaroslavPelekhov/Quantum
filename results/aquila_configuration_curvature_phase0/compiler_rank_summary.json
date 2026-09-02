@@ -1,0 +1,13 @@
+{
+  "prime": 2147483647,
+  "tested_n": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "all_exact_checks_pass": true,
+  "verdict": "KILL_ONE_MASK_LOW_RANK_CURVATURE_HYPOTHESIS",
+  "scope": "exact modular inverse-sixth 2D witnesses for tested sizes; polynomial profile is not asserted as a proof for all n",
+  "resource_conclusion": "generic weak-drive algebraic curvature rank is full; the exponential time-bandwidth bound currently applies only to arbitrary edge-response compilation, not curvature-only targets"
+}

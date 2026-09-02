@@ -19,6 +19,13 @@ from experiments.aquila_configuration_curvature_phase0.curvature_core import (
     reverse_pulse,
     unitary_midpoint,
 )
+from experiments.aquila_configuration_curvature_phase0.compiler_rank_audit import (
+    PRIME,
+    cube_complex,
+    inverse_sixth_frequencies,
+    incremental_column_ranks,
+    rank_mod,
+)
 from experiments.aquila_one_mask_phase0.control_core import ControlLimits, full_c6_model, validate_pulse
 
 
@@ -104,7 +111,36 @@ class CurvaturePhase0Tests(unittest.TestCase):
         )
         self.assertAlmostEqual(flux, config["predicted_flux_rad"], places=5)
 
+    def test_full_cube_coboundary_rank(self):
+        for n in range(3, 6):
+            vertices, edges, faces, coboundary = cube_complex(n)
+            self.assertEqual(len(vertices), 2**n)
+            self.assertEqual(len(edges), n * 2 ** (n - 1))
+            self.assertEqual(len(faces), n * (n - 1) * 2 ** (n - 3))
+            self.assertEqual(rank_mod(coboundary), (n - 2) * 2 ** (n - 1) + 1)
+            np.testing.assert_array_equal(
+                np.sort(coboundary, axis=1)[:, :2], -np.ones((len(faces), 2))
+            )
+            np.testing.assert_array_equal(
+                np.sort(coboundary, axis=1)[:, -2:], np.ones((len(faces), 2))
+            )
+
+    def test_inverse_sixth_spectral_phase_reaches_full_flux_rank(self):
+        n = 3
+        _, edges, _, coboundary = cube_complex(n)
+        frequencies, _ = inverse_sixth_frequencies(n, edges)
+        self.assertEqual(len(set(map(int, frequencies))), len(edges))
+        powers = np.ones(len(edges), dtype=np.int64)
+        columns = []
+        full_rank = rank_mod(coboundary)
+        for degree in range(full_rank + 2):
+            if degree:
+                powers = np.asarray(
+                    [int(a) * int(b) % PRIME for a, b in zip(powers, frequencies)], dtype=np.int64
+                )
+            columns.append((coboundary @ powers) % PRIME)
+        self.assertEqual(incremental_column_ranks(columns), [0, 0, 1, 2, 3, 4, 5])
+
 
 if __name__ == "__main__":
     unittest.main()
-

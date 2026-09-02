@@ -1,0 +1,5 @@
+n,vertices,edges,plaquettes,coboundary_rank_mod_p,cycle_rank_formula,generic_frequency_classes,all_frequencies_distinct_mod_p,inverse_sixth_2d_geometry,one_affine_mask_realisable,first_interaction_order_rank,first_interaction_order_formula,first_full_polynomial_degree,expected_polynomial_profile
+3,8,12,6,5,5,12,True,True,True,2,2,6,True
+4,16,32,24,17,17,32,True,True,True,3,3,18,True
+5,32,80,80,49,49,80,True,True,True,4,4,50,True
+6,64,192,240,129,129,192,True,True,True,5,5,130,True

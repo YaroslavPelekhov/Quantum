@@ -73,3 +73,39 @@ The next defensible A-star object would need a complete characterization of the
 curvature tensor attainable with one rank-one spatial mask, necessary-and-
 sufficient flatness and tight physical resource bounds, plus a scalable
 phase-sensitive hardware capability beyond this known mechanism.
+
+## Terminal compiler falsification
+
+That proposed next object was tested rather than promoted.  The exact
+weak-drive characterization is `image(d1 P)`, where `P` shares a spectral
+phase across transition-frequency collisions and `d1` is the edge-to-square
+coboundary.  Flatness is exactly `d1 P alpha = 0 mod 2 pi`.  For generic
+distinct edge frequencies, one static mask already has full Bianchi-consistent
+curvature rank
+
+`(n-2) 2^(n-1) + 1`.
+
+Exact finite-field witnesses using rational 2D inverse-sixth interactions give
+ranks `5, 17, 49, 129` for `n=3,4,5,6`.
+The first-order-in-interaction tangent has only ranks `2,3,4,5`, which explains
+why the numerical small-signal law looked low rank without making it a global
+compiler obstruction.  Polynomial spectral phases reach the full tested ranks
+at degrees `6,18,50,130`.
+
+A conditional physical bound remains: a compiler required to specify `q`
+independent edge responses in bandwidth `W`, with normalized response margin
+`rho` and a worst-case phase separation `Delta`, requires
+
+`T >= 2 rho sin(Delta/2) (q-1) / W`
+
+in the worst case.  This does **not** yet lower-bound curvature-only compilation,
+because `d1 A=Phi` has vertex-gauge freedom.  There is no gauge-quotiented
+lower bound, matching Aquila-constrained construction, or hardware capability
+result.
+
+**Terminal verdict: `KILL_ONE_MASK_LOW_RANK_CURVATURE_HYPOTHESIS`.**  Retain
+the structural theorem and exact audit as a useful negative result, but do not
+rebrand this branch as an A-star contribution.  See the
+[compiler theorem](../../experiments/aquila_configuration_curvature_phase0/COMPILER_THEOREM_AND_KILL.md),
+[machine-readable verdict](compiler_rank_summary.json), and
+[rank diagnostic](compiler_rank_diagnostics.png).

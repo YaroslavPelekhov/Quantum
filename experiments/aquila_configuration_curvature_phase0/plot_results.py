@@ -75,7 +75,43 @@ def main() -> None:
     figure.savefig(OUTPUT / "phase0_diagnostics.png", dpi=180)
     plt.close(figure)
 
+    compiler = read_rows("compiler_rank_audit.csv")
+    profile = read_rows("compiler_polynomial_rank_profile.csv")
+    compiler_figure, compiler_axes = plt.subplots(1, 2, figsize=(10.8, 4.2), constrained_layout=True)
+    particle_counts = np.asarray([int(row["n"]) for row in compiler])
+    full_ranks = np.asarray([int(row["coboundary_rank_mod_p"]) for row in compiler])
+    tangent_ranks = np.asarray([int(row["first_interaction_order_rank"]) for row in compiler])
+    compiler_axes[0].semilogy(
+        particle_counts, full_ranks, "o-", linewidth=2, label="generic weak-drive flux rank"
+    )
+    compiler_axes[0].semilogy(
+        particle_counts, tangent_ranks, "s--", linewidth=2, label="first-order interaction rank"
+    )
+    compiler_axes[0].set_xticks(particle_counts)
+    compiler_axes[0].set_xlabel("atoms n")
+    compiler_axes[0].set_ylabel("exact finite-field rank")
+    compiler_axes[0].set_title("Low-rank tangent, full generic curvature")
+    compiler_axes[0].legend(fontsize=8)
+
+    for n in particle_counts:
+        selected = [row for row in profile if int(row["n"]) == n]
+        degree = np.asarray([int(row["polynomial_degree"]) for row in selected])
+        rank = np.asarray([int(row["finite_field_rank"]) for row in selected])
+        maximum = int(
+            next(row["coboundary_rank_mod_p"] for row in compiler if int(row["n"]) == n)
+        )
+        compiler_axes[1].plot(degree / (maximum + 1), rank / maximum, label=f"n={n}")
+    compiler_axes[1].axhline(1.0, color="black", linestyle="--", linewidth=0.8)
+    compiler_axes[1].set_xlabel("polynomial degree / first full-rank degree")
+    compiler_axes[1].set_ylabel("attained rank / full rank")
+    compiler_axes[1].set_title("Exact polynomial spectral witnesses")
+    compiler_axes[1].legend(fontsize=8)
+    compiler_figure.suptitle(
+        "One static mask does not impose a generic low-rank curvature tensor", fontsize=12
+    )
+    compiler_figure.savefig(OUTPUT / "compiler_rank_diagnostics.png", dpi=180)
+    plt.close(compiler_figure)
+
 
 if __name__ == "__main__":
     main()
-

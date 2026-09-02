@@ -1,0 +1,154 @@
+{
+  "scope": "exact geometric algebraic witness; not a live-device feasibility packet",
+  "prime": 2147483647,
+  "witnesses": {
+    "3": {
+      "positions_integer_2d": [
+        [
+          66,
+          24
+        ],
+        [
+          25,
+          13
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "onsite_integer": [
+        750162,
+        614660,
+        97379
+      ],
+      "mask_numerators": [
+        652783,
+        517281,
+        0
+      ],
+      "mask_denominator": 652783,
+      "interaction": "V_ij = 1 / ||r_i-r_j||^6 over Q, represented modulo p"
+    },
+    "4": {
+      "positions_integer_2d": [
+        [
+          66,
+          24
+        ],
+        [
+          25,
+          13
+        ],
+        [
+          1,
+          64
+        ],
+        [
+          74,
+          61
+        ]
+      ],
+      "onsite_integer": [
+        97379,
+        489954,
+        134087,
+        481641
+      ],
+      "mask_numerators": [
+        0,
+        392575,
+        36708,
+        384262
+      ],
+      "mask_denominator": 392575,
+      "interaction": "V_ij = 1 / ||r_i-r_j||^6 over Q, represented modulo p"
+    },
+    "5": {
+      "positions_integer_2d": [
+        [
+          66,
+          24
+        ],
+        [
+          25,
+          13
+        ],
+        [
+          1,
+          64
+        ],
+        [
+          74,
+          61
+        ],
+        [
+          8,
+          48
+        ]
+      ],
+      "onsite_integer": [
+        134087,
+        481641,
+        447068,
+        759237,
+        997820
+      ],
+      "mask_numerators": [
+        0,
+        347554,
+        312981,
+        625150,
+        863733
+      ],
+      "mask_denominator": 863733,
+      "interaction": "V_ij = 1 / ||r_i-r_j||^6 over Q, represented modulo p"
+    },
+    "6": {
+      "positions_integer_2d": [
+        [
+          66,
+          24
+        ],
+        [
+          25,
+          13
+        ],
+        [
+          1,
+          64
+        ],
+        [
+          74,
+          61
+        ],
+        [
+          8,
+          48
+        ],
+        [
+          12,
+          47
+        ]
+      ],
+      "onsite_integer": [
+        447068,
+        759237,
+        997820,
+        587330,
+        477565,
+        158881
+      ],
+      "mask_numerators": [
+        288187,
+        600356,
+        838939,
+        428449,
+        318684,
+        0
+      ],
+      "mask_denominator": 838939,
+      "interaction": "V_ij = 1 / ||r_i-r_j||^6 over Q, represented modulo p"
+    }
+  }
+}

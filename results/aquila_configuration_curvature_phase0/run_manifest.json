@@ -4,6 +4,6 @@
   "numpy": "2.2.6",
   "scipy": "1.16.3",
   "networkx": "3.5",
-  "git_commit_before_result_commit": "7d839c2b7fc06d4e1ac57884c4c8f1033524b098",
+  "git_commit_before_result_commit": "174705b5bd1dd0af20ff3fc2caa8a157ccdbd80f",
   "qpu_tasks_submitted": 0
 }
