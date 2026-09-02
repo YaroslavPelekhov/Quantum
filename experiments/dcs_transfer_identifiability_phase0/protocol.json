@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "frozen_at": "2026-09-03",
+  "status": "preregistered_before_confirmatory_runs",
+  "primary_hypothesis": "For nondegenerate DCS-pruned circuits, either independent I/S Clifford companions yield 1-F_T <= 4 E_b[1-F_b] for every stationary correlated stochastic Pauli fault distribution, or there is a quantum-specific explicit family with an exponential lower bound on every such companion certificate and a comparable upper bound.",
+  "negative_claims": [
+    "The O(n^-c) harmless-fault statement in arXiv:2607.25941v2 is false under only its stated circuit-independent arbitrary-correlated Pauli assumptions.",
+    "Reference fidelity plus complete syndrome and acceptance data do not identify T-doped fidelity under arbitrary correlated stationary Pauli noise."
+  ],
+  "development": {
+    "seeds": [20260903, 20260911, 260725941],
+    "max_qubits": 4,
+    "max_t_count": 10,
+    "exhaustive_qubits": [1, 2]
+  },
+  "heldout": {
+    "seeds": [314159, 271828, 161803],
+    "qubits": [5, 6, 7],
+    "families": ["graph_state", "periodic_ring", "bell_gadget_product", "public_ibm_loop64_payload"]
+  },
+  "candidate_constant": 4.0,
+  "corner_set": ["I", "S"],
+  "alpha": 0.05,
+  "exploratory_disclosure": {
+    "random_cases_small": 1000,
+    "random_cases_one_qubit_t8_t10": 1000,
+    "largest_nondegenerate_observed_ratio": 2.6666666666666665,
+    "degenerate_adjacent_rotation_ratio": 4.0
+  },
+  "source_arxiv": "2607.25941v2",
+  "source_data_doi_latest": "10.5281/zenodo.22233383"
+}
+
