@@ -12,7 +12,7 @@ from .drift_models import (
     target_probability,
     total_variation,
 )
-from .estimators import cosine_candidates, sequential_unwrap_estimate
+from .estimators import cosine_candidates, global_candidate_mle_estimate, sequential_unwrap_estimate
 from .qae_core import (
     construct_visibility_confounding_witness,
     fit_power_law,
@@ -103,6 +103,22 @@ class DriftQAEPhase0Tests(unittest.TestCase):
         candidates = cosine_candidates(math.cos(2 * depth * theta), depth, (0.08, 0.42))
         self.assertLess(min(abs(value - theta) for value in candidates), 1e-12)
 
+    def test_global_candidate_mle_resolves_noiseless_alias(self):
+        theta = 0.317
+        depths = odd_geometric_depths(8)
+        shots = 2_000_000
+        visibility = np.full(len(depths), 0.78)
+        probabilities = target_probability(theta, depths, visibility)
+        successes = np.rint(shots * probabilities).astype(int)
+        estimate = global_candidate_mle_estimate(
+            successes,
+            shots,
+            depths,
+            visibility,
+            (0.08, 0.42),
+        )
+        self.assertLess(abs(estimate - theta), 2e-6)
+
     def test_power_law_fit(self):
         budgets = np.asarray([10, 20, 40, 80, 160], dtype=float)
         errors = 3.0 * budgets ** -0.75
@@ -123,4 +139,3 @@ class DriftQAEPhase0Tests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
