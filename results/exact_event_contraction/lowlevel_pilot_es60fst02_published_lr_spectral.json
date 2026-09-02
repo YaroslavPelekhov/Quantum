@@ -1,0 +1,30 @@
+{
+  "stage": "exact_event_lowlevel_pilot",
+  "case": "es60fst02",
+  "method": "published_lr",
+  "ordering": "spectral",
+  "bitstring": "0010010100110001101101000010111000011100010100100101001",
+  "circuit": "experiments/evoq_mis_full_qoblib/results/cutensornet/circuits/es60fst02_published_lr_spectral.qpy",
+  "circuit_sha256": "d8c0272b51de1a4b854e5792d554e75889cef4ea457cc0b7ae603b52d83142cf",
+  "support_sha256": "e3bf83ab3adda20e88119bd66afda214ae6d1001a74070b7679224f770c8c12b",
+  "hyper_samples": 32,
+  "provenance": {
+    "created_at": "2026-09-02T10:52:44.642065+00:00",
+    "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "qiskit": "2.5.1",
+    "numpy": "2.5.1",
+    "cupy": "14.1.1",
+    "cuquantum": "26.6.0",
+    "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+    "gpu_total_bytes": 17170956288,
+    "gpu_free_bytes_at_start": 15821963264,
+    "hyper_samples": 32,
+    "support_sha256": "e3bf83ab3adda20e88119bd66afda214ae6d1001a74070b7679224f770c8c12b",
+    "source_manifest_sha256": "1698a58876504947b4292db29634c98388cab046447bc8c457048d55ff582c6c"
+  },
+  "complete": false,
+  "error_type": "cuTensorNetError",
+  "error": "ALL_HYPER_SAMPLES_FAILED (24): CUTENSORNET_STATUS_ALL_HYPER_SAMPLES_FAILED",
+  "failed_at": "2026-09-02T10:57:11.710091+00:00"
+}

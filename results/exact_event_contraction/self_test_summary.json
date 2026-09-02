@@ -1,0 +1,80 @@
+{
+  "stage": "exact_event_contraction_self_test",
+  "created_at": "2026-09-02T10:41:32.981072+00:00",
+  "tolerance": 1e-10,
+  "rows": [
+    {
+      "case": "es60fst03",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "computed_probability": 0.7358264320618461,
+      "reference_probability": 0.7358264320618406,
+      "absolute_error": 5.440092820663267e-15,
+      "passed": true
+    },
+    {
+      "case": "es60fst03",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "computed_probability": 0.7358264320618448,
+      "reference_probability": 0.7358264320618418,
+      "absolute_error": 2.9976021664879227e-15,
+      "passed": true
+    },
+    {
+      "case": "es60fst03",
+      "method": "matched_random_search",
+      "ordering": "sorted",
+      "computed_probability": 0.9553002289632481,
+      "reference_probability": 0.9553002289632541,
+      "absolute_error": 5.995204332975845e-15,
+      "passed": true
+    },
+    {
+      "case": "es60fst03",
+      "method": "matched_random_search",
+      "ordering": "spectral",
+      "computed_probability": 0.9553002289632513,
+      "reference_probability": 0.9553002289632548,
+      "absolute_error": 3.552713678800501e-15,
+      "passed": true
+    },
+    {
+      "case": "es60fst01",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "computed_probability": 0.6860999427699117,
+      "reference_probability": 0.6860999427699055,
+      "absolute_error": 6.217248937900877e-15,
+      "passed": true
+    },
+    {
+      "case": "es60fst01",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "computed_probability": 0.6860999427699129,
+      "reference_probability": 0.6860999427699059,
+      "absolute_error": 6.994405055138486e-15,
+      "passed": true
+    },
+    {
+      "case": "es60fst01",
+      "method": "matched_random_search",
+      "ordering": "sorted",
+      "computed_probability": 0.9289841944672677,
+      "reference_probability": 0.9289841944672762,
+      "absolute_error": 8.548717289613705e-15,
+      "passed": true
+    },
+    {
+      "case": "es60fst01",
+      "method": "matched_random_search",
+      "ordering": "spectral",
+      "computed_probability": 0.9289841944672679,
+      "reference_probability": 0.9289841944672766,
+      "absolute_error": 8.770761894538737e-15,
+      "passed": true
+    }
+  ],
+  "complete": true
+}

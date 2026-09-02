@@ -1,5 +1,16 @@
 # Quantum x Evolutionary Computing Research Artifact
 
+Latest exact-event continuation: the
+[55-qubit sparse-event contraction study](results/exact_event_contraction/REPORT.md)
+compiles all 384 decoded BKS solutions into a rank-5 spectral-order MPO and
+computes their untruncated deterministic QAOA probability through depth 2,
+with two cuTensorNet API paths agreeing within `8.49e-27`.  Depth 3 already
+exceeds the frozen workstation resource guard; depths 8 and 15 fail path
+search.  The manuscript's ideal depth-15 winner is therefore still unresolved.
+Prior-art screening also closes generic finite-set-to-MPO compilation as an
+A-star novelty claim.  The only live hypothesis is joint circuit/event
+co-ordering with a new general guarantee and end-to-end baselines.
+
 Latest research-cycle verdict: the
 [Aquila gauge-quotiented resource screen](results/aquila_gauge_resource_phase0/FINAL_REPORT.md)
 is **closed as an A-star direction**.  A new weak-drive theorem survives:

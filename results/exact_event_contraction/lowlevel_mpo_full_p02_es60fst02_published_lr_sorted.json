@@ -1,0 +1,294 @@
+{
+  "stage": "exact_event_lowlevel_density_mpo",
+  "mode": "lowlevel_mpo_full",
+  "case": "es60fst02",
+  "method": "published_lr",
+  "ordering": "sorted",
+  "qubits": 55,
+  "event_support_size": 384,
+  "circuit": "experiments/evoq_mis_full_qoblib/results/cutensornet/circuits/es60fst02_published_lr.qpy",
+  "circuit_sha256": "d82623caa0144f1eb4554136896421bd3600abc12987963e1b38ff7e136b01c0",
+  "parent_semantic_circuit_sha256": "c18702a2aa9a4bc753cd5af6ba1988d31a8fc6243da9803fb6f6a911b5daa3d2",
+  "contracted_semantic_circuit_sha256": "2dadf53f6fdaf318db4b098d775144777c3a01a56fdae51774b21071b18d813b",
+  "qaoa_layers": 2,
+  "execution_guard": {
+    "max_slices": 65536,
+    "max_opt_cost": 10000000000000.0
+  },
+  "support_sha256": "e3bf83ab3adda20e88119bd66afda214ae6d1001a74070b7679224f770c8c12b",
+  "hyper_samples": 8,
+  "bond_ranks": [
+    1,
+    2,
+    4,
+    6,
+    6,
+    12,
+    16,
+    24,
+    48,
+    48,
+    60,
+    76,
+    84,
+    120,
+    152,
+    152,
+    152,
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    104,
+    104,
+    104,
+    104,
+    104,
+    104,
+    88,
+    88,
+    88,
+    116,
+    68,
+    68,
+    68,
+    60,
+    48,
+    32,
+    32,
+    20,
+    20,
+    18,
+    16,
+    8,
+    4,
+    4,
+    2,
+    1
+  ],
+  "max_bond_rank": 152,
+  "mpo_bytes_complex128": 26464256,
+  "network_shape": {
+    "circuit_operand_count": 1024,
+    "mpo_operand_count": 55,
+    "total_operand_count": 1079,
+    "density_open_modes": 110
+  },
+  "representation_audit": {
+    "schema_version": 2,
+    "stage": "exact_event_mpo_representation_audit",
+    "created_at": "2026-09-02T12:11:53.424649+00:00",
+    "case": "es60fst02",
+    "ordering": "sorted",
+    "qubits": 55,
+    "support_size": 384,
+    "support_sha256": "e3bf83ab3adda20e88119bd66afda214ae6d1001a74070b7679224f770c8c12b",
+    "bond_ranks": [
+      1,
+      2,
+      4,
+      6,
+      6,
+      12,
+      16,
+      24,
+      48,
+      48,
+      60,
+      76,
+      84,
+      120,
+      152,
+      152,
+      152,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      104,
+      104,
+      104,
+      104,
+      104,
+      104,
+      88,
+      88,
+      88,
+      116,
+      68,
+      68,
+      68,
+      60,
+      48,
+      32,
+      32,
+      20,
+      20,
+      18,
+      16,
+      8,
+      4,
+      4,
+      2,
+      1
+    ],
+    "max_bond_rank": 152,
+    "tt_dense_entries": 827008,
+    "tt_nonzero_entries": 4250,
+    "coefficient_values": [
+      -1.0,
+      0.0,
+      1.0
+    ],
+    "all_coefficients_integral": true,
+    "mpo_dense_entries": 1654016,
+    "mpo_bytes_complex128": 26464256,
+    "member_checks": 384,
+    "nonmember_checks": 4096,
+    "max_member_absolute_error": 0.0,
+    "max_nonmember_absolute_error": 0.0,
+    "compile_seconds": 2.867080800002441,
+    "passed": true,
+    "tt_archive": "results/exact_event_contraction/event_tt_es60fst02_sorted.npz",
+    "tt_archive_sha256": "2f559f28493eb85eb646e102e772b2e03418e1859029594d5e2b6321c1974b88"
+  },
+  "provenance": {
+    "created_at": "2026-09-02T11:47:38.726265+00:00",
+    "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "qiskit": "2.5.1",
+    "numpy": "2.5.1",
+    "cupy": "14.1.1",
+    "cuquantum": "26.6.0",
+    "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+    "gpu_total_bytes": 17170956288,
+    "gpu_free_bytes_at_start": 15792603136,
+    "hyper_samples": 8,
+    "support_sha256": "e3bf83ab3adda20e88119bd66afda214ae6d1001a74070b7679224f770c8c12b",
+    "source_manifest_sha256": "1698a58876504947b4292db29634c98388cab046447bc8c457048d55ff582c6c"
+  },
+  "complete": false,
+  "path_seconds": 41.394629553,
+  "path_info": {
+    "largest_intermediate": 268435456.0,
+    "opt_cost": 9.486807742424134e+22,
+    "slices": [
+      [
+        484,
+        1
+      ],
+      [
+        465,
+        1
+      ],
+      [
+        450,
+        1
+      ],
+      [
+        374,
+        1
+      ],
+      [
+        165,
+        1
+      ],
+      [
+        147,
+        1
+      ],
+      [
+        107,
+        1
+      ],
+      [
+        105,
+        1
+      ],
+      [
+        102,
+        1
+      ],
+      [
+        98,
+        1
+      ],
+      [
+        88,
+        1
+      ],
+      [
+        85,
+        1
+      ],
+      [
+        166,
+        1
+      ],
+      [
+        181,
+        1
+      ],
+      [
+        183,
+        1
+      ],
+      [
+        204,
+        1
+      ],
+      [
+        215,
+        1
+      ],
+      [
+        216,
+        1
+      ],
+      [
+        219,
+        1
+      ],
+      [
+        229,
+        1
+      ],
+      [
+        268,
+        1
+      ],
+      [
+        277,
+        1
+      ],
+      [
+        304,
+        1
+      ]
+    ],
+    "num_slices": 306016419840,
+    "path_length": 1078,
+    "intermediate_count": 1078
+  },
+  "resource_rejected": true,
+  "rejection_reason": "optimized path exceeds the frozen slice/cost guard",
+  "completed_at": "2026-09-02T11:48:20.713440+00:00"
+}

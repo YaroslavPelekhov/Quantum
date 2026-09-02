@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "stage": "exact_event_mpo_representation_audit",
+  "created_at": "2026-09-02T12:11:35.898451+00:00",
+  "case": "es60fst03",
+  "ordering": "spectral",
+  "qubits": 12,
+  "support_size": 48,
+  "support_sha256": "e3bf83ab3adda20e88119bd66afda214ae6d1001a74070b7679224f770c8c12b",
+  "bond_ranks": [
+    1,
+    2,
+    3,
+    3,
+    3,
+    3,
+    6,
+    6,
+    3,
+    3,
+    3,
+    2,
+    1
+  ],
+  "max_bond_rank": 6,
+  "tt_dense_entries": 266,
+  "tt_nonzero_entries": 52,
+  "coefficient_values": [
+    0.0,
+    1.0
+  ],
+  "all_coefficients_integral": true,
+  "mpo_dense_entries": 532,
+  "mpo_bytes_complex128": 8512,
+  "member_checks": 48,
+  "nonmember_checks": 4048,
+  "max_member_absolute_error": 0.0,
+  "max_nonmember_absolute_error": 0.0,
+  "compile_seconds": 0.04423279999173246,
+  "passed": true,
+  "tt_archive": "results/exact_event_contraction/event_tt_es60fst03_spectral.npz",
+  "tt_archive_sha256": "bd8831e4e79534ca5c92981e04502b7ed8df7cd7eab6802919b3440b5a7e228b"
+}

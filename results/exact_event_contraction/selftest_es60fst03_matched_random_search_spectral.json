@@ -1,0 +1,373 @@
+{
+  "stage": "exact_event_amplitude_contraction",
+  "mode": "selftest",
+  "case": "es60fst03",
+  "method": "matched_random_search",
+  "ordering": "spectral",
+  "qubits": 12,
+  "event_support_size": 48,
+  "target_amplitudes": 48,
+  "circuit": "experiments/evoq_mis_full_qoblib/results/cutensornet/circuits/es60fst03_matched_random_search_spectral.qpy",
+  "circuit_sha256": "01a6966f597b3233eea78faa580afc27a1abe3bf1dae13d8dd3e3e5de981d927",
+  "support_sha256": "e3bf83ab3adda20e88119bd66afda214ae6d1001a74070b7679224f770c8c12b",
+  "hyper_samples": 32,
+  "provenance": {
+    "created_at": "2026-09-02T10:41:22.906697+00:00",
+    "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "qiskit": "2.5.1",
+    "numpy": "2.5.1",
+    "cupy": "14.1.1",
+    "cuquantum": "26.6.0",
+    "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+    "gpu_total_bytes": 17170956288,
+    "gpu_free_bytes_at_start": 15727591424,
+    "hyper_samples": 32,
+    "support_sha256": "e3bf83ab3adda20e88119bd66afda214ae6d1001a74070b7679224f770c8c12b",
+    "source_manifest_sha256": "1698a58876504947b4292db29634c98388cab046447bc8c457048d55ff582c6c"
+  },
+  "amplitudes": [
+    {
+      "bitstring": "001000011001",
+      "amplitude_real": 0.1541234431431907,
+      "amplitude_imag": -0.003035061763372727,
+      "probability": 0.023763247326219823,
+      "elapsed_seconds": 0.2599971969999997
+    },
+    {
+      "bitstring": "001000011100",
+      "amplitude_real": 0.13440374030963928,
+      "amplitude_imag": -0.02333783115051534,
+      "probability": 0.01860901977203092,
+      "elapsed_seconds": 0.006171650999999834
+    },
+    {
+      "bitstring": "001000101001",
+      "amplitude_real": 0.1541234431431907,
+      "amplitude_imag": -0.003035061763372713,
+      "probability": 0.023763247326219823,
+      "elapsed_seconds": 0.009522151999999728
+    },
+    {
+      "bitstring": "001000101100",
+      "amplitude_real": 0.13440374030963925,
+      "amplitude_imag": -0.023337831150515312,
+      "probability": 0.018609019772030912,
+      "elapsed_seconds": 0.006236926999999781
+    },
+    {
+      "bitstring": "001001001001",
+      "amplitude_real": 0.1541234431431907,
+      "amplitude_imag": -0.0030350617633727634,
+      "probability": 0.023763247326219823,
+      "elapsed_seconds": 0.008464236000000014
+    },
+    {
+      "bitstring": "001001001100",
+      "amplitude_real": 0.13440374030963928,
+      "amplitude_imag": -0.023337831150515374,
+      "probability": 0.01860901977203092,
+      "elapsed_seconds": 0.009637023000001577
+    },
+    {
+      "bitstring": "001100010001",
+      "amplitude_real": 0.15209229283766484,
+      "amplitude_imag": -0.013971114964492055,
+      "probability": 0.023327257593969055,
+      "elapsed_seconds": 0.006378700000000848
+    },
+    {
+      "bitstring": "001100010010",
+      "amplitude_real": 0.0764312995326253,
+      "amplitude_imag": -0.03312114654881035,
+      "probability": 0.00693875389695366,
+      "elapsed_seconds": 0.009744328000000024
+    },
+    {
+      "bitstring": "001100010100",
+      "amplitude_real": 0.13440374030963917,
+      "amplitude_imag": -0.02333783115051525,
+      "probability": 0.018609019772030888,
+      "elapsed_seconds": 0.00695237399999904
+    },
+    {
+      "bitstring": "001100100001",
+      "amplitude_real": 0.15209229283766484,
+      "amplitude_imag": -0.013971114964492028,
+      "probability": 0.023327257593969045,
+      "elapsed_seconds": 0.0069691320000000445
+    },
+    {
+      "bitstring": "001100100010",
+      "amplitude_real": 0.0764312995326253,
+      "amplitude_imag": -0.033121146548810335,
+      "probability": 0.006938753896953659,
+      "elapsed_seconds": 0.00635671500000079
+    },
+    {
+      "bitstring": "001100100100",
+      "amplitude_real": 0.13440374030963917,
+      "amplitude_imag": -0.02333783115051522,
+      "probability": 0.01860901977203088,
+      "elapsed_seconds": 0.006086134000000243
+    },
+    {
+      "bitstring": "001101000001",
+      "amplitude_real": 0.15209229283766484,
+      "amplitude_imag": -0.01397111496449209,
+      "probability": 0.023327257593969055,
+      "elapsed_seconds": 0.006813642000000897
+    },
+    {
+      "bitstring": "001101000010",
+      "amplitude_real": 0.0764312995326253,
+      "amplitude_imag": -0.03312114654881037,
+      "probability": 0.00693875389695366,
+      "elapsed_seconds": 0.0065559570000015555
+    },
+    {
+      "bitstring": "001101000100",
+      "amplitude_real": 0.13440374030963917,
+      "amplitude_imag": -0.02333783115051527,
+      "probability": 0.018609019772030888,
+      "elapsed_seconds": 0.00667169100000109
+    },
+    {
+      "bitstring": "010000011001",
+      "amplitude_real": 0.1298247610550669,
+      "amplitude_imag": -0.03345698034825383,
+      "probability": 0.017973838117028657,
+      "elapsed_seconds": 0.0069688159999987676
+    },
+    {
+      "bitstring": "010000011100",
+      "amplitude_real": 0.07643129953262529,
+      "amplitude_imag": -0.03312114654881034,
+      "probability": 0.006938753896953656,
+      "elapsed_seconds": 0.008243919000001654
+    },
+    {
+      "bitstring": "010000101001",
+      "amplitude_real": 0.1298247610550669,
+      "amplitude_imag": -0.033456980348253805,
+      "probability": 0.017973838117028657,
+      "elapsed_seconds": 0.006255635000000481
+    },
+    {
+      "bitstring": "010000101100",
+      "amplitude_real": 0.07643129953262529,
+      "amplitude_imag": -0.03312114654881033,
+      "probability": 0.006938753896953656,
+      "elapsed_seconds": 0.006144315000000233
+    },
+    {
+      "bitstring": "010001001001",
+      "amplitude_real": 0.1298247610550669,
+      "amplitude_imag": -0.03345698034825387,
+      "probability": 0.017973838117028663,
+      "elapsed_seconds": 0.007336337999999998
+    },
+    {
+      "bitstring": "010001001100",
+      "amplitude_real": 0.07643129953262529,
+      "amplitude_imag": -0.033121146548810355,
+      "probability": 0.006938753896953659,
+      "elapsed_seconds": 0.006544296999999588
+    },
+    {
+      "bitstring": "010010010001",
+      "amplitude_real": 0.08100468813246944,
+      "amplitude_imag": -0.06382046852428384,
+      "probability": 0.01063481170209774,
+      "elapsed_seconds": 0.005908510000001144
+    },
+    {
+      "bitstring": "010010010010",
+      "amplitude_real": 0.026988248381701694,
+      "amplitude_imag": -0.06187351475512258,
+      "probability": 0.004556697378864796,
+      "elapsed_seconds": 0.006074284000000318
+    },
+    {
+      "bitstring": "010010100001",
+      "amplitude_real": 0.08100468813246944,
+      "amplitude_imag": -0.06382046852428382,
+      "probability": 0.010634811702097739,
+      "elapsed_seconds": 0.006021268999999663
+    },
+    {
+      "bitstring": "010010100010",
+      "amplitude_real": 0.026988248381701697,
+      "amplitude_imag": -0.061873514755122566,
+      "probability": 0.004556697378864794,
+      "elapsed_seconds": 0.006242007999999188
+    },
+    {
+      "bitstring": "010011000001",
+      "amplitude_real": 0.08100468813246943,
+      "amplitude_imag": -0.06382046852428386,
+      "probability": 0.01063481170209774,
+      "elapsed_seconds": 0.006491395999999483
+    },
+    {
+      "bitstring": "010011000010",
+      "amplitude_real": 0.02698824838170168,
+      "amplitude_imag": -0.06187351475512258,
+      "probability": 0.004556697378864794,
+      "elapsed_seconds": 0.006039597999999202
+    },
+    {
+      "bitstring": "100000011001",
+      "amplitude_real": 0.2128613560451536,
+      "amplitude_imag": 0.01825838100716013,
+      "probability": 0.04564332537438427,
+      "elapsed_seconds": 0.0071146409999993665
+    },
+    {
+      "bitstring": "100000011100",
+      "amplitude_real": 0.1520922928376648,
+      "amplitude_imag": -0.013971114964492026,
+      "probability": 0.023327257593969027,
+      "elapsed_seconds": 0.0064659789999996775
+    },
+    {
+      "bitstring": "100000101001",
+      "amplitude_real": 0.21286135604515358,
+      "amplitude_imag": 0.01825838100716016,
+      "probability": 0.045643325374384265,
+      "elapsed_seconds": 0.006559486999998754
+    },
+    {
+      "bitstring": "100000101100",
+      "amplitude_real": 0.1520922928376648,
+      "amplitude_imag": -0.013971114964492012,
+      "probability": 0.023327257593969027,
+      "elapsed_seconds": 0.007041112999999655
+    },
+    {
+      "bitstring": "100001001001",
+      "amplitude_real": 0.2128613560451536,
+      "amplitude_imag": 0.018258381007160075,
+      "probability": 0.04564332537438427,
+      "elapsed_seconds": 0.007023516000000285
+    },
+    {
+      "bitstring": "100001001100",
+      "amplitude_real": 0.1520922928376648,
+      "amplitude_imag": -0.01397111496449206,
+      "probability": 0.023327257593969038,
+      "elapsed_seconds": 0.005966979000000094
+    },
+    {
+      "bitstring": "100010010001",
+      "amplitude_real": 0.13941763794458223,
+      "amplitude_imag": -0.025669572262455736,
+      "probability": 0.020096204710184053,
+      "elapsed_seconds": 0.006436188000000342
+    },
+    {
+      "bitstring": "100010010010",
+      "amplitude_real": 0.08100468813246949,
+      "amplitude_imag": -0.06382046852428394,
+      "probability": 0.010634811702097761,
+      "elapsed_seconds": 0.0061733760000013405
+    },
+    {
+      "bitstring": "100010100001",
+      "amplitude_real": 0.13941763794458223,
+      "amplitude_imag": -0.025669572262455708,
+      "probability": 0.020096204710184053,
+      "elapsed_seconds": 0.006294480999999408
+    },
+    {
+      "bitstring": "100010100010",
+      "amplitude_real": 0.08100468813246949,
+      "amplitude_imag": -0.06382046852428393,
+      "probability": 0.010634811702097758,
+      "elapsed_seconds": 0.006361367000000229
+    },
+    {
+      "bitstring": "100011000001",
+      "amplitude_real": 0.13941763794458223,
+      "amplitude_imag": -0.02566957226245577,
+      "probability": 0.020096204710184053,
+      "elapsed_seconds": 0.006797976999999733
+    },
+    {
+      "bitstring": "100011000010",
+      "amplitude_real": 0.08100468813246947,
+      "amplitude_imag": -0.06382046852428397,
+      "probability": 0.010634811702097761,
+      "elapsed_seconds": 0.006616569000000183
+    },
+    {
+      "bitstring": "100100010001",
+      "amplitude_real": 0.21286135604515358,
+      "amplitude_imag": 0.018258381007160183,
+      "probability": 0.045643325374384265,
+      "elapsed_seconds": 0.006044909999999959
+    },
+    {
+      "bitstring": "100100010010",
+      "amplitude_real": 0.12982476105506696,
+      "amplitude_imag": -0.033456980348253805,
+      "probability": 0.017973838117028674,
+      "elapsed_seconds": 0.006163723000000232
+    },
+    {
+      "bitstring": "100100010100",
+      "amplitude_real": 0.15412344314319085,
+      "amplitude_imag": -0.0030350617633727065,
+      "probability": 0.02376324732621987,
+      "elapsed_seconds": 0.006644026000000025
+    },
+    {
+      "bitstring": "100100100001",
+      "amplitude_real": 0.21286135604515355,
+      "amplitude_imag": 0.018258381007160224,
+      "probability": 0.045643325374384265,
+      "elapsed_seconds": 0.005995624000000532
+    },
+    {
+      "bitstring": "100100100010",
+      "amplitude_real": 0.12982476105506696,
+      "amplitude_imag": -0.03345698034825378,
+      "probability": 0.017973838117028674,
+      "elapsed_seconds": 0.00607973800000039
+    },
+    {
+      "bitstring": "100100100100",
+      "amplitude_real": 0.15412344314319082,
+      "amplitude_imag": -0.003035061763372679,
+      "probability": 0.023763247326219858,
+      "elapsed_seconds": 0.006148005000000012
+    },
+    {
+      "bitstring": "100101000001",
+      "amplitude_real": 0.2128613560451536,
+      "amplitude_imag": 0.01825838100716014,
+      "probability": 0.04564332537438427,
+      "elapsed_seconds": 0.00686328500000144
+    },
+    {
+      "bitstring": "100101000010",
+      "amplitude_real": 0.12982476105506696,
+      "amplitude_imag": -0.033456980348253826,
+      "probability": 0.017973838117028674,
+      "elapsed_seconds": 0.005982110000001484
+    },
+    {
+      "bitstring": "100101000100",
+      "amplitude_real": 0.15412344314319085,
+      "amplitude_imag": -0.003035061763372743,
+      "probability": 0.02376324732621987,
+      "elapsed_seconds": 0.006028850999999946
+    }
+  ],
+  "complete": true,
+  "probability_sum": 0.9553002289632513,
+  "updated_at": "2026-09-02T10:41:23.884881+00:00",
+  "last_session_seconds": 0.9752392600000004,
+  "total_contraction_seconds": 0.575630189000008,
+  "completed_at": "2026-09-02T10:41:23.893915+00:00"
+}

@@ -450,8 +450,9 @@ The per-case pattern supports an effect-margin explanation rather than a qubit
 count rule. \texttt{karate} and \texttt{chesapeake} are universally certified
 from the released point; \texttt{football} first becomes universal at the
 confirm point and \texttt{ibm32} at bond 1024/cutoff $10^{-4}$. All 80 cohorts
-on these four cases preserve the exact sign, including three conservative false
-negatives of the certificate. The smallest-margin 24-qubit case accounts for
+on these four cases preserve the exact sign, while 72/80 are certified, leaving
+eight conservative false negatives of the certificate. The smallest-margin
+24-qubit case accounts for
 all nine sign failures and all five cross-backend sign disagreements. Its
 tightest setting is sign-correct in all four backend/order combinations but is
 still not universally TVD-certified, illustrating that a sufficient
@@ -476,7 +477,8 @@ invariant to the two exact-equivalent qubit orderings. Thus the exact
 matched-random-minus-LR effect is $-0.012139$: the small positive advantages
 seen at several approximate settings have the wrong sign.
 
-Figure~\ref{fig:independent} gives all ten matched-effect cohorts. At the
+Figure~\ref{fig:independent} gives all ten setting/ordering locations,
+comprising 20 backend cohorts. At the
 released point Aer reports $+0.138479$ and $+0.105273$ for sorted and spectral
 ordering. cuTensorNet instead reports $-0.008287$ and $+0.016849$, so even the
 direction of the error is backend- and ordering-dependent. The nominal confirm

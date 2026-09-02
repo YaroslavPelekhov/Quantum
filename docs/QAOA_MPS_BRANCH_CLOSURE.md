@@ -78,3 +78,20 @@ screen:
 Preferred search spaces are a genuinely new simulation primitive with a
 provable separation, simulator-to-hardware ranking failures with held-out
 hardware validation, or a different AI/scientific-discovery formulation.
+
+## Post-closure exact-event continuation
+
+The 2026-09-02 continuation did not reopen the MPS/certificate novelty claim.
+It changed the computational target to the exact probability of the complete
+384-string BKS event.  A rational sparse-event compiler found fixed-order
+minimal projector bond 152 for sorted order and 5 for spectral order, and two
+independent cuTensorNet APIs reproduced the untruncated 55-qubit probability
+through QAOA depth 2.  Depth 3 already exceeds the frozen local resource guard;
+depths 8 and 15 fail path search, so the manuscript's depth-15 ideal winner is
+still unresolved.
+
+Prior-art falsification also closes “finite set to minimal MPO” as a broad
+novelty claim.  The only live hypothesis is a genuinely different one: joint
+circuit/event co-ordering with a general theorem and end-to-end advantage over
+batched and sliced baselines.  See
+[`results/exact_event_contraction/REPORT.md`](../results/exact_event_contraction/REPORT.md).

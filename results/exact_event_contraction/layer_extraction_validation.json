@@ -1,0 +1,856 @@
+{
+  "stage": "qaoa_layer_extraction_validation",
+  "created_at": "2026-09-02T11:51:47.398134+00:00",
+  "depths": [
+    1,
+    2,
+    4,
+    8,
+    15
+  ],
+  "rows": [
+    {
+      "case": "es60fst03",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qaoa_layers": 1,
+      "operations": {
+        "rzz": 16,
+        "h": 12,
+        "rz": 12,
+        "rx": 12
+      },
+      "semantic_circuit_sha256": "391930603e2371882101fbdbc4e51c7d7102373a67396b49c04a1a73d2bedaee",
+      "topology_circuit_sha256": "d9d4b179037bc861ed819f38c0196c3ffcd78cf2b4aca6d56613807d8135c3f5"
+    },
+    {
+      "case": "es60fst03",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qaoa_layers": 2,
+      "operations": {
+        "rzz": 32,
+        "rz": 24,
+        "rx": 24,
+        "h": 12
+      },
+      "semantic_circuit_sha256": "3437c33d2c01348254515eefc5bb3814fb3de1ed3f78712d33a0453ffc3802e9",
+      "topology_circuit_sha256": "a4691391a97509459f43c7c99835d5b52f46ca6529a5d2b1842558d15271f410"
+    },
+    {
+      "case": "es60fst03",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qaoa_layers": 4,
+      "operations": {
+        "rzz": 64,
+        "rz": 48,
+        "rx": 48,
+        "h": 12
+      },
+      "semantic_circuit_sha256": "124a21e8248d2fe7a62e7fd7c6f9188279361d63ad2d0bed1b36a293107abbff",
+      "topology_circuit_sha256": "50e779c0bc30aa29950054d432c89aa0742be018020413cddbd8bc570b25f19d"
+    },
+    {
+      "case": "es60fst03",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qaoa_layers": 8,
+      "operations": {
+        "rzz": 128,
+        "rz": 96,
+        "rx": 96,
+        "h": 12
+      },
+      "semantic_circuit_sha256": "65a6ff8969e54e8a577f367708b5d03724b189c2b2124adb7a99cbd72ddab91a",
+      "topology_circuit_sha256": "718edb72db295758d3ce324cf3808c8d32ed786de3f70e0963cf6e06307df8e3"
+    },
+    {
+      "case": "es60fst03",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qaoa_layers": 15,
+      "operations": {
+        "rzz": 240,
+        "rz": 180,
+        "rx": 180,
+        "h": 12
+      },
+      "semantic_circuit_sha256": "876e436ee4a29ce3eea2dd85cb0dd4ab4d12e3a02a081f5f9b382a3a8d034e42",
+      "topology_circuit_sha256": "b383ea80b5e14e7ca6998cad8ed1181ca4f3b472c6629d53394416677c77b7f4"
+    },
+    {
+      "case": "es60fst03",
+      "method": "matched_random_search",
+      "ordering": "sorted",
+      "qaoa_layers": 1,
+      "operations": {
+        "rzz": 16,
+        "h": 12,
+        "rz": 12,
+        "rx": 12
+      },
+      "semantic_circuit_sha256": "e4ebf002afce6f6503456a5e574040af32f9e86c4ee2ceb29e05b7dc209c6142",
+      "topology_circuit_sha256": "d9d4b179037bc861ed819f38c0196c3ffcd78cf2b4aca6d56613807d8135c3f5"
+    },
+    {
+      "case": "es60fst03",
+      "method": "matched_random_search",
+      "ordering": "sorted",
+      "qaoa_layers": 2,
+      "operations": {
+        "rzz": 32,
+        "rz": 24,
+        "rx": 24,
+        "h": 12
+      },
+      "semantic_circuit_sha256": "9c836c0ef85b4107948d4cccfaf1b6c564959b66ae2e54b93000d84dfdf4eab9",
+      "topology_circuit_sha256": "a4691391a97509459f43c7c99835d5b52f46ca6529a5d2b1842558d15271f410"
+    },
+    {
+      "case": "es60fst03",
+      "method": "matched_random_search",
+      "ordering": "sorted",
+      "qaoa_layers": 4,
+      "operations": {
+        "rzz": 64,
+        "rz": 48,
+        "rx": 48,
+        "h": 12
+      },
+      "semantic_circuit_sha256": "3e2c41c7161fc9bfbec2e9823b459060c30d5aa1434b68207f41dc163068d268",
+      "topology_circuit_sha256": "50e779c0bc30aa29950054d432c89aa0742be018020413cddbd8bc570b25f19d"
+    },
+    {
+      "case": "es60fst03",
+      "method": "matched_random_search",
+      "ordering": "sorted",
+      "qaoa_layers": 8,
+      "operations": {
+        "rzz": 128,
+        "rz": 96,
+        "rx": 96,
+        "h": 12
+      },
+      "semantic_circuit_sha256": "371f191c578a07197789cb784c80150fa93c29f41869ce15f272ff8128362434",
+      "topology_circuit_sha256": "718edb72db295758d3ce324cf3808c8d32ed786de3f70e0963cf6e06307df8e3"
+    },
+    {
+      "case": "es60fst03",
+      "method": "matched_random_search",
+      "ordering": "sorted",
+      "qaoa_layers": 15,
+      "operations": {
+        "rzz": 240,
+        "rz": 180,
+        "rx": 180,
+        "h": 12
+      },
+      "semantic_circuit_sha256": "add40d3a23496528439c02e16db9319bd91ab3cea4c31b44da318345bed0708f",
+      "topology_circuit_sha256": "b383ea80b5e14e7ca6998cad8ed1181ca4f3b472c6629d53394416677c77b7f4"
+    },
+    {
+      "case": "es60fst03",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qaoa_layers": 1,
+      "operations": {
+        "rzz": 16,
+        "h": 12,
+        "rz": 12,
+        "rx": 12
+      },
+      "semantic_circuit_sha256": "0bd72e7b62fad6d6695c9d85c44d6765f3a31a83054c691292277a06f4be33ad",
+      "topology_circuit_sha256": "f25503112036cafafc3af34fbd133d5d4789f314482971a9e7398d3bb8edc27b"
+    },
+    {
+      "case": "es60fst03",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qaoa_layers": 2,
+      "operations": {
+        "rzz": 32,
+        "rz": 24,
+        "rx": 24,
+        "h": 12
+      },
+      "semantic_circuit_sha256": "2eeca1286452ebd7bbf3fb096da6a02b653045ab9d07783d2cff079317ff3fa4",
+      "topology_circuit_sha256": "19e78031c7a33876d41ad006e37ac1f5bb9112d064d41e962c921163760f4fa6"
+    },
+    {
+      "case": "es60fst03",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qaoa_layers": 4,
+      "operations": {
+        "rzz": 64,
+        "rz": 48,
+        "rx": 48,
+        "h": 12
+      },
+      "semantic_circuit_sha256": "e5d928aeb08a396961a714514f3665dc2bb5fa7bc0b41777123881120aec1b16",
+      "topology_circuit_sha256": "27e8a06ef7d8a9df030e3aa1e5c488ad237dd4bfeace6ed21409abcd829247ba"
+    },
+    {
+      "case": "es60fst03",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qaoa_layers": 8,
+      "operations": {
+        "rzz": 128,
+        "rz": 96,
+        "rx": 96,
+        "h": 12
+      },
+      "semantic_circuit_sha256": "07e6e60a9dda6af889dd3e17283594b4622dd4b8c5b8906e0de602fd23fdb312",
+      "topology_circuit_sha256": "8d83cbbeb2b3458c78fff554ca35b7b41eb90c51288d15a594b982e3df9f235a"
+    },
+    {
+      "case": "es60fst03",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qaoa_layers": 15,
+      "operations": {
+        "rzz": 240,
+        "rz": 180,
+        "rx": 180,
+        "h": 12
+      },
+      "semantic_circuit_sha256": "796985ac39b3c42ac55ca392c6ae2db718fa4d91f5741eb7c7b6d985b325c2c0",
+      "topology_circuit_sha256": "1ab02d0ad3b9ef5e87d3ef5809d4d62a4f72ad9f0b306587d619c195897f085a"
+    },
+    {
+      "case": "es60fst03",
+      "method": "matched_random_search",
+      "ordering": "spectral",
+      "qaoa_layers": 1,
+      "operations": {
+        "rzz": 16,
+        "h": 12,
+        "rz": 12,
+        "rx": 12
+      },
+      "semantic_circuit_sha256": "7990ddbc3e90264eb10af3aed92307151db04636c7ed0be065d0265d763e7e7d",
+      "topology_circuit_sha256": "f25503112036cafafc3af34fbd133d5d4789f314482971a9e7398d3bb8edc27b"
+    },
+    {
+      "case": "es60fst03",
+      "method": "matched_random_search",
+      "ordering": "spectral",
+      "qaoa_layers": 2,
+      "operations": {
+        "rzz": 32,
+        "rz": 24,
+        "rx": 24,
+        "h": 12
+      },
+      "semantic_circuit_sha256": "87d45ad0167f3e64acb71fdebd7e5efc07455cc7b9844616b69e9f5264ca50a4",
+      "topology_circuit_sha256": "19e78031c7a33876d41ad006e37ac1f5bb9112d064d41e962c921163760f4fa6"
+    },
+    {
+      "case": "es60fst03",
+      "method": "matched_random_search",
+      "ordering": "spectral",
+      "qaoa_layers": 4,
+      "operations": {
+        "rzz": 64,
+        "rz": 48,
+        "rx": 48,
+        "h": 12
+      },
+      "semantic_circuit_sha256": "087947afb2bd205073ce11aae22a7994bce7598e77ea1a9480da35a56f2b3287",
+      "topology_circuit_sha256": "27e8a06ef7d8a9df030e3aa1e5c488ad237dd4bfeace6ed21409abcd829247ba"
+    },
+    {
+      "case": "es60fst03",
+      "method": "matched_random_search",
+      "ordering": "spectral",
+      "qaoa_layers": 8,
+      "operations": {
+        "rzz": 128,
+        "rz": 96,
+        "rx": 96,
+        "h": 12
+      },
+      "semantic_circuit_sha256": "3751cfa826349302f0f348f99e2ab16597cd399d22b04c4cb6bf159fb5c56948",
+      "topology_circuit_sha256": "8d83cbbeb2b3458c78fff554ca35b7b41eb90c51288d15a594b982e3df9f235a"
+    },
+    {
+      "case": "es60fst03",
+      "method": "matched_random_search",
+      "ordering": "spectral",
+      "qaoa_layers": 15,
+      "operations": {
+        "rzz": 240,
+        "rz": 180,
+        "rx": 180,
+        "h": 12
+      },
+      "semantic_circuit_sha256": "4795a04740e26c42c7c9878647c818359e8e3a2b5271985eb447da405a996333",
+      "topology_circuit_sha256": "1ab02d0ad3b9ef5e87d3ef5809d4d62a4f72ad9f0b306587d619c195897f085a"
+    },
+    {
+      "case": "es60fst01",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qaoa_layers": 1,
+      "operations": {
+        "rzz": 21,
+        "h": 15,
+        "rz": 15,
+        "rx": 15
+      },
+      "semantic_circuit_sha256": "0c88c98f64748ab6243fac1bb8061bd57947ecd48c6305ba9107db4de06c3f0e",
+      "topology_circuit_sha256": "77c0ba4a120acb3c9b35a4e5cc885b185d07fd9acef00a8069116933731de51c"
+    },
+    {
+      "case": "es60fst01",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qaoa_layers": 2,
+      "operations": {
+        "rzz": 42,
+        "rz": 30,
+        "rx": 30,
+        "h": 15
+      },
+      "semantic_circuit_sha256": "beb8b9c0f3c9f63daaeda8723fe56153e299027522b5facd50f3155b89a94bff",
+      "topology_circuit_sha256": "9924535cc3bc36fe3b87b1e3d1d6d2b96b820b0c67b5442f1171cc4479e67a01"
+    },
+    {
+      "case": "es60fst01",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qaoa_layers": 4,
+      "operations": {
+        "rzz": 84,
+        "rz": 60,
+        "rx": 60,
+        "h": 15
+      },
+      "semantic_circuit_sha256": "0f8eef5e79c0f195eaa65649f528ab0fdc6397ec4cfd8dac455674f1ef6c8ea6",
+      "topology_circuit_sha256": "15ed77fe2935b223aac4108265086ca0f70a5dbc983cfa44b0b6e8bfe38f1102"
+    },
+    {
+      "case": "es60fst01",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qaoa_layers": 8,
+      "operations": {
+        "rzz": 168,
+        "rz": 120,
+        "rx": 120,
+        "h": 15
+      },
+      "semantic_circuit_sha256": "5a6b1f3b9bb842abe682e20a0796c7a10880ab6c4a051d0d32b1fef428897159",
+      "topology_circuit_sha256": "62dd4a0f10464606382a34e8973af660abc07fe257197c91fa4e1ed92f403700"
+    },
+    {
+      "case": "es60fst01",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qaoa_layers": 15,
+      "operations": {
+        "rzz": 315,
+        "rz": 225,
+        "rx": 225,
+        "h": 15
+      },
+      "semantic_circuit_sha256": "c6d0a63602110345eca9a04b2a9542600d96058952cd89e31ae77fa287c7bbb2",
+      "topology_circuit_sha256": "ea15f641d695b36eda2163f3facc2cf50ecabf610c658ca8543c602bc468f481"
+    },
+    {
+      "case": "es60fst01",
+      "method": "matched_random_search",
+      "ordering": "sorted",
+      "qaoa_layers": 1,
+      "operations": {
+        "rzz": 21,
+        "h": 15,
+        "rz": 15,
+        "rx": 15
+      },
+      "semantic_circuit_sha256": "64c2a2034038d5b69bef49bc90210c4f019232415f8f4e1ad433e36773fda833",
+      "topology_circuit_sha256": "77c0ba4a120acb3c9b35a4e5cc885b185d07fd9acef00a8069116933731de51c"
+    },
+    {
+      "case": "es60fst01",
+      "method": "matched_random_search",
+      "ordering": "sorted",
+      "qaoa_layers": 2,
+      "operations": {
+        "rzz": 42,
+        "rz": 30,
+        "rx": 30,
+        "h": 15
+      },
+      "semantic_circuit_sha256": "bcb7fc9d61145b3aece9da58b0d2e556d97898f58099475f3d089c364f8e6d9d",
+      "topology_circuit_sha256": "9924535cc3bc36fe3b87b1e3d1d6d2b96b820b0c67b5442f1171cc4479e67a01"
+    },
+    {
+      "case": "es60fst01",
+      "method": "matched_random_search",
+      "ordering": "sorted",
+      "qaoa_layers": 4,
+      "operations": {
+        "rzz": 84,
+        "rz": 60,
+        "rx": 60,
+        "h": 15
+      },
+      "semantic_circuit_sha256": "20ba68475f78f72c15d99e61ed7eb60236a2b003b51203ce34069b2b407ee3cb",
+      "topology_circuit_sha256": "15ed77fe2935b223aac4108265086ca0f70a5dbc983cfa44b0b6e8bfe38f1102"
+    },
+    {
+      "case": "es60fst01",
+      "method": "matched_random_search",
+      "ordering": "sorted",
+      "qaoa_layers": 8,
+      "operations": {
+        "rzz": 168,
+        "rz": 120,
+        "rx": 120,
+        "h": 15
+      },
+      "semantic_circuit_sha256": "ab3db9fcf2ba9528972d6ac267ec52ff8d8160d782504b144df5ccffa5ef99cf",
+      "topology_circuit_sha256": "62dd4a0f10464606382a34e8973af660abc07fe257197c91fa4e1ed92f403700"
+    },
+    {
+      "case": "es60fst01",
+      "method": "matched_random_search",
+      "ordering": "sorted",
+      "qaoa_layers": 15,
+      "operations": {
+        "rzz": 315,
+        "rz": 225,
+        "rx": 225,
+        "h": 15
+      },
+      "semantic_circuit_sha256": "be7feca47392ac0f06b507a1c5aee38c79132f0d4c53b5d134e400f1e2117827",
+      "topology_circuit_sha256": "ea15f641d695b36eda2163f3facc2cf50ecabf610c658ca8543c602bc468f481"
+    },
+    {
+      "case": "es60fst01",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qaoa_layers": 1,
+      "operations": {
+        "rzz": 21,
+        "h": 15,
+        "rz": 15,
+        "rx": 15
+      },
+      "semantic_circuit_sha256": "3e2329d04d36ffd42aa244ea9e5bbb6e877dbe40477e69e31017b3140fbc8f5f",
+      "topology_circuit_sha256": "0b487288d601d578f84144e2223d706a38c75ab4fd6e96b24325dd494e6d52bf"
+    },
+    {
+      "case": "es60fst01",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qaoa_layers": 2,
+      "operations": {
+        "rzz": 42,
+        "rz": 30,
+        "rx": 30,
+        "h": 15
+      },
+      "semantic_circuit_sha256": "c4aafdcc1ad872d16aedc9b795ea4c6a234924f47d07d2096f89391b7bfcb384",
+      "topology_circuit_sha256": "d27b319ea79cfa4a46dab6b5a8ad8300e2ab0ab577392188931474dc1613adf2"
+    },
+    {
+      "case": "es60fst01",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qaoa_layers": 4,
+      "operations": {
+        "rzz": 84,
+        "rz": 60,
+        "rx": 60,
+        "h": 15
+      },
+      "semantic_circuit_sha256": "ef15d00c89981a62e4f8b99fb1838ea2a545ed46942cb1370dfedaabd8f809c7",
+      "topology_circuit_sha256": "e340f6401d6e6a6be5b6fed5237080421dcbafe5b445beae611f5a57f7b5867a"
+    },
+    {
+      "case": "es60fst01",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qaoa_layers": 8,
+      "operations": {
+        "rzz": 168,
+        "rz": 120,
+        "rx": 120,
+        "h": 15
+      },
+      "semantic_circuit_sha256": "06b3195aeeb349fc4d810a39666bc77ea51e59f4ba21a24f327a77274117dc6a",
+      "topology_circuit_sha256": "0248e8fe5e0b2b66ac3cb3819ed359b7991731076f2d4fb154b471232a0b1428"
+    },
+    {
+      "case": "es60fst01",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qaoa_layers": 15,
+      "operations": {
+        "rzz": 315,
+        "rz": 225,
+        "rx": 225,
+        "h": 15
+      },
+      "semantic_circuit_sha256": "c1bfd7e90681c35fabdf54d9890b31563e5fdc84a11c83be7d77d9a6e377c715",
+      "topology_circuit_sha256": "f27bb0d3f155daef60fa3a5fdedcec24c448ddc19b0db956baf71a8fa0071b95"
+    },
+    {
+      "case": "es60fst01",
+      "method": "matched_random_search",
+      "ordering": "spectral",
+      "qaoa_layers": 1,
+      "operations": {
+        "rzz": 21,
+        "h": 15,
+        "rz": 15,
+        "rx": 15
+      },
+      "semantic_circuit_sha256": "56e185f8f429078a04cbff9748fa88167b56efc6a78de41b23d63e2b1914eb26",
+      "topology_circuit_sha256": "0b487288d601d578f84144e2223d706a38c75ab4fd6e96b24325dd494e6d52bf"
+    },
+    {
+      "case": "es60fst01",
+      "method": "matched_random_search",
+      "ordering": "spectral",
+      "qaoa_layers": 2,
+      "operations": {
+        "rzz": 42,
+        "rz": 30,
+        "rx": 30,
+        "h": 15
+      },
+      "semantic_circuit_sha256": "26765bd9920a784a6757a4527c21025d025aa731b20d68418db9d1de2e542708",
+      "topology_circuit_sha256": "d27b319ea79cfa4a46dab6b5a8ad8300e2ab0ab577392188931474dc1613adf2"
+    },
+    {
+      "case": "es60fst01",
+      "method": "matched_random_search",
+      "ordering": "spectral",
+      "qaoa_layers": 4,
+      "operations": {
+        "rzz": 84,
+        "rz": 60,
+        "rx": 60,
+        "h": 15
+      },
+      "semantic_circuit_sha256": "d2d7f65dc04cf5ab174992ecd40ab3b203b00e12492781ae3f98c080136e1f90",
+      "topology_circuit_sha256": "e340f6401d6e6a6be5b6fed5237080421dcbafe5b445beae611f5a57f7b5867a"
+    },
+    {
+      "case": "es60fst01",
+      "method": "matched_random_search",
+      "ordering": "spectral",
+      "qaoa_layers": 8,
+      "operations": {
+        "rzz": 168,
+        "rz": 120,
+        "rx": 120,
+        "h": 15
+      },
+      "semantic_circuit_sha256": "94e6a32e779b299912f08be885d97b00ac3b1920d8244d5b272e77e74b01f73f",
+      "topology_circuit_sha256": "0248e8fe5e0b2b66ac3cb3819ed359b7991731076f2d4fb154b471232a0b1428"
+    },
+    {
+      "case": "es60fst01",
+      "method": "matched_random_search",
+      "ordering": "spectral",
+      "qaoa_layers": 15,
+      "operations": {
+        "rzz": 315,
+        "rz": 225,
+        "rx": 225,
+        "h": 15
+      },
+      "semantic_circuit_sha256": "57e680660c6e29df3832d2503ab55eb9e826b27fc52468241b3daabde2a6c80e",
+      "topology_circuit_sha256": "f27bb0d3f155daef60fa3a5fdedcec24c448ddc19b0db956baf71a8fa0071b95"
+    },
+    {
+      "case": "es60fst02",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qaoa_layers": 1,
+      "operations": {
+        "rzz": 91,
+        "h": 55,
+        "rz": 55,
+        "rx": 55
+      },
+      "semantic_circuit_sha256": "271ebfab18b1b8a110714b3cf85f94893714237df434227225d36046c34fab58",
+      "topology_circuit_sha256": "7577511c4e107fbf209621efc7a185e82294a54f66d7fef70e4dcaa30074ac71"
+    },
+    {
+      "case": "es60fst02",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qaoa_layers": 2,
+      "operations": {
+        "rzz": 182,
+        "rz": 110,
+        "rx": 110,
+        "h": 55
+      },
+      "semantic_circuit_sha256": "2dadf53f6fdaf318db4b098d775144777c3a01a56fdae51774b21071b18d813b",
+      "topology_circuit_sha256": "825574453e7c7557ee0690228bd0fc6b8ccf8facb8614f1dfb45a1ff916ec60c"
+    },
+    {
+      "case": "es60fst02",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qaoa_layers": 4,
+      "operations": {
+        "rzz": 364,
+        "rz": 220,
+        "rx": 220,
+        "h": 55
+      },
+      "semantic_circuit_sha256": "283f0a930d0313b509fcfc83f12ee63ccd6f18a04d48569cda0253a570c54a37",
+      "topology_circuit_sha256": "2d13c2f811e64f4ad4d5328a813d9c711f05596129308e4ff88f3143d7ef8e33"
+    },
+    {
+      "case": "es60fst02",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qaoa_layers": 8,
+      "operations": {
+        "rzz": 728,
+        "rz": 440,
+        "rx": 440,
+        "h": 55
+      },
+      "semantic_circuit_sha256": "ec22518771c760072823358caf34602d1268e5c13169b246b179cda05275d781",
+      "topology_circuit_sha256": "8040a2491fb36826299c323b849ae425bed0344a15e9795b71f804441a596122"
+    },
+    {
+      "case": "es60fst02",
+      "method": "published_lr",
+      "ordering": "sorted",
+      "qaoa_layers": 15,
+      "operations": {
+        "rzz": 1365,
+        "rz": 825,
+        "rx": 825,
+        "h": 55
+      },
+      "semantic_circuit_sha256": "c18702a2aa9a4bc753cd5af6ba1988d31a8fc6243da9803fb6f6a911b5daa3d2",
+      "topology_circuit_sha256": "358941326f7c03035f22e6b41811850a6d0f19c4620a92add4bf5a408c6cf4a4"
+    },
+    {
+      "case": "es60fst02",
+      "method": "matched_random_search",
+      "ordering": "sorted",
+      "qaoa_layers": 1,
+      "operations": {
+        "rzz": 91,
+        "h": 55,
+        "rz": 55,
+        "rx": 55
+      },
+      "semantic_circuit_sha256": "6b986075f1c628b1a465921fa77c2b7904cfc0bee9126aa02cbab6cddcc92585",
+      "topology_circuit_sha256": "7577511c4e107fbf209621efc7a185e82294a54f66d7fef70e4dcaa30074ac71"
+    },
+    {
+      "case": "es60fst02",
+      "method": "matched_random_search",
+      "ordering": "sorted",
+      "qaoa_layers": 2,
+      "operations": {
+        "rzz": 182,
+        "rz": 110,
+        "rx": 110,
+        "h": 55
+      },
+      "semantic_circuit_sha256": "d09b3823bcba9ccac4ef729e537453183b2e60405d1306fbf2c94a8bc9be986e",
+      "topology_circuit_sha256": "825574453e7c7557ee0690228bd0fc6b8ccf8facb8614f1dfb45a1ff916ec60c"
+    },
+    {
+      "case": "es60fst02",
+      "method": "matched_random_search",
+      "ordering": "sorted",
+      "qaoa_layers": 4,
+      "operations": {
+        "rzz": 364,
+        "rz": 220,
+        "rx": 220,
+        "h": 55
+      },
+      "semantic_circuit_sha256": "4a23afa970f80f19544d8400a150635cf61938f79b83ddcf8d9cacf5fedc50e8",
+      "topology_circuit_sha256": "2d13c2f811e64f4ad4d5328a813d9c711f05596129308e4ff88f3143d7ef8e33"
+    },
+    {
+      "case": "es60fst02",
+      "method": "matched_random_search",
+      "ordering": "sorted",
+      "qaoa_layers": 8,
+      "operations": {
+        "rzz": 728,
+        "rz": 440,
+        "rx": 440,
+        "h": 55
+      },
+      "semantic_circuit_sha256": "0652832c2d7e9155866cdcf90cceee2a56b34780f6ae5f75913a7f2f41ee1b13",
+      "topology_circuit_sha256": "8040a2491fb36826299c323b849ae425bed0344a15e9795b71f804441a596122"
+    },
+    {
+      "case": "es60fst02",
+      "method": "matched_random_search",
+      "ordering": "sorted",
+      "qaoa_layers": 15,
+      "operations": {
+        "rzz": 1365,
+        "rz": 825,
+        "rx": 825,
+        "h": 55
+      },
+      "semantic_circuit_sha256": "7d35b72d9e3b934f62620a37603083637338771c52bfd6db976695ca8a579a7a",
+      "topology_circuit_sha256": "358941326f7c03035f22e6b41811850a6d0f19c4620a92add4bf5a408c6cf4a4"
+    },
+    {
+      "case": "es60fst02",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qaoa_layers": 1,
+      "operations": {
+        "rzz": 91,
+        "h": 55,
+        "rz": 55,
+        "rx": 55
+      },
+      "semantic_circuit_sha256": "52cb17a403e35d18709264744f4ddabc64bd791b2e265ee24a41dd43ef204f58",
+      "topology_circuit_sha256": "382948943f2e22a2118f3f9f4cc955ba9360907536b2d83441ebde5dfa6767bf"
+    },
+    {
+      "case": "es60fst02",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qaoa_layers": 2,
+      "operations": {
+        "rzz": 182,
+        "rz": 110,
+        "rx": 110,
+        "h": 55
+      },
+      "semantic_circuit_sha256": "6fa4cf305c55b5a568c6f8c6bb4873922bc1395268506d376cd1ff74754323a4",
+      "topology_circuit_sha256": "721cec6cb9c2a008436c38fd6cee3c0e5c9261feda547d07f740eba7a581014b"
+    },
+    {
+      "case": "es60fst02",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qaoa_layers": 4,
+      "operations": {
+        "rzz": 364,
+        "rz": 220,
+        "rx": 220,
+        "h": 55
+      },
+      "semantic_circuit_sha256": "42c53303a3ab193204dd85931ad898df3d22208c1f1b7f52a9adcfc4b98fbec5",
+      "topology_circuit_sha256": "9fc3e899e560175de3411a215dba043b1094a91d25c875995e13d92aacba242e"
+    },
+    {
+      "case": "es60fst02",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qaoa_layers": 8,
+      "operations": {
+        "rzz": 728,
+        "rz": 440,
+        "rx": 440,
+        "h": 55
+      },
+      "semantic_circuit_sha256": "9ecdc9e28126005d3db6635c5ce77c340da4fcb7b4e3fa0d484f026b14ee5b97",
+      "topology_circuit_sha256": "17d712eaf09e0752e34c13ca76b3a7f232337f8e327c2bdfcbb8c956154adf7e"
+    },
+    {
+      "case": "es60fst02",
+      "method": "published_lr",
+      "ordering": "spectral",
+      "qaoa_layers": 15,
+      "operations": {
+        "rzz": 1365,
+        "rz": 825,
+        "rx": 825,
+        "h": 55
+      },
+      "semantic_circuit_sha256": "5b0e32ce493d37bb009285008166910fcd1cc6453d13968f39cb5119dc397855",
+      "topology_circuit_sha256": "3573e8c7f45d4c09e34a1292081af981e6b6d54b5becc6951f5008c3f663db8b"
+    },
+    {
+      "case": "es60fst02",
+      "method": "matched_random_search",
+      "ordering": "spectral",
+      "qaoa_layers": 1,
+      "operations": {
+        "rzz": 91,
+        "h": 55,
+        "rz": 55,
+        "rx": 55
+      },
+      "semantic_circuit_sha256": "0de626c566ac793d0f69d89847127ef27271fc334d5e354617ea5bde9362c614",
+      "topology_circuit_sha256": "382948943f2e22a2118f3f9f4cc955ba9360907536b2d83441ebde5dfa6767bf"
+    },
+    {
+      "case": "es60fst02",
+      "method": "matched_random_search",
+      "ordering": "spectral",
+      "qaoa_layers": 2,
+      "operations": {
+        "rzz": 182,
+        "rz": 110,
+        "rx": 110,
+        "h": 55
+      },
+      "semantic_circuit_sha256": "141d6461a6c82f8575b8843e61949f927f7c629a3ec1869d70847c429ceb5909",
+      "topology_circuit_sha256": "721cec6cb9c2a008436c38fd6cee3c0e5c9261feda547d07f740eba7a581014b"
+    },
+    {
+      "case": "es60fst02",
+      "method": "matched_random_search",
+      "ordering": "spectral",
+      "qaoa_layers": 4,
+      "operations": {
+        "rzz": 364,
+        "rz": 220,
+        "rx": 220,
+        "h": 55
+      },
+      "semantic_circuit_sha256": "202e41755825b864a45c5e1915804be65516d06ac335c4c0319841e913c84328",
+      "topology_circuit_sha256": "9fc3e899e560175de3411a215dba043b1094a91d25c875995e13d92aacba242e"
+    },
+    {
+      "case": "es60fst02",
+      "method": "matched_random_search",
+      "ordering": "spectral",
+      "qaoa_layers": 8,
+      "operations": {
+        "rzz": 728,
+        "rz": 440,
+        "rx": 440,
+        "h": 55
+      },
+      "semantic_circuit_sha256": "fb8d75b735e8992da903da450e614b66019b5bfd8f3a2df0dcc6bf17b2b10696",
+      "topology_circuit_sha256": "17d712eaf09e0752e34c13ca76b3a7f232337f8e327c2bdfcbb8c956154adf7e"
+    },
+    {
+      "case": "es60fst02",
+      "method": "matched_random_search",
+      "ordering": "spectral",
+      "qaoa_layers": 15,
+      "operations": {
+        "rzz": 1365,
+        "rz": 825,
+        "rx": 825,
+        "h": 55
+      },
+      "semantic_circuit_sha256": "0e15e4a684b94b503fb679e1ce5604c5c9d63dda6e7eea0395d9468824734286",
+      "topology_circuit_sha256": "3573e8c7f45d4c09e34a1292081af981e6b6d54b5becc6951f5008c3f663db8b"
+    }
+  ],
+  "schedule_topology_groups": 30,
+  "all_schedule_topologies_match": true,
+  "complete": true
+}

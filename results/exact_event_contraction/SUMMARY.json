@@ -1,0 +1,229 @@
+{
+  "stage": "exact_event_contraction_continuation_summary",
+  "created_at": "2026-09-02T12:19:51.119533+00:00",
+  "case": {
+    "name": "es60fst02",
+    "qubits": 55,
+    "edges": 91,
+    "independence_number": 23,
+    "event_support_size": 384,
+    "decoded_bks": 88
+  },
+  "projector": {
+    "sorted": {
+      "max_bond_rank": 152,
+      "tt_entries": 827008,
+      "tt_nonzero_entries": 4250,
+      "mpo_bytes_complex128": 26464256,
+      "coefficient_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    "spectral": {
+      "max_bond_rank": 5,
+      "tt_entries": 988,
+      "tt_nonzero_entries": 183,
+      "mpo_bytes_complex128": 31616,
+      "coefficient_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    "max_bond_reduction": 30.4,
+    "dense_mpo_storage_reduction": 837.0526315789474,
+    "all_representation_audits_passed": true
+  },
+  "validation": {
+    "amplitude_sum": {
+      "cohorts": 8,
+      "max_absolute_error": 8.770761894538737e-15
+    },
+    "network_state_mpo": {
+      "cohorts": 8,
+      "max_absolute_error": 7.882583474838611e-15
+    },
+    "lowlevel_density_mpo": {
+      "cohorts": 8,
+      "max_absolute_error": 5.662137425588298e-15
+    },
+    "depth_sweep": {
+      "cohorts": 40,
+      "max_absolute_error": 2.7755575615628914e-15
+    },
+    "layer_extraction": {
+      "rows": 60,
+      "schedule_topology_groups": 30,
+      "all_schedule_topologies_match": true
+    }
+  },
+  "completed_55q_depths": [
+    {
+      "qaoa_layers": 1,
+      "ordering": "spectral",
+      "published_lr": {
+        "method": "published_lr",
+        "probability": 8.4434393208607e-14,
+        "imaginary_absolute": 2.0510383535746307e-29,
+        "norm": 1.0,
+        "api_absolute_disagreement": 1.0097419586828951e-28,
+        "network_state_seconds": 0.576138023999988,
+        "lowlevel_path_seconds": 0.6342137309998179,
+        "lowlevel_contraction_seconds": 0.026048057000025437,
+        "lowlevel_slices": 1,
+        "lowlevel_optimizer_cost": 9324676.0
+      },
+      "matched_random_search": {
+        "method": "matched_random_search",
+        "probability": 1.2280528559635173e-12,
+        "imaginary_absolute": 6.563322731438818e-28,
+        "norm": 1.0,
+        "api_absolute_disagreement": 1.0097419586828951e-27,
+        "network_state_seconds": 0.5315748780000149,
+        "lowlevel_path_seconds": 0.6928968319999953,
+        "lowlevel_contraction_seconds": 0.024678043999998067,
+        "lowlevel_slices": 1,
+        "lowlevel_optimizer_cost": 9324676.0
+      },
+      "mr_minus_lr": 1.1436184627549102e-12,
+      "mr_over_lr": 14.54446238429689,
+      "winner": "matched_random_search"
+    },
+    {
+      "qaoa_layers": 2,
+      "ordering": "spectral",
+      "published_lr": {
+        "method": "published_lr",
+        "probability": 7.363912537252357e-14,
+        "imaginary_absolute": 8.835242138475332e-29,
+        "norm": 1.0,
+        "api_absolute_disagreement": 6.563322731438818e-28,
+        "network_state_seconds": 2.498251687999982,
+        "lowlevel_path_seconds": 10.671050529999775,
+        "lowlevel_contraction_seconds": 0.9357539080001516,
+        "lowlevel_slices": 1,
+        "lowlevel_optimizer_cost": 13267652508.0
+      },
+      "matched_random_search": {
+        "method": "matched_random_search",
+        "probability": 1.0183370578131436e-12,
+        "imaginary_absolute": 4.0389678347315804e-28,
+        "norm": 1.0,
+        "api_absolute_disagreement": 8.481832452936319e-27,
+        "network_state_seconds": 2.617586985999992,
+        "lowlevel_path_seconds": 10.562049934999997,
+        "lowlevel_contraction_seconds": 0.7676932210000018,
+        "lowlevel_slices": 1,
+        "lowlevel_optimizer_cost": 13267652508.0
+      },
+      "mr_minus_lr": 9.446979324406199e-13,
+      "mr_over_lr": 13.828750038265776,
+      "winner": "matched_random_search"
+    }
+  ],
+  "largest_completed_55q_depth": 2,
+  "first_resource_rejected_depth": {
+    "artifact": "results/exact_event_contraction/lowlevel_mpo_full_p03_es60fst02_published_lr_spectral.json",
+    "complete": false,
+    "resource_rejected": true,
+    "path_seconds": 27.996402821000004,
+    "slices": 12288,
+    "optimizer_cost": 1441662504001535.0,
+    "error_type": null,
+    "error": null
+  },
+  "additional_depth_failures": [
+    {
+      "artifact": "results/exact_event_contraction/lowlevel_mpo_full_p04_es60fst02_published_lr_spectral.json",
+      "complete": false,
+      "resource_rejected": true,
+      "path_seconds": 45.93929693300001,
+      "slices": 4294967296,
+      "optimizer_cost": 5.803719202481111e+20,
+      "error_type": null,
+      "error": null
+    },
+    {
+      "artifact": "results/exact_event_contraction/lowlevel_mpo_full_p08_es60fst02_published_lr_spectral.json",
+      "complete": false,
+      "resource_rejected": false,
+      "path_seconds": null,
+      "slices": null,
+      "optimizer_cost": null,
+      "error_type": "cuTensorNetError",
+      "error": "ALL_HYPER_SAMPLES_FAILED (24): CUTENSORNET_STATUS_ALL_HYPER_SAMPLES_FAILED"
+    }
+  ],
+  "sorted_replication_failures": [
+    {
+      "artifact": "results/exact_event_contraction/lowlevel_mpo_full_p01_es60fst02_published_lr_sorted.json",
+      "complete": false,
+      "resource_rejected": true,
+      "path_seconds": 11.181729007000001,
+      "slices": 6144,
+      "optimizer_cost": 4654614647353343.0,
+      "error_type": null,
+      "error": null
+    },
+    {
+      "artifact": "results/exact_event_contraction/lowlevel_mpo_full_p02_es60fst02_published_lr_sorted.json",
+      "complete": false,
+      "resource_rejected": true,
+      "path_seconds": 41.394629553,
+      "slices": 306016419840,
+      "optimizer_cost": 9.486807742424134e+22,
+      "error_type": null,
+      "error": null
+    }
+  ],
+  "full_depth_failures": [
+    {
+      "artifact": "results/exact_event_contraction/lowlevel_pilot_es60fst02_published_lr_sorted.json",
+      "complete": false,
+      "resource_rejected": false,
+      "path_seconds": null,
+      "slices": null,
+      "optimizer_cost": null,
+      "error_type": "cuTensorNetError",
+      "error": "ALL_HYPER_SAMPLES_FAILED (24): CUTENSORNET_STATUS_ALL_HYPER_SAMPLES_FAILED"
+    },
+    {
+      "artifact": "results/exact_event_contraction/lowlevel_pilot_es60fst02_published_lr_spectral.json",
+      "complete": false,
+      "resource_rejected": false,
+      "path_seconds": null,
+      "slices": null,
+      "optimizer_cost": null,
+      "error_type": "cuTensorNetError",
+      "error": "ALL_HYPER_SAMPLES_FAILED (24): CUTENSORNET_STATUS_ALL_HYPER_SAMPLES_FAILED"
+    },
+    {
+      "artifact": "results/exact_event_contraction/lowlevel_mpo_pilot_es60fst02_published_lr_spectral.json",
+      "complete": false,
+      "resource_rejected": false,
+      "path_seconds": null,
+      "slices": null,
+      "optimizer_cost": null,
+      "error_type": "cuTensorNetError",
+      "error": "ALL_HYPER_SAMPLES_FAILED (24): CUTENSORNET_STATUS_ALL_HYPER_SAMPLES_FAILED"
+    },
+    {
+      "artifact": "results/exact_event_contraction/mpo_pilot_es60fst02_published_lr_spectral.json",
+      "complete": false,
+      "resource_rejected": false,
+      "path_seconds": null,
+      "slices": null,
+      "optimizer_cost": null,
+      "error_type": "cuTensorNetError",
+      "error": "INTERNAL_ERROR (14): CUTENSORNET_STATUS_INTERNAL_ERROR"
+    }
+  ],
+  "binding_verdict": {
+    "depth_15_ranking_resolved": false,
+    "exact_sparse_event_capability_demonstrated_through_depth": 2,
+    "a_star_novelty_established": false,
+    "live_research_gap": "joint circuit/event variable ordering with end-to-end scaling, not finite-set-to-MPO compilation itself"
+  }
+}
