@@ -7,6 +7,7 @@ from typing import Any
 
 import numpy as np
 from scipy.linalg import expm
+from scipy.integrate import solve_ivp
 
 from experiments.aquila_one_mask_phase0.control_core import ControlLimits, QuantumModel, state_index
 
@@ -225,6 +226,50 @@ def propagate_numpy(model: QuantumModel, pulse: dict[str, list[float]], substeps
 def pulse_fidelity(model: QuantumModel, pulse: dict[str, list[float]], target_mask: int, substeps: int = 8) -> float:
     state = propagate_numpy(model, pulse, substeps=substeps)
     return float(abs(state[state_index(model, target_mask)]) ** 2)
+
+
+def pulse_fidelity_ivp(
+    model: QuantumModel,
+    pulse: dict[str, list[float]],
+    target_mask: int,
+    rtol: float = 2e-10,
+    atol: float = 2e-12,
+) -> float:
+    """Adaptive ODE reference for the piecewise-linear hardware waveform."""
+    arrays = {key: np.asarray(value, dtype=float) for key, value in pulse.items()}
+    times = arrays["times_us"]
+    initial = np.zeros(model.dimension, dtype=complex)
+    initial[state_index(model, 0)] = 1.0
+
+    def rhs(time: float, state: np.ndarray) -> np.ndarray:
+        interval = int(np.searchsorted(times, time, side="right") - 1)
+        interval = min(max(interval, 0), len(times) - 2)
+        fraction = (time - times[interval]) / (times[interval + 1] - times[interval])
+        values = [
+            (1.0 - fraction) * arrays[key][interval] + fraction * arrays[key][interval + 1]
+            for key in (
+                "omega_rad_per_us",
+                "phase_rad",
+                "global_detuning_rad_per_us",
+                "local_detuning_rad_per_us",
+            )
+        ]
+        return -1j * (model.hamiltonian(*values) @ state)
+
+    solution = solve_ivp(
+        rhs,
+        (float(times[0]), float(times[-1])),
+        initial,
+        method="DOP853",
+        rtol=rtol,
+        atol=atol,
+        t_eval=[float(times[-1])],
+        max_step=float(np.min(np.diff(times)) / 4.0),
+    )
+    if not solution.success:
+        raise RuntimeError(solution.message)
+    amplitude = solution.y[state_index(model, target_mask), -1]
+    return float(abs(amplitude) ** 2)
 
 
 def quantized_pulse(pulse: dict[str, list[float]]) -> dict[str, list[float]]:

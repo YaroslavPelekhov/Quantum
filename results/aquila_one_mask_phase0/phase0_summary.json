@@ -1,0 +1,120 @@
+{
+  "a_star_novelty": "KILL_BROAD_ONE_MASK_CONTROLLABILITY",
+  "adaptive_reference_audit": {
+    "passes_0p95_gate": false,
+    "target_0101_fidelity": 0.787187837350925,
+    "target_1010_fidelity": 0.6838090883693092,
+    "verdict": "CONFIRMED_OPTIMIZATION_MESH_FALSE_POSITIVE"
+  },
+  "action_audit": {
+    "operator_tolerance_0p1_capacity_upper_bound": 201,
+    "perfect_two_frequency_unitary_capacity_upper_bound": 173,
+    "ramp_limited_area_rad": 487.55971337579615,
+    "scope": "necessary two-frequency X-versus-I ensemble bound; not a universal arbitrary-geometry bound",
+    "unavoidable_operator_error_at_256_sites": 0.229107062190669
+  },
+  "dephasing_bracket": [
+    {
+      "fidelity": 0.8071543997321478,
+      "gamma_per_us": 0.0,
+      "target_mask": 5
+    },
+    {
+      "fidelity": 0.7083000477810683,
+      "gamma_per_us": 0.1,
+      "target_mask": 5
+    },
+    {
+      "fidelity": 0.5898875652978867,
+      "gamma_per_us": 0.25,
+      "target_mask": 5
+    },
+    {
+      "fidelity": 0.45056327304552984,
+      "gamma_per_us": 0.5,
+      "target_mask": 5
+    },
+    {
+      "fidelity": 0.7031079218074157,
+      "gamma_per_us": 0.0,
+      "target_mask": 10
+    },
+    {
+      "fidelity": 0.6082148297262168,
+      "gamma_per_us": 0.1,
+      "target_mask": 10
+    },
+    {
+      "fidelity": 0.49801772684481677,
+      "gamma_per_us": 0.25,
+      "target_mask": 10
+    },
+    {
+      "fidelity": 0.3737189173128419,
+      "gamma_per_us": 0.5,
+      "target_mask": 10
+    }
+  ],
+  "experiment": "aquila_one_static_mask_temporal_reprogramming_phase0",
+  "next_hypothesis": "interaction-induced gauge-invariant configuration-space curvature from finite C6 tails and one static mask",
+  "numerical_pass": false,
+  "prior_art_clearance": false,
+  "pulse_validation_errors": {
+    "10": [],
+    "5": []
+  },
+  "qpu_eligible": false,
+  "qpu_tasks_submitted": 0,
+  "quantization": {
+    "10": {
+      "drop": 7.35073420066179e-06,
+      "nominal_fidelity_substeps16": 0.6894975938360602,
+      "quantized_fidelity_substeps16": 0.6894902431018596
+    },
+    "5": {
+      "drop": -7.034842408382147e-06,
+      "nominal_fidelity_substeps16": 0.7926387949986384,
+      "quantized_fidelity_substeps16": 0.7926458298410468
+    }
+  },
+  "robustness": {
+    "10": {
+      "fifth_percentile": 0.126005817622906,
+      "median": 0.44838868212763766,
+      "minimum": 0.02721495056828654
+    },
+    "5": {
+      "fifth_percentile": 0.10530519304452257,
+      "median": 0.5888801131502182,
+      "minimum": 0.02009193915225205
+    }
+  },
+  "structural": {
+    "global_reflection_commutator_norm_full_c6": 0.0,
+    "gradient_full_rank_tolerance_stable": true,
+    "phase_gauge_operator_error": 5.7206341988870875e-12
+  },
+  "targets": {
+    "10": {
+      "best_hard_blockade_fidelity": 0.6716922682615352,
+      "full_c6_fidelity": 0.703114474109608,
+      "hard_blockade_to_full_c6_fidelity": 0.6501262672996346,
+      "hard_blockade_transfer_drop": 0.021566000961900533,
+      "quantization_drop": 7.35073420066179e-06,
+      "robustness_fifth_percentile": 0.126005817622906,
+      "selected_seed": 4100,
+      "selected_source": "direct_full_c6"
+    },
+    "5": {
+      "best_hard_blockade_fidelity": 0.5131935638153393,
+      "full_c6_fidelity": 0.807147799272194,
+      "hard_blockade_to_full_c6_fidelity": 0.49321308451321705,
+      "hard_blockade_transfer_drop": 0.019980479302122267,
+      "quantization_drop": -7.034842408382147e-06,
+      "robustness_fifth_percentile": 0.10530519304452257,
+      "selected_seed": 4100,
+      "selected_source": "direct_full_c6"
+    }
+  },
+  "verdict": "KILL_ONE_MASK_PHASE0"
+}

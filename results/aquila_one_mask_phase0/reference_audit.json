@@ -1,0 +1,22 @@
+{
+  "best_hardware_facing_candidates": {
+    "10": {
+      "adaptive_ode_reference_fidelity": 0.6838090883693092,
+      "quantization_drop": 7.5734075493105735e-06,
+      "quantized_adaptive_ode_reference_fidelity": 0.6838015149617599,
+      "seed": 4100,
+      "source": "direct_full_c6"
+    },
+    "5": {
+      "adaptive_ode_reference_fidelity": 0.787187837350925,
+      "quantization_drop": -7.165404399600561e-06,
+      "quantized_adaptive_ode_reference_fidelity": 0.7871950027553246,
+      "seed": 4100,
+      "source": "direct_full_c6"
+    }
+  },
+  "note": "The frozen optimization grid reported near-unit values, but adaptive ODE truth stays below the preregistered gate.",
+  "passes_0p95_gate": false,
+  "reference_solver": "scipy DOP853, rtol=2e-10, atol=2e-12, max_step=knot_interval/4",
+  "verdict": "CONFIRMED_OPTIMIZATION_MESH_FALSE_POSITIVE"
+}

@@ -5,11 +5,16 @@ from __future__ import annotations
 import csv
 import json
 import os
+import sys
 from dataclasses import asdict, replace
 from pathlib import Path
 
 import networkx as nx
 import numpy as np
+
+REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
+if str(REPOSITORY_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPOSITORY_ROOT))
 
 from experiments.aquila_one_mask_phase0.control_core import (
     ControlLimits,
@@ -32,7 +37,7 @@ from experiments.aquila_one_mask_phase0.pulse_opt import (
 )
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = REPOSITORY_ROOT
 EXPERIMENT = ROOT / "experiments" / "aquila_one_mask_phase0"
 OUTPUT = ROOT / "results" / "aquila_one_mask_phase0"
 CHECKPOINT = OUTPUT / "optimization_checkpoint.json"
@@ -425,4 +430,3 @@ matrix-log branch audit before it can become a hardware candidate.
 
 if __name__ == "__main__":
     main()
-

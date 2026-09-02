@@ -1,0 +1,150 @@
+{
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "experiments/aquila_one_mask_phase0/__init__.py",
+      "bytes": 62,
+      "sha256": "78d69c87fdd7860b4b8341b91f6e66e19ea991ea3f6178fdc86a407bc693745f"
+    },
+    {
+      "path": "experiments/aquila_one_mask_phase0/AQUILA_CONSTRAINTS_PROVISIONAL.json",
+      "bytes": 1225,
+      "sha256": "ec7f5da54c1df9b377616fc45b3d1808b76372cb80e8feeb9f436511e44b457d"
+    },
+    {
+      "path": "experiments/aquila_one_mask_phase0/audit_reference.py",
+      "bytes": 6067,
+      "sha256": "350871a2c6064c5c3968f46328f67451cb268955526ec36551eb111efc917dbc"
+    },
+    {
+      "path": "experiments/aquila_one_mask_phase0/build_manifest.py",
+      "bytes": 2096,
+      "sha256": "f55c7798391458e21e0834eee003a14ee84d96a4fa6b4d0b7e53b305f343a4ff"
+    },
+    {
+      "path": "experiments/aquila_one_mask_phase0/control_core.py",
+      "bytes": 10038,
+      "sha256": "1ad93eb60a3a694b69f7bd8fbb3276f467a5ef7945ad12c70c35b53297806da4"
+    },
+    {
+      "path": "experiments/aquila_one_mask_phase0/instances.json",
+      "bytes": 314,
+      "sha256": "ec0cdb456d8b7a14125d9dd4234c39a747d9ca480f14e967c966aed458ec8e14"
+    },
+    {
+      "path": "experiments/aquila_one_mask_phase0/lie_closure.py",
+      "bytes": 3161,
+      "sha256": "1b7d60fc7fbdc3f314e16598b52e0ec8d22130295da03bf2c848cd0c52a6fce2"
+    },
+    {
+      "path": "experiments/aquila_one_mask_phase0/plot_results.py",
+      "bytes": 3328,
+      "sha256": "481d088e3cdfd267ab32b051493a646f229204b8a0eeb27ef52930e53bb17d0b"
+    },
+    {
+      "path": "experiments/aquila_one_mask_phase0/PREREGISTRATION.md",
+      "bytes": 4556,
+      "sha256": "e8f2d2ccfdbf4d42f1abd0705d041ff1e8f24c0a300670e39a8d543db93d6fe0"
+    },
+    {
+      "path": "experiments/aquila_one_mask_phase0/PRIOR_ART_AUDIT.md",
+      "bytes": 4882,
+      "sha256": "fd4c79d9bfd00d4237efa1c489ca0b3b72bbd5fa2843015eeebb35f30588abd4"
+    },
+    {
+      "path": "experiments/aquila_one_mask_phase0/protocol.json",
+      "bytes": 2233,
+      "sha256": "bc1124de7f3b53636a400d1c13e30e00c600f9370d702b9887c8df2e0bc650d0"
+    },
+    {
+      "path": "experiments/aquila_one_mask_phase0/pulse_opt.py",
+      "bytes": 13040,
+      "sha256": "9ce7bedb9dd60dce2af4e3baf1823c468f79c03978d6838adf338a9954ea3203"
+    },
+    {
+      "path": "experiments/aquila_one_mask_phase0/README.md",
+      "bytes": 1089,
+      "sha256": "8ff54b232e2e78af23f878c246e326e440f496a272f5ede3415e8dfefcf34834"
+    },
+    {
+      "path": "experiments/aquila_one_mask_phase0/run_phase0.py",
+      "bytes": 18580,
+      "sha256": "91d59f91f0a759b703ae2f9592564c6f03e5517328038197e5c1a10bc8f6b972"
+    },
+    {
+      "path": "experiments/aquila_one_mask_phase0/test_phase0.py",
+      "bytes": 3179,
+      "sha256": "b2709248b98a3e2e46e3e932dbee13d3b2138735c5b261f1718c570cbd073ab0"
+    },
+    {
+      "path": "experiments/aquila_one_mask_phase0/THEORY_AND_SCOPE.md",
+      "bytes": 3294,
+      "sha256": "42a07c9fdce805760665bb03ea3e2b9374d60aa7cc75b06fd846c178dba7828a"
+    },
+    {
+      "path": "results/aquila_one_mask_phase0/best_pulses.json",
+      "bytes": 4881,
+      "sha256": "5a08af463512b339995de93620d0b58b0921ae5fdf464cf4110669dac33d6498"
+    },
+    {
+      "path": "results/aquila_one_mask_phase0/dephasing_bracket.csv",
+      "bytes": 251,
+      "sha256": "67fc921bfebbee24aeefc1e0e5e3fb7462d2864369fcf78f26928012a140992a"
+    },
+    {
+      "path": "results/aquila_one_mask_phase0/FINAL_REPORT.md",
+      "bytes": 3073,
+      "sha256": "76fe7a3f5d7ba4fc3c932dbcd9f60bcfc3e9e3500f536df5d5e1e3552ba2194e"
+    },
+    {
+      "path": "results/aquila_one_mask_phase0/lie_ranks.csv",
+      "bytes": 1032,
+      "sha256": "2c4f8865fba9de29aeea947686412306742435ed85017b04a14d6879525597c8"
+    },
+    {
+      "path": "results/aquila_one_mask_phase0/optimization_checkpoint.json",
+      "bytes": 167272,
+      "sha256": "e38353a768c2169bd99db235b02f30ac1d86f031ce878c0d6549a59549e8d538"
+    },
+    {
+      "path": "results/aquila_one_mask_phase0/phase0_diagnostics.png",
+      "bytes": 110888,
+      "sha256": "5333dca4be5af0506cfe8233bca1ad1da8767771eaefd3cd0c37e2cd5e3e0721"
+    },
+    {
+      "path": "results/aquila_one_mask_phase0/phase0_summary.json",
+      "bytes": 3730,
+      "sha256": "79fc303e74bf889c6d6123db0ae7aebd47d85aceaca14c8d994cffa97cf58bc6"
+    },
+    {
+      "path": "results/aquila_one_mask_phase0/pulse_search.csv",
+      "bytes": 3992,
+      "sha256": "f41a7d318a2b81069b262369dd86181a190b954bfa618f6b6f813082e683bc31"
+    },
+    {
+      "path": "results/aquila_one_mask_phase0/reference_audit.json",
+      "bytes": 880,
+      "sha256": "e252044912bd38264f7d93d4b455ec0e0db26f69f065da5cf95be6a2427d8274"
+    },
+    {
+      "path": "results/aquila_one_mask_phase0/REFERENCE_AUDIT.md",
+      "bytes": 1009,
+      "sha256": "fa2637d07b7eda382459108278a7117cde0d72336245eb2f130198f56fc63b49"
+    },
+    {
+      "path": "results/aquila_one_mask_phase0/reference_convergence.csv",
+      "bytes": 12473,
+      "sha256": "30b1ca865f6a355cb62ec29bdc04d42a5d0b706b4d10b095816e5a61367ca6ef"
+    },
+    {
+      "path": "results/aquila_one_mask_phase0/robustness.csv",
+      "bytes": 6652,
+      "sha256": "32af4ac4dd8132b36c9dd036f7e211192e57285e3bc373edaeba26731d0576e4"
+    },
+    {
+      "path": "results/aquila_one_mask_phase0/run_manifest.json",
+      "bytes": 430,
+      "sha256": "de716da7699e325a15f7e56c04d91bfdd3da1a27f345eae159fa39505092dcef"
+    }
+  ]
+}
