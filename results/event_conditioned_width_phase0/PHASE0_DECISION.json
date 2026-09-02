@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-02T14:13:55.021930+00:00",
+  "protocol": "experiments/event_conditioned_width_phase0/PROTOCOL.md",
+  "final_verdict": "INCOMPLETE_NO_PROMOTION",
+  "program_scope": "the full registered event-conditioned-width Phase 0",
+  "subclaim_verdicts": {
+    "natural_product_proxy_as_new_width": {
+      "verdict": "KILLED_AS_ASTAR_SOURCE",
+      "kill_gate": "K6",
+      "scope": "max_cut rank(E_cut)*2^(2*p*crossing_edges), not the actual QAOA tensor and not every pair-dependent algorithm"
+    }
+  },
+  "gate_status": {
+    "K0": {
+      "status": "NOT_TRIGGERED_IN_COMPLETED_CHECKS",
+      "reason": "all completed semantic, rank, and path-completeness audits pass"
+    },
+    "K1": {
+      "status": "NOT_EVALUATED",
+      "reason": "the corresponding locked full-network study was not executed"
+    },
+    "K2": {
+      "status": "NOT_EVALUATED",
+      "reason": "the corresponding locked full-network study was not executed"
+    },
+    "K3": {
+      "status": "NOT_EVALUATED",
+      "reason": "the corresponding locked full-network study was not executed"
+    },
+    "K4": {
+      "status": "NOT_EVALUATED",
+      "reason": "the corresponding locked full-network study was not executed"
+    },
+    "K5": {
+      "status": "NOT_EVALUATED",
+      "reason": "the corresponding locked full-network study was not executed"
+    },
+    "K6": {
+      "status": "TRIGGERED_FOR_NATURAL_PROXY_ONLY",
+      "reason": "the proxy is exactly the maximum prefix unfolding rank of one site-grouped artificial tensor, hence an ordinary exact linear TT-rank ordering objective"
+    },
+    "K7": {
+      "status": "NOT_TRIGGERED",
+      "reason": "the registered resource budget has not been exhausted"
+    }
+  },
+  "promotion_gates": {
+    "P0": {
+      "status": "NOT_ESTABLISHED",
+      "reason": "the registered locked full-network study was not executed"
+    },
+    "P1": {
+      "status": "NOT_ESTABLISHED",
+      "reason": "the registered locked full-network study was not executed"
+    },
+    "P2": {
+      "status": "NOT_ESTABLISHED",
+      "reason": "the registered locked full-network study was not executed"
+    },
+    "P3": {
+      "status": "NOT_ESTABLISHED",
+      "reason": "the registered locked full-network study was not executed"
+    },
+    "P4": {
+      "status": "NOT_ESTABLISHED",
+      "reason": "the registered locked full-network study was not executed"
+    },
+    "P5": {
+      "status": "NOT_ESTABLISHED",
+      "reason": "the registered locked full-network study was not executed"
+    }
+  },
+  "evidence": {
+    "structural": {
+      "rows": 48,
+      "families": [
+        "aligned",
+        "anti_aligned",
+        "circuit_hard",
+        "event_easy"
+      ],
+      "qubit_range": [
+        4,
+        9
+      ],
+      "depths": [
+        1,
+        2
+      ],
+      "independently_evaluated_permutations": 3272832,
+      "optimizer_evaluated_permutations": 9818496,
+      "tie_sensitive_rows": 46,
+      "strict_joint_headroom_rows": 0,
+      "tie_aware_headroom_min": 1.0,
+      "tie_aware_headroom_max": 1.0,
+      "explicit_global_tensor_controls_passed": true,
+      "global_reduction": true,
+      "actual_qaoa_unfolding_equivalence": false
+    },
+    "development_representation": {
+      "cases": 48,
+      "semantic_audits_passed": true,
+      "optimizer": {
+        "backend": "shape-greedy",
+        "performs_contraction": false,
+        "seed": 260921,
+        "shape_only": true,
+        "trials": 6
+      },
+      "support_mpo_flop_wins": 48,
+      "local_factor_flop_wins": 0,
+      "local_over_support_mpo_flop_ratio": {
+        "count": 48,
+        "geometric_mean": 14.183753804974781,
+        "maximum": 295.00594146366666,
+        "median": 12.104075749730466,
+        "minimum": 4.455930984902947
+      },
+      "local_over_support_mpo_peak_ratio": {
+        "count": 48,
+        "geometric_mean": 14.28570237081282,
+        "maximum": 256.0,
+        "median": 16.0,
+        "minimum": 2.6666666666666665
+      },
+      "limitations": [
+        "The path optimizer sees only dense tensor shapes and mode incidences; it does not see coefficients, zeros, Boolean semantics, or algebraic cancellations.",
+        "COPY tensors, diagonal QAOA gates, and diagonal MPO physical legs are costed as dense tensors, so sparse or structure-aware executors can change the ranking.",
+        "The estimate is scalar arithmetic plus peak element count, not GPU/CPU wall time; kernel fusion, slicing, parallelism, memory traffic, and compilation are absent.",
+        "No numerical contraction is executed and no probability or amplitude is computed.",
+        "The support MPO is allowed to start from an explicitly enumerated exact support; support-enumeration and TT-compilation costs are excluded, while the local factor encoding does not require the support list.",
+        "Shape-greedy is a reproducible heuristic, not a certificate of the globally optimal contraction path.",
+        "Only small n=5..8 development instances are covered; ratios must not be extrapolated as asymptotic separations."
+      ]
+    },
+    "real_path_sentinel": {
+      "case": "es60fst02",
+      "qubits": 55,
+      "rows": 12,
+      "path_search_only": true,
+      "optimizer": {
+        "samples": 8,
+        "seed": 260902
+      },
+      "paired_comparisons": [
+        {
+          "ordering": "spectral",
+          "depth": 1,
+          "minimal_mpo_opt_cost": 9324676.0,
+          "local_mis_opt_cost": 27221967306.0,
+          "local_over_mpo_opt_cost": 2919.3472573202544,
+          "winner": "minimal_mpo"
+        },
+        {
+          "ordering": "spectral",
+          "depth": 2,
+          "minimal_mpo_opt_cost": 13267652508.0,
+          "local_mis_opt_cost": 76297448126399.0,
+          "local_over_mpo_opt_cost": 5750.636601342544,
+          "winner": "minimal_mpo"
+        },
+        {
+          "ordering": "spectral",
+          "depth": 3,
+          "minimal_mpo_opt_cost": 3420056659230719.0,
+          "local_mis_opt_cost": 6.129962446419395e+17,
+          "local_over_mpo_opt_cost": 179.23569862138544,
+          "winner": "minimal_mpo"
+        },
+        {
+          "ordering": "sorted",
+          "depth": 1,
+          "minimal_mpo_opt_cost": 4654614647353343.0,
+          "local_mis_opt_cost": 21171956919167.0,
+          "local_over_mpo_opt_cost": 0.004548595001565934,
+          "winner": "local_mis"
+        },
+        {
+          "ordering": "sorted",
+          "depth": 2,
+          "minimal_mpo_opt_cost": 2.795861107174728e+21,
+          "local_mis_opt_cost": 2.805658455150428e+18,
+          "local_over_mpo_opt_cost": 0.0010035042327212029,
+          "winner": "local_mis"
+        },
+        {
+          "ordering": "sorted",
+          "depth": 3,
+          "minimal_mpo_opt_cost": 1.8180608866384252e+26,
+          "local_mis_opt_cost": 2.576955914196839e+24,
+          "local_over_mpo_opt_cost": 0.01417420028743703,
+          "winner": "local_mis"
+        }
+      ],
+      "best_tested_order_by_depth": [
+        {
+          "depth": 1,
+          "best_mpo_ordering": "spectral",
+          "best_local_ordering": "spectral",
+          "best_local_over_best_mpo_opt_cost": 2919.3472573202544
+        },
+        {
+          "depth": 2,
+          "best_mpo_ordering": "spectral",
+          "best_local_ordering": "spectral",
+          "best_local_over_best_mpo_opt_cost": 5750.636601342544
+        },
+        {
+          "depth": 3,
+          "best_mpo_ordering": "spectral",
+          "best_local_ordering": "spectral",
+          "best_local_over_best_mpo_opt_cost": 179.23569862138544
+        }
+      ],
+      "confirmatory_status": "exploratory sentinel; excluded from locked counts"
+    }
+  },
+  "scope_limits": {
+    "actual_qaoa_circuit_width_theorem_established": false,
+    "broader_algebraic_pair_dependent_algorithm_killed": false,
+    "locked_holdout_opened": false,
+    "qpu_jobs_submitted": 0,
+    "hardware_claim": false
+  },
+  "next_admissible_hypothesis": "a pair-dependent algebraic mechanism using actual circuit amplitudes or cancellations, with an infinite separation from TT/BDD, augmented-TN, WMC/DD, and selected-amplitude baselines"
+}

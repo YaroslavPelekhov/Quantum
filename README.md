@@ -1,15 +1,26 @@
 # Quantum x Evolutionary Computing Research Artifact
 
 Latest exact-event continuation: the
-[55-qubit sparse-event contraction study](results/exact_event_contraction/REPORT.md)
+[event-conditioned-width Phase-0 report](results/event_conditioned_width_phase0/FALSIFICATION_REPORT.md)
+closes the natural product proxy
+`max_cut rank(E_cut) * 2^(2 p crossing_edges)` as a new width under K6.  A
+single globally defined site-grouped tensor realizes that score exactly as an
+ordinary linear TT-rank ordering objective.  Tie-aware exhaustive search over
+48 small instances also leaves no joint-order headroom, and a 48-case dense
+shape-only representation screen favors the best-order support MPO in every
+case.  The full registered Phase 0 remains `INCOMPLETE_NO_PROMOTION`: the
+reduction is for an artificial equality tensor, not the actual QAOA tensor, so
+it does not kill every algebraic event-conditioned algorithm.  No QPU task was
+submitted.  The only admissible continuation is now a non-factorizing,
+cancellation-aware actual circuit/event algorithm with a proved separation;
+another incidence-product score or relabeled co-ordering heuristic is closed.
+
+The preceding [55-qubit sparse-event contraction study](results/exact_event_contraction/REPORT.md)
 compiles all 384 decoded BKS solutions into a rank-5 spectral-order MPO and
 computes their untruncated deterministic QAOA probability through depth 2,
-with two cuTensorNet API paths agreeing within `8.49e-27`.  Depth 3 already
-exceeds the frozen workstation resource guard; depths 8 and 15 fail path
-search.  The manuscript's ideal depth-15 winner is therefore still unresolved.
-Prior-art screening also closes generic finite-set-to-MPO compilation as an
-A-star novelty claim.  The only live hypothesis is joint circuit/event
-co-ordering with a new general guarantee and end-to-end baselines.
+with two cuTensorNet API paths agreeing within `8.49e-27`.  Depth 3 exceeds the
+frozen workstation resource guard; depths 8 and 15 fail path search.  The
+manuscript's ideal depth-15 winner is therefore still unresolved.
 
 Latest research-cycle verdict: the
 [Aquila gauge-quotiented resource screen](results/aquila_gauge_resource_phase0/FINAL_REPORT.md)

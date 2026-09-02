@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-02T14:13:55.056233+00:00",
+  "root": ".",
+  "exclusions": [
+    "MANIFEST.json itself",
+    "__pycache__",
+    "*.pyc",
+    "*.tmp"
+  ],
+  "file_count": 31,
+  "files": {
+    "README.md": {
+      "sha256": "88db6dbc57ebd44c3eef105670a52daf574f5ff9c39b194f17ea23fd73a4a251",
+      "bytes": 26520
+    },
+    "experiments/event_conditioned_width_phase0/PRIOR_ART_BOUNDARY.md": {
+      "sha256": "614369a08fb44d2c6e3aaac12e60aa84c309f119dfd11dfdca4e5d768e8f70f8",
+      "bytes": 7428
+    },
+    "experiments/event_conditioned_width_phase0/PROTOCOL.md": {
+      "sha256": "a921c8690841232874cf81f8fe234e3f6a2dc9135948eead1ec85529b21e5c19",
+      "bytes": 30520
+    },
+    "experiments/event_conditioned_width_phase0/README.md": {
+      "sha256": "76b8f8f167d9b135074b655d706d068c310b87cb083b0e475ad3c1c9cb2d9e8f",
+      "bytes": 3864
+    },
+    "experiments/event_conditioned_width_phase0/finalize_phase0.py": {
+      "sha256": "af92fc637be8708ff5c44fa5d23b9960faa43c859eb76361b8da6111d69f00e8",
+      "bytes": 12879
+    },
+    "experiments/event_conditioned_width_phase0/representation_screen.py": {
+      "sha256": "4a383d1153605cc57ed443d1ddad28cbb76116f303014f0535dfd6d3f9147f23",
+      "bytes": 32786
+    },
+    "experiments/event_conditioned_width_phase0/run_real_qoblib_paths.py": {
+      "sha256": "a99866e6ddb853046de98cf0da85550ae83b912fb72a0db6a5d99370c0f247f9",
+      "bytes": 11570
+    },
+    "experiments/event_conditioned_width_phase0/run_representation_sweep.py": {
+      "sha256": "59a42ada5d76d2a817c88d41b1ba71d0fdd920469a04737fc23bc55f884023e2",
+      "bytes": 15738
+    },
+    "experiments/event_conditioned_width_phase0/run_structural_falsification.py": {
+      "sha256": "c33398d1ef41e94135a00cec485efc2b902760e85671e57995064a321251f8cc",
+      "bytes": 22782
+    },
+    "experiments/event_conditioned_width_phase0/structural_core.py": {
+      "sha256": "e371ad3be48ecc44c5dd31d97269ab1c5f6d8b190463955f28f61079a0c5fb9c",
+      "bytes": 24878
+    },
+    "experiments/event_conditioned_width_phase0/test_finalize_phase0.py": {
+      "sha256": "041215c5e93b3834679934daa5a8529751df28d53472a6ec7f35b876ab0fa902",
+      "bytes": 2507
+    },
+    "experiments/event_conditioned_width_phase0/test_real_qoblib_paths.py": {
+      "sha256": "2b5602da3578737073be5a401dbf8d231e4998ccb9e74d5a312d4d7bcd71b634",
+      "bytes": 1458
+    },
+    "experiments/event_conditioned_width_phase0/test_representation_screen.py": {
+      "sha256": "120171698476e86362c52a8f406362c756facd84b915169d03254110e3abd703",
+      "bytes": 4000
+    },
+    "experiments/event_conditioned_width_phase0/test_representation_sweep.py": {
+      "sha256": "3a4973e397137f6ead6ce4ace6cf2850daf2e7275657673f48324bae8c41feb6",
+      "bytes": 2425
+    },
+    "experiments/event_conditioned_width_phase0/test_structural_core.py": {
+      "sha256": "7a454d00c905f9eacc315093253eaf8bcc3607479aa389d879ada2063369fcbe",
+      "bytes": 8496
+    },
+    "experiments/event_conditioned_width_phase0/test_structural_falsification.py": {
+      "sha256": "cae65358b1ddea31d1cada5e66bdb0ba12b7e615994cf53272e18f39df7b8d10",
+      "bytes": 6761
+    },
+    "experiments/evoq_mis_full_qoblib/results/cutensornet/circuits/es60fst02_published_lr.qpy": {
+      "sha256": "d82623caa0144f1eb4554136896421bd3600abc12987963e1b38ff7e136b01c0",
+      "bytes": 195040
+    },
+    "experiments/evoq_mis_full_qoblib/results/cutensornet/circuits/es60fst02_published_lr_spectral.qpy": {
+      "sha256": "d8c0272b51de1a4b854e5792d554e75889cef4ea457cc0b7ae603b52d83142cf",
+      "bytes": 195040
+    },
+    "experiments/evoq_mis_full_qoblib/results/cutensornet/export_manifest.json": {
+      "sha256": "1698a58876504947b4292db29634c98388cab046447bc8c457048d55ff582c6c",
+      "bytes": 13652
+    },
+    "experiments/exact_event_contraction/run_event_projector.py": {
+      "sha256": "2d9113e0eee673560f740149f433b4403b08aaeca01ac46f39b3b866918a5a69",
+      "bytes": 34857
+    },
+    "experiments/exact_event_contraction/run_exact_event_contraction.py": {
+      "sha256": "edfd4ac4be2815370f4d9fcdcb0f85ff7a937336a3b31133e8a0127383c6d94d",
+      "bytes": 15546
+    },
+    "results/event_conditioned_width_phase0/FALSIFICATION_REPORT.md": {
+      "sha256": "9356047d0bc2c1b7990d0741cfb063b0287ac1bf5223b4fca52a3bec32fccdd9",
+      "bytes": 8976
+    },
+    "results/event_conditioned_width_phase0/PHASE0_DECISION.json": {
+      "sha256": "d760fe515a496aac744593d7755ddff235158eac31ecf73722c9758c092a7a9d",
+      "bytes": 8371
+    },
+    "results/event_conditioned_width_phase0/development_representation_sweep.json": {
+      "sha256": "f90634a91cc8f7d8b37e37a84f155989d3a8f06afd42ef88c13f5d9dab91ab19",
+      "bytes": 2924482
+    },
+    "results/event_conditioned_width_phase0/natural_proxy_falsification.json": {
+      "sha256": "f10a9a8e716d7f8105c669dcc21259ce55dff588ebbf734c991a695e6f11874b",
+      "bytes": 983022
+    },
+    "results/event_conditioned_width_phase0/real_qoblib_representation_paths.json": {
+      "sha256": "691a25dbfc16020bcc39e5cc83c3bbfbc5317effaeb88b3891e959e84fa1a029",
+      "bytes": 19446
+    },
+    "results/exact_event_contraction/event_support.json": {
+      "sha256": "e3bf83ab3adda20e88119bd66afda214ae6d1001a74070b7679224f770c8c12b",
+      "bytes": 69929
+    },
+    "results/exact_event_contraction/event_tt_es60fst02_sorted.npz": {
+      "sha256": "2f559f28493eb85eb646e102e772b2e03418e1859029594d5e2b6321c1974b88",
+      "bytes": 28082
+    },
+    "results/exact_event_contraction/event_tt_es60fst02_spectral.npz": {
+      "sha256": "ffae1bffe8bfa8bc0da28bae881053aa84e0dc547d028c99647f337246b624e8",
+      "bytes": 11232
+    },
+    "results/exact_event_contraction/mpo_audit_es60fst02_sorted.json": {
+      "sha256": "c546b226076739fb009087e72789404a223197d9385f5b03b34fa53991b39ad9",
+      "bytes": 1478
+    },
+    "results/exact_event_contraction/mpo_audit_es60fst02_spectral.json": {
+      "sha256": "fbceec5235861fb04a57805caa8f6c0459bc55941fb4f366a890db56a9bd1a60",
+      "bytes": 1401
+    }
+  }
+}
