@@ -1,0 +1,73 @@
+{
+  "name": "conformal_metamorphic_rank_transfer_phase0",
+  "freeze_date": "2026-09-02",
+  "status_before_run": "FROZEN_NOT_RUN",
+  "seed": 20260902,
+  "alpha": 0.1,
+  "epsilon_scale": 0.0001,
+  "graphs": {
+    "count": 36,
+    "sizes": [8, 9, 10, 11, 12, 13],
+    "per_size": 6,
+    "maximum_degree": 3,
+    "calibration_count": 24,
+    "test_count": 12,
+    "split_hash_prefix": "cmrt-v1:"
+  },
+  "depths": [2, 3, 4],
+  "event": "feasible independent set with cardinality at least alpha(G)-1",
+  "schedule_library": [
+    {"id": "linear_070", "kind": "power", "beta_scale": 0.7, "gamma_scale": 0.7, "beta_power": 1.0, "gamma_power": 1.0},
+    {"id": "early_mix", "kind": "power", "beta_scale": 0.82, "gamma_scale": 0.62, "beta_power": 0.72, "gamma_power": 1.35},
+    {"id": "late_cost", "kind": "power", "beta_scale": 0.58, "gamma_scale": 0.86, "beta_power": 1.45, "gamma_power": 0.70},
+    {"id": "balanced_curve", "kind": "power", "beta_scale": 0.76, "gamma_scale": 0.76, "beta_power": 1.25, "gamma_power": 0.82}
+  ],
+  "schedule_pairs_in_order": [
+    ["linear_070", "early_mix"],
+    ["linear_070", "late_cost"],
+    ["linear_070", "balanced_curve"],
+    ["early_mix", "late_cost"],
+    ["early_mix", "balanced_curve"],
+    ["late_cost", "balanced_curve"]
+  ],
+  "schedule_selection": {
+    "probability_min": 0.05,
+    "probability_max": 0.8,
+    "absolute_gap_min": 0.02,
+    "absolute_gap_max": 0.2,
+    "fallback_target_gap": 0.08,
+    "maximum_fallback_fraction": 0.1
+  },
+  "metamorphic_variants": {
+    "bond_caps": [2, 4, 8],
+    "orders": ["natural", "degree_bfs"],
+    "truncate_after": ["cost_layer", "mixer_layer"]
+  },
+  "primary_noise_snapshots": [
+    {"id": "primary_0", "beta_scale": 1.01, "gamma_scale": 0.99, "edge_phase_std": 0.010, "readout_flip": 0.010, "depolarizing_mix": 0.015, "seed": 601},
+    {"id": "primary_1", "beta_scale": 0.98, "gamma_scale": 1.02, "edge_phase_std": 0.020, "readout_flip": 0.020, "depolarizing_mix": 0.025, "seed": 607},
+    {"id": "primary_2", "beta_scale": 1.03, "gamma_scale": 0.97, "edge_phase_std": 0.030, "readout_flip": 0.015, "depolarizing_mix": 0.035, "seed": 613}
+  ],
+  "shift_noise_snapshot": {"id": "shift_0", "beta_scale": 0.94, "gamma_scale": 1.06, "edge_phase_std": 0.060, "readout_flip": 0.035, "depolarizing_mix": 0.060, "seed": 619},
+  "nominal_noise_snapshot": {"id": "nominal", "beta_scale": 1.0, "gamma_scale": 1.0, "edge_phase_std": 0.020, "readout_flip": 0.015, "depolarizing_mix": 0.025, "seed": 631},
+  "shot_audit": {
+    "shots_per_circuit": 4096,
+    "familywise_alpha": 0.1,
+    "primary_estimand_uses_sampling": false
+  },
+  "kill_gates": {
+    "minimum_spread_residual_spearman": 0.3,
+    "minimum_covered_test_blocks": 11,
+    "test_blocks": 12,
+    "minimum_selective_accuracy": 0.9,
+    "minimum_accepted_fraction": 0.5,
+    "minimum_relative_error_reduction": 0.25,
+    "minimum_shift_accuracy": 0.8,
+    "minimum_shift_accepted_fraction": 0.25,
+    "maximum_fallback_fraction": 0.1
+  },
+  "possible_terminal_labels": [
+    "KILL_CMRT_AS_ASTAR_SOURCE",
+    "AUTHORIZE_HELDOUT_QPU_PHASE"
+  ]
+}
