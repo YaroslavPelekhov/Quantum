@@ -1,0 +1,12 @@
+{
+  "instances": [
+    {
+      "name": "P4_5p5um",
+      "coordinates_um": [[0.0, 0.0], [5.5, 0.0], [11.0, 0.0], [16.5, 0.0]],
+      "edges_at_8p4um_blockade": [[0, 1], [1, 2], [2, 3]],
+      "mask": [0.0, 0.3333333333333333, 0.6666666666666666, 1.0],
+      "reflected_targets_little_endian": [5, 10]
+    }
+  ]
+}
+

@@ -1,0 +1,63 @@
+{
+  "protocol_version": "1.0-frozen",
+  "frozen_before_optimization": true,
+  "primary_instance": {
+    "name": "P4_5p5um",
+    "x_um": [0.0, 5.5, 11.0, 16.5],
+    "y_um": [0.0, 0.0, 0.0, 0.0],
+    "mask": [0.0, 0.3333333333333333, 0.6666666666666666, 1.0],
+    "targets_little_endian": ["0101", "1010"]
+  },
+  "hamiltonian": {
+    "c6_rad_per_us_um6": 5420000.0,
+    "full_c6_is_hardware_facing_truth": true,
+    "hard_blockade_is_surrogate_only": true
+  },
+  "provisional_hardware_constraints": {
+    "duration_us": 4.0,
+    "knot_count": 17,
+    "time_resolution_us": 0.001,
+    "time_delta_min_us": 0.05,
+    "rabi_max_rad_per_us": 15.8,
+    "rabi_slew_max_rad_per_us2": 250.0,
+    "global_detuning_abs_max_rad_per_us": 125.0,
+    "global_detuning_slew_max_rad_per_us2": 2500.0,
+    "local_detuning_min_rad_per_us": -125.0,
+    "local_detuning_max_rad_per_us": 0.0,
+    "local_detuning_slew_max_rad_per_us2": 1256.0,
+    "mask_coefficient_range": [0.0, 1.0]
+  },
+  "optimizer": {
+    "method": "torch_adam_then_lbfgs",
+    "seeds": [4100, 4101, 4102, 4103, 4104, 4105],
+    "adam_steps": 1200,
+    "adam_learning_rate": 0.045,
+    "lbfgs_steps": 80,
+    "propagation_substeps_per_interval": 2,
+    "optimize_models": ["hard_blockade", "full_c6"],
+    "ablations": ["global_only", "uniform_mask", "gradient_mask"]
+  },
+  "robustness": {
+    "draws": 128,
+    "seed": 5100,
+    "coordinate_jitter_sigma_um": 0.03,
+    "rabi_fraction_sigma": 0.03,
+    "global_detuning_fraction_sigma": 0.03,
+    "local_detuning_fraction_sigma": 0.03,
+    "mask_additive_sigma": 0.01,
+    "dephasing_rates_per_us": [0.0, 0.1, 0.25, 0.5]
+  },
+  "pass_gates": {
+    "both_full_c6_target_fidelity_min": 0.95,
+    "global_only_exact_ceiling": 0.5,
+    "hard_blockade_to_full_c6_drop_max": 0.05,
+    "quantization_drop_max": 0.02,
+    "robustness_fifth_percentile_min": 0.8,
+    "lie_rank_must_be_full_and_tolerance_stable": true,
+    "live_device_snapshot_and_sdk_validation_required_before_qpu": true,
+    "braket_direct_local_detuning_access_required_before_qpu": true,
+    "adversarial_prior_art_clearance_required": true
+  },
+  "qpu_policy": "No QPU task may be submitted in Phase 0. Passing every gate only creates a hardware-candidate packet."
+}
+
