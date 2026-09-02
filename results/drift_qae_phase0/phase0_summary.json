@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "verdict": "KILL_BROAD_DRIFT_ASTAR",
+  "hardware_spending_authorized": false,
+  "protocol_sha256": "25dc2be0fabff32827b5c0b0532ca0ec83b77fba2defc5491d6e2cd2603ba1b2",
+  "structural_criteria": {
+    "coherent_generator_offset_exactly_nonidentifiable": true,
+    "unanchored_visibility_exact_confounding_found": true,
+    "per_round_unanchored_efficient_information_zero": true,
+    "matched_anchors_restore_regular_information": true,
+    "fixed_depth_noise_has_sql_information_ceiling": true,
+    "gate_anchor_empirical_tail_not_superclassical": true
+  },
+  "model_verdicts": {
+    "gate_accumulating": "KILLED_BY_FIXED_DEPTH_NOISE",
+    "post_circuit_readout": "KILLED_BY_ESTIMATOR_OR_IDENTIFIABILITY_GATE"
+  },
+  "coherent_offset_no_go": {
+    "theta_first": 0.203,
+    "theta_second": 0.251,
+    "offset_first": 0.029,
+    "offset_second": -0.01899999999999999,
+    "theta_separation": 0.04799999999999999,
+    "offset_total_variation_first": 0.0,
+    "offset_total_variation_second": 0.0,
+    "maximum_probability_gap": 0.0,
+    "exactly_indistinguishable": true,
+    "minimax_absolute_error_lower_bound": 0.023999999999999994,
+    "interpretation": "A trusted reference is necessary when calibration drift shares theta's generator."
+  },
+  "visibility_confounding": {
+    "tested_rows": 35,
+    "witnesses_found": 35,
+    "exact_witnesses": 35,
+    "largest_exact_separation": 0.0071428571428571435
+  },
+  "fisher_audit": {
+    "maximum_unanchored_information_fraction": 3.457870160579978e-16,
+    "minimum_anchor_efficiency_fraction": 0.5768390197353919
+  },
+  "empirical_scaling": {
+    "readout_anchor_median_tail_rmse_slope": -0.020081807841818303,
+    "readout_direct_median_tail_rmse_slope": -0.505125934662913,
+    "gate_anchor_median_tail_rmse_slope": 0.07821139171935285,
+    "readout_anchor_maximum_branch_failure_rate": 0.3984375,
+    "gate_anchor_maximum_branch_failure_rate": 0.25390625
+  },
+  "analytic_depth_ceiling": {
+    "fixed_rate": 0.02,
+    "per_physical_depth_fisher_upper_bound": 36.78794411714423,
+    "total_fisher_upper_bound": "I_Q <= 2 Q / (e gamma)",
+    "local_rmse_lower_bound": "sqrt(e gamma / (2 Q))",
+    "fixed_gamma_scaling_exponent": -0.5,
+    "derivation": "I_k <= 4 k^2 exp(-2 gamma k); divide by cost k and maximize k exp(-2 gamma k) at k=1/(2 gamma)."
+  },
+  "interpretation": "The broad drift claim decomposes into an unidentifiable model, a calibrated post-circuit nuisance model, and a known depth-attenuation SQL regime. No new drift-specific minimax phase transition survives this frozen screen."
+}

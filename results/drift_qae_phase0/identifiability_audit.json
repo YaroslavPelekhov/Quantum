@@ -1,0 +1,1032 @@
+{
+  "coherent_offset": {
+    "theta_first": 0.203,
+    "theta_second": 0.251,
+    "offset_first": 0.029,
+    "offset_second": -0.01899999999999999,
+    "theta_separation": 0.04799999999999999,
+    "offset_total_variation_first": 0.0,
+    "offset_total_variation_second": 0.0,
+    "maximum_probability_gap": 0.0,
+    "exactly_indistinguishable": true,
+    "minimax_absolute_error_lower_bound": 0.023999999999999994,
+    "interpretation": "A trusted reference is necessary when calibration drift shares theta's generator."
+  },
+  "visibility_confounding": [
+    {
+      "levels": 3,
+      "maximum_depth": 7,
+      "separation_scale": 0.002,
+      "theta_separation": 0.00028571428571428574,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.4197142857142857,
+      "theta_second": 0.42,
+      "visibility_first": [
+        0.5509444330210121,
+        0.5509444330210121,
+        0.5509444330210121
+      ],
+      "visibility_second": [
+        0.5512955724413532,
+        0.5502670802947547,
+        0.55
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.0012955724413531433,
+      "maximum_probability_gap": 0.0
+    },
+    {
+      "levels": 3,
+      "maximum_depth": 7,
+      "separation_scale": 0.005,
+      "theta_separation": 0.0007142857142857143,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.41928571428571426,
+      "theta_second": 0.42,
+      "visibility_first": [
+        0.5523837892517713,
+        0.5523837892517713,
+        0.5523837892517713
+      ],
+      "visibility_second": [
+        0.5532635927585094,
+        0.5506829440538366,
+        0.55
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.0032635927585094038,
+      "maximum_probability_gap": 0.0
+    },
+    {
+      "levels": 3,
+      "maximum_depth": 7,
+      "separation_scale": 0.01,
+      "theta_separation": 0.0014285714285714286,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.41857142857142854,
+      "theta_second": 0.42,
+      "visibility_first": [
+        0.5548440573776604,
+        0.5548440573776604,
+        0.5548440573776604
+      ],
+      "visibility_second": [
+        0.5566103673856888,
+        0.5514170565375967,
+        0.55
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.006610367385688765,
+      "maximum_probability_gap": 0.0
+    },
+    {
+      "levels": 3,
+      "maximum_depth": 7,
+      "separation_scale": 0.02,
+      "theta_separation": 0.002857142857142857,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.41714285714285715,
+      "theta_second": 0.42,
+      "visibility_first": [
+        0.5600001827418266,
+        0.5600001827418266,
+        0.5600001827418266
+      ],
+      "visibility_second": [
+        0.5635610451582885,
+        0.5530415988230954,
+        0.55
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.013561045158288487,
+      "maximum_probability_gap": 1.1102230246251565e-16
+    },
+    {
+      "levels": 3,
+      "maximum_depth": 7,
+      "separation_scale": 0.05,
+      "theta_separation": 0.0071428571428571435,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.41285714285714287,
+      "theta_second": 0.42,
+      "visibility_first": [
+        0.577476370139552,
+        0.577476370139552,
+        0.577476370139552
+      ],
+      "visibility_second": [
+        0.5866207222096297,
+        0.5592234437691422,
+        0.55
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.03662072220962964,
+      "maximum_probability_gap": 1.1102230246251565e-16
+    },
+    {
+      "levels": 4,
+      "maximum_depth": 15,
+      "separation_scale": 0.002,
+      "theta_separation": 0.00013333333333333334,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.4095573777777778,
+      "theta_second": 0.4096907111111111,
+      "visibility_first": [
+        0.5506276234752432,
+        0.5506276234752432,
+        0.5506276234752432,
+        0.5506276234752432
+      ],
+      "visibility_second": [
+        0.550784772921887,
+        0.5502687108837958,
+        0.55,
+        0.5500002406606751
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.0007850135825619997,
+      "maximum_probability_gap": 1.1102230246251565e-16
+    },
+    {
+      "levels": 4,
+      "maximum_depth": 15,
+      "separation_scale": 0.005,
+      "theta_separation": 0.0003333333333333333,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.40944836111111105,
+      "theta_second": 0.4097816944444444,
+      "visibility_first": [
+        0.5515714236883813,
+        0.5515714236883813,
+        0.5515714236883813,
+        0.5515714236883813
+      ],
+      "visibility_second": [
+        0.5519650407426577,
+        0.5506729439996401,
+        0.5500005706929749,
+        0.55
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.0019650407426576866,
+      "maximum_probability_gap": 5.551115123125783e-17
+    },
+    {
+      "levels": 4,
+      "maximum_depth": 15,
+      "separation_scale": 0.01,
+      "theta_separation": 0.0006666666666666666,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.40929472222222224,
+      "theta_second": 0.4099613888888889,
+      "visibility_first": [
+        0.5531449196363803,
+        0.5531449196363803,
+        0.5531449196363803,
+        0.5531449196363803
+      ],
+      "visibility_second": [
+        0.5539347226942198,
+        0.5513445856504843,
+        0.55,
+        0.5500021601814349
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.003936882875654635,
+      "maximum_probability_gap": 1.1102230246251565e-16
+    },
+    {
+      "levels": 4,
+      "maximum_depth": 15,
+      "separation_scale": 0.02,
+      "theta_separation": 0.0013333333333333333,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.40895822222222217,
+      "theta_second": 0.4102915555555555,
+      "visibility_first": [
+        0.5563086440016686,
+        0.5563086440016686,
+        0.5563086440016686,
+        0.5563086440016686
+      ],
+      "visibility_second": [
+        0.5578984001777764,
+        0.5526931112304271,
+        0.55,
+        0.5500021951958951
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.007900595373671382,
+      "maximum_probability_gap": 5.551115123125783e-17
+    },
+    {
+      "levels": 4,
+      "maximum_depth": 15,
+      "separation_scale": 0.05,
+      "theta_separation": 0.0033333333333333335,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.4079694444444444,
+      "theta_second": 0.41130277777777774,
+      "visibility_first": [
+        0.5659052269443755,
+        0.5659052269443755,
+        0.5659052269443755,
+        0.5659052269443755
+      ],
+      "visibility_second": [
+        0.569957056795685,
+        0.5567560658595136,
+        0.55,
+        0.550011393828973
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.019968450624657907,
+      "maximum_probability_gap": 1.1102230246251565e-16
+    },
+    {
+      "levels": 5,
+      "maximum_depth": 31,
+      "separation_scale": 0.002,
+      "theta_separation": 6.451612903225807e-05,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.4007574569892473,
+      "theta_second": 0.40082197311827955,
+      "visibility_first": [
+        0.5506423606296189,
+        0.5506423606296189,
+        0.5506423606296189,
+        0.5506423606296189,
+        0.5506423606296189
+      ],
+      "visibility_second": [
+        0.5507157535521665,
+        0.5504489938304075,
+        0.5502467450405101,
+        0.55,
+        0.5500003545285479
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.0007161080807143172,
+      "maximum_probability_gap": 0.0
+    },
+    {
+      "levels": 5,
+      "maximum_depth": 31,
+      "separation_scale": 0.005,
+      "theta_separation": 0.00016129032258064516,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.4007227822580645,
+      "theta_second": 0.4008840725806452,
+      "visibility_first": [
+        0.551605815182569,
+        0.551605815182569,
+        0.551605815182569,
+        0.551605815182569,
+        0.551605815182569
+      ],
+      "visibility_second": [
+        0.5517896469932262,
+        0.5511217598303274,
+        0.5506159686848577,
+        0.55,
+        0.5500044576017525
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.0017941045949786405,
+      "maximum_probability_gap": 0.0
+    },
+    {
+      "levels": 5,
+      "maximum_depth": 31,
+      "separation_scale": 0.01,
+      "theta_separation": 0.0003225806451612903,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.40062717741935483,
+      "theta_second": 0.4009497580645161,
+      "visibility_first": [
+        0.553219620422117,
+        0.553219620422117,
+        0.553219620422117,
+        0.553219620422117,
+        0.553219620422117
+      ],
+      "visibility_second": [
+        0.5535883990755436,
+        0.5522489280598328,
+        0.5512350614839944,
+        0.55,
+        0.5500010425736023
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.0035894416491457637,
+      "maximum_probability_gap": 1.1102230246251565e-16
+    },
+    {
+      "levels": 5,
+      "maximum_depth": 31,
+      "separation_scale": 0.02,
+      "theta_separation": 0.0006451612903225806,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.40046408602150535,
+      "theta_second": 0.40110924731182795,
+      "visibility_first": [
+        0.5564593807756252,
+        0.5564593807756252,
+        0.5564593807756252,
+        0.5564593807756252,
+        0.5564593807756252
+      ],
+      "visibility_second": [
+        0.5572014994357267,
+        0.5545082944845124,
+        0.5524739412837545,
+        0.550000288227536,
+        0.55
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.007201499435726677,
+      "maximum_probability_gap": 1.1102230246251565e-16
+    },
+    {
+      "levels": 5,
+      "maximum_depth": 31,
+      "separation_scale": 0.05,
+      "theta_separation": 0.0016129032258064516,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.40000139784946237,
+      "theta_second": 0.4016143010752688,
+      "visibility_first": [
+        0.5662701746619733,
+        0.5662701746619733,
+        0.5662701746619733,
+        0.5662701746619733,
+        0.5662701746619733
+      ],
+      "visibility_second": [
+        0.5681602337837917,
+        0.5613207063604392,
+        0.5561908091259747,
+        0.55,
+        0.5500460335877597
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.018206267371551288,
+      "maximum_probability_gap": 1.1102230246251565e-16
+    },
+    {
+      "levels": 6,
+      "maximum_depth": 63,
+      "separation_scale": 0.002,
+      "theta_separation": 3.1746031746031745e-05,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.39665209788359784,
+      "theta_second": 0.3966838439153439,
+      "visibility_first": [
+        0.5506482985399581,
+        0.5506482985399581,
+        0.5506482985399581,
+        0.5506482985399581,
+        0.5506482985399581,
+        0.5506482985399581
+      ],
+      "visibility_second": [
+        0.5506838209733008,
+        0.5505483022838422,
+        0.5504293998576694,
+        0.5502360957613492,
+        0.55,
+        0.5500026094852407
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.0006864304585414427,
+      "maximum_probability_gap": 1.1102230246251565e-16
+    },
+    {
+      "levels": 6,
+      "maximum_depth": 63,
+      "separation_scale": 0.005,
+      "theta_separation": 7.936507936507937e-05,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.39663607142857144,
+      "theta_second": 0.3967154365079365,
+      "visibility_first": [
+        0.5516204046913451,
+        0.5516204046913451,
+        0.5516204046913451,
+        0.5516204046913451,
+        0.5516204046913451,
+        0.5516204046913451
+      ],
+      "visibility_second": [
+        0.5517093746266046,
+        0.5513700302276444,
+        0.5510724753405045,
+        0.5505891525979296,
+        0.55,
+        0.550010598102777
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.0017199727293815137,
+      "maximum_probability_gap": 0.0
+    },
+    {
+      "levels": 6,
+      "maximum_depth": 63,
+      "separation_scale": 0.01,
+      "theta_separation": 0.00015873015873015873,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.39659046296296296,
+      "theta_second": 0.3967491931216931,
+      "visibility_first": [
+        0.5532483262166394,
+        0.5532483262166394,
+        0.5532483262166394,
+        0.5532483262166394,
+        0.5532483262166394,
+        0.5532483262166394
+      ],
+      "visibility_second": [
+        0.553426801379312,
+        0.552746177689528,
+        0.5521495954724186,
+        0.5511809091963726,
+        0.55,
+        0.5500149184933522
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.003441719872664062,
+      "maximum_probability_gap": 0.0
+    },
+    {
+      "levels": 6,
+      "maximum_depth": 63,
+      "separation_scale": 0.02,
+      "theta_separation": 0.00031746031746031746,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.3964992063492063,
+      "theta_second": 0.39681666666666665,
+      "visibility_first": [
+        0.5565270256952088,
+        0.5565270256952088,
+        0.5565270256952088,
+        0.5565270256952088,
+        0.5565270256952088,
+        0.5565270256952088
+      ],
+      "visibility_second": [
+        0.5568861322503177,
+        0.5555170907990943,
+        0.5543179930365459,
+        0.5523723833072762,
+        0.55,
+        0.5500043774407528
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.006890509691070412,
+      "maximum_probability_gap": 1.1102230246251565e-16
+    },
+    {
+      "levels": 6,
+      "maximum_depth": 63,
+      "separation_scale": 0.05,
+      "theta_separation": 0.0007936507936507937,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.39625338624338624,
+      "theta_second": 0.39704703703703703,
+      "visibility_first": [
+        0.5665245387368117,
+        0.5665245387368117,
+        0.5665245387368117,
+        0.5665245387368117,
+        0.5665245387368117,
+        0.5665245387368117
+      ],
+      "visibility_second": [
+        0.5674388470731668,
+        0.5639575966688256,
+        0.5609181730089511,
+        0.5560048340479151,
+        0.5500382963523766,
+        0.55
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.017438847073166786,
+      "maximum_probability_gap": 0.0
+    },
+    {
+      "levels": 7,
+      "maximum_depth": 127,
+      "separation_scale": 0.002,
+      "theta_separation": 1.5748031496062993e-05,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.19737956299212597,
+      "theta_second": 0.19739531102362204,
+      "visibility_first": [
+        0.5502926471806547,
+        0.5502926471806547,
+        0.5502926471806547,
+        0.5502926471806547,
+        0.5502926471806547,
+        0.5502926471806547,
+        0.5502926471806547
+      ],
+      "visibility_second": [
+        0.5502998685858683,
+        0.5504204366613883,
+        0.5502444482584062,
+        0.550194334499278,
+        0.5501096314576517,
+        0.55,
+        0.5500070198934518
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.0005480246303599667,
+      "maximum_probability_gap": 0.0
+    },
+    {
+      "levels": 7,
+      "maximum_depth": 127,
+      "separation_scale": 0.005,
+      "theta_separation": 3.937007874015748e-05,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.19734307742782153,
+      "theta_second": 0.1973824475065617,
+      "visibility_first": [
+        0.550749469365803,
+        0.550749469365803,
+        0.550749469365803,
+        0.550749469365803,
+        0.550749469365803,
+        0.550749469365803,
+        0.550749469365803
+      ],
+      "visibility_second": [
+        0.5507675355320808,
+        0.5510691283747884,
+        0.5506287585435744,
+        0.5505029662647694,
+        0.5502893696363705,
+        0.5500084348627085,
+        0.55
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.0013707212174959293,
+      "maximum_probability_gap": 1.1102230246251565e-16
+    },
+    {
+      "levels": 7,
+      "maximum_depth": 127,
+      "separation_scale": 0.01,
+      "theta_separation": 7.874015748031496e-05,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.19732948818897636,
+      "theta_second": 0.1974082283464567,
+      "visibility_first": [
+        0.5514826067770068,
+        0.5514826067770068,
+        0.5514826067770068,
+        0.5514826067770068,
+        0.5514826067770068,
+        0.5514826067770068,
+        0.5514826067770068
+      ],
+      "visibility_second": [
+        0.5515187890437233,
+        0.5521230287833417,
+        0.5512409502907055,
+        0.5509893267789107,
+        0.5505627004947778,
+        0.5500040525038989,
+        0.55
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.0027272685229601246,
+      "maximum_probability_gap": 0.0
+    },
+    {
+      "levels": 7,
+      "maximum_depth": 127,
+      "separation_scale": 0.02,
+      "theta_separation": 0.00015748031496062991,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.19730230971128607,
+      "theta_second": 0.1974597900262467,
+      "visibility_first": [
+        0.5529430580693248,
+        0.5529430580693248,
+        0.5529430580693248,
+        0.5529430580693248,
+        0.5529430580693248,
+        0.5529430580693248,
+        0.5529430580693248
+      ],
+      "visibility_second": [
+        0.5530156216053702,
+        0.5542283097619849,
+        0.5524588119186978,
+        0.5519554167197319,
+        0.55110444131535,
+        0.55,
+        0.5500430298084914
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.00548402772709089,
+      "maximum_probability_gap": 1.1102230246251565e-16
+    },
+    {
+      "levels": 7,
+      "maximum_depth": 127,
+      "separation_scale": 0.05,
+      "theta_separation": 0.00039370078740157485,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.19719247375328083,
+      "theta_second": 0.19758617454068242,
+      "visibility_first": [
+        0.5573576636438811,
+        0.5573576636438811,
+        0.5573576636438811,
+        0.5573576636438811,
+        0.5573576636438811,
+        0.5573576636438811,
+        0.5573576636438811
+      ],
+      "visibility_second": [
+        0.5575405473553133,
+        0.5606025659522488,
+        0.5561385924507714,
+        0.5548740123308666,
+        0.5527434837589925,
+        0.55,
+        0.550190963537224
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.013855548086408098,
+      "maximum_probability_gap": 0.0
+    },
+    {
+      "levels": 8,
+      "maximum_depth": 255,
+      "separation_scale": 0.002,
+      "theta_separation": 7.84313725490196e-06,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.19687230392156863,
+      "theta_second": 0.19688014705882353,
+      "visibility_first": [
+        0.5502902875012331,
+        0.5502902875012331,
+        0.5502902875012331,
+        0.5502902875012331,
+        0.5502902875012331,
+        0.5502902875012331,
+        0.5502902875012331,
+        0.5502902875012331
+      ],
+      "visibility_second": [
+        0.5502938736636579,
+        0.5503533727208312,
+        0.550265779998178,
+        0.5502390389673955,
+        0.5501895606381727,
+        0.5501062706970565,
+        0.55,
+        0.550015803045208
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.0004286748232124049,
+      "maximum_probability_gap": 0.0
+    },
+    {
+      "levels": 8,
+      "maximum_depth": 255,
+      "separation_scale": 0.005,
+      "theta_separation": 1.9607843137254903e-05,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.19683992810457515,
+      "theta_second": 0.1968595359477124,
+      "visibility_first": [
+        0.5507621557301527,
+        0.5507621557301527,
+        0.5507621557301527,
+        0.5507621557301527,
+        0.5507621557301527,
+        0.5507621557301527,
+        0.5507621557301527,
+        0.5507621557301527
+      ],
+      "visibility_second": [
+        0.5507711275258578,
+        0.5509199461779962,
+        0.5507007711775331,
+        0.5506336356191807,
+        0.5505089013412048,
+        0.5502967704520052,
+        0.5500163378853264,
+        0.55
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.0010687648301346275,
+      "maximum_probability_gap": 1.1102230246251565e-16
+    },
+    {
+      "levels": 8,
+      "maximum_depth": 255,
+      "separation_scale": 0.01,
+      "theta_separation": 3.9215686274509805e-05,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.19683318954248363,
+      "theta_second": 0.19687240522875815,
+      "visibility_first": [
+        0.5515078349444156,
+        0.5515078349444156,
+        0.5515078349444156,
+        0.5515078349444156,
+        0.5515078349444156,
+        0.5515078349444156,
+        0.5515078349444156,
+        0.5515078349444156
+      ],
+      "visibility_second": [
+        0.5515258032870399,
+        0.5518239049277653,
+        0.5513849216024783,
+        0.5512505457438168,
+        0.5510010478320934,
+        0.5505773700193871,
+        0.5500197616202984,
+        0.55
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.0021220065684907086,
+      "maximum_probability_gap": 1.1102230246251565e-16
+    },
+    {
+      "levels": 8,
+      "maximum_depth": 255,
+      "separation_scale": 0.02,
+      "theta_separation": 7.843137254901961e-05,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.19681971241830065,
+      "theta_second": 0.19689814379084966,
+      "visibility_first": [
+        0.552961735813684,
+        0.552961735813684,
+        0.552961735813684,
+        0.552961735813684,
+        0.552961735813684,
+        0.552961735813684,
+        0.552961735813684,
+        0.552961735813684
+      ],
+      "visibility_second": [
+        0.5529977690704334,
+        0.5535957903317694,
+        0.5527153491925313,
+        0.5524461976720728,
+        0.5519471206648712,
+        0.5511021584981274,
+        0.55,
+        0.550011995136371
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.004205806729476347,
+      "maximum_probability_gap": 0.0
+    },
+    {
+      "levels": 8,
+      "maximum_depth": 255,
+      "separation_scale": 0.05,
+      "theta_separation": 0.00019607843137254904,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.1967509640522876,
+      "theta_second": 0.19694704248366013,
+      "visibility_first": [
+        0.5576969044994301,
+        0.5576969044994301,
+        0.5576969044994301,
+        0.5576969044994301,
+        0.5576969044994301,
+        0.5576969044994301,
+        0.5576969044994301,
+        0.5576969044994301
+      ],
+      "visibility_second": [
+        0.5577877583992776,
+        0.5592967194644963,
+        0.5570756229592094,
+        0.5563967997715755,
+        0.5551373885620905,
+        0.553000668105762,
+        0.5501835847950605,
+        0.55
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.010805680529714978,
+      "maximum_probability_gap": 5.551115123125783e-17
+    },
+    {
+      "levels": 9,
+      "maximum_depth": 511,
+      "separation_scale": 0.002,
+      "theta_separation": 3.913894324853229e-06,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.19661865753424657,
+      "theta_second": 0.19662257142857142,
+      "visibility_first": [
+        0.5502856123823091,
+        0.5502856123823091,
+        0.5502856123823091,
+        0.5502856123823091,
+        0.5502856123823091,
+        0.5502856123823091,
+        0.5502856123823091,
+        0.5502856123823091,
+        0.5502856123823091
+      ],
+      "visibility_second": [
+        0.5502873993547961,
+        0.5503169551749912,
+        0.5502732567436562,
+        0.5502594630524323,
+        0.5502329150321147,
+        0.5501839268459038,
+        0.5501020165257292,
+        0.55,
+        0.5500299419134687
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.0003764529086549562,
+      "maximum_probability_gap": 1.1102230246251565e-16
+    },
+    {
+      "levels": 9,
+      "maximum_depth": 511,
+      "separation_scale": 0.005,
+      "theta_separation": 9.784735812133073e-06,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.19661664383561644,
+      "theta_second": 0.1966264285714286,
+      "visibility_first": [
+        0.5507129313207434,
+        0.5507129313207434,
+        0.5507129313207434,
+        0.5507129313207434,
+        0.5507129313207434,
+        0.5507129313207434,
+        0.5507129313207434,
+        0.5507129313207434,
+        0.5507129313207434
+      ],
+      "visibility_second": [
+        0.5507174022552767,
+        0.5507913537306041,
+        0.550682019894887,
+        0.5506475147638539,
+        0.5505811171668735,
+        0.5504586451798,
+        0.5502540561844261,
+        0.55,
+        0.5500787282834779
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.0009440334894093017,
+      "maximum_probability_gap": 1.1102230246251565e-16
+    },
+    {
+      "levels": 9,
+      "maximum_depth": 511,
+      "separation_scale": 0.01,
+      "theta_separation": 1.9569471624266145e-05,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.19658495596868883,
+      "theta_second": 0.1966045254403131,
+      "visibility_first": [
+        0.5515760682142421,
+        0.5515760682142421,
+        0.5515760682142421,
+        0.5515760682142421,
+        0.5515760682142421,
+        0.5515760682142421,
+        0.5515760682142421,
+        0.5515760682142421,
+        0.5515760682142421
+      ],
+      "visibility_second": [
+        0.5515850227782993,
+        0.5517330983878115,
+        0.5515140839939655,
+        0.5514447348577577,
+        0.551310773144421,
+        0.551061578201585,
+        0.5506364888284799,
+        0.5500685097827184,
+        0.55
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.0018811739973235708,
+      "maximum_probability_gap": 1.1102230246251565e-16
+    },
+    {
+      "levels": 9,
+      "maximum_depth": 511,
+      "separation_scale": 0.02,
+      "theta_separation": 3.913894324853229e-05,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.196578245270711,
+      "theta_second": 0.19661738421395952,
+      "visibility_first": [
+        0.5530860657913549,
+        0.5530860657913549,
+        0.5530860657913549,
+        0.5530860657913549,
+        0.5530860657913549,
+        0.5530860657913549,
+        0.5530860657913549,
+        0.5530860657913549,
+        0.5530860657913549
+      ],
+      "visibility_second": [
+        0.5531040244053564,
+        0.5534010472322383,
+        0.5529617801896409,
+        0.552822781038698,
+        0.5525544465354852,
+        0.5520559536009403,
+        0.5512081352528102,
+        0.5500852471114379,
+        0.55
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.00369807005912004,
+      "maximum_probability_gap": 1.1102230246251565e-16
+    },
+    {
+      "levels": 9,
+      "maximum_depth": 511,
+      "separation_scale": 0.05,
+      "theta_separation": 9.784735812133073e-05,
+      "variation_budget": 0.18,
+      "witness_found": true,
+      "theta_first": 0.19655811317677754,
+      "theta_second": 0.19665596053489887,
+      "visibility_first": [
+        0.5573926077047556,
+        0.5573926077047556,
+        0.5573926077047556,
+        0.5573926077047556,
+        0.5573926077047556,
+        0.5573926077047556,
+        0.5573926077047556,
+        0.5573926077047556,
+        0.5573926077047556
+      ],
+      "visibility_second": [
+        0.5574378572817719,
+        0.5581866565779813,
+        0.55707964217954,
+        0.5567300334966298,
+        0.5560564036872344,
+        0.5548099478693233,
+        0.5527089560348063,
+        0.55,
+        0.5501725961153012
+      ],
+      "total_variation_first": 0.0,
+      "total_variation_second": 0.009108051989491828,
+      "maximum_probability_gap": 1.1102230246251565e-16
+    }
+  ]
+}

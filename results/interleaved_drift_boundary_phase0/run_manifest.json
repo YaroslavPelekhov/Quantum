@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-09-02T05:42:31.954425+00:00",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "numpy": "2.2.6",
+  "command": "python -m experiments.interleaved_drift_boundary_phase0.run_phase0",
+  "protocol_sha256": "069ee0ade433043b85fb865c48cc09ea7a97d3948518f231e9aa06549bd7719c",
+  "hardware_queries": 0,
+  "qpu_observations": 0
+}

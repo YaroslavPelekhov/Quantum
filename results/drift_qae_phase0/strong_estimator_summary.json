@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "purpose": "strong estimator control; does not alter the structural Phase-0 verdict",
+  "protocol_sha256": "25dc2be0fabff32827b5c0b0532ca0ec83b77fba2defc5491d6e2cd2603ba1b2",
+  "strong_preregistration": "experiments/drift_qae_phase0/STRONG_ESTIMATOR_PREREGISTRATION.md",
+  "rows": 225792,
+  "readout_model": {
+    "oracle_median_tail_rmse_slope": -0.47164447013468835,
+    "anchored_median_tail_rmse_slope": -0.43719418544410654,
+    "direct_median_tail_rmse_slope": -0.505125934662913,
+    "anchored_maximum_branch_failure_rate": 0.033203125,
+    "verdict": "GLOBAL_ESTIMATOR_STILL_FAILS_FROZEN_GATE"
+  },
+  "gate_model": {
+    "oracle_median_tail_rmse_slope": -0.11615922108840786,
+    "anchored_median_tail_rmse_slope": -0.08719937668518639,
+    "anchored_maximum_branch_failure_rate": 0.501953125,
+    "verdict": "DEPTH_NOISE_SQL_KILL_UNCHANGED"
+  },
+  "astar_verdict": "KILL_BROAD_DRIFT_ASTAR_UNCHANGED",
+  "hardware_spending_authorized": false
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "protocol_sha256": "069ee0ade433043b85fb865c48cc09ea7a97d3948518f231e9aa06549bd7719c",
+  "mechanism_verdict": "PASSES_MATHEMATICAL_PHASE0",
+  "astar_novelty_verdict": "KILL_SIMPLE_CURVATURE_AS_ASTAR",
+  "hardware_spending_authorized": false,
+  "criteria": {
+    "affine_cancels": true,
+    "quadratic_ratio_exact": true,
+    "compact_bump_is_admissible": true,
+    "compact_bump_is_indistinguishable": true,
+    "ideal_amplified_slope": true,
+    "direct_slope": true,
+    "curvature_collapse": true
+  },
+  "amplified_zero_curvature_tail_slopes": [
+    -0.9842320692610265,
+    -0.9765063377046939,
+    -0.9946461313141881
+  ],
+  "direct_equal_cost_tail_slopes": [
+    -0.5010440140706428,
+    -0.49790206882763816,
+    -0.494123014928222
+  ],
+  "median_amplified_slope": -0.9842320692610265,
+  "median_direct_slope": -0.49790206882763816,
+  "curvature_collapse": {
+    "slope": 0.5,
+    "intercept": 1.6000425314652184e-16,
+    "r_squared": 1.0,
+    "prediction": "|bias|*D = 0.5*kappa*tau^2*D^3 for quadratic drift"
+  },
+  "correct_scope": "The cube-root scale is the crossover where a D~1/epsilon Heisenberg-depth schedule ceases to be valid. It is not a universal accuracy floor: below it, one can reduce depth and use more shots, eventually returning toward SQL scaling."
+}

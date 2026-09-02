@@ -1,0 +1,53 @@
+{
+  "commands": [
+    "python -m unittest experiments.drift_qae_phase0.test_phase0 -v",
+    "python -m experiments.drift_qae_phase0.run_phase0",
+    "python -m experiments.drift_qae_phase0.run_strong_estimator_audit",
+    "python -m experiments.drift_qae_phase0.plot_results",
+    "python -m experiments.drift_qae_phase0.build_manifest"
+  ],
+  "environment": {
+    "matplotlib": "3.10.7",
+    "numpy": "2.2.6",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "scipy": "1.16.3"
+  },
+  "experiment": "drift-aware amplitude estimation Phase 0",
+  "git_branch": "research/drift-qae-phase0",
+  "git_head_before_artifact_commit": "26526294dec003fb912691e38f89e4bb25b78d75",
+  "hardware_queries": 0,
+  "qpu_observations": 0,
+  "result_sha256": {
+    "FINAL_REPORT.md": "769ca92e9c40c779bd0410567be1364e101f3d085108a39ceebf8e253a42277a",
+    "STRONG_ESTIMATOR_REPORT.md": "20569f9fa25f8bd096ba4345b34b1419f357957d28c95b884803381d4c466219",
+    "aggregate.csv": "3964491438752dc2a7cc5c2bfab8f5258f2c78d71f33810d93a70bd1def81bd2",
+    "confounding_audit.csv": "37640667da6f5d39d2b1eef6e7dc09cc491003146cebc2d1a7a4572b662df89b",
+    "fisher_audit.csv": "273fe33c8450a5f9543be9f7f54da409bf269911ee942bf146d29af7a419e7e0",
+    "fisher_information_audit.png": "66e4c6c7dac031fe061cbe2bffb4dd162c58213f026b78a6d0c3381bf66332a6",
+    "identifiability_audit.json": "09d6e07bc911887dfb7b771df6134bc5960ba789554b5ba926cea795e94d0802",
+    "phase0_summary.json": "01c4131ad5bda8e80a14c3e199a466cca512548b8826f048cc8c72e37903146d",
+    "raw_trials.tar.gz": "b78134d4506d652242a5428dc5cb44b4600ed2833cd4685e504a1fcb16bfd31b",
+    "run_manifest.json": "a63532cc01aec58b2469a571462702dd1c18c474eb9616a6f28d3446091b4390",
+    "strong_estimator_aggregate.csv": "f352b95b892557c1b93155f9a44b2f43d3e203f22150b185cddf351ebcce75b7",
+    "strong_estimator_scaling.png": "3604d00f09ddb346b7c07b77856534ac314f403d09890c60476703f16af52e77",
+    "strong_estimator_summary.json": "5a754e87cde3ff146780eba4e37ed0a56e6b6fad0cfbf698a5a66233a80d3f9e"
+  },
+  "source_sha256": {
+    "PREREGISTRATION.md": "d397126348965514fc4c7a107c06f7f11b2cc7d515a0963a23c4d609db4369e9",
+    "PRIOR_ART_AUDIT.md": "da4e10181ebd6f69c06fdd2014634daa988b41c798dd486d127775d2075612a9",
+    "README.md": "8e8420522749c597e25bcfea0b511a14566eed7f4fc25b05693bd49744757984",
+    "STRONG_ESTIMATOR_PREREGISTRATION.md": "c574960b290052c1a0526d111921ccf2f66f942e149cd44285cb718ca5110df5",
+    "THEORY_AND_SCOPE.md": "5f66523d8cab97ec0bfe2238f5cc0984fc1376c327fb8440e75f167a4b718b6e",
+    "build_manifest.py": "09afbe4e3390193ac2f8eb4dfb862ee0315967e613621fc5b8bc844853d0cd3d",
+    "drift_models.py": "7de27ef6ebb7daf17c957c08caba7a5b598865f2a81f0946c6b4867815392884",
+    "estimators.py": "88dfc54ddedbac9d975915fe95160208ebfc6e03f50e7d5dab2fb4cca1b547ba",
+    "plot_results.py": "60d43ef14b7ee1f90e8aa2a0c8af3b3276d11a7b5b254bcc62366954ee255f37",
+    "protocol.json": "25dc2be0fabff32827b5c0b0532ca0ec83b77fba2defc5491d6e2cd2603ba1b2",
+    "qae_core.py": "c4fd9454068ccd88bf2b10ffb0e9df5bc9e489d653da0e7172500140caf9d175",
+    "run_phase0.py": "4703cbb65bc012a98fdc9811679cef3e429ddad2a4e960fd68f535af8e911b8e",
+    "run_strong_estimator_audit.py": "ab8df60c4666c41c938298f9067aa8f2b369ff2b1ba42f414b781262145534ba",
+    "test_phase0.py": "c0ae8679148272cbdec05b4ed8573facf27018551b7ebd57ad2713fe9461ff5a"
+  },
+  "verdict": "KILL_BROAD_DRIFT_ASTAR"
+}

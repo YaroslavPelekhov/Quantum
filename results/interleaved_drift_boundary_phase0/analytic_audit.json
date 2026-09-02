@@ -1,0 +1,32 @@
+{
+  "affine": {
+    "duration": 17.0,
+    "offset": 0.037,
+    "slope": -0.0041,
+    "interpolation_bias": 6.938893903907228e-18
+  },
+  "quadratic": {
+    "curvature": 2.3e-05,
+    "interpolation_bias": -0.0033235,
+    "bias_over_kappa_T_squared": -0.5,
+    "exact_prediction": -0.5
+  },
+  "compact_bump": {
+    "reference_averages": [
+      0.0,
+      0.0
+    ],
+    "target_average": 0.00012660952380952383,
+    "exact_target_average": 0.00012660952380952383,
+    "target_average_over_kappa_T_squared": 0.01904761904761905,
+    "maximum_absolute_second_derivative": 2.3000000000000003e-05,
+    "registered_curvature_bound": 2.3e-05,
+    "theta_separation": 0.00012660952380952383,
+    "minimax_absolute_risk_lower_bound": 6.330476190476191e-05,
+    "maximum_two_quadrature_probability_gap": 0.0
+  },
+  "deterministic_upper_bound": {
+    "statement": "|RTR interpolation bias| <= kappa T^2 / 2",
+    "quadratic_saturates_bound": true
+  }
+}

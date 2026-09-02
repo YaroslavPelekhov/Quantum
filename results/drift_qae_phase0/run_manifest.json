@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-09-02T05:26:38.587366+00:00",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "numpy": "2.2.6",
+  "command": "python -m experiments.drift_qae_phase0.run_phase0",
+  "protocol_sha256": "25dc2be0fabff32827b5c0b0532ca0ec83b77fba2defc5491d6e2cd2603ba1b2",
+  "monte_carlo_rows": 225792,
+  "hardware_queries": 0,
+  "qpu_observations": 0
+}

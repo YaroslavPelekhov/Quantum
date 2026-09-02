@@ -271,7 +271,7 @@ def fit_summary(protocol: dict[str, object], analytic: dict[str, object], rows: 
         "schema_version": 1,
         "protocol_sha256": sha256(PROTOCOL_PATH),
         "mechanism_verdict": "PASSES_MATHEMATICAL_PHASE0" if mechanism_passes else "FAILS_MATHEMATICAL_PHASE0",
-        "astar_novelty_verdict": "PENDING_PRIMARY_SOURCE_AUDIT",
+        "astar_novelty_verdict": "KILL_SIMPLE_CURVATURE_AS_ASTAR",
         "hardware_spending_authorized": False,
         "criteria": criteria,
         "amplified_zero_curvature_tail_slopes": amplified_slopes,
@@ -306,7 +306,7 @@ def write_report(summary: dict[str, object], analytic: dict[str, object]) -> Non
 
 ## Mathematical verdict
 
-**{summary['mechanism_verdict']}**.  A* novelty remains
+**{summary['mechanism_verdict']}**.  A* novelty verdict:
 **{summary['astar_novelty_verdict']}**.  No QPU run is authorised.
 
 ## Exact results
@@ -343,11 +343,17 @@ progressively reverting toward standard-quantum-limit scaling.
 
 ## Novelty boundary
 
-Correct mathematics is necessary but not sufficient.  If the result is already
-an immediate consequence of established sequential-reference interpolation or
-clock/metrology bounds, this branch must be closed as A* novelty even though
-the Phase-0 theorem mechanism passes.  Hardware work remains forbidden until
-that independent literature gate is resolved.
+Correct mathematics is necessary but not sufficient.  The independent
+primary-source audit found direct prior art for symmetric drift cancellation,
+interleaved Ramsey references, time-symmetric phase smoothing and temporal
+quantum limits.  The sharp `C^2` constant is classical optimal interpolation,
+and the cube-root follows by balancing it with `1/D`.  The simple claim is
+therefore closed as A* novelty even though its theorem mechanism is correct.
+
+The still-open object is substantially harder: a minimax optimal design over
+wrapped Bernoulli likelihoods, arbitrary adaptive multi-depth schedules, noisy
+duration-matched anchors, full wall-clock/query budgets and a Holder drift
+ball.  That is not claimed or proved by this Phase 0.
 """
     (OUT / "FINAL_REPORT.md").write_text(report, encoding="utf-8")
 
@@ -384,4 +390,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

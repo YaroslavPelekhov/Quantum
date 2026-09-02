@@ -1,0 +1,42 @@
+{
+  "astar_verdict": "KILL_SIMPLE_CURVATURE_AS_ASTAR",
+  "commands": [
+    "python -m unittest experiments.interleaved_drift_boundary_phase0.test_phase0 -v",
+    "python -m experiments.interleaved_drift_boundary_phase0.run_phase0",
+    "python -m experiments.interleaved_drift_boundary_phase0.plot_results",
+    "python -m experiments.interleaved_drift_boundary_phase0.build_manifest"
+  ],
+  "environment": {
+    "matplotlib": "3.10.7",
+    "numpy": "2.2.6",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "scipy": "1.16.3"
+  },
+  "experiment": "sequential-reference curvature boundary Phase 0",
+  "git_head_before_artifact_commit": "26526294dec003fb912691e38f89e4bb25b78d75",
+  "hardware_queries": 0,
+  "mathematical_verdict": "PASSES_MATHEMATICAL_PHASE0",
+  "qpu_observations": 0,
+  "result_sha256": {
+    "FINAL_REPORT.md": "3c8251e8bbb8c2cd2f10f604c2283d5312a2a7b3ed54ca456dc796a9fba2a070",
+    "analytic_audit.json": "61b5747031f1277084784900b2239882a1d8789d09e9d0d408f197f87ed54c5f",
+    "curvature_collapse.png": "94bff291a9c44e4cac2313331c0df2a8070bca46759887908860789ac737a84b",
+    "curvature_resource_scaling.png": "c925543b793e84a19e54864aecf7ac7f0f5135a967bb1bcb7211e20c224e3f9c",
+    "monte_carlo.csv": "de12b4dd54e48f4edd6d91295162c282e687ef9d227f6781d7b75452ca539bd9",
+    "run_manifest.json": "36a3b01854bcc59168db64c8e001c7d3c75d481e1b0b9f0dfdcadc17a1a0b9dc",
+    "summary.json": "a9a922b893d6098605260fc78ee23a6d8821a1396d4faf4e35b3470137ccd2c0"
+  },
+  "source_sha256": {
+    "PREREGISTRATION.md": "8886e1c57d1f26f78f246be524b1536fd39188b667bb5c9296566026afc828f7",
+    "PRIOR_ART_AUDIT.md": "b80394b29d08d996814ddacf769536d405383dcc9d21fae50e721159c08a57b0",
+    "README.md": "2c71e74aa52fc5f9d1453dbd5147f4c974ed40f27a49eef5aa9c30ac38023b3f",
+    "THEORY_AND_SCOPE.md": "e2187616afeebb5451faeb63f158a5c92a0e6c8ef413a20f1edcb9ad1b9dcb66",
+    "build_manifest.py": "27c7b37f3f7de70c6cbc2658b6c2307f7c498288103fe0d1fcba1fd6e41cd103",
+    "core.py": "570ca965b31efc817b64b8c1800e9797fd408bbb6f56cae730f0b65c74e4e2e7",
+    "plot_results.py": "8c57c5db2a95cb398b5d174244c8f9bd6811900b3971459cb584be4b5d6031ac",
+    "protocol.json": "069ee0ade433043b85fb865c48cc09ea7a97d3948518f231e9aa06549bd7719c",
+    "run_phase0.py": "255017654d70a16191485baa56bfac9fab73132fdc252621973a98e94462e856",
+    "test_phase0.py": "bc4b071626117a341e7e804bec3070d5b14e1d4ff9b6615a089f106152cb9d26"
+  }
+}
