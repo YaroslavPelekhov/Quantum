@@ -1,0 +1,80 @@
+{
+  "experiment": "exact_collapsible_two_hole_SCF_certificates",
+  "target_indices": [
+    34,
+    48
+  ],
+  "classes_proved": 2,
+  "proof_status": "exact_symbolic_certificates_passed",
+  "shared_consequence": "both types reduce to the proved three-variable fixed-L envelope and satisfy beta(G,w)=alpha(G,w)=3/2",
+  "records": [
+    {
+      "representative_index": 34,
+      "support_graph6": "HQjRezu",
+      "collapse": {
+        "kind": "shared_heavy_pair",
+        "heavy_pair": [
+          0,
+          8
+        ],
+        "identity": "the two anticommuting hole channels add in the squared off-diagonal entry"
+      },
+      "cycle_block": {
+        "first_diagonal": "p1 + p3 + p6",
+        "second_diagonal": "p4 + p7",
+        "off_diagonal_squared": "p7*(p1 + p3)",
+        "remaining_light_mass": "p5",
+        "determinant": "p1*p4 + p3*p4 + p4*p6 + p6*p7",
+        "q_slack": "p5*(p1 + p3 + p7)",
+        "e3_slack": "p5*(p1*p4 + p3*p4 + p6*p7)"
+      },
+      "isolated_branches": [
+        {
+          "heavy_vertex": 2,
+          "x": "p4",
+          "y": "p1 + p3 + p5 + p7",
+          "z": "p6",
+          "q_slack": "p1*p6 + p3*p6 + p4*p7",
+          "e3_slack": "p4*p6*(p1 + p3 + p7)"
+        }
+      ],
+      "certificate": "all displayed slacks have nonnegative integer coefficients",
+      "exact_beta": 1.5
+    },
+    {
+      "representative_index": 48,
+      "support_graph6": "HQjdvZu",
+      "collapse": {
+        "kind": "equal_profile_heavy_leaves",
+        "heavy_leaf_group": [
+          0,
+          2
+        ],
+        "central_heavy_vertex": 8,
+        "equal_diagonal_score": "p1 + p3",
+        "identity": "an orthogonal rotation combines p0 and p2 into their total heavy amplitude"
+      },
+      "cycle_block": {
+        "first_diagonal": "p1 + p3",
+        "second_diagonal": "p4 + p7",
+        "off_diagonal_squared": "p1*p7",
+        "remaining_light_mass": "p5",
+        "determinant": "p1*p4 + p3*p4 + p3*p7",
+        "q_slack": "p5*(p1 + p7)",
+        "e3_slack": "p5*(p1*p4 + p3*p7)"
+      },
+      "isolated_branches": [
+        {
+          "heavy_vertex": 6,
+          "x": "p3",
+          "y": "p1 + p5 + p7",
+          "z": "p4",
+          "q_slack": "p1*p3 + p4*p7",
+          "e3_slack": "p3*p4*(p1 + p7)"
+        }
+      ],
+      "certificate": "all displayed slacks have nonnegative integer coefficients",
+      "exact_beta": 1.5
+    }
+  ]
+}

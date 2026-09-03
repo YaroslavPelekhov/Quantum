@@ -24,10 +24,11 @@ is made from numerics alone.
 
 The main exact advance in this continuation is narrower but complete: the
 former last atom `HEhu|x|` now has an exact scalar, KKT, and sum-of-squares
-proof, and a shared spectral-envelope certificate proves four further
-one-hole residual types.  This makes 120 of the 128 order-nine non-rank facet
-types exact.  It does not yet prove the universal weighted claim, because
-eight residual facet types remain certified only numerically.
+proof, a shared spectral-envelope certificate proves four further one-hole
+residual types, and cycle aggregation proves two collapsible two-hole types.
+This makes 122 of the 128 order-nine non-rank facet types exact.  It does not
+yet prove the universal weighted claim, because six residual facet types
+remain certified only numerically.
 
 ## Results that did survive
 
@@ -469,8 +470,10 @@ proved and plausibly novel.  A common exact one-hole reduction additionally
 closes residual representatives 5, 7, 9, and 33.  In each case the heavy
 simplex is the maximum of one `2 by 2` spectral block and scalar branches;
 explicit nonnegative-monomial slacks reduce every branch to the atom's proved
-three-variable envelope.  Thus 120 of 128 order-nine non-rank facet types are
-now exact.  Eight residual types currently have only numerical level-2 upper
+three-variable envelope.  Two additional two-hole types reduce to the same
+block by aggregating anticommuting channels on a shared heavy pair or rotating
+equal-profile heavy leaves.  Thus 122 of 128 order-nine non-rank facet types
+are now exact.  Six residual types currently have only numerical level-2 upper
 certificates, so neither the
 complete order-nine statement nor the general weighted SCF theorem follows
 yet.  External expert proof reconstruction and a submission-grade prior-art
@@ -522,10 +525,10 @@ complete.
 
 ## Next decisive gate
 
-The single order-nine atom `HEhu|x|` and the four one-hole residual types are
-no longer gates.  The decisive routes are now:
+The single order-nine atom, the four one-hole types, and two collapsible
+two-hole types are no longer gates.  The decisive routes are now:
 
-1. determine whether the same spectral/KKT/SOS mechanism closes the other 8
+1. determine whether the same spectral/KKT/SOS mechanism closes the other 6
    residual order-nine facet types that currently have only numerical SDP
    bounds; and
 2. test whether those finite certificates expose a graph operation or local

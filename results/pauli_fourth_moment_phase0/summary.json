@@ -167,7 +167,16 @@
           "residual_types_still_only_numerical": 8,
           "status": "exact_symbolic_certificates_passed"
         },
-        "status": "120_of_128_order9_facet_types_exact_8_residual_types_still_numerical"
+        "collapsible_two_hole_exact_certificates": {
+          "representative_indices": [34, 48],
+          "support_graph6": ["HQjRezu", "HQjdvZu"],
+          "classes_proved": 2,
+          "mechanism": "anticommuting cycle aggregation on a shared heavy pair or orthogonal collapse of equal-profile heavy leaves, followed by the proved three-variable envelope",
+          "exact_order9_facet_types_total": 122,
+          "residual_types_still_only_numerical": 6,
+          "status": "exact_symbolic_certificates_passed"
+        },
+        "status": "122_of_128_order9_facet_types_exact_6_residual_types_still_numerical"
       }
     }
   },
@@ -203,5 +212,5 @@
     "n3": 2000,
     "n4": 100
   },
-  "next_gate": "seek exact spectral or SOS certificates for the other 8 order-nine residual facet types, then test whether the finite mechanisms lift to a general weighted SCF theorem"
+  "next_gate": "seek exact spectral or SOS certificates for the other 6 order-nine residual facet types, then test whether the finite mechanisms lift to a general weighted SCF theorem"
 }

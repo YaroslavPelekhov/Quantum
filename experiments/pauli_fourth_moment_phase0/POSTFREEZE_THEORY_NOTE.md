@@ -812,4 +812,44 @@ The spectral crossing argument used for the final atom therefore proves
 `beta(G,w)<=3/2` for all four one-hole types.  Maximum stable sets attain
 equality.  Together with the 115 join reductions and `HEhu|x|`, this makes
 120 of the 128 order-nine non-rank SCF facet types exact; eight residual types
-remain only numerically certified.
+remain only numerically certified at this stage.
+
+## Proposition (two collapsible two-hole residual types)
+
+Residual types `HQjRezu` and `HQjdvZu` (indices 34 and 48) each have two
+induced four-holes whose charge operators anticommute, so their squared
+fourth-order contribution is the sum of the two hole monomials.
+
+For `HQjRezu`, both holes use the same heavy pair `{0,8}`.  Their two light
+pairs share `p_7`, hence the effective squared off-diagonal entry is
+`p_7(p_1+p_3)`.  The heavy-simplex maximum is again one `2 by 2` block plus
+the isolated heavy-2 branch.  With the other eigenvalue and unused light mass
+as the remaining aggregate variables, exact expansion gives
+
+`q_slack=p_5(p_1+p_3+p_7)`,
+`e_3_slack=p_5(p_1p_4+p_3p_4+p_6p_7)`.
+
+The isolated branch has
+
+`q_slack=p_1p_6+p_3p_6+p_4p_7`,
+`e_3_slack=p_4p_6(p_1+p_3+p_7)`.
+
+For `HQjdvZu`, the two heavy leaves `0,2` have exactly the same light
+non-neighbour score `p_1+p_3`.  An orthogonal rotation combines their heavy
+amplitudes; the direction perpendicular to the two cycle couplings decouples.
+The remaining effective block has squared off-diagonal `p_1p_7`.  Its slacks
+are
+
+`q_slack=p_5(p_1+p_7)`,
+`e_3_slack=p_5(p_1p_4+p_3p_7)`.
+
+The isolated heavy-6 branch has
+
+`q_slack=p_1p_3+p_4p_7`,
+`e_3_slack=p_3p_4(p_1+p_7)`.
+
+All displayed expressions are nonnegative.  Both graphs therefore reduce to
+the same proved three-variable envelope and satisfy `beta=alpha=3/2`.
+The executable exact audit verifies the graph structure, cycle
+anticommutation, profile equality, determinants, and every polynomial slack.
+The order-nine exact count is now 122 of 128, with six types remaining.

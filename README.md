@@ -19,8 +19,10 @@ two-heavy faces; exact KKT elimination closes the other three.  This proves
 the whole positive-light stratum, and two explicit square-plus-monomial
 certificates close the zero-light boundary.  The atom now satisfies the exact
 equality `beta=alpha=3/2`.  A common one-hole spectral certificate now proves
-four more residual types (`HCXmtiz`, `GQuvSw`, `HCZTmyz`, and `HQjRexz`), so
-120 of 128 order-nine facet types are exact and eight residual types still
+four more residual types (`HCXmtiz`, `GQuvSw`, `HCZTmyz`, and `HQjRexz`).  Two
+two-hole types then collapse to the same certificate by channel aggregation
+or an equal-profile heavy rotation.  Thus 122 of 128 order-nine facet types
+are exact and six residual types still
 have only numerical SDP upper certificates.  The general weighted SCF claim
 and A-star novelty are not yet confirmed.  No QPU run is justified for this
 exact convex-geometric gate.
