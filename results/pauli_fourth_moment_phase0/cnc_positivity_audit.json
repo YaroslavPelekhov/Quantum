@@ -1,0 +1,135 @@
+{
+  "experiment": "canonical_maximal_CNC_odd_convolution_positivity",
+  "seed": 660149,
+  "cases": [
+    {
+      "spin_qubits": 1,
+      "syndrome_qubits": 0,
+      "convolution_order": 3,
+      "trials": 300,
+      "minimum_overlap": 0.12942951482379547
+    },
+    {
+      "spin_qubits": 1,
+      "syndrome_qubits": 0,
+      "convolution_order": 5,
+      "trials": 300,
+      "minimum_overlap": 0.2208848621902555
+    },
+    {
+      "spin_qubits": 1,
+      "syndrome_qubits": 1,
+      "convolution_order": 3,
+      "trials": 300,
+      "minimum_overlap": 0.12320150077171113
+    },
+    {
+      "spin_qubits": 1,
+      "syndrome_qubits": 1,
+      "convolution_order": 5,
+      "trials": 300,
+      "minimum_overlap": 0.19839983809534115
+    },
+    {
+      "spin_qubits": 1,
+      "syndrome_qubits": 2,
+      "convolution_order": 3,
+      "trials": 300,
+      "minimum_overlap": 0.07678456509789544
+    },
+    {
+      "spin_qubits": 1,
+      "syndrome_qubits": 2,
+      "convolution_order": 5,
+      "trials": 300,
+      "minimum_overlap": 0.11852775915388679
+    },
+    {
+      "spin_qubits": 2,
+      "syndrome_qubits": 0,
+      "convolution_order": 3,
+      "trials": 300,
+      "minimum_overlap": 0.07625817915952654
+    },
+    {
+      "spin_qubits": 2,
+      "syndrome_qubits": 0,
+      "convolution_order": 5,
+      "trials": 300,
+      "minimum_overlap": 0.1948299415085189
+    },
+    {
+      "spin_qubits": 2,
+      "syndrome_qubits": 1,
+      "convolution_order": 3,
+      "trials": 300,
+      "minimum_overlap": 0.06686407322615479
+    },
+    {
+      "spin_qubits": 2,
+      "syndrome_qubits": 1,
+      "convolution_order": 5,
+      "trials": 300,
+      "minimum_overlap": 0.12031994164227214
+    },
+    {
+      "spin_qubits": 2,
+      "syndrome_qubits": 2,
+      "convolution_order": 3,
+      "trials": 300,
+      "minimum_overlap": 0.050497932347722325
+    },
+    {
+      "spin_qubits": 2,
+      "syndrome_qubits": 2,
+      "convolution_order": 5,
+      "trials": 300,
+      "minimum_overlap": 0.06127189392192395
+    },
+    {
+      "spin_qubits": 3,
+      "syndrome_qubits": 0,
+      "convolution_order": 3,
+      "trials": 300,
+      "minimum_overlap": 0.09071260773716314
+    },
+    {
+      "spin_qubits": 3,
+      "syndrome_qubits": 0,
+      "convolution_order": 5,
+      "trials": 300,
+      "minimum_overlap": 0.11475879061979165
+    },
+    {
+      "spin_qubits": 3,
+      "syndrome_qubits": 1,
+      "convolution_order": 3,
+      "trials": 300,
+      "minimum_overlap": 0.050945792567516156
+    },
+    {
+      "spin_qubits": 3,
+      "syndrome_qubits": 1,
+      "convolution_order": 5,
+      "trials": 300,
+      "minimum_overlap": 0.06111628958131212
+    },
+    {
+      "spin_qubits": 3,
+      "syndrome_qubits": 2,
+      "convolution_order": 3,
+      "trials": 300,
+      "minimum_overlap": 0.028993294092852805
+    },
+    {
+      "spin_qubits": 3,
+      "syndrome_qubits": 2,
+      "convolution_order": 5,
+      "trials": 300,
+      "minimum_overlap": 0.03114591770480539
+    }
+  ],
+  "total_random_instances": 5400,
+  "global_minimum_overlap": 0.028993294092852805,
+  "status": "no_violation"
+}

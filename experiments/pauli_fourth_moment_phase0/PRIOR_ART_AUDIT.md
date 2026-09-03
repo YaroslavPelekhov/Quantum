@@ -45,6 +45,16 @@ Status at freeze: no direct collision found; audit remains open.
   diagonal-channel special case behind the Holder step, but not the
   correlated many-qubit convolution channel or arbitrary stabilizer-code
   postselection considered here.
+- Raussendorf et al., *Phase-space-simulation method for quantum computation
+  with magic states on qubits*, Phys. Rev. A 101, 012350 (2020), introduces
+  the CNC simulation framework.  Ipek et al., *Phase-space tableau
+  simulation for quantum computation*, Phys. Rev. A 113, 032409 (2026), and
+  Okay, *Polyhedral classical simulators for quantum computation*, Research
+  in the Mathematical Sciences 13, 55 (2026), give the maximal-CNC
+  anticommuting-factor structure used in our corollary.  These are essential
+  structural prior art.  The inspected sources do not discuss quantum
+  convolution and do not state that arbitrary odd convolution is
+  nonnegative on every maximal CNC phase-point operator.
 - De Carli Silva and Tuncel, *An Axiomatic Duality Framework for the Theta
   Body and Related Convex Corners*, arXiv:1412.2103.  Develops the relevant
   theta-body and antiblocker framework.  It does not supply the nonlinear
@@ -87,4 +97,6 @@ Status at freeze: no direct collision found; audit remains open.
   quasi-Clifford algebras;
 - magic-breaking/stabilizer-breaking Pauli channels and normal forms for
   postselected stabilizer operations;
+- any positivity-preserver or hypercontractive result equivalent to odd
+  convolution being nonnegative on all maximal CNC phase points;
 - papers posted after arXiv:2608.20113 that answer its Question 8.

@@ -113,3 +113,103 @@ the entire vector `|<P>|^3` in the stable-set polytope and, a fortiori, place
 universal exponent `kappa=3`, not merely prove the frozen exponent four.
 Numerical support is not substituted for this missing global
 stabilizer-polytope argument.
+
+## Proposition (spin-factor witness barrier)
+
+The one-logical result extends to a genuinely multi-logical family of
+stabilizer witnesses.  Let `C,A_1,...,A_m` be Hermitian Paulis such that `C`
+commutes with every `A_j` and the `A_j` are pairwise anticommuting.  Choose
+the Hermitian signs in `C A_j` and define
+
+`W = -C + sum_j (A_j + C A_j)`.
+
+Then `Tr(W sigma) <= 1` for every stabilizer state `sigma`, and
+
+`Tr(W boxtimes_K(rho_1,...,rho_K)) <= 1`
+
+for arbitrary inputs and every odd `K >= 3`, up to the fixed transpose in
+the convolution convention.
+
+### Stabilizer bound
+
+For a pure stabilizer state, Pauli expectations are zero or signed one.  If
+`C` has expectation `+1`, then `C A_j` and `A_j` have equal expectation and
+at most one of the pairwise anticommuting `A_j` can be nonzero; hence the
+bound is `-1+2=1`.  If `C` has expectation `-1`, all paired terms cancel and
+the value is one.  If `C` has expectation zero, a commuting stabilizer group
+can contain at most one Pauli among all `A_j,C A_j`: two with distinct
+indices anticommute, while containing both members of one pair would also
+contain `C`.  The value is again at most one.  Convexity covers mixed
+stabilizer states.
+
+### Convolution bound
+
+For input `a`, project onto the `C` eigenspaces and write their probabilities
+as `p_a(s)`, `s in {+1,-1}`.  Let `v_a(s)` be the vector of conditional
+expectations of the `A_j`.  Pairwise anticommutation gives
+`||v_a(s)||_2 <= 1`.  With
+
+`n_a(s,j) = p_a(s) v_a(s)_j`,
+
+the two Pauli coefficients are
+
+`<A_j>_a = n_a(+,j)+n_a(-,j)`,
+
+`<C A_j>_a = n_a(+,j)-n_a(-,j)`.
+
+After multiplication across an odd number of inputs, adding these two terms
+keeps exactly the syndrome tuples with product `+1`.  For each tuple,
+Holder and norm monotonicity give
+
+`sum_j product_a v_a(s_a)_j <= product_a ||v_a(s_a)||_K <= 1`.
+
+The total probability of the retained tuples is
+`(1+product_a <C>_a)/2`.  The paired terms are therefore at most
+`1+product_a <C>_a`, which cancels the witness contribution
+`-product_a <C>_a` and proves the bound.
+
+The integer three-qubit witness extracted by the completeness-gap LP has
+`m=5` and exactly this form.  Its direct trilinear optimization over 5,000
+random starts reached only numerical equality at one.  This result controls
+a higher-logical stabilizer facet family, but no claim is made yet that all
+stabilizer facets admit such a decomposition.
+
+## Corollary (global CNC positivity of odd convolution)
+
+Known structure theorems for maximal closed-noncontextual (CNC) phase-point
+operators put every such operator, up to a Clifford, in the form
+
+`A_CNC = A_spin tensor Pi_I`,
+
+where `Pi_I` is a stabilizer-code projector and
+
+`A_spin = 2^-m (I + sum_{j=1}^{2m+1} s_j A_j)`
+
+for pairwise anticommuting Hermitian logical Paulis `A_j` and signs `s_j`.
+Combining that classification with the argument above gives a global
+statement: for every maximal CNC operator `A_CNC`,
+
+`Tr[A_CNC boxtimes_K(rho_1,...,rho_K)] >= 0`
+
+for arbitrary qubit inputs and every odd `K >= 3`.
+
+Indeed, Clifford covariance reduces to the displayed factorization.  Fourier
+expansion of `Pi_I` writes its convolution branch as a positive mixture over
+tuples of input syndromes satisfying the convolution parity rule.  In every
+component, the conditional logical expectation vectors of the pairwise
+anticommuting `A_j` have Euclidean norm at most one.  Holder bounds the
+absolute value of their componentwise `K`-fold product sum by one, so the
+conditional expectation of `A_spin` is nonnegative.  Averaging over the
+syndrome tuples proves the result.
+
+Thus odd quantum convolution maps the whole state space into the region
+that is nonnegative on every maximal CNC phase point.  This is stronger and
+more global than the one-logical theorem, and it controls every stabilizer
+inequality induced by a CNC operator.  It must not be confused with
+membership in the CNC simulation polytope itself, nor with membership in the
+smaller stabilizer polytope; neither follows by convex duality.
+
+The CNC factorization is prior art (Raussendorf et al., PRA 101, 012350
+(2020); Ipek et al., PRA 113, 032409 (2026); Okay, Research in the
+Mathematical Sciences 13, 55 (2026)).  The checked sources do not connect it
+to quantum convolution or state the global nonnegativity result above.

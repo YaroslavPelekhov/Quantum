@@ -139,6 +139,53 @@ Therefore the one-logical theorem cannot be promoted to global stabilizer
 membership by a completeness argument.  A proof of the triple-convolution
 conjecture must directly control genuinely multi-logical stabilizer facets.
 
+### First genuinely multi-logical facet class proved
+
+The integer separator above has a hidden spin-factor decomposition
+
+`W = -C + sum_{j=1}^5 (A_j + C A_j)`,
+
+where `C` commutes with all five `A_j` and the `A_j` pairwise anticommute.
+Syndrome decomposition with respect to `C`, followed by Holder's inequality
+on the five-dimensional conditional expectation vectors, proves exactly
+that every odd-order (`K >= 3`) convolution of arbitrary inputs satisfies
+`Tr(W tau) <= 1`.  The same argument works for any number of axes and any
+Clifford image of this witness form.
+
+As a numerical algebra check, 5,000 alternating product-state optimizations
+for the extracted three-qubit witness reached
+`1.0000000000000047`, equality to floating-point precision.  This is the
+first proved higher-logical facet family in the project.  It is meaningful
+progress toward the global conjecture, but it is not a classification of all
+stabilizer facets and therefore does not close the A-star gate.
+
+### Dimension-independent CNC-positivity theorem
+
+The spin-factor proof combines with the known classification of maximal
+closed-noncontextual (CNC) phase-point operators.  Up to a Clifford, each is
+an anticommuting spin factor tensored with a stabilizer-code projector.
+Consequently, for every maximal CNC operator `A` and arbitrary inputs,
+
+`Tr[A boxtimes_K(rho_1,...,rho_K)] >= 0` for every odd `K >= 3`.
+
+This covers a global, dimension-independent family of stabilizer-polytope
+inequalities, including genuinely multi-logical ones.  The proof uses the
+positive syndrome convolution followed by Holder on each conditional spin
+factor.  It does **not** assert that the output belongs to the CNC simulation
+polytope or the stabilizer polytope.
+
+A direct canonical-form audit covered spin dimensions one through three,
+zero through two syndrome qubits, convolution orders three and five, and 300
+random sign/input instances per case (`5,400` total).  Every overlap was
+positive; the smallest was `0.0289932941`.  This audit checks the convention
+and normalization layer but is not used in place of the proof.
+
+This is now the strongest theorem-level novelty candidate in the branch.
+The CNC factorization itself is known; the checked CNC and convolution
+literatures do not state their combination or the resulting positivity
+theorem.  A-star status remains provisional until independent proof and
+submission-grade prior-art audits are completed.
+
 ## Prior-art status
 
 The closest checked papers are:
@@ -156,6 +203,10 @@ The closest checked papers are:
   `2.07598...`.
 - Patra et al. (arXiv:2409.04425): one-qubit magic-breaking criteria, but not
   the correlated many-qubit convolution statement.
+- Raussendorf et al. (PRA 101, 012350), Ipek et al. (PRA 113, 032409), and
+  Okay (Res. Math. Sci. 13, 55) provide the CNC phase-space framework and
+  anticommuting-factor classification.  They do not state the odd-convolution
+  CNC-positivity theorem found here.
 - General theta-body/antiblocker literature supplies the standard
   `STAB(G) subset TH(G) subset QSTAB(G)` inclusions, but the explicit SDP
   counterexample above rules out the particular nonlinear scaling needed
@@ -188,6 +239,10 @@ The next cycle must do one of two things:
 2. construct a higher-logical-dimensional stabilizer witness that violates
    it, then return to the frozen exponent-four claim without rebranding the
    failed stronger statement.
+
+In parallel, the new CNC-positivity theorem needs independent proof
+reconstruction and a complete literature audit.  It is a credible standalone
+novelty route even if global stabilizer membership ultimately fails.
 
 Additional random testing of the same scale is now secondary.  Real quantum
 hardware is not the decisive validator for this theorem: the claim concerns

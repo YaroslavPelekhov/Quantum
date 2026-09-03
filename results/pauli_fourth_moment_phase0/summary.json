@@ -22,6 +22,26 @@
     "integer_witness_exact_vertex_maximum": 1,
     "integer_witness_value": 1.0312863652826338
   },
+  "spin_factor_witness_theorem": {
+    "status": "proved_for_all_odd_convolution_orders_at_least_3",
+    "three_qubit_axes": 5,
+    "trilinear_random_starts": 5000,
+    "best_product_state_value": 1.0000000000000047,
+    "exact_stabilizer_bound": 1
+  },
+  "global_cnc_positivity_theorem": {
+    "status": "proved_pending_independent_and_prior_art_audits",
+    "scope": "all qubit dimensions, arbitrary inputs, every odd convolution order K>=3",
+    "statement": "nonnegative overlap with every maximal CNC phase-point operator",
+    "does_not_imply": ["CNC-polytope membership", "stabilizer-polytope membership"],
+    "canonical_form_audit": {
+      "instances": 5400,
+      "spin_qubits": [1, 2, 3],
+      "syndrome_qubits": [0, 1, 2],
+      "orders": [3, 5],
+      "minimum_overlap": 0.028993294092852805
+    }
+  },
   "six_qubit_oracle": {
     "maximal_commuting_contexts": 4922775,
     "pure_stabilizer_states": 315057600,

@@ -12,7 +12,9 @@
     "generator": "experiments/pauli_fourth_moment_phase0/build_n6_contexts.py"
   },
   "artifacts": [
+    {"path": "cnc_positivity_audit.json", "bytes": 3252, "sha256": "ee9cc05b2c57f7bad67548e95dc7dc6ef487608e3c327c5a6de41a506dda3401"},
     {"path": "graph_atlas_shortcut.json", "bytes": 279, "sha256": "5de8b73d3df2541657547d80f14ffab558f34c21aa905766c7b678ee159a046f"},
+    {"path": "multilogical_witness_audit.json", "bytes": 3570, "sha256": "9c82504fda5632231431d1bd1ce60180b3ce1090fd78ea764c174e13a89cf066"},
     {"path": "n6_p3_haar_cover.json", "bytes": 1101, "sha256": "a99b6e2f67c0410ad7065747a9acf0313971749b742f61a925927f87e0ffd5c0"},
     {"path": "n6_p3_haar_cover.npz", "bytes": 37417, "sha256": "01678b565fa17cc42778e6af6bae975e48a9c15419741e8b16691eaa58a9e5af"},
     {"path": "n6_p3_near015_cover.json", "bytes": 948, "sha256": "797ac95e1db7aa073f5fff97a631ad78dc24e9a7f08f3e7be9d0490f588cf17f"},

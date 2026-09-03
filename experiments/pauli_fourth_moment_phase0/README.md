@@ -45,6 +45,10 @@ against a direct density-matrix simulation of the defining CNOT circuit.
 one-logical tests do not characterize the full three-qubit stabilizer
 polytope.  `run_theta_shortcut_audit.py` falsifies the corresponding generic
 theta-body shortcut (it requires CVXPY in addition to the packages below).
+`run_multilogical_witness_audit.py` checks the first extracted spin-factor
+witness covered by the analytic higher-logical theorem.
+`run_cnc_positivity_audit.py` checks signs and normalization across canonical
+maximal-CNC forms with several spin/syndrome dimensions and odd orders.
 
 The GPU oracle requires PyTorch with CUDA.  The small exact audit requires
 NumPy and SciPy; the graph-atlas audit additionally requires NetworkX.
