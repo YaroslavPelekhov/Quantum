@@ -132,7 +132,11 @@
           "remaining_scalar_inequality": "(L+H/4)^2 >= q0+2*sqrt(R)+2*sqrt(p0*p1*p2*D)",
           "interior_dirichlet_samples": 1000000,
           "minimum_sampled_gap": 0.0017142811254221403,
-          "status": "operator_reduction_proved_scalar_inequality_unproved"
+          "primitive_faces_proved": 5,
+          "coupled_hole_support_faces_open": 3,
+          "face_samples_per_hole_support": 100000,
+          "maximum_sampled_value_minus_fixed_L_envelope": -1.7162637299700245e-05,
+          "status": "operator_reduction_and_five_primitive_faces_proved_full_scalar_inequality_unproved"
         },
         "status": "one_explicit_order9_scalar_inequality_remains_unproved"
       }
@@ -170,5 +174,5 @@
     "n3": 2000,
     "n4": 100
   },
-  "next_gate": "prove or falsify the explicit nonnegative-variable inequality (L+H/4)^2 >= q0+2*sqrt(R)+2*sqrt(p0*p1*p2*D) for HEhu|x|, then test whether its four-hole cancellation argument lifts to all SCF graphs"
+  "next_gate": "prove a coupled-hole concentration lemma or an exact SOS certificate for the residual region of the HEhu|x| scalar inequality, then test whether the argument lifts to all SCF graphs"
 }

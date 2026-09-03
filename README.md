@@ -8,7 +8,9 @@ non-rank SCF facet types, 115 now have an exact join reduction and 12 of the
 13 residual alpha-three types close under a validated level-2 state-moment
 relaxation.  One explicit atom, graph6 `HEhu|x|`, remains: level 3 reduces its
 upper excess to `4.16e-5`.  An exact four-hole cancellation now reduces that
-atom to one explicit scalar inequality, but the inequality is not yet proved.
+atom to one explicit scalar inequality.  That inequality is now proved on
+all five primitive single-channel faces; only coupled-hole supports remain
+open, so the full inequality is not yet proved.
 This is the strongest current A-star route, not a confirmed A-star result; no
 QPU run is justified for the exact convex-geometric gate.
 

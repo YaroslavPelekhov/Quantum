@@ -421,3 +421,43 @@ itself survived one million seeded interior-simplex samples and is exact at
 the equal light triple, but is not yet proved.  This replaces a 429-by-429
 moment matrix by one concrete homogeneous inequality; it does not close the
 final atom by itself.
+
+## Lemma (five primitive faces of the final atom)
+
+Normalize `(A)` by `2L+H=1`, so `D=3/2` and `0<=L<=1/2`.  Consider a support
+contained in `{0,1,2} union C`, where `C` is one of the first five four-holes
+listed in `scf_atom_spectral_reduction.json`.  Direct expansion shows that
+only the named quartic monomial in `R` survives on each of these five faces.
+
+On the first four faces, maximizing over the two nonzero heavy variables
+with sum `H` is the largest-eigenvalue problem for a positive semidefinite
+`2 by 2` matrix.  If its eigenvalues are `y>=z>=0`, the remaining light
+variable is `x>=0`, and `x+y+z=L`, then the face objective is exactly
+
+`xy+xz+yz+Hy+2 sqrt((3/2)xyz)`.                         `(B)`
+
+On the fifth face the same reduction is an upper bound: the determinant of
+the corresponding matrix is `K=p_1p_2+p_1p_4+p_2p_6`, so
+`p_0p_1p_2<=p_0K`.  Thus `(B)` controls all five faces.
+
+For fixed `y`, expression `(B)` is increasing in `sqrt(xz)`.  Since
+`x+z=L-y`, AM--GM bounds it by its value at
+`x=z=(L-y)/2`.  Write `y=s^2/6`.  The resulting univariate expression `E`
+satisfies the exact identities
+
+`dE/ds=-(s-1)(6L+s^2+4s)/12`,
+
+`(1/4+L/2)^2-E=(s-1)^2(12L+s^2+6s+3)/48`.              `(C)`
+
+Consequently the fixed-`L` maximum on every primitive face is
+`L(1-2L)` for `L<=1/6` and `(1/4+L/2)^2` for `L>=1/6`.
+The first branch lies below the target because their difference is
+`(1-6L)^2/16`.  Hence `(A)` is proved on all five primitive faces.
+
+This lemma is not the full atom proof.  The remaining three hole-generated
+support faces activate three quartic monomials simultaneously, and a fully
+supported point can activate all eight.  A counterexample, if one exists,
+must therefore exploit coupled hole channels rather than a single primitive
+channel.  The stored audit tests all eight hole-generated support faces with
+100,000 seeded points per face; their largest value-minus-envelope is
+negative, but only the five-face statement above is promoted to a theorem.

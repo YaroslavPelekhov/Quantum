@@ -318,6 +318,29 @@ observed gap `0.00171428` and equality on the expected boundary.  The scalar
 inequality itself remains unproved; this is a dimensional collapse of the
 last gate, not its numerical promotion.
 
+A further analytic step closes every primitive single-channel boundary face
+of the atom.  After `2L+H=1`, maximizing the two heavy variables on each of
+the first five hole-generated faces gives three nonnegative variables
+`x+y+z=L` and the upper envelope
+
+`E=xy+xz+yz+(1-2L)y+2 sqrt((3/2)xyz)`.
+
+For fixed `y`, this is increasing in `sqrt(xz)`, so `x=z=(L-y)/2` is the
+worst case.  With `y=s^2/6`, the derivative and target gap factor exactly as
+
+`dE/ds=-(s-1)(6L+s^2+4s)/12`,
+
+`(1/4+L/2)^2-E=(s-1)^2(12L+s^2+6s+3)/48`.
+
+Thus the fixed-`L` face maximum is `L(1-2L)` below `L=1/6` and the target
+itself above `L=1/6`; all five primitive faces are proved.  The other three
+hole-generated supports can activate three quartic monomials at once.  They,
+and the fully coupled interior, remain open.  An independent 100,000-point
+test on each of all eight faces found maximum value-minus-envelope
+`-1.71626e-5`.  This is a strict reduction of the open mechanism: any
+counterexample must use coupled hole channels, but the full scalar inequality
+is not yet promoted to a theorem.
+
 As an independent warm-state control, the published narrow-basin
 `G9` instance was initialized from its reported approximate state.  The
 objective moved from `2.9924593427` to `3.0448154987`, reproducing the
@@ -387,11 +410,10 @@ complete.
 The immediate target is no longer another random search.  It is the single
 order-nine atom `HEhu|x|`.  The decisive routes are:
 
-1. extract and rationalize a sparse dual/SOS certificate from a sufficiently
-   accurate state-moment relaxation, then verify the identity exactly; or
-2. prove the explicit nine-variable inequality obtained from the exact
-   four-hole cancellation, then determine whether that argument lifts from
-   this atom to all `{0,1/2,1}` SCF facets.
+1. prove a concentration lemma showing that coupled hole channels cannot
+   exceed the now-exact primitive-face envelope; or
+2. extract and rationalize a sparse dual/SOS certificate for the residual
+   coupled-channel region, then verify the identity exactly.
 
 A physical Pauli state with value above `1.5+1e-7` would instead falsify the
 weighted conjecture.  Current see-saw lower bounds attain only the classical

@@ -73,7 +73,9 @@ validates the port on the published `G9` bounds,
 explicit atom.  `run_scf_atom_spectral_reduction.py` proves the cancellation
 pattern of its eight four-hole operators and reduces the remaining quantum
 gate to a single scalar inequality, then runs a seeded interior falsification
-test of that inequality.
+test of that inequality.  It also verifies the exact univariate
+factorization proving the inequality on the five primitive single-channel
+support faces and independently tests all eight hole-generated faces.
 `run_prior_art_scf_screen.py` downloads the Wang et al. imperfect-graph
 benchmarks at a pinned upstream commit, verifies their SHA-256 hashes, and
 screens them for the SCF property.

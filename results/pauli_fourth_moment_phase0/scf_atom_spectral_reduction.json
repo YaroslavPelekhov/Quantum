@@ -93,11 +93,214 @@
     "remaining_inequality": "(L+H/4)^2 >= q0+2*sqrt(R)+2*sqrt(p0*p1*p2*D)",
     "consequence": "the remaining inequality implies beta(G,w)<=3/2 via the three-mode characteristic polynomial"
   },
+  "proved_primitive_face_lemma": {
+    "scope": "support contained in {0,1,2} union C for C in the first five listed holes; these are exactly the supports on which only the named quartic monomial in R survives",
+    "normalization": "2L+H=1, hence 0<=L<=1/2 and D=3/2",
+    "three_variable_reduction": "x+y+z=L, y>=z: E=xy+xz+yz+(1-2L)y+2*sqrt((3/2)xyz)",
+    "fifth_face_note": "on the fifth face the 2x2 determinant K obeys p0*p1*p2<=x*K, so the same three-variable expression is an upper bound",
+    "one_variable_substitution": "for fixed y, E increases with sqrt(xz), so x=z=(L-y)/2; set y=s^2/6",
+    "derivative_identity": "dE/ds=-(s-1)(6L+s^2+4s)/12",
+    "target_gap_identity": "(1/4+L/2)^2-E=(s-1)^2(12L+s^2+6s+3)/48",
+    "fixed_L_maximum": "L(1-2L) for 0<=L<=1/6; (1/4+L/2)^2 for 1/6<=L<=1/2",
+    "consequence": "inequality (A) is proved on all five primitive one-channel support faces; the other three listed hole supports activate three quartic monomials and remain only numerically audited",
+    "exact_factorization_check": "passed over rational arithmetic",
+    "independent_face_falsification": {
+      "faces": [
+        {
+          "cycle": [
+            0,
+            5,
+            6,
+            7
+          ],
+          "support": [
+            0,
+            1,
+            2,
+            5,
+            6,
+            7
+          ],
+          "active_hole_channels": [
+            0
+          ],
+          "samples": 100000,
+          "maximum_value_minus_envelope": -2.805119709375914e-05,
+          "minimum_envelope_slack": 2.805119709375914e-05
+        },
+        {
+          "cycle": [
+            0,
+            3,
+            4,
+            8
+          ],
+          "support": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            8
+          ],
+          "active_hole_channels": [
+            1
+          ],
+          "samples": 100000,
+          "maximum_value_minus_envelope": -1.7162637299700245e-05,
+          "minimum_envelope_slack": 1.7162637299700245e-05
+        },
+        {
+          "cycle": [
+            1,
+            4,
+            6,
+            8
+          ],
+          "support": [
+            0,
+            1,
+            2,
+            4,
+            6,
+            8
+          ],
+          "active_hole_channels": [
+            2
+          ],
+          "samples": 100000,
+          "maximum_value_minus_envelope": -0.003985309276036311,
+          "minimum_envelope_slack": 0.003985309276036311
+        },
+        {
+          "cycle": [
+            2,
+            4,
+            5,
+            6
+          ],
+          "support": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6
+          ],
+          "active_hole_channels": [
+            3
+          ],
+          "samples": 100000,
+          "maximum_value_minus_envelope": -0.0019051599613668646,
+          "minimum_envelope_slack": 0.0019051599613668646
+        },
+        {
+          "cycle": [
+            3,
+            4,
+            6,
+            7
+          ],
+          "support": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7
+          ],
+          "active_hole_channels": [
+            4
+          ],
+          "samples": 100000,
+          "maximum_value_minus_envelope": -0.004388470119831206,
+          "minimum_envelope_slack": 0.004388470119831206
+        },
+        {
+          "cycle": [
+            3,
+            4,
+            6,
+            8
+          ],
+          "support": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            8
+          ],
+          "active_hole_channels": [
+            1,
+            2,
+            5
+          ],
+          "samples": 100000,
+          "maximum_value_minus_envelope": -0.0009780844579140302,
+          "minimum_envelope_slack": 0.0009780844579140302
+        },
+        {
+          "cycle": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "support": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            7
+          ],
+          "active_hole_channels": [
+            0,
+            3,
+            6
+          ],
+          "samples": 100000,
+          "maximum_value_minus_envelope": -0.0010085770647167425,
+          "minimum_envelope_slack": 0.0010085770647167425
+        },
+        {
+          "cycle": [
+            4,
+            5,
+            6,
+            8
+          ],
+          "support": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            8
+          ],
+          "active_hole_channels": [
+            2,
+            3,
+            7
+          ],
+          "samples": 100000,
+          "maximum_value_minus_envelope": -0.0013674801577567008,
+          "minimum_envelope_slack": 0.0013674801577567008
+        }
+      ],
+      "maximum_value_minus_envelope": -1.7162637299700245e-05
+    }
+  },
   "falsification": {
     "seed": 1,
     "dirichlet_samples": 1000000,
     "minimum_interior_gap": 0.0017142811254221403,
     "equal_light_triple_boundary_gap": 1.1102230246251565e-16
   },
-  "status": "operator_reduction_proved_scalar_inequality_survived_not_proved"
+  "status": "operator_reduction_and_five_primitive_faces_proved_full_scalar_inequality_open"
 }
