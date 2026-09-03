@@ -39,6 +39,7 @@
     {"path": "scf_order9_guided_attack.json", "bytes": 66052, "sha256": "71c8899b110d41ed743bc8e905e9e85800203ec5e0aa3c0ea09f990620bb751e"},
     {"path": "scf_order9_level3_atom.json", "bytes": 891, "sha256": "f4342553f724d85d7efa93074dab560a580453e375e121da7e64732c35ec59ae"},
     {"path": "scf_order9_state_moment.json", "bytes": 6913, "sha256": "e4ac6c2dd6463b124a2da233438755ea16c2b4a34828913edb87c05af2dd68ba"},
+    {"path": "scf_one_hole_certificates.json", "bytes": 13389, "sha256": "2f8de468309b44a35e787eb7f845044c94020dca429469828519a2935f6580ea"},
     {"path": "scf_theta_guided_attack.json", "bytes": 7502, "sha256": "070617231b39e1bd9d9ec549cdc8320551e6666449e72c228ca9a29bb80e14ca"},
     {"path": "small_triple_convolution.json", "bytes": 822, "sha256": "3a0302d73ae842c4a2949a66d0827ce991f115143b260f39979ca63498b005d0"},
     {"path": "state_moment_g9_control.json", "bytes": 568, "sha256": "07f186d7d9485c98387e0f80df016352a77e4b094fc22a3fe8b3d3c361421c87"},

@@ -766,3 +766,50 @@ Consequently the last atom `HEhu|x|` with weights
 is attained classically, hence `beta(G,w)=alpha(G,w)=3/2`.  All algebraic
 identities in this completion are checked symbolically by the executable
 reduction script.
+
+## Proposition (four one-hole residual types)
+
+Four further residual weighted-support types have graph6 strings `HCXmtiz`,
+`GQuvSw`, `HCZTmyz`, and `HQjRexz` (representative indices 5, 7, 9, and 33).
+Each has exactly one induced four-hole.  Its heavy vertices form a clique,
+the hole alternates between two heavy and two light vertices, every
+independent triple is light-only, and no vertex is anticomplete to the hole.
+Consequently, in the extremal generalized-cycle sector,
+
+`e_2=q_0+2sqrt(product_(i in C)p_i)`
+
+and `e_3` is the ordinary sum of the light independent-triple monomials.
+
+Fix the total light mass `L` and hence the heavy mass `1-2L`.  For the two
+heavy vertices in the hole, maximizing over their allocation gives the top
+eigenvalue `y` of the positive semidefinite matrix
+
+`[[A,sqrt(p_rp_s)],[sqrt(p_rp_s),B]]`,
+
+where `A,B` are their light non-neighbour masses and `r,s` are the two light
+hole vertices.  Let `z` be the other eigenvalue and
+`x=L-A-B`.  Direct expansion, separately for all four graphs, gives
+
+`q_light <= xy+xz+yz`, `e_3<=xyz`, and `x,y,z>=0`.
+
+For every remaining scalar heavy branch, its non-neighbour mass is one of
+three aggregate variables `y`; an explicit partition of the other light
+vertices into aggregates `x,z` again gives the same two inequalities.  The
+differences are sums of monomials with nonnegative integer coefficients; the
+complete partitions and slacks are stored in `scf_one_hole_certificates.json`.
+If `y` is not the largest aggregate, replacing it by the largest can only
+increase the term `(1-2L)y`, while leaving the symmetric terms unchanged.
+Thus every heavy branch is bounded by the already proved envelope
+
+`xy+xz+yz+(1-2L)y+2sqrt((3/2)xyz)`, `x+y+z=L`.
+
+Its fixed-`L` maximum is `L(1-2L)` for `L<=1/6` and
+`(1/4+L/2)^2` for `L>=1/6`.  The former is itself at most the latter because
+
+`(1/4+L/2)^2-L(1-2L)=(6L-1)^2/16`.
+
+The spectral crossing argument used for the final atom therefore proves
+`beta(G,w)<=3/2` for all four one-hole types.  Maximum stable sets attain
+equality.  Together with the 115 join reductions and `HEhu|x|`, this makes
+120 of the 128 order-nine non-rank SCF facet types exact; eight residual types
+remain only numerically certified.
