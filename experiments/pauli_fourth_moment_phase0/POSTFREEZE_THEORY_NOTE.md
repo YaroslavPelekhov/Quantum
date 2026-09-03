@@ -291,7 +291,10 @@ can have non-rank facets.
 
 ### Proof audit
 
-Set `A=sum_i a_i P_i`.  In each generalized-cycle symmetry sector, the SCF
+By representation invariance of beta, it is enough to use the fiducial
+bosonization realization employed in the free-fermion proof; this avoids
+accidental Pauli product identities present in some compact realizations.
+Set `A=sum_i a_i P_i` in that realization.  In each generalized-cycle symmetry sector, the SCF
 solution writes `A` as a free-fermion Hamiltonian with at most `alpha(G)`
 positive single-particle energies `epsilon_j`.  Their generalized
 characteristic polynomial is
@@ -379,3 +382,42 @@ classical value `1.5`.  A tighter level-3 solve was stopped after more than
 1,300 CPU seconds without a result.  Therefore 115 types are analytically
 closed, 12 more are numerically bounded at level 2, and exactly one explicit
 atom remains open; no full weighted theorem is claimed.
+
+## Lemma (exact spectral reduction of the final atom)
+
+The remaining atom admits a sharper reduction than the generic SDP.  Put
+`p_i=b_i^2`, where `b_i` are the Hamiltonian coefficients, and define
+
+`L=sum_(i in {0,1,2,4,6}) p_i`,
+`H=sum_(i in {3,5,7,8}) p_i`,
+`D=3L+(3/2)H`.
+
+Its generalized characteristic polynomial has three squared-mode roots and
+coefficients
+
+`e_1=L+H`, `e_3=p_0 p_1 p_2`, `e_2=q_0+2 sqrt(R)`,
+
+in the extremal symmetry sector.  Here `q_0` is the sum `p_i p_j` over all
+nonedges, and `R` is the sum of `product_(i in C) p_i` over the eight induced
+four-holes.  The formula for `e_2` is exact: all hole-operator pairs
+anticommute except `(C_4,C_7)` and `(C_5,C_6)`.  These two exceptional pairs
+multiply to the same Pauli word with opposite signs and equal scalar
+coefficients.  Their cross terms cancel, so the square of the non-scalar
+fourth-order coefficient is exactly `R I`.
+
+If `S` is the sum of the three positive single-particle energies, then
+
+`((S^2-e_1)/2)^2=e_2+2 sqrt(e_3) S`.
+
+Since the right crossing is unique for `S^2>=e_1`, the atom inequality is
+reduced to the explicit nonnegative-variable inequality
+
+`(L+H/4)^2 >= q_0+2 sqrt(R)+2 sqrt(p_0 p_1 p_2 D)`.                 `(A)`
+
+Indeed, `(A)` evaluated at `D` forces `S^2<=D`; under the variational
+normalization `2L+H=1`, this is exactly `S^2<=3/2`.  The operator-algebra
+reduction to `(A)` is proved and checked symbolically.  Inequality `(A)`
+itself survived one million seeded interior-simplex samples and is exact at
+the equal light triple, but is not yet proved.  This replaces a 429-by-429
+moment matrix by one concrete homogeneous inequality; it does not close the
+final atom by itself.

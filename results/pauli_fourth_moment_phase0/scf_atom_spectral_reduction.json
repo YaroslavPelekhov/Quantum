@@ -1,0 +1,103 @@
+{
+  "experiment": "last_SCF_atom_exact_spectral_reduction",
+  "support_graph6": "HEhu|x|",
+  "light_vertices": [
+    0,
+    1,
+    2,
+    4,
+    6
+  ],
+  "heavy_vertices": [
+    3,
+    5,
+    7,
+    8
+  ],
+  "induced_four_holes": [
+    [
+      0,
+      5,
+      6,
+      7
+    ],
+    [
+      0,
+      3,
+      4,
+      8
+    ],
+    [
+      1,
+      4,
+      6,
+      8
+    ],
+    [
+      2,
+      4,
+      5,
+      6
+    ],
+    [
+      3,
+      4,
+      6,
+      7
+    ],
+    [
+      3,
+      4,
+      6,
+      8
+    ],
+    [
+      4,
+      5,
+      6,
+      7
+    ],
+    [
+      4,
+      5,
+      6,
+      8
+    ]
+  ],
+  "hole_operator_commuting_pairs": [
+    [
+      4,
+      7
+    ],
+    [
+      5,
+      6
+    ]
+  ],
+  "cancelling_products": {
+    "common_word": [
+      3,
+      5,
+      7,
+      8
+    ],
+    "first_sign": 1,
+    "second_sign": -1
+  },
+  "exact_reduction": {
+    "variables": "p_i=b_i^2>=0; L=sum_{0,1,2,4,6}p_i; H=sum_{3,5,7,8}p_i",
+    "target": "D=3L+(3/2)H",
+    "e1": "L+H",
+    "e3": "p0*p1*p2",
+    "q": "q0+2*sqrt(R), where q0=sum over graph nonedges p_i*p_j and R=sum over the eight four-holes product_{i in C}p_i",
+    "remaining_inequality": "(L+H/4)^2 >= q0+2*sqrt(R)+2*sqrt(p0*p1*p2*D)",
+    "consequence": "the remaining inequality implies beta(G,w)<=3/2 via the three-mode characteristic polynomial"
+  },
+  "falsification": {
+    "seed": 1,
+    "dirichlet_samples": 1000000,
+    "minimum_interior_gap": 0.0017142811254221403,
+    "equal_light_triple_boundary_gap": 1.1102230246251565e-16
+  },
+  "status": "operator_reduction_proved_scalar_inequality_survived_not_proved"
+}

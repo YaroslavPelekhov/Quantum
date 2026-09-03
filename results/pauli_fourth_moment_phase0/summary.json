@@ -125,7 +125,16 @@
         "remaining_atom_weights": [0.5, 0.5, 0.5, 1.0, 0.5, 1.0, 0.5, 1.0, 1.0],
         "remaining_atom_level2_upper": 1.500135686389718,
         "remaining_atom_level3_upper": 1.5000415785734806,
-        "status": "one_explicit_order9_atom_remains_unproved"
+        "exact_spectral_reduction": {
+          "four_holes": 8,
+          "exceptional_commuting_pairs": 2,
+          "exceptional_cross_terms_cancel_exactly": true,
+          "remaining_scalar_inequality": "(L+H/4)^2 >= q0+2*sqrt(R)+2*sqrt(p0*p1*p2*D)",
+          "interior_dirichlet_samples": 1000000,
+          "minimum_sampled_gap": 0.0017142811254221403,
+          "status": "operator_reduction_proved_scalar_inequality_unproved"
+        },
+        "status": "one_explicit_order9_scalar_inequality_remains_unproved"
       }
     }
   },
@@ -161,5 +170,5 @@
     "n3": 2000,
     "n4": 100
   },
-  "next_gate": "prove or physically falsify the single order-nine SCF atom HEhu|x|, preferably by an exact rational dual/SOS certificate or an analytic orbit-sector inequality, then test whether the argument lifts to all SCF graphs"
+  "next_gate": "prove or falsify the explicit nonnegative-variable inequality (L+H/4)^2 >= q0+2*sqrt(R)+2*sqrt(p0*p1*p2*D) for HEhu|x|, then test whether its four-hole cancellation argument lifts to all SCF graphs"
 }

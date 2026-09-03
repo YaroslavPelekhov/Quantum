@@ -301,6 +301,23 @@ bounds `1.50013566` and `1.50014217`; level 3 lowers the bound to
 seconds without a result.  The hierarchy is converging toward the classical
 value, but the remaining `4.16e-5` relaxation gap is not a proof.
 
+The atom can nevertheless be reduced exactly beyond the generic SDP.  Its
+eight induced four-hole operators have only two commuting pairs; those pairs
+multiply to the same Pauli word with opposite signs and equal coefficients,
+so all exceptional cross terms cancel.  The extremal fourth-order
+characteristic coefficient is therefore `q_0+2 sqrt(R)`.  Combining this
+with the scalar first- and sixth-order coefficients reduces the desired
+quantum bound to one explicit homogeneous inequality over nine nonnegative
+variables:
+
+`(L+H/4)^2 >= q_0+2 sqrt(R)+2 sqrt(p_0 p_1 p_2 D)`,
+
+where `D=3L+(3/2)H`.  The operator reduction is exact and the scalar
+inequality survived one million seeded interior-simplex samples, with minimum
+observed gap `0.00171428` and equality on the expected boundary.  The scalar
+inequality itself remains unproved; this is a dimensional collapse of the
+last gate, not its numerical promotion.
+
 As an independent warm-state control, the published narrow-basin
 `G9` instance was initialized from its reported approximate state.  The
 objective moved from `2.9924593427` to `3.0448154987`, reproducing the
@@ -372,9 +389,9 @@ order-nine atom `HEhu|x|`.  The decisive routes are:
 
 1. extract and rationalize a sparse dual/SOS certificate from a sufficiently
    accurate state-moment relaxation, then verify the identity exactly; or
-2. derive an analytic inequality from its weighted automorphism orbits and
-   simplicial-clique free-fermion sector, then determine whether that argument
-   lifts from this atom to all `{0,1/2,1}` SCF facets.
+2. prove the explicit nine-variable inequality obtained from the exact
+   four-hole cancellation, then determine whether that argument lifts from
+   this atom to all `{0,1/2,1}` SCF facets.
 
 A physical Pauli state with value above `1.5+1e-7` would instead falsify the
 weighted conjecture.  Current see-saw lower bounds attain only the classical

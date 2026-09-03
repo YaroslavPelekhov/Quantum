@@ -104,4 +104,8 @@ rank theorem apply.  Of the 13 residual alpha-three types, a validated
 second state-moment relaxation closes 12 to tolerance `2e-5`.  One explicit
 graph6 atom, `HEhu|x|`, remains open; its upper-bound excess decreases from
 `1.3569e-4` at level 2 to `4.1579e-5` at level 3.  This is localization of
-the obstruction, not a proof by numerical tolerance.
+the obstruction, not a proof by numerical tolerance.  An exact follow-up
+uses cancellation among the atom's eight four-hole operators to reduce the
+remaining quantum statement to one explicit homogeneous scalar inequality.
+That scalar inequality survived one million interior samples but remains the
+unproved decisive gate.

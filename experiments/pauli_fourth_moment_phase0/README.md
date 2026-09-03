@@ -70,7 +70,10 @@ hierarchy used for the remaining types; `run_state_moment_g9_control.py`
 validates the port on the published `G9` bounds,
 `run_scf_order9_state_moment.py` tests all 13 alpha-three residuals, and
 `run_scf_order9_level3_atom.py` reproduces the level-3 bound for the final
-explicit atom.
+explicit atom.  `run_scf_atom_spectral_reduction.py` proves the cancellation
+pattern of its eight four-hole operators and reduces the remaining quantum
+gate to a single scalar inequality, then runs a seeded interior falsification
+test of that inequality.
 `run_prior_art_scf_screen.py` downloads the Wang et al. imperfect-graph
 benchmarks at a pinned upstream commit, verifies their SHA-256 hashes, and
 screens them for the SCF property.
