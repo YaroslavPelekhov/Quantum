@@ -22,6 +22,12 @@ exponent `3`, and therefore the universal fractional-colouring bound
 This stronger statement also remains a conjecture.  No claim of confirmation
 is made from numerics alone.
 
+The main exact advance in this continuation is narrower but complete: the
+last unresolved order-nine atom `HEhu|x|` now has an exact scalar, KKT, and
+sum-of-squares proof.  This does not by itself prove the universal weighted
+claim, because 12 other residual facet types remain certified only
+numerically.
+
 ## Results that did survive
 
 ### Exact small-system stabilizer membership
@@ -294,7 +300,7 @@ weighted independence number `1.5`.  We ported the real state-moment SDP
 hierarchy and first reproduced the published `G9` bounds: level 1 gives
 `3.2360679896` versus `3.236068`, and level 2 gives `3.0448153335` versus
 `3.044815`.  Level 2 then closes 12 of the 13 SCF residual types to tolerance
-`2e-5`.  One explicit atom remains: graph6 `HEhu|x|`, weights
+`2e-5`.  One explicit atom remained at that stage: graph6 `HEhu|x|`, weights
 `(1/2,1/2,1/2,1,1/2,1,1/2,1,1)`.  Independent level-2 solvers give upper
 bounds `1.50013566` and `1.50014217`; level 3 lowers the bound to
 `1.5000415786`.  A tighter level-3 run was stopped after more than 1,300 CPU
@@ -334,8 +340,8 @@ worst case.  With `y=s^2/6`, the derivative and target gap factor exactly as
 
 Thus the fixed-`L` face maximum is `L(1-2L)` below `L=1/6` and the target
 itself above `L=1/6`; all five primitive faces are proved.  The other three
-hole-generated supports can activate three quartic monomials at once.  They,
-and the fully coupled interior, remain open.  An independent 100,000-point
+hole-generated supports can activate three quartic monomials at once.  An
+independent 100,000-point
 test on each of all eight faces found maximum value-minus-envelope
 `-1.71626e-5`.  This is a strict reduction of the open mechanism: any
 counterexample must use coupled hole channels, but the full scalar inequality
@@ -366,6 +372,75 @@ set to zero at a maximizer.  The remaining exact gate is consequently the
 union of four three-heavy boundary families, rather than the full
 nine-variable interior.
 
+The four resulting relative interiors can now also be closed exactly.  On
+`p_5=0`, radical elimination and KKT row reduction force the complete
+one-parameter stationary ridge
+
+`p_0=21rho/20, p_1=47/686, p_2=235/(117649rho), p_6=rho,`
+
+`p_4=54/343-41rho/20-235/(117649rho),`
+
+`p_3=188/343-47rho/5, p_7=94/343, p_8=47rho/5-94/343`.
+
+Its scalar gap is exactly `48/2401`, and throughout its positive interval
+`10/343<rho<20/343` the derivative into the missing `p_5` channel is strictly
+positive.  It therefore cannot maximize the full problem.  On `p_3=0`, exact
+row reduction gives `(p_4-k)p_7=0`, where `sqrt(R)=p_6k`; the positive branch
+`p_7>0` forces `k=p_4`, after which two required equations sum to the strictly
+positive quantity `p_1(p_4+p_8)`.  Hence this face has no positive stationary
+point.  The atom automorphism supplies the `p_8=0` and `p_7=0` cases.
+
+Consequently any global maximizer with all five light coordinates positive
+has at least two zero heavy coordinates.  The residual exact gate is now the
+six two-heavy faces and their descendants, plus strata with a zero light
+coordinate.
+
+Three of those six two-heavy faces are now proved as well.  The `{p_3,p_7}`
+face was already the fifth primitive face.  On `{p_3,p_8}`, maximizing the
+heavy split is a `2 by 2` eigenvalue problem with trace
+`p_0+p_2+p_4+p_6` and determinant `p_2(p_0+p_6)`.  Taking its eigenvalues as
+`y,z` and `x=p_1` gives exactly the primitive envelope `(B)`, with
+nonnegative slacks `p_1p_6` in the quadratic term and `p_1p_2p_6` under the
+light radical.  Symmetry proves `{p_5,p_7}`.  The remaining pair faces are
+`{p_3,p_5}`, `{p_7,p_8}`, and `{p_5,p_8}`.
+
+Those three relative interiors are now closed too.  On `{p_3,p_5}`, the KKT
+system forces `p_2-p_0=2p_6` and has one positive rational solution:
+
+`(p_0,...,p_8)=(3/49,47/1372,47/686,94/343,20/343,`
+`               94/343,5/1372,0,0)`.
+
+It has gap `48/2401`, but the derivative into the missing `p_8` channel is
+`24/49>0`; symmetry closes `{p_7,p_8}`.  On `{p_5,p_8}`, a direct KKT
+elimination writes the positive light radical as a strictly negative product,
+so no positive stationary point exists.  Thus every two-heavy relative
+interior is excluded, and all supports with at most one heavy coordinate lie
+in a primitive proved face.  The scalar inequality is proved whenever all
+five light coordinates are positive.  The only residual exact gate is the
+union of the five zero-light strata.
+
+That final boundary is now proved.  On `p_0=0`, write
+`K=p_1p_8+p_2p_5+(p_3+p_5)(p_7+p_8)`, so `R=p_4p_6K`.  Exact expansion gives
+
+`16(T-q_0-4p_4p_6-K/4)`
+` =(4p_1-4p_2+p_3-4p_4+p_5+4p_6-p_7-p_8)^2`
+`  +48p_1p_2+48p_1p_4+12p_1p_8+12p_2p_5+48p_2p_6>=0`,
+
+and weighted AM--GM gives `4p_4p_6+K/4>=2sqrt(p_4p_6K)`.  The `p_4=0`
+and symmetric `p_6=0` faces split into primitive heavy blocks.  If exactly
+one of `p_0,p_1,p_2` is zero, turning it on gains order `sqrt(epsilon)` from
+the light radical against only order `epsilon` elsewhere, so it cannot
+maximize a violation.  The sole remaining case is `p_1=p_2=0`.  There,
+
+`16(T-q_0)=(4p_0+4p_4+4p_6-p_3-p_5-p_7-p_8)^2+16K_0`,
+
+where `K_0=p_0(p_3+p_7)+p_4(p_7+p_8)+p_6(p_3+p_5)`, and a second exact
+square-plus-monomials identity proves `K_0^2>=4R`.  Therefore the scalar
+inequality holds on the complete simplex.  The last atom is now an exact
+theorem:
+
+`beta(HEhu|x|,(1/2,1/2,1/2,1,1/2,1,1/2,1,1))=3/2`.
+
 A targeted residual-wedge falsification mixed boundary-biased Dirichlet,
 uniform Dirichlet, and lognormal proposals.  Of 10,000,000 normalized points,
 1,044,914 satisfied the necessary wedge condition; none violated the scalar
@@ -387,11 +462,13 @@ hard subsets contain 9 and 295 graphs respectively, again with zero SCF
 members.  The files are downloaded by commit and checked byte-for-byte by
 SHA-256 before classification.
 
-This is the strongest current A-star route, but it is not yet an A-star
-result.  The rank theorem is proved and plausibly novel; the order-nine
-non-rank obstruction has been reduced from 128 types to one explicit atom.
-The general weighted theorem still lacks a proof and external expert
-prior-art review.
+This is the strongest current A-star route, but it is not yet a confirmed
+A-star result.  The rank theorem and the final non-rank atom theorem are
+proved and plausibly novel.  Twelve other order-nine residual facet types
+currently have only numerical level-2 upper certificates, so neither the
+complete order-nine statement nor the general weighted SCF theorem follows
+yet.  External expert proof reconstruction and a submission-grade prior-art
+review are also still required.
 
 ## Prior-art status
 
@@ -439,13 +516,14 @@ complete.
 
 ## Next decisive gate
 
-The immediate target is no longer another random search.  It is the single
-order-nine atom `HEhu|x|`.  The decisive routes are:
+The single order-nine atom `HEhu|x|` is no longer the gate.  The decisive
+routes are now:
 
-1. classify the stationary points on the four three-heavy boundary families
-   left by the Hessian-discriminant exclusion; or
-2. extract and rationalize a sparse dual/SOS certificate only for those four
-   lower-dimensional families, then verify the identities exactly.
+1. determine whether the same spectral/KKT/SOS mechanism closes the other 12
+   residual order-nine facet types that currently have only numerical SDP
+   bounds; and
+2. test whether those finite certificates expose a graph operation or local
+   obstruction theorem that lifts from order nine to every SCF graph.
 
 A physical Pauli state with value above `1.5+1e-7` would instead falsify the
 weighted conjecture.  Current see-saw lower bounds attain only the classical

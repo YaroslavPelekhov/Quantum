@@ -6,15 +6,22 @@ proves `beta(G,1)=alpha(G)` for every simplicial claw-free frustration graph
 and exhaustively screens all 261,080 connected order-nine graphs.  Of 128
 non-rank SCF facet types, 115 now have an exact join reduction and 12 of the
 13 residual alpha-three types close under a validated level-2 state-moment
-relaxation.  One explicit atom, graph6 `HEhu|x|`, remains: level 3 reduces its
-upper excess to `4.16e-5`.  An exact four-hole cancellation now reduces that
-atom to one explicit scalar inequality.  That inequality is now proved on
+relaxation.  The former last explicit atom, graph6 `HEhu|x|`, had a level-3
+upper excess of `4.16e-5` before analytic reduction.  An exact four-hole
+cancellation reduces that atom to one explicit scalar inequality.  That inequality is now proved on
 all five primitive single-channel faces, and an exact Hessian-discriminant
-argument excludes a maximum in the fully interior heavy simplex.  Four
-three-heavy boundary families remain open, so the full inequality is not yet
-proved.
-This is the strongest current A-star route, not a confirmed A-star result; no
-QPU run is justified for the exact convex-geometric gate.
+argument excludes a maximum in the fully interior heavy simplex.  Exact KKT
+elimination now also closes all four three-heavy relative interiors: two have
+no positive stationary point, while the other two reduce to a complete
+rational ridge with gap `48/2401` and a strict ascent direction into the
+missing channel.  A further spectral reduction proves three of the six
+two-heavy faces; exact KKT elimination closes the other three.  This proves
+the whole positive-light stratum, and two explicit square-plus-monomial
+certificates close the zero-light boundary.  The atom now satisfies the exact
+equality `beta=alpha=3/2`.  Twelve other order-nine residual facet types still
+have only numerical SDP upper certificates, so the general weighted SCF claim
+and A-star novelty are not yet confirmed.  No QPU run is justified for this
+exact convex-geometric gate.
 
 Latest hardware-transfer continuation: the preregistered
 [CMRT offline Phase-0 report](results/cmrt_phase0/FINAL_REPORT.md) closes

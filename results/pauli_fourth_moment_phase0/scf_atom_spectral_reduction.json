@@ -327,6 +327,77 @@
     "remaining_boundary": "for every fixed light profile, a maximizer has at least one of p3,p5,p7,p8 equal to zero",
     "exact_factorization_check": "passed over rational arithmetic"
   },
+  "proved_three_heavy_relative_interior_classification": {
+    "scope": "all five light coordinates positive and exactly one of p3,p5,p7,p8 zero",
+    "p5_zero_parameterization": "write p1=p0+x, sqrt(R)=p4*(p6+h); KKT positivity gives x,h>0",
+    "p5_zero_elimination": "after three linear KKT eliminations, the remaining equations force h/p6=42/5 and p0/p6=21/20",
+    "p5_zero_complete_ridge": {
+      "parameter": "rho=p6",
+      "p0": "21*rho/20",
+      "p1": "47/686",
+      "p2": "235/(117649*rho)",
+      "p4": "54/343-41*rho/20-235/(117649*rho)",
+      "p3": "188/343-47*rho/5",
+      "p7": "94/343",
+      "p8": "47*rho/5-94/343",
+      "positivity_interval_from_p3_p8": "10/343<rho<20/343",
+      "gap": "48/2401"
+    },
+    "p5_zero_missing_direction": "d/dp5-d/dp8 = 3*(343*rho-10)*(2470629*rho^2-579670*rho+9400)/(33614*rho*(4823609*rho^2-370440*rho+4700)) > 0 on the positive ridge",
+    "p3_zero_exclusion": "with p1=p0+x and sqrt(R)=p6*k, exact row reduction gives (p4-k)*p7=0; p7>0 forces k=p4 and then the two remaining heavy equations sum to p1*(p4+p8)>0, a contradiction",
+    "symmetry": "the atom automorphism maps p5-zero to p8-zero and p3-zero to p7-zero",
+    "consequence": "a global maximizer with all five light coordinates positive has at least two heavy coordinates equal to zero",
+    "exact_symbolic_factorization_check": "passed",
+    "remaining_boundary": "two-or-fewer-heavy strata and strata with a zero light coordinate"
+  },
+  "proved_two_heavy_spectral_faces": {
+    "already_primitive": "the {p3,p7} face is the fifth primitive face",
+    "new_faces": [
+      "{p3,p8}",
+      "{p5,p7}"
+    ],
+    "representative_matrix": "[[p2+p4,sqrt(p4*(p0+p6))],[sqrt(p4*(p0+p6)),p0+p6]]",
+    "trace": "p0+p2+p4+p6",
+    "determinant": "p2*(p0+p6)",
+    "envelope_slack": "p1*p6 in the quadratic part and p1*p2*p6 in the radical product",
+    "consequence": "the primitive three-variable envelope proves these two faces exactly",
+    "symmetry": "the atom automorphism maps {p3,p8} to {p5,p7}",
+    "exact_symbolic_factorization_check": "passed",
+    "remaining_two_heavy_faces": [
+      "{p3,p5}",
+      "{p7,p8}",
+      "{p5,p8}"
+    ]
+  },
+  "proved_residual_two_heavy_relative_interiors": {
+    "p3_p5_stationarity": "the positive KKT equations force p2-p0=2*p6 and isolate one rational point",
+    "p3_p5_unique_point": {
+      "p0": "3/49",
+      "p1": "47/1372",
+      "p2": "47/686",
+      "p4": "20/343",
+      "p6": "5/1372",
+      "p3": "94/343",
+      "p5": "94/343",
+      "gap": "48/2401",
+      "missing_p8_derivative": "24/49"
+    },
+    "p7_p8": "closed by the atom automorphism",
+    "p5_p8_exclusion": "with sqrt(R)=p4*p6*k, positivity forces p4*k>p5 and p6*k>p8, while the light KKT equation gives sqrt(3*p0*p1*p2/2)=-p0*(p5-p4*k)*(p8-p6*k)/(p5+p8)<0",
+    "consequence": "no two-heavy relative interior can maximize the full problem; supports with at most one heavy coordinate lie in a proved primitive face",
+    "exact_symbolic_factorization_check": "passed",
+    "remaining_boundary": "strata with at least one of p0,p1,p2,p4,p6 equal to zero"
+  },
+  "proved_zero_light_boundary": {
+    "p0_zero": "write R=p4*p6*K with K=p1*p8+p2*p5+(p3+p5)*(p7+p8); 16*(T-q-4*p4*p6-K/4)=(4*p1-4*p2+p3-4*p4+p5+4*p6-p7-p8)^2+48*p1*p2+48*p1*p4+12*p1*p8+12*p2*p5+48*p2*p6",
+    "p0_zero_radical_step": "4*p4*p6+K/4>=2*sqrt(p4*p6*K) by exact AM-GM",
+    "p4_zero": "the heavy maximum is one of the p3 vertex, p8 vertex, or the {p5,p7} 2x2 spectral block; every branch lies in a proved primitive face",
+    "symmetry": "p6=0 follows from p4=0",
+    "p1_or_p2_zero": "if the other two of p0,p1,p2 are positive, turning on the missing coordinate gains order sqrt(epsilon) from the light radical against only order epsilon changes elsewhere, so such a point cannot maximize the violation",
+    "p1_p2_zero": "with K=p0*(p3+p7)+p4*(p7+p8)+p6*(p3+p5), 16*(T-q)=(4*p0+4*p4+4*p6-p3-p5-p7-p8)^2+16*K and K^2-4*R=(x1-x2-x3-x4+x5+x6)^2+4*x1*x2+4*x1*x3+4*x2*x5 for x=(p0*p3,p0*p7,p4*p7,p4*p8,p6*p3,p6*p5)",
+    "consequence": "the scalar inequality is proved on the complete normalized simplex",
+    "exact_symbolic_factorization_check": "passed"
+  },
   "residual_wedge_falsification": {
     "generated_points": 10000000,
     "accepted_wedge_points": 1044914,
@@ -358,5 +429,5 @@
     "minimum_interior_gap": 0.0017142811254221403,
     "equal_light_triple_boundary_gap": 1.1102230246251565e-16
   },
-  "status": "operator_reduction_primitive_faces_and_heavy_interior_proved_four_boundary_families_open"
+  "status": "last_scf_atom_scalar_inequality_proved"
 }

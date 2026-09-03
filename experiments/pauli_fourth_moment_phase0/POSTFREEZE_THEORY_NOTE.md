@@ -523,3 +523,246 @@ attained with at least one of `p_3,p_5,p_7,p_8` equal to zero.  Combined with
 the previous lemma, this removes the entire fully coupled heavy interior.
 The atom proof is now reduced to the four three-heavy boundary families; it
 does not yet follow solely from the five primitive-face lemma.
+
+## Lemma (classification of the three-heavy relative interiors)
+
+Assume all five light variables are positive and exactly three heavy
+variables are positive.  None of the four resulting relative interiors can
+contain a maximizer of `(A)`.
+
+First set `p_5=0` and abbreviate
+
+`a=p_0, b=p_1, c=p_2, d=p_4, e=p_6,`
+`r=p_3, t=p_7, u=p_8, z=sqrt(R), w=sqrt(3abc/2)`.
+
+The heavy KKT equations imply `b=a+x`, `z=dk`, and `k=e+h` with `x,h>0`.  Three of
+the remaining equations are linear in `c,t,u`; their coefficient determinant
+is
+
+`-a^2 b d^2 k(a-b)(e-k)^2`,
+
+which is nonzero in the positive relative interior.  After this exact linear
+elimination, one equation solves for `d`, and the cross-class equation factors
+as
+
+`x(a+x)(12ae+14ah+9eh-3h^2)=0`.                         `(E)`
+
+Put `v=h/e` and `y=x/e`.  Positivity and `(E)` give `v>3` and
+
+`a/e=3v(v-3)/(2(7v+6))`.
+
+The normalization and light-radical equations then independently give
+
+`e_N=6(v-3)(v+1)(7v+6)`
+`    /[v(29v+21)(3v^2+14vy-9v+12y)]`,
+
+`e_W=54(v-3)^2(v+1)(7v+6)`
+`    /[v(11v+21)^2(3v^2+14vy-9v+12y)]`.
+
+Every denominator is positive for `v>3,y>0`, and their difference factors as
+
+`e_N-e_W=-24(v-3)(v+1)(5v-42)(7v+6)^2`
+`          /[v(11v+21)^2(29v+21)(3v^2+14vy-9v+12y)]`.
+
+Hence `v=42/5` and `a/e=21/20`.  Restoring the normalization shows that this
+is the complete one-parameter stationary ridge
+
+`p_0=21rho/20,                    p_1=47/686,`
+`p_2=235/(117649rho),             p_6=rho,`
+`p_4=54/343-41rho/20-235/(117649rho),`
+`p_3=188/343-47rho/5,             p_7=94/343,`
+`p_8=47rho/5-94/343,              p_5=0`.               `(F)`
+
+Here positivity of `p_3,p_8` requires `10/343<rho<20/343`.  Direct exact
+substitution gives the constant target gap
+
+`(L+H/4)^2-q_0-2sqrt(R)-2sqrt(3p_0p_1p_2/2)=48/2401`.
+
+More importantly, the derivative obtained by transferring mass from `p_8`
+to the missing coordinate `p_5` is
+
+`3(343rho-10)(2470629rho^2-579670rho+9400)`
+`/[33614rho(4823609rho^2-370440rho+4700)]`.             `(G)`
+
+The two quadratic factors in `(G)` have respective endpoint values
+`(-5400,-16000)` and `(-2000,-500)` on
+`[10/343,20/343]`.  Both are convex, hence negative throughout that interval;
+all other factors are positive.  Thus `(G)>0`, so every point of `(F)` is
+unstable toward the missing heavy channel and cannot be a maximizer of the
+full problem.  The atom automorphism proves the same statement for `p_8=0`.
+
+For the other orbit, set `p_3=0`.  The heavy KKT equations give
+`b=a+x`, `z=ek`, and `p_5=(d(a+x)-xk)/a`.  Exact row reduction of the
+`p_4-p_6`, `p_5-p_8`, and `z^2=R` equations gives
+
+`(d-k)p_7=0`.                                             `(H)`
+
+Since `p_7>0`, equation `(H)` forces `k=d` and consequently `p_5=d`.
+At these values the radical equation and the remaining heavy equation have
+left sides whose sum is
+
+`(a+x)(d+p_8)=p_1(p_4+p_8)>0`,
+
+so they cannot both vanish.  Therefore this relative interior has no
+stationary point at all.  The atom automorphism gives the same exclusion for
+`p_7=0`.
+
+Consequently a global maximizer with all five light coordinates positive has
+at least two zero heavy coordinates.  The exact atom proof is now reduced to
+the six two-heavy faces and their descendants, together with strata on which
+at least one light coordinate is zero.  The symbolic identities in `(E)`--`(H)`
+are checked by the executable reduction script.
+
+## Lemma (three of the six two-heavy faces)
+
+The face with heavy support `{p_3,p_7}` is already the fifth primitive face
+proved by `(B)`--`(C)`.  Two further faces reduce to the same envelope.
+
+Consider heavy support `{p_3,p_8}`.  For fixed light variables and heavy sum
+`H`, maximization over the two heavy coordinates is `H y`, where `y` is the
+largest eigenvalue of
+
+`M=[[p_2+p_4, sqrt(p_4(p_0+p_6))],`
+`   [sqrt(p_4(p_0+p_6)), p_0+p_6]]`.
+
+Let the other eigenvalue be `z` and put `x=p_1`.  Then
+
+`y+z=p_0+p_2+p_4+p_6`, `yz=p_2(p_0+p_6)`,
+
+so `x+y+z=L`.  The light-only quadratic part is
+
+`p_0p_1+p_0p_2+p_1p_2+p_1p_4+p_2p_6`
+` <=x(y+z)+yz`,
+
+with exact slack `p_1p_6`.  Likewise
+
+`p_0p_1p_2<=xyz`,
+
+with product slack `p_1p_2p_6`.  Therefore the complete face objective is
+bounded by `(B)`, and `(C)` proves the target inequality.  The atom
+automorphism sends this face to `{p_5,p_7}`, proving that face as well.
+
+Thus only three two-heavy faces remain: the symmetric pair `{p_3,p_5}` and
+`{p_7,p_8}`, and the invariant face `{p_5,p_8}`.  Their lower-dimensional
+boundaries and the zero-light strata remain part of the exact gate.
+
+## Lemma (the three residual two-heavy faces)
+
+None of the three residual two-heavy relative interiors can maximize `(A)`.
+
+On `{p_3,p_5}`, write `a=p_0`, `c=p_2=a+x`.  Interior heavy stationarity
+forces
+
+`sqrt(R)=(a+x)p_4p_6/x`, `p_5=(a+x)p_4p_6/x^2`, `x>0`.
+
+The `p_1-p_6` light equation then gives
+
+`p_1=(a+x)(x-p_6)/x`,
+
+so positivity implies `x>p_6`.  After these substitutions, let `E_4`,
+`E_2`, and `E_cross` denote the remaining cleared KKT equations.  Exact
+elimination gives the especially short identity
+
+`E_2-x E_4=a p_4(2p_6-x)`.
+
+Thus `x=2p_6`.  The two remaining KKT equations together with
+`2w^2=3p_0p_1p_2` have a lexicographic elimination polynomial
+
+`p_6^2(4p_6+7)(1372p_6-5)`.
+
+There is therefore exactly one positive solution.  In vertex order it is
+
+`(p_0,p_1,p_2,p_3,p_4,p_5,p_6,p_7,p_8)`
+`=(3/49,47/1372,47/686,94/343,20/343,94/343,5/1372,0,0)`.
+
+Its target gap is again `48/2401`, while the derivative obtained by moving
+mass from `p_3` to the missing coordinate `p_8` is `24/49>0`.  It is not a
+maximizer of the full problem.  Symmetry closes `{p_7,p_8}`.
+
+Finally consider the invariant face `{p_5,p_8}` and put
+`sqrt(R)=p_4p_6k`.  Heavy stationarity, the `p_4-p_6` light equation, and
+`z^2=R` give
+
+`p_1=(p_4k-p_5)(p_6k+p_5)/(p_5+p_8)`,
+
+`p_2=(p_4k+p_8)(p_6k-p_8)/(p_5+p_8)`,
+
+`w=-p_0(p_5-p_4k)(p_8-p_6k)/(p_5+p_8)`.
+
+Positivity of `p_1,p_2` forces `p_4k>p_5` and `p_6k>p_8`.  Both factors in
+the numerator of the last display are then negative, so its right-hand side
+is strictly negative, contradicting `w=sqrt(3p_0p_1p_2/2)>0`.  This face has
+no positive stationary point.
+
+All six two-heavy relative interiors are now closed.  Every support with at
+most one heavy coordinate is contained in one of the five primitive faces,
+so `(A)` holds there.  Consequently `(A)` is proved on the entire stratum
+where all five light coordinates are positive.  What remains is the union of
+the five zero-light boundary strata; these cannot be silently removed by the
+interior KKT argument and require a separate boundary proof.
+
+## Theorem (completion of the last SCF atom)
+
+The zero-light boundary admits two direct sum-of-squares certificates, which
+complete `(A)` on the full nonnegative simplex.
+
+First take `p_0=0` and abbreviate
+
+`K=p_1p_8+p_2p_5+(p_3+p_5)(p_7+p_8)`,
+
+so `R=p_4p_6K`.  With `T=(L+H/4)^2`, exact expansion gives
+
+`16(T-q_0-4p_4p_6-K/4)`
+` =(4p_1-4p_2+p_3-4p_4+p_5+4p_6-p_7-p_8)^2`
+`  +48p_1p_2+48p_1p_4+12p_1p_8+12p_2p_5+48p_2p_6`.    `(I)`
+
+Every term on the right is nonnegative, while
+
+`4p_4p_6+K/4-2sqrt(p_4p_6K)`
+` =(2sqrt(p_4p_6)-sqrt(K)/2)^2>=0`.                       `(J)`
+
+Equations `(I)`--`(J)` prove `(A)` on `p_0=0`.
+
+If `p_4=0`, only `R=p_0p_5p_6p_7` survives.  For fixed light variables and
+heavy sum, the heavy maximum is either the `p_3` vertex, the `p_8` vertex, or
+the largest-eigenvalue allocation on the `{p_5,p_7}` block.  Each of these
+supports lies in one of the five primitive faces, so `(A)` follows from
+`(B)`--`(C)`.  Atom symmetry proves `p_6=0`.
+
+If exactly one of `p_0,p_1,p_2` vanishes while the other two are positive,
+turning on the missing coordinate by `epsilon` increases
+`2sqrt(3p_0p_1p_2/2)` by a positive multiple of `sqrt(epsilon)`.  Maintaining
+the linear normalization changes the polynomial terms and the target by only
+`O(epsilon)`.  Such a point therefore cannot maximize the violation.
+The only boundary not already covered by `p_0=0` and symmetry is consequently
+`p_1=p_2=0`.
+
+On that final boundary put
+
+`K=p_0(p_3+p_7)+p_4(p_7+p_8)+p_6(p_3+p_5)`.
+
+Two more exact identities apply:
+
+`16(T-q_0)=(4p_0+4p_4+4p_6-p_3-p_5-p_7-p_8)^2+16K`,    `(K)`
+
+and, for
+
+`(x_1,...,x_6)=(p_0p_3,p_0p_7,p_4p_7,p_4p_8,p_6p_3,p_6p_5)`,
+
+`K^2-4R=(x_1-x_2-x_3-x_4+x_5+x_6)^2`
+`        +4x_1x_2+4x_1x_3+4x_2x_5>=0`.                  `(L)`
+
+Thus `(K)` gives `T-q_0>=K`, and `(L)` gives `K>=2sqrt(R)`, proving `(A)`.
+
+For completeness, if `R=0` in the positive-light stratum, positivity of
+`p_0,p_1,p_2,p_4,p_6` forces at most one heavy coordinate to be nonzero, so
+the point lies in a primitive face.  Otherwise all differentiations used in
+the heavy-face lemmas are legitimate.  Compactness of `2L+H=1`, the
+square-root boundary argument above, the exhaustive heavy-support
+classification, and `(I)`--`(L)` therefore cover every point.
+
+Consequently the last atom `HEhu|x|` with weights
+`(1/2,1/2,1/2,1,1/2,1,1/2,1,1)` satisfies `beta(G,w)<=3/2` exactly.  Equality
+is attained classically, hence `beta(G,w)=alpha(G,w)=3/2`.  All algebraic
+identities in this completion are checked symbolically by the executable
+reduction script.

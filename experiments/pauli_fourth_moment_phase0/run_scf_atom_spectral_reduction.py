@@ -10,6 +10,7 @@ from pathlib import Path
 
 import networkx as nx
 import numpy as np
+import sympy as sp
 
 
 LIGHT = [0, 1, 2, 4, 6]
@@ -320,6 +321,410 @@ def verify_full_heavy_simplex_exclusion() -> None:
                             raise AssertionError((a, d, e, x, y, determinant, polynomial))
 
 
+def verify_three_heavy_boundary_classification() -> None:
+    """Symbolically close the relative interiors of all four heavy facets."""
+    a, d, e, h, x = sp.symbols("a d e h x")
+
+    # Facet p5=0.  Positivity and the heavy KKT equations give b=a+x,
+    # z=d(e+h), x>0, h>0.  Three linear equations then determine p2,p7,p8.
+    # After that elimination, the remaining KKT, normalization, and radical
+    # equations have the four numerators below.
+    first = (
+        2 * a * d * e
+        + 2 * a * d * h
+        + 2 * a * e**2
+        - 2 * a * e * x
+        - a * h * x
+        - 2 * e * h * x
+        + h * x**2
+    )
+    cross = (
+        -4 * a**2 * d * e
+        - 4 * a**2 * d * h
+        - 4 * a**2 * e**2
+        + 16 * a**2 * e * x
+        + 16 * a**2 * h * x
+        + 13 * a * e * h * x
+        + 12 * a * e * x**2
+        - 3 * a * h**2 * x
+        + 12 * a * h * x**2
+        + 9 * e * h * x**2
+        - 3 * h**2 * x**2
+    )
+    normalization = (
+        -2 * a**2 * d * e
+        - 2 * a**2 * d * h
+        - 2 * a**2 * e**2
+        + 6 * a**2 * e * x
+        + 6 * a**2 * h * x
+        + 5 * a * e * h * x
+        + 4 * a * e * x**2
+        - a * e * x
+        + a * h**2 * x
+        + 4 * a * h * x**2
+        - a * h * x
+        + 3 * e * h * x**2
+        + h**2 * x**2
+    )
+    light_radical = (
+        -2 * a**3 * d * e
+        - 2 * a**3 * d * h
+        - 2 * a**3 * e**2
+        + 2 * a**3 * e * x
+        + 2 * a**3 * h * x
+        + 4 * a**2 * d * e * h
+        + 4 * a**2 * d * h**2
+        + 4 * a**2 * e**2 * h
+        - 2 * a**2 * e * h * x
+        - 3 * a**2 * e * x
+        - 4 * a**2 * h**2 * x
+        - 3 * a**2 * h * x
+        - 2 * a * d * e * h**2
+        - 2 * a * d * h**3
+        - 2 * a * e**2 * h**2
+        - 2 * a * e * h**2 * x
+        + 2 * a * h**3 * x
+        + 2 * e * h**3 * x
+    )
+    d_solution = -(
+        2 * a * e**2 - 2 * a * e * x - a * h * x - 2 * e * h * x + h * x**2
+    ) / (2 * a * (e + h))
+    cross_factor = 12 * a * e + 14 * a * h + 9 * e * h - 3 * h**2
+    normalization_reduced = (
+        4 * a**2 * e
+        + 5 * a**2 * h
+        + 3 * a * e * h
+        + 4 * a * e * x
+        - a * e
+        + a * h**2
+        + 5 * a * h * x
+        - a * h
+        + 3 * e * h * x
+        + h**2 * x
+    )
+    radical_reduced = (
+        a**3 * h
+        - 3 * a**2 * e
+        - 2 * a**2 * h**2
+        + a**2 * h * x
+        - 3 * a**2 * h
+        + a * h**3
+        - 2 * a * h**2 * x
+        + h**3 * x
+    )
+    identities = [
+        sp.factor(first.subs(d, d_solution)),
+        sp.factor(cross.subs(d, d_solution) - x * (a + x) * cross_factor),
+        sp.factor(normalization.subs(d, d_solution) - x * normalization_reduced),
+        sp.factor(light_radical.subs(d, d_solution) - x * radical_reduced),
+    ]
+    if identities != [0, 0, 0, 0]:
+        raise AssertionError(identities)
+
+    # Put v=h/e>3 and y=x/e>0.  The cross equation fixes a/e, while the
+    # normalization and light-radical equations give two formulas for e.
+    # Their difference has the unique positive zero v=42/5.
+    v, y = sp.symbols("v y")
+    a_over_e = 3 * v * (v - 3) / (2 * (7 * v + 6))
+    common = v * (3 * v**2 + 14 * v * y - 9 * v + 12 * y)
+    e_from_normalization = (
+        6 * (v - 3) * (v + 1) * (7 * v + 6)
+        / ((29 * v + 21) * common)
+    )
+    e_from_radical = (
+        54 * (v - 3) ** 2 * (v + 1) * (7 * v + 6)
+        / ((11 * v + 21) ** 2 * common)
+    )
+    difference = sp.factor(e_from_normalization - e_from_radical)
+    expected_difference = (
+        -24
+        * (v - 3)
+        * (v + 1)
+        * (5 * v - 42)
+        * (7 * v + 6) ** 2
+        / (
+            v
+            * (11 * v + 21) ** 2
+            * (29 * v + 21)
+            * (3 * v**2 + 14 * v * y - 9 * v + 12 * y)
+        )
+    )
+    if sp.factor(difference - expected_difference) != 0:
+        raise AssertionError(difference)
+    if sp.factor(a_over_e.subs(v, sp.Rational(42, 5)) - sp.Rational(21, 20)) != 0:
+        raise AssertionError(a_over_e)
+
+    # Reconstruct the complete normalized stationary ridge and verify its
+    # constant gap and its strict ascent direction into the missing p5 channel.
+    rho = sp.symbols("rho")
+    ridge_a = sp.Rational(21, 20) * rho
+    ridge_b = sp.Rational(47, 686)
+    ridge_c = sp.Rational(235, 117649) / rho
+    ridge_d = (
+        sp.Rational(54, 343)
+        - sp.Rational(41, 20) * rho
+        - sp.Rational(235, 117649) / rho
+    )
+    ridge_e = rho
+    ridge_r = sp.Rational(188, 343) - sp.Rational(47, 5) * rho
+    ridge_t = sp.Rational(94, 343)
+    ridge_u = sp.Rational(47, 5) * rho - sp.Rational(94, 343)
+    ridge_z = sp.Rational(47, 5) * ridge_d * rho
+    ridge_w = sp.Rational(141, 9604)
+    ridge_l = ridge_a + ridge_b + ridge_c + ridge_d + ridge_e
+    ridge_h = ridge_r + ridge_t + ridge_u
+    ridge_q = (
+        ridge_a * ridge_b
+        + ridge_a * ridge_c
+        + ridge_b * ridge_c
+        + ridge_a * ridge_u
+        + ridge_b * ridge_d
+        + ridge_b * ridge_t
+        + ridge_c * ridge_r
+        + ridge_c * ridge_e
+        + ridge_d * ridge_r
+        + ridge_e * ridge_t
+        + ridge_e * ridge_u
+    )
+    ridge_gap = sp.factor(
+        (ridge_l + ridge_h / 4) ** 2 - ridge_q - 2 * ridge_z - 2 * ridge_w
+    )
+    if sp.factor(2 * ridge_l + ridge_h - 1) != 0 or ridge_gap != sp.Rational(48, 2401):
+        raise AssertionError((ridge_l, ridge_h, ridge_gap))
+    missing_derivative = sp.factor(
+        ridge_d
+        - ridge_e
+        + (
+            ridge_a * ridge_e * ridge_t
+            + ridge_c * ridge_d * ridge_e
+            + ridge_d * ridge_e * (ridge_t + ridge_u)
+            - ridge_a * ridge_r * ridge_d
+            - ridge_b * ridge_d * ridge_e
+            - ridge_d * ridge_e * ridge_r
+        )
+        / ridge_z
+    )
+    expected_derivative = (
+        3
+        * (343 * rho - 10)
+        * (2470629 * rho**2 - 579670 * rho + 9400)
+        / (33614 * rho * (4823609 * rho**2 - 370440 * rho + 4700))
+    )
+    if sp.factor(missing_derivative - expected_derivative) != 0:
+        raise AssertionError(missing_derivative)
+
+    # Facet p3=0.  The heavy KKT equation gives b=a+x, z=e*k and
+    # p5=(d(a+x)-x*k)/a.  Exact row reduction of the p4-p6, p5-p8,
+    # and z^2=R equations gives (d-k)*p7=0.
+    c0, k, t0, u0 = sp.symbols("c0 k t0 u0")
+    b0 = a + x
+    s0 = (d * b0 - x * k) / a
+    z0 = e * k
+    r0 = e * (a * s0 * t0 + b0 * d * u0 + c0 * d * s0 + d * s0 * (t0 + u0))
+    equation_de = sp.together(
+        -a * s0 * t0
+        - b0 * d * u0
+        + b0 * e * u0
+        + b0 * z0
+        - c0 * d * s0
+        + c0 * e * s0
+        - c0 * z0
+        - d * s0 * t0
+        - d * s0 * u0
+        + e * s0 * t0
+        + e * s0 * u0
+        + s0 * z0
+        - t0 * z0
+        - u0 * z0
+    ).as_numer_denom()[0]
+    equation_su = sp.together(
+        a * e * t0
+        - b0 * d * e
+        + c0 * d * e
+        - d * e * s0
+        + d * e * t0
+        + d * e * u0
+        + d * z0
+        - e * z0
+    ).as_numer_denom()[0]
+    equation_r = sp.together(z0**2 - r0).as_numer_denom()[0]
+    matrix, vector = sp.linear_eq_to_matrix(
+        [equation_de, equation_su, equation_r], [c0, t0, u0]
+    )
+    determinant = sp.factor(matrix.det())
+    t_matrix = matrix.copy()
+    t_matrix[:, 1] = vector
+    t_determinant = sp.factor(t_matrix.det())
+    expected_determinant = -a**3 * d * e**3 * (a + x) ** 2 * (d - k)
+    if sp.factor(determinant - expected_determinant) != 0 or t_determinant != 0:
+        raise AssertionError((determinant, t_determinant))
+    r_bracket = a * t0 + a * u0 + c0 * d - d * e + d * t0 + d * u0 + u0 * x
+    su_bracket = a * d - a * t0 - c0 * d + d * e - d * t0 - d * u0 + d * x
+    if sp.factor(r_bracket + su_bracket - (a + x) * (d + u0)) != 0:
+        raise AssertionError((r_bracket, su_bracket))
+
+    # Two-heavy face {p3,p8}.  Maximizing its heavy split is the top
+    # eigenvalue of the displayed 2x2 matrix.  Its trace and determinant turn
+    # the rest into the already-proved three-variable envelope, with two
+    # explicitly nonnegative slack terms.  Symmetry handles {p5,p7}.
+    b1, c1 = sp.symbols("b1 c1")
+    heavy_matrix = sp.Matrix(
+        [[c1 + d, sp.sqrt(d * (a + e))], [sp.sqrt(d * (a + e)), a + e]]
+    )
+    matrix_trace = sp.factor(sp.trace(heavy_matrix))
+    matrix_determinant = sp.factor(heavy_matrix.det())
+    light_q = a * b1 + a * c1 + b1 * c1 + b1 * d + c1 * e
+    envelope_q = b1 * matrix_trace + matrix_determinant
+    if matrix_trace != a + c1 + d + e:
+        raise AssertionError(matrix_trace)
+    if matrix_determinant != c1 * (a + e):
+        raise AssertionError(matrix_determinant)
+    if sp.factor(envelope_q - light_q - b1 * e) != 0:
+        raise AssertionError((envelope_q, light_q))
+    if sp.factor(b1 * matrix_determinant - a * b1 * c1 - b1 * c1 * e) != 0:
+        raise AssertionError(matrix_determinant)
+
+
+def verify_residual_two_heavy_faces() -> None:
+    """Symbolically close the last three two-heavy relative interiors."""
+    a, b, d, e, x = sp.symbols("a b d e x")
+
+    # Representative {p3,p5}.  Heavy stationarity gives p2=a+x,
+    # sqrt(R)=(a+x)*d*e/x and p5=(a+x)*d*e/x^2, with x>0.
+    # The p1-p6 equation gives b=(a+x)(x-e)/x; hence positivity gives x>e.
+    b_solution = (a + x) * (x - e) / x
+    equation_de = a * d - 2 * a * e + 6 * a * x + 3 * d * x + 4 * x**2 - x
+    equation_cross = -4 * a * d - 2 * a * e + 10 * a * x + 6 * d * x + 8 * x**2 + x
+    equation_ce = (
+        2 * a * d * e
+        - 2 * a * e * x
+        + 6 * a * x**2
+        + 3 * d * x**2
+        + 4 * x**3
+        - x**2
+    )
+    if sp.factor(equation_ce - x * equation_de - a * d * (2 * e - x)) != 0:
+        raise AssertionError((equation_ce, equation_de))
+
+    # Thus x=2e.  The remaining radical equation joins the two linear KKT
+    # equations.  Its lexicographic basis isolates the sole positive root.
+    equation_de_2 = sp.factor(equation_de.subs(x, 2 * e))
+    equation_cross_2 = sp.factor(-equation_cross.subs(x, 2 * e) / 2)
+    equation_radical_2 = a * (d - 2 * e) ** 2 - 12 * e**2
+    basis = sp.groebner(
+        [equation_de_2, equation_cross_2, equation_radical_2], a, d, e, order="lex"
+    )
+    terminal = sp.factor(basis.polys[-1].as_expr())
+    if terminal != e**2 * (4 * e + 7) * (1372 * e - 5):
+        raise AssertionError(terminal)
+
+    ridge = {
+        "a": sp.Rational(3, 49),
+        "b": sp.Rational(47, 1372),
+        "c": sp.Rational(47, 686),
+        "d": sp.Rational(20, 343),
+        "e": sp.Rational(5, 1372),
+        "r": sp.Rational(94, 343),
+        "s": sp.Rational(94, 343),
+        "z": sp.Rational(235, 117649),
+        "w": sp.Rational(141, 9604),
+    }
+    light_sum = sum(ridge[key] for key in ["a", "b", "c", "d", "e"])
+    heavy_sum = ridge["r"] + ridge["s"]
+    q_value = (
+        ridge["a"] * ridge["b"]
+        + ridge["a"] * ridge["c"]
+        + ridge["b"] * ridge["c"]
+        + ridge["b"] * ridge["d"]
+        + ridge["c"] * ridge["e"]
+        + ridge["r"] * (ridge["c"] + ridge["d"])
+        + ridge["s"] * (ridge["a"] + ridge["d"])
+    )
+    gap = sp.factor(
+        (light_sum + heavy_sum / 4) ** 2
+        - q_value
+        - 2 * ridge["z"]
+        - 2 * ridge["w"]
+    )
+    missing_p8_derivative = sp.factor(
+        ridge["a"]
+        + ridge["e"]
+        + ridge["d"]
+        * (
+            ridge["a"] * ridge["r"]
+            + ridge["b"] * ridge["e"]
+            + ridge["e"] * heavy_sum
+        )
+        / ridge["z"]
+        - ridge["c"]
+        - ridge["d"]
+    )
+    if light_sum * 2 + heavy_sum != 1:
+        raise AssertionError((light_sum, heavy_sum))
+    if gap != sp.Rational(48, 2401) or missing_p8_derivative != sp.Rational(24, 49):
+        raise AssertionError((gap, missing_p8_derivative))
+    if sp.factor(b_solution.subs(x, 2 * e).subs({a: ridge["a"], e: ridge["e"]}) - ridge["b"]) != 0:
+        raise AssertionError(b_solution)
+
+    # Invariant face {p5,p8}.  Put sqrt(R)=d*e*k.  Heavy stationarity,
+    # d/e light stationarity and z^2=R give the following exact expressions.
+    k, s, u = sp.symbols("k s u")
+    b_expression = (d * k - s) * (e * k + s) / (s + u)
+    c_expression = (d * k + u) * (e * k - u) / (s + u)
+    w_expression = -a * (s - d * k) * (u - e * k) / (s + u)
+    # b,c>0 force d*k>s and e*k>u, making w_expression strictly negative,
+    # contradicting w=sqrt(3abc/2)>0.
+    if sp.factor(w_expression + a * (d * k - s) * (e * k - u) / (s + u)) != 0:
+        raise AssertionError(w_expression)
+    if sp.factor(b_expression * (s + u) - (d * k - s) * (e * k + s)) != 0:
+        raise AssertionError(b_expression)
+    if sp.factor(c_expression * (s + u) - (d * k + u) * (e * k - u)) != 0:
+        raise AssertionError(c_expression)
+
+
+def verify_zero_light_boundary_certificates() -> None:
+    """Check the exact boundary identities that complete the scalar theorem."""
+    b, c, d, e, r, s, t, u = sp.symbols("b c d e r s t u", nonnegative=True)
+    light = b + c + d + e
+    heavy = r + s + t + u
+    target = (light + heavy / 4) ** 2
+    q = b * c + b * d + b * t + c * r + c * e + d * r + d * s + e * t + e * u
+    channel = b * u + c * s + (r + s) * (t + u)
+    residual = sp.factor(target - q)
+    square = 4 * b - 4 * c + r - 4 * d + s + 4 * e - t - u
+    certificate = square**2 + 48 * b * c + 48 * b * d + 12 * b * u + 12 * c * s + 48 * c * e
+    if sp.factor(16 * (residual - 4 * d * e - channel / 4) - certificate) != 0:
+        raise AssertionError(certificate)
+    if sp.factor((4 * d * e + channel / 4) ** 2 - 4 * d * e * channel - (4 * d * e - channel / 4) ** 2) != 0:
+        raise AssertionError(channel)
+
+    # The only boundary not covered by p0=0, its symmetric consequences, or
+    # p4/p6=0 has p1=p2=0.  Here a second pair of short identities suffices.
+    a = sp.symbols("a", nonnegative=True)
+    light = a + d + e
+    target = (light + heavy / 4) ** 2
+    q = a * (s + u) + d * (r + s) + e * (t + u)
+    radicand = d * e * (r + s) * (t + u) + a * d * r * u + a * e * s * t
+    residual = sp.factor(target - q)
+    majorant = a * (r + t) + d * (t + u) + e * (r + s)
+    base_square = 4 * a + 4 * d + 4 * e - r - s - t - u
+    if sp.factor(16 * residual - base_square**2 - 16 * majorant) != 0:
+        raise AssertionError((residual, majorant))
+
+    x1, x2, x3, x4, x5, x6 = (
+        a * r,
+        a * t,
+        d * t,
+        d * u,
+        e * r,
+        e * s,
+    )
+    radical_square = (x1 - x2 - x3 - x4 + x5 + x6) ** 2
+    radical_certificate = radical_square + 4 * x1 * x2 + 4 * x1 * x3 + 4 * x2 * x5
+    if sp.factor(majorant**2 - 4 * radicand - radical_certificate) != 0:
+        raise AssertionError(radical_certificate)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path, required=True)
@@ -356,6 +761,9 @@ def main() -> None:
     verify_univariate_factorization()
     verify_heavy_split_hessian_factorization()
     verify_full_heavy_simplex_exclusion()
+    verify_three_heavy_boundary_classification()
+    verify_residual_two_heavy_faces()
+    verify_zero_light_boundary_certificates()
 
     rng = np.random.default_rng(args.seed)
     points = rng.dirichlet(np.ones(9), size=args.samples)
@@ -421,6 +829,70 @@ def main() -> None:
             "remaining_boundary": "for every fixed light profile, a maximizer has at least one of p3,p5,p7,p8 equal to zero",
             "exact_factorization_check": "passed over rational arithmetic",
         },
+        "proved_three_heavy_relative_interior_classification": {
+            "scope": "all five light coordinates positive and exactly one of p3,p5,p7,p8 zero",
+            "p5_zero_parameterization": "write p1=p0+x, sqrt(R)=p4*(p6+h); KKT positivity gives x,h>0",
+            "p5_zero_elimination": "after three linear KKT eliminations, the remaining equations force h/p6=42/5 and p0/p6=21/20",
+            "p5_zero_complete_ridge": {
+                "parameter": "rho=p6",
+                "p0": "21*rho/20",
+                "p1": "47/686",
+                "p2": "235/(117649*rho)",
+                "p4": "54/343-41*rho/20-235/(117649*rho)",
+                "p3": "188/343-47*rho/5",
+                "p7": "94/343",
+                "p8": "47*rho/5-94/343",
+                "positivity_interval_from_p3_p8": "10/343<rho<20/343",
+                "gap": "48/2401",
+            },
+            "p5_zero_missing_direction": "d/dp5-d/dp8 = 3*(343*rho-10)*(2470629*rho^2-579670*rho+9400)/(33614*rho*(4823609*rho^2-370440*rho+4700)) > 0 on the positive ridge",
+            "p3_zero_exclusion": "with p1=p0+x and sqrt(R)=p6*k, exact row reduction gives (p4-k)*p7=0; p7>0 forces k=p4 and then the two remaining heavy equations sum to p1*(p4+p8)>0, a contradiction",
+            "symmetry": "the atom automorphism maps p5-zero to p8-zero and p3-zero to p7-zero",
+            "consequence": "a global maximizer with all five light coordinates positive has at least two heavy coordinates equal to zero",
+            "exact_symbolic_factorization_check": "passed",
+            "remaining_boundary": "two-or-fewer-heavy strata and strata with a zero light coordinate",
+        },
+        "proved_two_heavy_spectral_faces": {
+            "already_primitive": "the {p3,p7} face is the fifth primitive face",
+            "new_faces": ["{p3,p8}", "{p5,p7}"],
+            "representative_matrix": "[[p2+p4,sqrt(p4*(p0+p6))],[sqrt(p4*(p0+p6)),p0+p6]]",
+            "trace": "p0+p2+p4+p6",
+            "determinant": "p2*(p0+p6)",
+            "envelope_slack": "p1*p6 in the quadratic part and p1*p2*p6 in the radical product",
+            "consequence": "the primitive three-variable envelope proves these two faces exactly",
+            "symmetry": "the atom automorphism maps {p3,p8} to {p5,p7}",
+            "exact_symbolic_factorization_check": "passed",
+            "remaining_two_heavy_faces": ["{p3,p5}", "{p7,p8}", "{p5,p8}"],
+        },
+        "proved_residual_two_heavy_relative_interiors": {
+            "p3_p5_stationarity": "the positive KKT equations force p2-p0=2*p6 and isolate one rational point",
+            "p3_p5_unique_point": {
+                "p0": "3/49",
+                "p1": "47/1372",
+                "p2": "47/686",
+                "p4": "20/343",
+                "p6": "5/1372",
+                "p3": "94/343",
+                "p5": "94/343",
+                "gap": "48/2401",
+                "missing_p8_derivative": "24/49",
+            },
+            "p7_p8": "closed by the atom automorphism",
+            "p5_p8_exclusion": "with sqrt(R)=p4*p6*k, positivity forces p4*k>p5 and p6*k>p8, while the light KKT equation gives sqrt(3*p0*p1*p2/2)=-p0*(p5-p4*k)*(p8-p6*k)/(p5+p8)<0",
+            "consequence": "no two-heavy relative interior can maximize the full problem; supports with at most one heavy coordinate lie in a proved primitive face",
+            "exact_symbolic_factorization_check": "passed",
+            "remaining_boundary": "strata with at least one of p0,p1,p2,p4,p6 equal to zero",
+        },
+        "proved_zero_light_boundary": {
+            "p0_zero": "write R=p4*p6*K with K=p1*p8+p2*p5+(p3+p5)*(p7+p8); 16*(T-q-4*p4*p6-K/4)=(4*p1-4*p2+p3-4*p4+p5+4*p6-p7-p8)^2+48*p1*p2+48*p1*p4+12*p1*p8+12*p2*p5+48*p2*p6",
+            "p0_zero_radical_step": "4*p4*p6+K/4>=2*sqrt(p4*p6*K) by exact AM-GM",
+            "p4_zero": "the heavy maximum is one of the p3 vertex, p8 vertex, or the {p5,p7} 2x2 spectral block; every branch lies in a proved primitive face",
+            "symmetry": "p6=0 follows from p4=0",
+            "p1_or_p2_zero": "if the other two of p0,p1,p2 are positive, turning on the missing coordinate gains order sqrt(epsilon) from the light radical against only order epsilon changes elsewhere, so such a point cannot maximize the violation",
+            "p1_p2_zero": "with K=p0*(p3+p7)+p4*(p7+p8)+p6*(p3+p5), 16*(T-q)=(4*p0+4*p4+4*p6-p3-p5-p7-p8)^2+16*K and K^2-4*R=(x1-x2-x3-x4+x5+x6)^2+4*x1*x2+4*x1*x3+4*x2*x5 for x=(p0*p3,p0*p7,p4*p7,p4*p8,p6*p3,p6*p5)",
+            "consequence": "the scalar inequality is proved on the complete normalized simplex",
+            "exact_symbolic_factorization_check": "passed",
+        },
         "residual_wedge_falsification": wedge_audit,
         "falsification": {
             "seed": args.seed,
@@ -428,7 +900,7 @@ def main() -> None:
             "minimum_interior_gap": float(gaps.min()),
             "equal_light_triple_boundary_gap": float(scalar_gap(equal_point, graph)[0]),
         },
-        "status": "operator_reduction_primitive_faces_and_heavy_interior_proved_four_boundary_families_open",
+        "status": "last_scf_atom_scalar_inequality_proved",
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
