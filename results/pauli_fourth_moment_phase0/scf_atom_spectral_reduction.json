@@ -1,6 +1,17 @@
 {
   "experiment": "last_SCF_atom_exact_spectral_reduction",
   "support_graph6": "HEhu|x|",
+  "nontrivial_automorphism": {
+    "0": 0,
+    "1": 2,
+    "2": 1,
+    "3": 7,
+    "4": 6,
+    "5": 8,
+    "6": 4,
+    "7": 3,
+    "8": 5
+  },
   "light_vertices": [
     0,
     1,
@@ -306,11 +317,46 @@
     "consequence": "outside the wedge where p0 lies strictly between p1 and p2 with sufficient separation, a coupled-channel maximum must move to a heavy-split boundary",
     "exact_factorization_check": "passed over rational arithmetic"
   },
+  "proved_full_heavy_interior_exclusion": {
+    "scope": "the four heavy coordinates p3,p5,p7,p8 with all five light coordinates held fixed and positive",
+    "prior_wedge": "by the two-split lemma, only p0 strictly between p1 and p2 can remain; use symmetry to write p1=p0+x and p2=p0-y with x>=0 and 0<y<p0",
+    "stationary_hessian": "sqrt(R)*Hess(objective)=M=Hess(R)-v*v^T/2 on the three-dimensional heavy simplex",
+    "determinant": "det(M)=p0*P(x)/2, where P is quadratic in x with leading coefficient p0*p4^2",
+    "discriminant": "disc_x(P)=16*p4^2*p6*(y-p0)*(p4+p6)*(p0*p4+p6*y)*(p0+p4+p6)<0",
+    "consequence": "det(M)>0, whereas a negative-semidefinite 3x3 Hessian has nonpositive determinant; therefore no fully interior heavy-simplex local maximum exists",
+    "remaining_boundary": "for every fixed light profile, a maximizer has at least one of p3,p5,p7,p8 equal to zero",
+    "exact_factorization_check": "passed over rational arithmetic"
+  },
+  "residual_wedge_falsification": {
+    "generated_points": 10000000,
+    "accepted_wedge_points": 1044914,
+    "acceptance_rate": 0.1044914,
+    "proposal_cycle": [
+      "boundary_dirichlet_alpha_0.35",
+      "uniform_dirichlet",
+      "lognormal_sigma_2.2"
+    ],
+    "minimum_gap": 0.0002482551655783895,
+    "minimum_gap_point": [
+      0.001993671385431932,
+      0.16681175719069466,
+      0.0009562052043294822,
+      0.0002106543795759772,
+      2.706817508728426e-06,
+      0.0006477422985197319,
+      0.00013728996665054682,
+      0.6591495002088925,
+      0.00018884198378096135
+    ],
+    "wedge_value_at_minimum": -0.00017071408247437095,
+    "proposal_at_minimum": "lognormal",
+    "interpretation": "targeted falsification only; it is not used as proof"
+  },
   "falsification": {
     "seed": 1,
     "dirichlet_samples": 1000000,
     "minimum_interior_gap": 0.0017142811254221403,
     "equal_light_triple_boundary_gap": 1.1102230246251565e-16
   },
-  "status": "operator_reduction_and_five_primitive_faces_proved_full_scalar_inequality_open"
+  "status": "operator_reduction_primitive_faces_and_heavy_interior_proved_four_boundary_families_open"
 }

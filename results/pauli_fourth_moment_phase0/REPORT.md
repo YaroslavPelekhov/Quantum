@@ -349,6 +349,30 @@ two heavy-pair totals fixed, exact differentiation gives
 forced onto a boundary.  This stationarity lemma is exact, but the remaining
 wedge has not yet been excluded.
 
+The wedge can in fact be excluded at the next Hessian level.  On the full
+three-dimensional heavy simplex, the stationary Hessian reduces to
+`M=Hess(R)-vv^T/2` up to the positive factor `sqrt(R)`.  By the atom symmetry,
+write the only remaining ordering as `p_1=p_0+x`, `p_2=p_0-y`, with
+`x>=0` and `0<y<p_0`.  Then `det(M)=p_0P(x)/2`, where the leading coefficient
+of the quadratic `P` is positive and
+
+`disc_x(P)=16 p_4^2 p_6 (y-p_0)(p_4+p_6)`
+`          *(p_0p_4+p_6y)(p_0+p_4+p_6)<0`.
+
+Therefore `det(M)>0`, which is incompatible with a negative-semidefinite
+three-dimensional Hessian.  No fully interior heavy-simplex local maximum
+exists: for every fixed light profile, at least one heavy coordinate can be
+set to zero at a maximizer.  The remaining exact gate is consequently the
+union of four three-heavy boundary families, rather than the full
+nine-variable interior.
+
+A targeted residual-wedge falsification mixed boundary-biased Dirichlet,
+uniform Dirichlet, and lognormal proposals.  Of 10,000,000 normalized points,
+1,044,914 satisfied the necessary wedge condition; none violated the scalar
+inequality, and the minimum gap was `0.0002482552`.  This test is deliberately
+reported only as an adversarial control: the exclusion of the fully interior
+heavy maximum comes from the determinant proof above, not from sampling.
+
 As an independent warm-state control, the published narrow-basin
 `G9` instance was initialized from its reported approximate state.  The
 objective moved from `2.9924593427` to `3.0448154987`, reproducing the
@@ -418,10 +442,10 @@ complete.
 The immediate target is no longer another random search.  It is the single
 order-nine atom `HEhu|x|`.  The decisive routes are:
 
-1. prove a concentration lemma showing that coupled hole channels cannot
-   exceed the now-exact primitive-face envelope; or
-2. extract and rationalize a sparse dual/SOS certificate for the residual
-   coupled-channel region, then verify the identity exactly.
+1. classify the stationary points on the four three-heavy boundary families
+   left by the Hessian-discriminant exclusion; or
+2. extract and rationalize a sparse dual/SOS certificate only for those four
+   lower-dimensional families, then verify the identities exactly.
 
 A physical Pauli state with value above `1.5+1e-7` would instead falsify the
 weighted conjecture.  Current see-saw lower bounds attain only the classical

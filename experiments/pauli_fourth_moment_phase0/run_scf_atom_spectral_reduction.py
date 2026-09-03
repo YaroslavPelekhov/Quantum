@@ -121,6 +121,61 @@ def audit_hole_support_faces(
     }
 
 
+def audit_residual_wedge(
+    graph: nx.Graph, rng: np.random.Generator, samples: int, chunk_size: int
+) -> dict:
+    """Target the only light-variable wedge allowed by the stationarity lemma."""
+    best_gap = np.inf
+    best_point = None
+    best_wedge = None
+    best_proposal = None
+    accepted = 0
+    generated = 0
+    chunk_index = 0
+    while generated < samples:
+        count = min(chunk_size, samples - generated)
+        if chunk_index % 3 == 0:
+            raw = rng.dirichlet(np.full(9, 0.35), size=count)
+            proposal = "boundary_dirichlet"
+        elif chunk_index % 3 == 1:
+            raw = rng.dirichlet(np.ones(9), size=count)
+            proposal = "uniform_dirichlet"
+        else:
+            raw = np.exp(rng.normal(0.0, 2.2, size=(count, 9)))
+            raw /= raw.sum(axis=1, keepdims=True)
+            proposal = "lognormal"
+        scale = 2.0 * raw[:, LIGHT].sum(axis=1) + raw[:, HEAVY].sum(axis=1)
+        points = raw / scale[:, None]
+        wedge = (
+            points[:, 0] * (points[:, 4] + points[:, 6])
+            + (points[:, 0] - points[:, 2]) * (points[:, 0] - points[:, 1])
+        )
+        selected = wedge <= 0.0
+        accepted += int(np.count_nonzero(selected))
+        if np.any(selected):
+            candidates = points[selected]
+            gaps = scalar_gap(candidates, graph)
+            index = int(np.argmin(gaps))
+            if gaps[index] < best_gap:
+                best_gap = float(gaps[index])
+                best_point = candidates[index].tolist()
+                best_wedge = float(wedge[selected][index])
+                best_proposal = proposal
+        generated += count
+        chunk_index += 1
+    return {
+        "generated_points": generated,
+        "accepted_wedge_points": accepted,
+        "acceptance_rate": accepted / generated,
+        "proposal_cycle": ["boundary_dirichlet_alpha_0.35", "uniform_dirichlet", "lognormal_sigma_2.2"],
+        "minimum_gap": best_gap,
+        "minimum_gap_point": best_point,
+        "wedge_value_at_minimum": best_wedge,
+        "proposal_at_minimum": best_proposal,
+        "interpretation": "targeted falsification only; it is not used as proof",
+    }
+
+
 def verify_univariate_factorization() -> None:
     """Check the two exact polynomial identities behind the face lemma over Q."""
     # After x + y + z = L, maximizing over x*z sets x=z=(L-y)/2.
@@ -187,14 +242,100 @@ def verify_heavy_split_hessian_factorization() -> None:
                     )
 
 
+def verify_full_heavy_simplex_exclusion() -> None:
+    """Check the exact determinant/discriminant proof excluding a heavy interior max."""
+    # In the only wedge left by the two-split lemma, use graph symmetry to put
+    # b=a+x and c=a-y with x>=0 and 0<y<a.  At a stationary point of the full
+    # three-dimensional heavy simplex, sqrt(R) times the Hessian is
+    # M=Hess(R)-vv^T/2.  Its determinant is a*P(x)/2.  The leading coefficient
+    # of P is a*d^2 and its discriminant has the nonpositive factor y-a.
+    for a_num in range(2, 5):
+        for d_num in range(1, 4):
+            for e_num in range(1, 4):
+                for y_num in range(1, a_num):
+                    a = Fraction(a_num, 7)
+                    d = Fraction(d_num, 11)
+                    e = Fraction(e_num, 13)
+                    y = a * Fraction(y_num, a_num)
+                    coefficient_2 = a * d**2
+                    coefficient_1 = (
+                        -2 * a * d**3
+                        + 2 * a * d * e**2
+                        - 2 * a * d * e * y
+                        - 4 * d**2 * e * y
+                        - 4 * d * e**2 * y
+                    )
+                    coefficient_0 = (
+                        4 * a**2 * d**2 * e
+                        + 4 * a**2 * d * e**2
+                        + a * d**4
+                        + 4 * a * d**3 * e
+                        + 6 * a * d**2 * e**2
+                        - 2 * a * d**2 * e * y
+                        + 4 * a * d * e**3
+                        + a * e**4
+                        + 2 * a * e**3 * y
+                        + a * e**2 * y**2
+                    )
+                    discriminant = coefficient_1**2 - 4 * coefficient_2 * coefficient_0
+                    factored = (
+                        16
+                        * d**2
+                        * e
+                        * (y - a)
+                        * (d + e)
+                        * (a * d + e * y)
+                        * (a + d + e)
+                    )
+                    if discriminant != factored or discriminant >= 0:
+                        raise AssertionError((a, d, e, y, discriminant, factored))
+                    for x_num in range(0, 4):
+                        x = Fraction(x_num, 9)
+                        b = a + x
+                        c = a - y
+                        q_hessian = [
+                            [-2 * a * d - 2 * d * e, -a * d - 2 * d * e, -a * d],
+                            [-a * d - 2 * d * e, -2 * d * e, a * e],
+                            [-a * d, a * e, Fraction(0)],
+                        ]
+                        slope = [c + d - a - e, d - e, b - a]
+                        matrix = [
+                            [
+                                q_hessian[row][column]
+                                - slope[row] * slope[column] / 2
+                                for column in range(3)
+                            ]
+                            for row in range(3)
+                        ]
+                        determinant = (
+                            matrix[0][0]
+                            * (matrix[1][1] * matrix[2][2] - matrix[1][2] * matrix[2][1])
+                            - matrix[0][1]
+                            * (matrix[1][0] * matrix[2][2] - matrix[1][2] * matrix[2][0])
+                            + matrix[0][2]
+                            * (matrix[1][0] * matrix[2][1] - matrix[1][1] * matrix[2][0])
+                        )
+                        polynomial = coefficient_2 * x**2 + coefficient_1 * x + coefficient_0
+                        if determinant != a * polynomial / 2:
+                            raise AssertionError((a, d, e, x, y, determinant, polynomial))
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--samples", type=int, default=1_000_000)
     parser.add_argument("--face-samples", type=int, default=100_000)
+    parser.add_argument("--wedge-samples", type=int, default=10_000_000)
+    parser.add_argument("--wedge-chunk-size", type=int, default=250_000)
     parser.add_argument("--seed", type=int, default=1)
     args = parser.parse_args()
     graph = nx.from_graph6_bytes(b"HEhu|x|")
+    atom_automorphisms = list(
+        nx.algorithms.isomorphism.GraphMatcher(graph, graph).isomorphisms_iter()
+    )
+    orbit_swap = {0: 0, 1: 2, 2: 1, 3: 7, 4: 6, 5: 8, 6: 4, 7: 3, 8: 5}
+    if len(atom_automorphisms) != 2 or orbit_swap not in atom_automorphisms:
+        raise AssertionError(atom_automorphisms)
     detected_cycles = chordless_four_cycles(graph)
     if {frozenset(cycle) for cycle in detected_cycles} != {frozenset(cycle) for cycle in CYCLES}:
         raise AssertionError((detected_cycles, CYCLES))
@@ -214,6 +355,7 @@ def main() -> None:
 
     verify_univariate_factorization()
     verify_heavy_split_hessian_factorization()
+    verify_full_heavy_simplex_exclusion()
 
     rng = np.random.default_rng(args.seed)
     points = rng.dirichlet(np.ones(9), size=args.samples)
@@ -221,9 +363,13 @@ def main() -> None:
     equal_point = np.zeros((1, 9))
     equal_point[0, :3] = 1.0 / 3.0
     face_audit = audit_hole_support_faces(graph, rng, args.face_samples)
+    wedge_audit = audit_residual_wedge(
+        graph, rng, args.wedge_samples, args.wedge_chunk_size
+    )
     result = {
         "experiment": "last_SCF_atom_exact_spectral_reduction",
         "support_graph6": "HEhu|x|",
+        "nontrivial_automorphism": orbit_swap,
         "light_vertices": LIGHT,
         "heavy_vertices": HEAVY,
         "induced_four_holes": [list(cycle) for cycle in CYCLES],
@@ -265,13 +411,24 @@ def main() -> None:
             "consequence": "outside the wedge where p0 lies strictly between p1 and p2 with sufficient separation, a coupled-channel maximum must move to a heavy-split boundary",
             "exact_factorization_check": "passed over rational arithmetic",
         },
+        "proved_full_heavy_interior_exclusion": {
+            "scope": "the four heavy coordinates p3,p5,p7,p8 with all five light coordinates held fixed and positive",
+            "prior_wedge": "by the two-split lemma, only p0 strictly between p1 and p2 can remain; use symmetry to write p1=p0+x and p2=p0-y with x>=0 and 0<y<p0",
+            "stationary_hessian": "sqrt(R)*Hess(objective)=M=Hess(R)-v*v^T/2 on the three-dimensional heavy simplex",
+            "determinant": "det(M)=p0*P(x)/2, where P is quadratic in x with leading coefficient p0*p4^2",
+            "discriminant": "disc_x(P)=16*p4^2*p6*(y-p0)*(p4+p6)*(p0*p4+p6*y)*(p0+p4+p6)<0",
+            "consequence": "det(M)>0, whereas a negative-semidefinite 3x3 Hessian has nonpositive determinant; therefore no fully interior heavy-simplex local maximum exists",
+            "remaining_boundary": "for every fixed light profile, a maximizer has at least one of p3,p5,p7,p8 equal to zero",
+            "exact_factorization_check": "passed over rational arithmetic",
+        },
+        "residual_wedge_falsification": wedge_audit,
         "falsification": {
             "seed": args.seed,
             "dirichlet_samples": args.samples,
             "minimum_interior_gap": float(gaps.min()),
             "equal_light_triple_boundary_gap": float(scalar_gap(equal_point, graph)[0]),
         },
-        "status": "operator_reduction_and_five_primitive_faces_proved_full_scalar_inequality_open",
+        "status": "operator_reduction_primitive_faces_and_heavy_interior_proved_four_boundary_families_open",
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
@@ -281,6 +438,8 @@ def main() -> None:
                 "status": result["status"],
                 **result["falsification"],
                 "hole_support_face_maximum_excess": face_audit["maximum_value_minus_envelope"],
+                "wedge_points": wedge_audit["accepted_wedge_points"],
+                "wedge_minimum_gap": wedge_audit["minimum_gap"],
             },
             indent=2,
         )

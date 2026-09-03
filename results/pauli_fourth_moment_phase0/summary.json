@@ -137,7 +137,15 @@
           "face_samples_per_hole_support": 100000,
           "maximum_sampled_value_minus_fixed_L_envelope": -1.7162637299700245e-05,
           "coupled_stationarity_necessary_condition": "p0*(p4+p6)+(p0-p2)*(p0-p1)<=0",
-          "status": "operator_reduction_and_five_primitive_faces_proved_full_scalar_inequality_unproved"
+          "fully_interior_heavy_maximum_excluded": true,
+          "residual_exact_gate": "four boundary families with one of p3,p5,p7,p8 equal to zero",
+          "targeted_wedge_falsification": {
+            "generated_points": 10000000,
+            "accepted_wedge_points": 1044914,
+            "minimum_gap": 0.0002482551655783895,
+            "violations": 0
+          },
+          "status": "operator_reduction_primitive_faces_and_heavy_interior_proved_four_boundary_families_open"
         },
         "status": "one_explicit_order9_scalar_inequality_remains_unproved"
       }
@@ -175,5 +183,5 @@
     "n3": 2000,
     "n4": 100
   },
-  "next_gate": "prove a coupled-hole concentration lemma or an exact SOS certificate for the residual region of the HEhu|x| scalar inequality, then test whether the argument lifts to all SCF graphs"
+  "next_gate": "classify the stationary points or obtain exact SOS certificates on the four three-heavy boundary families remaining for HEhu|x|, then test whether the argument lifts to all SCF graphs"
 }

@@ -489,3 +489,37 @@ In particular, an interior coupled-channel maximum is impossible unless
 enough to offset `p_0(p_4+p_6)`.  Outside this wedge the two-dimensional
 heavy split has no interior local maximum and its maximum lies on a boundary.
 This is a necessary condition, not yet an exclusion of the residual wedge.
+
+## Lemma (no fully interior heavy-simplex maximum)
+
+The residual wedge can itself be excluded.  Keep all five light variables
+fixed and optimize over the four heavy variables with fixed sum `H`.  Eliminate
+`p_8`, so the heavy simplex has dimension three.  At an interior stationary
+point, the preceding first-derivative equations reduce the Hessian to
+
+`sqrt(R) Hess(objective)=M=Hess(R)-vv^T/2`,
+
+where `v` is the heavy linear coefficient vector after elimination.
+
+Condition `(D)` says that `p_0` must lie strictly between `p_1` and `p_2`.
+The atom automorphism interchanges `p_1,p_2` together with the corresponding
+light and heavy orbits, so take without loss of generality
+`p_1=p_0+x`, `p_2=p_0-y`, with `x>=0` and `0<y<p_0`.  Direct expansion gives
+
+`det(M)=p_0 P(x)/2`,
+
+where `P` is quadratic in `x`, has leading coefficient `p_0 p_4^2>0`, and
+
+`disc_x(P)=16 p_4^2 p_6 (y-p_0)(p_4+p_6)`
+`          *(p_0p_4+p_6y)(p_0+p_4+p_6)<0`.
+
+Thus `P(x)>0` for every real `x`, so `det(M)>0`.  But the determinant of a
+negative-semidefinite `3 by 3` matrix is nonpositive.  The stationary Hessian
+therefore cannot be negative semidefinite, contradicting the second-order
+condition for a local maximum.
+
+Hence, for every fixed positive light profile, the heavy-variable maximum is
+attained with at least one of `p_3,p_5,p_7,p_8` equal to zero.  Combined with
+the previous lemma, this removes the entire fully coupled heavy interior.
+The atom proof is now reduced to the four three-heavy boundary families; it
+does not yet follow solely from the five primitive-face lemma.
