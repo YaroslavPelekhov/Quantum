@@ -162,6 +162,31 @@ def verify_univariate_factorization() -> None:
                     raise AssertionError((light, s, derivative, direct_derivative))
 
 
+def verify_heavy_split_hessian_factorization() -> None:
+    """Check the exact determinant identity for an interior heavy-split point."""
+    # Put X=p3+p5, Y=p7+p8, x=p5/X and y=p8/Y.  Holding the
+    # light variables and X,Y fixed, the nonconstant objective is
+    # A*x+B*y+2*sqrt(R0+R1*x+R2*y-K*x*y).  At a stationary point,
+    # R_x=-A*sqrt(R), R_y=-B*sqrt(R), and the Hessian determinant is
+    # -K*(K+A*B)/R.  This rational check guards the sign and factor of two.
+    for a_num in range(-2, 3):
+        for b_num in range(-3, 4):
+            for root_num in range(1, 4):
+                slope_a = Fraction(a_num, 3)
+                slope_b = Fraction(b_num, 5)
+                root_r = Fraction(root_num, 4)
+                coupling = Fraction(root_num + 1, 7)
+                h_xx = -slope_a**2 / (2 * root_r)
+                h_yy = -slope_b**2 / (2 * root_r)
+                h_xy = -coupling / root_r - slope_a * slope_b / (2 * root_r)
+                determinant = h_xx * h_yy - h_xy**2
+                expected = -coupling * (coupling + slope_a * slope_b) / root_r**2
+                if determinant != expected:
+                    raise AssertionError(
+                        (slope_a, slope_b, root_r, coupling, determinant, expected)
+                    )
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path, required=True)
@@ -188,6 +213,7 @@ def main() -> None:
         raise AssertionError((cancellation_left, cancellation_right))
 
     verify_univariate_factorization()
+    verify_heavy_split_hessian_factorization()
 
     rng = np.random.default_rng(args.seed)
     points = rng.dirichlet(np.ones(9), size=args.samples)
@@ -228,6 +254,16 @@ def main() -> None:
             "consequence": "inequality (A) is proved on all five primitive one-channel support faces; the other three listed hole supports activate three quartic monomials and remain only numerically audited",
             "exact_factorization_check": "passed over rational arithmetic",
             "independent_face_falsification": face_audit,
+        },
+        "proved_coupled_channel_stationarity_lemma": {
+            "heavy_pair_coordinates": "X=p3+p5, Y=p7+p8, x=p5/X, y=p8/Y",
+            "fixed_data": "p0,...,p6 and X,Y; the p7,p8 and p3,p5 splits vary through x,y",
+            "split_objective": "constant+A*x+B*y+2*sqrt(R0+R1*x+R2*y-K*x*y)",
+            "coefficients": "A=X*(p0-p2), B=Y*(p0-p1), K=p0*(p4+p6)*X*Y",
+            "stationary_hessian_determinant": "-K*(K+A*B)/R",
+            "necessary_condition_for_fully_interior_local_maximum": "p0*(p4+p6)+(p0-p2)*(p0-p1)<=0",
+            "consequence": "outside the wedge where p0 lies strictly between p1 and p2 with sufficient separation, a coupled-channel maximum must move to a heavy-split boundary",
+            "exact_factorization_check": "passed over rational arithmetic",
         },
         "falsification": {
             "seed": args.seed,

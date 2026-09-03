@@ -461,3 +461,31 @@ must therefore exploit coupled hole channels rather than a single primitive
 channel.  The stored audit tests all eight hole-generated support faces with
 100,000 seeded points per face; their largest value-minus-envelope is
 negative, but only the five-face statement above is promoted to a theorem.
+
+## Lemma (stationarity restriction for coupled hole channels)
+
+There is also an exact restriction on a fully interior maximizer.  Put
+`X=p_3+p_5`, `Y=p_7+p_8`, `x=p_5/X`, and `y=p_8/Y`, and hold the five light
+variables and `X,Y` fixed.  Up to a constant, the scalar objective has form
+
+`A x+B y+2 sqrt(R_0+R_1x+R_2y-Kxy)`,
+
+where
+
+`A=X(p_0-p_2)`, `B=Y(p_0-p_1)`,
+`K=p_0(p_4+p_6)XY`.
+
+At an interior stationary point, direct differentiation gives
+`R_x=-A sqrt(R)` and `R_y=-B sqrt(R)`.  Substitution into the Hessian yields
+
+`det Hessian=-K(K+AB)/R`.
+
+For a fully supported point `K>0`; a local maximum therefore requires
+
+`p_0(p_4+p_6)+(p_0-p_2)(p_0-p_1)<=0`.                `(D)`
+
+In particular, an interior coupled-channel maximum is impossible unless
+`p_0` lies strictly between `p_1` and `p_2`, with their separation large
+enough to offset `p_0(p_4+p_6)`.  Outside this wedge the two-dimensional
+heavy split has no interior local maximum and its maximum lies on a boundary.
+This is a necessary condition, not yet an exclusion of the residual wedge.

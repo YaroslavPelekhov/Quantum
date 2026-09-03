@@ -341,6 +341,14 @@ test on each of all eight faces found maximum value-minus-envelope
 counterexample must use coupled hole channels, but the full scalar inequality
 is not yet promoted to a theorem.
 
+The coupled interior is narrower still.  Holding the light weights and the
+two heavy-pair totals fixed, exact differentiation gives
+`det Hessian=-K(K+AB)/R`.  Hence a fully interior local maximum must obey
+`p_0(p_4+p_6)+(p_0-p_2)(p_0-p_1)<=0`.  Thus `p_0` must lie strictly between
+`p_1` and `p_2` with enough separation; everywhere else the heavy split is
+forced onto a boundary.  This stationarity lemma is exact, but the remaining
+wedge has not yet been excluded.
+
 As an independent warm-state control, the published narrow-basin
 `G9` instance was initialized from its reported approximate state.  The
 objective moved from `2.9924593427` to `3.0448154987`, reproducing the

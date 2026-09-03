@@ -30,7 +30,7 @@
     {"path": "one_logical_completeness_gap.json", "bytes": 5130, "sha256": "743b6b2574750fa179afd19e5d31315479e1ab568de788d8de1e4d3d96326093"},
     {"path": "prior_art_scf_screen.json", "bytes": 1261, "sha256": "ea2d59f6dcb3edb73cedfda75fb463a1082e98729a7c4c0fa3d5345999b5376a"},
     {"path": "published_g9_control.json", "bytes": 478, "sha256": "d900b85acd9b56b9e3ba4b51a571005ef4d8603ec72cb2b0524b0ff3cdc64f18"},
-    {"path": "scf_atom_spectral_reduction.json", "bytes": 6934, "sha256": "1376e369ccae0732905674fb878d6f9e4ea60219e429157116bd72d5bfaa3a4f"},
+    {"path": "scf_atom_spectral_reduction.json", "bytes": 7669, "sha256": "43872f97c94bd660de553949eaf2553d11df67d7d10f13bcdd4cccf4ed39ae54"},
     {"path": "scf_facet_attack.json", "bytes": 5572, "sha256": "2c83a04e97aa2461caa6b11e0f4183befc16f46272b629846e528253849e3d74"},
     {"path": "scf_hbar_falsification.json", "bytes": 309647, "sha256": "8b43f60266fd33f8aa21d67e5c7485fe352c47e9146fe9d996ec5d32f28effd5"},
     {"path": "scf_order9_census.json", "bytes": 759078, "sha256": "cb5ea83cb99a0c19a3f3039bd795dd84c9f6c61fbe78a7c6a8e1fefa2ebb57b0"},
