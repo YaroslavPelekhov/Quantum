@@ -28,6 +28,11 @@
     {"path": "one_logical_identity_audit.json", "bytes": 292, "sha256": "80af416354e80a0495df5de2bcc6f4fbf2460fb3fa63a60c8e65799a62e9ad0b"},
     {"path": "one_logical_identity_audit_pure.json", "bytes": 282, "sha256": "5bbc14ad68dd9a7be91e1879dd754b3ca37e11afe17ba7a069ae28a881958db5"},
     {"path": "one_logical_completeness_gap.json", "bytes": 5130, "sha256": "743b6b2574750fa179afd19e5d31315479e1ab568de788d8de1e4d3d96326093"},
+    {"path": "prior_art_scf_screen.json", "bytes": 1261, "sha256": "ea2d59f6dcb3edb73cedfda75fb463a1082e98729a7c4c0fa3d5345999b5376a"},
+    {"path": "published_g9_control.json", "bytes": 478, "sha256": "d900b85acd9b56b9e3ba4b51a571005ef4d8603ec72cb2b0524b0ff3cdc64f18"},
+    {"path": "scf_facet_attack.json", "bytes": 5572, "sha256": "2c83a04e97aa2461caa6b11e0f4183befc16f46272b629846e528253849e3d74"},
+    {"path": "scf_hbar_falsification.json", "bytes": 309647, "sha256": "8b43f60266fd33f8aa21d67e5c7485fe352c47e9146fe9d996ec5d32f28effd5"},
+    {"path": "scf_theta_guided_attack.json", "bytes": 7502, "sha256": "070617231b39e1bd9d9ec549cdc8320551e6666449e72c228ca9a29bb80e14ca"},
     {"path": "small_triple_convolution.json", "bytes": 822, "sha256": "3a0302d73ae842c4a2949a66d0827ce991f115143b260f39979ca63498b005d0"},
     {"path": "theta_shortcut_audit.json", "bytes": 2062, "sha256": "f7cdeb31fbd1064ed925bfd05d06d74f97ec5e7a09b51e76ffdea6b2ca2bee97"}
   ]

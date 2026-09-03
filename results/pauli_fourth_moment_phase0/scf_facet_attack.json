@@ -1,0 +1,221 @@
+{
+  "experiment": "SCF_exact_nonrank_facet_attack",
+  "seed": 619871,
+  "graphs_with_nonrank_facets": 26,
+  "unique_nonrank_facets_tested": 32,
+  "starts_per_facet": 512,
+  "iterations": 320,
+  "largest_ratio": 1.000000000000006,
+  "violation": null,
+  "status": "no_violation_found",
+  "records": [
+    {
+      "graph6": "Ehfw",
+      "source": "atlas_non_line_scf",
+      "vertices": 6,
+      "edges": 10,
+      "unique_nonrank_facets": 1,
+      "largest_ratio": 1.0000000000000038
+    },
+    {
+      "graph6": "Fhc^o",
+      "source": "atlas_non_line_scf",
+      "vertices": 7,
+      "edges": 12,
+      "unique_nonrank_facets": 1,
+      "largest_ratio": 1.000000000000003
+    },
+    {
+      "graph6": "FhNvO",
+      "source": "atlas_non_line_scf",
+      "vertices": 7,
+      "edges": 13,
+      "unique_nonrank_facets": 1,
+      "largest_ratio": 1.0000000000000033
+    },
+    {
+      "graph6": "F{e}o",
+      "source": "atlas_non_line_scf",
+      "vertices": 7,
+      "edges": 14,
+      "unique_nonrank_facets": 1,
+      "largest_ratio": 1.0000000000000042
+    },
+    {
+      "graph6": "FJnVW",
+      "source": "atlas_non_line_scf",
+      "vertices": 7,
+      "edges": 14,
+      "unique_nonrank_facets": 1,
+      "largest_ratio": 1.0000000000000047
+    },
+    {
+      "graph6": "Fe]vw",
+      "source": "atlas_non_line_scf",
+      "vertices": 7,
+      "edges": 15,
+      "unique_nonrank_facets": 1,
+      "largest_ratio": 1.0000000000000033
+    },
+    {
+      "graph6": "F}vn_",
+      "source": "atlas_non_line_scf",
+      "vertices": 7,
+      "edges": 16,
+      "unique_nonrank_facets": 1,
+      "largest_ratio": 1.0000000000000042
+    },
+    {
+      "graph6": "GxFL{{",
+      "source": "random_non_line_scf",
+      "vertices": 8,
+      "edges": 18,
+      "unique_nonrank_facets": 1,
+      "largest_ratio": 1.0000000000000029
+    },
+    {
+      "graph6": "GmM\\Zo",
+      "source": "random_non_line_scf",
+      "vertices": 8,
+      "edges": 17,
+      "unique_nonrank_facets": 2,
+      "largest_ratio": 1.000000000000003
+    },
+    {
+      "graph6": "H|Ziqvr",
+      "source": "random_non_line_scf",
+      "vertices": 9,
+      "edges": 24,
+      "unique_nonrank_facets": 1,
+      "largest_ratio": 1.0000000000000053
+    },
+    {
+      "graph6": "Hf]}cNJ",
+      "source": "random_non_line_scf",
+      "vertices": 9,
+      "edges": 22,
+      "unique_nonrank_facets": 1,
+      "largest_ratio": 1.0000000000000036
+    },
+    {
+      "graph6": "I}~iz^~~w",
+      "source": "random_non_line_scf",
+      "vertices": 10,
+      "edges": 39,
+      "unique_nonrank_facets": 1,
+      "largest_ratio": 1.0000000000000049
+    },
+    {
+      "graph6": "Gty~]k",
+      "source": "random_non_line_scf",
+      "vertices": 8,
+      "edges": 21,
+      "unique_nonrank_facets": 1,
+      "largest_ratio": 1.0000000000000038
+    },
+    {
+      "graph6": "GqNyps",
+      "source": "random_non_line_scf",
+      "vertices": 8,
+      "edges": 17,
+      "unique_nonrank_facets": 1,
+      "largest_ratio": 1.0000000000000036
+    },
+    {
+      "graph6": "Im]h~yV~w",
+      "source": "random_non_line_scf",
+      "vertices": 10,
+      "edges": 34,
+      "unique_nonrank_facets": 3,
+      "largest_ratio": 1.000000000000006
+    },
+    {
+      "graph6": "G~}]Lw",
+      "source": "random_non_line_scf",
+      "vertices": 8,
+      "edges": 21,
+      "unique_nonrank_facets": 1,
+      "largest_ratio": 1.0000000000000053
+    },
+    {
+      "graph6": "GV|}\\[",
+      "source": "random_non_line_scf",
+      "vertices": 8,
+      "edges": 21,
+      "unique_nonrank_facets": 2,
+      "largest_ratio": 1.0000000000000049
+    },
+    {
+      "graph6": "H|xT~jn",
+      "source": "random_non_line_scf",
+      "vertices": 9,
+      "edges": 27,
+      "unique_nonrank_facets": 1,
+      "largest_ratio": 1.0000000000000044
+    },
+    {
+      "graph6": "HfnzUTz",
+      "source": "random_non_line_scf",
+      "vertices": 9,
+      "edges": 25,
+      "unique_nonrank_facets": 1,
+      "largest_ratio": 1.0000000000000044
+    },
+    {
+      "graph6": "H]ZQ|~z",
+      "source": "random_non_line_scf",
+      "vertices": 9,
+      "edges": 26,
+      "unique_nonrank_facets": 3,
+      "largest_ratio": 1.000000000000006
+    },
+    {
+      "graph6": "G^jsR[",
+      "source": "random_non_line_scf",
+      "vertices": 8,
+      "edges": 18,
+      "unique_nonrank_facets": 1,
+      "largest_ratio": 1.0000000000000042
+    },
+    {
+      "graph6": "IevvVz~vW",
+      "source": "random_non_line_scf",
+      "vertices": 10,
+      "edges": 35,
+      "unique_nonrank_facets": 1,
+      "largest_ratio": 1.000000000000004
+    },
+    {
+      "graph6": "G~uNNw",
+      "source": "random_non_line_scf",
+      "vertices": 8,
+      "edges": 21,
+      "unique_nonrank_facets": 1,
+      "largest_ratio": 1.000000000000006
+    },
+    {
+      "graph6": "Hd~}~R]",
+      "source": "random_non_line_scf",
+      "vertices": 9,
+      "edges": 27,
+      "unique_nonrank_facets": 1,
+      "largest_ratio": 1.0000000000000042
+    },
+    {
+      "graph6": "Gnxmzg",
+      "source": "random_non_line_scf",
+      "vertices": 8,
+      "edges": 20,
+      "unique_nonrank_facets": 1,
+      "largest_ratio": 1.0000000000000036
+    },
+    {
+      "graph6": "Il|~|{~ZW",
+      "source": "random_non_line_scf",
+      "vertices": 10,
+      "edges": 36,
+      "unique_nonrank_facets": 1,
+      "largest_ratio": 1.000000000000005
+    }
+  ]
+}

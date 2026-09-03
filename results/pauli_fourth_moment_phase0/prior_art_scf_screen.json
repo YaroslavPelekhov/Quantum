@@ -1,0 +1,46 @@
+{
+  "experiment": "published_hbar_imperfect_benchmark_SCF_screen",
+  "upstream_repository": "https://github.com/wangjie212/BetaNumber",
+  "upstream_commit": "467eb611c09631fcf310da8dc73c35cb3b8fe098",
+  "files": {
+    "test8.txt": {
+      "sha256": "96d6ad0be933af0c4f763dc8e5a08d825d413b053235a91cf9340d8ca1a3adbd",
+      "all": {
+        "graphs": 18,
+        "connected": 18,
+        "claw_free": 5,
+        "has_simplicial_clique": 5,
+        "SCF": 0,
+        "SCF_graph6": []
+      },
+      "hard_subset": {
+        "graphs": 9,
+        "connected": 9,
+        "claw_free": 1,
+        "has_simplicial_clique": 4,
+        "SCF": 0,
+        "SCF_graph6": []
+      }
+    },
+    "test9.txt": {
+      "sha256": "1eb261786d59004f6373b54016ca55c88a36b6f2bdb01edbe538d71b2f69ede7",
+      "all": {
+        "graphs": 1419,
+        "connected": 1419,
+        "claw_free": 70,
+        "has_simplicial_clique": 451,
+        "SCF": 0,
+        "SCF_graph6": []
+      },
+      "hard_subset": {
+        "graphs": 295,
+        "connected": 295,
+        "claw_free": 35,
+        "has_simplicial_clique": 133,
+        "SCF": 0,
+        "SCF_graph6": []
+      }
+    }
+  },
+  "status": "no_SCF_graph_in_published_imperfect_sets"
+}

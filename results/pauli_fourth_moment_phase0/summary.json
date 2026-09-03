@@ -59,6 +59,48 @@
       "largest_weighted_ratio": 0.8958168696851831
     }
   },
+  "scf_rank_body_theorem": {
+    "status": "proved_and_targeted_prior_art_screened_pending_external_expert_review",
+    "scope": "all simplicial claw-free Pauli anticommutation graphs and all induced subgraphs",
+    "statement": "beta(G,1)=alpha(G), equivalently every squared profile satisfies every induced-subgraph rank inequality",
+    "proof_key": "the u^2 coefficient of T_G(u)T_G(-u) gives sum_j epsilon_j^2=sum_i a_i^2 in every hidden-free-fermion sector",
+    "does_not_imply": "weighted hbar-perfectness when STAB(G) has non-rank facets"
+  },
+  "scf_hbar_conjecture": {
+    "status": "survived_strong_falsification_unproved",
+    "statement": "beta(G,w)=alpha(G,w) for every simplicial claw-free graph and every nonnegative weight",
+    "broad_audit": {
+      "unique_non_line_scf_graphs": 280,
+      "random_graph_proposals": 20000,
+      "random_scf_non_line_accepted": 200,
+      "weight_vectors_per_graph": 19,
+      "starts_per_weight": 32,
+      "largest_nonuniform_ratio": 1.0000000000000089
+    },
+    "exact_facet_attack": {
+      "graphs_with_nonrank_facets": 26,
+      "unique_nonrank_facets": 32,
+      "starts_per_facet": 512,
+      "iterations": 320,
+      "largest_ratio": 1.000000000000006
+    },
+    "theta_profile_guided_facet_attack": {
+      "unique_nonrank_facets": 32,
+      "signed_profile_starts_per_facet": 512,
+      "largest_ratio": 1.0000000000000049,
+      "theta_upper_ratio_range": [1.11803397201786, 1.11803402421213],
+      "published_G9_control": 3.0448154998549777
+    },
+    "positive_controls": {
+      "anti_C7_ratio": 1.0469181606780307,
+      "published_G9_final_value": 3.0448154987291725
+    },
+    "published_imperfect_screen": {
+      "order_8_graphs": 18,
+      "order_9_graphs": 1419,
+      "SCF_collisions": 0
+    }
+  },
   "six_qubit_oracle": {
     "maximal_commuting_contexts": 4922775,
     "pure_stabilizer_states": 315057600,
@@ -91,5 +133,5 @@
     "n3": 2000,
     "n4": 100
   },
-  "next_gate": "prove global triple-convolution stabilizer membership or find a higher-logical counterexample"
+  "next_gate": "prove or falsify weighted hbar-perfectness of simplicial claw-free graphs, with non-rank facets as the decisive obstruction"
 }

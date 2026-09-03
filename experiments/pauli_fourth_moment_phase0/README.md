@@ -52,6 +52,18 @@ maximal-CNC forms with several spin/syndrome dimensions and odd orders.
 `run_line_graph_p3_audit.py` (legacy filename) checks the line-graph matching
 constraints for Majorana realizations; the final theorem was strengthened
 from exponent three to exponent two after the free-fermion audit.
+`run_scf_hbar_falsification.py` runs the preregistered weighted attack on
+genuinely non-line simplicial claw-free graphs.
+`run_scf_facet_attack.py` enumerates stable-set vertices, extracts facet
+directions, and targets every non-rank direction found in that candidate set.
+`run_scf_theta_guided_attack.py` solves the first state-moment relaxation and
+uses its optimistic profile to seed sign-enumerated attacks on those facets;
+it also reproduces the published narrow-basin `G9` violation.
+`run_prior_art_scf_screen.py` downloads the Wang et al. imperfect-graph
+benchmarks at a pinned upstream commit, verifies their SHA-256 hashes, and
+screens them for the SCF property.
+`run_published_g9_control.py` reproduces the narrow-basin weighted violation
+reported by Wang et al. from their published warm-start state.
 
 The GPU oracle requires PyTorch with CUDA.  The small exact audit requires
 NumPy and SciPy; the graph-atlas audit additionally requires NetworkX.

@@ -221,6 +221,72 @@ but not the squared-profile matching theorem stated in this form.  Because
 the ingredients are close, its novelty status still requires a careful
 expert audit.
 
+### Hidden free fermions: proved rank bounds and an open weighted conjecture
+
+The next preregistered object change replaces generator-level line graphs by
+the strictly larger hereditary class of simplicial claw-free (SCF) graphs.
+Chapman--Elman--Mann showed that every Hamiltonian with such a frustration
+graph has a symmetry-resolved hidden free-fermion solution.
+
+One new theorem survives a complete normalization audit:
+
+`beta(G,1)=alpha(G)` for every SCF graph `G`.
+
+Indeed, for `A=sum_i a_i P_i`, the coefficient of `u^2` in the generalized
+characteristic polynomial `T(u)T(-u)` is exactly `-sum_i a_i^2`.  Thus every
+symmetry sector has `sum_j epsilon_j^2=sum_i a_i^2` and at most `alpha(G)`
+positive modes.  The free-fermion spectrum and Cauchy--Schwarz give
+`||A||^2<=alpha(G)sum_i a_i^2`; the variational identity for beta and a
+maximum independent-set eigenstate give equality.  Since SCF is hereditary,
+every squared profile also satisfies every induced-subgraph rank inequality.
+
+The stronger weighted statement
+
+`beta(G,w)=alpha(G,w) for every w>=0`
+
+remains a conjecture.  It cannot be inferred from the rank theorem: 26 of the
+tested SCF graphs have genuine non-rank stable-set facets.  We therefore
+enumerated the stable-set vertices, extracted their facet directions, and
+attacked all 32 unique non-rank directions using 512 starts and 320
+iterations per facet.  The largest ratio
+was `1.000000000000006`; no violation was found.
+
+A second attack used the first state-moment SDP relaxation to generate an
+optimistic squared profile for each facet, then tried 512 sign patterns of
+that profile as Hamiltonian starts.  This method reproduces the published
+narrow-basin `G9` gap at `3.0448154999`, but again gave no SCF violation: the
+largest ratio was `1.0000000000000049`.  The relaxation upper ratios were all
+about `1.118034`, so they do not certify the claim; they serve only as
+deliberately nonclassical guides into potentially hidden basins.
+
+The broader preregistered suite covered 280 unique non-line SCF graphs,
+including every connected graph-atlas candidate through seven vertices, the
+published eight-vertex hidden-free-fermion example, adversarial completed
+neighborhoods, and 200 accepted random graphs through ten vertices.  It used
+19 uniform, lognormal, integer, and sparse weights per graph and 32 starts per
+weight.  Across 20,000 random proposals, the largest nonuniform SCF ratio was
+`1.0000000000000089`.  The anti-heptagon positive control reproduced its
+known ratio `1.0469181607`.
+
+As an independent warm-state control, the published narrow-basin
+`G9` instance was initialized from its reported approximate state.  The
+objective moved from `2.9924593427` to `3.0448154987`, reproducing the
+published weighted violation within `4.99e-7`; this is important because
+ordinary random starts were reported to stop at the classical value `3.0`.
+
+Finally, the pinned public benchmark files from Wang et al. were screened
+structurally at upstream commit
+`467eb611c09631fcf310da8dc73c35cb3b8fe098`.  None of the 18 known
+eight-vertex or 1,419 known nine-vertex hbar-imperfect graphs is SCF.  Their
+hard subsets contain 9 and 295 graphs respectively, again with zero SCF
+members.  The files are downloaded by commit and checked byte-for-byte by
+SHA-256 before classification.
+
+This is the strongest current A-star route, but it is not yet an A-star
+result: the rank theorem is proved and plausibly novel, while the more
+important weighted theorem has unusually strong negative-falsification
+evidence but still lacks a proof and external expert prior-art review.
+
 ## Prior-art status
 
 The closest checked papers are:

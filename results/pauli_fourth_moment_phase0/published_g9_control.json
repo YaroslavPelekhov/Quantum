@@ -1,0 +1,22 @@
+{
+  "experiment": "published_G9_narrow_basin_positive_control",
+  "source": "Wang_et_al_arXiv_2511.13531_equations_94_95",
+  "weights": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    2.0,
+    2.0
+  ],
+  "weighted_alpha": 3.0,
+  "published_beta": 3.044815,
+  "initial_value": 2.992459342707317,
+  "iterations": 80,
+  "final_value": 3.0448154987291725,
+  "absolute_error_to_published": 4.987291726266108e-07,
+  "status": "reproduced"
+}

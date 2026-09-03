@@ -270,3 +270,69 @@ only star and triangle uncertainty.  It is no longer the strongest result.
 The squared-profile theorem also proves nonnegative odd-convolution overlap
 for the known Jordan--Wigner line-graph phase points: Holder reduces the
 multi-input expression to the single-input matching bound.
+
+## Theorem (hidden free fermions satisfy every rank inequality)
+
+Let `G` be simplicial claw-free (SCF), component by component, and let
+`P_1,...,P_m` be any Pauli realization of `G`.  Then
+
+`beta(G,1) = alpha(G)`.
+
+Because SCF is hereditary, the same identity holds for every induced
+subgraph.  Equivalently, every squared expectation profile in `BETA(G)`
+satisfies all stable-set rank inequalities
+
+`sum_(i in U) <P_i>^2 <= alpha(G[U])`.
+
+This strictly extends the unweighted consequence of the line-graph theorem
+to the hidden-free-fermion class of Chapman--Elman--Mann.  It does **not**
+prove the weighted identity `beta(G,w)=alpha(G,w)`: SCF stable-set polytopes
+can have non-rank facets.
+
+### Proof audit
+
+Set `A=sum_i a_i P_i`.  In each generalized-cycle symmetry sector, the SCF
+solution writes `A` as a free-fermion Hamiltonian with at most `alpha(G)`
+positive single-particle energies `epsilon_j`.  Their generalized
+characteristic polynomial is
+
+`Z_G(-u^2)=T_G(u)T_G(-u)`.
+
+The quadratic coefficient can be obtained without any sector assumption.
+Writing `T_G(u)=I-uA+u^2 Q_G^(2)+O(u^3)` and using commutation of every
+independent pair gives
+
+`A^2 = (sum_i a_i^2) I + 2 Q_G^(2)`.
+
+Hence
+
+`Z_G(-u^2)=I-u^2 (sum_i a_i^2) I+O(u^4)`.
+
+After restriction to any sector,
+`Z_G(-u^2)=product_j(1-u^2 epsilon_j^2)`, so
+`sum_j epsilon_j^2=sum_i a_i^2`.  The free-fermion spectrum and
+Cauchy--Schwarz therefore imply
+
+`||A||^2 <= (sum_j |epsilon_j|)^2`
+`          <= alpha(G) sum_i a_i^2`.
+
+Finally,
+
+`max_rho sum_i <P_i>^2 = max_(||a||_2=1) ||sum_i a_i P_i||^2`,
+
+so the upper bound is `alpha(G)`.  A common eigenstate of any maximum
+independent set attains the reverse inequality.  Representation invariance
+of beta transfers the statement across all Pauli realizations.  Applying the
+same argument to every induced subgraph, which remains SCF, proves the rank
+body inclusion.
+
+## Open conjecture (SCF graphs are hbar-perfect)
+
+The natural weighted strengthening is
+
+`BETA(G)=STAB(G)` for every SCF graph `G`.
+
+It survived the preregistered falsification suite, including exact attacks
+on every non-rank stable-set facet found in the candidate set, but no proof
+is claimed.  The missing step is precisely control of non-rank facets; the
+free-fermion energy argument above supplies only Euclidean/rank bounds.

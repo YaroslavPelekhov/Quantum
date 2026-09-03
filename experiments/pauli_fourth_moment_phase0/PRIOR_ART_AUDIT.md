@@ -88,6 +88,47 @@ Status at freeze: no direct collision found; audit remains open.
   Studies global moments of the full Pauli spectrum; no graph-weighted
   maximum-commuting-set inequality was found.
 
+## SCF hidden-free-fermion extension
+
+- Chapman, Elman, and Mann, *A Unified Graph-Theoretic Framework for
+  Free-Fermion Solvability*, PRX Quantum 4, 030304 (2023), is the essential
+  structural input.  It proves the symmetry-resolved free-fermion
+  decomposition for simplicial claw-free frustration graphs, gives exactly
+  `alpha(G)` mode slots, defines `Z_G(-u^2)=T_G(u)T_G(-u)`, and explicitly
+  states that the SCF class is hereditary.  It does not formulate beta,
+  squared expectation profiles, rank inequalities, stable-set bodies, or
+  hbar-perfectness.  Our unweighted theorem follows by extracting the
+  quadratic coefficient of their operator polynomial and combining it with
+  the beta variational identity.
+- Wang et al., *Simultaneous variances of Pauli strings, weighted
+  independence numbers, and a new kind of perfection of graphs*,
+  arXiv:2511.13531, defines hbar-perfectness and supplies the closest direct
+  graph classification.  Full-text searches found no occurrence of
+  simplicial cliques or the SCF class.  Its public repository was pinned at
+  commit `467eb611c09631fcf310da8dc73c35cb3b8fe098`; a hash-checked screen
+  found zero SCF graphs among all 18 order-eight and 1,419 order-nine
+  hbar-imperfect benchmark rows, and zero among the corresponding hard
+  subsets of 9 and 295 rows.
+- The same Wang et al. paper warns that random see-saw starts can miss a
+  weighted violation on its `G9` example.  The published four-qubit Pauli
+  realization and rounded warm-start state reproduce `3.0448154987` here,
+  within `4.99e-7` of the reported `3.044815`; thus the negative SCF tests
+  were not accepted without a narrow-basin optimizer control.  Independently,
+  sign starts derived from the first state-moment SDP profile reproduce
+  `3.0448154999` and were then applied to every extracted SCF non-rank facet.
+- Exact-phrase and concept searches for combinations of “simplicial
+  claw-free”, “hbar-perfect”, “beta number”, “weighted independence”, and
+  “stable-set polytope” returned the free-fermion work itself but no theorem
+  connecting SCF solvability to beta or hbar-perfectness.  This is targeted
+  evidence only, not a substitute for external expert review.
+
+The boundary is strict.  We now prove `beta(G,1)=alpha(G)` for every SCF
+graph and, by heredity, every rank inequality for its beta body.  We do not
+yet prove `beta(G,w)=alpha(G,w)` for arbitrary weights.  In fact, exact
+polyhedral enumeration found 26 tested SCF graphs with 32 distinct non-rank
+facet directions, so weighted hbar-perfectness requires an additional idea
+and cannot be rebranded from the unweighted theorem.
+
 ## Known non-collisions and traps
 
 - `chi_f(G; |b|)=R_M^#`-type robustness identities do not imply a universal
