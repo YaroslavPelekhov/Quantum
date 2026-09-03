@@ -213,3 +213,60 @@ The CNC factorization is prior art (Raussendorf et al., PRA 101, 012350
 (2020); Ipek et al., PRA 113, 032409 (2026); Okay, Research in the
 Mathematical Sciences 13, 55 (2026)).  The checked sources do not connect it
 to quantum convolution or state the global nonnegativity result above.
+
+## Theorem (line-graph squared profiles are matching mixtures)
+
+Let Pauli observables `P_e` be indexed by the edges of an arbitrary graph
+`H`, with two observables anticommuting exactly when their edges share an
+endpoint (so their anticommutation graph is `L(H)`).  Then, for every state,
+
+`x_e = <P_e>^2`
+
+belongs to `MATCH(H)=STAB(L(H))`.  Consequently, for every nonnegative edge
+weight `w`,
+
+`sum_e w_e <P_e>^2 <= nu(H,w) = alpha(L(H),w)`.
+
+The reverse inequality is attained by a common eigenstate of the commuting
+Paulis indexed by a maximum-weight matching.  Hence every line graph is
+`hbar`-perfect in the terminology of Wang et al.  On this class the original
+large-expectation fractional-colouring conjecture is true with exponent two,
+which is stronger than both the frozen exponent four and the cubic result
+first found in this cycle.
+
+### Proof through Majorana covariance and representation invariance
+
+Use the canonical realization `P_uv=i gamma_u gamma_v`, where the `gamma_u`
+are pairwise anticommuting Majorana operators.  For a state `rho`, let
+`Gamma_uv=<i gamma_u gamma_v>`.  Positivity of the Majorana correlation
+matrix gives `||Gamma||_op<=1`; explicitly, the matrix with entries
+`Tr[rho gamma_u gamma_v]` is positive semidefinite, and the eigenvalues of
+the real antisymmetric `Gamma` therefore lie in the required unit interval.
+
+The squared row norm gives every degree constraint
+
+`sum_(e incident v) x_e <= 1`.
+
+For any odd vertex set `S`, the principal submatrix `Gamma_S` is an odd real
+antisymmetric contraction.  It has at least one zero singular value and all
+remaining singular values are at most one, so
+
+`sum_(e in E_H(S)) x_e <= (1/2)||Gamma_S||_F^2 <= (|S|-1)/2`.
+
+These are exactly Edmonds' degree and blossom inequalities; thus
+`x in MATCH(H)` for the canonical realization.  The weighted beta radius is
+representation-independent for Pauli realizations of a fixed
+anticommutation graph (Xu--Schwonnek--Winter).  Therefore every realization
+has the same weighted maximum `nu(H,w)`.  Since the matching polytope is a
+downward-closed convex corner, separation by all nonnegative weights places
+the entire beta body, and hence each concrete squared profile, in `MATCH(H)`.
+The reverse inclusion follows from common eigenstates of matchings, so the
+stronger body identity `BETA(L(H))=MATCH(H)` holds.
+
+The elementary powered-blossom argument found before this strengthening
+remains an independent proof that `x^(3/2)` enters the matching polytope from
+only star and triangle uncertainty.  It is no longer the strongest result.
+
+The squared-profile theorem also proves nonnegative odd-convolution overlap
+for the known Jordan--Wigner line-graph phase points: Holder reduces the
+multi-input expression to the single-input matching bound.

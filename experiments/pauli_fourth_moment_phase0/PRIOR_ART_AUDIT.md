@@ -60,6 +60,26 @@ Status at freeze: no direct collision found; audit remains open.
   theta-body and antiblocker framework.  It does not supply the nonlinear
   inclusion needed by the shortcut; our explicit ten-vertex SDP point shows
   that inclusion is false for a generic theta body.
+- Edmonds' matching-polytope theorem supplies the odd-set description used
+  in the line-graph proof.  The targeted search found standard fractional-
+  matching half-integrality, blossom separation, and power-rounding work for
+  dynamic/bipartite matching.  It did not find the statement that squared
+  entries of a physical Majorana covariance contraction form a matching-
+  polytope point, nor its weighted Pauli beta consequence.
+- Zurel, Cohen, and Raussendorf, *Simulation of quantum computation with
+  magic states via Jordan-Wigner transformations*, Phys. Rev. A 112, 042602
+  (2025), constructs phase-point operators with line-graph anticommutation
+  structure.  Chapman and Flammia, *Characterization of solvable spin models
+  via graph invariants*, Quantum 4, 278 (2020), prove the generator-to-
+  generator Majorana representation precisely for line-graph frustration
+  graphs.  Chapman, Elman, and Mann, *A Unified Graph-Theoretic Framework for
+  Free-Fermion Solvability*, PRX Quantum 4, 030304 (2023), extend solvability
+  to simplicial claw-free graphs.  Full-text searches of both free-fermion
+  papers found no covariance-matrix, squared-expectation, beta-body, or
+  matching-polytope statement.  Conversely, full-text searches of the beta
+  and hbar-perfect papers found no line-graph or matching statement.  Thus
+  the ingredients are established and unusually close, but the exact body
+  identity `BETA(L(H))=MATCH(H)` was not found in the targeted search.
 - Grewal et al., *Improved Stabilizer Estimation via Bell Difference
   Sampling*, arXiv:2304.13915.  Supplies fourth-copy/Weyl-distribution Fourier
   identities that may be useful for a proof, but no weighted stable-set
@@ -100,3 +120,5 @@ Status at freeze: no direct collision found; audit remains open.
 - any positivity-preserver or hypercontractive result equivalent to odd
   convolution being nonnegative on all maximal CNC phase points;
 - papers posted after arXiv:2608.20113 that answer its Question 8.
+- fermionic covariance, matching-polytope, or free-fermion results under
+  alternative terminology that could subsume the line-graph theorem.

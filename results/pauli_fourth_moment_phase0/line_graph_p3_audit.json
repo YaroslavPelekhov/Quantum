@@ -1,0 +1,21 @@
+{
+  "experiment": "line_graph_Pauli_exponent_two_matching_polytope",
+  "seed": 660157,
+  "random_state_instances": 8220,
+  "boundary_controls": 1326,
+  "atlas_root_graphs": 1245,
+  "random_root_graphs": 81,
+  "base_vertex_sizes": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "maximum_degree_constraint_excess": -9.475382393842047e-05,
+  "maximum_blossom_constraint_excess": -0.005737124002833438,
+  "largest_weighted_objective_ratio": 0.8958168696851831,
+  "status": "no_violation"
+}

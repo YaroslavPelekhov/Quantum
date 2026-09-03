@@ -42,6 +42,23 @@
       "minimum_overlap": 0.028993294092852805
     }
   },
+  "line_graph_exponent_two_theorem": {
+    "status": "proved_and_targeted_prior_art_screened_pending_external_expert_review",
+    "scope": "all weighted Pauli anticommutation scenarios G=L(H)",
+    "statement": "(Tr(rho P_e)^2)_e belongs to MATCH(H)=STAB(L(H))",
+    "consequences": [
+      "weighted beta_2 equals the weighted matching number",
+      "frozen p=4 claim holds on all line graphs",
+      "large-expectation fractional coloring is at most epsilon^-2"
+    ],
+    "audit": {
+      "random_state_instances": 8220,
+      "atlas_root_graphs": 1245,
+      "random_root_graphs": 81,
+      "boundary_controls": 1326,
+      "largest_weighted_ratio": 0.8958168696851831
+    }
+  },
   "six_qubit_oracle": {
     "maximal_commuting_contexts": 4922775,
     "pure_stabilizer_states": 315057600,

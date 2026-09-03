@@ -49,6 +49,9 @@ theta-body shortcut (it requires CVXPY in addition to the packages below).
 witness covered by the analytic higher-logical theorem.
 `run_cnc_positivity_audit.py` checks signs and normalization across canonical
 maximal-CNC forms with several spin/syndrome dimensions and odd orders.
+`run_line_graph_p3_audit.py` (legacy filename) checks the line-graph matching
+constraints for Majorana realizations; the final theorem was strengthened
+from exponent three to exponent two after the free-fermion audit.
 
 The GPU oracle requires PyTorch with CUDA.  The small exact audit requires
 NumPy and SciPy; the graph-atlas audit additionally requires NetworkX.

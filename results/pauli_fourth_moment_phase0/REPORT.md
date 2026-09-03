@@ -186,6 +186,41 @@ literatures do not state their combination or the resulting positivity
 theorem.  A-star status remains provisional until independent proof and
 submission-grade prior-art audits are completed.
 
+### Exact weighted exponent two on all Pauli line graphs
+
+The initial powered-blossom argument gave exponent three, but an adversarial
+free-fermion check strengthened it before claim freeze.  If the Pauli
+anticommutation graph is the line graph `L(H)` of any graph `H`, then
+
+`(<P_e>^2)_e in MATCH(H) = STAB(L(H))`.
+
+Therefore, for every nonnegative weight vector,
+
+`max_rho sum_e w_e Tr(rho P_e)^2 = nu(H,w)`.
+
+For the canonical Majorana realization, the expectations form a real
+antisymmetric covariance contraction.  Squared row norms give the matching
+degree inequalities; every odd principal submatrix has rank at most
+`|S|-1`, which gives every Edmonds blossom inequality.  Known invariance of
+the weighted beta radius across Pauli realizations transfers the result to
+all realizations of the same line graph.
+
+This is not a perfect-graph corollary: line graphs can be imperfect (odd
+cycles are elementary examples), while the result is weighted and exact.
+It proves the original `chi_f <= epsilon^-2` bound on this entire class and
+extends CNC positivity to the published Jordan--Wigner line-graph phase
+points.  A seeded audit over Majorana realizations of every one of the 1,245
+nonempty graph-atlas roots on two through seven vertices, 81 additional
+random roots through nine vertices, 8,220 random-state instances, and 1,326
+exact weighted-matching boundary controls found no blossom or weighted
+violation.  Every boundary control attained one to numerical precision; the
+largest random weighted ratio was `0.8958169`.  The initial targeted
+prior-art search found free-fermion solvability, representation invariance,
+and matching-polytope ingredients,
+but not the squared-profile matching theorem stated in this form.  Because
+the ingredients are close, its novelty status still requires a careful
+expert audit.
+
 ## Prior-art status
 
 The closest checked papers are:
