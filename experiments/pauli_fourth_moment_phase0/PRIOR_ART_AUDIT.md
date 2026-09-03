@@ -116,6 +116,12 @@ Status at freeze: no direct collision found; audit remains open.
   were not accepted without a narrow-basin optimizer control.  Independently,
   sign starts derived from the first state-moment SDP profile reproduce
   `3.0448154999` and were then applied to every extracted SCF non-rank facet.
+- Their public `BetaNumber.jl` hierarchy was independently ported to Python
+  and checked against the published `G9` level-1 and level-2 values before it
+  was used as an SCF certificate attempt.  This matters because 12 of 13
+  residual order-nine alpha-three facet types close already at level 2.  The
+  thirteenth does not: its upper excess is `1.3569e-4` at level 2 and
+  `4.1579e-5` at level 3, so solver output is not being promoted to a proof.
 - McKay's canonical connected graph census supplies an independent exhaustive
   order-nine universe.  The hash-pinned file contains 261,080 graphs; our
   classifier recovers Wang et al.'s count of 4,494 claw-free graphs, then
@@ -134,6 +140,12 @@ yet prove `beta(G,w)=alpha(G,w)` for arbitrary weights.  In fact, exact
 polyhedral enumeration found 26 tested SCF graphs with 32 distinct non-rank
 facet directions, so weighted hbar-perfectness requires an additional idea
 and cannot be rebranded from the unweighted theorem.
+
+For the exhaustive order-nine universe, 115 of 128 non-rank facet types are
+now proved separately by a join reduction to the rank theorem.  This finite
+closure and the localization to one remaining SDP atom were not found in the
+checked sources.  They still require external expert review, and neither is
+a general SCF hbar-perfectness theorem.
 
 ## Known non-collisions and traps
 

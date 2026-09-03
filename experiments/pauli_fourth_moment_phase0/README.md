@@ -64,6 +64,13 @@ order-nine graphs with a pinned source hash.
 `run_scf_order9_facet_census.py` quotients every non-rank SCF facet by
 weighted-support isomorphism, and `run_scf_order9_guided_attack.py` exhausts
 every sign orthant of the SDP profile for each representative.
+`run_scf_order9_facet_reduction.py` verifies the analytic join reduction for
+115 of the 128 types.  `state_moment_sdp.py` ports the real state-moment
+hierarchy used for the remaining types; `run_state_moment_g9_control.py`
+validates the port on the published `G9` bounds,
+`run_scf_order9_state_moment.py` tests all 13 alpha-three residuals, and
+`run_scf_order9_level3_atom.py` reproduces the level-3 bound for the final
+explicit atom.
 `run_prior_art_scf_screen.py` downloads the Wang et al. imperfect-graph
 benchmarks at a pinned upstream commit, verifies their SHA-256 hashes, and
 screens them for the SCF property.

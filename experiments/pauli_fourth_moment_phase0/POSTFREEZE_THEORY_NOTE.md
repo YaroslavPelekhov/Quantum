@@ -342,5 +342,40 @@ The subsequent exhaustive order-nine census found 4,308 SCF graphs among all
 non-rank facet encountered had coefficients proportional to `1/2` and `1`.
 After quotienting 701 occurrences by weighted-support isomorphism, all 128
 remaining types survived every sign orthant of a first-moment-SDP-guided
-see-saw attack.  This identifies `{0,1/2,1}` clique-family-like inequalities
-as the next analytic target, but it remains evidence rather than proof.
+see-saw attack.
+
+## Proposition (115 of 128 order-nine facet types reduce to joins)
+
+For 115 of the 128 weighted-support types, the unweighted independence
+number is two and the normalized facet has weighted independence number one.
+Write `K` for the vertices of coefficient one and `H` for the vertices of
+coefficient `1/2`.  The set `K` is a clique: two nonadjacent vertices in `K`
+would already have weight two.  Every vertex of `K` is adjacent to every
+vertex of `H`: a missing edge would give an independent set of weight
+`3/2`.  Hence the support graph is the join `K join H`.  Moreover
+`alpha(H)=2`.
+
+The beta number of a join is the maximum of the beta numbers of its two
+parts.  Thus the clique inequality gives `beta(K,1)=1`, while the SCF rank
+theorem above gives
+
+`beta(H,(1/2)1)=(1/2)alpha(H)=1`.
+
+Consequently all 115 of these non-rank facet inequalities are proved for
+every Pauli realization.  The deterministic reduction audit checks the join
+conditions type by type.  This is a finite order-nine statement, not yet a
+classification theorem for arbitrary SCF graphs.
+
+The 13 residual types all have unweighted independence number three and
+weighted independence number `3/2`; none is disposed of by the join
+argument.  A faithful implementation of the real state-moment hierarchy was
+first validated on the published non-SCF `G9` control, reproducing its level-1
+and level-2 bounds `3.2360679896` and `3.0448153335`.  At level 2 it closes 12
+of the 13 residual types to `2e-5`.  The sole numerical atom is graph6
+`HEhu|x|` with weights
+`(1/2,1/2,1/2,1,1/2,1,1/2,1,1)`.  Its level-2 upper bound is
+`1.5001356864`; level 3 lowers this to `1.5000415786` but does not certify the
+classical value `1.5`.  A tighter level-3 solve was stopped after more than
+1,300 CPU seconds without a result.  Therefore 115 types are analytically
+closed, 12 more are numerically bounded at level 2, and exactly one explicit
+atom remains open; no full weighted theorem is claimed.

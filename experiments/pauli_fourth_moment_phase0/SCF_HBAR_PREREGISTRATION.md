@@ -96,3 +96,12 @@ graphs and reduced 701 non-rank facet occurrences to 128 weighted-support
 isomorphism classes.  All 29,664 sign orthants of their first-moment
 SDP-guided profiles survived.  This closes the selected seeded search at
 order nine, not the continuous global optimization problem.
+
+The next structural pass proved 115 of the 128 order-nine types: their
+coefficient-one vertices form a clique completely joined to the
+coefficient-half induced subgraph, so join preservation and the proved SCF
+rank theorem apply.  Of the 13 residual alpha-three types, a validated
+second state-moment relaxation closes 12 to tolerance `2e-5`.  One explicit
+graph6 atom, `HEhu|x|`, remains open; its upper-bound excess decreases from
+`1.3569e-4` at level 2 to `4.1579e-5` at level 3.  This is localization of
+the obstruction, not a proof by numerical tolerance.

@@ -110,7 +110,23 @@
       "weighted_support_classes": 128,
       "sign_orthants_tested": 29664,
       "largest_guided_ratio": 1.0000000000000049,
-      "theta_upper_ratio_range": [1.07868932838931, 1.16902223090605]
+      "theta_upper_ratio_range": [1.07868932838931, 1.16902223090605],
+      "analytic_join_reduction": {
+        "proved_facet_types": 115,
+        "residual_alpha3_types": 13,
+        "proof": "coefficient-one clique joined to coefficient-half SCF subgraph, followed by the beta join rule and SCF rank theorem"
+      },
+      "state_moment_hierarchy": {
+        "published_G9_control_level1": 3.236067989560678,
+        "published_G9_control_level2": 3.044815333548495,
+        "residual_types_closed_at_level2_tolerance": 12,
+        "level2_tolerance": 2e-05,
+        "remaining_atom_graph6": "HEhu|x|",
+        "remaining_atom_weights": [0.5, 0.5, 0.5, 1.0, 0.5, 1.0, 0.5, 1.0, 1.0],
+        "remaining_atom_level2_upper": 1.500135686389718,
+        "remaining_atom_level3_upper": 1.5000415785734806,
+        "status": "one_explicit_order9_atom_remains_unproved"
+      }
     }
   },
   "six_qubit_oracle": {
@@ -145,5 +161,5 @@
     "n3": 2000,
     "n4": 100
   },
-  "next_gate": "prove or falsify weighted hbar-perfectness of simplicial claw-free graphs, with non-rank facets as the decisive obstruction"
+  "next_gate": "prove or physically falsify the single order-nine SCF atom HEhu|x|, preferably by an exact rational dual/SOS certificate or an analytic orbit-sector inequality, then test whether the argument lifts to all SCF graphs"
 }

@@ -1,0 +1,22 @@
+{
+  "experiment": "published_G9_state_moment_SDP_control",
+  "published_first_level": 3.236068,
+  "computed_first_level": 3.236067989560678,
+  "published_second_level": 3.044815,
+  "computed_second_level": 3.044815333548495,
+  "first_level": {
+    "order": 1,
+    "basis_size": 10,
+    "moment_variables": 26,
+    "solver": "CLARABEL",
+    "status": "optimal"
+  },
+  "second_level": {
+    "order": 2,
+    "basis_size": 78,
+    "moment_variables": 1104,
+    "solver": "CLARABEL",
+    "status": "optimal_inaccurate"
+  },
+  "status": "reproduced"
+}

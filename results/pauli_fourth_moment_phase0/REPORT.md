@@ -282,6 +282,25 @@ violation was found.  First-level SDP upper ratios ranged from `1.0786893` to
 `1.1690223`, so this is a complete census and exhaustive seeded attack, not a
 global proof over the continuous state space.
 
+The coefficient pattern then yielded a genuine analytic reduction.  In 115
+of the 128 types, the coefficient-one vertices form a clique completely
+joined to the coefficient-half vertices.  The support is therefore a join
+`K join H`, with `alpha(H)=2`.  The beta join rule, the clique bound, and the
+SCF rank theorem prove the corresponding weighted facet inequality exactly.
+This closes 115 finite order-nine facet types without numerical assumptions.
+
+The remaining 13 types all have unweighted independence number three and
+weighted independence number `1.5`.  We ported the real state-moment SDP
+hierarchy and first reproduced the published `G9` bounds: level 1 gives
+`3.2360679896` versus `3.236068`, and level 2 gives `3.0448153335` versus
+`3.044815`.  Level 2 then closes 12 of the 13 SCF residual types to tolerance
+`2e-5`.  One explicit atom remains: graph6 `HEhu|x|`, weights
+`(1/2,1/2,1/2,1,1/2,1,1/2,1,1)`.  Independent level-2 solvers give upper
+bounds `1.50013566` and `1.50014217`; level 3 lowers the bound to
+`1.5000415786`.  A tighter level-3 run was stopped after more than 1,300 CPU
+seconds without a result.  The hierarchy is converging toward the classical
+value, but the remaining `4.16e-5` relaxation gap is not a proof.
+
 As an independent warm-state control, the published narrow-basin
 `G9` instance was initialized from its reported approximate state.  The
 objective moved from `2.9924593427` to `3.0448154987`, reproducing the
@@ -297,9 +316,10 @@ members.  The files are downloaded by commit and checked byte-for-byte by
 SHA-256 before classification.
 
 This is the strongest current A-star route, but it is not yet an A-star
-result: the rank theorem is proved and plausibly novel, while the more
-important weighted theorem has unusually strong negative-falsification
-evidence but still lacks a proof and external expert prior-art review.
+result.  The rank theorem is proved and plausibly novel; the order-nine
+non-rank obstruction has been reduced from 128 types to one explicit atom.
+The general weighted theorem still lacks a proof and external expert
+prior-art review.
 
 ## Prior-art status
 
@@ -347,19 +367,22 @@ complete.
 
 ## Next decisive gate
 
-The next cycle must do one of two things:
+The immediate target is no longer another random search.  It is the single
+order-nine atom `HEhu|x|`.  The decisive routes are:
 
-1. prove that arbitrary three-input convolution is globally
-   stabilizer-breaking, which would give the stronger exponent `3`; or
-2. construct a higher-logical-dimensional stabilizer witness that violates
-   it, then return to the frozen exponent-four claim without rebranding the
-   failed stronger statement.
+1. extract and rationalize a sparse dual/SOS certificate from a sufficiently
+   accurate state-moment relaxation, then verify the identity exactly; or
+2. derive an analytic inequality from its weighted automorphism orbits and
+   simplicial-clique free-fermion sector, then determine whether that argument
+   lifts from this atom to all `{0,1/2,1}` SCF facets.
 
-In parallel, the new CNC-positivity theorem needs independent proof
-reconstruction and a complete literature audit.  It is a credible standalone
-novelty route even if global stabilizer membership ultimately fails.
+A physical Pauli state with value above `1.5+1e-7` would instead falsify the
+weighted conjecture.  Current see-saw lower bounds attain only the classical
+value, whereas the SDP figures above are relaxation upper bounds and cannot
+serve as physical counterexamples.
 
-Additional random testing of the same scale is now secondary.  Real quantum
-hardware is not the decisive validator for this theorem: the claim concerns
-exact convex geometry, so hardware noise cannot confirm it.  Hardware becomes
-relevant only after a constructive colouring/sampling protocol is derived.
+In parallel, the CNC-positivity theorem still needs independent proof
+reconstruction and a submission-grade prior-art audit.  Real quantum hardware
+is not the decisive validator for these exact convex-geometric claims;
+hardware becomes relevant only after a constructive colouring or sampling
+protocol is derived.

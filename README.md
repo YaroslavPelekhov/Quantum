@@ -1,5 +1,16 @@
 # Quantum x Evolutionary Computing Research Artifact
 
+Latest theorem-search continuation: the
+[Pauli fourth-moment report](results/pauli_fourth_moment_phase0/REPORT.md)
+proves `beta(G,1)=alpha(G)` for every simplicial claw-free frustration graph
+and exhaustively screens all 261,080 connected order-nine graphs.  Of 128
+non-rank SCF facet types, 115 now have an exact join reduction and 12 of the
+13 residual alpha-three types close under a validated level-2 state-moment
+relaxation.  One explicit atom, graph6 `HEhu|x|`, remains: level 3 reduces its
+upper excess to `4.16e-5` but does not prove equality.  This is the strongest
+current A-star route, not a confirmed A-star result; no QPU run is justified
+for the exact convex-geometric gate.
+
 Latest hardware-transfer continuation: the preregistered
 [CMRT offline Phase-0 report](results/cmrt_phase0/FINAL_REPORT.md) closes
 simulator-disagreement scaling as a source of A-star novelty and as a reason to

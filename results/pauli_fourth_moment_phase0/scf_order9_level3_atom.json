@@ -1,0 +1,41 @@
+{
+  "experiment": "order9_SCF_last_atom_third_state_moment_upper_bound",
+  "representative_index": 27,
+  "support_graph6": "HEhu|x|",
+  "weights": [
+    0.5,
+    0.5,
+    0.5,
+    1.0,
+    0.5,
+    1.0,
+    0.5,
+    1.0,
+    1.0
+  ],
+  "weighted_alpha": 1.5,
+  "state_moment_upper_bound": 1.5000415785734806,
+  "upper_excess": 4.15785734806362e-05,
+  "solver_options": {
+    "eps": 1e-05,
+    "max_iters": 50000
+  },
+  "order": 3,
+  "basis_size": 429,
+  "moment_variables": 17990,
+  "solver": "SCS",
+  "status": "optimal",
+  "independent_level2_checks": {
+    "clarabel": 1.500135663334452,
+    "scs": 1.500142166640732
+  },
+  "tightened_attempt": {
+    "solver": "SCS",
+    "eps": 2e-06,
+    "max_iters": 200000,
+    "status": "stopped_resource_limit",
+    "cpu_seconds_before_stop_greater_than": 1300,
+    "reported_bound": null
+  },
+  "verdict": "relaxation_gap_reduced_but_not_closed"
+}
