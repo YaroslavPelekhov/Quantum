@@ -59,6 +59,11 @@ directions, and targets every non-rank direction found in that candidate set.
 `run_scf_theta_guided_attack.py` solves the first state-moment relaxation and
 uses its optimistic profile to seed sign-enumerated attacks on those facets;
 it also reproduces the published narrow-basin `G9` violation.
+`run_scf_order9_census.py` exhaustively screens McKay's 261,080 connected
+order-nine graphs with a pinned source hash.
+`run_scf_order9_facet_census.py` quotients every non-rank SCF facet by
+weighted-support isomorphism, and `run_scf_order9_guided_attack.py` exhausts
+every sign orthant of the SDP profile for each representative.
 `run_prior_art_scf_screen.py` downloads the Wang et al. imperfect-graph
 benchmarks at a pinned upstream commit, verifies their SHA-256 hashes, and
 screens them for the SCF property.

@@ -99,6 +99,18 @@
       "order_8_graphs": 18,
       "order_9_graphs": 1419,
       "SCF_collisions": 0
+    },
+    "exhaustive_order9_gate": {
+      "connected_graphs": 261080,
+      "claw_free_graphs": 4494,
+      "SCF_graphs": 4308,
+      "SCF_non_line_graphs": 3598,
+      "graphs_with_nonrank_facets": 550,
+      "nonrank_facet_occurrences": 701,
+      "weighted_support_classes": 128,
+      "sign_orthants_tested": 29664,
+      "largest_guided_ratio": 1.0000000000000049,
+      "theta_upper_ratio_range": [1.07868932838931, 1.16902223090605]
     }
   },
   "six_qubit_oracle": {

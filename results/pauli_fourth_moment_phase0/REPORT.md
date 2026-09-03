@@ -268,6 +268,20 @@ weight.  Across 20,000 random proposals, the largest nonuniform SCF ratio was
 `1.0000000000000089`.  The anti-heptagon positive control reproduced its
 known ratio `1.0469181607`.
 
+The graph search was then made exhaustive at order nine using Brendan
+McKay's canonical connected-graph census.  Its 2,088,640 source bytes were
+verified by SHA-256 before parsing.  All 261,080 connected graphs were
+screened; the code recovered the published control count of 4,494 claw-free
+graphs, of which 4,308 are SCF and 3,598 are non-line SCF.  Complete
+stable-set vertex enumeration found 701 non-rank facet occurrences in 550
+graphs.  Weighted-support isomorphism reduced them to 128 classes, all with
+coefficients in `{1/2,1}`.  An SDP-profile attack then exhausted all 29,664
+sign orthants across those 128 classes, with 320 fixed-point iterations per
+orthant.  The largest lower-bound ratio was `1.0000000000000049`; no
+violation was found.  First-level SDP upper ratios ranged from `1.0786893` to
+`1.1690223`, so this is a complete census and exhaustive seeded attack, not a
+global proof over the continuous state space.
+
 As an independent warm-state control, the published narrow-basin
 `G9` instance was initialized from its reported approximate state.  The
 objective moved from `2.9924593427` to `3.0448154987`, reproducing the

@@ -336,3 +336,11 @@ It survived the preregistered falsification suite, including exact attacks
 on every non-rank stable-set facet found in the candidate set, but no proof
 is claimed.  The missing step is precisely control of non-rank facets; the
 free-fermion energy argument above supplies only Euclidean/rank bounds.
+
+The subsequent exhaustive order-nine census found 4,308 SCF graphs among all
+261,080 connected graphs, including 3,598 genuinely non-line cases.  Every
+non-rank facet encountered had coefficients proportional to `1/2` and `1`.
+After quotienting 701 occurrences by weighted-support isomorphism, all 128
+remaining types survived every sign orthant of a first-moment-SDP-guided
+see-saw attack.  This identifies `{0,1/2,1}` clique-family-like inequalities
+as the next analytic target, but it remains evidence rather than proof.

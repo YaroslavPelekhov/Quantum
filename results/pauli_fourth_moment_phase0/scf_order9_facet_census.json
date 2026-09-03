@@ -1,0 +1,3552 @@
+{
+  "experiment": "exhaustive_order9_SCF_nonrank_facet_census",
+  "source_sha256": "ad4fda3b6c7157e6711270cdc9cefdc06ac5154d7bd6ce295e1ac41808755c65",
+  "SCF_non_line_graphs": 3598,
+  "graphs_with_nonrank_facets": 550,
+  "nonrank_facet_occurrences": 701,
+  "weighted_support_isomorphism_classes": 128,
+  "coefficient_patterns": {
+    "(0.5, 0.5, 0.5, 0.5, 0.5, 1.0)": 69,
+    "(0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1.0)": 197,
+    "(0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1.0)": 232,
+    "(0.5, 0.5, 0.5, 0.5, 0.5, 1.0, 1.0)": 45,
+    "(0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1.0, 1.0, 1.0)": 8,
+    "(0.5, 0.5, 0.5, 0.5, 0.5, 1.0, 1.0, 1.0)": 10,
+    "(0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1.0, 1.0)": 42,
+    "(0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1.0, 1.0)": 15,
+    "(0.5, 0.5, 0.5, 0.5, 0.5, 1.0, 1.0, 1.0, 1.0)": 6,
+    "(0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1.0)": 77
+  },
+  "representatives": [
+    {
+      "source_graph6": "H?otSsv",
+      "source_support_nodes": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "E[Vw",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 69
+    },
+    {
+      "source_graph6": "HCQbUXn",
+      "source_support_nodes": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "FQyvw",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 89
+    },
+    {
+      "source_graph6": "HCQr]r^",
+      "source_support_nodes": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "GQh^f{",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 13
+    },
+    {
+      "source_graph6": "HCXettn",
+      "source_support_nodes": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "F]hnw",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 108
+    },
+    {
+      "source_graph6": "HCXj]y|",
+      "source_support_nodes": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "F^}rg",
+      "weights": [
+        0.5,
+        0.5,
+        1.0,
+        1.0,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 45
+    },
+    {
+      "source_graph6": "HCXmtiz",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HCXmtiz",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        0.5,
+        1.0,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.5,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HCXmtz^",
+      "source_support_nodes": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "GQVtv{",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 14
+    },
+    {
+      "source_graph6": "HCZLuim",
+      "source_support_nodes": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "GQuvSw",
+      "weights": [
+        1.0,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        0.5,
+        1.0,
+        0.5
+      ],
+      "weighted_alpha": 1.5,
+      "occurrences": 3
+    },
+    {
+      "source_graph6": "HCZLuj^",
+      "source_support_nodes": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "GQuvV{",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 16
+    },
+    {
+      "source_graph6": "HCZTmyz",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HCZTmyz",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.5,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HCZTmy~",
+      "source_support_nodes": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "GQjlv{",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 13
+    },
+    {
+      "source_graph6": "HCZTtv^",
+      "source_support_nodes": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "GQytn{",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 13
+    },
+    {
+      "source_graph6": "HCZTuv^",
+      "source_support_nodes": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "GQyvn{",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 26
+    },
+    {
+      "source_graph6": "HCZTu}~",
+      "source_support_nodes": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "GQyv|{",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        0.5
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 29
+    },
+    {
+      "source_graph6": "HCZTu~^",
+      "source_support_nodes": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "GQyv~{",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 18
+    },
+    {
+      "source_graph6": "HEhethm",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HEhethm",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.5,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HEhtlm~",
+      "source_support_nodes": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "GUZn^{",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 18
+    },
+    {
+      "source_graph6": "HEhtl}~",
+      "source_support_nodes": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "GUZn~{",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 24
+    },
+    {
+      "source_graph6": "HEhtrm~",
+      "source_support_nodes": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "GUZr^{",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 16
+    },
+    {
+      "source_graph6": "HEhtr}~",
+      "source_support_nodes": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "GUZr~{",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 20
+    },
+    {
+      "source_graph6": "HEhttY~",
+      "source_support_nodes": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "GUZuv{",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 13
+    },
+    {
+      "source_graph6": "HEhtt]~",
+      "source_support_nodes": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "GUZu~{",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 19
+    },
+    {
+      "source_graph6": "HEht|}~",
+      "source_support_nodes": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "GUZ~~{",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 7
+    },
+    {
+      "source_graph6": "HEhuTzZ",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HEhuTzZ",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.5,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HEhurxn",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HEhurxn",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        0.5,
+        1.0,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.5,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HEhutx|",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HEhutx|",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        0.5,
+        1.0,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.5,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HEhutx~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HEhutx~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        0.5,
+        1.0,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.5,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HEhu|x|",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HEhu|x|",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        0.5,
+        1.0,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.5,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HEhu|y~",
+      "source_support_nodes": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "GUY~v{",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 12
+    },
+    {
+      "source_graph6": "HQhVTz~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQhVTz~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQhVvZ~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQhVvZ~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQin\\z~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQin\\z~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQinvj~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQinvj~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjRexz",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjRexz",
+      "weights": [
+        0.5,
+        1.0,
+        0.5,
+        1.0,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.5,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjRezu",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjRezu",
+      "weights": [
+        1.0,
+        0.5,
+        1.0,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.5,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjRrv~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjRrv~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjRun~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjRun~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjRvV~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjRvV~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjRvj~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjRvj~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjRvn~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjRvn~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjRvv~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjRvv~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjRvz~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjRvz~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjRv~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjRv~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjUjr~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjUjr~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjVJr\\",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjVJr\\",
+      "weights": [
+        1.0,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.5,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjVNrv",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "GQvnf{",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 10
+    },
+    {
+      "source_graph6": "HQjVjz~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjVjz~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjVmz~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjVmz~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjdvZu",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjdvZu",
+      "weights": [
+        1.0,
+        0.5,
+        1.0,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.5,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjlvZ~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjlvZ~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjlv^~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjlv^~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjlvj~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjlvj~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjlvn~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjlvn~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjlvz~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjlvz~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjlv~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjlv~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjnez~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjnez~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjurz~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjurz~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjur~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjur~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjuv^~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjuv^~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjuvj~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjuvj~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjuvn~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjuvn~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjuvz~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjuvz~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjuv~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjuv~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQjv^r~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQjv^r~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyurz~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyurz~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyuun~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyuun~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyuu~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyuu~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyuvj~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyuvj~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyuvn~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyuvn~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyuvv~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyuvv~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyuvz~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyuvz~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyuv~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyuv~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyuz~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyuz~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyu}~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyu}~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyu~^~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyu~^~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyu~v~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyu~v~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyu~~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyu~~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyvTz~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyvTz~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyvV^~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyvV^~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyvVv~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyvVv~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyvVz~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyvVz~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyvV~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyvV~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyv\\z~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyv\\z~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyv\\~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyv\\~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyv]z~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyv]z~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyv^^~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyv^^~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyv^j~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyv^j~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyv^z~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyv^z~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyv^~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyv^~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyvt~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyvt~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyvuz~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyvuz~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyvvZ~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyvvZ~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyvv^~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyvv^~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyvvj~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyvvj~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyvvn~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyvvn~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyvvv~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyvvv~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyvvz~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyvvz~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyvv~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyvv~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQyv~~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQyv~~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQy~ez~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQy~ez~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQzTvZ~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQzTvZ~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQz^d~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQz^d~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQz^f^~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQz^f^~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQz^fv~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQz^fv~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQz^fz~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQz^fz~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HQz^f~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HQz^f~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HUZurz~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HUZurz~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HUZuv^~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HUZuv^~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HUZuvn~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HUZuvn~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HUZuvz~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HUZuvz~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HUZuv~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HUZuv~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HUZu~^~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HUZu~^~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HUZu~z~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HUZu~z~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HUZu~~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HUZu~~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HUZv\\~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HUZv\\~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HUZv^r~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HUZv^r~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HUZv^z~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HUZv^z~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HUZv^~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HUZv^~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HUZvm~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HUZvm~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HUZvn^~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HUZvn^~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HUZvnn~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HUZvnn~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HUZvnz~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HUZvnz~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HUZvn~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HUZvn~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HUZvvj~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HUZvvj~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HUZvvv~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HUZvvv~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HUZvv~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HUZvv~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HUZv~~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HUZv~~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    },
+    {
+      "source_graph6": "HUZ~~~~",
+      "source_support_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "HUZ~~~~",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "weighted_alpha": 1.0,
+      "occurrences": 1
+    }
+  ]
+}

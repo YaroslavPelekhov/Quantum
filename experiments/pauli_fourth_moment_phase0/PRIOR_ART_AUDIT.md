@@ -116,6 +116,12 @@ Status at freeze: no direct collision found; audit remains open.
   were not accepted without a narrow-basin optimizer control.  Independently,
   sign starts derived from the first state-moment SDP profile reproduce
   `3.0448154999` and were then applied to every extracted SCF non-rank facet.
+- McKay's canonical connected graph census supplies an independent exhaustive
+  order-nine universe.  The hash-pinned file contains 261,080 graphs; our
+  classifier recovers Wang et al.'s count of 4,494 claw-free graphs, then
+  identifies 4,308 SCF graphs.  None intersects the 1,419 published
+  hbar-imperfect rows.  This is stronger than sampling but does not resolve
+  the 78 order-nine graphs left numerically undetermined in Wang et al.
 - Exact-phrase and concept searches for combinations of “simplicial
   claw-free”, “hbar-perfect”, “beta number”, “weighted independence”, and
   “stable-set polytope” returned the free-fermion work itself but no theorem

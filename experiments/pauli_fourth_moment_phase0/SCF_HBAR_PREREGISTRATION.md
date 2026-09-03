@@ -89,3 +89,10 @@ published narrow-basin `G9` violation were reproduced as positive controls.
 The pinned published imperfect-graph sets through nine vertices contain no
 SCF member.  These outcomes strengthen the conjecture but do not change its
 preregistered proof requirement.
+
+A further post-preregistered exhaustive gate screened all 261,080 connected
+graphs of order nine from McKay's hash-pinned census.  It found 4,308 SCF
+graphs and reduced 701 non-rank facet occurrences to 128 weighted-support
+isomorphism classes.  All 29,664 sign orthants of their first-moment
+SDP-guided profiles survived.  This closes the selected seeded search at
+order nine, not the continuous global optimization problem.
