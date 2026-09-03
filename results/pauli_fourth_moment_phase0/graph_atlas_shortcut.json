@@ -1,0 +1,13 @@
+{
+  "claim": "max(r_i^2) sum_i w_i r_i^2 <= alpha(G,w)",
+  "status": "no_violation",
+  "graphs": 1252,
+  "tests": 2504,
+  "seed": 2026090313,
+  "best_ratio": 1.0000000000000024,
+  "best_case": {
+    "graph_index": 502,
+    "vertices": 7,
+    "weight_index": 1
+  }
+}

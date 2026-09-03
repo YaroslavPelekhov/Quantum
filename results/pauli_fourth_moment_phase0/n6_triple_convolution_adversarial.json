@@ -1,0 +1,161 @@
+{
+  "mode": "triple",
+  "contexts": 4922775,
+  "stabilizer_vertices": 315057600,
+  "seed": 660103,
+  "status": "no_violation",
+  "best": 1.0000000000000009,
+  "seconds": 224.37526059150696,
+  "rows": [
+    {
+      "index": 0,
+      "support_normalized_maximum": 0.9999999999999412,
+      "margin": -5.88418203051333e-14
+    },
+    {
+      "index": 1,
+      "support_normalized_maximum": 1.0000000000000009,
+      "margin": 8.881784197001252e-16
+    },
+    {
+      "index": 2,
+      "support_normalized_maximum": 0.9999999999999996,
+      "margin": -4.440892098500626e-16
+    },
+    {
+      "index": 3,
+      "support_normalized_maximum": 0.9999999999999998,
+      "margin": -2.220446049250313e-16
+    },
+    {
+      "index": 4,
+      "support_normalized_maximum": 1.0000000000000007,
+      "margin": 6.661338147750939e-16
+    },
+    {
+      "index": 5,
+      "support_normalized_maximum": 1.0000000000000004,
+      "margin": 4.440892098500626e-16
+    },
+    {
+      "index": 6,
+      "support_normalized_maximum": 0.9999999999287049,
+      "margin": -7.129508095005122e-11
+    },
+    {
+      "index": 7,
+      "support_normalized_maximum": 0.9999999999999998,
+      "margin": -2.220446049250313e-16
+    },
+    {
+      "index": 8,
+      "support_normalized_maximum": 0.9999999999999997,
+      "margin": -3.3306690738754696e-16
+    },
+    {
+      "index": 9,
+      "support_normalized_maximum": 1.0,
+      "margin": 0.0
+    },
+    {
+      "index": 10,
+      "support_normalized_maximum": 1.0000000000000007,
+      "margin": 6.661338147750939e-16
+    },
+    {
+      "index": 11,
+      "support_normalized_maximum": 1.0,
+      "margin": 0.0
+    },
+    {
+      "index": 12,
+      "support_normalized_maximum": 0.9999999999999996,
+      "margin": -4.440892098500626e-16
+    },
+    {
+      "index": 13,
+      "support_normalized_maximum": 1.0,
+      "margin": 0.0
+    },
+    {
+      "index": 14,
+      "support_normalized_maximum": 0.9999999999361999,
+      "margin": -6.380007633310925e-11
+    },
+    {
+      "index": 15,
+      "support_normalized_maximum": 0.9999999999999691,
+      "margin": -3.086420008457935e-14
+    },
+    {
+      "index": 16,
+      "support_normalized_maximum": 0.9999999999304446,
+      "margin": -6.95553614704636e-11
+    },
+    {
+      "index": 17,
+      "support_normalized_maximum": 0.9999999995303875,
+      "margin": -4.696124600300777e-10
+    },
+    {
+      "index": 18,
+      "support_normalized_maximum": 0.9999999999442925,
+      "margin": -5.570754968431402e-11
+    },
+    {
+      "index": 19,
+      "support_normalized_maximum": 1.0,
+      "margin": 0.0
+    },
+    {
+      "index": 20,
+      "support_normalized_maximum": 1.0,
+      "margin": 0.0
+    },
+    {
+      "index": 21,
+      "support_normalized_maximum": 0.9999999999999997,
+      "margin": -3.3306690738754696e-16
+    },
+    {
+      "index": 22,
+      "support_normalized_maximum": 1.0,
+      "margin": 0.0
+    },
+    {
+      "index": 23,
+      "support_normalized_maximum": 1.0000000000000002,
+      "margin": 2.220446049250313e-16
+    },
+    {
+      "index": 24,
+      "support_normalized_maximum": 0.9999999999683734,
+      "margin": -3.162659023558945e-11
+    },
+    {
+      "index": 25,
+      "support_normalized_maximum": 1.0,
+      "margin": 0.0
+    },
+    {
+      "index": 26,
+      "support_normalized_maximum": 0.9999999999467439,
+      "margin": -5.325606622363921e-11
+    },
+    {
+      "index": 27,
+      "support_normalized_maximum": 1.0000000000000004,
+      "margin": 4.440892098500626e-16
+    },
+    {
+      "index": 28,
+      "support_normalized_maximum": 0.9999999999999997,
+      "margin": -3.3306690738754696e-16
+    },
+    {
+      "index": 29,
+      "support_normalized_maximum": 0.9999999999999998,
+      "margin": -2.220446049250313e-16
+    }
+  ]
+}

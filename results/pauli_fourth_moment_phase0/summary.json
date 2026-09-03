@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-03",
+  "frozen_claim": "beta_4(G,w)=alpha(G,w)",
+  "frozen_claim_status": "survived_numerics_unproved",
+  "astar_status": "not_confirmed",
+  "stronger_conjecture": "triple convolution of arbitrary qubit states is in the stabilizer polytope",
+  "stronger_consequence": "chi_f(G(B_epsilon)) <= epsilon^-3",
+  "proved_auxiliary": "odd convolution is one-logical-qubit magic-undistillable under single-copy stabilizer protocols",
+  "one_logical_direct_matrix_audit": {
+    "mixed_branches": 400,
+    "pure_branches": 400,
+    "maximum_identity_error": 5.316927453868914e-16
+  },
+  "one_logical_global_incompleteness": {
+    "qubits": 3,
+    "rank_two_codes": 315,
+    "branches_checked": 1260,
+    "stabilizer_vertices": 1080,
+    "midpoint_visibility": 0.3358463460291401,
+    "global_stabilizer_gauge": 1.0312863652826372,
+    "worst_one_logical_excess": -0.02944397534650922,
+    "integer_witness_exact_vertex_maximum": 1,
+    "integer_witness_value": 1.0312863652826338
+  },
+  "six_qubit_oracle": {
+    "maximal_commuting_contexts": 4922775,
+    "pure_stabilizer_states": 315057600,
+    "p4_witnesses": 80,
+    "p4_best": 1.0000000000000009,
+    "triple_convolution_witnesses": 30,
+    "triple_convolution_best": 1.0000000000000009,
+    "shortcut_witnesses": 40,
+    "shortcut_best": 0.9999999999999382
+  },
+  "explicit_covers": {
+    "p3_haar_corrected_weight": 0.6338726820205092,
+    "p3_near_stabilizer_015_corrected_weight": 0.9674601769760257,
+    "p4_near_stabilizer_015_corrected_weight": 0.9393478505014052
+  },
+  "graph_atlas": {
+    "graphs": 1252,
+    "weighted_tests": 2504,
+    "best_ratio": 1.0000000000000024
+  },
+  "generic_theta_shortcut": {
+    "status": "counterexample",
+    "vertices": 10,
+    "ratio": 1.0047900622461372,
+    "minimum_moment_eigenvalue": -3.118669932722894e-10
+  },
+  "small_exact_triple_trials": {
+    "n1": 5000,
+    "n2": 5000,
+    "n3": 2000,
+    "n4": 100
+  },
+  "next_gate": "prove global triple-convolution stabilizer membership or find a higher-logical counterexample"
+}

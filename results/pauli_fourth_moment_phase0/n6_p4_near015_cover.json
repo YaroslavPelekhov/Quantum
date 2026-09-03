@@ -1,0 +1,51 @@
+{
+  "status": "strict_cover",
+  "qubits": 6,
+  "exponent": 4.0,
+  "near_angle": 0.15,
+  "seed": 660080,
+  "raw_cover_weight": 0.9393478469299837,
+  "minimum_slack": -7.996979342899626e-10,
+  "total_deficit_correction": 3.571421537748102e-09,
+  "corrected_cover_weight": 0.9393478505014052,
+  "nonzero_contexts": 268,
+  "seconds": 1.8754403591156006,
+  "rounds": [
+    {
+      "round": 0,
+      "constraints": 128,
+      "restricted_dual": 0.9477518884320533,
+      "global_support": 261.0
+    },
+    {
+      "round": 1,
+      "constraints": 128,
+      "restricted_dual": 1.0201980601851726,
+      "global_support": 2601.0
+    },
+    {
+      "round": 2,
+      "constraints": 384,
+      "restricted_dual": 0.9419495553664471,
+      "global_support": 600.8571428571429
+    },
+    {
+      "round": 3,
+      "constraints": 384,
+      "restricted_dual": 0.9637889114177745,
+      "global_support": 6000.857142857143
+    },
+    {
+      "round": 4,
+      "constraints": 384,
+      "restricted_dual": 1.1821824719310488,
+      "global_support": 60000.857142857145
+    },
+    {
+      "round": 5,
+      "constraints": 640,
+      "restricted_dual": 0.9393478469299839,
+      "global_support": 14.057662462567489
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "claim": "triple convolution of arbitrary inputs is stabilizer",
+  "status": "no_violation",
+  "seed": 660100,
+  "tolerance": 1e-08,
+  "rows": [
+    {
+      "qubits": 1,
+      "contexts": 3,
+      "stabilizer_vertices": 6,
+      "trials": 5000,
+      "maximum_gauge": 0.9324363156360942
+    },
+    {
+      "qubits": 2,
+      "contexts": 15,
+      "stabilizer_vertices": 60,
+      "trials": 5000,
+      "maximum_gauge": 0.8453893479334315
+    },
+    {
+      "qubits": 3,
+      "contexts": 135,
+      "stabilizer_vertices": 1080,
+      "trials": 2000,
+      "maximum_gauge": 0.6779604220955965
+    },
+    {
+      "qubits": 4,
+      "contexts": 2295,
+      "stabilizer_vertices": 36720,
+      "trials": 100,
+      "maximum_gauge": 0.44029372371368425
+    }
+  ],
+  "violation": null
+}

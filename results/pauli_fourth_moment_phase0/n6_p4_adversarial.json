@@ -1,0 +1,411 @@
+{
+  "mode": "p4",
+  "contexts": 4922775,
+  "stabilizer_vertices": 315057600,
+  "seed": 660090,
+  "status": "no_violation",
+  "best": 1.0000000000000009,
+  "seconds": 301.31693172454834,
+  "rows": [
+    {
+      "index": 0,
+      "support_normalized_maximum": 0.9999999998751006,
+      "margin": -1.2489942413651534e-10
+    },
+    {
+      "index": 1,
+      "support_normalized_maximum": 0.9999999999999996,
+      "margin": -4.440892098500626e-16
+    },
+    {
+      "index": 2,
+      "support_normalized_maximum": 0.9999999999463244,
+      "margin": -5.3675619504645056e-11
+    },
+    {
+      "index": 3,
+      "support_normalized_maximum": 1.0000000000000009,
+      "margin": 8.881784197001252e-16
+    },
+    {
+      "index": 4,
+      "support_normalized_maximum": 1.0000000000000009,
+      "margin": 8.881784197001252e-16
+    },
+    {
+      "index": 5,
+      "support_normalized_maximum": 0.9999999999444267,
+      "margin": -5.5573323720636836e-11
+    },
+    {
+      "index": 6,
+      "support_normalized_maximum": 0.9999999999999993,
+      "margin": -6.661338147750939e-16
+    },
+    {
+      "index": 7,
+      "support_normalized_maximum": 0.9999999999175212,
+      "margin": -8.247880156631027e-11
+    },
+    {
+      "index": 8,
+      "support_normalized_maximum": 0.9999999999458838,
+      "margin": -5.411615600081632e-11
+    },
+    {
+      "index": 9,
+      "support_normalized_maximum": 0.9999999999510841,
+      "margin": -4.8915871353472085e-11
+    },
+    {
+      "index": 10,
+      "support_normalized_maximum": 1.0,
+      "margin": 0.0
+    },
+    {
+      "index": 11,
+      "support_normalized_maximum": 0.9999999999999999,
+      "margin": -1.1102230246251565e-16
+    },
+    {
+      "index": 12,
+      "support_normalized_maximum": 0.9999999999999994,
+      "margin": -5.551115123125783e-16
+    },
+    {
+      "index": 13,
+      "support_normalized_maximum": 1.0000000000000009,
+      "margin": 8.881784197001252e-16
+    },
+    {
+      "index": 14,
+      "support_normalized_maximum": 0.9999999999228526,
+      "margin": -7.71473995797578e-11
+    },
+    {
+      "index": 15,
+      "support_normalized_maximum": 0.9999999999599988,
+      "margin": -4.000122455494193e-11
+    },
+    {
+      "index": 16,
+      "support_normalized_maximum": 1.0,
+      "margin": 0.0
+    },
+    {
+      "index": 17,
+      "support_normalized_maximum": 0.9999999999355373,
+      "margin": -6.446265743420554e-11
+    },
+    {
+      "index": 18,
+      "support_normalized_maximum": 0.9999999999553358,
+      "margin": -4.4664161258367585e-11
+    },
+    {
+      "index": 19,
+      "support_normalized_maximum": 0.9999999999999604,
+      "margin": -3.963496197911809e-14
+    },
+    {
+      "index": 20,
+      "support_normalized_maximum": 1.0,
+      "margin": 0.0
+    },
+    {
+      "index": 21,
+      "support_normalized_maximum": 0.9999999999999257,
+      "margin": -7.427392034742297e-14
+    },
+    {
+      "index": 22,
+      "support_normalized_maximum": 0.9999999999530451,
+      "margin": -4.695488442507667e-11
+    },
+    {
+      "index": 23,
+      "support_normalized_maximum": 0.9999999999644635,
+      "margin": -3.553646266141186e-11
+    },
+    {
+      "index": 24,
+      "support_normalized_maximum": 0.9999999999999603,
+      "margin": -3.9745984281580604e-14
+    },
+    {
+      "index": 25,
+      "support_normalized_maximum": 1.0,
+      "margin": 0.0
+    },
+    {
+      "index": 26,
+      "support_normalized_maximum": 1.0000000000000009,
+      "margin": 8.881784197001252e-16
+    },
+    {
+      "index": 27,
+      "support_normalized_maximum": 0.9999999999999363,
+      "margin": -6.372680161348399e-14
+    },
+    {
+      "index": 28,
+      "support_normalized_maximum": 1.0,
+      "margin": 0.0
+    },
+    {
+      "index": 29,
+      "support_normalized_maximum": 0.9999999999565113,
+      "margin": -4.348865711989447e-11
+    },
+    {
+      "index": 30,
+      "support_normalized_maximum": 0.999999999969672,
+      "margin": -3.03279623636854e-11
+    },
+    {
+      "index": 31,
+      "support_normalized_maximum": 1.0000000000000009,
+      "margin": 8.881784197001252e-16
+    },
+    {
+      "index": 32,
+      "support_normalized_maximum": 0.9999999999136799,
+      "margin": -8.632006220921085e-11
+    },
+    {
+      "index": 33,
+      "support_normalized_maximum": 0.9999999999538791,
+      "margin": -4.612088488897825e-11
+    },
+    {
+      "index": 34,
+      "support_normalized_maximum": 1.0000000000000009,
+      "margin": 8.881784197001252e-16
+    },
+    {
+      "index": 35,
+      "support_normalized_maximum": 0.9999999999507512,
+      "margin": -4.924882723855717e-11
+    },
+    {
+      "index": 36,
+      "support_normalized_maximum": 0.9999999999583499,
+      "margin": -4.165012779111521e-11
+    },
+    {
+      "index": 37,
+      "support_normalized_maximum": 0.9999999999998368,
+      "margin": -1.63202784619898e-13
+    },
+    {
+      "index": 38,
+      "support_normalized_maximum": 1.0000000000000002,
+      "margin": 2.220446049250313e-16
+    },
+    {
+      "index": 39,
+      "support_normalized_maximum": 0.9999999999350067,
+      "margin": -6.499334403997636e-11
+    },
+    {
+      "index": 40,
+      "support_normalized_maximum": 1.0,
+      "margin": 0.0
+    },
+    {
+      "index": 41,
+      "support_normalized_maximum": 0.9999999999999998,
+      "margin": -2.220446049250313e-16
+    },
+    {
+      "index": 42,
+      "support_normalized_maximum": 1.0000000000000009,
+      "margin": 8.881784197001252e-16
+    },
+    {
+      "index": 43,
+      "support_normalized_maximum": 0.9999999999999998,
+      "margin": -2.220446049250313e-16
+    },
+    {
+      "index": 44,
+      "support_normalized_maximum": 1.0,
+      "margin": 0.0
+    },
+    {
+      "index": 45,
+      "support_normalized_maximum": 0.9999999996226634,
+      "margin": -3.7733660640526523e-10
+    },
+    {
+      "index": 46,
+      "support_normalized_maximum": 0.9999999992918938,
+      "margin": -7.081062403102578e-10
+    },
+    {
+      "index": 47,
+      "support_normalized_maximum": 0.9999999890748753,
+      "margin": -1.0925124693805799e-08
+    },
+    {
+      "index": 48,
+      "support_normalized_maximum": 0.9999999999295326,
+      "margin": -7.046740968519316e-11
+    },
+    {
+      "index": 49,
+      "support_normalized_maximum": 1.0,
+      "margin": 0.0
+    },
+    {
+      "index": 50,
+      "support_normalized_maximum": 0.9999999999500255,
+      "margin": -4.997446900745217e-11
+    },
+    {
+      "index": 51,
+      "support_normalized_maximum": 1.0,
+      "margin": 0.0
+    },
+    {
+      "index": 52,
+      "support_normalized_maximum": 0.999999999945812,
+      "margin": -5.4187987430509565e-11
+    },
+    {
+      "index": 53,
+      "support_normalized_maximum": 1.0,
+      "margin": 0.0
+    },
+    {
+      "index": 54,
+      "support_normalized_maximum": 0.9999999999056414,
+      "margin": -9.435863201900929e-11
+    },
+    {
+      "index": 55,
+      "support_normalized_maximum": 0.9999999999565095,
+      "margin": -4.349054449903633e-11
+    },
+    {
+      "index": 56,
+      "support_normalized_maximum": 1.0,
+      "margin": 0.0
+    },
+    {
+      "index": 57,
+      "support_normalized_maximum": 0.9999999999999999,
+      "margin": -1.1102230246251565e-16
+    },
+    {
+      "index": 58,
+      "support_normalized_maximum": 0.9999999571005478,
+      "margin": -4.289945221280789e-08
+    },
+    {
+      "index": 59,
+      "support_normalized_maximum": 0.9999999999528336,
+      "margin": -4.716638191126776e-11
+    },
+    {
+      "index": 60,
+      "support_normalized_maximum": 0.9999999999699061,
+      "margin": -3.009392735009442e-11
+    },
+    {
+      "index": 61,
+      "support_normalized_maximum": 0.9999999943998357,
+      "margin": -5.600164332264512e-09
+    },
+    {
+      "index": 62,
+      "support_normalized_maximum": 0.999999998054264,
+      "margin": -1.945736016750743e-09
+    },
+    {
+      "index": 63,
+      "support_normalized_maximum": 0.9999999999437772,
+      "margin": -5.622280419004255e-11
+    },
+    {
+      "index": 64,
+      "support_normalized_maximum": 0.9999999999999996,
+      "margin": -4.440892098500626e-16
+    },
+    {
+      "index": 65,
+      "support_normalized_maximum": 0.9999999999999438,
+      "margin": -5.617728504603292e-14
+    },
+    {
+      "index": 66,
+      "support_normalized_maximum": 0.9999999994448543,
+      "margin": -5.551457071817367e-10
+    },
+    {
+      "index": 67,
+      "support_normalized_maximum": 0.9999999999369596,
+      "margin": -6.304035071735825e-11
+    },
+    {
+      "index": 68,
+      "support_normalized_maximum": 0.9999999990083026,
+      "margin": -9.916973908730142e-10
+    },
+    {
+      "index": 69,
+      "support_normalized_maximum": 0.9999999999999996,
+      "margin": -4.440892098500626e-16
+    },
+    {
+      "index": 70,
+      "support_normalized_maximum": 0.9999999999521747,
+      "margin": -4.7825299276382793e-11
+    },
+    {
+      "index": 71,
+      "support_normalized_maximum": 0.9999999999999993,
+      "margin": -6.661338147750939e-16
+    },
+    {
+      "index": 72,
+      "support_normalized_maximum": 0.9999999999580854,
+      "margin": -4.191458291558092e-11
+    },
+    {
+      "index": 73,
+      "support_normalized_maximum": 0.9999999736373927,
+      "margin": -2.6362607319363462e-08
+    },
+    {
+      "index": 74,
+      "support_normalized_maximum": 0.999999999999954,
+      "margin": -4.596323321948148e-14
+    },
+    {
+      "index": 75,
+      "support_normalized_maximum": 0.9999999999999997,
+      "margin": -3.3306690738754696e-16
+    },
+    {
+      "index": 76,
+      "support_normalized_maximum": 1.0000000000000009,
+      "margin": 8.881784197001252e-16
+    },
+    {
+      "index": 77,
+      "support_normalized_maximum": 0.9999999811427706,
+      "margin": -1.885722944461321e-08
+    },
+    {
+      "index": 78,
+      "support_normalized_maximum": 0.9999999999487718,
+      "margin": -5.122824386916136e-11
+    },
+    {
+      "index": 79,
+      "support_normalized_maximum": 1.0000000000000009,
+      "margin": 8.881784197001252e-16
+    }
+  ]
+}

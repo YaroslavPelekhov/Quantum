@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "qubits": 3,
+  "trials": 100,
+  "branches": 400,
+  "seed": 660122,
+  "input_kind": "pure",
+  "maximum_identity_error": 5.316927453868914e-16,
+  "maximum_octahedron_excess": -0.5668260806450678,
+  "minimum_branch_probability": 0.1847661814865621
+}

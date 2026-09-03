@@ -1,0 +1,195 @@
+# Pauli fourth-moment / quantum-convolution phase 0
+
+Date: 2026-09-03
+
+## Verdict
+
+The frozen weighted fourth-moment claim
+
+`beta_4(G,w) = alpha(G,w)`
+
+survived every completed numerical falsification test, including exhaustive
+six-qubit separation over all `4,922,775` maximal commuting contexts.  It is
+**not proved** and therefore is **not yet an A-star result**.
+
+The experiments exposed a stronger candidate: the three-input qubit quantum
+convolution of arbitrary states may always lie in the stabilizer polytope.
+If true, it would imply the weighted stable-set inequality already at
+exponent `3`, and therefore the universal fractional-colouring bound
+
+`chi_f(G(B_epsilon)) <= epsilon^-3`.
+
+This stronger statement also remains a conjecture.  No claim of confirmation
+is made from numerics alone.
+
+## Results that did survive
+
+### Exact small-system stabilizer membership
+
+For three independent Haar inputs, direct stabilizer-polytope LPs found no
+triple-convolution violation:
+
+| qubits | contexts | stabilizer vertices | trials | largest gauge |
+|---:|---:|---:|---:|---:|
+| 1 | 3 | 6 | 5,000 | 0.9324363156 |
+| 2 | 15 | 60 | 5,000 | 0.8453893479 |
+| 3 | 135 | 1,080 | 2,000 | 0.6779604221 |
+| 4 | 2,295 | 36,720 | 100 | 0.4402937237 |
+
+The gauge is at most one exactly for stabilizer mixtures.
+
+### Exhaustive six-qubit separation
+
+The six-qubit oracle scans all `4,922,775 x 64 = 315,057,600` pure
+stabilizer states for signed witnesses, or all maximal commuting contexts for
+nonnegative witnesses.
+
+The committed generator rebuilt the 59 MB context cache independently in
+24.7 seconds.  Its SHA-256
+`bb1c58c87535192dd6405e4ac01cbfa292aa482f93929de522870abc78a46372`
+matched the original research cache byte for byte.
+
+- Frozen `p=4` claim: 80 dense/sparse witnesses, 384 state starts per witness,
+  2,400 gradient steps, and six near-stabilizer perturbation scales.  Best
+  normalized value: `1.0000000000000009`.
+- Arbitrary three-input convolution: 30 signed dense/sparse witnesses, 160
+  triples per witness and 2,200 steps.  Best normalized value:
+  `1.0000000000000009`.
+- Strong proof shortcut
+  `max_i r_i^2 * sum_i w_i r_i^2 <= alpha(G,w)`: 40 dense/sparse witnesses,
+  320 starts and 2,200 steps.  Best normalized value:
+  `0.9999999999999382`.
+
+Values within roughly `1e-15` of one are the deliberately included exact
+stabilizer boundary controls, not evidence of a violation.
+
+### Explicit six-qubit commuting covers
+
+The stored certificates list genuine maximal commuting contexts and
+nonnegative weights.  An independent verifier recomputes the state, Pauli
+profile and cover.  Tiny negative LP slacks are corrected conservatively by
+adding one containing context per deficient Pauli; every Pauli extends to a
+maximal commuting context.
+
+| profile | state | contexts | corrected cover weight |
+|---|---|---:|---:|
+| `|r|^3` | Haar | 351 | 0.6338726820205092 |
+| `|r|^3` | distance-angle 0.15 from a stabilizer | 284 | 0.9674601769760257 |
+| `r^4` | distance-angle 0.15 from a stabilizer | 268 | 0.9393478505014052 |
+
+All three corrected weights are strictly below one.
+
+### Complete graph-atlas shortcut test
+
+All 1,252 nonempty non-isomorphic graphs on at most seven vertices were
+tested with uniform and seeded log-normal weights (`2,504` cases).  No
+violation of the strong shortcut was found.  The largest ratio was
+`1.0000000000000024`, numerical equality at the stabilizer boundary.
+
+### Why the shortcut still needs Pauli structure
+
+The tempting abstract lift
+
+`x in TH(G)  =>  max_i(x_i) x in STAB(G)`
+
+is false.  A capped theta-body SDP found a ten-vertex counterexample with
+uniform weights: `alpha(G)=4`, `max_i x_i=0.96`, and
+`sum_i x_i=4.1866252598`, giving ratio `1.0047900622`.  The stored moment
+matrix has minimum eigenvalue `-3.12e-10` and maximum affine residual below
+`1e-11`; the violation is about four orders of magnitude larger.  Thus a
+proof of the physically surviving shortcut must use constraints special to
+Pauli expectation profiles, not theta-body membership alone.
+
+## Proved auxiliary theorem
+
+For every odd convolution order `K >= 3`, arbitrary unequal mixed inputs,
+and every postselected stabilizer protocol with a one-qubit output, the
+logical output is in the one-qubit stabilizer octahedron.  The proof resolves
+each stabilizer-code syndrome branch into a convex mixture of componentwise
+products of valid Bloch vectors; Holder's inequality bounds their `l1` norm
+by one.  The fixed-branch stabilizer normal form extends the rank-two-code
+argument to arbitrary one-output-qubit stabilizer protocols.
+
+This is a genuine dimension-independent theorem, but it does not by itself
+prove that the full many-qubit convolution output is a stabilizer mixture.
+That missing higher-logical-dimensional step is exactly where the A-star
+claim now lives.
+
+As a separate algebra audit, direct density-matrix simulation of the CNOT
+convolution was compared against the syndrome-mixture formula on 400 mixed
+and 400 pure three-qubit postselection branches.  The largest identity errors
+were `5.0e-16` and `5.32e-16`, respectively, and every reconstructed logical
+Bloch vector was strictly inside the stabilizer octahedron.
+
+### One-logical tests are provably incomplete globally
+
+An exhaustive three-qubit test now makes the boundary above explicit.  For
+2,000 seeded depolarizing rays, it enumerated all `315` rank-two stabilizer
+codes, all four syndromes (`1,260` logical branches), and all `1,080` pure
+stabilizer vertices.  It found a physical state with visibility
+`0.3358463460` such that:
+
+- every one-logical branch is inside the octahedron, with worst unnormalized
+  excess `-0.0294439753` and every branch probability strictly positive;
+- the state is outside `STAB_3`, with stabilizer gauge `1.0312863653`;
+- a rounded integer separating witness attains exactly `1` on all stabilizer
+  vertices and `1.0312863653` on the state.
+
+Therefore the one-logical theorem cannot be promoted to global stabilizer
+membership by a completeness argument.  A proof of the triple-convolution
+conjecture must directly control genuinely multi-logical stabilizer facets.
+
+## Prior-art status
+
+The closest checked papers are:
+
+- Bu--Gu--Jaffe (arXiv:2306.09292v2): convolution multiplication, Clifford
+  covariance and stabilizer-input closure, but not arbitrary-input global
+  magic breaking.
+- Wang et al. (arXiv:2511.13531): generalized `beta(G,w,k)` and convergence
+  only as `k -> infinity`.
+- Liu et al. (arXiv:2607.26154v1): the closest squared-profile treatment; it
+  separates weighted second moments from the unweighted fourth collision and
+  does not give the weighted exponent-three or exponent-four theorem.
+- Stempin--Llorens--Huber (arXiv:2608.20113): explicitly leaves existence of
+  any finite universal exponent open and proves the lower exponent
+  `2.07598...`.
+- Patra et al. (arXiv:2409.04425): one-qubit magic-breaking criteria, but not
+  the correlated many-qubit convolution statement.
+- General theta-body/antiblocker literature supplies the standard
+  `STAB(G) subset TH(G) subset QSTAB(G)` inclusions, but the explicit SDP
+  counterexample above rules out the particular nonlinear scaling needed
+  here.
+
+No direct theorem collision was found.  The audit remains open until a
+submission-ready literature search and independent proof reconstruction are
+complete.
+
+## What was falsified or ruled out
+
+- Generic theta-body nonlinear scaling is false and cannot prove the
+  Pauli-specific claim; an explicit feasible ten-vertex counterexample is
+  stored.
+- Clique uncertainty alone cannot certify arbitrary stable-set facets.
+- Uniform four-copy stabilizer-frame marginals decay with dimension and do
+  not yield a universal constant.
+- One-logical-qubit freeness cannot be identified with membership in the full
+  many-qubit stabilizer polytope; an exact three-qubit vertex/witness audit
+  now separates the two notions.
+- Numerical survival, even against the complete six-qubit oracle, is not a
+  theorem.
+
+## Next decisive gate
+
+The next cycle must do one of two things:
+
+1. prove that arbitrary three-input convolution is globally
+   stabilizer-breaking, which would give the stronger exponent `3`; or
+2. construct a higher-logical-dimensional stabilizer witness that violates
+   it, then return to the frozen exponent-four claim without rebranding the
+   failed stronger statement.
+
+Additional random testing of the same scale is now secondary.  Real quantum
+hardware is not the decisive validator for this theorem: the claim concerns
+exact convex geometry, so hardware noise cannot confirm it.  Hardware becomes
+relevant only after a constructive colouring/sampling protocol is derived.

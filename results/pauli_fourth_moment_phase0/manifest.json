@@ -1,0 +1,31 @@
+{
+  "generated_on": "2026-09-03",
+  "branch": "research/pauli-fourth-moment",
+  "preregistration_commit": "c5b5006",
+  "cache_not_committed": {
+    "name": "lagrangian_bases_n6.npy",
+    "shape": [4922775, 6],
+    "dtype": "uint16",
+    "bytes": 59073428,
+    "sha256": "bb1c58c87535192dd6405e4ac01cbfa292aa482f93929de522870abc78a46372",
+    "independent_rebuild_match": true,
+    "generator": "experiments/pauli_fourth_moment_phase0/build_n6_contexts.py"
+  },
+  "artifacts": [
+    {"path": "graph_atlas_shortcut.json", "bytes": 279, "sha256": "5de8b73d3df2541657547d80f14ffab558f34c21aa905766c7b678ee159a046f"},
+    {"path": "n6_p3_haar_cover.json", "bytes": 1101, "sha256": "a99b6e2f67c0410ad7065747a9acf0313971749b742f61a925927f87e0ffd5c0"},
+    {"path": "n6_p3_haar_cover.npz", "bytes": 37417, "sha256": "01678b565fa17cc42778e6af6bae975e48a9c15419741e8b16691eaa58a9e5af"},
+    {"path": "n6_p3_near015_cover.json", "bytes": 948, "sha256": "797ac95e1db7aa073f5fff97a631ad78dc24e9a7f08f3e7be9d0490f588cf17f"},
+    {"path": "n6_p3_near015_cover.npz", "bytes": 36793, "sha256": "6d109ecedc1da2f003b16493f05798ea86839985bf6896e5d4547c6f644b97ce"},
+    {"path": "n6_p4_adversarial.json", "bytes": 10387, "sha256": "023dbb33432bfa1c1f209a5017ba6e0f29e5dca2073354ec38d90c6635f97715"},
+    {"path": "n6_p4_near015_cover.json", "bytes": 1263, "sha256": "c7d086f3263383c192beb848af530b6c36df0e9600b1bca23c608a4044151d0e"},
+    {"path": "n6_p4_near015_cover.npz", "bytes": 36518, "sha256": "163b03a4a237423289a6d399e94b2cb95adb1ab0d65a372c4a69947a384a6241"},
+    {"path": "n6_shortcut_adversarial.json", "bytes": 5505, "sha256": "8bb7c0061d7edc782487c4006c668e290f9eef45acfa0bf714a85c4785e5ba2e"},
+    {"path": "n6_triple_convolution_adversarial.json", "bytes": 3925, "sha256": "04afc28b27d6b048f11eb7a90f074e4edfb813dd8ee305eb309edc850a13ea2f"},
+    {"path": "one_logical_identity_audit.json", "bytes": 292, "sha256": "80af416354e80a0495df5de2bcc6f4fbf2460fb3fa63a60c8e65799a62e9ad0b"},
+    {"path": "one_logical_identity_audit_pure.json", "bytes": 282, "sha256": "5bbc14ad68dd9a7be91e1879dd754b3ca37e11afe17ba7a069ae28a881958db5"},
+    {"path": "one_logical_completeness_gap.json", "bytes": 5130, "sha256": "743b6b2574750fa179afd19e5d31315479e1ab568de788d8de1e4d3d96326093"},
+    {"path": "small_triple_convolution.json", "bytes": 822, "sha256": "3a0302d73ae842c4a2949a66d0827ce991f115143b260f39979ca63498b005d0"},
+    {"path": "theta_shortcut_audit.json", "bytes": 2062, "sha256": "f7cdeb31fbd1064ed925bfd05d06d74f97ec5e7a09b51e76ffdea6b2ca2bee97"}
+  ]
+}
