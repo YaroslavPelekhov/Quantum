@@ -852,4 +852,34 @@ All displayed expressions are nonnegative.  Both graphs therefore reduce to
 the same proved three-variable envelope and satisfy `beta=alpha=3/2`.
 The executable exact audit verifies the graph structure, cycle
 anticommutation, profile equality, determinants, and every polynomial slack.
-The order-nine exact count is now 122 of 128, with six types remaining.
+The order-nine exact count is now 122 of 128 at this stage.
+
+## Proposition (the commuting cycle triangle `HEhutx~`)
+
+Residual type 26 has three pairwise commuting hole charges.  In the oriented
+cycle convention their exact relations are `h_0h_1=h_2`, `h_0h_2=h_1`, and
+`h_1h_2=h_0`; hence the all-positive sector is admissible and maximizes their
+positive coefficients.  On heavy vertices `{3,7,8}`, the fixed-light
+quadratic form is
+
+`M=diag(p_2,p_1,0)+u u^T`,
+`u=(sqrt(p_4),sqrt(p_6),sqrt(p_0))`.
+
+It is positive semidefinite.  Direct symbolic expansion gives
+
+`tr(M)=L`,
+`e_2(M)=p_0p_1+p_0p_2+p_1p_2+p_1p_4+p_2p_6=q_light`,
+`det(M)=p_0p_1p_2=e_3`.
+
+Thus the three eigenvalues of `M` are exactly the three nonnegative aggregate
+variables required by the proved fixed-`L` envelope, and the largest one is
+the heavy-simplex branch coefficient.  The sole isolated heavy vertex 5 uses
+aggregates `(x,y,z)=(p_1,p_0+p_4+p_6,p_2)` and has exact slacks
+
+`xy+xz+yz-q_light=p_2p_4+p_1p_6`,
+`xyz-e_3=p_1p_2(p_4+p_6)`.
+
+Therefore `HEhutx~` also satisfies `beta=alpha=3/2`.  The executable audit
+checks the oriented Pauli-word relations and all three spectral invariants
+symbolically.  The exact order-nine count is now 123 of 128, leaving five
+residual types.

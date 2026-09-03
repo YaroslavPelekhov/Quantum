@@ -1,0 +1,99 @@
+{
+  "experiment": "exact_commuting_cycle_triangle_SCF_certificate",
+  "representative_index": 26,
+  "support_graph6": "HEhutx~",
+  "weights": [
+    0.5,
+    0.5,
+    0.5,
+    1.0,
+    0.5,
+    1.0,
+    0.5,
+    1.0,
+    1.0
+  ],
+  "light_vertices": [
+    0,
+    1,
+    2,
+    4,
+    6
+  ],
+  "heavy_vertices": [
+    3,
+    5,
+    7,
+    8
+  ],
+  "cycles": [
+    [
+      0,
+      8,
+      3,
+      4
+    ],
+    [
+      0,
+      8,
+      6,
+      7
+    ],
+    [
+      3,
+      4,
+      6,
+      7
+    ]
+  ],
+  "cycle_operator_relations": [
+    {
+      "left": 0,
+      "right": 1,
+      "product": 2,
+      "sign": 1
+    },
+    {
+      "left": 0,
+      "right": 2,
+      "product": 1,
+      "sign": 1
+    },
+    {
+      "left": 1,
+      "right": 2,
+      "product": 0,
+      "sign": 1
+    }
+  ],
+  "allowed_extremal_sector": [
+    1,
+    1,
+    1
+  ],
+  "heavy_spectral_block": {
+    "vertices": [
+      3,
+      7,
+      8
+    ],
+    "factorization": "diag(p2,p1,0)+u*u^T, u=(sqrt(p4),sqrt(p6),sqrt(p0))",
+    "trace": "p0 + p1 + p2 + p4 + p6",
+    "second_elementary_coefficient": "p0*p1 + p0*p2 + p1*p2 + p1*p4 + p2*p6",
+    "determinant": "p0*p1*p2",
+    "identification": "the three nonnegative eigenvalues sum to L and have e2=q_light, e3=p0*p1*p2"
+  },
+  "isolated_heavy_branch": {
+    "heavy_vertex": 5,
+    "aggregates": {
+      "x": "p1",
+      "y": "p0 + p4 + p6",
+      "z": "p2"
+    },
+    "q_slack": "p1*p6 + p2*p4",
+    "e3_slack": "p1*p2*(p4 + p6)"
+  },
+  "consequence": "every heavy branch is bounded by the proved three-variable fixed-L envelope",
+  "exact_beta": 1.5,
+  "proof_status": "exact_symbolic_certificate_passed"
+}

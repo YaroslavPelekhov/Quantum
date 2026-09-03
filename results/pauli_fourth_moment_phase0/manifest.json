@@ -32,6 +32,7 @@
     {"path": "published_g9_control.json", "bytes": 478, "sha256": "d900b85acd9b56b9e3ba4b51a571005ef4d8603ec72cb2b0524b0ff3cdc64f18"},
     {"path": "scf_atom_spectral_reduction.json", "bytes": 13801, "sha256": "f0ecb305e49eeba0693fa20ef6b86875467c7ee4b76d6ad39db06ce3c9933ddb"},
     {"path": "scf_collapsible_two_hole_certificates.json", "bytes": 2477, "sha256": "b4c82ebbe2ef039548723f8dfdbf2dc50897d7f26465289e2d8e37cda46735c9"},
+    {"path": "scf_commuting_triangle_certificate.json", "bytes": 1740, "sha256": "f7fd53328c2e0207145d53333ac17f8a6d253a3f242a99849880c36b66b45c1b"},
     {"path": "scf_facet_attack.json", "bytes": 5572, "sha256": "2c83a04e97aa2461caa6b11e0f4183befc16f46272b629846e528253849e3d74"},
     {"path": "scf_hbar_falsification.json", "bytes": 309647, "sha256": "8b43f60266fd33f8aa21d67e5c7485fe352c47e9146fe9d996ec5d32f28effd5"},
     {"path": "scf_order9_census.json", "bytes": 759078, "sha256": "cb5ea83cb99a0c19a3f3039bd795dd84c9f6c61fbe78a7c6a8e1fefa2ebb57b0"},

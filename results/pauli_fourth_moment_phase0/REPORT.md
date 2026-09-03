@@ -25,9 +25,10 @@ is made from numerics alone.
 The main exact advance in this continuation is narrower but complete: the
 former last atom `HEhu|x|` now has an exact scalar, KKT, and sum-of-squares
 proof, a shared spectral-envelope certificate proves four further one-hole
-residual types, and cycle aggregation proves two collapsible two-hole types.
-This makes 122 of the 128 order-nine non-rank facet types exact.  It does not
-yet prove the universal weighted claim, because six residual facet types
+residual types, cycle aggregation proves two collapsible two-hole types, and
+a diagonal-plus-rank-one spectral identity proves the commuting cycle
+triangle `HEhutx~`.  This makes 123 of the 128 order-nine non-rank facet types
+exact.  It does not yet prove the universal weighted claim, because five residual facet types
 remain certified only numerically.
 
 ## Results that did survive
@@ -472,8 +473,10 @@ simplex is the maximum of one `2 by 2` spectral block and scalar branches;
 explicit nonnegative-monomial slacks reduce every branch to the atom's proved
 three-variable envelope.  Two additional two-hole types reduce to the same
 block by aggregating anticommuting channels on a shared heavy pair or rotating
-equal-profile heavy leaves.  Thus 122 of 128 order-nine non-rank facet types
-are now exact.  Six residual types currently have only numerical level-2 upper
+equal-profile heavy leaves.  A third commuting-cycle type gives a `3 by 3`
+positive semidefinite block whose trace, second coefficient, and determinant
+are exactly `L`, `q_light`, and `e_3`, reducing it to the same envelope.  Thus
+123 of 128 order-nine non-rank facet types are now exact.  Five residual types currently have only numerical level-2 upper
 certificates, so neither the
 complete order-nine statement nor the general weighted SCF theorem follows
 yet.  External expert proof reconstruction and a submission-grade prior-art
@@ -525,10 +528,11 @@ complete.
 
 ## Next decisive gate
 
-The single order-nine atom, the four one-hole types, and two collapsible
-two-hole types are no longer gates.  The decisive routes are now:
+The single order-nine atom, the four one-hole types, two collapsible two-hole
+types, and the commuting cycle triangle are no longer gates.  The decisive
+routes are now:
 
-1. determine whether the same spectral/KKT/SOS mechanism closes the other 6
+1. determine whether the same spectral/KKT/SOS mechanism closes the other 5
    residual order-nine facet types that currently have only numerical SDP
    bounds; and
 2. test whether those finite certificates expose a graph operation or local
