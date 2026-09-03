@@ -185,7 +185,16 @@
           "residual_types_still_only_numerical": 5,
           "status": "exact_symbolic_certificate_passed"
         },
-        "status": "123_of_128_order9_facet_types_exact_5_residual_types_still_numerical"
+        "signed_commuting_cycle_certificate": {
+          "representative_index": 44,
+          "support_graph6": "HQjVJr\\",
+          "classes_proved": 1,
+          "mechanism": "resolve s0*s1*s2=-1 sectors into a 2x2 block and certify both signs plus the isolated branch by explicit squares",
+          "exact_order9_facet_types_total": 124,
+          "residual_types_still_only_numerical": 4,
+          "status": "exact_symbolic_certificate_passed"
+        },
+        "status": "124_of_128_order9_facet_types_exact_4_residual_types_still_numerical"
       }
     }
   },
@@ -221,5 +230,5 @@
     "n3": 2000,
     "n4": 100
   },
-  "next_gate": "seek exact spectral or SOS certificates for the other 5 order-nine residual facet types, then test whether the finite mechanisms lift to a general weighted SCF theorem"
+  "next_gate": "seek exact spectral or SOS certificates for residual representatives 15, 23, 24, and 25, then test whether the finite mechanisms lift to a general weighted SCF theorem"
 }

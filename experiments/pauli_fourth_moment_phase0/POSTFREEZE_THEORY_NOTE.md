@@ -883,3 +883,42 @@ Therefore `HEhutx~` also satisfies `beta=alpha=3/2`.  The executable audit
 checks the oriented Pauli-word relations and all three spectral invariants
 symbolically.  The exact order-nine count is now 123 of 128, leaving five
 residual types.
+
+## Proposition (the signed commuting-cycle type `HQjVJr\`)
+
+The three oriented hole charges of residual type 44 obey
+`h_0h_1=-h_2`, `h_0h_2=h_1`, and `h_1h_2=-h_0`.  Hence their sector signs
+satisfy `s_0s_1s_2=-1`.  Put
+
+`a=sqrt(p_1p_6)`, `b=sqrt(p_2p_7)`, `t=s_0s_1`,
+
+so `s_2=-t`.  The two mixed-hole terms form a heavy `{0,8}` block with
+off-diagonal `s_0a+s_1b`; the all-light hole changes the scalar light term by
+`-2tab`.  The block diagonals are
+
+`A=p_1+p_3+p_7`, `B=p_2+p_6`,
+
+and the unused light mass is `x=p_4`.  For both `t=+1` and `t=-1`,
+
+`det M=(sqrt(p_1p_2)-t sqrt(p_6p_7))^2+p_3(p_2+p_6)>=0`,
+
+while exact expansion gives
+
+`x(A+B)+det M-(q_light-2tab)=p_4(p_2+p_7)>=0`,
+
+`x det M-e_3`
+` =p_4[(sqrt(p_1p_2)-t sqrt(p_6p_7))^2+p_2p_3]>=0`.
+
+Thus every mixed-hole sector reduces to the proved three-variable envelope.
+For the isolated heavy-5 branch choose
+
+`(x,y,z)=(p_1+p_3,p_2+p_4+p_7,p_6)`.
+
+The positive all-light channel is absorbed by
+
+`xy+xz+yz-q_light-2sqrt(p_1p_2p_6p_7)`
+` =(sqrt(p_1p_7)-sqrt(p_2p_6))^2+p_1p_6+p_3p_7>=0`,
+
+and `xyz-e_3` is a sum of five nonnegative cubic monomials.  Hence
+`HQjVJr\` satisfies `beta=alpha=3/2`.  The exact count is 124 of 128; the
+remaining representatives are 15, 23, 24, and 25.

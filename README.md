@@ -23,8 +23,9 @@ four more residual types (`HCXmtiz`, `GQuvSw`, `HCZTmyz`, and `HQjRexz`).  Two
 two-hole types then collapse to the same certificate by channel aggregation
 or an equal-profile heavy rotation.  A commuting three-cycle type further
 becomes a diagonal-plus-rank-one `3 by 3` block whose three spectral
-invariants exactly match `(L,q_light,e_3)`.  Thus 123 of 128 order-nine facet
-types are exact and five residual types still
+invariants exactly match `(L,q_light,e_3)`.  The remaining signed commuting
+cycle triangle is closed sector by sector using square certificates.  Thus
+124 of 128 order-nine facet types are exact and four residual types still
 have only numerical SDP upper certificates.  The general weighted SCF claim
 and A-star novelty are not yet confirmed.  No QPU run is justified for this
 exact convex-geometric gate.

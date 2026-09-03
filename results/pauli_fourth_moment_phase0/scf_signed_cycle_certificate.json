@@ -1,0 +1,91 @@
+{
+  "experiment": "exact_signed_commuting_cycle_SCF_certificate",
+  "representative_index": 44,
+  "support_graph6": "HQjVJr\\",
+  "weights": [
+    1.0,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    1.0,
+    0.5,
+    0.5,
+    1.0
+  ],
+  "cycles": [
+    [
+      0,
+      1,
+      6,
+      8
+    ],
+    [
+      0,
+      7,
+      2,
+      8
+    ],
+    [
+      1,
+      2,
+      6,
+      7
+    ]
+  ],
+  "cycle_operator_relations": {
+    "h0*h1": {
+      "cycle": 2,
+      "sign": -1
+    },
+    "h0*h2": {
+      "cycle": 1,
+      "sign": 1
+    },
+    "h1*h2": {
+      "cycle": 0,
+      "sign": -1
+    }
+  },
+  "sector_constraint": "s0*s1*s2=-1",
+  "mixed_cycle_block": {
+    "heavy_pair": [
+      0,
+      8
+    ],
+    "diagonals": [
+      "p1 + p3 + p7",
+      "p2 + p6"
+    ],
+    "remaining_light_mass": "p4",
+    "branches": [
+      {
+        "t=s0*s1": 1,
+        "s2": -1,
+        "determinant_certificate": "(sqrt(p1*p2)-sqrt(p6*p7))^2+p3*(p2+p6)",
+        "q_slack": "p4*(p2 + p7)",
+        "e3_slack": "p4*((sqrt(p1*p2)-sqrt(p6*p7))^2+p2*p3)"
+      },
+      {
+        "t=s0*s1": -1,
+        "s2": 1,
+        "determinant_certificate": "(sqrt(p1*p2)+sqrt(p6*p7))^2+p3*(p2+p6)",
+        "q_slack": "p4*(p2 + p7)",
+        "e3_slack": "p4*((sqrt(p1*p2)+sqrt(p6*p7))^2+p2*p3)"
+      }
+    ]
+  },
+  "isolated_heavy_branch": {
+    "heavy_vertex": 5,
+    "aggregates": {
+      "x": "p1 + p3",
+      "y": "p2 + p4 + p7",
+      "z": "p6"
+    },
+    "q_slack": "(sqrt(p1*p7)-sqrt(p2*p6))^2+p1*p6+p3*p7",
+    "e3_slack": "p6*(p1*p2 + p1*p4 + p1*p7 + p2*p3 + p3*p7)"
+  },
+  "consequence": "every allowed symmetry sector and heavy branch reduces to the proved three-variable fixed-L envelope",
+  "exact_beta": 1.5,
+  "proof_status": "exact_symbolic_certificate_passed"
+}
