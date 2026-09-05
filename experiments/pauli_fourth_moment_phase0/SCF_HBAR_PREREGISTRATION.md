@@ -77,6 +77,12 @@ contribution.
 
 ## Post-run outcome
 
+Current status after subsequent cycles: all order-nine facet types are
+closed by exact certificates, and the arbitrary-order `alpha<=2` case is
+proved. See `SCF_ORDER9_EXACT_THEOREM.md` and `SCF_GENERALIZATION_THEOREMS.md`.
+The paragraphs below preserve the chronological earlier post-run outcomes;
+their intermediate open-atom counts are no longer the current status.
+
 The `H1-rank` coefficient and sector-normalization audit passed, yielding the
 theorem recorded in `POSTFREEZE_THEORY_NOTE.md`.  The stronger `H1-weighted`
 claim survived the broad random suite and a separate attack on 32 non-rank

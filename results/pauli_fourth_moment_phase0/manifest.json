@@ -151,6 +151,11 @@
       "sha256": "fdb524002c1e1ea94eb9e2f6d8024b8e092d3a4accabebe1645a660756b568c7"
     },
     {
+      "path": "scf_gluing_obstruction.json",
+      "bytes": 47008,
+      "sha256": "a1d20e7307b230b806e8c0db2e76df48bc166d61ceb126a443144bde385ddd89"
+    },
+    {
       "path": "scf_gram_completion.json",
       "bytes": 6559,
       "sha256": "0db838fe9e0eda9e6e7dde70a313769013c119f89df7bad71265beb7a7b2cc8c"
@@ -199,6 +204,16 @@
       "path": "scf_order9_state_moment.json",
       "bytes": 6605,
       "sha256": "d7288341462231604cc56a7376194ee7b0198d14afd1c84077b5f92f45a03174"
+    },
+    {
+      "path": "scf_pair_completion_audit.json",
+      "bytes": 12801,
+      "sha256": "cd5a40937bb9418758305abbf4a587cbc6a7db004e7597e4643511f777203a5f"
+    },
+    {
+      "path": "scf_rank_two_lift.json",
+      "bytes": 458108,
+      "sha256": "2f80ff9e5237605932769da0c3078774e9d9f368ddadc5c138ccab86eaa006cd"
     },
     {
       "path": "scf_signed_cycle_certificate.json",

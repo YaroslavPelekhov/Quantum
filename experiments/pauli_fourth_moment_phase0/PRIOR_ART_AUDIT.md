@@ -90,6 +90,24 @@ Status at freeze: no direct collision found; audit remains open.
 
 ## SCF hidden-free-fermion extension
 
+The next generalization proves the arbitrary-order `alpha<=2` case by
+combining the existing SCF rank theorem, standard half-integrality of a
+fractional edge-constraint polytope, and the known beta join property.
+The half-integrality and classical separator-gluing ingredients are not
+claimed as new. Neither this corollary nor the exact obstruction suite is
+being presented as confirmed A-star novelty. Two-clique separator pair
+compatibility remains an unproved quantum step; the tested fixed recipe
+based on squared product expectations is explicitly falsified.
+
+The quantitative strengthening says that for `alpha(G)=2`, the maximum
+weighted ratio `beta(G,w)/alpha(G,w)` equals `beta(G,1)/2`. This has a close
+classical analogue in graph imperfection-ratio theory; see
+[Gerke--McDiarmid, Graph Imperfection](https://ora.ox.ac.uk/objects/uuid%3Aa708faa7-8287-484f-9ecb-23cd3e154d2f/files/md828e164ffc5c7219ff864cfe847b83f)
+and [Koster--Wagler's discussion](https://optimization-online.org/wp-content/uploads/2005/12/1256.pdf).
+The direct beta specialization is proved in our note, but should be treated
+as a consequence of familiar convex/polyhedral structure until priority and
+significance are independently reviewed, not as an established A-star advance.
+
 Update 2026-09-05: the finite SCF result is now exact through order nine,
 including all 128 nonrank types and a GMP-rational completeness audit. The
 counts farther below describe earlier stages. The unrestricted weighted

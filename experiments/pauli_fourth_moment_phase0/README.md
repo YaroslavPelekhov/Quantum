@@ -15,6 +15,12 @@ conjectures; none is described as A-star-ready without external review.
 The latest is [exact weighted SCF perfection through order nine](SCF_ORDER9_EXACT_THEOREM.md),
 with 128/128 nonrank types proved and a fully rational completeness audit.
 
+The subsequent [generalization theorems](SCF_GENERALIZATION_THEOREMS.md)
+remove the vertex-count limit for SCF graphs with independence number at
+most two and prove clique-separator closure. Exact counterexamples rule out
+profile-only two-clique gluing and a proposed correlation completion. Run
+`verify_scf_generalization.py` for solver-independent integer/rational checks.
+
 ## Reproduction
 
 Small exact LP audit:

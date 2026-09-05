@@ -1,0 +1,2583 @@
+{
+  "experiment": "rank_augmented_two_clique_separator_gluing_falsification",
+  "graphs_tested": 13,
+  "exact_obstructions": 13,
+  "quantum_claim_falsified": false,
+  "records": [
+    {
+      "representative_index": 5,
+      "graph6": "HCXmtiz",
+      "separator": [
+        4,
+        5,
+        6
+      ],
+      "separator_clique_cover": [
+        [
+          4,
+          6
+        ],
+        [
+          5
+        ]
+      ],
+      "left_vertices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "right_vertices": [
+        1,
+        4,
+        5,
+        6
+      ],
+      "profile": [
+        "1/3",
+        "1/3",
+        "1/3",
+        "0",
+        "1/3",
+        "1/3",
+        "1/3",
+        "0",
+        "1/3"
+      ],
+      "weights": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1",
+        "1/2",
+        "1",
+        "1/2",
+        "1"
+      ],
+      "exact_profile_value": "5/3",
+      "exact_stable_bound": "3/2",
+      "exact_violation": "1/6",
+      "all_global_rank_inequalities_verified": 511,
+      "left_STAB_decomposition": [
+        {
+          "stable_set": [
+            0,
+            4
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            2,
+            6
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            5,
+            8
+          ],
+          "probability": "1/3"
+        }
+      ],
+      "right_STAB_decomposition": [
+        {
+          "stable_set": [
+            1
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            4
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            5,
+            6
+          ],
+          "probability": "1/3"
+        }
+      ],
+      "separator_pair_ranges": [
+        {
+          "pair": [
+            5,
+            6
+          ],
+          "left": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "-1",
+              "0",
+              "1",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          },
+          "right": {
+            "lower": "1/3",
+            "lower_dual": [
+              "-1",
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            "upper": "1/3",
+            "upper_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ]
+          }
+        }
+      ],
+      "separators_checked_before_witness": 1,
+      "is_physical_quantum_counterexample": false,
+      "status": "exact_obstruction_to_profile_only_two_clique_gluing"
+    },
+    {
+      "representative_index": 7,
+      "graph6": "GQuvSw",
+      "separator": [
+        0,
+        5,
+        6
+      ],
+      "separator_clique_cover": [
+        [
+          0,
+          6
+        ],
+        [
+          5
+        ]
+      ],
+      "left_vertices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "right_vertices": [
+        0,
+        2,
+        5,
+        6
+      ],
+      "profile": [
+        "1/3",
+        "1/3",
+        "1/3",
+        "0",
+        "1/3",
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "weights": [
+        "1",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1",
+        "1/2",
+        "1",
+        "1/2"
+      ],
+      "exact_profile_value": "5/3",
+      "exact_stable_bound": "3/2",
+      "exact_violation": "1/6",
+      "all_global_rank_inequalities_verified": 255,
+      "left_STAB_decomposition": [
+        {
+          "stable_set": [
+            0,
+            1
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            4,
+            5
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            6,
+            7
+          ],
+          "probability": "1/3"
+        }
+      ],
+      "right_STAB_decomposition": [
+        {
+          "stable_set": [
+            0
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            2
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            5,
+            6
+          ],
+          "probability": "1/3"
+        }
+      ],
+      "separator_pair_ranges": [
+        {
+          "pair": [
+            5,
+            6
+          ],
+          "left": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "-1",
+              "1",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "1"
+            ]
+          },
+          "right": {
+            "lower": "1/3",
+            "lower_dual": [
+              "-1",
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            "upper": "1/3",
+            "upper_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ]
+          }
+        }
+      ],
+      "separators_checked_before_witness": 1,
+      "is_physical_quantum_counterexample": false,
+      "status": "exact_obstruction_to_profile_only_two_clique_gluing"
+    },
+    {
+      "representative_index": 9,
+      "graph6": "HCZTmyz",
+      "separator": [
+        4,
+        5,
+        7
+      ],
+      "separator_clique_cover": [
+        [
+          5,
+          7
+        ],
+        [
+          4
+        ]
+      ],
+      "left_vertices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "right_vertices": [
+        1,
+        4,
+        5,
+        7
+      ],
+      "profile": [
+        "0",
+        "1/3",
+        "1/3",
+        "1/3",
+        "1/3",
+        "1/3",
+        "0",
+        "1/3",
+        "1/3"
+      ],
+      "weights": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1",
+        "1/2",
+        "1/2",
+        "1",
+        "1"
+      ],
+      "exact_profile_value": "5/3",
+      "exact_stable_bound": "3/2",
+      "exact_violation": "1/6",
+      "all_global_rank_inequalities_verified": 511,
+      "left_STAB_decomposition": [
+        {
+          "stable_set": [
+            3,
+            4
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            2,
+            7
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            5,
+            8
+          ],
+          "probability": "1/3"
+        }
+      ],
+      "right_STAB_decomposition": [
+        {
+          "stable_set": [
+            1
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            4,
+            5
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            7
+          ],
+          "probability": "1/3"
+        }
+      ],
+      "separator_pair_ranges": [
+        {
+          "pair": [
+            4,
+            5
+          ],
+          "left": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "-1",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "1",
+              "1"
+            ]
+          },
+          "right": {
+            "lower": "1/3",
+            "lower_dual": [
+              "-1",
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            "upper": "1/3",
+            "upper_dual": [
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ]
+          }
+        }
+      ],
+      "separators_checked_before_witness": 1,
+      "is_physical_quantum_counterexample": false,
+      "status": "exact_obstruction_to_profile_only_two_clique_gluing"
+    },
+    {
+      "representative_index": 15,
+      "graph6": "HEhethm",
+      "separator": [
+        0,
+        1,
+        6,
+        7
+      ],
+      "separator_clique_cover": [
+        [
+          1,
+          6
+        ],
+        [
+          0,
+          7
+        ]
+      ],
+      "left_vertices": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "right_vertices": [
+        0,
+        1,
+        3,
+        6,
+        7
+      ],
+      "profile": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/2",
+        "1/4",
+        "1/4"
+      ],
+      "weights": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1",
+        "1/2",
+        "1"
+      ],
+      "exact_profile_value": "13/8",
+      "exact_stable_bound": "3/2",
+      "exact_violation": "1/8",
+      "all_global_rank_inequalities_verified": 511,
+      "left_STAB_decomposition": [
+        {
+          "stable_set": [
+            2,
+            6
+          ],
+          "probability": "1/4"
+        },
+        {
+          "stable_set": [
+            5,
+            6
+          ],
+          "probability": "1/4"
+        },
+        {
+          "stable_set": [
+            1,
+            4,
+            7
+          ],
+          "probability": "1/4"
+        },
+        {
+          "stable_set": [
+            0,
+            8
+          ],
+          "probability": "1/4"
+        }
+      ],
+      "right_STAB_decomposition": [
+        {
+          "stable_set": [
+            0,
+            1
+          ],
+          "probability": "1/4"
+        },
+        {
+          "stable_set": [
+            3
+          ],
+          "probability": "1/4"
+        },
+        {
+          "stable_set": [
+            6
+          ],
+          "probability": "1/4"
+        },
+        {
+          "stable_set": [
+            6,
+            7
+          ],
+          "probability": "1/4"
+        }
+      ],
+      "separator_pair_ranges": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "left": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "-1",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "1",
+              "0",
+              "1"
+            ]
+          },
+          "right": {
+            "lower": "1/4",
+            "lower_dual": [
+              "-1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "0"
+            ],
+            "upper": "1/4",
+            "upper_dual": [
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          }
+        },
+        {
+          "pair": [
+            1,
+            7
+          ],
+          "left": {
+            "lower": "1/4",
+            "lower_dual": [
+              "-3",
+              "1",
+              "1",
+              "1",
+              "2",
+              "1",
+              "2",
+              "1",
+              "2"
+            ],
+            "upper": "1/4",
+            "upper_dual": [
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          "right": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "-1",
+              "1",
+              "0",
+              "1",
+              "1",
+              "0"
+            ]
+          }
+        },
+        {
+          "pair": [
+            6,
+            7
+          ],
+          "left": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "-2",
+              "0",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "0",
+              "2"
+            ]
+          },
+          "right": {
+            "lower": "1/4",
+            "lower_dual": [
+              "-1",
+              "1",
+              "0",
+              "1",
+              "1",
+              "1"
+            ],
+            "upper": "1/4",
+            "upper_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ]
+          }
+        }
+      ],
+      "separators_checked_before_witness": 1,
+      "is_physical_quantum_counterexample": false,
+      "status": "exact_obstruction_to_profile_only_two_clique_gluing"
+    },
+    {
+      "representative_index": 23,
+      "graph6": "HEhuTzZ",
+      "separator": [
+        4,
+        5,
+        7
+      ],
+      "separator_clique_cover": [
+        [
+          5,
+          7
+        ],
+        [
+          4
+        ]
+      ],
+      "left_vertices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "right_vertices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "profile": [
+        "0",
+        "0",
+        "1/3",
+        "1/3",
+        "1/3",
+        "1/3",
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "weights": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1",
+        "1/2",
+        "1/2",
+        "1",
+        "1"
+      ],
+      "exact_profile_value": "5/3",
+      "exact_stable_bound": "3/2",
+      "exact_violation": "1/6",
+      "all_global_rank_inequalities_verified": 511,
+      "left_STAB_decomposition": [
+        {
+          "stable_set": [
+            3,
+            4
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            6,
+            7
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            5,
+            8
+          ],
+          "probability": "1/3"
+        }
+      ],
+      "right_STAB_decomposition": [
+        {
+          "stable_set": [
+            2
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            4,
+            5
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            7
+          ],
+          "probability": "1/3"
+        }
+      ],
+      "separator_pair_ranges": [
+        {
+          "pair": [
+            4,
+            5
+          ],
+          "left": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "-1",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "1",
+              "1"
+            ]
+          },
+          "right": {
+            "lower": "1/3",
+            "lower_dual": [
+              "-1",
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            "upper": "1/3",
+            "upper_dual": [
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ]
+          }
+        }
+      ],
+      "separators_checked_before_witness": 1,
+      "is_physical_quantum_counterexample": false,
+      "status": "exact_obstruction_to_profile_only_two_clique_gluing"
+    },
+    {
+      "representative_index": 24,
+      "graph6": "HEhurxn",
+      "separator": [
+        3,
+        4,
+        6
+      ],
+      "separator_clique_cover": [
+        [
+          4,
+          6
+        ],
+        [
+          3
+        ]
+      ],
+      "left_vertices": [
+        0,
+        3,
+        4,
+        6
+      ],
+      "right_vertices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "profile": [
+        "1/3",
+        "1/3",
+        "1/3",
+        "1/3",
+        "1/3",
+        "0",
+        "1/3",
+        "0",
+        "1/3"
+      ],
+      "weights": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1",
+        "1/2",
+        "1",
+        "1/2",
+        "1"
+      ],
+      "exact_profile_value": "5/3",
+      "exact_stable_bound": "3/2",
+      "exact_violation": "1/6",
+      "all_global_rank_inequalities_verified": 511,
+      "left_STAB_decomposition": [
+        {
+          "stable_set": [
+            0
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            3,
+            4
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            6
+          ],
+          "probability": "1/3"
+        }
+      ],
+      "right_STAB_decomposition": [
+        {
+          "stable_set": [
+            1,
+            4
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            2,
+            6
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            3,
+            8
+          ],
+          "probability": "1/3"
+        }
+      ],
+      "separator_pair_ranges": [
+        {
+          "pair": [
+            3,
+            4
+          ],
+          "left": {
+            "lower": "1/3",
+            "lower_dual": [
+              "-1",
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            "upper": "1/3",
+            "upper_dual": [
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ]
+          },
+          "right": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "-1",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "1"
+            ]
+          }
+        }
+      ],
+      "separators_checked_before_witness": 1,
+      "is_physical_quantum_counterexample": false,
+      "status": "exact_obstruction_to_profile_only_two_clique_gluing"
+    },
+    {
+      "representative_index": 25,
+      "graph6": "HEhutx|",
+      "separator": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "separator_clique_cover": [
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "left_vertices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8
+      ],
+      "right_vertices": [
+        0,
+        1,
+        3,
+        4,
+        6
+      ],
+      "profile": [
+        "1/3",
+        "1/3",
+        "1/3",
+        "1/3",
+        "0",
+        "0",
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "weights": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1",
+        "1/2",
+        "1",
+        "1/2",
+        "1",
+        "1"
+      ],
+      "exact_profile_value": "5/3",
+      "exact_stable_bound": "3/2",
+      "exact_violation": "1/6",
+      "all_global_rank_inequalities_verified": 511,
+      "left_STAB_decomposition": [
+        {
+          "stable_set": [
+            2,
+            3
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            1,
+            7
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            0,
+            8
+          ],
+          "probability": "1/3"
+        }
+      ],
+      "right_STAB_decomposition": [
+        {
+          "stable_set": [
+            0,
+            1
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            3
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            6
+          ],
+          "probability": "1/3"
+        }
+      ],
+      "separator_pair_ranges": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "left": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "-1",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "1",
+              "1",
+              "1"
+            ]
+          },
+          "right": {
+            "lower": "1/3",
+            "lower_dual": [
+              "-1",
+              "1",
+              "1",
+              "1",
+              "0",
+              "1"
+            ],
+            "upper": "1/3",
+            "upper_dual": [
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0"
+            ]
+          }
+        },
+        {
+          "pair": [
+            1,
+            4
+          ],
+          "left": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          "right": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ]
+          }
+        },
+        {
+          "pair": [
+            3,
+            4
+          ],
+          "left": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          "right": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ]
+          }
+        }
+      ],
+      "separators_checked_before_witness": 1,
+      "is_physical_quantum_counterexample": false,
+      "status": "exact_obstruction_to_profile_only_two_clique_gluing"
+    },
+    {
+      "representative_index": 26,
+      "graph6": "HEhutx~",
+      "separator": [
+        3,
+        4,
+        6,
+        7
+      ],
+      "separator_clique_cover": [
+        [
+          4,
+          7
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "left_vertices": [
+        0,
+        3,
+        4,
+        6,
+        7
+      ],
+      "right_vertices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "profile": [
+        "1/3",
+        "1/3",
+        "1/3",
+        "1/3",
+        "0",
+        "1/3",
+        "1/3",
+        "1/3",
+        "0"
+      ],
+      "weights": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1",
+        "1/2",
+        "1",
+        "1/2",
+        "1",
+        "1"
+      ],
+      "exact_profile_value": "5/3",
+      "exact_stable_bound": "3/2",
+      "exact_violation": "1/6",
+      "all_global_rank_inequalities_verified": 511,
+      "left_STAB_decomposition": [
+        {
+          "stable_set": [
+            0
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            3
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            6,
+            7
+          ],
+          "probability": "1/3"
+        }
+      ],
+      "right_STAB_decomposition": [
+        {
+          "stable_set": [
+            2,
+            3
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            5,
+            6
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            1,
+            7
+          ],
+          "probability": "1/3"
+        }
+      ],
+      "separator_pair_ranges": [
+        {
+          "pair": [
+            3,
+            4
+          ],
+          "left": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0"
+            ]
+          },
+          "right": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          }
+        },
+        {
+          "pair": [
+            6,
+            7
+          ],
+          "left": {
+            "lower": "1/3",
+            "lower_dual": [
+              "-1",
+              "1",
+              "1",
+              "0",
+              "1",
+              "1"
+            ],
+            "upper": "1/3",
+            "upper_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ]
+          },
+          "right": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "-1",
+              "1",
+              "0",
+              "1",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0"
+            ]
+          }
+        }
+      ],
+      "separators_checked_before_witness": 1,
+      "is_physical_quantum_counterexample": false,
+      "status": "exact_obstruction_to_profile_only_two_clique_gluing"
+    },
+    {
+      "representative_index": 27,
+      "graph6": "HEhu|x|",
+      "separator": [
+        3,
+        4,
+        6,
+        7
+      ],
+      "separator_clique_cover": [
+        [
+          4,
+          7
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "left_vertices": [
+        0,
+        3,
+        4,
+        6,
+        7
+      ],
+      "right_vertices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "profile": [
+        "1/3",
+        "1/3",
+        "1/3",
+        "1/3",
+        "0",
+        "0",
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "weights": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1",
+        "1/2",
+        "1",
+        "1/2",
+        "1",
+        "1"
+      ],
+      "exact_profile_value": "5/3",
+      "exact_stable_bound": "3/2",
+      "exact_violation": "1/6",
+      "all_global_rank_inequalities_verified": 511,
+      "left_STAB_decomposition": [
+        {
+          "stable_set": [
+            0
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            3
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            6,
+            7
+          ],
+          "probability": "1/3"
+        }
+      ],
+      "right_STAB_decomposition": [
+        {
+          "stable_set": [
+            2,
+            3
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            1,
+            7
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            6,
+            8
+          ],
+          "probability": "1/3"
+        }
+      ],
+      "separator_pair_ranges": [
+        {
+          "pair": [
+            3,
+            4
+          ],
+          "left": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0"
+            ]
+          },
+          "right": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          }
+        },
+        {
+          "pair": [
+            6,
+            7
+          ],
+          "left": {
+            "lower": "1/3",
+            "lower_dual": [
+              "-1",
+              "1",
+              "1",
+              "0",
+              "1",
+              "1"
+            ],
+            "upper": "1/3",
+            "upper_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ]
+          },
+          "right": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "-1",
+              "1",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          }
+        }
+      ],
+      "separators_checked_before_witness": 1,
+      "is_physical_quantum_counterexample": false,
+      "status": "exact_obstruction_to_profile_only_two_clique_gluing"
+    },
+    {
+      "representative_index": 33,
+      "graph6": "HQjRexz",
+      "separator": [
+        0,
+        1,
+        3,
+        7
+      ],
+      "separator_clique_cover": [
+        [
+          1,
+          3,
+          7
+        ],
+        [
+          0
+        ]
+      ],
+      "left_vertices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8
+      ],
+      "right_vertices": [
+        0,
+        1,
+        3,
+        5,
+        7
+      ],
+      "profile": [
+        "1/3",
+        "0",
+        "0",
+        "1/3",
+        "1/3",
+        "1/3",
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "weights": [
+        "1/2",
+        "1",
+        "1/2",
+        "1",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1",
+        "1"
+      ],
+      "exact_profile_value": "5/3",
+      "exact_stable_bound": "3/2",
+      "exact_violation": "1/6",
+      "all_global_rank_inequalities_verified": 511,
+      "left_STAB_decomposition": [
+        {
+          "stable_set": [
+            3,
+            4
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            6,
+            7
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            0,
+            8
+          ],
+          "probability": "1/3"
+        }
+      ],
+      "right_STAB_decomposition": [
+        {
+          "stable_set": [
+            0,
+            3
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            5
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            7
+          ],
+          "probability": "1/3"
+        }
+      ],
+      "separator_pair_ranges": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "left": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          "right": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0"
+            ]
+          }
+        },
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "left": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "1",
+              "1"
+            ]
+          },
+          "right": {
+            "lower": "1/3",
+            "lower_dual": [
+              "-1",
+              "1",
+              "0",
+              "1",
+              "1",
+              "1"
+            ],
+            "upper": "1/3",
+            "upper_dual": [
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0"
+            ]
+          }
+        }
+      ],
+      "separators_checked_before_witness": 1,
+      "is_physical_quantum_counterexample": false,
+      "status": "exact_obstruction_to_profile_only_two_clique_gluing"
+    },
+    {
+      "representative_index": 34,
+      "graph6": "HQjRezu",
+      "separator": [
+        0,
+        2,
+        7
+      ],
+      "separator_clique_cover": [
+        [
+          0,
+          7
+        ],
+        [
+          2
+        ]
+      ],
+      "left_vertices": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8
+      ],
+      "right_vertices": [
+        0,
+        2,
+        4,
+        7
+      ],
+      "profile": [
+        "1/3",
+        "0",
+        "1/3",
+        "0",
+        "1/3",
+        "1/3",
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "weights": [
+        "1",
+        "1/2",
+        "1",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1"
+      ],
+      "exact_profile_value": "5/3",
+      "exact_stable_bound": "3/2",
+      "exact_violation": "1/6",
+      "all_global_rank_inequalities_verified": 511,
+      "left_STAB_decomposition": [
+        {
+          "stable_set": [
+            2,
+            5
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            0,
+            6
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            7,
+            8
+          ],
+          "probability": "1/3"
+        }
+      ],
+      "right_STAB_decomposition": [
+        {
+          "stable_set": [
+            0
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            4
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            2,
+            7
+          ],
+          "probability": "1/3"
+        }
+      ],
+      "separator_pair_ranges": [
+        {
+          "pair": [
+            2,
+            7
+          ],
+          "left": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "-1",
+              "1",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "1"
+            ]
+          },
+          "right": {
+            "lower": "1/3",
+            "lower_dual": [
+              "-1",
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            "upper": "1/3",
+            "upper_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ]
+          }
+        }
+      ],
+      "separators_checked_before_witness": 1,
+      "is_physical_quantum_counterexample": false,
+      "status": "exact_obstruction_to_profile_only_two_clique_gluing"
+    },
+    {
+      "representative_index": 44,
+      "graph6": "HQjVJr\\",
+      "separator": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "separator_clique_cover": [
+        [
+          1,
+          5
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "left_vertices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8
+      ],
+      "right_vertices": [
+        0,
+        1,
+        2,
+        5,
+        6
+      ],
+      "profile": [
+        "1/3",
+        "0",
+        "1/3",
+        "1/3",
+        "1/3",
+        "1/3",
+        "1/3",
+        "0",
+        "1/3"
+      ],
+      "weights": [
+        "1",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1",
+        "1/2",
+        "1/2",
+        "1"
+      ],
+      "exact_profile_value": "5/3",
+      "exact_stable_bound": "3/2",
+      "exact_violation": "1/6",
+      "all_global_rank_inequalities_verified": 511,
+      "left_STAB_decomposition": [
+        {
+          "stable_set": [
+            0,
+            3
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            4,
+            5
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            2,
+            8
+          ],
+          "probability": "1/3"
+        }
+      ],
+      "right_STAB_decomposition": [
+        {
+          "stable_set": [
+            0
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            2,
+            5
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            6
+          ],
+          "probability": "1/3"
+        }
+      ],
+      "separator_pair_ranges": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "left": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          "right": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0"
+            ]
+          }
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "left": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          "right": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0"
+            ]
+          }
+        },
+        {
+          "pair": [
+            2,
+            5
+          ],
+          "left": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "-1",
+              "1",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "1"
+            ]
+          },
+          "right": {
+            "lower": "1/3",
+            "lower_dual": [
+              "-1",
+              "1",
+              "0",
+              "1",
+              "1",
+              "1"
+            ],
+            "upper": "1/3",
+            "upper_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ]
+          }
+        }
+      ],
+      "separators_checked_before_witness": 1,
+      "is_physical_quantum_counterexample": false,
+      "status": "exact_obstruction_to_profile_only_two_clique_gluing"
+    },
+    {
+      "representative_index": 48,
+      "graph6": "HQjdvZu",
+      "separator": [
+        1,
+        6,
+        8
+      ],
+      "separator_clique_cover": [
+        [
+          6,
+          8
+        ],
+        [
+          1
+        ]
+      ],
+      "left_vertices": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "right_vertices": [
+        1,
+        3,
+        6,
+        8
+      ],
+      "profile": [
+        "1/3",
+        "1/3",
+        "0",
+        "1/3",
+        "1/3",
+        "1/3",
+        "1/3",
+        "0",
+        "1/3"
+      ],
+      "weights": [
+        "1",
+        "1/2",
+        "1",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1",
+        "1/2",
+        "1"
+      ],
+      "exact_profile_value": "5/3",
+      "exact_stable_bound": "3/2",
+      "exact_violation": "1/6",
+      "all_global_rank_inequalities_verified": 511,
+      "left_STAB_decomposition": [
+        {
+          "stable_set": [
+            0,
+            1
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            5,
+            6
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            4,
+            8
+          ],
+          "probability": "1/3"
+        }
+      ],
+      "right_STAB_decomposition": [
+        {
+          "stable_set": [
+            3
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            1,
+            6
+          ],
+          "probability": "1/3"
+        },
+        {
+          "stable_set": [
+            8
+          ],
+          "probability": "1/3"
+        }
+      ],
+      "separator_pair_ranges": [
+        {
+          "pair": [
+            1,
+            6
+          ],
+          "left": {
+            "lower": "0",
+            "lower_dual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "upper": "0",
+            "upper_dual": [
+              "-1",
+              "1",
+              "0",
+              "1",
+              "0",
+              "1",
+              "0",
+              "0",
+              "1"
+            ]
+          },
+          "right": {
+            "lower": "1/3",
+            "lower_dual": [
+              "-1",
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            "upper": "1/3",
+            "upper_dual": [
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ]
+          }
+        }
+      ],
+      "separators_checked_before_witness": 1,
+      "is_physical_quantum_counterexample": false,
+      "status": "exact_obstruction_to_profile_only_two_clique_gluing"
+    }
+  ]
+}

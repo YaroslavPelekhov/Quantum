@@ -1,6 +1,21 @@
 # Quantum x Evolutionary Computing Research Artifact
 
-Latest theorem-search continuation (2026-09-05):
+Latest general-proof continuation (2026-09-05):
+[size-independent rank-to-weight lifting and the separator obstruction](experiments/pauli_fourth_moment_phase0/SCF_GENERALIZATION_THEOREMS.md).
+Weighted SCF perfection is now proved for **arbitrary vertex count when
+`alpha(G)<=2`**, using a half-integral antiblocker argument and the quantum
+join property. More generally, for every graph with `alpha=2`, uniform
+weights maximize `beta(G,w)/alpha(G,w)`, with exact value `beta(G,1)/2`.
+Clique-separator closure is proved as well. The attempted
+extension through two-clique separators fails on 13 exact abstract profiles,
+even with every global rank inequality; one eight-vertex example forces the
+same boundary pair probability to be both 0 and 1/3. A proposed
+correlation-based completion also fails on five explicit quantum states.
+These counterexamples refute proof shortcuts, not the weighted SCF conjecture.
+All 15 exact/regression tests pass. The general `alpha>=3` case and A-star
+significance remain open.
+
+Preceding finite theorem completion:
 [exact weighted Pauli uncertainty on SCF graphs through order nine](experiments/pauli_fourth_moment_phase0/SCF_ORDER9_EXACT_THEOREM.md).
 All **128/128** nonrank facet types are now proved. Two new 3-by-3 Gram
 constructions and two independently verified rational SOS duals close the

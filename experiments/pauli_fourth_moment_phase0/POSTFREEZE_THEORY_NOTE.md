@@ -9,6 +9,11 @@ facet types are now proved, and a GMP-rational facet census with exact H/V
 roundtrips establishes completeness. The intermediate counts below record
 the chronological proof development, not the current unresolved count.
 
+The next [generalization note](SCF_GENERALIZATION_THEOREMS.md) proves the
+all-weights identity at arbitrary order for SCF graphs with `alpha<=2`,
+proves clique-separator closure, and records exact obstructions to two
+attempted extensions. The unrestricted weighted conjecture is still open.
+
 ## Setup
 
 For an odd integer `K >= 3`, let

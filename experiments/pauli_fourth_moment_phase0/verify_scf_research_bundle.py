@@ -55,10 +55,18 @@ def main():
     assert len(frontier['attacks']) == 34
     assert frontier['status'] == 'no_violation_in_bounded_targeted_frontier'
     assert all(r['ratio'] <= 1+1e-7 for r in frontier['attacks'])
+    gluing = json.loads(read('scf_gluing_obstruction.json'))
+    pair = json.loads(read('scf_pair_completion_audit.json'))
+    rank_two = json.loads(read('scf_rank_two_lift.json'))
+    assert gluing['exact_obstructions'] == 13 and not gluing['quantum_claim_falsified']
+    assert pair['separator_failures'] == 5 and not pair['quantum_hbar_claim_falsified']
+    assert rank_two['antiblocker_vertices'] == 177287
     print(json.dumps({'location': 'git_index' if args.git_index else 'worktree',
                       'artifact_hashes_checked': len(names), 'covered_types_exactly_once': 128,
                       'exact_census_occurrences': sum(occurrences.values()),
-                      'frontier_attacks': len(frontier['attacks']), 'status': 'integrity_checks_passed'}))
+                      'frontier_attacks': len(frontier['attacks']),
+                      'generalization_obstructions': 13, 'pair_recipe_counterexamples': 5,
+                      'status': 'integrity_checks_passed'}))
 
 
 if __name__ == '__main__':

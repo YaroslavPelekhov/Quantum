@@ -1,5 +1,20 @@
 {
   "date": "2026-09-05",
+  "scf_generalization": {
+    "uniform_weight_extremality_theorem": "For any graph with alpha=2, sup_w beta(G,w)/alpha(G,w)=beta(G,1)/2",
+    "rank_to_weight_theorem": "For any graph with alpha<=2, beta(G,1)=alpha(G) iff hbar-perfectness",
+    "SCF_corollary": "beta(G,w)=alpha(G,w) for every nonnegative weight and arbitrary vertex count when SCF and alpha<=2",
+    "proof_status": "proved_pending_external_review",
+    "clique_separator_closure": "proved_by_explicit_conditional_gluing",
+    "exact_antiblocker_audit": {"atlas_graphs": 172, "order9_SCF_graphs": 1725, "vertices": 177287},
+    "rank_augmented_profile_gluing_obstructions": 13,
+    "canonical_pair_completion_quantum_counterexamples": 5,
+    "exact_G15_all_pairs_completion_gap": "29/50",
+    "combined_tests_passed": 15,
+    "main_quantum_conjecture_falsified": false,
+    "unrestricted_alpha_at_least_three_case": "open",
+    "A_star_status": "not_confirmed"
+  },
   "scf_weighted_order9_theorem": {
     "status": "computer_assisted_exact_theorem_pending_external_review",
     "statement": "beta(G,w)=alpha(G,w) for all nonnegative weights on SCF graphs with at most nine vertices",
@@ -263,5 +278,5 @@
     "n3": 2000,
     "n4": 100
   },
-  "next_gate": "prove a size-independent weighted SCF theorem or a new operator-level composition principle; all order9 types are closed, order10 targeted numerical survival is not a proof"
+  "next_gate": "prove quantum compatibility of separator pair-event fibers (and an applicable SCF decomposition), or another unrestricted alpha>=3 operator theorem; profile-only gluing and the tested fixed pair recipe are falsified"
 }

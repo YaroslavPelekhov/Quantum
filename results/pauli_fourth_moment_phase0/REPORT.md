@@ -4,6 +4,18 @@ Date: 2026-09-05
 
 ## Verdict
 
+Latest general-proof result: **weighted SCF perfection for arbitrary vertex
+count when `alpha(G)<=2`**, plus clique-separator closure. The rank-to-weight
+proof is analytic; its implementation audit checks 177,287 exact extreme
+weights. In fact, for any graph with `alpha=2`, the largest weighted ratio
+`beta(G,w)/alpha(G,w)` is exactly `beta(G,1)/2`, attained at uniform weights.
+See [the full generalization proof and obstruction analysis](../../experiments/pauli_fourth_moment_phase0/SCF_GENERALIZATION_THEOREMS.md).
+The general `alpha>=3` case remains open. Thirteen exact examples rule out
+profile-only two-clique gluing even with all rank inequalities; five physical
+state examples rule out a proposed fixed pair-correlation completion. They
+do not falsify the original quantum conjecture. The current combined suite
+has 15 passing tests, including deliberately corrupted certificates.
+
 The frozen weighted fourth-moment claim
 
 `beta_4(G,w) = alpha(G,w)`
@@ -536,9 +548,14 @@ complete.
 
 ## Next decisive gate
 
-All order-nine types are now closed. The decisive gate is a graph operation
-or operator-level structural theorem that lifts the weighted bound to every
-SCF graph. Exact small-instance completion does not by itself establish
+All order-nine types and the arbitrary-order `alpha<=2` subclass are now
+closed. The decisive gate for `alpha>=3` is a quantum boundary-compatibility
+principle: the sets of feasible separator pair-event probabilities from two
+locally classical profiles must have a common point. Local membership and
+all global rank constraints alone do not establish this, and the tested
+formula `max(0,(r_i^2+r_j^2+r_ij^2-1)/2)` is false. A different operator
+argument could bypass this route, but none is yet proved for every SCF
+graph. These completed scoped theorems do not by themselves establish
 A-star significance.
 
 The next targeted test was also completed: all 6,132 nonempty one-vertex
