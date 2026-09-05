@@ -1,34 +1,18 @@
 # Quantum x Evolutionary Computing Research Artifact
 
-Latest theorem-search continuation: the
-[Pauli fourth-moment report](results/pauli_fourth_moment_phase0/REPORT.md)
-proves `beta(G,1)=alpha(G)` for every simplicial claw-free frustration graph
-and exhaustively screens all 261,080 connected order-nine graphs.  Of 128
-non-rank SCF facet types, 115 now have an exact join reduction and 12 of the
-13 residual alpha-three types close under a validated level-2 state-moment
-relaxation.  The former last explicit atom, graph6 `HEhu|x|`, had a level-3
-upper excess of `4.16e-5` before analytic reduction.  An exact four-hole
-cancellation reduces that atom to one explicit scalar inequality.  That inequality is now proved on
-all five primitive single-channel faces, and an exact Hessian-discriminant
-argument excludes a maximum in the fully interior heavy simplex.  Exact KKT
-elimination now also closes all four three-heavy relative interiors: two have
-no positive stationary point, while the other two reduce to a complete
-rational ridge with gap `48/2401` and a strict ascent direction into the
-missing channel.  A further spectral reduction proves three of the six
-two-heavy faces; exact KKT elimination closes the other three.  This proves
-the whole positive-light stratum, and two explicit square-plus-monomial
-certificates close the zero-light boundary.  The atom now satisfies the exact
-equality `beta=alpha=3/2`.  A common one-hole spectral certificate now proves
-four more residual types (`HCXmtiz`, `GQuvSw`, `HCZTmyz`, and `HQjRexz`).  Two
-two-hole types then collapse to the same certificate by channel aggregation
-or an equal-profile heavy rotation.  A commuting three-cycle type further
-becomes a diagonal-plus-rank-one `3 by 3` block whose three spectral
-invariants exactly match `(L,q_light,e_3)`.  The remaining signed commuting
-cycle triangle is closed sector by sector using square certificates.  Thus
-124 of 128 order-nine facet types are exact and four residual types still
-have only numerical SDP upper certificates.  The general weighted SCF claim
-and A-star novelty are not yet confirmed.  No QPU run is justified for this
-exact convex-geometric gate.
+Latest theorem-search continuation (2026-09-05):
+[exact weighted Pauli uncertainty on SCF graphs through order nine](experiments/pauli_fourth_moment_phase0/SCF_ORDER9_EXACT_THEOREM.md).
+All **128/128** nonrank facet types are now proved. Two new 3-by-3 Gram
+constructions and two independently verified rational SOS duals close the
+last four types. A complete GMP-rational census checks 56,792 facets on
+3,598 non-line SCF graphs, with exact H/V roundtrips for every graph.
+Together with the existing rank and line-graph theorems this proves
+`beta(G,w)=alpha(G,w)` for all nonnegative weights on SCF graphs with at
+most nine vertices. Nine exact/regression tests pass. A targeted order-ten
+extension finds 34 new full-support facet types; all survive 512 sign starts
+each, but those are numerical lower-bound tests, not additional proofs.
+The unrestricted weighted SCF theorem and A-star novelty remain unconfirmed.
+No QPU or paid cloud jobs were submitted.
 
 Latest hardware-transfer continuation: the preregistered
 [CMRT offline Phase-0 report](results/cmrt_phase0/FINAL_REPORT.md) closes

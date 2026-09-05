@@ -3,6 +3,12 @@
 Status: proved auxiliary statement, pending an independent proof audit and a
 complete prior-art audit.  It is **not** a proof of preregistered claim T1.
 
+Current SCF completion (2026-09-05): see
+[the exact order-nine theorem](SCF_ORDER9_EXACT_THEOREM.md). All 128 nonrank
+facet types are now proved, and a GMP-rational facet census with exact H/V
+roundtrips establishes completeness. The intermediate counts below record
+the chronological proof development, not the current unresolved count.
+
 ## Setup
 
 For an odd integer `K >= 3`, let
@@ -887,7 +893,7 @@ residual types.
 ## Proposition (the signed commuting-cycle type `HQjVJr\`)
 
 The three oriented hole charges of residual type 44 obey
-`h_0h_1=-h_2`, `h_0h_2=h_1`, and `h_1h_2=-h_0`.  Hence their sector signs
+`h_0h_1=-h_2`, `h_0h_2=-h_1`, and `h_1h_2=-h_0`.  Hence their sector signs
 satisfy `s_0s_1s_2=-1`.  Put
 
 `a=sqrt(p_1p_6)`, `b=sqrt(p_2p_7)`, `t=s_0s_1`,

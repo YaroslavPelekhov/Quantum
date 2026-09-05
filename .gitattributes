@@ -1,0 +1,2 @@
+# Scientific JSON hashes use UTF-8 with LF, independently of host settings.
+results/pauli_fourth_moment_phase0/*.json text eol=lf

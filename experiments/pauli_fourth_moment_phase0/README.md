@@ -9,8 +9,11 @@ The directory is deliberately isolated from the closed QAOA/MPS and DCS
 branches.  See `PREREGISTRATION.md` for the decision rule and
 `PRIOR_ART_AUDIT.md` for claim boundaries.
 
-No result in this directory should be described as proved or A-star-ready
-until the confirmatory gates in the preregistration all pass.
+The original unrestricted fourth-moment and convolution conjectures remain
+unproved. Separate scoped theorems are explicitly distinguished from those
+conjectures; none is described as A-star-ready without external review.
+The latest is [exact weighted SCF perfection through order nine](SCF_ORDER9_EXACT_THEOREM.md),
+with 128/128 nonrank types proved and a fully rational completeness audit.
 
 ## Reproduction
 

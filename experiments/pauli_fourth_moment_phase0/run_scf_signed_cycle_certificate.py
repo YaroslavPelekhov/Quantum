@@ -35,13 +35,14 @@ def main() -> None:
         product = multiply_words(graph, cycles[left], cycles[right])
         reverse = multiply_words(graph, cycles[right], cycles[left])
         third = 3 - left - right
-        if product != reverse or product[0] != tuple(sorted(cycles[third])):
+        target = multiply_words(graph, (), cycles[third])
+        if product != reverse or product[0] != target[0]:
             raise AssertionError((left, right, product, reverse))
         relation_signs[f"h{left}*h{right}"] = {
             "cycle": third,
-            "sign": product[1],
+            "sign": product[1] * target[1],
         }
-    if [relation_signs[key]["sign"] for key in sorted(relation_signs)] != [-1, 1, -1]:
+    if [relation_signs[key]["sign"] for key in sorted(relation_signs)] != [-1, -1, -1]:
         raise AssertionError(relation_signs)
 
     p = sp.symbols("p0:9", nonnegative=True)

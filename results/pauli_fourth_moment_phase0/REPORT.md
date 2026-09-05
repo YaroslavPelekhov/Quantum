@@ -1,6 +1,6 @@
 # Pauli fourth-moment / quantum-convolution phase 0
 
-Date: 2026-09-03
+Date: 2026-09-05
 
 ## Verdict
 
@@ -22,15 +22,20 @@ exponent `3`, and therefore the universal fractional-colouring bound
 This stronger statement also remains a conjecture.  No claim of confirmation
 is made from numerics alone.
 
-The main exact advance in this continuation is narrower but complete: the
-former last atom `HEhu|x|` now has an exact scalar, KKT, and sum-of-squares
-proof, a shared spectral-envelope certificate proves four further one-hole
-residual types, cycle aggregation proves two collapsible two-hole types, and
-a diagonal-plus-rank-one spectral identity proves the commuting cycle
-triangle `HEhutx~`.  A sign-resolved square certificate proves the other
-commuting-cycle type `HQjVJr\`.  This makes 124 of the 128 order-nine non-rank
-facet types exact.  It does not yet prove the universal weighted claim,
-because four residual facet types remain certified only numerically.
+The separate SCF continuation now proves an exact all-weights theorem for
+graphs through order nine: **all 128 nonrank facet types are closed**.
+Two new Gram constructions prove types 15 and 23, and exact rational
+state-moment duals prove types 24 and 25. The latter have 42 and 40 positive
+rational LDL pivots; all polynomial coefficients are checked exactly by a
+solver-independent verifier. Nine regression/negative-control tests pass.
+
+Crucially, a complete GMP-rational census replaces the exploratory floating
+hull: 56,792 facets across all 3,598 non-line SCF graphs, with exact H/V
+roundtrips and the same 701 nonrank occurrences / 128 types. With the
+preceding rank and line-graph theorems, this proves
+`beta(G,w)=alpha(G,w)` for all nonnegative weights on SCF graphs of order at
+most nine. See [the complete statement and reproduction guide](../../experiments/pauli_fourth_moment_phase0/SCF_ORDER9_EXACT_THEOREM.md).
+Intermediate counts below are historical stages, not current open cases.
 
 ## Results that did survive
 
@@ -531,15 +536,23 @@ complete.
 
 ## Next decisive gate
 
-The single order-nine atom, the four one-hole types, two collapsible two-hole
-types, and both commuting-cycle types are no longer gates.  The decisive routes
-are now:
+All order-nine types are now closed. The decisive gate is a graph operation
+or operator-level structural theorem that lifts the weighted bound to every
+SCF graph. Exact small-instance completion does not by itself establish
+A-star significance.
 
-1. determine whether the same spectral/KKT/SOS mechanism closes the other 4
-   residual order-nine facet types that currently have only numerical SDP
-   bounds; and
-2. test whether those finite certificates expose a graph operation or local
-   obstruction theorem that lifts from order nine to every SCF graph.
+The next targeted test was also completed: all 6,132 nonempty one-vertex
+attachments to the twelve nine-vertex residual seeds produce 289 SCF
+acceptances with multiplicity. Removing isomorphs, true/false twins and
+complete joins leaves 57 graphs and 34 full-support nonrank facet types.
+All 34 were tested in 512 sign orthants each (17,408 starts, up to 320
+iterations per start). No violation was found; the largest ratio was
+`1.0000000000000047`, within floating-point roundoff of the stable-set
+bound. The published narrow-basin positive control still reaches
+`3.0448154999 > 3`. This is **not** an exhaustive order-ten census or a
+proof for the new types. Their continued `{1,2}` weight pattern suggests
+testing a general two-level-weight composition mechanism next, not merely
+increasing the enumeration count.
 
 A physical Pauli state with value above `1.5+1e-7` would instead falsify the
 weighted conjecture.  Current see-saw lower bounds attain only the classical

@@ -90,6 +90,30 @@ Status at freeze: no direct collision found; audit remains open.
 
 ## SCF hidden-free-fermion extension
 
+Update 2026-09-05: the finite SCF result is now exact through order nine,
+including all 128 nonrank types and a GMP-rational completeness audit. The
+counts farther below describe earlier stages. The unrestricted weighted
+theorem remains open.
+
+An important qualification to the earlier search: Section IX.1 of
+[Xu et al.](https://arxiv.org/html/2511.13531v1) does discuss claw-free
+solvability and informally claims an inclusion in hbar-perfect graphs. Read
+literally for all claw-free graphs, that assertion conflicts with the paper's
+own anti-C7 obstruction. We did not locate a precise weighted SCF theorem or
+proof there, but the passage creates a real conceptual anticipation risk.
+Absence of the exact phrase "simplicial claw-free" is not evidence that the
+underlying connection was unanticipated. The rational SOS certificates use
+the authors' existing state-polynomial hierarchy, not a new relaxation.
+
+The classical polyhedral literature is another constraint on the next step.
+[Galluccio--Gentile--Ventura](https://www.iasi.cnr.it/~gentile/ClaudioGentileFiles/abstracts.html)
+already study 2-clique-bond composition and stable-set descriptions of
+claw-free graphs with stability number at least four. A useful quantum
+continuation must prove preservation for **squared Pauli profiles**, not
+rename one of those classical facet descriptions. The order-ten targeted
+frontier produced 34 further two-level facet types but no size-independent
+operator proof.
+
 - Chapman, Elman, and Mann, *A Unified Graph-Theoretic Framework for
   Free-Fermion Solvability*, PRX Quantum 4, 030304 (2023), is the essential
   structural input.  It proves the symmetry-resolved free-fermion

@@ -1,5 +1,31 @@
 {
-  "date": "2026-09-03",
+  "date": "2026-09-05",
+  "scf_weighted_order9_theorem": {
+    "status": "computer_assisted_exact_theorem_pending_external_review",
+    "statement": "beta(G,w)=alpha(G,w) for all nonnegative weights on SCF graphs with at most nine vertices",
+    "connected_order9_SCF_graphs": 4308,
+    "non_line_graphs_with_exact_facet_census": 3598,
+    "exact_facets": 56792,
+    "exact_STAB_vertices_roundtripped": 98304,
+    "nonrank_facet_occurrences": 701,
+    "exact_nonrank_types": 128,
+    "numerical_only_types_remaining": 0,
+    "new_Gram_types": [15, 23],
+    "new_rational_SOS_types": [24, 25],
+    "positive_rational_LDL_dimensions": [42, 40],
+    "independent_verifier_and_negative_control_tests": 9,
+    "does_not_prove": "unrestricted weighted SCF perfection or A-star novelty"
+  },
+  "scf_order10_targeted_frontier": {
+    "status": "no_violation_found_not_a_proof",
+    "attachment_proposals": 6132,
+    "irreducible_graphs": 57,
+    "new_full_support_nonrank_types": 34,
+    "types_attacked": 34,
+    "sign_orthants_total": 17408,
+    "largest_ratio": 1.0000000000000047,
+    "scope": "one-vertex attachments to the nine-vertex residual seeds, not all order-ten graphs"
+  },
   "frozen_claim": "beta_4(G,w)=alpha(G,w)",
   "frozen_claim_status": "survived_numerics_unproved",
   "astar_status": "not_confirmed",
@@ -194,7 +220,14 @@
           "residual_types_still_only_numerical": 4,
           "status": "exact_symbolic_certificate_passed"
         },
-        "status": "124_of_128_order9_facet_types_exact_4_residual_types_still_numerical"
+        "final_completion": {
+          "Gram_representatives": [15, 23],
+          "rational_SOS_representatives": [24, 25],
+          "exact_types": 128,
+          "remaining_numerical_types": 0,
+          "complete_rational_facet_census": true
+        },
+        "status": "128_of_128_order9_facet_types_exact_with_complete_rational_census"
       }
     }
   },
@@ -230,5 +263,5 @@
     "n3": 2000,
     "n4": 100
   },
-  "next_gate": "seek exact spectral or SOS certificates for residual representatives 15, 23, 24, and 25, then test whether the finite mechanisms lift to a general weighted SCF theorem"
+  "next_gate": "prove a size-independent weighted SCF theorem or a new operator-level composition principle; all order9 types are closed, order10 targeted numerical survival is not a proof"
 }
