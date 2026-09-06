@@ -812,6 +812,13 @@ New canonical hashes:
 - `scf_three_row_target.json`, 13974 bytes:
   `6c0778cba29c689aea2a5acbe48dc35abc288b8fbc8f77ca449aab7685bcfb26`.
 
+Clean-archive reproduction of source commit `9cdf86e`: C008 rediscovery
+regenerated both canonical hashes exactly. All 56 artifact hashes passed,
+the independent C008 verifier and nine tests passed with `python -S`,
+and all 78 SCF tests passed again (26.577 seconds for the combined suite).
+No repository cache or uncommitted source was used. This is same-host
+clean reproduction with independent algorithms, not external peer review.
+
 ## C009 — next: a coherent Gram identity, not another census
 
 Preregister before computing: for the fixed C008 target use amplitudes

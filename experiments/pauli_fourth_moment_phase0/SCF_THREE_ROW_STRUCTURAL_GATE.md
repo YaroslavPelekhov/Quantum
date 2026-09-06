@@ -164,6 +164,12 @@ python -S -m unittest discover -s experiments/pauli_fourth_moment_phase0 -p "tes
 Discovery requires NetworkX and cdd.gmp; independent acceptance is
 standard-library only. Five-minute per-script/cube limits remain in place.
 
+Clean-archive reproduction of source commit `9cdf86e` regenerated both
+C008 JSON artifacts with identical canonical hashes. All 56 manifest
+artifacts and all 78 SCF tests passed. The independent C008 verifier and
+nine C008 tests also passed under `python -S`. This is separate-algorithm
+verification and same-host clean reproduction, not external peer review.
+
 C009 should preregister an exact coherent Gram/transfer test for the ONE
 remaining target row. A candidate must retain correlations between light
 cycle signs and the heavy-row signs; the third light row now occupies
