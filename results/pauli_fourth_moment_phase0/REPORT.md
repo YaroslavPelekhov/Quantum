@@ -1,8 +1,18 @@
 # Pauli fourth-moment / quantum-convolution phase 0
 
-Date: 2026-09-05
+Date: 2026-09-06
 
 ## Verdict
+
+C004: the exact cross-claw criterion passed all 16,384 frozen template
+graphs under independent four-subset verification. All 36 canonical
+one-pair cases have J central on exactly one side. A connected claw-free
+graph with global centrality has alpha two, so that stronger shortcut
+cannot reach the outstanding alpha-three class. Exact C5 control:
+all-state weighted optimum four, J-invariant optimum two; the weighted
+stable bound is four. No SCF violation or quantum closure proof follows.
+See [the operator gate](../../experiments/pauli_fourth_moment_phase0/SCF_CROSS_CLAW_OPERATOR_GATE.md).
+The current suite has 37 tests. Next: a coherent transfer/SOS certificate.
 
 C003 (2026-09-06): the proposed generic hbar-perfect almost-clique closure
 rule is false. On published G8, a three-qubit integer state gives
@@ -11,7 +21,7 @@ polyhedral certificates. Their single boundary event has upper bound
 `2036/15625` on the left and lower bound `2592/15625` on the right.
 The whole graph contains a claw; the unrestricted SCF claim is not falsified.
 See [the exact proof and scope](../../experiments/pauli_fourth_moment_phase0/ALMOST_CLIQUE_CLOSURE_COUNTEREXAMPLE.md).
-The combined suite now has 30 passing tests. The next gate is an operator
+The suite at C003 had 30 passing tests. Its next gate was an operator
 argument which genuinely uses global SCF structure; generic gluing is closed.
 
 2026-09-06 research-cycle update: C001 exactly audits 47 weighted types
@@ -22,7 +32,7 @@ whose full boundary laws cannot. Type 33 forces the sum of two pair events
 to 1/4 versus 1/2. These refute proof shortcuts, not the quantum conjecture.
 See [the cycle report](../../experiments/pauli_fourth_moment_phase0/SCF_BOUNDARY_ROUTE_AUDIT.md)
 and [the research plan](../../experiments/pauli_fourth_moment_phase0/RESEARCH_PROGRAM_RU.md).
-The current combined suite has 23 passing tests.
+The suite at C002 had 23 passing tests.
 
 Latest general-proof result: **weighted SCF perfection for arbitrary vertex
 count when `alpha(G)<=2`**, plus clique-separator closure. The rank-to-weight

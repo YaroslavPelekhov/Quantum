@@ -248,3 +248,67 @@ the desired weighted facet. If no such argument is obtained, explicitly
 record the proof gate as unresolved and switch the NEXT bounded cycle to
 transfer/SOS on a frozen residual. Do not manufacture numerical support for
 an unstated lemma. All proofs here require a separate priority assessment.
+
+### C004 analytic micro-control — fixed before verification
+
+An elementary operator pitfall deserves an explicit exact control, not an
+optimization run. On C5 use Paulis `(XI,ZX,IZ,IX,YZ)`, boundary {0,2},
+J=XZ and weights `(1,1,1,3,1)`. The product state `|++>` has value four,
+while any state commuting with J has the last two expectations zero and
+value at most two; `|+0>` attains two. Verify the specified two integer
+vectors exactly. This refutes a lossless J-dephasing shortcut even on a
+line graph, NOT the SCF inequality (its classical weighted bound is four).
+The example is elementary and is not an independent novelty claim.
+
+### C004 result — COMPLETE as a proof gate; bridge still unresolved
+
+The exact cross-claw criterion and the connected-global-centrality
+alpha-two proposition are proved in `SCF_CROSS_CLAW_OPERATOR_GATE.md`.
+Every one of the 36 frozen one-pair weighted rows has J central on exactly
+one side, never both. This does not cover multi-pair rows or establish
+unrestricted structural coverage. The independent four-subset verifier
+agrees with the structural criterion on all 16,384 frozen template graphs:
+7,225 locally claw-free, 2,555 globally claw-free, 4,670 local-pass/cross-fail.
+
+The fixed two-qubit C5 example exactly disproves lossless J-dephasing:
+unrestricted optimum four, J-invariant optimum two, weighted stable bound
+four. This elementary control is not a counterexample to H-SCF. It means
+that dropping the off-diagonal sector block is not a valid proof step.
+All 37 combined tests pass, including corruption controls.
+
+No noncircular quantum compatibility bound was obtained from the cross-claw
+conditions. The coherent block `E_+ C+C E_-` in H squared is still
+uncontrolled; requiring positivity of the full weighted slack merely
+restates the main claim. Do not call the structural result a quantum
+composition theorem. No beta optimization or paid compute was run.
+
+Prior-art update: the introduction of Fukai--Pozsgay--Vona,
+arXiv:2605.31453v2 (31 August 2026), already provides path-product/Krylov
+constructions and broader claw-free conserved-charge results. A new path
+expansion must not be claimed without comparing their actual theorems.
+This source was checked as adjacent prior art, not certified to imply or
+contradict H-SCF. The missing quantum separator lemma remains unresolved.
+
+## C005 — next bounded transfer/SOS cycle, not yet executed
+
+Use the FIRST stored order-ten frontier row, `ICXmtizr_`, weights
+`(1,1,1,1,2,1,2,1,2,1)`, exact stable bound three. This selection uses source
+order, not a newly observed beta value. Both local sides are covered by
+the existing order-nine theorem, but global weighted perfection has only
+numerical evidence. First test whether the EXISTING symbolic rank/join/
+one-hole/Gram templates already prove this facet; an inherited template
+success must be reported as coverage extension, not independent novelty.
+
+If they do not, preregister a degree-two state-moment/SOS certificate search
+before running it, using the full coherent algebra. Compare the certificate
+support with the C004 parity split and identify exactly which cross-sector
+terms are essential. The already proved type 24 and the exact C5 dephasing
+example are positive controls; published G8 is an invalid-bound negative
+control. Do not assume local perfection or one-sided centrality implies
+the full inequality. A solver bound is not a certificate: require a
+rational identity plus exact PSD verification, or report failure honestly.
+
+The intended progress is an explicit coherent bridge or a sharply localized
+failure of the proposed certificate class, not another finite no-violation
+census. Only after an actual identity is understood should it be generalized
+to a family or abstract lemma. H-SCF remains OPEN; A-star NOT CONFIRMED.

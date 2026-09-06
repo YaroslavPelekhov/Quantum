@@ -70,6 +70,9 @@ def main():
     assert closure['generic_quantum_closure_falsified'] and not closure['SCF_conjecture_falsified']
     assert closure['exact_gap'] == '556/15625'
     assert closure_screen['graphs_screened'] == 1437 and closure_screen['decompositions_found'] == 5353
+    cross = json.loads(read('scf_cross_claw_gate.json'))
+    assert cross['central_side_histogram'] == {'1': 36} and not cross['quantum_compatibility_proved']
+    assert cross['exhaustive_template']['counts']['graphs'] == 16384
     print(json.dumps({'location': 'git_index' if args.git_index else 'worktree',
                       'artifact_hashes_checked': len(names), 'covered_types_exactly_once': 128,
                       'exact_census_occurrences': sum(occurrences.values()),
@@ -77,6 +80,7 @@ def main():
                       'generalization_obstructions': 13, 'pair_recipe_counterexamples': 5,
                       'separator_types': 47, 'coordinatewise_obstructions': 8,
                       'generic_closure_exact_counterexamples': 1,
+                      'cross_claw_template_graphs': 16384,
                       'status': 'integrity_checks_passed'}))
 
 

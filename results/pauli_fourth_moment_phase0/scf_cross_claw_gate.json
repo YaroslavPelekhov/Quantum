@@ -1,0 +1,3810 @@
+{
+  "experiment": "C004_cross_claw_and_central_sector_gate",
+  "date": "2026-09-06",
+  "preregistration_commit": "a3766c3",
+  "source_sha256": "3aefebe69900ff0a6b74d8836547f55393aa2905865de762ace79706d140897c",
+  "weighted_rows": 36,
+  "distinct_graphs": 35,
+  "central_side_histogram": {
+    "1": 36
+  },
+  "quantum_compatibility_proved": false,
+  "SCF_conjecture_falsified": false,
+  "status": "structural_gate_only_operator_compatibility_unresolved",
+  "controls": [
+    {
+      "label": "C4",
+      "graph6": "Cl",
+      "boundary": {
+        "separator": [
+          0,
+          2
+        ],
+        "pair": [
+          0,
+          2
+        ],
+        "left": [
+          0,
+          1,
+          2
+        ],
+        "right": [
+          0,
+          2,
+          3
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ],
+        "right": [
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": true,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "C5",
+      "graph6": "Dhc",
+      "boundary": {
+        "separator": [
+          0,
+          2
+        ],
+        "pair": [
+          0,
+          2
+        ],
+        "left": [
+          0,
+          1,
+          2
+        ],
+        "right": [
+          0,
+          2,
+          3,
+          4
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ],
+        "right": [
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 4,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          }
+        ]
+      },
+      "J_central": {
+        "left": true,
+        "right": false
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "published_G8",
+      "graph6": "GCrdrk",
+      "boundary": {
+        "separator": [
+          0,
+          6,
+          7
+        ],
+        "pair": [
+          0,
+          7
+        ],
+        "left": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7
+        ],
+        "right": [
+          0,
+          3,
+          6,
+          7
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 4,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 5,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ],
+        "right": [
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [
+          [
+            5,
+            0,
+            1,
+            2
+          ]
+        ],
+        "right": []
+      },
+      "cross_claws": [
+        [
+          0,
+          3,
+          4,
+          5
+        ],
+        [
+          6,
+          2,
+          3,
+          4
+        ],
+        [
+          7,
+          1,
+          2,
+          3
+        ]
+      ],
+      "global_claw_free": false
+    }
+  ],
+  "records": [
+    {
+      "label": "order9_residual_5",
+      "graph6": "HCXmtiz",
+      "boundary": {
+        "separator": [
+          6,
+          7,
+          8
+        ],
+        "pair": [
+          6,
+          7
+        ],
+        "left": [
+          0,
+          3,
+          6,
+          7,
+          8
+        ],
+        "right": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          },
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ],
+        "right": [
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 4,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 5,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          }
+        ]
+      },
+      "J_central": {
+        "left": true,
+        "right": false
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order9_residual_7",
+      "graph6": "GQuvSw",
+      "boundary": {
+        "separator": [
+          0,
+          5,
+          6
+        ],
+        "pair": [
+          5,
+          6
+        ],
+        "left": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "right": [
+          0,
+          2,
+          5,
+          6
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 4,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 7,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order9_residual_9",
+      "graph6": "HCZTmyz",
+      "boundary": {
+        "separator": [
+          4,
+          5,
+          7
+        ],
+        "pair": [
+          4,
+          5
+        ],
+        "left": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "right": [
+          1,
+          4,
+          5,
+          7
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 6,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 8,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order9_residual_23",
+      "graph6": "HEhuTzZ",
+      "boundary": {
+        "separator": [
+          4,
+          5,
+          7
+        ],
+        "pair": [
+          4,
+          5
+        ],
+        "left": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "right": [
+          2,
+          4,
+          5,
+          7
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 6,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 8,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order9_residual_24",
+      "graph6": "HEhurxn",
+      "boundary": {
+        "separator": [
+          3,
+          4,
+          6
+        ],
+        "pair": [
+          3,
+          4
+        ],
+        "left": [
+          0,
+          3,
+          4,
+          6
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ],
+        "right": [
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 5,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 7,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          },
+          {
+            "vertex": 8,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          }
+        ]
+      },
+      "J_central": {
+        "left": true,
+        "right": false
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order9_residual_25",
+      "graph6": "HEhutx|",
+      "boundary": {
+        "separator": [
+          4,
+          5,
+          7,
+          8
+        ],
+        "pair": [
+          4,
+          5
+        ],
+        "left": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "right": [
+          2,
+          4,
+          5,
+          7,
+          8
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 6,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order9_residual_26",
+      "graph6": "HEhutx~",
+      "boundary": {
+        "separator": [
+          3,
+          5,
+          6,
+          8
+        ],
+        "pair": [
+          5,
+          6
+        ],
+        "left": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "right": [
+          1,
+          3,
+          5,
+          6,
+          8
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 4,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 7,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order9_residual_27",
+      "graph6": "HEhu|x|",
+      "boundary": {
+        "separator": [
+          3,
+          5,
+          6,
+          8
+        ],
+        "pair": [
+          6,
+          8
+        ],
+        "left": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "right": [
+          1,
+          3,
+          5,
+          6,
+          8
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 4,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          },
+          {
+            "vertex": 7,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order9_residual_34",
+      "graph6": "HQjRezu",
+      "boundary": {
+        "separator": [
+          0,
+          2,
+          7
+        ],
+        "pair": [
+          2,
+          7
+        ],
+        "left": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          8
+        ],
+        "right": [
+          0,
+          2,
+          4,
+          7
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 5,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 6,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 8,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 4,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order9_residual_44",
+      "graph6": "HQjVJr\\",
+      "boundary": {
+        "separator": [
+          1,
+          5,
+          7,
+          8
+        ],
+        "pair": [
+          5,
+          7
+        ],
+        "left": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "right": [
+          1,
+          3,
+          5,
+          7,
+          8
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 4,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 6,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order9_residual_48",
+      "graph6": "HQjdvZu",
+      "boundary": {
+        "separator": [
+          1,
+          6,
+          8
+        ],
+        "pair": [
+          1,
+          6
+        ],
+        "left": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "right": [
+          1,
+          3,
+          6,
+          8
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 4,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 5,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 7,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order10_frontier_0",
+      "graph6": "ICXmtizr_",
+      "boundary": {
+        "separator": [
+          0,
+          6,
+          7,
+          8
+        ],
+        "pair": [
+          6,
+          7
+        ],
+        "left": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "right": [
+          0,
+          3,
+          6,
+          7,
+          8
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 4,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 5,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 9,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order10_frontier_3",
+      "graph6": "IEhuTzZ^O",
+      "boundary": {
+        "separator": [
+          4,
+          5,
+          7,
+          9
+        ],
+        "pair": [
+          4,
+          5
+        ],
+        "left": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "right": [
+          2,
+          4,
+          5,
+          7,
+          9
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 6,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 8,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order10_frontier_4",
+      "graph6": "IEhuTzZjo",
+      "boundary": {
+        "separator": [
+          4,
+          5,
+          7,
+          9
+        ],
+        "pair": [
+          4,
+          5
+        ],
+        "left": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "right": [
+          2,
+          4,
+          5,
+          7,
+          9
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 6,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 8,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order10_frontier_5",
+      "graph6": "IEhuTzZtg",
+      "boundary": {
+        "separator": [
+          4,
+          5,
+          7
+        ],
+        "pair": [
+          4,
+          5
+        ],
+        "left": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "right": [
+          2,
+          4,
+          5,
+          7
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 6,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 8,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 9,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order10_frontier_6",
+      "graph6": "IEhuTzZvg",
+      "boundary": {
+        "separator": [
+          4,
+          5,
+          7
+        ],
+        "pair": [
+          4,
+          5
+        ],
+        "left": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "right": [
+          2,
+          4,
+          5,
+          7
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 6,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 8,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 9,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ],
+        "right": [
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order10_frontier_8",
+      "graph6": "IEhuTzZjw",
+      "boundary": {
+        "separator": [
+          4,
+          5,
+          7,
+          9
+        ],
+        "pair": [
+          4,
+          5
+        ],
+        "left": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "right": [
+          2,
+          4,
+          5,
+          7,
+          9
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 6,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 8,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order10_frontier_9",
+      "graph6": "IEhuTzZZw",
+      "boundary": {
+        "separator": [
+          4,
+          5,
+          7,
+          9
+        ],
+        "pair": [
+          4,
+          5
+        ],
+        "left": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "right": [
+          2,
+          4,
+          5,
+          7,
+          9
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 6,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 8,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order10_frontier_10",
+      "graph6": "IEhurxnm_",
+      "boundary": {
+        "separator": [
+          3,
+          4,
+          6,
+          9
+        ],
+        "pair": [
+          3,
+          4
+        ],
+        "left": [
+          0,
+          3,
+          4,
+          6,
+          9
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ],
+        "right": [
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 5,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 7,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          },
+          {
+            "vertex": 8,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          }
+        ]
+      },
+      "J_central": {
+        "left": true,
+        "right": false
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order10_frontier_11",
+      "graph6": "IEhurxnvo",
+      "boundary": {
+        "separator": [
+          3,
+          4,
+          6,
+          9
+        ],
+        "pair": [
+          3,
+          4
+        ],
+        "left": [
+          0,
+          3,
+          4,
+          6,
+          9
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ],
+        "right": [
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 5,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 7,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          },
+          {
+            "vertex": 8,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          }
+        ]
+      },
+      "J_central": {
+        "left": true,
+        "right": false
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order10_frontier_13",
+      "graph6": "IEhurxnmg",
+      "boundary": {
+        "separator": [
+          3,
+          4,
+          6,
+          9
+        ],
+        "pair": [
+          3,
+          4
+        ],
+        "left": [
+          0,
+          3,
+          4,
+          6,
+          9
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ],
+        "right": [
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 5,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 7,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          },
+          {
+            "vertex": 8,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          }
+        ]
+      },
+      "J_central": {
+        "left": true,
+        "right": false
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order10_frontier_15",
+      "graph6": "IEhurxnng",
+      "boundary": {
+        "separator": [
+          3,
+          4,
+          6,
+          9
+        ],
+        "pair": [
+          3,
+          4
+        ],
+        "left": [
+          0,
+          3,
+          4,
+          6,
+          9
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ],
+        "right": [
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 5,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 7,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          },
+          {
+            "vertex": 8,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          }
+        ]
+      },
+      "J_central": {
+        "left": true,
+        "right": false
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order10_frontier_16",
+      "graph6": "IEhurxnjW",
+      "boundary": {
+        "separator": [
+          4,
+          5,
+          7,
+          8,
+          9
+        ],
+        "pair": [
+          4,
+          5
+        ],
+        "left": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "right": [
+          2,
+          4,
+          5,
+          7,
+          8,
+          9
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 6,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order10_frontier_17",
+      "graph6": "IEhurxnmw",
+      "boundary": {
+        "separator": [
+          3,
+          4,
+          6,
+          9
+        ],
+        "pair": [
+          3,
+          4
+        ],
+        "left": [
+          0,
+          3,
+          4,
+          6,
+          9
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ],
+        "right": [
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 5,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 7,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          },
+          {
+            "vertex": 8,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          }
+        ]
+      },
+      "J_central": {
+        "left": true,
+        "right": false
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order10_frontier_18",
+      "graph6": "IEhurxnjw",
+      "boundary": {
+        "separator": [
+          4,
+          5,
+          7,
+          8,
+          9
+        ],
+        "pair": [
+          4,
+          5
+        ],
+        "left": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "right": [
+          2,
+          4,
+          5,
+          7,
+          8,
+          9
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 6,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order10_frontier_19",
+      "graph6": "IEhurxnnw",
+      "boundary": {
+        "separator": [
+          3,
+          4,
+          6,
+          9
+        ],
+        "pair": [
+          3,
+          4
+        ],
+        "left": [
+          0,
+          3,
+          4,
+          6,
+          9
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ],
+        "right": [
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 5,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 7,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          },
+          {
+            "vertex": 8,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          }
+        ]
+      },
+      "J_central": {
+        "left": true,
+        "right": false
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order10_frontier_20",
+      "graph6": "IEhutx|to",
+      "boundary": {
+        "separator": [
+          4,
+          5,
+          7,
+          8
+        ],
+        "pair": [
+          4,
+          5
+        ],
+        "left": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "right": [
+          2,
+          4,
+          5,
+          7,
+          8
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 6,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 9,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order10_frontier_21",
+      "graph6": "IEhutx|to",
+      "boundary": {
+        "separator": [
+          4,
+          5,
+          7,
+          8
+        ],
+        "pair": [
+          4,
+          5
+        ],
+        "left": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "right": [
+          2,
+          4,
+          5,
+          7,
+          8
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 6,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 9,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order10_frontier_22",
+      "graph6": "IEhutx|ug",
+      "boundary": {
+        "separator": [
+          4,
+          5,
+          7,
+          8
+        ],
+        "pair": [
+          4,
+          5
+        ],
+        "left": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "right": [
+          2,
+          4,
+          5,
+          7,
+          8
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 6,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 9,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order10_frontier_24",
+      "graph6": "IEhutx|ZW",
+      "boundary": {
+        "separator": [
+          4,
+          5,
+          7,
+          8,
+          9
+        ],
+        "pair": [
+          4,
+          5
+        ],
+        "left": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "right": [
+          2,
+          4,
+          5,
+          7,
+          8,
+          9
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 6,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order10_frontier_26",
+      "graph6": "IEhutx|^w",
+      "boundary": {
+        "separator": [
+          4,
+          5,
+          7,
+          8,
+          9
+        ],
+        "pair": [
+          4,
+          5
+        ],
+        "left": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "right": [
+          2,
+          4,
+          5,
+          7,
+          8,
+          9
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 6,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order10_frontier_27",
+      "graph6": "IEhutx~\\g",
+      "boundary": {
+        "separator": [
+          3,
+          5,
+          6,
+          8,
+          9
+        ],
+        "pair": [
+          5,
+          6
+        ],
+        "left": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "right": [
+          1,
+          3,
+          5,
+          6,
+          8,
+          9
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 4,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 7,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order10_frontier_28",
+      "graph6": "IEhu|x|to",
+      "boundary": {
+        "separator": [
+          4,
+          5,
+          7,
+          8
+        ],
+        "pair": [
+          4,
+          5
+        ],
+        "left": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "right": [
+          2,
+          4,
+          5,
+          7,
+          8
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 6,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          },
+          {
+            "vertex": 9,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order10_frontier_29",
+      "graph6": "IEhu|x|\\g",
+      "boundary": {
+        "separator": [
+          3,
+          5,
+          6,
+          8,
+          9
+        ],
+        "pair": [
+          6,
+          8
+        ],
+        "left": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "right": [
+          1,
+          3,
+          5,
+          6,
+          8,
+          9
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 4,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          },
+          {
+            "vertex": 7,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order10_frontier_30",
+      "graph6": "IEhu|x|vg",
+      "boundary": {
+        "separator": [
+          4,
+          5,
+          7,
+          8
+        ],
+        "pair": [
+          4,
+          5
+        ],
+        "left": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "right": [
+          2,
+          4,
+          5,
+          7,
+          8
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 3,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 6,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          },
+          {
+            "vertex": 9,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ],
+        "right": [
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    },
+    {
+      "label": "order10_frontier_31",
+      "graph6": "IEhu|x|^w",
+      "boundary": {
+        "separator": [
+          3,
+          5,
+          6,
+          8,
+          9
+        ],
+        "pair": [
+          6,
+          8
+        ],
+        "left": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "right": [
+          1,
+          3,
+          5,
+          6,
+          8,
+          9
+        ]
+      },
+      "parity": {
+        "left": [
+          {
+            "vertex": 0,
+            "uv_neighbors": [
+              1,
+              0
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 2,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          },
+          {
+            "vertex": 4,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          },
+          {
+            "vertex": 7,
+            "uv_neighbors": [
+              0,
+              1
+            ],
+            "J_odd": true
+          }
+        ],
+        "right": [
+          {
+            "vertex": 1,
+            "uv_neighbors": [
+              1,
+              1
+            ],
+            "J_odd": false
+          }
+        ]
+      },
+      "J_central": {
+        "left": false,
+        "right": true
+      },
+      "local_claws": {
+        "left": [],
+        "right": []
+      },
+      "cross_claws": [],
+      "global_claw_free": true
+    }
+  ],
+  "exhaustive_template": {
+    "free_edges": [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ]
+    ],
+    "fixed_edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "counts": {
+      "graphs": 16384,
+      "locally_claw_free": 7225,
+      "predicted_globally_claw_free": 2555,
+      "local_pass_cross_fail": 4670
+    },
+    "acceptance_bitstream_sha256": "a1101181b732648b7df95d0941d00c7e2327c15bd1a9396cc1931d41a94748fc"
+  },
+  "dephasing_control": {
+    "pauli_words": [
+      "XI",
+      "ZX",
+      "IZ",
+      "IX",
+      "YZ"
+    ],
+    "weights": [
+      1,
+      1,
+      1,
+      3,
+      1
+    ],
+    "pair": [
+      0,
+      2
+    ],
+    "J_word": "XZ",
+    "coherent_integer_state": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "sector_integer_state": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "coherent_expectations": [
+      "1",
+      "0",
+      "0",
+      "1",
+      "0"
+    ],
+    "sector_expectations": [
+      "1",
+      "0",
+      "1",
+      "0",
+      "0"
+    ],
+    "exact_coherent_value": 4,
+    "exact_sector_optimum": 2,
+    "exact_stable_bound": 4
+  }
+}

@@ -1,5 +1,10 @@
 # Pauli fourth-moment phase 0
 
+C004 completed as a [structural/operator proof gate](SCF_CROSS_CLAW_OPERATOR_GATE.md):
+36 one-sided-central cases, an exact cross-claw criterion and a C5 control
+against lossless dephasing. The quantum coherent bridge is still unresolved.
+The current suite has 37 tests; next is the registered transfer/SOS gate.
+
 C003 completed: [exact counterexample to generic almost-clique closure](ALMOST_CLIQUE_CLOSURE_COUNTEREXAMPLE.md).
 Both local all-weight proofs, a three-qubit integer-state witness, and
 incompatible boundary-event bounds are independently verified. Not an SCF

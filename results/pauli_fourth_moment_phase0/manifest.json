@@ -136,6 +136,11 @@
       "sha256": "2e767795e5b7fef8c9555e28ae3448828ffeb6fdf44576ed2fcb22c0717253d3"
     },
     {
+      "path": "scf_cross_claw_gate.json",
+      "bytes": 65246,
+      "sha256": "1973044b8c3bde3ddf3ed1b55d5990ddcab7d5535643079c6bed918baf586f06"
+    },
+    {
       "path": "scf_dual24_discovery.npz",
       "bytes": 6034440,
       "sha256": "00bed6a033ed336f39395b28e1f5d84e7c421d1483070c2ac28d5af234bb8631"

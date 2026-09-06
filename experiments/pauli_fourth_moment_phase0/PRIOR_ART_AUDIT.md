@@ -222,6 +222,21 @@ a general SCF hbar-perfectness theorem.
 
 ## Remaining adversarial searches
 
+C004 update, 2026-09-06: cross-claw separator restrictions and the
+connected false-twin alpha-two argument are elementary structural facts,
+not new graph theory. The C5 J-dephasing control is likewise not a novelty
+claim. One-sided boundary centrality must not be confused with the global
+cycle symmetries of Chapman--Elman--Mann.
+
+New adjacent source checked at abstract/introduction level:
+Fukai--Pozsgay--Vona, https://arxiv.org/html/2605.31453v2 (31 August 2026).
+It develops induced-path product/Krylov constructions for hidden modes
+and local conserved charges on claw-free frustration graphs. Such an
+expansion is therefore not an available blank novelty claim. Full theorem-
+level comparison is mandatory before using this route. We have not shown
+that it implies weighted SCF perfection or quantum separator compatibility;
+the absence of the word uncertainty in its HTML is not such a proof.
+
 - state-polynomial and noncommutative moment inequalities at degree four;
 - contextuality/exclusivity results phrased as two-copy classicality;
 - completely-positive versus doubly-nonnegative Pauli Gram matrices;
