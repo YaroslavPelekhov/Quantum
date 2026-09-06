@@ -1,5 +1,10 @@
 # Pauli fourth-moment phase 0
 
+C003 completed: [exact counterexample to generic almost-clique closure](ALMOST_CLIQUE_CLOSURE_COUNTEREXAMPLE.md).
+Both local all-weight proofs, a three-qubit integer-state witness, and
+incompatible boundary-event bounds are independently verified. Not an SCF
+counterexample and not a new imperfect-graph claim.
+
 Current continuation: [research program](RESEARCH_PROGRAM_RU.md),
 [cycle log](RESEARCH_CYCLE_LOG.md), and [boundary-route audit](SCF_BOUNDARY_ROUTE_AUDIT.md).
 The C001/C002 scripts and independent verifiers distinguish structural

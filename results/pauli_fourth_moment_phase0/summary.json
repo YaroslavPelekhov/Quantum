@@ -3,8 +3,9 @@
   "research_cycles": {
     "C001": {"status": "complete_exact_structural_audit", "weighted_types": 47, "distinct_graph6": 46, "minimum_pair_counts": {"1": 36, "2": 8, "3": 3}, "one_pair_separator_route_covers_corpus": false},
     "C002": {"status": "complete_exact_obstructions", "attacks": 11, "controls": 3, "exact_coordinatewise_obstructions": 8, "canonical_left_pair_sum": "1/4", "canonical_right_pair_sum": "1/2", "quantum_conjecture_falsified": false},
-    "C003": {"status": "pending", "question": "prior-art and known-counterexample audit of clique-minus-one-edge separator quantum closure"},
-    "combined_tests_passed": 23,
+    "C003": {"status": "complete_exact_physical_counterexample", "refuted_claim": "generic hbar-perfect closure across a clique minus one edge", "published_graph6": "GCrdrk", "qubits": 3, "exact_quantum_value": "47431/15625", "exact_stable_bound": "3", "exact_gap": "556/15625", "local_all_weight_perfection": "proved_with_exact_polytope_completeness", "benchmark_rows": 1437, "structural_decompositions": 5353, "SCF_conjecture_falsified": false, "new_imperfect_graph_claim": false},
+    "C004": {"status": "pending", "question": "derive a noncircular operator bound using global SCF cross-separator neighborhood restrictions"},
+    "combined_tests_passed": 30,
     "unrestricted_quantum_theorem": "open",
     "A_star_novelty": "not_confirmed"
   },

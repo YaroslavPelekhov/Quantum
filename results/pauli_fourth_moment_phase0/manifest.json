@@ -16,6 +16,16 @@
   },
   "artifacts": [
     {
+      "path": "almost_clique_closure_audit.json",
+      "bytes": 2417066,
+      "sha256": "d3b43367bbb67192c7bb74adb5d894915a71a5023ddb3522d52cbff4f3dac447"
+    },
+    {
+      "path": "almost_clique_closure_counterexample.json",
+      "bytes": 8139,
+      "sha256": "b897080440f1256a7019b93f066a2403180324190b9f67fb70534fe5c084af47"
+    },
+    {
       "path": "cnc_positivity_audit.json",
       "bytes": 3117,
       "sha256": "739e7cb6d3dad7490197b19e7f5221d7ed5cf88a04dd2f4577b4817654264c0c"

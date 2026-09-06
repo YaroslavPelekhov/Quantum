@@ -90,6 +90,18 @@ Status at freeze: no direct collision found; audit remains open.
 
 ## SCF hidden-free-fermion extension
 
+2026-09-06, C003: Section III and Appendix A.1 of Xu et al. were checked
+explicitly for the graph-operation rules. Join, union, induced restriction,
+lexicographic product, copying and splitting are established there, not the
+proposed almost-clique-separator rule. That generic rule is now exactly
+falsified using their published G8, so no priority claim is attached to the
+underlying imperfect graph. Our exact state and local-facet proof are a
+falsification artifact. Both local graphs are hbar-perfect but the whole
+graph has a claw; this is not a collision with or refutation of H-SCF.
+The copy/split numbering differs between the main text and appendix;
+use the operation definitions rather than numbers. See
+[the C003 proof](ALMOST_CLIQUE_CLOSURE_COUNTEREXAMPLE.md).
+
 The next generalization proves the arbitrary-order `alpha<=2` case by
 combining the existing SCF rank theorem, standard half-integrality of a
 fractional edge-constraint polytope, and the known beta join property.

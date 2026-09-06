@@ -78,6 +78,8 @@ counterexamples, not quantum counterexamples or a new A-star claim.
 
 ## C003 — next cycle; prerequisite audit, not yet executed
 
+Historical preregistration follows; this cycle is now complete (see result below).
+
 Investigate the proposed closure of hbar-perfectness under a separator
 which is a clique with one edge missing. This is a quantum statement,
 stronger than the already proved classical one-pair gluing equivalence.
@@ -149,3 +151,53 @@ the exact enumerated stable bound. Try deterministic rounding scales
 1,2,3,4,5,8,10,16,32,64,128,1000,10000. Numerical survival/failure is not a
 certificate. Discovery state precision may be reduced only after checking
 the exact positive gap. No claim to discovery of the published G8 graph.
+
+### C003 result — COMPLETE, generic quantum closure falsified
+
+The selected G8 has two rigorously hbar-perfect local sides but is not
+hbar-perfect globally. The exact three-qubit state is
+`(3,2,3,8,-5,2,-3,-1)/sqrt(125)`, for the published Pauli realization and
+weights `(1,1,1,1,1,1,2,2)`. Its value is `47431/15625`, exceeding the exact
+bound three by `556/15625`. Every global rank inequality still holds.
+
+On the single boundary event, exact local bounds are incompatible:
+left y<=2036/15625, right y>=2592/15625. Both local all-weight perfection
+proofs have independent rational polytope-completeness certificates.
+The left side is NOT SCF; its only nonclique facet is supported on a
+six-vertex SCF graph. The full graph has a claw centered at 0 with leaves
+3,4,5. H-SCF is therefore NOT falsified. An elementary positive-weight
+true-twin extension preserves the obstruction for every larger graph order;
+this is not presented as a new graph-family discovery.
+
+Independent checks cover all 1,437 source rows, all 5,353 decompositions,
+and the exact physical/local certificate. Thirty combined tests pass.
+See [the C003 proof](ALMOST_CLIQUE_CLOSURE_COUNTEREXAMPLE.md).
+The generic almost-clique rule is CLOSED AS FALSE, not left as a candidate.
+
+## C004 — next proof cycle, not yet executed
+
+Aim: determine whether GLOBAL claw-free/SCF structure supplies an operator
+inequality absent from generic local hbar-perfectness. Do not repeat the
+already refuted unconditional closure rule or enlarge a census without
+a new discriminating mathematical question.
+
+Start with a separator having one nonedge {u,v}. The operator P_u P_v
+commutes with every separator observable. Outside observables may commute
+or anticommute with it according to their neighborhoods of u and v.
+Derive exactly which pairs of neighborhood patterns across the two sides
+are excluded by GLOBAL claw-freeness, then state a concrete, falsifiable
+operator inequality using those exclusions. The commutation fact alone
+does not imply that P_u P_v is central in the full observable algebra.
+The C003 witness already has `P0 P7=IYY` central on the entire right side,
+so one-sided centrality alone is insufficient and must not be proposed as
+an untested repair of generic closure.
+
+Before numerical work, write the lemma and check it against the exact G8
+negative control (which must fail its structural hypotheses) and the
+already proved SCF residuals with one-pair separators. If the proposed
+operator bound is merely the desired global weighted inequality in new
+notation, record the circularity and use the transfer/SOS route instead.
+Only then freeze a bounded experiment or attempt the analytic proof.
+
+Main H-SCF: OPEN. A-star novelty: NOT CONFIRMED. All C003 results are local
+classical computation and exact mathematics, not QPU measurements.

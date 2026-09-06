@@ -65,12 +65,18 @@ def main():
     coordinates = json.loads(read('scf_coordinate_compatibility.json'))
     assert coverage['weighted_types'] == 47 and coverage['distinct_graph6'] == 46
     assert coordinates['exact_obstructions'] == 8 and not coordinates['quantum_conjecture_falsified']
+    closure = json.loads(read('almost_clique_closure_counterexample.json'))
+    closure_screen = json.loads(read('almost_clique_closure_audit.json'))
+    assert closure['generic_quantum_closure_falsified'] and not closure['SCF_conjecture_falsified']
+    assert closure['exact_gap'] == '556/15625'
+    assert closure_screen['graphs_screened'] == 1437 and closure_screen['decompositions_found'] == 5353
     print(json.dumps({'location': 'git_index' if args.git_index else 'worktree',
                       'artifact_hashes_checked': len(names), 'covered_types_exactly_once': 128,
                       'exact_census_occurrences': sum(occurrences.values()),
                       'frontier_attacks': len(frontier['attacks']),
                       'generalization_obstructions': 13, 'pair_recipe_counterexamples': 5,
                       'separator_types': 47, 'coordinatewise_obstructions': 8,
+                      'generic_closure_exact_counterexamples': 1,
                       'status': 'integrity_checks_passed'}))
 
 

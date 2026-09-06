@@ -4,6 +4,16 @@ Date: 2026-09-05
 
 ## Verdict
 
+C003 (2026-09-06): the proposed generic hbar-perfect almost-clique closure
+rule is false. On published G8, a three-qubit integer state gives
+`47431/15625 > 3`, while both local graphs are proved hbar-perfect by exact
+polyhedral certificates. Their single boundary event has upper bound
+`2036/15625` on the left and lower bound `2592/15625` on the right.
+The whole graph contains a claw; the unrestricted SCF claim is not falsified.
+See [the exact proof and scope](../../experiments/pauli_fourth_moment_phase0/ALMOST_CLIQUE_CLOSURE_COUNTEREXAMPLE.md).
+The combined suite now has 30 passing tests. The next gate is an operator
+argument which genuinely uses global SCF structure; generic gluing is closed.
+
 2026-09-06 research-cycle update: C001 exactly audits 47 weighted types
 (46 distinct graph6 inputs); every graph has a two-clique separator, but
 11 types require at least two explicit pair coordinates. C002 finds eight

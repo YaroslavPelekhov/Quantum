@@ -1,5 +1,14 @@
 # Quantum x Evolutionary Computing Research Artifact
 
+Latest cycle C003 (2026-09-06):
+[generic almost-clique quantum closure is exactly falsified](experiments/pauli_fourth_moment_phase0/ALMOST_CLIQUE_CLOSURE_COUNTEREXAMPLE.md).
+An explicit three-qubit state on the published G8 violates the weighted
+bound by `556/15625`, while both local sides are hbar-perfect. A single
+boundary-event probability has disjoint feasible intervals on the two sides.
+This is a physical counterexample to the proposed composition rule, not
+to SCF perfection: the whole graph contains a claw. Thirty tests pass;
+the unrestricted SCF hypothesis and A-star novelty remain open.
+
 Research program started 2026-09-06:
 [full Russian plan](experiments/pauli_fourth_moment_phase0/RESEARCH_PROGRAM_RU.md),
 [cycle log](experiments/pauli_fourth_moment_phase0/RESEARCH_CYCLE_LOG.md), and
