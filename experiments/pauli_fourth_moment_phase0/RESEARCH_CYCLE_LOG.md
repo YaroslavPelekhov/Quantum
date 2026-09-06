@@ -699,3 +699,59 @@ size three outside column 0 produces a claw centered at Hc. This may
 force a known small vertex cover and reduce the whole proposal; if so,
 record the reduction rather than claim a new mechanism. No wider family,
 new facet or quantum extension is asserted before this gate is executed.
+
+### C008 preregistration — 2026-09-06, before the root census
+
+Baseline `c1be185`; no Python research jobs were running. Preserve the four
+unrelated submodule/prior-art items. Define F(E) for occupied cells E of a
+three-row bipartite root: lights share an edge iff their cells share row or
+column; three mutually adjacent heavies have light NONneighbors in row 0,
+row 1 and column 0 respectively. Consider arbitrary finite column count.
+
+Structural candidate S: the graph is claw-free iff the root restricted to
+nonzero columns has matching number at most two. If column 0 is nonempty,
+its light clique is simplicial, so claw-free implies SCF. Check necessity
+and sufficiency by distinguishing light/heavy claw centers, not by a
+finite extrapolation. A two-vertex cover of the noncentral bipartite root
+should then split the class into two-row, two-column, and mixed covers.
+This is an elementary use of classical matching theory, not new quantum
+or graph-algorithm novelty.
+
+Freeze ALL 4096 subsets of a 3-by-4 cell grid, in row-major bit order.
+Record cell mask, graph6, exact matching number and minimum vertex cover,
+claw witness if present, and a simplicial-clique witness when present.
+No random seed or floating arithmetic. Discovery may use NetworkX;
+acceptance must reconstruct the graph and independently enumerate claws,
+stable triples and small covers using only the standard library. Check
+all cliques, not only maximal ones, for the SCF classification. A single
+structural mismatch kills S. The census checks the implementation, while
+an arbitrary-column proof is required for S itself. Limit: five minutes
+per script; stop and record any incomplete part.
+
+Freeze ONE exact polyhedral target before seeing any hull: all nine cells
+of the 3-by-3 root, with these same three heavies (12 vertices). It has a
+nonempty central column and two noncentral columns, so S predicts SCF.
+Test whether it lies outside the C007 hereditary family using the necessary
+property that all independent triples have a common vertex; C007 and each
+induced subgraph with alpha three have that property. Check a local
+neighborhood obstruction to line graphs independently. Enumerate ALL target
+STAB facets and vertices with cdd.gmp, then independently clip the complete
+12-dimensional cube with Fraction arithmetic and the explicit n<=14 cap.
+No other target hull or new numerical beta search is authorized by this
+registration. Classify facet support alpha and compare proper supports
+with earlier proved classes; do not assume the full (1-light,2-heavy) row
+is a facet, sufficient, or quantum-valid.
+
+Controls: empty root gives the heavy K3; three cells in distinct noncentral
+rows and columns produce a claw at Hc; the C005 root is a covered positive
+control. With all three heavy selectors being the three ROWS, explicitly
+map the heavies to the triangle edges on row nodes: this is already a line
+graph for any root and must not be counted as a new quantum family.
+Corrupted root adjacency, cover, claw or scope claims must be rejected.
+
+Prior-art gate: reread Chapman--Elman--Mann's line-graph definition and
+SCF hypotheses and Xu et al.'s graph-operation framework in the original
+arXiv HTML. Existing free-fermion solvability alone is not the all-weight
+uncertainty theorem. A named-class reduction or known homogeneous-clique
+operation must be matched with its hypotheses before use. This cycle aims
+at a decisive structural target/reduction, not a claim of A-star novelty.
