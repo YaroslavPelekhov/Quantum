@@ -174,6 +174,13 @@ and the exact physical/local certificate. Thirty combined tests pass.
 See [the C003 proof](ALMOST_CLIQUE_CLOSURE_COUNTEREXAMPLE.md).
 The generic almost-clique rule is CLOSED AS FALSE, not left as a candidate.
 
+Clean-archive reproduction: commit `eb055ff` was exported with `git archive`
+to a new temporary directory, without the local prior-art checkout. All
+30 tests passed there. Both C003 discovery scripts were rerun against the
+hash-verified immutable upstream inputs; their regenerated JSON files
+matched the committed hashes. All 49 artifact hashes and both independent
+C003 acceptance checks passed after regeneration.
+
 ## C004 — next proof cycle, not yet executed
 
 Aim: determine whether GLOBAL claw-free/SCF structure supplies an operator
