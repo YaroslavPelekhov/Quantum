@@ -208,3 +208,43 @@ Only then freeze a bounded experiment or attempt the analytic proof.
 
 Main H-SCF: OPEN. A-star novelty: NOT CONFIRMED. All C003 results are local
 classical computation and exact mathematics, not QPU measurements.
+
+### C004 execution registration — 2026-09-06, before computation
+
+Baseline `67ab582`. No Python research processes are running. Preserve the
+unrelated submodule, prior-art checkout and figure files.
+
+First prove the exact cross-claw criterion: for L=A-S and R=B-S anticomplete,
+assuming both local graphs claw-free, a new claw can only be centered in S.
+Its leaves either comprise two nonadjacent neighbors in one outside side
+and one in the other, or one neighbor in each outside side and a third in S.
+The latter forbids boundary neighborhoods F,G with a common center s and
+an adjacent boundary vertex outside F union G. This is an elementary
+structural lemma, not a quantum uncertainty theorem.
+
+Freeze the following proof-gate audit on the 36 one-pair C001 weighted rows
+(35 distinct graphs), using their saved canonical boundaries. Record the
+u/v neighborhood parity of every outside vertex, test whether J=P_u P_v
+is central on neither/one/both sides, and independently verify the cross-claw
+criterion. No larger graph census or numerical beta optimization is allowed
+by this gate. C003 G8 is a negative control, not a locally claw-free example:
+its left side already contains a claw. C4 is a both-central positive control;
+C5 cut at a distance-two pair is a one-sided-central positive control.
+
+For implementation acceptance exhaust every labelled graph compatible with
+S={0,1,2}, nonedge {0,1}, L={3,4}, R={5,6}: 2^14 fixed-structure graphs.
+Compare the structural criterion (including the local hypotheses) against
+independent explicit four-vertex claw enumeration. Store counts and hashes;
+acceptance must use only integer/standard-library calculations.
+
+Analytic centrality gate: in a connected claw-free graph, global centrality
+of J for a nonadjacent pair makes them false twins and forces alpha<=2.
+Prove this directly. Thus a globally central-sector repair cannot resolve
+the outstanding alpha>=3 class. One-sided centrality has no such conclusion.
+
+Only propose a new quantum inequality if it actually follows from the
+cross-claw exclusions and is stronger than an equivalent restatement of
+the desired weighted facet. If no such argument is obtained, explicitly
+record the proof gate as unresolved and switch the NEXT bounded cycle to
+transfer/SOS on a frozen residual. Do not manufacture numerical support for
+an unstated lemma. All proofs here require a separate priority assessment.
