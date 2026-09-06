@@ -5,8 +5,9 @@
     "C002": {"status": "complete_exact_obstructions", "attacks": 11, "controls": 3, "exact_coordinatewise_obstructions": 8, "canonical_left_pair_sum": "1/4", "canonical_right_pair_sum": "1/2", "quantum_conjecture_falsified": false},
     "C003": {"status": "complete_exact_physical_counterexample", "refuted_claim": "generic hbar-perfect closure across a clique minus one edge", "published_graph6": "GCrdrk", "qubits": 3, "exact_quantum_value": "47431/15625", "exact_stable_bound": "3", "exact_gap": "556/15625", "local_all_weight_perfection": "proved_with_exact_polytope_completeness", "benchmark_rows": 1437, "structural_decompositions": 5353, "SCF_conjecture_falsified": false, "new_imperfect_graph_claim": false},
     "C004": {"status": "complete_structural_gate_operator_bound_unresolved", "one_pair_rows": 36, "one_sided_central_rows": 36, "exhaustive_template_graphs": 16384, "locally_claw_free": 7225, "globally_claw_free": 2555, "lossless_dephasing": "falsified_by_elementary_C5_control", "C5_all_state_optimum": 4, "C5_J_invariant_optimum": 2, "quantum_compatibility_proved": false},
-    "C005": {"status": "pending", "question": "exact coherent transfer/SOS bridge on first stored frontier facet ICXmtizr_, then abstract the essential identity"},
-    "combined_tests_passed": 37,
+    "C005": {"status": "complete_exact_fixed_weight_family_theorem", "target_graph6": "ICXmtizr_", "target_exact_beta": 3, "family_orders": "2m+8 for every integer m>=0", "light_weight": 1, "heavy_weight": 2, "heavy_vertices": 3, "full_support_nonrank_facet": true, "all_weight_theorem": false, "finite_identity_audit_orders": [8,10,12,14,16,18], "uniform_proof": "at-most-four-column support plus exact Gram/envelope argument", "numerical_SDP_used": false},
+    "C006": {"status": "pending", "question": "complete exact facet audit of G1, then falsify or prove an all-m polyhedral description before claiming all weights"},
+    "combined_tests_passed": 45,
     "unrestricted_quantum_theorem": "open",
     "A_star_novelty": "not_confirmed"
   },

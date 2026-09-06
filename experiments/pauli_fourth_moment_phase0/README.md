@@ -1,9 +1,14 @@
 # Pauli fourth-moment phase 0
 
+C005 completed: [signed rectangular Gram family theorem](SCF_RECTANGULAR_GRAM_FAMILY.md).
+An exact coherent identity proves the frozen ten-vertex facet and its
+unbounded fixed-weight family. This is not all-weight SCF perfection.
+The current suite has 45 tests; no numerical SDP was needed for C005.
+
 C004 completed as a [structural/operator proof gate](SCF_CROSS_CLAW_OPERATOR_GATE.md):
 36 one-sided-central cases, an exact cross-claw criterion and a C5 control
 against lossless dephasing. The quantum coherent bridge is still unresolved.
-The current suite has 37 tests; next is the registered transfer/SOS gate.
+The suite at C004 had 37 tests; its next step was the transfer/SOS gate.
 
 C003 completed: [exact counterexample to generic almost-clique closure](ALMOST_CLIQUE_CLOSURE_COUNTEREXAMPLE.md).
 Both local all-weight proofs, a three-qubit integer-state witness, and

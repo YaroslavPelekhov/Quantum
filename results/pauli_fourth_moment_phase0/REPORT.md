@@ -4,6 +4,14 @@ Date: 2026-09-06
 
 ## Verdict
 
+C005: [an exact signed rectangular Gram identity](../../experiments/pauli_fourth_moment_phase0/SCF_RECTANGULAR_GRAM_FAMILY.md)
+proves beta=3 for the selected ten-vertex weighting `ICXmtizr_` and for an
+explicit SCF family of order 2m+8 at every m>=0. The weighting is one on
+lights and two on the three heavy vertices, and defines a nonrank facet.
+The uniform result follows from a finite-support identity proof, not from
+the six-size implementation audit. All 45 tests pass; no SDP was needed.
+All-weight perfection of the family and unrestricted H-SCF remain open.
+
 C004: the exact cross-claw criterion passed all 16,384 frozen template
 graphs under independent four-subset verification. All 36 canonical
 one-pair cases have J central on exactly one side. A connected claw-free
@@ -12,7 +20,7 @@ cannot reach the outstanding alpha-three class. Exact C5 control:
 all-state weighted optimum four, J-invariant optimum two; the weighted
 stable bound is four. No SCF violation or quantum closure proof follows.
 See [the operator gate](../../experiments/pauli_fourth_moment_phase0/SCF_CROSS_CLAW_OPERATOR_GATE.md).
-The current suite has 37 tests. Next: a coherent transfer/SOS certificate.
+The suite then had 37 tests. Its next step was a coherent transfer/SOS certificate.
 
 C003 (2026-09-06): the proposed generic hbar-perfect almost-clique closure
 rule is false. On published G8, a three-qubit integer state gives

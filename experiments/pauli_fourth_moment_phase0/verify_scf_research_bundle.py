@@ -73,6 +73,9 @@ def main():
     cross = json.loads(read('scf_cross_claw_gate.json'))
     assert cross['central_side_histogram'] == {'1': 36} and not cross['quantum_compatibility_proved']
     assert cross['exhaustive_template']['counts']['graphs'] == 16384
+    bridge = json.loads(read('scf_rectangular_gram_bridge.json'))
+    assert bridge['target']['graph6'] == 'ICXmtizr_' and bridge['finite_audit_m'] == list(range(6))
+    assert not bridge['all_weights_claim'] and not bridge['unrestricted_SCF_theorem']
     print(json.dumps({'location': 'git_index' if args.git_index else 'worktree',
                       'artifact_hashes_checked': len(names), 'covered_types_exactly_once': 128,
                       'exact_census_occurrences': sum(occurrences.values()),
@@ -81,6 +84,7 @@ def main():
                       'separator_types': 47, 'coordinatewise_obstructions': 8,
                       'generic_closure_exact_counterexamples': 1,
                       'cross_claw_template_graphs': 16384,
+                      'rectangular_Gram_family_audit_sizes': 6,
                       'status': 'integrity_checks_passed'}))
 
 

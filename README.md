@@ -1,12 +1,20 @@
 # Quantum x Evolutionary Computing Research Artifact
 
-Latest cycle C004 (2026-09-06):
+Latest cycle C005 (2026-09-06):
+[exact signed rectangular Gram family theorem](experiments/pauli_fourth_moment_phase0/SCF_RECTANGULAR_GRAM_FAMILY.md).
+The frozen ten-vertex weighted facet now has exact beta three. A uniform
+proof extends it to an SCF family of 2m+8 vertices for every m>=0, with
+weights one on lights and two on three heavy vertices. This proves one
+nonrank facet weighting per graph, NOT all weights or unrestricted H-SCF.
+No numerical SDP was needed. All 45 tests pass; A-star novelty is unconfirmed.
+
+Previous cycle C004 (2026-09-06):
 [cross-claw and central-sector proof gate](experiments/pauli_fourth_moment_phase0/SCF_CROSS_CLAW_OPERATOR_GATE.md).
 All 36 frozen one-pair rows have centrality on exactly one side; the exact
 structural criterion passes an independent 16,384-graph implementation audit.
 An elementary two-qubit C5 control proves that J-dephasing can reduce the
 weighted optimum from four to two. The coherent operator bridge remains
-unproved. The current suite has 37 passing tests; H-SCF and A-star remain open.
+unproved. The suite then had 37 passing tests; H-SCF and A-star remain open.
 
 Previous cycle C003 (2026-09-06):
 [generic almost-clique quantum closure is exactly falsified](experiments/pauli_fourth_moment_phase0/ALMOST_CLIQUE_CLOSURE_COUNTEREXAMPLE.md).

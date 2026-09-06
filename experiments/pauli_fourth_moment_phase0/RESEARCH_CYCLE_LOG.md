@@ -365,3 +365,63 @@ An all-m claim requires the written combinatorial expansion, SCF proof,
 and spectral-envelope argument, not just these six checks. Check nearby
 prior art before calling this new. If an identity fails, retain the failure
 and return to a separately preregistered SOS search on the original target.
+
+### C005 result — COMPLETE, exact target and fixed-weight family theorem
+
+The rectangular Gram bridge works. All transfer coefficients, including
+odd-order cancellation, are independently checked using standard-library
+integer word rewriting and sparse polynomials. No SDP, beta optimization,
+amplitude sampling, QPU or paid compute was needed. This is an extension
+of the existing Gram/envelope method, not a new optimization algorithm.
+
+For every m>=0, the explicit SCF family G_m with 2m+8 vertices obeys
+`sum_light <P_i>^2+2 sum_heavy <P_i>^2<=3`. The bound is tight and defines
+a full-support nonrank classical facet. The exact central involutions are
+`K_j=-P_H0 P_H1 P_Aj P_Bj`; their correlated signs give a 3-by-(m+3) matrix B.
+Its Gram matrix satisfies the full e1,e2,e3 transfer identities. Row/column
+Rayleigh bounds and the earlier exact envelope prove the quantum inequality.
+
+The proof for ALL m uses a finite-support argument: any coefficient of the
+degree-six transfer identity involves at most four noncentral columns
+(every independent triple contains Z). Any hypothetical claw likewise uses
+at most four columns. Thus the exact G_4 checks cover arbitrary m after
+column relabelling and setting unused amplitudes to zero. This is not an
+extrapolation from numerical survival. The separate audit m=0,...,5 covers
+orders 8,10,12,14,16,18 and all coefficients. Exact facet-root ranks are
+full in every audit case; a uniform affine-hull proof is also supplied.
+
+G_1 is weight-preserving isomorphic to the frozen target `ICXmtizr_`, so
+its recorded weighting now has exact beta three. No ALL-WEIGHTS assertion
+for that graph or the family has yet been made. The old frontier JSON is
+preserved as a historical numerical result. The remaining 33 frontier
+weighted representatives have not received new certificates in this cycle.
+
+All 45 tests pass. See `SCF_RECTANGULAR_GRAM_FAMILY.md` for the graph
+construction, uniform proof, exact sector-sign convention and reproduction.
+The proof also checks the monotone spectral-crossing branch explicitly.
+
+Prior-art boundary: SCF transfer theory is Chapman--Elman--Mann; Gram
+factorization, Cauchy--Binet and the spectral envelope are inherited tools.
+Xu et al.'s state-polynomial hierarchy was checked as the unused fallback.
+Classical nonrank families such as gear composition remain a necessary
+graph/facet identification check before claiming priority. No new graph
+family discovery or A-star novelty is asserted.
+
+## C006 — next cycle: all-weight closure of the proved family
+
+First check whether the target G_1 has any additional full-support nonrank
+facet orbit beyond the newly proved weighting. All proper induced supports
+have at most nine vertices and are already covered by the exact theorem.
+An exact complete H/V facet audit could therefore establish all-weight
+perfection of this PARTICULAR ten-vertex graph. Do not infer completeness
+from the previously selected facet or from beta samples.
+
+Then ask whether the arbitrary-m facet description reduces to the proved
+family weighting and smaller supported inequalities. Before a family census,
+formulate an explicit decomposition/facet claim and audit graph-theoretic
+prior art, including possible alternate names and gear/clique-family
+constructions. The C005 graph family is not automatically all-weight
+hbar-perfect merely because one full-support facet has been proved.
+Use exact small cases to falsify the proposed polyhedral claim; demand a
+uniform proof for any unbounded conclusion. H-SCF remains OPEN and A-star
+novelty NOT CONFIRMED. No new objective outside quantum research is opened.

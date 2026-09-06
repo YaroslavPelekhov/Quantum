@@ -236,6 +236,11 @@
       "sha256": "2f80ff9e5237605932769da0c3078774e9d9f368ddadc5c138ccab86eaa006cd"
     },
     {
+      "path": "scf_rectangular_gram_bridge.json",
+      "bytes": 194373,
+      "sha256": "968170df740dade8f3ccbc544e215c56bdecc81bc923ae3df229e202ec2d1daf"
+    },
+    {
       "path": "scf_separator_coverage.json",
       "bytes": 39305,
       "sha256": "3aefebe69900ff0a6b74d8836547f55393aa2905865de762ace79706d140897c"

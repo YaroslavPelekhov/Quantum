@@ -222,6 +222,16 @@ a general SCF hbar-perfectness theorem.
 
 ## Remaining adversarial searches
 
+C005 update, 2026-09-06: the signed 3-by-(m+3) Gram construction extends the
+existing transfer/envelope proof to a fixed-weight nonrank SCF facet family.
+It is not a new SDP hierarchy, nor does it establish all-weight perfection.
+The fallback hierarchy is already described by Xu et al., Section IV.1 and
+Appendix B.1, https://arxiv.org/html/2511.13531v1; it was not needed here.
+Classical facet-priority checks must include Galluccio--Gentile--Ventura,
+https://doi.org/10.1016/j.orl.2008.01.003, and possible alternate graph-family
+names. Its gear composition is not being invoked as a quantum closure rule.
+The graph/facet family has not been established as new to the literature.
+
 C004 update, 2026-09-06: cross-claw separator restrictions and the
 connected false-twin alpha-two argument are elementary structural facts,
 not new graph theory. The C5 J-dephasing control is likewise not a novelty
