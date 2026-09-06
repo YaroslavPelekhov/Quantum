@@ -581,3 +581,41 @@ theorem from it is used. The known alpha>=4 descriptions cannot simply be
 transferred to our alpha=3 family. All-m R_m still needs an independent
 uniform proof if the finite exact tests pass. Quantum novelty is separate
 from these classical polyhedral questions.
+
+### C007 uniform-proof subprotocol — before computing a new lifted hull
+
+The four exact hulls survive R_m and show a fixed eight-variable core.
+All inequalities are the G_0 facets with U replaced by
+A=sum_(j>0) x_Aj+x_U and V replaced by B=sum_(j>0) x_Bj+x_V,
+plus, for each shared column j>0,
+`x_Aj+x_Bj+x_Hc<=1` and
+`x_Aj+x_Bj+x_A0+x_B0+x_Z+x_H0+x_H1+x_Hc<=2`.
+
+Freeze a classical coupling lemma to prove this form for ALL m. Lift the
+22 stable vertices of G_0 by the binary coordinate z=1_{U,V both chosen}.
+Candidate exact lower fiber endpoint, for any y in STAB(G_0), is
+`z_min=max(0,A+B+y_Hc-1,A+B+y_A0+y_B0+y_Z+y_H0+y_H1+y_Hc-2)`.
+Enumerate this ONE nine-dimensional lifted polytope over cdd.gmp and
+independently clip the cube with Fraction arithmetic (five-minute cap).
+Check every facet, full affine rank, complete vertex set, and that these
+are exactly all the lower-z inequalities. Other facets are zero-z or
+upper-z inequalities, so decreasing any feasible z to this endpoint
+preserves them. A missing lower facet or different endpoint kills this
+candidate lemma. No additional family orders or quantum optimization.
+
+Given z_min, set T=A+B-z_min. Refining each aggregate into its original
+row labels is a transportation problem of total mass T, with forbidden
+diagonal pairs (Aj,Bj) and the absent/absent pair. Its allowed bipartite
+graph is complete minus a matching. Weighted Hall constraints then reduce
+to the singleton conditions x_Aj+x_Bj<=T; the absent-label condition is
+z_min>=0. The two extra per-column inequalities above enforce these
+conditions. Check rational boundary/zero-mass and incompatible-diagonal
+controls. A uniform theorem requires writing this conditional refinement
+proof and checking the graph substitution, not just the lifted hull.
+
+This is a CLASSICAL decomposition lemma after all quantum inequalities
+are proved. It is not the falsified generic quantum separator-gluing rule
+from C003, and it does not discard quantum coherences. Quantum validity of
+the aggregated G_0 facets must be established separately: rank or alpha<=2
+support, except the full C005 inequality. Then, and only then, the classical
+lemma would imply all-weight perfection of every G_m.
