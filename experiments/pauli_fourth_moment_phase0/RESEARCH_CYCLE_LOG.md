@@ -316,3 +316,52 @@ The intended progress is an explicit coherent bridge or a sharply localized
 failure of the proposed certificate class, not another finite no-violation
 census. Only after an actual identity is understood should it be generalized
 to a family or abstract lemma. H-SCF remains OPEN; A-star NOT CONFIRMED.
+
+### C005 execution registration — 2026-09-06
+
+Baseline `1efe3a6`; no research processes running; unrelated changes preserved.
+The frozen target has one heavy clique {4,6,8}, alpha three, three four-holes
+and three light-only independent triples. The one-hole template rejects its
+three holes; two-hole templates do not apply. The full complement is
+connected, so the immediate join reduction does not apply. Universal transfer
+expansion has three nonscalar e2 terms and scalar e3. This is not evidence
+that every possible inherited reduction has been exhausted.
+
+The light graph is a bipartite line graph with a 3-by-4 root incidence
+matrix. A rectangular extension of the EXISTING Gram method is promising:
+in consistent cycle signs s,t use rows
+`(a0,a7,a3,0)`, `(s*a9,t*a5,0,a1)`, `(0,a2,0,0)`.
+Heavy vertices 4 and 8 select the first two Gram rows, while 6 selects
+column 1. Check exact transfer identities, including the relation between
+s,t and the three actual cycle operators. Do not set all cycle corrections
+positive independently. If this works, it is inherited-method extension,
+not a new SDP algorithm, and the conditional SOS search is unnecessary.
+
+Before further computation, freeze a proposed unbounded extension for an
+analytic identity check. Start with a bipartite root having three rows:
+columns j=0,...,m contain entries A_j,B_j in rows 0,1; column 0 also
+contains Z in row 2. Add one A-only column U and one B-only column V.
+Light vertices are root edges and form its line graph. Add a clique of
+three heavy vertices H0,H1,Hc. H0 commutes exactly with light row 0, H1
+with light row 1, and Hc with light column 0; they anticommute with all
+other lights. Give lights weight one and heavies weight two. There are
+2m+8 vertices; m=1 should be weight-preserving isomorphic to the frozen
+10-vertex target. For every m>=0, the candidate weighted bound is three.
+
+Candidate central signs: K_j=-P_H0 P_H1 P_Aj P_Bj. Verify that each is a
+central Hermitian involution, not just a boundary-central operator. Put
+K_j*b_j in row 1 of B, a_j in row 0, Z amplitude in entry (2,0), and
+the two private-column amplitudes in their respective rows. With M=B B^T,
+the proposed identities are e1=L+H, e3=det(M), and
+`e2=e2(M)+(h0,h1) M[0:2,0:2] (h0,h1)^T+hc^2 ||B[:,0]||^2`.
+Together with the existing exact three-eigenvalue envelope this would
+prove the fixed weighted inequality for every family size, not all weights.
+
+Independent finite audit: m=0,...,5, no beta optimization and no random
+samples. Expand the FULL universal transfer polynomial and compare every
+coefficient with the proposed Gram identities; use a second multiplication
+algorithm for acceptance. Include corrupted cycle phase/Gram/graph controls.
+An all-m claim requires the written combinatorial expansion, SCF proof,
+and spectral-envelope argument, not just these six checks. Check nearby
+prior art before calling this new. If an identity fails, retain the failure
+and return to a separately preregistered SOS search on the original target.
