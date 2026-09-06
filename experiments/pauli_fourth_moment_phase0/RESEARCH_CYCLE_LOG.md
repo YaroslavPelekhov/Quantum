@@ -506,6 +506,15 @@ does NOT prove every ten-vertex graph or all weights on every G_m. Exact
 enumeration, polyhedral clipping and BETA/STAB implication are established
 tools, not algorithmic novelty. H-SCF OPEN; A-star novelty NOT CONFIRMED.
 
+Clean-archive reproduction of commit `24bafa9`: C006 rediscovery generated
+the identical canonical JSON hash
+`02297efed092d9cfa47512465a06b17d81299faef765c520a4a9214c562e43ca`.
+All 52 artifact hashes and all 55 tests passed in a fresh exported source
+directory. C006 and C005 independent verifiers additionally passed under
+`python -S` (site packages disabled), confirming that acceptance imports
+no cdd, NetworkX, SymPy or numerical solver. This is independent algorithmic
+verification on the same host, not external peer review.
+
 ## C007 — next cycle: a uniform polyhedral gate, before more sizes
 
 Candidate R_m: for every m>=0, every nonrank facet of STAB(G_m) either has
