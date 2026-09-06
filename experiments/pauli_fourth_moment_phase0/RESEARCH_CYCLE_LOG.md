@@ -105,3 +105,26 @@ if this narrower closure can be proved.
 
 Continuation is scheduled in the same task every two hours. Product usage
 limits remain in force; no usage reset or paid resource was requested or used.
+
+### C003 execution registration — 2026-09-06
+
+Baseline `ce57a48`. No phase-zero Python calculations were running at start;
+only the previously recorded unrelated worktree changes remain.
+
+Primary-source check: Xu et al., arXiv:2511.13531v1, Section III and Appendix
+A.1 explicitly cover join, disjoint union, induced subgraphs, lexicographic
+product, false-twin copying and true-twin splitting. None of those displayed
+statements is an almost-clique-separator closure theorem. The appendix swaps
+the copy/split property numbering relative to the main text; use operation
+names and definitions, not the number alone. Targeted phrase searches found
+no matching separator theorem; this does not establish novelty.
+
+Freeze the screen on all 1,437 pinned benchmark rows, in source order.
+Enumerate EVERY proper separator with exactly one nonedge, not just the
+minimum separator. Enumerate all unordered nonempty partitions of its
+remaining components. Store all candidate decompositions and later require
+separate exact local hbar-perfectness certificates before promoting a row
+to a candidate counterexample to the quantum closure rule. Discovery uses
+integer bitsets; verification will independently use graph-library
+connectivity/nonedge enumeration. Positive structural control: C4; negative
+control: K4. No quantum claim follows from a benchmark label alone.
