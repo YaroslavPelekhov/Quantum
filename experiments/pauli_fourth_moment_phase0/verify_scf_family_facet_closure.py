@@ -24,10 +24,10 @@ def value(row, point):
     return row[0]+sum(a*x for a, x in zip(row[1:], point) if a)
 
 
-def cube_clip(n, facets, seconds_limit=300):
+def cube_clip(n, facets, seconds_limit=300, max_dimension=10):
     """Enumerate the whole intersection, without using a candidate vertex set."""
     started = time.monotonic()
-    assert 1 <= n <= 10
+    assert 1 <= n <= max_dimension <= 14
     constraints = [tuple([0]+[int(j == i) for j in range(n)]) for i in range(n)]
     constraints += [tuple([1]+[-int(j == i) for j in range(n)]) for i in range(n)]
     vertices = {tuple(map(F, point)): sum(1 << (i+n*int(x)) for i, x in enumerate(point))
@@ -100,7 +100,7 @@ def componentwise_scf(n, edges, support):
     return True
 
 
-def verify_polytope(record):
+def verify_polytope(record, max_dimension=10):
     n, edges = graph_edges(record['graph6'])
     masks = [m for m in range(1 << n) if stable(m, edges)]
     assert masks == record['stable_masks']
@@ -122,7 +122,7 @@ def verify_polytope(record):
         assert lower in facets, 'missing nonnegativity'
         assert any(row[0] > 0 and row[i+1] == -row[0]
                    and all(x <= 0 for x in row[1:]) for row in facets), 'unproved cube upper bound'
-    actual, trace = cube_clip(n, facets)
+    actual, trace = cube_clip(n, facets, max_dimension=max_dimension)
     extras, missing = actual-points, points-actual
     assert not extras and not missing, ('polyhedral incompleteness',
                                        [list(map(str, p)) for p in sorted(extras)[:3]], len(missing))

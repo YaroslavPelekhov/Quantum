@@ -82,6 +82,21 @@ def main():
     assert len(family_facets['target']['stable_masks']) == 34
     assert len(family_facets['target']['facets_b_plus_ax']) == 27
     assert family_facets['all_facets_have_proof_route'] and not family_facets['family_all_m_all_weights_claim']
+    gate = json.loads(read('scf_uniform_facet_gate.json'))
+    assert gate['C005_sha256'] == hashlib.sha256(read('scf_rectangular_gram_bridge.json')).hexdigest()
+    assert gate['C006_sha256'] == hashlib.sha256(read('scf_family_facet_closure.json')).hexdigest()
+    assert gate['audit_m'] == [0, 1, 2, 3] == [r['m'] for r in gate['records']]
+    assert [len(r['stable_masks']) for r in gate['records']] == [22, 34, 50, 70]
+    assert [len(r['facets_b_plus_ax']) for r in gate['records']] == [23, 27, 31, 35]
+    assert gate['R_m_survives_finite_audit'] and not gate['unbounded_R_m_proved']
+    # Historical discovery flags describe the finite stage. The subsequent
+    # uniform proof is written in SCF_UNBOUNDED_ALL_WEIGHT_FAMILY.md.
+    core = json.loads(read('scf_core_refinement.json'))
+    assert core['C007_gate_sha256'] == hashlib.sha256(read('scf_uniform_facet_gate.json')).hexdigest()
+    assert core['graph6'] == gate['records'][0]['graph6']
+    assert len(core['points']) == 22 and len(core['facets_b_plus_ax']) == 24
+    assert len(core['lower_z_facets']) == 3 and not core['unrestricted_SCF_theorem']
+    assert not core['A_star_confirmed']
     print(json.dumps({'location': 'git_index' if args.git_index else 'worktree',
                       'artifact_hashes_checked': len(names), 'covered_types_exactly_once': 128,
                       'exact_census_occurrences': sum(occurrences.values()),
@@ -92,6 +107,8 @@ def main():
                       'cross_claw_template_graphs': 16384,
                       'rectangular_Gram_family_audit_sizes': 6,
                       'all_weight_G1_facets': 27,
+                      'C007_finite_facets': 116,
+                      'C007_lifted_core_facets': 24,
                       'status': 'integrity_checks_passed'}))
 
 

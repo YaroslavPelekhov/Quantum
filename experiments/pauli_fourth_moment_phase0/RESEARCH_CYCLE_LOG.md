@@ -619,3 +619,75 @@ from C003, and it does not discard quantum coherences. Quantum validity of
 the aggregated G_0 facets must be established separately: rank or alpha<=2
 support, except the full C005 inequality. Then, and only then, the classical
 lemma would imply all-weight perfection of every G_m.
+
+### C007 completed — uniform ALL-WEIGHT family theorem, 2026-09-06
+
+Both registered gates pass, followed by a uniform proof, not a finite-size
+extrapolation. For every integer m>=0 and every nonnegative real weight,
+every Pauli realization of G_m satisfies beta(G_m,w)=alpha(G_m,w).
+The full proof and scope are in `SCF_UNBOUNDED_ALL_WEIGHT_FAMILY.md`.
+
+Frozen exact hulls at orders 8,10,12,14 have respectively 22,34,50,70 stable
+vertices and 23,27,31,35 facets. Each has exactly two nonrank alpha-two
+supports and one remaining nonrank facet, C005. Independent full-cube
+Fraction clipping verifies every hull, not merely the reported facet rows.
+The order-ten hull exactly matches C006. MIR candidate counts are
+209,559,1423,3492 with no match in this frozen grid; this is NOT an
+absence, priority, or quantum-rounding certificate.
+
+The lifted G_0 joint-event polytope has dimension nine, 22 vertices,
+24 facets and exactly the three preregistered lower-z facets. An independent
+complete rational clipping proof verifies the claimed z_min. The uniform
+transportation argument uses a complete bipartite graph minus a matching;
+Hall constraints reduce to singletons. It reconstructs a stable-set
+distribution for every real x in the proposed 4m+23-row description,
+including zero masses and saturated constraints, for every m.
+
+All positive defining inequalities other than C005 have alpha<=2 support
+uniformly: an independent triple requires Z and both noncentral rows,
+and only the full core facet supports all three. The earlier all-size
+SCF alpha-two theorem and C005 therefore prove quantum validity of the
+entire description. R_m follows as a corollary. Uniform irredundancy of
+every listed row is not asserted or needed. C005/C006 and the finite-gate
+JSON flags retain their historical scopes; current summary records the
+subsequent uniform proof separately.
+
+Fourteen new regression/negative tests pass; the complete suite has 69
+passing tests. Omitted lower-event and order-twelve full facets fail
+geometrically, rather than through a hard-coded expected facet count.
+Other controls cover corrupted endpoint/event/scope, exact transport at
+boundaries, forbidden diagonal mass, weighted automorphism, and a positive
+C7 MIR certificate. The old default cube dimension cap remains ten.
+
+Prior-art boundary: the original gear definition and figure were checked
+in the author PDF; disjoint gear triples exclude that literal construction
+for every G_m, not all variants. Eisenbrand--Oriolo--Stauffer--Ventura,
+Lemma 5 and its following remark, already exploit homogeneous pairs of
+cliques to preserve a facet under selected edge deletions. Our row pair
+is such a classical structure, and the Hall/flow theorem is standard.
+Their quasi-line classification cannot directly cover G_m: each contains
+the five-wheel with hub H1 and rim A0,Z,H0,Hc,U. Classical construction
+or refinement novelty is NOT claimed. Quantum significance and priority
+remain provisional, with external expert review pending.
+
+Canonical new artifact hashes:
+
+- `scf_uniform_facet_gate.json`:
+  `7e83b5a5f04751d0a56507ff7fe2a978319a35faf0a6700a898a5371bbe954b8`.
+- `scf_core_refinement.json`:
+  `78be65169e9d0da98a49a90c610c33fcfc26580f296a2ab9c79170933fb641cb`.
+
+No paid computation, QPU, numerical beta optimizer, external contact,
+or unrelated-file change. H-SCF remains OPEN; A-star is NOT CONFIRMED.
+
+## C008 — next structural transfer gate, not a larger G_m audit
+
+Follow Section 10 of `RESEARCH_PROGRAM_RU.md`: before a new census,
+preregister an operator/root configuration not already a line graph or a
+C007 refinement. A candidate is the three-row incidence construction with
+heavy nonneighbor selectors row 0, row 1, column 0 and additional occupied
+third-row cells. First check its structural obstructions: a matching of
+size three outside column 0 produces a claw centered at Hc. This may
+force a known small vertex cover and reduce the whole proposal; if so,
+record the reduction rather than claim a new mechanism. No wider family,
+new facet or quantum extension is asserted before this gate is executed.

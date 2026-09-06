@@ -1,10 +1,18 @@
 # Pauli fourth-moment phase 0
 
+C007 completed: [all weights for the unbounded G_m family](SCF_UNBOUNDED_ALL_WEIGHT_FAMILY.md).
+A uniform classical refinement proof reduces arbitrary m to an exactly
+verified fixed core. All non-C005 positive inequalities have alpha<=2
+support, so the earlier quantum bounds complete all weights at every size.
+The combined suite has 69 passing tests. The result is not unrestricted
+H-SCF or confirmed A-star novelty; classical homogeneous-pair/flow tools
+are explicitly credited to prior art.
+
 C006 completed: [all-weight closure of G_1](SCF_G1_ALL_WEIGHT_CLOSURE.md).
 All 27 facets and 34 stable vertices are exactly complete under both cdd.gmp
 and a separate Fraction edge-clipping implementation. All weights are now
 proved for the selected ten-vertex graph, not every G_m or every SCF graph.
-The combined suite has 55 tests, including a geometrically missing facet.
+The suite then had 55 tests, including a geometrically missing facet.
 
 C005 completed: [signed rectangular Gram family theorem](SCF_RECTANGULAR_GRAM_FAMILY.md).
 An exact coherent identity proves the frozen ten-vertex facet and its

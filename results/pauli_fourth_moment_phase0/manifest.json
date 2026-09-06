@@ -16,6 +16,16 @@
   },
   "artifacts": [
     {
+      "path": "scf_uniform_facet_gate.json",
+      "bytes": 49206,
+      "sha256": "7e83b5a5f04751d0a56507ff7fe2a978319a35faf0a6700a898a5371bbe954b8"
+    },
+    {
+      "path": "scf_core_refinement.json",
+      "bytes": 5458,
+      "sha256": "78be65169e9d0da98a49a90c610c33fcfc26580f296a2ab9c79170933fb641cb"
+    },
+    {
       "path": "almost_clique_closure_audit.json",
       "bytes": 2417066,
       "sha256": "d3b43367bbb67192c7bb74adb5d894915a71a5023ddb3522d52cbff4f3dac447"

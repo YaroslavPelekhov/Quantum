@@ -1,11 +1,22 @@
 # Quantum x Evolutionary Computing Research Artifact
 
-Latest cycle C006 (2026-09-06):
+Latest cycle C007 (2026-09-06):
+[all-weight Pauli uncertainty for every member of an unbounded SCF family](experiments/pauli_fourth_moment_phase0/SCF_UNBOUNDED_ALL_WEIGHT_FAMILY.md).
+For every m>=0, the graph G_m of order 2m+8 is hbar-perfect for all
+nonnegative weights. A fixed eight-vertex core, an exact joint-event
+certificate, and a uniform Hall-refinement proof establish a complete
+classical description; the C005 Gram inequality supplies its only
+alpha-three quantum obligation. Four complete hulls and 69 tests check the
+implementation. Unrestricted H-SCF, external review and A-star novelty
+remain open. Classical flow and homogeneous-clique refinement are not
+claimed as new algorithms.
+
+Previous cycle C006 (2026-09-06):
 [exact all-weight closure of the ten-vertex G_1](experiments/pauli_fourth_moment_phase0/SCF_G1_ALL_WEIGHT_CLOSURE.md).
 All 27 STAB facets and 34 stable vertices are verified by cdd.gmp and a
 separate standard-library rational edge-clipping algorithm. This establishes
-all nonnegative weights on one graph. All 55 tests pass; all-m all-weight
-perfection, unrestricted H-SCF, and A-star novelty remain open.
+all nonnegative weights on one graph. The suite then had 55 tests; its
+all-m all-weight gap is subsequently closed by C007 above.
 
 Previous cycle C005 (2026-09-06):
 [exact signed rectangular Gram family theorem](experiments/pauli_fourth_moment_phase0/SCF_RECTANGULAR_GRAM_FAMILY.md).

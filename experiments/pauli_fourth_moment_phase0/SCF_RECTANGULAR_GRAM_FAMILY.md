@@ -7,7 +7,10 @@ an all-weights theorem for this family, unrestricted H-SCF, or confirmed A-star 
 
 Subsequent C006 addendum: [all weights on G_1 are now proved](SCF_G1_ALL_WEIGHT_CLOSURE.md)
 by a complete independent facet audit. The present C005 statement and its
-artifact remain fixed-weight; all-m all-weight perfection is still open.
+artifact remain fixed-weight. Subsequent C007 supplies the missing
+[all-m, all-weight theorem](SCF_UNBOUNDED_ALL_WEIGHT_FAMILY.md), using a
+uniform classical refinement proof and a separately verified core lemma.
+The historical C005 artifact flags intentionally remain unchanged.
 
 ## 1. Family and theorem
 

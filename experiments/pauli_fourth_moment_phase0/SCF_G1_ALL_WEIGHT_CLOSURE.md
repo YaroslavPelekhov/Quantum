@@ -5,6 +5,10 @@ Status: exact computer-assisted theorem using the previously proved C005
 and order-nine results; pending external mathematical and novelty review.
 This is one ten-vertex graph, not all order-ten SCF graphs or all G_m.
 
+Subsequent C007: [all weights are proved for every G_m](SCF_UNBOUNDED_ALL_WEIGHT_FAMILY.md)
+by a uniform refinement argument. The present C006 certificate remains
+the original one-graph result and an equality control for the later audit.
+
 ## Theorem
 
 Let G_1 be the graph defined in [C005](SCF_RECTANGULAR_GRAM_FAMILY.md), in

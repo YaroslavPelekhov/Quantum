@@ -4,14 +4,27 @@ Date: 2026-09-06
 
 ## Verdict
 
+C007: [the entire unbounded G_m family is now proved hbar-perfect for ALL weights](../../experiments/pauli_fourth_moment_phase0/SCF_UNBOUNDED_ALL_WEIGHT_FAMILY.md).
+This is a uniform theorem for every integer m>=0, not an extrapolation
+from four exact hulls. A fixed-core joint-event polytope has 22 vertices,
+24 facets and exactly three lower-event inequalities. An independent
+Fraction checker proves that certificate complete; a weighted-Hall
+refinement then proves a 4m+23-row STAB description for all m. Every
+positive row except C005 has alpha<=2 support, completing quantum validity.
+The finite audits cover orders 8,10,12,14 and 116 facets in total; all 69
+tests pass. Historical C005/C006 JSON scopes are unchanged. The new theorem
+does not establish unrestricted H-SCF, algorithmic novelty, or A-star
+standing. Prior-art review identifies homogeneous clique pairs and flow
+as classical tools; external expert review remains necessary.
+
 C006: [the selected ten-vertex G_1 is now proved hbar-perfect for ALL weights](../../experiments/pauli_fourth_moment_phase0/SCF_G1_ALL_WEIGHT_CLOSURE.md).
 Its complete STAB description has 27 facets and 34 vertices: 10 positivity,
 14 rank, two proper-support nonrank facets covered by the earlier theorem,
 and the C005 full-support facet. An independent rational edge-clipping
 algorithm proves completeness without cdd. Omitting the C005 facet creates
 three spurious vertices, each violating it by exactly 1/4. These are NOT
-quantum states. All 55 tests pass. The unbounded all-weight family theorem,
-unrestricted H-SCF and A-star novelty remain open.
+quantum states. The suite then had 55 tests. C007 subsequently removes the
+family-size restriction; unrestricted H-SCF and A-star novelty remain open.
 
 C005: [an exact signed rectangular Gram identity](../../experiments/pauli_fourth_moment_phase0/SCF_RECTANGULAR_GRAM_FAMILY.md)
 proves beta=3 for the selected ten-vertex weighting `ICXmtizr_` and for an
@@ -19,7 +32,7 @@ explicit SCF family of order 2m+8 at every m>=0. The weighting is one on
 lights and two on the three heavy vertices, and defines a nonrank facet.
 The uniform result follows from a finite-support identity proof, not from
 the six-size implementation audit. All 45 tests pass; no SDP was needed.
-All-weight perfection of the family and unrestricted H-SCF remain open.
+C005 itself does not prove all weights; C007 above supplies that extension.
 
 C004: the exact cross-claw criterion passed all 16,384 frozen template
 graphs under independent four-subset verification. All 36 canonical
@@ -60,8 +73,8 @@ See [the full generalization proof and obstruction analysis](../../experiments/p
 The general `alpha>=3` case remains open. Thirteen exact examples rule out
 profile-only two-clique gluing even with all rank inequalities; five physical
 state examples rule out a proposed fixed pair-correlation completion. They
-do not falsify the original quantum conjecture. The current combined suite
-has 15 passing tests, including deliberately corrupted certificates.
+do not falsify the original quantum conjecture. That stage's combined suite
+had 15 passing tests, including deliberately corrupted certificates.
 
 The frozen weighted fourth-moment claim
 
