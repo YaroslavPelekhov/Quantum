@@ -430,3 +430,40 @@ hbar-perfect merely because one full-support facet has been proved.
 Use exact small cases to falsify the proposed polyhedral claim; demand a
 uniform proof for any unbounded conclusion. H-SCF remains OPEN and A-star
 novelty NOT CONFIRMED. No new objective outside quantum research is opened.
+
+### C006 preregistration — 2026-09-06, before new facet enumeration
+
+Freeze the first subquestion only: does G_1 (canonical graph6 `IrqaaulLw`,
+isomorphic to frontier target `ICXmtizr_`) have any full-support nonrank
+facet other than the C005 weight (light 1, heavy 2, bound 3), up to graph
+automorphism? Enumerate ALL independent sets and ALL rational STAB facets
+using cdd.gmp, with exact H/V roundtrip. Store every primitive inequality,
+not only the hoped-for facet. For every other positive facet, verify its
+support is proper and componentwise SCF of order at most nine, or identify
+an applicable rank theorem. A missing proof route blocks the all-weight
+conclusion even if its numerical beta happened to look correct before.
+
+Acceptance independent of cdd: a new standard-library Fraction algorithm
+starts from the unit cube and clips one halfspace at a time. An edge joins
+two old vertices iff their common active constraints have exact rank n-1;
+new vertices are precisely intersections of crossing edges with the cut.
+Keep boundary vertices. The bounded-polytope edge-clipping theorem proves
+completeness inductively; do not merely check the supplied stable vertices.
+Check that the supplied inequalities themselves imply the cube bounds,
+and that the final vertex set is exactly the complete stable-set set.
+Also verify facet validity and n-1 affine dimension independently.
+
+Controls: small path and odd-cycle STAB polytopes; reject a corrupted
+coefficient, graph binding, duplicate row, and deliberately omitted
+full-support facet. The missing-facet control must expose an extra vertex,
+not just fail a stored hash or expected count. Limit this cycle to G_1,
+these small controls, and up to five minutes per exact verification. No
+random seeds, beta optimization, larger family census, QPU or paid compute.
+If another full-support weighting appears, retain it as a falsification
+of the proposed coverage, not a counterexample to the quantum conjecture.
+
+Prior-art gate: re-read the primary Xu et al. BETA/STAB formulation and
+Chapman--Elman--Mann framework. Exact polyhedral enumeration and facet-wise
+implication are established tools, not algorithmic novelty. The all-m
+facet-description and gear identification question stays for a separate
+registered cycle; C006 cannot establish an unbounded all-weight theorem.
