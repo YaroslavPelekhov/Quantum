@@ -76,6 +76,12 @@ def main():
     bridge = json.loads(read('scf_rectangular_gram_bridge.json'))
     assert bridge['target']['graph6'] == 'ICXmtizr_' and bridge['finite_audit_m'] == list(range(6))
     assert not bridge['all_weights_claim'] and not bridge['unrestricted_SCF_theorem']
+    family_facets = json.loads(read('scf_family_facet_closure.json'))
+    assert family_facets['C005_source_sha256'] == hashlib.sha256(read('scf_rectangular_gram_bridge.json')).hexdigest()
+    assert family_facets['target']['graph6'] == 'IrqaaulLw'
+    assert len(family_facets['target']['stable_masks']) == 34
+    assert len(family_facets['target']['facets_b_plus_ax']) == 27
+    assert family_facets['all_facets_have_proof_route'] and not family_facets['family_all_m_all_weights_claim']
     print(json.dumps({'location': 'git_index' if args.git_index else 'worktree',
                       'artifact_hashes_checked': len(names), 'covered_types_exactly_once': 128,
                       'exact_census_occurrences': sum(occurrences.values()),
@@ -85,6 +91,7 @@ def main():
                       'generic_closure_exact_counterexamples': 1,
                       'cross_claw_template_graphs': 16384,
                       'rectangular_Gram_family_audit_sizes': 6,
+                      'all_weight_G1_facets': 27,
                       'status': 'integrity_checks_passed'}))
 
 

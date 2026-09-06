@@ -4,6 +4,15 @@ Date: 2026-09-06
 
 ## Verdict
 
+C006: [the selected ten-vertex G_1 is now proved hbar-perfect for ALL weights](../../experiments/pauli_fourth_moment_phase0/SCF_G1_ALL_WEIGHT_CLOSURE.md).
+Its complete STAB description has 27 facets and 34 vertices: 10 positivity,
+14 rank, two proper-support nonrank facets covered by the earlier theorem,
+and the C005 full-support facet. An independent rational edge-clipping
+algorithm proves completeness without cdd. Omitting the C005 facet creates
+three spurious vertices, each violating it by exactly 1/4. These are NOT
+quantum states. All 55 tests pass. The unbounded all-weight family theorem,
+unrestricted H-SCF and A-star novelty remain open.
+
 C005: [an exact signed rectangular Gram identity](../../experiments/pauli_fourth_moment_phase0/SCF_RECTANGULAR_GRAM_FAMILY.md)
 proves beta=3 for the selected ten-vertex weighting `ICXmtizr_` and for an
 explicit SCF family of order 2m+8 at every m>=0. The weighting is one on

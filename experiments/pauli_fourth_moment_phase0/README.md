@@ -1,9 +1,15 @@
 # Pauli fourth-moment phase 0
 
+C006 completed: [all-weight closure of G_1](SCF_G1_ALL_WEIGHT_CLOSURE.md).
+All 27 facets and 34 stable vertices are exactly complete under both cdd.gmp
+and a separate Fraction edge-clipping implementation. All weights are now
+proved for the selected ten-vertex graph, not every G_m or every SCF graph.
+The combined suite has 55 tests, including a geometrically missing facet.
+
 C005 completed: [signed rectangular Gram family theorem](SCF_RECTANGULAR_GRAM_FAMILY.md).
 An exact coherent identity proves the frozen ten-vertex facet and its
 unbounded fixed-weight family. This is not all-weight SCF perfection.
-The current suite has 45 tests; no numerical SDP was needed for C005.
+The suite at C005 had 45 tests; no numerical SDP was needed for C005.
 
 C004 completed as a [structural/operator proof gate](SCF_CROSS_CLAW_OPERATOR_GATE.md):
 36 one-sided-central cases, an exact cross-claw criterion and a C5 control

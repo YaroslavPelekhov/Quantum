@@ -171,6 +171,11 @@
       "sha256": "fdb524002c1e1ea94eb9e2f6d8024b8e092d3a4accabebe1645a660756b568c7"
     },
     {
+      "path": "scf_family_facet_closure.json",
+      "bytes": 12488,
+      "sha256": "02297efed092d9cfa47512465a06b17d81299faef765c520a4a9214c562e43ca"
+    },
+    {
       "path": "scf_gluing_obstruction.json",
       "bytes": 47008,
       "sha256": "a1d20e7307b230b806e8c0db2e76df48bc166d61ceb126a443144bde385ddd89"

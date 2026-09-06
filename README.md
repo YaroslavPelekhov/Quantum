@@ -1,6 +1,13 @@
 # Quantum x Evolutionary Computing Research Artifact
 
-Latest cycle C005 (2026-09-06):
+Latest cycle C006 (2026-09-06):
+[exact all-weight closure of the ten-vertex G_1](experiments/pauli_fourth_moment_phase0/SCF_G1_ALL_WEIGHT_CLOSURE.md).
+All 27 STAB facets and 34 stable vertices are verified by cdd.gmp and a
+separate standard-library rational edge-clipping algorithm. This establishes
+all nonnegative weights on one graph. All 55 tests pass; all-m all-weight
+perfection, unrestricted H-SCF, and A-star novelty remain open.
+
+Previous cycle C005 (2026-09-06):
 [exact signed rectangular Gram family theorem](experiments/pauli_fourth_moment_phase0/SCF_RECTANGULAR_GRAM_FAMILY.md).
 The frozen ten-vertex weighted facet now has exact beta three. A uniform
 proof extends it to an SCF family of 2m+8 vertices for every m>=0, with

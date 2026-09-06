@@ -467,3 +467,59 @@ Chapman--Elman--Mann framework. Exact polyhedral enumeration and facet-wise
 implication are established tools, not algorithmic novelty. The all-m
 facet-description and gear identification question stays for a separate
 registered cycle; C006 cannot establish an unbounded all-weight theorem.
+
+### C006 result — COMPLETE, all-weight theorem for G_1
+
+Exact cdd.gmp enumeration finds 34 stable vertices and 27 facets: ten
+nonnegativity, fourteen rank, two seven-vertex proper-support nonrank,
+and just one full-support nonrank facet, exactly the C005 weighting.
+The two proper supports are componentwise SCF and covered by the existing
+order-nine all-weight theorem. Hence every facet has a quantum proof,
+which proves beta(G_1,w)=alpha(G_1,w) for all nonnegative real weights.
+The graph is the stored frontier target `ICXmtizr_` up to the C005 map.
+
+An independent standard-library Fraction algorithm, with no cdd or graph
+library, starts from all 1,024 cube vertices and performs exact halfspace
+edge clipping. Active-constraint rank detects all crossing edges, including
+degenerate cases. Its complete final vertex set equals all 34 stable
+incidence vectors. Cube boundedness, facet validity and facet affine rank
+are checked independently. Deleting the C005 facet produces three exact
+extra vertices; each has removed-facet value 13/4 rather than bound three.
+These are classical completeness controls, NOT physical quantum states.
+
+Implementation correction retained: the initial NEW discovery classifier
+used maximal cliques only and incorrectly marked both seven-vertex supports
+as non-SCF. The independent all-subsets classifier correctly accepted both.
+Their simplicial cliques are all nonmaximal. Replacing the new search by
+all-clique enumeration fixes the error; a dedicated regression records it.
+The pre-existing order-nine classifier already enumerated all cliques, so
+its census and theorems were unaffected. No SCF heredity counterexample was
+found; the primary CEM Section IV.3 explicitly states that heredity.
+
+Ten new tests and all 55 combined SCF tests pass. C005 universal identities
+were reverified. No beta optimization, numerical SDP, larger family census,
+QPU, paid compute or outside coordination was performed. See
+`SCF_G1_ALL_WEIGHT_CLOSURE.md` and `scf_family_facet_closure.json`.
+
+The old C005 and frontier JSON retain their stage-specific scopes. C006
+does NOT prove every ten-vertex graph or all weights on every G_m. Exact
+enumeration, polyhedral clipping and BETA/STAB implication are established
+tools, not algorithmic novelty. H-SCF OPEN; A-star novelty NOT CONFIRMED.
+
+## C007 — next cycle: a uniform polyhedral gate, before more sizes
+
+Candidate R_m: for every m>=0, every nonrank facet of STAB(G_m) either has
+support S with alpha(G_m[S])<=2, or is the C005 full-support weighting up
+to positive scaling and graph automorphism. This precise claim would,
+combined with SCF rank, the already size-independent alpha<=2 theorem,
+and C005, prove all-weight perfection of this unbounded family.
+
+First adversarially audit alternate classical names and gear/clique-family
+polyhedral results using their actual hypotheses, not abstracts. Then
+preregister a bounded exact audit, for example m=0,2,3 as controls around
+the completed m=1 case. A single extra alpha>=3 nonrank facet refutes R_m;
+preserve its exact row and independent completeness certificate. Successful
+small cases require a uniform proof, possibly by classifying tight stable
+sets (all independent triples contain Z). Do not increase m without a
+specific proof obligation. Any need for a larger independent verifier must
+be preregistered and bounded; C006's cube checker is deliberately n<=10.

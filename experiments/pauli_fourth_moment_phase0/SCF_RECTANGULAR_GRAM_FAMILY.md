@@ -5,6 +5,10 @@ Status: exact computer-assisted family theorem, pending external review.
 This extends the existing Gram/envelope method. It is NOT a new SDP method,
 an all-weights theorem for this family, unrestricted H-SCF, or confirmed A-star novelty.
 
+Subsequent C006 addendum: [all weights on G_1 are now proved](SCF_G1_ALL_WEIGHT_CLOSURE.md)
+by a complete independent facet audit. The present C005 statement and its
+artifact remain fixed-weight; all-m all-weight perfection is still open.
+
 ## 1. Family and theorem
 
 For an arbitrary integer m>=0, define a bipartite root graph by its occupied
