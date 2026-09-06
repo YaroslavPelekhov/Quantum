@@ -532,3 +532,52 @@ small cases require a uniform proof, possibly by classifying tight stable
 sets (all independent triples contain Z). Do not increase m without a
 specific proof obligation. Any need for a larger independent verifier must
 be preregistered and bounded; C006's cube checker is deliberately n<=10.
+
+### C007 preregistration — 2026-09-06, before new family hulls
+
+Baseline `e2209f4`; no Python research process was running. The four known
+unrelated submodule/prior-art items remain untouched. Freeze R_m exactly
+as above. Audit m=0,1,2,3 (orders 8,10,12,14), with m=1 a C006 equality
+control. Do not extend the size list automatically. For each size enumerate
+ALL stable sets and ALL primitive facets over cdd.gmp rationals, roundtrip
+H/V, and classify nonrank facets by the exact independence number of their
+support. The sole allowed alpha-three nonrank orbit is the C005 weighting.
+One additional orbit falsifies R_m, not H-SCF. Save every row even on failure.
+
+Acceptance: reuse C006's independent Fraction edge-clipping method, with
+an explicit caller-selected cap raised ONLY to n<=14 for this cycle and
+five minutes per graph. Preserve the old default cap of ten. Recheck SCF
+componentwise by all cliques (not maximal cliques), facet root affine rank,
+every stable-set incidence vector, and the complete final vertex set.
+Check m=1 equals the old exact artifact. Corrupted and deliberately omitted
+facets must fail geometrically. No random seeds, beta optimization, numerical
+SDP, paid cloud or QPU. If a limit is reached, record the unverified case;
+do not promote it to a theorem. A finite pass is NOT an all-m proof.
+
+Prior-art gate read before enumeration: Galluccio--Gentile--Ventura's
+author preprint ORL2.pdf, Definitions 1-2 and Theorems 1-2, defines an
+eight-vertex gear and replacement of a simplicial edge. The two gear
+triples {a,b1,b2} and {c,d1,d2} are disjoint. In contrast ALL G_m triples
+contain Z, so no G_m contains an induced gear; hence the literal gear
+composition theorem cannot directly identify G_m as its output. This does
+not exclude fuzzy constructions, other liftings, or other classical names.
+The source definition/figure was inspected in a rendered PDF page.
+
+Letchford--Ventura, 'Strengthened Clique-Family Inequalities', Section 2.2
+and Theorem 1, were read. Ordinary clique-family coefficients d,d-1 with
+ratio two force d=2, making their rhs even; thus they cannot be exactly
+the primitive C005 rhs-three facet. Strengthened MIR/clique sums can behave
+differently. As a bounded PRIOR-ART IDENTIFICATION control, enumerate all
+subsets of maximal cliques on these four graphs and test q=2,...,p-1 with
+q<p/2 and p mod q !=0 against the stated strengthened formula. Record an
+exact clique-multiplicity certificate if it reproduces the C005 facet;
+failure to find one does not establish novelty. No integer-rounding rule
+may be applied to quantum squared profiles just because it holds on STAB.
+
+Pecher--Wagler, DOI 10.1016/j.disc.2009.03.031, warns that alpha-three
+claw-free facets can have arbitrarily many coefficients. Its publisher
+statement and concluding discussion were read, but no full classification
+theorem from it is used. The known alpha>=4 descriptions cannot simply be
+transferred to our alpha=3 family. All-m R_m still needs an independent
+uniform proof if the finite exact tests pass. Quantum novelty is separate
+from these classical polyhedral questions.
