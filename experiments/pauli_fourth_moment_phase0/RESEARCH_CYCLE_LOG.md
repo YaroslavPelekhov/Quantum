@@ -289,6 +289,10 @@ expansion must not be claimed without comparing their actual theorems.
 This source was checked as adjacent prior art, not certified to imply or
 contradict H-SCF. The missing quantum separator lemma remains unresolved.
 
+Clean-archive reproduction: commit `5567555` was exported to a new temporary
+directory. Rediscovery reproduced the C004 JSON hash exactly; all 50
+artifact hashes, the independent C004 verifier and all 37 tests passed.
+
 ## C005 — next bounded transfer/SOS cycle, not yet executed
 
 Use the FIRST stored order-ten frontier row, `ICXmtizr_`, weights
