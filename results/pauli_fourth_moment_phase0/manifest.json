@@ -1,5 +1,5 @@
 {
-  "generated_on": "2026-09-05",
+  "generated_on": "2026-09-06",
   "branch": "research/pauli-fourth-moment",
   "preregistration_commit": "c5b5006",
   "cache_not_committed": {
@@ -121,6 +121,11 @@
       "sha256": "78ae4aa18aa3c5775312958eae4609d05e0c6f966e30773cd8c9d3aea2de5f64"
     },
     {
+      "path": "scf_coordinate_compatibility.json",
+      "bytes": 40127,
+      "sha256": "2e767795e5b7fef8c9555e28ae3448828ffeb6fdf44576ed2fcb22c0717253d3"
+    },
+    {
       "path": "scf_dual24_discovery.npz",
       "bytes": 6034440,
       "sha256": "00bed6a033ed336f39395b28e1f5d84e7c421d1483070c2ac28d5af234bb8631"
@@ -214,6 +219,11 @@
       "path": "scf_rank_two_lift.json",
       "bytes": 458108,
       "sha256": "2f80ff9e5237605932769da0c3078774e9d9f368ddadc5c138ccab86eaa006cd"
+    },
+    {
+      "path": "scf_separator_coverage.json",
+      "bytes": 39305,
+      "sha256": "3aefebe69900ff0a6b74d8836547f55393aa2905865de762ace79706d140897c"
     },
     {
       "path": "scf_signed_cycle_certificate.json",

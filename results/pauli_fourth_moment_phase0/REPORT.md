@@ -4,6 +4,16 @@ Date: 2026-09-05
 
 ## Verdict
 
+2026-09-06 research-cycle update: C001 exactly audits 47 weighted types
+(46 distinct graph6 inputs); every graph has a two-clique separator, but
+11 types require at least two explicit pair coordinates. C002 finds eight
+exact abstract profiles whose individual pair probabilities can agree but
+whose full boundary laws cannot. Type 33 forces the sum of two pair events
+to 1/4 versus 1/2. These refute proof shortcuts, not the quantum conjecture.
+See [the cycle report](../../experiments/pauli_fourth_moment_phase0/SCF_BOUNDARY_ROUTE_AUDIT.md)
+and [the research plan](../../experiments/pauli_fourth_moment_phase0/RESEARCH_PROGRAM_RU.md).
+The current combined suite has 23 passing tests.
+
 Latest general-proof result: **weighted SCF perfection for arbitrary vertex
 count when `alpha(G)<=2`**, plus clique-separator closure. The rank-to-weight
 proof is analytic; its implementation audit checks 177,287 exact extreme

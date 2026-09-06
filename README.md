@@ -1,5 +1,14 @@
 # Quantum x Evolutionary Computing Research Artifact
 
+Research program started 2026-09-06:
+[full Russian plan](experiments/pauli_fourth_moment_phase0/RESEARCH_PROGRAM_RU.md),
+[cycle log](experiments/pauli_fourth_moment_phase0/RESEARCH_CYCLE_LOG.md), and
+[exact boundary-route results](experiments/pauli_fourth_moment_phase0/SCF_BOUNDARY_ROUTE_AUDIT.md).
+Two preregistered cycles completed: 47 weighted cases audited for separator
+coverage; eight exact examples disprove coordinatewise-only compatibility.
+The combined suite has 23 passing tests. These diagnostics refine the proof
+obligation; unrestricted weighted SCF perfection and A-star novelty remain open.
+
 Latest general-proof continuation (2026-09-05):
 [size-independent rank-to-weight lifting and the separator obstruction](experiments/pauli_fourth_moment_phase0/SCF_GENERALIZATION_THEOREMS.md).
 Weighted SCF perfection is now proved for **arbitrary vertex count when

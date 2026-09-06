@@ -1,5 +1,10 @@
 # Pauli fourth-moment phase 0
 
+Current continuation: [research program](RESEARCH_PROGRAM_RU.md),
+[cycle log](RESEARCH_CYCLE_LOG.md), and [boundary-route audit](SCF_BOUNDARY_ROUTE_AUDIT.md).
+The C001/C002 scripts and independent verifiers distinguish structural
+coverage, coordinatewise compatibility, and genuine quantum proof obligations.
+
 This experiment tests a concrete route to the finite-exponent fractional
 colouring question for large Pauli expectations.  The frozen hypothesis is
 the weighted identity `beta_4(G,w)=alpha(G,w)`; if true, it implies

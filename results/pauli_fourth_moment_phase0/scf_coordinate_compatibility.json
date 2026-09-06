@@ -1,0 +1,2188 @@
+{
+  "experiment": "C002_coordinatewise_boundary_compatibility",
+  "date": "2026-09-06",
+  "preregistration_commit": "b70d719",
+  "coverage_source_sha256": "3aefebe69900ff0a6b74d8836547f55393aa2905865de762ace79706d140897c",
+  "attacks": 11,
+  "controls": 3,
+  "exact_obstructions": 8,
+  "quantum_conjecture_falsified": false,
+  "records": [
+    {
+      "label": "order9_residual_15",
+      "graph6": "HEhethm",
+      "boundary": {
+        "separator": [
+          0,
+          1,
+          6,
+          7
+        ],
+        "clique_cover": [
+          [
+            1,
+            6
+          ],
+          [
+            0,
+            7
+          ]
+        ],
+        "pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "left": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "right": [
+          0,
+          1,
+          3,
+          6,
+          7
+        ]
+      },
+      "weights": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1",
+        "1/2",
+        "1"
+      ],
+      "stable_bound": "3/2",
+      "numerical_lp_value": 1.5,
+      "numerical_gap": 0.0,
+      "status": "no_violation_for_this_objective_not_an_exact_upper_certificate",
+      "role": "attack"
+    },
+    {
+      "label": "order9_residual_33",
+      "graph6": "HQjRexz",
+      "boundary": {
+        "separator": [
+          0,
+          1,
+          3,
+          7
+        ],
+        "clique_cover": [
+          [
+            1,
+            3,
+            7
+          ],
+          [
+            0
+          ]
+        ],
+        "pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "left": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6,
+          7,
+          8
+        ],
+        "right": [
+          0,
+          1,
+          3,
+          5,
+          7
+        ]
+      },
+      "weights": [
+        "1/2",
+        "1",
+        "1/2",
+        "1",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1",
+        "1"
+      ],
+      "stable_bound": "3/2",
+      "numerical_lp_value": 1.625,
+      "numerical_gap": 0.125,
+      "profile": [
+        "1/2",
+        "1/4",
+        "0",
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "pairwise_decompositions": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "left": [
+            {
+              "stable_set": [
+                0,
+                1
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                3,
+                4
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                6,
+                7
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                0,
+                8
+              ],
+              "probability": "1/4"
+            }
+          ],
+          "right": [
+            {
+              "stable_set": [
+                0,
+                1
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                0,
+                3
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                5
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                7
+              ],
+              "probability": "1/4"
+            }
+          ]
+        },
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "left": [
+            {
+              "stable_set": [
+                0,
+                3
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                1,
+                4
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                6,
+                7
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                0,
+                8
+              ],
+              "probability": "1/4"
+            }
+          ],
+          "right": [
+            {
+              "stable_set": [
+                0,
+                1
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                0,
+                3
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                5
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                7
+              ],
+              "probability": "1/4"
+            }
+          ]
+        }
+      ],
+      "exact_profile_value": "13/8",
+      "exact_gap": "1/8",
+      "status": "exact_coordinatewise_gluing_obstruction",
+      "is_physical_quantum_counterexample": false,
+      "joint_pair_sum_ranges": {
+        "left": {
+          "lower": "1/4",
+          "lower_dual": [
+            "-1",
+            "1",
+            "1",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          "upper": "1/4",
+          "upper_dual": [
+            "-1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "1",
+            "1"
+          ]
+        },
+        "right": {
+          "lower": "1/2",
+          "lower_dual": [
+            "-1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "upper": "1/2",
+          "upper_dual": [
+            "0",
+            "0",
+            "-1",
+            "-1",
+            "0",
+            "0"
+          ]
+        }
+      },
+      "role": "attack"
+    },
+    {
+      "label": "order10_frontier_1",
+      "graph6": "IEhethm]g",
+      "boundary": {
+        "separator": [
+          1,
+          2,
+          7,
+          8
+        ],
+        "clique_cover": [
+          [
+            2,
+            7
+          ],
+          [
+            1,
+            8
+          ]
+        ],
+        "pairs": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        "left": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6,
+          7,
+          8,
+          9
+        ],
+        "right": [
+          1,
+          2,
+          5,
+          7,
+          8
+        ]
+      },
+      "weights": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "2",
+        "1",
+        "2",
+        "1"
+      ],
+      "stable_bound": "3",
+      "numerical_lp_value": 3.0,
+      "numerical_gap": 0.0,
+      "status": "no_violation_for_this_objective_not_an_exact_upper_certificate",
+      "role": "attack"
+    },
+    {
+      "label": "order10_frontier_2",
+      "graph6": "IEhethmmw",
+      "boundary": {
+        "separator": [
+          1,
+          2,
+          7,
+          8
+        ],
+        "clique_cover": [
+          [
+            2,
+            7
+          ],
+          [
+            1,
+            8
+          ]
+        ],
+        "pairs": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        "left": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6,
+          7,
+          8,
+          9
+        ],
+        "right": [
+          1,
+          2,
+          5,
+          7,
+          8
+        ]
+      },
+      "weights": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "2",
+        "1",
+        "2",
+        "2"
+      ],
+      "stable_bound": "3",
+      "numerical_lp_value": 3.25,
+      "numerical_gap": 0.25,
+      "profile": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "0",
+        "0",
+        "1/4",
+        "1/2",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "pairwise_decompositions": [
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "left": [
+            {
+              "stable_set": [
+                2,
+                6
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                6,
+                7
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                0,
+                8
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                1,
+                9
+              ],
+              "probability": "1/4"
+            }
+          ],
+          "right": [
+            {
+              "stable_set": [
+                2
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                5
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                1,
+                7
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                8
+              ],
+              "probability": "1/4"
+            }
+          ]
+        },
+        {
+          "pair": [
+            1,
+            7
+          ],
+          "left": [
+            {
+              "stable_set": [
+                2,
+                6
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                6,
+                7
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                0,
+                8
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                1,
+                9
+              ],
+              "probability": "1/4"
+            }
+          ],
+          "right": [
+            {
+              "stable_set": [],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                1,
+                2
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                5
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                7,
+                8
+              ],
+              "probability": "1/4"
+            }
+          ]
+        },
+        {
+          "pair": [
+            7,
+            8
+          ],
+          "left": [
+            {
+              "stable_set": [
+                2,
+                6
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                6,
+                7
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                0,
+                8
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                1,
+                9
+              ],
+              "probability": "1/4"
+            }
+          ],
+          "right": [
+            {
+              "stable_set": [
+                2
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                5
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                1,
+                7
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                8
+              ],
+              "probability": "1/4"
+            }
+          ]
+        }
+      ],
+      "exact_profile_value": "13/4",
+      "exact_gap": "1/4",
+      "status": "exact_coordinatewise_gluing_obstruction",
+      "is_physical_quantum_counterexample": false,
+      "role": "attack"
+    },
+    {
+      "label": "order10_frontier_7",
+      "graph6": "IEhuTzZmW",
+      "boundary": {
+        "separator": [
+          0,
+          1,
+          4,
+          8
+        ],
+        "clique_cover": [
+          [
+            1,
+            8
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "left": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9
+        ],
+        "right": [
+          0,
+          1,
+          4,
+          6,
+          8
+        ]
+      },
+      "weights": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "2",
+        "1",
+        "1",
+        "2",
+        "2",
+        "1"
+      ],
+      "stable_bound": "3",
+      "numerical_lp_value": 3.0,
+      "numerical_gap": 0.0,
+      "status": "no_violation_for_this_objective_not_an_exact_upper_certificate",
+      "role": "attack"
+    },
+    {
+      "label": "order10_frontier_12",
+      "graph6": "IEhurxnig",
+      "boundary": {
+        "separator": [
+          3,
+          4,
+          6,
+          9
+        ],
+        "clique_cover": [
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            9
+          ]
+        ],
+        "pairs": [
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            9
+          ]
+        ],
+        "left": [
+          0,
+          3,
+          4,
+          6,
+          9
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "weights": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "2",
+        "1",
+        "2",
+        "1",
+        "2",
+        "2"
+      ],
+      "stable_bound": "3",
+      "numerical_lp_value": 3.25,
+      "numerical_gap": 0.25,
+      "profile": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/2",
+        "1/4",
+        "0",
+        "1/4",
+        "0",
+        "1/4",
+        "1/4"
+      ],
+      "pairwise_decompositions": [
+        {
+          "pair": [
+            3,
+            4
+          ],
+          "left": [
+            {
+              "stable_set": [
+                0
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                3,
+                4
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                6
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                3,
+                9
+              ],
+              "probability": "1/4"
+            }
+          ],
+          "right": [
+            {
+              "stable_set": [
+                3,
+                4
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                2,
+                6
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                3,
+                8
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                1,
+                9
+              ],
+              "probability": "1/4"
+            }
+          ]
+        },
+        {
+          "pair": [
+            3,
+            9
+          ],
+          "left": [
+            {
+              "stable_set": [
+                0
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                3,
+                4
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                6
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                3,
+                9
+              ],
+              "probability": "1/4"
+            }
+          ],
+          "right": [
+            {
+              "stable_set": [
+                1,
+                4
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                2,
+                6
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                3,
+                8
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                3,
+                9
+              ],
+              "probability": "1/4"
+            }
+          ]
+        }
+      ],
+      "exact_profile_value": "13/4",
+      "exact_gap": "1/4",
+      "status": "exact_coordinatewise_gluing_obstruction",
+      "is_physical_quantum_counterexample": false,
+      "role": "attack"
+    },
+    {
+      "label": "order10_frontier_14",
+      "graph6": "IEhurxnjg",
+      "boundary": {
+        "separator": [
+          3,
+          4,
+          6,
+          9
+        ],
+        "clique_cover": [
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            9
+          ]
+        ],
+        "pairs": [
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            9
+          ]
+        ],
+        "left": [
+          0,
+          3,
+          4,
+          6,
+          9
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "weights": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "2",
+        "1",
+        "2",
+        "1",
+        "2",
+        "2"
+      ],
+      "stable_bound": "3",
+      "numerical_lp_value": 3.25,
+      "numerical_gap": 0.25,
+      "profile": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/2",
+        "1/4",
+        "0",
+        "1/4",
+        "0",
+        "1/4",
+        "1/4"
+      ],
+      "pairwise_decompositions": [
+        {
+          "pair": [
+            3,
+            4
+          ],
+          "left": [
+            {
+              "stable_set": [
+                0
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                3,
+                4
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                6
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                3,
+                9
+              ],
+              "probability": "1/4"
+            }
+          ],
+          "right": [
+            {
+              "stable_set": [
+                3,
+                4
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                2,
+                6
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                3,
+                8
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                1,
+                9
+              ],
+              "probability": "1/4"
+            }
+          ]
+        },
+        {
+          "pair": [
+            3,
+            9
+          ],
+          "left": [
+            {
+              "stable_set": [
+                0
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                3,
+                4
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                6
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                3,
+                9
+              ],
+              "probability": "1/4"
+            }
+          ],
+          "right": [
+            {
+              "stable_set": [
+                1,
+                4
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                2,
+                6
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                3,
+                8
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                3,
+                9
+              ],
+              "probability": "1/4"
+            }
+          ]
+        }
+      ],
+      "exact_profile_value": "13/4",
+      "exact_gap": "1/4",
+      "status": "exact_coordinatewise_gluing_obstruction",
+      "is_physical_quantum_counterexample": false,
+      "role": "attack"
+    },
+    {
+      "label": "order10_frontier_23",
+      "graph6": "IEhutx|\\g",
+      "boundary": {
+        "separator": [
+          3,
+          4,
+          6,
+          7
+        ],
+        "clique_cover": [
+          [
+            4,
+            7
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "pairs": [
+          [
+            3,
+            4
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "left": [
+          0,
+          3,
+          4,
+          6,
+          7
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "weights": [
+        "1",
+        "1",
+        "1",
+        "2",
+        "1",
+        "2",
+        "1",
+        "2",
+        "2",
+        "1"
+      ],
+      "stable_bound": "3",
+      "numerical_lp_value": 3.25,
+      "numerical_gap": 0.25,
+      "profile": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/2",
+        "1/4",
+        "1/4",
+        "0",
+        "0"
+      ],
+      "pairwise_decompositions": [
+        {
+          "pair": [
+            3,
+            4
+          ],
+          "left": [
+            {
+              "stable_set": [
+                0
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                3
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                4
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                6,
+                7
+              ],
+              "probability": "1/4"
+            }
+          ],
+          "right": [
+            {
+              "stable_set": [
+                2,
+                3
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                4,
+                5
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                5,
+                6
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                1,
+                7
+              ],
+              "probability": "1/4"
+            }
+          ]
+        },
+        {
+          "pair": [
+            6,
+            7
+          ],
+          "left": [
+            {
+              "stable_set": [
+                0
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                3,
+                4
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                6
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                7
+              ],
+              "probability": "1/4"
+            }
+          ],
+          "right": [
+            {
+              "stable_set": [
+                2,
+                3
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                4,
+                5
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                5,
+                6
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                1,
+                7
+              ],
+              "probability": "1/4"
+            }
+          ]
+        }
+      ],
+      "exact_profile_value": "13/4",
+      "exact_gap": "1/4",
+      "status": "exact_coordinatewise_gluing_obstruction",
+      "is_physical_quantum_counterexample": false,
+      "role": "attack"
+    },
+    {
+      "label": "order10_frontier_25",
+      "graph6": "IEhutx|\\w",
+      "boundary": {
+        "separator": [
+          3,
+          4,
+          6,
+          7
+        ],
+        "clique_cover": [
+          [
+            4,
+            7
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "pairs": [
+          [
+            3,
+            4
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "left": [
+          0,
+          3,
+          4,
+          6,
+          7
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "weights": [
+        "1",
+        "1",
+        "1",
+        "2",
+        "1",
+        "2",
+        "1",
+        "2",
+        "2",
+        "2"
+      ],
+      "stable_bound": "3",
+      "numerical_lp_value": 3.25,
+      "numerical_gap": 0.25,
+      "profile": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4",
+        "0",
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "pairwise_decompositions": [
+        {
+          "pair": [
+            3,
+            4
+          ],
+          "left": [
+            {
+              "stable_set": [
+                0
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                3
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                4
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                6,
+                7
+              ],
+              "probability": "1/4"
+            }
+          ],
+          "right": [
+            {
+              "stable_set": [
+                2,
+                3
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                1,
+                7
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                6,
+                8
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                4,
+                9
+              ],
+              "probability": "1/4"
+            }
+          ]
+        },
+        {
+          "pair": [
+            6,
+            7
+          ],
+          "left": [
+            {
+              "stable_set": [
+                0
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                3,
+                4
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                6
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                7
+              ],
+              "probability": "1/4"
+            }
+          ],
+          "right": [
+            {
+              "stable_set": [
+                2,
+                3
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                1,
+                7
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                6,
+                8
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                4,
+                9
+              ],
+              "probability": "1/4"
+            }
+          ]
+        }
+      ],
+      "exact_profile_value": "13/4",
+      "exact_gap": "1/4",
+      "status": "exact_coordinatewise_gluing_obstruction",
+      "is_physical_quantum_counterexample": false,
+      "role": "attack"
+    },
+    {
+      "label": "order10_frontier_32",
+      "graph6": "IQjVJr\\l_",
+      "boundary": {
+        "separator": [
+          0,
+          2,
+          7,
+          8
+        ],
+        "clique_cover": [
+          [
+            2,
+            7
+          ],
+          [
+            0,
+            8
+          ]
+        ],
+        "pairs": [
+          [
+            0,
+            7
+          ],
+          [
+            2,
+            8
+          ]
+        ],
+        "left": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "right": [
+          0,
+          2,
+          4,
+          7,
+          8
+        ]
+      },
+      "weights": [
+        "2",
+        "1",
+        "1",
+        "1",
+        "1",
+        "2",
+        "1",
+        "1",
+        "2",
+        "1"
+      ],
+      "stable_bound": "3",
+      "numerical_lp_value": 3.25,
+      "numerical_gap": 0.25,
+      "profile": [
+        "1/4",
+        "0",
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/2",
+        "1/4",
+        "1/4",
+        "1/4",
+        "0"
+      ],
+      "pairwise_decompositions": [
+        {
+          "pair": [
+            0,
+            7
+          ],
+          "left": [
+            {
+              "stable_set": [
+                0,
+                3
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                2,
+                5
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                5,
+                7
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                6,
+                8
+              ],
+              "probability": "1/4"
+            }
+          ],
+          "right": [
+            {
+              "stable_set": [
+                0
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                4
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                7
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                2,
+                8
+              ],
+              "probability": "1/4"
+            }
+          ]
+        },
+        {
+          "pair": [
+            2,
+            8
+          ],
+          "left": [
+            {
+              "stable_set": [
+                0,
+                3
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                2,
+                5
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                5,
+                7
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                6,
+                8
+              ],
+              "probability": "1/4"
+            }
+          ],
+          "right": [
+            {
+              "stable_set": [
+                2
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                4
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                0,
+                7
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                8
+              ],
+              "probability": "1/4"
+            }
+          ]
+        }
+      ],
+      "exact_profile_value": "13/4",
+      "exact_gap": "1/4",
+      "status": "exact_coordinatewise_gluing_obstruction",
+      "is_physical_quantum_counterexample": false,
+      "role": "attack"
+    },
+    {
+      "label": "order10_frontier_33",
+      "graph6": "IQjVJr\\|_",
+      "boundary": {
+        "separator": [
+          0,
+          2,
+          7,
+          8
+        ],
+        "clique_cover": [
+          [
+            2,
+            7
+          ],
+          [
+            0,
+            8
+          ]
+        ],
+        "pairs": [
+          [
+            0,
+            7
+          ],
+          [
+            2,
+            8
+          ]
+        ],
+        "left": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "right": [
+          0,
+          2,
+          4,
+          7,
+          8
+        ]
+      },
+      "weights": [
+        "2",
+        "1",
+        "1",
+        "1",
+        "1",
+        "2",
+        "1",
+        "1",
+        "2",
+        "1"
+      ],
+      "stable_bound": "3",
+      "numerical_lp_value": 3.25,
+      "numerical_gap": 0.25,
+      "profile": [
+        "1/4",
+        "0",
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/2",
+        "1/4",
+        "1/4",
+        "1/4",
+        "0"
+      ],
+      "pairwise_decompositions": [
+        {
+          "pair": [
+            0,
+            7
+          ],
+          "left": [
+            {
+              "stable_set": [
+                0,
+                3
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                2,
+                5
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                5,
+                7
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                6,
+                8
+              ],
+              "probability": "1/4"
+            }
+          ],
+          "right": [
+            {
+              "stable_set": [
+                0
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                4
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                7
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                2,
+                8
+              ],
+              "probability": "1/4"
+            }
+          ]
+        },
+        {
+          "pair": [
+            2,
+            8
+          ],
+          "left": [
+            {
+              "stable_set": [
+                0,
+                3
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                2,
+                5
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                5,
+                7
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                6,
+                8
+              ],
+              "probability": "1/4"
+            }
+          ],
+          "right": [
+            {
+              "stable_set": [
+                2
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                4
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                0,
+                7
+              ],
+              "probability": "1/4"
+            },
+            {
+              "stable_set": [
+                8
+              ],
+              "probability": "1/4"
+            }
+          ]
+        }
+      ],
+      "exact_profile_value": "13/4",
+      "exact_gap": "1/4",
+      "status": "exact_coordinatewise_gluing_obstruction",
+      "is_physical_quantum_counterexample": false,
+      "role": "attack"
+    },
+    {
+      "label": "order9_residual_5",
+      "graph6": "HCXmtiz",
+      "boundary": {
+        "separator": [
+          6,
+          7,
+          8
+        ],
+        "clique_cover": [
+          [
+            7,
+            8
+          ],
+          [
+            6
+          ]
+        ],
+        "pairs": [
+          [
+            6,
+            7
+          ]
+        ],
+        "left": [
+          0,
+          3,
+          6,
+          7,
+          8
+        ],
+        "right": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "weights": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1",
+        "1/2",
+        "1",
+        "1/2",
+        "1"
+      ],
+      "stable_bound": "3/2",
+      "numerical_lp_value": 1.5,
+      "numerical_gap": 0.0,
+      "status": "no_violation_for_this_objective_not_an_exact_upper_certificate",
+      "role": "single_pair_control"
+    },
+    {
+      "label": "order9_residual_7",
+      "graph6": "GQuvSw",
+      "boundary": {
+        "separator": [
+          0,
+          5,
+          6
+        ],
+        "clique_cover": [
+          [
+            0,
+            6
+          ],
+          [
+            5
+          ]
+        ],
+        "pairs": [
+          [
+            5,
+            6
+          ]
+        ],
+        "left": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "right": [
+          0,
+          2,
+          5,
+          6
+        ]
+      },
+      "weights": [
+        "1",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1",
+        "1/2",
+        "1",
+        "1/2"
+      ],
+      "stable_bound": "3/2",
+      "numerical_lp_value": 1.5,
+      "numerical_gap": 0.0,
+      "status": "no_violation_for_this_objective_not_an_exact_upper_certificate",
+      "role": "single_pair_control"
+    },
+    {
+      "label": "order9_residual_9",
+      "graph6": "HCZTmyz",
+      "boundary": {
+        "separator": [
+          4,
+          5,
+          7
+        ],
+        "clique_cover": [
+          [
+            5,
+            7
+          ],
+          [
+            4
+          ]
+        ],
+        "pairs": [
+          [
+            4,
+            5
+          ]
+        ],
+        "left": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "right": [
+          1,
+          4,
+          5,
+          7
+        ]
+      },
+      "weights": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1",
+        "1/2",
+        "1/2",
+        "1",
+        "1"
+      ],
+      "stable_bound": "3/2",
+      "numerical_lp_value": 1.5,
+      "numerical_gap": 0.0,
+      "status": "no_violation_for_this_objective_not_an_exact_upper_certificate",
+      "role": "single_pair_control"
+    }
+  ]
+}

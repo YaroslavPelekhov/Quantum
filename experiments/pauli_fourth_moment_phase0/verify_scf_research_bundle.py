@@ -61,11 +61,16 @@ def main():
     assert gluing['exact_obstructions'] == 13 and not gluing['quantum_claim_falsified']
     assert pair['separator_failures'] == 5 and not pair['quantum_hbar_claim_falsified']
     assert rank_two['antiblocker_vertices'] == 177287
+    coverage = json.loads(read('scf_separator_coverage.json'))
+    coordinates = json.loads(read('scf_coordinate_compatibility.json'))
+    assert coverage['weighted_types'] == 47 and coverage['distinct_graph6'] == 46
+    assert coordinates['exact_obstructions'] == 8 and not coordinates['quantum_conjecture_falsified']
     print(json.dumps({'location': 'git_index' if args.git_index else 'worktree',
                       'artifact_hashes_checked': len(names), 'covered_types_exactly_once': 128,
                       'exact_census_occurrences': sum(occurrences.values()),
                       'frontier_attacks': len(frontier['attacks']),
                       'generalization_obstructions': 13, 'pair_recipe_counterexamples': 5,
+                      'separator_types': 47, 'coordinatewise_obstructions': 8,
                       'status': 'integrity_checks_passed'}))
 
 

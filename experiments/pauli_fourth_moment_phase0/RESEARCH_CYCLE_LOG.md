@@ -60,3 +60,48 @@ for candidate rationalization, reject unless all equalities, inequalities,
 and strict violation hold exactly. No random seed is needed. The acceptance
 verifier must not import SciPy, NumPy, or NetworkX. No automatic expansion
 of graph order or paid compute is authorized by this protocol.
+
+### C002 result — COMPLETE
+
+Eight of 11 multi-pair attacks produce exact rational obstructions. Three
+attacks and all three controls have no numerical violation for the tested
+objective; no exact upper certificate is claimed for those six rows.
+Type 33 supplies the cleanest example: either of two boundary coordinates
+can separately agree, but their sum is forced to 1/4 on the left and 1/2
+on the right. Exact local dual inequalities certify both forced sums.
+The old weighted facet is violated by 1/8. See
+[the boundary-route note](SCF_BOUNDARY_ROUTE_AUDIT.md) for the full example.
+
+All eight witnesses pass a standard-library rational verifier. The combined
+suite now passes 23 tests. H-SCF remains OPEN; these are abstract marginal
+counterexamples, not quantum counterexamples or a new A-star claim.
+
+## C003 — next cycle; prerequisite audit, not yet executed
+
+Investigate the proposed closure of hbar-perfectness under a separator
+which is a clique with one edge missing. This is a quantum statement,
+stronger than the already proved classical one-pair gluing equivalence.
+
+Before attempting a proof:
+
+1. Read the exact graph-operation statements in Xu et al., including copy,
+   split, join and induced-subgraph rules; check for a known closure result.
+2. Freeze a structural screen on all 18 order-eight and 1,419 order-nine
+   published imperfect benchmark entries at upstream commit
+   `467eb611c09631fcf310da8dc73c35cb3b8fe098`. Verify the existing pinned hashes.
+3. Search for clique-minus-one-edge separators with the C001 exact method.
+   Do NOT call an imperfect graph alone a counterexample to closure: both
+   sides must separately have rigorous hbar-perfectness certificates.
+4. If a closure counterexample survives, extract/recompute a physical
+   witness and certify the positive gap exactly. Numerical benchmark labels
+   are discovery aids, not final proof. This would limit the generic rule,
+   not H-SCF unless the combined graph is independently SCF.
+5. If no counterexample appears, derive the operator statement explicitly;
+   finite survival is not proof. Do not repeat C001/C002 under a new label.
+
+This is the next bounded gate, not a promise that the closure statement is
+true. The multi-pair case still requires simultaneous compatibility even
+if this narrower closure can be proved.
+
+Continuation is scheduled in the same task every two hours. Product usage
+limits remain in force; no usage reset or paid resource was requested or used.
