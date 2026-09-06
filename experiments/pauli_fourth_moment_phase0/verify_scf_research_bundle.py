@@ -97,6 +97,18 @@ def main():
     assert len(core['points']) == 22 and len(core['facets_b_plus_ax']) == 24
     assert len(core['lower_z_facets']) == 3 and not core['unrestricted_SCF_theorem']
     assert not core['A_star_confirmed']
+    three_row = json.loads(read('scf_three_row_gate.json'))
+    three_target = json.loads(read('scf_three_row_target.json'))
+    assert [r['cell_mask'] for r in three_row['records']] == list(range(4096))
+    assert three_row['counts']['SCF'] == three_row['counts']['claw_free'] == 2120
+    assert three_row['S_survives_finite_audit'] and not three_row['new_quantum_theorem']
+    t = three_target['target']
+    assert t['graph6'] == 'K{S{aSfF~Fln' and len(t['stable_masks']) == 46
+    assert len(t['facets_b_plus_ax']) == 36 and t['full_one_two_row_is_facet']
+    assert Counter(r['route'] for r in t['proof_routes']) == {
+        'nonnegativity': 12, 'SCF_rank': 20, 'SCF_alpha_two': 3,
+        'unresolved_by_rank_alpha_two_order9': 1}
+    assert not three_target['all_weight_quantum_theorem'] and not three_target['A_star_confirmed']
     print(json.dumps({'location': 'git_index' if args.git_index else 'worktree',
                       'artifact_hashes_checked': len(names), 'covered_types_exactly_once': 128,
                       'exact_census_occurrences': sum(occurrences.values()),
@@ -109,6 +121,9 @@ def main():
                       'all_weight_G1_facets': 27,
                       'C007_finite_facets': 116,
                       'C007_lifted_core_facets': 24,
+                      'C008_structural_patterns': 4096,
+                      'C008_target_facets': 36,
+                      'C008_target_open_quantum_facets': 1,
                       'status': 'integrity_checks_passed'}))
 
 

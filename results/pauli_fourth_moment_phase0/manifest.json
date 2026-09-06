@@ -16,6 +16,16 @@
   },
   "artifacts": [
     {
+      "path": "scf_three_row_gate.json",
+      "bytes": 1553613,
+      "sha256": "47994eca3772c8d2abdb3cb1722c259d11b9477272aa85e6f44c259fcc4bc33f"
+    },
+    {
+      "path": "scf_three_row_target.json",
+      "bytes": 13974,
+      "sha256": "6c0778cba29c689aea2a5acbe48dc35abc288b8fbc8f77ca449aab7685bcfb26"
+    },
+    {
       "path": "scf_uniform_facet_gate.json",
       "bytes": 49206,
       "sha256": "7e83b5a5f04751d0a56507ff7fe2a978319a35faf0a6700a898a5371bbe954b8"

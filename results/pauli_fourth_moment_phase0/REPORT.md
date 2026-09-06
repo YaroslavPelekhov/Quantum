@@ -4,6 +4,20 @@ Date: 2026-09-06
 
 ## Verdict
 
+C008: [a uniform structural reduction identifies a new proof obligation](../../experiments/pauli_fourth_moment_phase0/SCF_THREE_ROW_STRUCTURAL_GATE.md).
+The three-row/two-row-one-column-selector construction is SCF exactly when
+the root outside column zero has matching number at most two. A classical
+small-cover argument separates bounded cores from the remaining unbounded
+row-pair cases; it is not an algorithmic novelty claim. The full 3-by-3
+target `K{S{aSfF~Fln` has 46 stable vertices and 36 independently complete
+facets, of which 35 have existing quantum proofs. Its only remaining row
+has light weights one, heavy weights two and classical bound three; the
+QUANTUM bound remains OPEN. The target is not a line graph, a C007 induced
+subgraph or a two-qubit G15 induced subgraph, and has no elementary twin,
+join or clique-separator reduction. The 4096-pattern structural audit and
+all 78 tests pass. No numerical beta search or QPU was used. C009 is the
+exact signed-Gram/transfer test of this one row, not another larger census.
+
 C007: [the entire unbounded G_m family is now proved hbar-perfect for ALL weights](../../experiments/pauli_fourth_moment_phase0/SCF_UNBOUNDED_ALL_WEIGHT_FAMILY.md).
 This is a uniform theorem for every integer m>=0, not an extrapolation
 from four exact hulls. A fixed-core joint-event polytope has 22 vertices,

@@ -1,5 +1,12 @@
 # Pauli fourth-moment phase 0
 
+C008 completed: [three-row structural gate](SCF_THREE_ROW_STRUCTURAL_GATE.md).
+An arbitrary-column structural proof and 4096-pattern exact audit isolate
+a 12-vertex target outside the earlier hereditary family. Its complete
+36-facet hull leaves exactly one quantum inequality unresolved. No beta
+optimization was run; all 78 tests pass. C009 must attack that operator
+obligation before another graph census.
+
 C007 completed: [all weights for the unbounded G_m family](SCF_UNBOUNDED_ALL_WEIGHT_FAMILY.md).
 A uniform classical refinement proof reduces arbitrary m to an exactly
 verified fixed core. All non-C005 positive inequalities have alpha<=2

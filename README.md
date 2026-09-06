@@ -1,6 +1,16 @@
 # Quantum x Evolutionary Computing Research Artifact
 
-Latest cycle C007 (2026-09-06):
+Latest cycle C008 (2026-09-06):
+[three-row structural reduction and a precisely isolated quantum target](experiments/pauli_fourth_moment_phase0/SCF_THREE_ROW_STRUCTURAL_GATE.md).
+A uniform claw/matching lemma is independently audited on all 4096 frozen
+root patterns. The selected 12-vertex SCF graph has 46 stable vertices and
+36 exact facets; prior theorems prove 35, leaving one quantum weighting
+OPEN. Disjoint triples, a five-wheel and binary rank six exclude C007's
+hereditary family, line graphs and the published two-qubit G15 respectively.
+All 78 tests pass. This is a structural/proof-target result, not a new
+quantum theorem or confirmed A-star novelty.
+
+Previous cycle C007 (2026-09-06):
 [all-weight Pauli uncertainty for every member of an unbounded SCF family](experiments/pauli_fourth_moment_phase0/SCF_UNBOUNDED_ALL_WEIGHT_FAMILY.md).
 For every m>=0, the graph G_m of order 2m+8 is hbar-perfect for all
 nonnegative weights. A fixed eight-vertex core, an exact joint-event

@@ -755,3 +755,79 @@ arXiv HTML. Existing free-fermion solvability alone is not the all-weight
 uncertainty theorem. A named-class reduction or known homogeneous-clique
 operation must be matched with its hypotheses before use. This cycle aims
 at a decisive structural target/reduction, not a claim of A-star novelty.
+
+### C008 completed — uniform structure, one unresolved quantum target
+
+The arbitrary-column proof shows F(E) is claw-free iff its noncentral root
+matching number is at most two. Every claw-free F(E) is SCF: use the
+central-column simplicial clique, or temporarily add that column and use
+SCF heredity. A classical cover of size at most two separates two-column
+cores of order <=12, mixed row/column cores of order <=10 up to known
+vertex splitting, and the unbounded two-row cases. Rows {0,1} reduce to
+C007; rows {0,2}/{1,2} remain a distinct conditional proof obligation.
+The full argument is in `SCF_THREE_ROW_STRUCTURAL_GATE.md`.
+
+All 4096 frozen root patterns pass independent verification. The matching
+histogram is {0:8,1:264,2:1848,3:1976}; exactly 2120 graphs are claw-free
+and SCF. Discovery's graph/matching implementation is checked by independent
+four-subset degree enumeration, root matchings and minimal covers, not by
+calling the same NetworkX routines. No mismatch or time limit occurred.
+
+The fixed target, full 3-by-3 lights plus three heavies, has graph6
+`K{S{aSfF~Fln`, 12 vertices, 46 stable incidence vectors and 36 facets.
+Both cdd.gmp and independent complete Fraction cube clipping verify the
+hull. Routes are 12 nonnegativity, 20 SCF rank, three SCF alpha-two supports,
+and ONE unresolved full facet: weights one on all nine lights, two on the
+three heavies, classical bound three. This is a reduction to a quantum
+proof obligation, not a quantum upper-bound proof or numerical beta result.
+
+The target has disjoint triples {0,4,8} and {1,5,6}, excluding every C007
+induced subgraph with alpha three. A five-wheel with hub 10 and rim
+(0,6,9,11,1) excludes line graphs. Binary adjacency rank six excludes the
+published two-qubit G15 hereditary class, whose rank is at most four.
+Independent checks find no copy/split pair, complete-join decomposition
+or clique separator. This does not exclude every classical graph name,
+every quantum theorem, or general lexicographic/module constructions.
+
+Prior-art comparison read Xu et al., Section III and Appendix A, including
+the copying/splitting definitions, their proofs, G15 proof and symplectic
+rank bound. Vertex splitting and the small-cover reduction are known tools,
+not novelty. The source swaps copy/split property numbers between the main
+text and appendix; we bind usage to adjacency definitions. The three-ROW
+selector variant has an explicit line-graph root using a triangle on the
+row nodes; the map passes all 4096 grid controls and closes that apparent
+extension as already covered. CEM's SCF definitions and heredity were
+also reread in the primary HTML. No PDF-based inference was needed.
+
+Nine new tests and the complete 78-test suite pass. Corrupt graph, matching,
+cover, claw and quantum-scope controls are rejected. Omitting the target's
+full facet fails geometrically. Both new verifier and its tests pass with
+`python -S`. No paid compute, QPU, beta optimization, external contact or
+unrelated-file mutation. Unrestricted H-SCF OPEN; A-star NOT CONFIRMED.
+
+New canonical hashes:
+
+- `scf_three_row_gate.json`, 1553613 bytes:
+  `47994eca3772c8d2abdb3cb1722c259d11b9477272aa85e6f44c259fcc4bc33f`.
+- `scf_three_row_target.json`, 13974 bytes:
+  `6c0778cba29c689aea2a5acbe48dc35abc288b8fbc8f77ca449aab7685bcfb26`.
+
+## C009 — next: a coherent Gram identity, not another census
+
+Preregister before computing: for the fixed C008 target use amplitudes
+a_j,b_j,c_j on rows A,B,C and r0,r1,rc on heavies. A candidate real sector
+matrix has rows a_j, K_j b_j, Lambda_j c_j, where
+K_j=-P_H0 P_H1 P_Aj P_Bj, Lambda_0=I, and
+Lambda_j=-P_A0 P_C0 P_Aj P_Cj for j=1,2. These are only CANDIDATE signs;
+their centrality, Hermitian involution relations and mutual consistency
+must be checked in the FULL universal graph algebra before use.
+
+With M=B B^T, test e1=tr(M)+r0^2+r1^2+rc^2,
+e2=e2(M)+(r0,r1) M[0:2,0:2] (r0,r1)^T+rc^2 ||B[:,0]||^2,
+and e3=det(M), including every zero odd transfer coefficient. Discovery
+and independent adjacent-letter rewriting must agree exactly. Only if
+these identities hold may C005's scalar envelope prove the full facet.
+The old factorization through a single Z is unavailable, since all three
+light rows now occupy all three columns. No numerical agreement alone
+closes this obligation, and no unrestricted all-column/SCF theorem follows
+from this fixed target without a separate uniform proof.
