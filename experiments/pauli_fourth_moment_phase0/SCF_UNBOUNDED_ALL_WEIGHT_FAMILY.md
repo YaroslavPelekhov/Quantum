@@ -215,6 +215,13 @@ imports no numerical optimizer. Run discovery in a clean archive, first
 compare the canonical UTF-8/LF hashes. Independent acceptance works with
 site packages disabled. No paid cloud or QPU was used.
 
+Clean-archive reproduction of source commit `99ccd89` regenerated both
+C007 JSON artifacts with identical canonical hashes. All 54 manifest
+artifacts passed integrity checks and all 69 tests passed again. Both
+C007 independent verifiers also passed under `python -S`. This separates
+discovery and acceptance algorithms on the same host; it is not external
+review or a formal proof-assistant verification.
+
 ## 7. Prior-art and significance boundary
 
 The original [gear-composition paper](https://www.iasi.cnr.it/~gentile/ClaudioGentileFiles/papers/ORL2.pdf)

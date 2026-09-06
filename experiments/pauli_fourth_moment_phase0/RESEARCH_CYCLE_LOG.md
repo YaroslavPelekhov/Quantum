@@ -680,6 +680,14 @@ Canonical new artifact hashes:
 No paid computation, QPU, numerical beta optimizer, external contact,
 or unrelated-file change. H-SCF remains OPEN; A-star is NOT CONFIRMED.
 
+Clean-archive reproduction of source commit `99ccd89`: both C007 discovery
+scripts regenerated the identical canonical hashes listed above. All 54
+artifact hashes passed in the exported directory, both new independent
+verifiers passed under `python -S`, and all 69 SCF tests passed again
+(19.441 seconds for the combined suite on this host). The exported source
+had no repository cache or uncommitted input. This is separate algorithmic
+verification and same-host clean reproduction, not external peer review.
+
 ## C008 — next structural transfer gate, not a larger G_m audit
 
 Follow Section 10 of `RESEARCH_PROGRAM_RU.md`: before a new census,
