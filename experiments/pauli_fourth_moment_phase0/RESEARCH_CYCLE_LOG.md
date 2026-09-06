@@ -128,3 +128,24 @@ to a candidate counterexample to the quantum closure rule. Discovery uses
 integer bitsets; verification will independently use graph-library
 connectivity/nonedge enumeration. Positive structural control: C4; negative
 control: K4. No quantum claim follows from a benchmark label alone.
+
+### C003 witness-extraction subprotocol — before optimization
+
+The screen finds 39 decompositions on nine order-eight entries and 5,314
+on 851 order-nine entries. Select the FIRST benchmark row, `GCrdrk`, which
+is the unique order-eight entry without an induced anti-C7. Its first
+separator is S={0,6,7}, with nonedge {0,7}. The sides have seven and four
+vertices. The seven-vertex side is not SCF, so do not use the SCF theorem on
+it directly. An exact preliminary hull has only clique facets and one
+rank facet supported on six vertices; certify that support and independently
+verify completeness of the hull before claiming local hbar-perfectness.
+
+The full graph's unique full-support facet is
+`(1,1,1,1,1,1,2,2).x<=3`. Use the pinned three-qubit Pauli realization in
+that benchmark row. Search at most 128 relative sign starts, at most 512
+see-saw iterations each; no QPU or paid resource. Accept only an explicit
+Gaussian-integer state whose rational squared-expectation value exceeds
+the exact enumerated stable bound. Try deterministic rounding scales
+1,2,3,4,5,8,10,16,32,64,128,1000,10000. Numerical survival/failure is not a
+certificate. Discovery state precision may be reduced only after checking
+the exact positive gap. No claim to discovery of the published G8 graph.
