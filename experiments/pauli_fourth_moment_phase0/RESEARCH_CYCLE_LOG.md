@@ -407,6 +407,11 @@ Classical nonrank families such as gear composition remain a necessary
 graph/facet identification check before claiming priority. No new graph
 family discovery or A-star novelty is asserted.
 
+Clean-archive reproduction: commit `45097d0` was exported to a new temporary
+directory. The C005 discovery script regenerated the exact same JSON hash;
+all 51 artifact hashes, the independent Gram verifier and all 45 tests
+passed. No local solver cache or prior-art checkout was required.
+
 ## C006 — next cycle: all-weight closure of the proved family
 
 First check whether the target G_1 has any additional full-support nonrank
