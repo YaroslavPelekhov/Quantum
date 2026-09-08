@@ -1,0 +1,37 @@
+{
+  "started_utc": "2026-09-08T22:40:24.944742+00:00",
+  "pid": 6880,
+  "pilot": true,
+  "wall_budget_seconds": 90.0,
+  "commit": "3237886dbd629c2c84f9f15f4ec746dbb342f3dd",
+  "code_hashes": {
+    "engine.py": "e856eb2a9bef68f3ef39b85a8377e69077d839351e553fafa0c5ed2a8714b3be",
+    "run_campaign.py": "e7123fa485a9a0ed943b47ef6b4432738b3af2207cdedd341fb67fb0bb96f01d",
+    "test_engine.py": "6825ebbccf488b9b79b37a96bb6c8f598f3ed773f96ea6b685dc7d3626d76d7b"
+  },
+  "protocol_sha256": "54edaac0ab29f79f2e739fdb5b0c146aadea8d9abf5f02fd9bb18b7a41d589f0",
+  "source_hashes": {
+    "almost_clique_closure_counterexample.json": "b897080440f1256a7019b93f066a2403180324190b9f67fb70534fe5c084af47",
+    "scf_two_xx_weight_c014.json": "976fca5645248f9264674e456ffd75c75891c92d7d09192fd721049fa0d7bc54"
+  },
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.16.3",
+    "networkx": "3.5",
+    "threadpoolctl": "3.6.0",
+    "psutil": "7.1.2"
+  },
+  "jobs": [
+    {
+      "index": 0,
+      "graph": "G8",
+      "frame": 0,
+      "noise": 0,
+      "rep": 0
+    }
+  ],
+  "type": "simulation_only",
+  "model_api_calls": false,
+  "QPU_calls": false
+}

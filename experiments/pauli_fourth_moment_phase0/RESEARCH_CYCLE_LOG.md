@@ -1066,3 +1066,24 @@ Source, builder, Russian review checklist and QA record are in paper/.
 No author identities/affiliations were invented; no journal/arXiv
 submission or external reviewer contact occurred. Publication priority
 and external mathematical review remain outstanding.
+
+## Experimental pivot — 2026-09-09 Moscow (2026-09-08 UTC)
+
+User requests multi-hour empirical research rather than further proof census.
+Registered operational Pauli protocol at 3237886 before held-out optimization.
+Six systems, three frames, five channels/strengths, eight repetitions, three
+equal-wall-budget methods. Primary endpoint is finite-measurement detection
+power under exact local channels, not the optimized quartic/proxy alone.
+G9 and antiC9 are held-out; C009 is a proved negative, C014 remains open.
+Generic significance optimization is already prior art (Jungnitsch 2010),
+as is noise-generated magic; these are explicitly excluded novelty claims.
+
+Twelve engine tests pass (last prelaunch rerun: 0.318 s). Development-only
+pilot completed one G8/no-noise cell in 2.781 s and reproduced 3.044815 > 3.
+Pilot uses 0.5 s/method and 32 Monte Carlo datasets, not the production
+budget of 3 s/method and 256 datasets. No held-out optimization used for
+tuning. Source, protocol and input hashes will be recorded by the runner.
+Production is capped at 10800 seconds and 720 complete paired cells; a
+numerical C014 violation pauses the campaign for independent review.
+This entry records prelaunch validation, not a completed production run.
+No QPU, paid API, circuit preparation demonstration or A* confirmation.

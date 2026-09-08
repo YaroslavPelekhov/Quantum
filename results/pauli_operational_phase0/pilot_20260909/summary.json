@@ -1,0 +1,82 @@
+{
+  "completed_paired_cells": 1,
+  "planned_paired_cells": 720,
+  "records": [
+    {
+      "graph": "G8",
+      "channel": "none",
+      "shots": 10000,
+      "method": "ideal_beta",
+      "cells": 1,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "none",
+      "shots": 10000,
+      "method": "noisy_beta",
+      "cells": 1,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "none",
+      "shots": 10000,
+      "method": "noisy_score",
+      "cells": 1,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "none",
+      "shots": 1000000,
+      "method": "ideal_beta",
+      "cells": 1,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "none",
+      "shots": 1000000,
+      "method": "noisy_beta",
+      "cells": 1,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "none",
+      "shots": 1000000,
+      "method": "noisy_score",
+      "cells": 1,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "none",
+      "shots": 10000000,
+      "method": "ideal_beta",
+      "cells": 1,
+      "mean_power": 0.9375
+    },
+    {
+      "graph": "G8",
+      "channel": "none",
+      "shots": 10000000,
+      "method": "noisy_beta",
+      "cells": 1,
+      "mean_power": 0.96875
+    },
+    {
+      "graph": "G8",
+      "channel": "none",
+      "shots": 10000000,
+      "method": "noisy_score",
+      "cells": 1,
+      "mean_power": 0.96875
+    }
+  ],
+  "numerical_C014_candidates": [],
+  "type": "simulation_only",
+  "top_novelty_confirmed": false,
+  "warning": "Prefix averages may have unequal coverage. Repetitions are not independent graph families."
+}

@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "pid": 6880,
+  "started_utc": "2026-09-08T22:40:24.944742+00:00",
+  "completed_cells": 1,
+  "planned_cells": 1,
+  "wall_budget_seconds": 90.0,
+  "active_job": {
+    "index": 0,
+    "graph": "G8",
+    "frame": 0,
+    "noise": 0,
+    "rep": 0
+  },
+  "elapsed_seconds": 2.7810000000026776,
+  "updated_utc": "2026-09-08T22:40:27.811195+00:00",
+  "errors": []
+}
