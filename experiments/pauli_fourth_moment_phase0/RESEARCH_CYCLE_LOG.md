@@ -906,6 +906,12 @@ construction theorem still needs external mathematical and priority review.
 
 All 95 SCF tests pass (30.543 seconds), including eight new C010 tests.
 
+Clean reproduction of df6f6c8 regenerated both C010 artifact hashes
+exactly, verified all 59 artifacts, reran the independent verifier with
+python -S, and passed all 95 tests (30.660 seconds) in a fresh archive.
+Only tracked phase-0 sources/results were archived; no uncommitted source
+was used. This is same-host reproduction, not external peer review.
+
 Next C011 (not registered/run): adversarially test the significance and
 coverage boundary of this completed construction. F(E) always has alpha<=3:
 lights use three rows and a heavy's nonneighbors form a clique. Therefore

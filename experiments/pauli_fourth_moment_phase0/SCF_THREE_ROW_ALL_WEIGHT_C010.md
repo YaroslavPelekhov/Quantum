@@ -154,3 +154,16 @@ Novelty and A-star significance remain provisional/unconfirmed.
 
 Reproduce discovery with run_scf_d_family.py and run_scf_d_core.py (cdd.gmp).
 Run verify_scf_d_closure.py with python -S for independent acceptance.
+
+Clean reproduction of source commit df6f6c8: both C010 discovery artifacts
+regenerated with identical canonical LF hashes. All 59 artifact hashes,
+the independent python -S verifier and all 95 SCF tests passed in the
+fresh archive (30.660 seconds for the suite). This is same-host clean
+reproduction, not external mathematical review.
+
+Canonical SHA-256:
+
+- scf_d_family_c010.json (30933 bytes):
+  fe179e2361fd44ecba3358e33a7abe27563ee91cded08903fe893762e757b167.
+- scf_d_core_c010.json (6831 bytes):
+  08e07ab89cdb8fd0cabb15ca03b327422c75c46a99d9b8e3cdf10d27b79d49aa.
