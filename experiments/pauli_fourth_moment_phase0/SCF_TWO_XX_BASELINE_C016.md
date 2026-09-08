@@ -29,3 +29,24 @@ https://www.iasi.cnr.it/~gentile/ClaudioGentileFiles/papers/MOR.pdf
 
 Controls: corrupt an edge moment, a diagonal/pivot, the objective and
 the proof scope. No general H-SCF, target quantum proof or novelty claim.
+
+## Completed exact outcome
+
+All 25 pivots of the rational LDL decomposition are strictly positive,
+and exact multiplication reconstructs the 25-by-25 moment matrix.
+All edge zeros and `M0i=Mii`, `M00=1` hold exactly. Its objective is
+`325328979/50000000 = 6.50657958`, strictly above six by
+`25328979/50000000`. Thus theta's inability to certify six is exact,
+not solver tolerance. This is a feasible RELAXATION matrix, not a
+density matrix or a physical violation of the proposed quantum bound.
+
+The degree histogram is {4:2, 6:12, 7:4, 8:6}; no vertex has degree five.
+The two published gear hubs each have exactly five neighbors inside the
+gear and no external attachments in Definition 2.2. Therefore this full
+graph is not a direct output of ordinary gear composition. This excludes
+that one shortcut, not general striped/fuzzy/geared inequality theorems.
+
+C014/C015/C016 now isolate a nontrivial full-support quantum obligation
+with a verified weak-baseline gap. They still do not prove the obligation,
+establish its priority, or certify A-star novelty. The next work must be
+an exact quantum argument or exact physical counterexample for this row.

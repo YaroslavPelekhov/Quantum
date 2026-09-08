@@ -1,6 +1,28 @@
 # Quantum x Evolutionary Computing Research Artifact
 
-Latest cycle C010 (2026-09-08):
+Latest research C014-C016 (2026-09-08):
+[Russian consolidated report](experiments/pauli_fourth_moment_phase0/LATEST_RESEARCH_RU.md).
+Two interacting XX atoms yield a full 24-vertex facet with exact stable
+bound six. A seven-qubit, 1024-start numerical attack finds no violation;
+this is NOT a quantum proof. An exact rational moment matrix certifies
+the ordinary theta relaxation is at least 6.50657958. The specific quantum
+inequality and A-star novelty remain OPEN. 127 regression tests pass.
+
+Latest proved cycle C012 (2026-09-08):
+[one closed XX-strip graph, all weights](experiments/pauli_fourth_moment_phase0/SCF_XX_CLOSURE_C012.md).
+Its 203 stable vertices and 44 facets pass independent exact completeness
+and a missing-facet negative control. Every quantum row follows from
+previous bounds; no new operator mechanism or general composition follows.
+
+Previous cycle C011 (2026-09-08):
+[all-weight uncertainty for the published XX strip](experiments/pauli_fourth_moment_phase0/SCF_XX_GATE_C011.md).
+The full 13-vertex graph has alpha=4, outside the hereditary F(E) class.
+Independent rational verification closes its 33-facet hull: its only
+remaining weighted row is inherited from C009. The seven published
+deletion variants follow by heredity. This is a corollary, not a new
+quantum mechanism or a general strip-composition theorem.
+
+Previous cycle C010 (2026-09-08):
 [all-weight uncertainty for every claw-free three-row construction F(E)](experiments/pauli_fourth_moment_phase0/SCF_THREE_ROW_ALL_WEIGHT_C010.md).
 The number of columns is unrestricted. A fixed 21-vertex joint-event
 polytope, uniform Hall refinement and the C008 root-cover classification

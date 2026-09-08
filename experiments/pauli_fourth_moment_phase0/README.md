@@ -1,5 +1,23 @@
 # Pauli fourth-moment phase 0
 
+Latest C014-C016: [consolidated report in Russian](LATEST_RESEARCH_RU.md).
+An exact full 24-vertex joint facet has stable bound six and 88 tight
+sets. A seven-qubit attack covers 1024 starting sign classes without
+violation, but is not a proof. The exact feasible theta matrix gives
+6.50657958, so that relaxation cannot certify six. All 127 tests pass.
+The operator inequality, general H-SCF and novelty remain open.
+
+C012 completed: [fixed closed XX graph, all weights](SCF_XX_CLOSURE_C012.md).
+The independently complete 44-facet hull and the missing-facet control
+pass. All rows reduce to known quantum bounds; this is a fixed-graph
+corollary and a negative novelty screen, not general strip composition.
+
+C011 completed: [published XX-strip all-weight corollary](SCF_XX_GATE_C011.md).
+The source-defined 13-vertex graph has alpha=4 and 33 independently
+complete exact facets. Its only extra weighted row is an induced C009
+row. Deletion variants follow by heredity. This expands the covered class,
+but supplies no new operator mechanism or unrestricted SCF theorem.
+
 C010 completed: [all claw-free F(E), arbitrary column count and all weights](SCF_THREE_ROW_ALL_WEIGHT_C010.md).
 The remaining row-pair cases are closed by a fixed-core endpoint lemma
 and a uniform refinement proof. This is a theorem for the construction,

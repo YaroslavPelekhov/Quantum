@@ -1,5 +1,6 @@
 {
   "generated_on": "2026-09-06",
+  "last_updated_on": "2026-09-08",
   "branch": "research/pauli-fourth-moment",
   "preregistration_commit": "c5b5006",
   "cache_not_committed": {
@@ -15,6 +16,26 @@
     "generator": "experiments/pauli_fourth_moment_phase0/build_n6_contexts.py"
   },
   "artifacts": [
+    {
+      "path": "scf_two_xx_weight_c014.json",
+      "bytes": 30305,
+      "sha256": "976fca5645248f9264674e456ffd75c75891c92d7d09192fd721049fa0d7bc54"
+    },
+    {
+      "path": "scf_two_xx_attack_c015.json",
+      "bytes": 189926,
+      "sha256": "e555a4b704bf8551405ea233600ccc8c08076e8424757d74a0f565c6bab26f77"
+    },
+    {
+      "path": "scf_two_xx_baseline_c016.json",
+      "bytes": 9346,
+      "sha256": "34cdad5a734078c7cdc7d58a574a2b8e12021d2a4dc4e660778399f219a51334"
+    },
+    {
+      "path": "scf_xx_closure_c012.json",
+      "bytes": 20996,
+      "sha256": "aebf38efcca01d9836615cb857bffe42dcee6cc4b3c3bb4734c7cb16728bc683"
+    },
     {
       "path": "scf_xx_gate_c011.json",
       "bytes": 98266,

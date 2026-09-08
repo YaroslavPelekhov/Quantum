@@ -53,7 +53,8 @@ class CoreRefinementTests(unittest.TestCase):
 
     def test_legacy_default_dimension_cap_preserved(self):
         with self.assertRaises(AssertionError): cube_clip(11, [])
-        with self.assertRaises(AssertionError): cube_clip(15, [], max_dimension=15)
+        # C012 explicitly registers opt-in dimension 15, never the default.
+        with self.assertRaises(AssertionError): cube_clip(16, [], max_dimension=16)
 
     def test_omitted_order12_facet_is_geometrically_detected(self):
         report = copy.deepcopy(self.gate['records'][2])

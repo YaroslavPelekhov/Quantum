@@ -46,3 +46,30 @@ is found, the next gate is an exact signed operator/gear-composition
 lemma, not a novelty announcement or another numerical census.
 
 Quantum target, unrestricted H-SCF and A-star novelty remain OPEN.
+
+Execution note: the first batch saved 64 starts (best within rounding of
+six), then NumPy's Hermitian eigensolver reported nonconvergence. That is
+an execution failure, not a counterexample or completed attack. The
+second registered batch replays from saved start 64, without skipping
+any sign class. On that specific solver exception it uses SciPy's EVR
+Hermitian driver on the SAME matrix. Finite/Hermitian input and the
+selected eigenpair residual are checked; fallback counts are retained.
+The graph, weights, starting classes, iteration cap and acceptance
+thresholds are unchanged. Failure/partial state is preserved explicitly.
+
+## Completed bounded outcome
+
+All 1024 registered starting sign classes completed across the two batches.
+The second batch took 214.594 seconds and recorded 12 EVR fallbacks.
+Only 144 starts met the iterate-convergence test; all others reached the
+64-step cap. Best dense value: 6.000000000000056. Independent bitwise
+Pauli reevaluation of its normalized state: 6.000000000000059.
+No value exceeds six beyond the registered tolerance. This is NOT an
+exact upper bound or an exhaustive search of continuous states.
+
+The G8 positive control independently gives 3.0448154998549777>3.
+The double-weight control gives 7.000000000000041, and the exact-stable-set
+eigenstate attains six to roundoff. The numerical theta proposal value
+is 6.512550508403899; C016 subsequently certifies an exact feasible
+relaxation value above six. Saved witnesses, sign basis and source binding
+pass the standard-library verifier. It does not replay all trajectories.

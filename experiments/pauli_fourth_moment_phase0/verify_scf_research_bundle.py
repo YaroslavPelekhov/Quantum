@@ -129,6 +129,21 @@ def main():
     assert [len(r['facets_b_plus_ax']) for r in xx['records']] == [33,30,30,29,26,23,23,22]
     assert all(r['alpha'] == 4 for r in xx['records'])
     assert not xx['unrestricted_SCF_theorem'] and not xx['A_star_confirmed']
+    closed_xx = json.loads(read('scf_xx_closure_c012.json'))
+    assert closed_xx['target']['graph6'] == 'NhEM?rcNLhleuo?_?GG'
+    assert len(closed_xx['target']['stable_masks']) == 203
+    assert len(closed_xx['target']['facets_b_plus_ax']) == 44
+    assert not closed_xx['unrestricted_SCF_theorem'] and not closed_xx['A_star_confirmed']
+    joint = json.loads(read('scf_two_xx_weight_c014.json'))
+    assert len(joint['stable_masks']) == 2167 and joint['alpha'] == 6
+    assert joint['records'][0]['stable_bound'] == 6 and joint['records'][0]['homogeneous_rank'] == 24
+    attack = json.loads(read('scf_two_xx_attack_c015.json'))
+    assert attack['source_sha256'] == hashlib.sha256(read('scf_two_xx_weight_c014.json')).hexdigest()
+    assert len(attack['runs']) == 1024 and attack['status'] == 'no_violation_in_completed_finite_attack'
+    assert not attack['quantum_target_proved'] and not attack['A_star_confirmed']
+    baseline = json.loads(read('scf_two_xx_baseline_c016.json'))
+    assert baseline['graph6'] == joint['graph6'] and baseline['objective'] == '325328979/50000000'
+    assert not baseline['physical_state_claim'] and not baseline['quantum_target_proved']
     print(json.dumps({'location': 'git_index' if args.git_index else 'worktree',
                       'artifact_hashes_checked': len(names), 'covered_types_exactly_once': 128,
                       'exact_census_occurrences': sum(occurrences.values()),
@@ -147,6 +162,10 @@ def main():
                       'C009_subsequently_closed_target_facets': 1,
                       'C010_lifted_core_facets': 18,
                       'C011_published_XX_facets': 33,
+                      'C012_closed_XX_facets': 44,
+                      'C014_joint_target_tight_sets': 88,
+                      'C015_completed_numerical_start_classes': 1024,
+                      'C016_exact_theta_objective': '325328979/50000000',
                       'status': 'integrity_checks_passed'}))
 
 

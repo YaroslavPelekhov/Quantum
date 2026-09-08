@@ -11,7 +11,7 @@ from fractions import Fraction as F
 import hashlib
 import itertools
 import json
-from math import gcd
+from math import gcd, comb
 from pathlib import Path
 import time
 from verify_scf_generalization import graph_edges, stable, check_scf
@@ -24,18 +24,22 @@ def value(row, point):
     return row[0]+sum(a*x for a, x in zip(row[1:], point) if a)
 
 
-def cube_clip(n, facets, seconds_limit=300, max_dimension=10):
+def cube_clip(n, facets, seconds_limit=300, max_dimension=10, sparse_first=False,
+              indexed_edges=False):
     """Enumerate the whole intersection, without using a candidate vertex set."""
     started = time.monotonic()
-    assert 1 <= n <= max_dimension <= 14
+    assert 1 <= n <= max_dimension <= 15  # C012 explicitly registers dimension 15.
     constraints = [tuple([0]+[int(j == i) for j in range(n)]) for i in range(n)]
     constraints += [tuple([1]+[-int(j == i) for j in range(n)]) for i in range(n)]
     vertices = {tuple(map(F, point)): sum(1 << (i+n*int(x)) for i, x in enumerate(point))
                 for point in itertools.product((0, 1), repeat=n)}
     rank_cache = {}
     trace = []
+    # Cut order changes intermediates only, not the exact intersection.
+    # C012 explicitly uses sparse cuts first to reduce the initial cube.
+    direction = 1 if sparse_first else -1
     for original_index, raw in sorted(enumerate(facets),
-                                      key=lambda t: (-sum(bool(x) for x in t[1][1:]), t[1])):
+                                      key=lambda t: (direction*sum(bool(x) for x in t[1][1:]), t[1])):
         assert time.monotonic()-started <= seconds_limit, 'exact clipping time limit exceeded'
         row = tuple(raw)
         assert len(row) == n+1
@@ -49,9 +53,37 @@ def cube_clip(n, facets, seconds_limit=300, max_dimension=10):
         kept = {v: active | (bit if slacks[v] == 0 else 0)
                 for v, active in vertices.items() if slacks[v] >= 0}
         added = set()
+        # Exact candidate index, not a geometric approximation: an edge
+        # needs >= n-1 common active rows. Enumerate those subsets when
+        # cheap; on highly degenerate vertices retain the old full scan.
+        postings = [0]*len(constraints)
+        if indexed_edges:
+            for j, v in enumerate(positive):
+                mask = vertices[v]
+                while mask:
+                    low = mask & -mask
+                    postings[low.bit_length()-1] |= 1 << j
+                    mask ^= low
         for u in negative:
             assert time.monotonic()-started <= seconds_limit, 'exact clipping time limit exceeded'
-            for v in positive:
+            active = vertices[u]
+            candidates = positive
+            if indexed_edges and comb(active.bit_count(), n-1) <= 128:
+                indices = [i for i in range(len(constraints)) if active >> i & 1]
+                found = 0
+                for subset in itertools.combinations(indices, n-1):
+                    matches = (1 << len(positive))-1
+                    for i in subset:
+                        matches &= postings[i]
+                        if not matches:
+                            break
+                    found |= matches
+                candidates = []
+                while found:
+                    low = found & -found
+                    candidates.append(positive[low.bit_length()-1])
+                    found ^= low
+            for v in candidates:
                 common = vertices[u] & vertices[v]
                 if common.bit_count() < n-1:
                     continue
@@ -100,7 +132,7 @@ def componentwise_scf(n, edges, support):
     return True
 
 
-def verify_polytope(record, max_dimension=10):
+def verify_polytope(record, max_dimension=10, sparse_first=False, indexed_edges=False):
     n, edges = graph_edges(record['graph6'])
     masks = [m for m in range(1 << n) if stable(m, edges)]
     assert masks == record['stable_masks']
@@ -122,7 +154,8 @@ def verify_polytope(record, max_dimension=10):
         assert lower in facets, 'missing nonnegativity'
         assert any(row[0] > 0 and row[i+1] == -row[0]
                    and all(x <= 0 for x in row[1:]) for row in facets), 'unproved cube upper bound'
-    actual, trace = cube_clip(n, facets, max_dimension=max_dimension)
+    actual, trace = cube_clip(n, facets, max_dimension=max_dimension, sparse_first=sparse_first,
+                              indexed_edges=indexed_edges)
     extras, missing = actual-points, points-actual
     assert not extras and not missing, ('polyhedral incompleteness',
                                        [list(map(str, p)) for p in sorted(extras)[:3]], len(missing))

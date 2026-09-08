@@ -940,3 +940,93 @@ Classical strip-composition literature was audited but not imported as a
 quantum theorem: compatibility of auxiliary marginals remains an extra
 obligation. General H-SCF and A-star remain open. Next C012 is a separately
 registered explicit XX-strip closure, not an unproved generic gluing rule.
+
+## C012 — completed 2026-09-08: fixed closed-XX all-weight corollary
+
+Registration ad8602c: the source XX graph plus edges (7,14),(14,15),(15,8).
+Exact target `NhEM?rcNLhleuo?_?GG`, 15 vertices, alpha 4, 203 stable
+vertices, 44 facets. Independent integer graph reconstruction checks
+claw-freeness and the simplicial clique {14,15}. Every positive facet's
+support is checked componentwise. Routes: 26 rank, two alpha-two, and
+one C011-induced row; 15 nonnegative coordinate facets complete the hull.
+The sole exceptional row is precisely the earlier 11-vertex C009 support,
+not a new cross-boundary quantum inequality.
+
+Acceptance history is retained, not hidden: old hard dimension cap 14
+rejected the first run before calculation; explicit cap was extended to
+the registered 15. Dense-first clipping completed the full hull but its
+missing-facet control exceeded 300 seconds. Sparse-first then exceeded
+300 seconds on the full hull. An exact candidate-edge index completed
+BOTH full rational cube clipping and the missing-facet control. It unions
+all (n-1)-active-row-subset candidates, falls back to the full pair scan
+on degeneracy, and applies the unchanged exact rank test. No acceptance
+tolerance or mathematical premise was weakened; default dimension 10
+and the 300-second clipping limit remain unchanged.
+
+This proves the frozen graph for all nonnegative weights as a corollary
+of C011, not general composition. As a novelty screen, the single-atom
+closure is negative. See SCF_XX_CLOSURE_C012.md. All 61 artifact hashes
+pass; canonical C012 SHA-256 is
+`aebf38efcca01d9836615cb857bffe42dcee6cc4b3c3bb4734c7cb16728bc683`.
+
+C013 was preregistered as b140900 before its calculation, conditional on
+complete C012 acceptance. It tests TWO interacting XX atoms with one
+linear connection. Classical subdivision facet preservation was checked
+against de Vries pp.150-151 and Wolsey's source metadata: it is not a
+quantum completeness or composition theorem. No paid/QPU runs or
+external correspondence. H-SCF OPEN; A-star novelty NOT CONFIRMED.
+
+## C013-C016 — completed bounded gates, quantum obligation remains open
+
+C013 registration b140900 froze two XX cores connected through one
+clique interface and a linear connection. Its discovery process timed
+out after 300 seconds, with no completed artifact; no full hull is claimed.
+
+C014 registration 6456fed switched to two fixed weights on the SAME
+24-vertex graph. Exhaustive recursion and independent products of two
+11-vertex core censuses agree on all 2167 stable sets. Alpha=6. One
+weighted atom gives bound six, 88 tight sets and homogeneous rank 24:
+a genuine full-support facet. Both weighted atoms give bound seven but
+face rank six; that control follows from summing the known atom rows.
+The binary rank is 14 and all pairs in the seven-qubit Pauli realization
+are checked exactly. This is not a quantum proof or a new classical facet
+claim. The full facet cannot be obtained solely by a nonnegative sum of
+valid proper-support rows. See SCF_TWO_XX_WEIGHT_C014.md.
+
+C015 registration 832dcc8 froze 1024 starting sign classes modulo Pauli
+conjugation, 64 steps per start, a G8 positive control and two target
+controls. NumPy eigh failed after the 64-start checkpoint. The second
+registered batch replayed from that checkpoint with a SciPy EVR fallback,
+checked eigenpair residuals, and completed every class in 214.594 seconds.
+Twelve resumed-start fallback calls; 144 starts met the convergence test,
+the other 880 reached the iteration cap. Best saved state independently
+reevaluates to 6.000000000000059. G8 reevaluates to 3.0448154998549777>3,
+and the double-weight control to 7.000000000000041, consistent with seven.
+No physical violation found. All trajectories were NOT independently
+replayed; saved best/control states were checked by independent bitwise
+Pauli action. No numerical result is used as a universal upper bound.
+
+C016 registration 689f911 froze one rationalization of the first-moment
+relaxation. The 25D matrix satisfies all affine equations exactly and has
+25 positive Fraction LDL pivots; reconstruction is exact. Objective
+325328979/50000000=6.50657958 proves theta>6 for this target. It is NOT a
+quantum density matrix or a physical counterexample. Degree histogram
+{4:2,6:12,7:4,8:6} excludes direct ordinary gear composition, whose two
+unattached hubs have degree five. Definitions 2.2/2.4 in the author-hosted
+R.661 gear report were read; no claim of auditing its full 35 pages or
+excluding general strip/fuzzy/sequential-lifting results is made.
+
+All 127 tests passed: 121 in the combined run (449.757 seconds) and six
+C016 tests (0.170 seconds). The first all-suite invocation incorrectly
+used python -S, which hides NetworkX required by the historical benchmark
+test; it was stopped and not accepted. The old explicit-cap regression
+also needed its upper rejection changed from 15 to 16 to reflect C012's
+registered opt-in 15, while the default rejection at 11 is preserved.
+Both issues were fixed before the accepted combined run.
+
+Next: an exact operator/spectral lemma or physical counterexample for
+C014's ONE full facet. Do not restart a larger census or use more random
+starts as a substitute for the proof. General H-SCF, C014's quantum bound,
+priority and A-star novelty remain OPEN. No paid jobs, QPU or external
+review/contact. The existing two-hour research heartbeat was inspected;
+no duplicate automation or limit reset was created.

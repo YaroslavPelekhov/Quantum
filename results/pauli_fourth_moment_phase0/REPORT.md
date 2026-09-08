@@ -4,6 +4,40 @@ Date: 2026-09-08
 
 ## Verdict
 
+C014-C016: [a precise two-atom quantum obligation, not yet proved](../../experiments/pauli_fourth_moment_phase0/LATEST_RESEARCH_RU.md).
+The 24-vertex graph has 2167 stable sets, alpha=6, and a full facet
+`sum(x_i)+x6+x7<=6` with 88 tight sets and exact homogeneous rank 24.
+The fixed seven-qubit attack completes 1024 starting sign classes;
+best independent reevaluation is 6.000000000000059. Only 144 starts
+meet the iterate-convergence test; the rest reach the 64-iteration cap.
+The G8 positive control reproduces 3.0448154998549777 against bound three.
+This is a bounded falsification attempt, not global optimization or proof.
+
+The rational 25D theta witness is strictly positive definite with 25
+positive exact LDL pivots and objective 325328979/50000000=6.50657958.
+It proves that the ordinary relaxation cannot certify six; it is NOT
+a physical counterexample. No degree-five vertex exists, excluding only
+direct ordinary gear composition, not general classical strip machinery.
+C013's full hull attempt timed out and is not counted as a completed
+enumeration. All 127 regression tests pass. Quantum proof and novelty OPEN.
+
+C012: [all weights on one closed XX graph](../../experiments/pauli_fourth_moment_phase0/SCF_XX_CLOSURE_C012.md).
+The 15-vertex, alpha-four graph has 203 stable vertices and 44 facets,
+independently verified with exact rational full-cube clipping. Removing
+the sole C011-supported facet produces extraneous vertices, as required.
+The first negative-control enumeration timed out; sparse cut ordering
+also timed out. An exact candidate-edge index completed both checks
+without relaxing the arithmetic, graph, facets or clipping limits.
+No new quantum inequality was needed. This closes one graph, not all
+closed strips, general H-SCF or the A-star novelty gate.
+
+C011: [the published XX strip is proved for all weights](../../experiments/pauli_fourth_moment_phase0/SCF_XX_GATE_C011.md).
+Its alpha=4 excludes hereditary F(E). The complete independent rational
+hull has 33 facets: 13 nonnegativity, 17 rank, two alpha-two, and one
+11-vertex induced C009 row. This is a corollary of existing quantum
+proofs, not a new operator mechanism. General strip composition, H-SCF,
+external review and A-star novelty remain unresolved.
+
 C010: [all-weight closure of every claw-free F(E)](../../experiments/pauli_fourth_moment_phase0/SCF_THREE_ROW_ALL_WEIGHT_C010.md).
 Column count is now unrestricted within the three-row selector construction.
 The D_m endpoint certificate has 21 lifted vertices and 18 facets; Hall

@@ -66,7 +66,7 @@ That does not exclude a nonlinear reduction, known graph operation, or
 the published geared/g-lifted machinery; priority is NOT established.
 
 The precise quantum obligation is now `sum_i <P_i>^2 + <P6>^2 + <P7>^2
-<=6` for the stated anticommutation graph, with arbitrary real states and
+<=6` for the stated anticommutation graph, with arbitrary quantum states and
 all allowed sign/central relations. It remains OPEN. No all-weight or
 unrestricted SCF theorem follows. C015 must attack this fixed row rather
 than resume a larger facet census.
