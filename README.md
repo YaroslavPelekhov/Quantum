@@ -1,5 +1,11 @@
 # Quantum x Evolutionary Computing Research Artifact
 
+Manuscript draft (2026-09-09):
+[Weighted Pauli uncertainty - PDF](output/pdf/weighted_pauli_uncertainty_manuscript.pdf),
+[LaTeX source and review checklist](experiments/pauli_fourth_moment_phase0/paper/README_RU.md).
+Twelve pages: proved restricted all-weight results, exact certificates,
+and an explicitly OPEN composition target. Not submitted or externally reviewed.
+
 Latest research C014-C016 (2026-09-08):
 [Russian consolidated report](experiments/pauli_fourth_moment_phase0/LATEST_RESEARCH_RU.md).
 Two interacting XX atoms yield a full 24-vertex facet with exact stable

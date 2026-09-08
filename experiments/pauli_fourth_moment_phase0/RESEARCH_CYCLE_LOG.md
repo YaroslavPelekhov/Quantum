@@ -1041,3 +1041,28 @@ C015 optimizer trajectories were not rerun in this clean reproduction;
 the saved physical witnesses were reevaluated independently. This clean
 acceptance applies to a7a92f3 code/data; subsequent publication notes are
 documentation-only. Quantum C014 and A-star novelty remain OPEN.
+
+## 2026-09-09: manuscript draft, no new scientific acceptance
+
+At the user's request, authored a 12-page English LaTeX/PDF manuscript:
+Weighted Pauli uncertainty for structured simplicial claw-free graphs:
+exact certificates and a composition frontier. Its main theorem is the
+restricted all-m, all-weight G_m result, with the coherent Gram proof,
+fixed-core refinement, three-row result and two XX corollaries. C014
+is explicitly an open problem, not an accepted upper bound. C010's
+broader construction and historical census are not additional principal
+theorems of this focused manuscript. Research snapshot remains 4dc9dc7.
+
+Rechecked C005 rectangular Gram, C007 uniform finite gate and core
+endpoint, C009 universal identities plus target hull, C014 facet,
+C015 saved states, and C016 exact relaxation witness with python -S.
+Paper ledger checker passes 64 hashes and headline/scope consistency.
+This drafting turn did NOT rerun the historical full 127-test suite;
+its 441.989-second clean-run result is explicitly attributed to the
+preceding research snapshot. PDF built twice, all 12 pages rendered and
+visually inspected; affected pages checked again after corrections.
+No final LaTeX overfull/underfull boxes or unresolved references.
+Source, builder, Russian review checklist and QA record are in paper/.
+No author identities/affiliations were invented; no journal/arXiv
+submission or external reviewer contact occurred. Publication priority
+and external mathematical review remain outstanding.

@@ -1,0 +1,798 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs,array,longtable}
+\usepackage[margin=25mm]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true,linkcolor=MidnightBlue,citecolor=MidnightBlue,urlcolor=MidnightBlue]{hyperref}
+\usepackage{microtype}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Open problem}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\STAB}{\operatorname{STAB}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\ev}[1]{\langle#1\rangle_\rho}
+\newcommand{\R}{\mathbb R}
+\newcommand{\F}{\mathbb F}
+\newcommand{\sourcecommit}{4dc9dc7bc26cca5ea3a7f4cfa66cc4f7fc969a83}
+\newcommand{\repourl}{https://github.com/YaroslavPelekhov/Quantum}
+\newcommand{\artifact}[1]{\nolinkurl{#1}}
+\setlength{\emergencystretch}{2em}
+\setlength{\parskip}{3pt}
+\title{Weighted Pauli uncertainty for structured\newline simplicial claw-free graphs:\newline exact certificates and a composition frontier}
+\author{Research manuscript\smallskip\\\small Draft for internal mathematical and priority review}
+\date{9 September 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+For Pauli observables with a prescribed anticommutation graph, weighted
+sums of squared expectations need not equal the corresponding weighted
+independence number. We give computer-assisted proofs of equality for an
+explicit family of simplicial claw-free graphs of order $2m+8$, for every
+$m\geq0$ and every nonnegative weight vector. A signed rectangular Gram
+identity controls one full-support weighted inequality; an exact
+eight-vertex core and a uniform transportation argument supply the
+remaining weights. A related three-row identity proves a twelve-vertex
+case and yields all-weight corollaries for a published XX-strip and one
+specified closure. We then isolate a twenty-four-vertex composition with
+a full-support classical facet of bound six. Its quantum validity remains
+open: a bounded seven-qubit attack completed 1024 starting sign classes
+without finding a violation, while a rational feasible point of the
+first-moment relaxation has objective $6.50657958$. Exact algebraic and
+polyhedral acceptance is separated from numerical discovery. The archived
+bundle passes 127 tests and checks 64 artifact hashes. The results do not
+establish weighted perfection of all simplicial claw-free graphs or a
+general quantum strip-composition rule.
+\end{abstract}
+\noindent\textbf{Status.} Theorem statements below have internal analytic
+and exact-computation support. External proof review and priority assessment
+are outstanding. This draft makes no first-discovery or venue-level claim.
+
+\section{Introduction}
+The anticommutation graph records a useful part of the structure of a
+many-qubit Pauli Hamiltonian without specifying a particular tensor-product
+representation. For observables $P_i=P_i^\dagger$, $P_i^2=I$, place an edge
+between $i,j$ exactly when $P_iP_j=-P_jP_i$; nonedges require commutation.
+For a graph $G$ and weights $w\geq0$, consider
+\begin{equation}\label{eq:beta}
+ \beta(G,w)=\sup_{\{P_i\},\rho}\sum_{i\in V(G)}w_i\ev{P_i}^2,
+ \qquad \alpha(G,w)=\max_{S\text{ stable in }G}\sum_{i\in S}w_i.
+\end{equation}
+Here the supremum includes Pauli realizations with exactly the stated
+pairwise relations. All upper bounds in this paper apply to every such
+realization and every density matrix. A common eigenstate of the commuting
+operators in a maximum-weight stable set proves $\beta(G,w)\geq\alpha(G,w)$.
+
+The weighted beta number, the equality termed $\hbar$-perfection, and
+facet-based reductions are established concepts \cite{xu}. The
+free-fermion solution for simplicial claw-free (SCF) frustration graphs
+provides our spectral input \cite{cem}. Neither that solution nor the
+unweighted bound by itself resolves the weighted problem: a stable-set
+polytope can have non-rank facets. The contribution examined here is a
+specific route from coherent, sign-dependent transfer coefficients to
+all-weight bounds on explicitly defined graphs.
+
+The paper has two different kinds of outcome. Sections~\ref{sec:gram}--
+\ref{sec:xx} give proved, restricted results. Section~\ref{sec:frontier}
+gives a deliberately unresolved quantum target, accompanied by exact
+classical certificates and bounded numerical evidence. Keeping these
+separate prevents the absence of a numerical violation from being used
+as an upper-bound proof.
+
+The construction uses known classical ideas: stable-set facets, matching,
+transportation, and the published XX-strip. We do not claim new graph
+decompositions or a new quantum-simulation algorithm. In particular,
+solving a constituent atom is not a theorem about arbitrary strip
+compositions. Earlier QAOA/MPS performance and symmetry investigations
+are outside this manuscript and supply no evidence for its claims.
+
+\section{Preliminaries and rank-to-weight reduction}\label{sec:prelim}
+A stable set is a set of pairwise nonadjacent vertices, including the
+empty set. Its incidence vector is $\mathbf1_S$, and
+$\STAB(G)=\operatorname{conv}\{\mathbf1_S:S\text{ stable}\}$.
+This polytope is full-dimensional and downward closed in the nonnegative
+orthant. Thus proving that every squared profile
+$x_i=\ev{P_i}^2$ satisfies its complete nonnegative-weight description
+proves all-weight equality in \eqref{eq:beta}. Attainability is then
+established separately by the commuting stable-set argument.
+
+A graph is claw-free if it has no induced $K_{1,3}$. A nonempty clique
+$K$ is simplicial if $N(v)\setminus K$ is a clique for every $v\in K$.
+We use SCF componentwise: every connected component is claw-free and
+admits such a clique. Induced subgraphs remain SCF componentwise; this
+is the inherited structural class used by the free-fermion framework
+\cite{cem}. The finite support checks in our certificates also verify
+the necessary SCF witnesses directly.
+
+For fixed observables the variational identity
+\begin{equation}\label{eq:variational}
+ \max_\rho\sum_iw_i\ev{P_i}^2
+ =\max_{\norm{a}_2=1}\norm{\sum_i a_i\sqrt{w_i}P_i}^2
+\end{equation}
+follows by duality of the Euclidean norm and then maximization over
+states. Equivalently, for positive weights the Hamiltonian amplitudes
+$b_i=a_i\sqrt{w_i}$ obey $\sum_i b_i^2/w_i=1$.
+Zero weights are omitted or obtained by continuity.
+
+\begin{lemma}[SCF rank bound]\label{lem:rank}
+For SCF $G$ and every induced support $U$,
+$\sum_{i\in U}\ev{P_i}^2\leq\alpha(G[U])$.
+\end{lemma}
+\begin{proof}
+It suffices to work in the universal Pauli algebra and then restrict to
+physical representations. Write $A=\sum_i b_iP_i$ and let $Q_k$ be the
+sum of $\prod_{i\in S}b_iP_i$ over stable $k$-sets. Within a stable set
+the factors commute. For $T(u)=\sum_k(-u)^kQ_k$,
+\[
+ A^2=\Big(\sum_i b_i^2\Big)I+2Q_2,
+ \qquad T(u)T(-u)=I-u^2\Big(\sum_i b_i^2\Big)I+O(u^4).
+\]
+The SCF sector theorem \cite{cem} gives at most $\alpha(G)$
+nonnegative single-particle energies $\nu_j$, with
+$T(u)T(-u)=\prod_j(1-u^2\nu_j^2)$ in a sector and Hamiltonian norm at
+most $\sum_j\nu_j$. The displayed coefficient implies
+$\sum_j\nu_j^2=\sum_i b_i^2$. Cauchy--Schwarz and
+\eqref{eq:variational} give the rank bound. Apply it to each component
+of the induced support. Degenerate amplitudes follow by continuity.
+\end{proof}
+
+\begin{lemma}[All weights at independence number two]\label{lem:alpha2}
+For any graph with $\alpha(G)=2$,
+\[
+ \sup_{w\geq0,\,w\ne0}\frac{\beta(G,w)}{\alpha(G,w)}
+ =\frac{\beta(G,\mathbf1)}{2}.
+\]
+Consequently every SCF graph with independence number at most two is
+$\hbar$-perfect.
+\end{lemma}
+\begin{proof}
+Normalize $\alpha(G,w)\leq1$. The weight polytope is
+$0\leq w_i\leq1$, $w_i+w_j\leq1$ for every nonedge. Its vertices are
+half-integral: a bipartite component of tight equations among fractional
+coordinates admits a nonzero alternating perturbation, while an odd
+cycle forces every coordinate in its component to be $1/2$.
+At an extreme weight, let $H$ have weight one and $L$ weight one-half.
+Then $H$ is a clique completely joined to $L$. Cross anticommutation
+gives $(A_H+A_L)^2=A_H^2+A_L^2$, and hence the beta bound on a complete
+join is the maximum of the bounds on its parts. With
+$b=\beta(G,\mathbf1)\geq2$, the extreme-weight bound is at most
+$\max(1,b/2)=b/2$. Convexity in $w$ extends it to the weight polytope;
+uniform weights attain the ratio. Lemma~\ref{lem:rank} gives $b=2$ in
+the SCF case. Cliques are immediate. The half-integral and join tools
+are standard; no new polyhedral principle is asserted.
+\end{proof}
+
+\section{A signed Gram bound beyond a single graph}\label{sec:gram}
+\subsection{The rectangular family}
+For an integer $m\geq0$, define light vertices by occupied cells in
+three rows: $A_j=(0,j)$, $B_j=(1,j)$ for $0\leq j\leq m$, together with
+$Z=(2,0)$, $U=(0,m+1)$, $V=(1,m+2)$. Two light vertices are adjacent
+exactly when they share a row or a column. Add a clique $H_0,H_1,H_c$.
+Its light nonneighbors are row zero, row one, and column zero,
+respectively. Call the resulting graph $G_m$; its order is $2m+8$.
+
+Every independent triple contains $Z$ and one noncentral vertex from
+each other row, in distinct columns. A stable set containing a heavy
+vertex has at most one light vertex. Thus $\alpha(G_m)=3$.
+The clique $\{A_0,B_0,Z\}$ is simplicial. Claw-freeness can be checked
+uniformly: a possible claw involves at most four noncentral column
+indices, so it embeds into $G_4$ by renaming those columns. The exact
+four-vertex check on $G_4$ is exhaustive. This is a finite-support proof,
+not extrapolation from graph sizes.
+
+\begin{theorem}[Uniform full-support bound]\label{thm:full}
+For every $m\geq0$, every Pauli realization of $G_m$, and every state,
+\begin{equation}\label{eq:full}
+ \sum_{i\text{ light}}\ev{P_i}^2
+ +2\big(\ev{P_{H_0}}^2+\ev{P_{H_1}}^2+\ev{P_{H_c}}^2\big)\leq3.
+\end{equation}
+Equality is attainable. The associated classical inequality is a facet
+of $\STAB(G_m)$.
+\end{theorem}
+
+\subsection{Exact transfer coefficients}
+Use real amplitudes $a_j,b_j,c,p,q$ on $A_j,B_j,Z,U,V$, and
+$r_0,r_1,r_c$ on the heavy vertices. Define
+\[
+ K_j=-P_{H_0}P_{H_1}P_{A_j}P_{B_j}.
+\]
+Each $K_j$ is a central Hermitian involution in the full generator
+algebra. Commuting a generator through its four factors gives an even
+number of sign changes. The square and adjoint are also verified exactly.
+In an actual common eigenspace write $K_j=\epsilon_j I$ and form
+\begin{equation}\label{eq:B}
+ B=\begin{pmatrix}
+ a_0&a_1&\cdots&a_m&p&0\\
+ \epsilon_0b_0&\epsilon_1b_1&\cdots&\epsilon_mb_m&0&q\\
+ c&0&\cdots&0&0&0
+ \end{pmatrix},\qquad M=BB^{\mathsf T}.
+\end{equation}
+Set $L=\tr M$ and $H=r_0^2+r_1^2+r_c^2$. Sector signs are retained
+coherently in this single real matrix. They are not optimized
+independently, and we do not assume every abstract sign assignment is a
+physical sector.
+
+For $T(u)=I-uQ_1+u^2Q_2-u^3Q_3$, exact expansion in the universal
+algebra gives
+\begin{align}
+ T(u)T(-u)&=I-e_1u^2+e_2u^4-e_3u^6,\label{eq:transfer}\\
+ e_1&=L+H,\nonumber\\
+ e_2&=e_2(M)+(r_0,r_1)M_{\{0,1\},\{0,1\}}(r_0,r_1)^{\mathsf T}
+               +r_c^2\norm{B_{:,0}}^2,\label{eq:e2}\\
+ e_3&=\det M.\nonumber
+\end{align}
+Here $e_2(M)$ is the sum of its principal two-by-two minors. The exact
+acceptance algorithm reorders adjacent generators and compares integer
+amplitude polynomials, including every zero odd coefficient. The
+discovery algorithm instead uses inversion parity.
+
+These finite checks prove the identities for arbitrary $m$. A coefficient
+of degree at most four involves at most four noncentral columns. At
+degrees five and six, a term comes from a pair and a triple, or two
+triples; each triple contains $Z$. At most four other vertices remain.
+On the matrix side the degree-six determinant has a factor $c^2$ and
+the same bound. Relabel the involved columns into $G_4$, set unused
+amplitudes to zero, and transport the word-ordering signs. Thus any
+failed coefficient at any size would already fail the exact $G_4$ check.
+
+\subsection{The scalar envelope and the spectral branch}
+\begin{lemma}[Three-mode Gram envelope]\label{lem:envelope}
+Suppose an SCF Hamiltonian has at most three sector modes and, in every
+physical sector, a real positive semidefinite $3\times3$ matrix $M$ with
+trace $L$ such that
+\[
+ e_1=L+H,\qquad e_2\leq e_2(M)+H\lambda_{\max}(M),
+ \qquad e_3=\det M.
+\]
+If $2L+H=1$ and $L,H\geq0$, then the Hamiltonian norm squared is at
+most $3/2$.
+\end{lemma}
+\begin{proof}
+Let $x,y,z\geq0$ be the eigenvalues of $M$, with $y$ largest. Then
+$x+y+z=L\leq1/2$ and
+\begin{equation}\label{eq:envelope}
+ xy+xz+yz+(1-2L)y+2\sqrt{\tfrac32 xyz}
+ \leq (\tfrac14+\tfrac L2)^2.
+\end{equation}
+For fixed $L,y$, the left side increases with $xz$. Replace $x=z=(L-y)/2$
+and write $y=s^2/6$. The difference between the right side and the
+resulting left side is exactly
+\[
+ \frac{(s-1)^2(12L+s^2+6s+3)}{48}\geq0.
+\]
+For the nonnegative sector energies put $S=\nu_1+\nu_2+\nu_3$, padding
+zero modes, and define
+\[
+ f(t)=\left(\frac{t^2-e_1}{2}\right)^2-e_2-2t\sqrt{e_3}.
+\]
+The symmetric identities in $\nu_j^2$ imply $f(S)=0$.
+Equation~\eqref{eq:envelope} yields $f(\sqrt{3/2})\geq0$.
+For $t\geq\sqrt{3/2}$,
+\[
+ f'(t)=t(t^2-e_1)-2\sqrt{e_3}>0,
+\]
+because $e_1=1-L\leq1$ and $e_3\leq(L/3)^3\leq1/216$.
+Consequently $S\leq\sqrt{3/2}$, on the required spectral branch.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:full}]
+The two heavy contributions in \eqref{eq:e2} are Rayleigh forms,
+bounded together by $H\lambda_{\max}(M)$; use
+$\lambda_{\max}(B^{\mathsf T}B)=\lambda_{\max}(M)$ for the column norm.
+For half the weights in \eqref{eq:full}, the variational normalization
+is $2L+H=1$. Lemma~\ref{lem:envelope} proves the upper bound $3/2$;
+rescaling proves \eqref{eq:full}. The commuting pair $\{H_0,U\}$
+has total weight three and gives attainment.
+
+For the facet assertion, an affine functional constant on all tight
+stable sets must have equal coefficients within each row, by the pairs
+$\{H_0,A_j\},\{H_0,U\}$ and $\{H_1,B_j\},\{H_1,V\}$.
+The pairs $\{H_c,A_0\},\{H_c,B_0\},\{H_c,Z\}$ equate both row
+coefficients and that of $Z$, say to $a$. The triple $\{U,V,Z\}$
+sets the right side to $3a$ and every heavy coefficient to $2a$.
+Thus the tight affine hull has codimension one.
+\end{proof}
+
+\section{All weights on the unbounded family}\label{sec:allweights}
+\begin{theorem}\label{thm:allweights}
+For every $m\geq0$ and every $w\in\R_+^{2m+8}$,
+$\beta(G_m,w)=\alpha(G_m,w)$.
+\end{theorem}
+The argument below combines a fixed exact polyhedral lemma with a uniform
+classical refinement. Quantum validity is checked after the complete
+classical description is established; no quantum gluing rule is assumed.
+
+For a candidate marginal $x\geq0$, abbreviate
+\[
+ a=x_{A_0},\quad b=x_{B_0},\quad c=x_Z,\quad
+ p=x_{H_0},\quad q=x_{H_1},\quad r=x_{H_c},
+\]
+\[
+ A=x_U+\sum_{j=1}^m x_{A_j},\qquad
+ B=x_V+\sum_{j=1}^m x_{B_j},\qquad C=a+b+c+p+q+r.
+\]
+The use of $A,B$ here denotes scalar marginals, not operators or the
+matrix in \eqref{eq:B}. Write $y=(a,b,c,A,B,p,q,r)$.
+\begin{proposition}[Uniform classical description]\label{prop:description}
+The vector $x$ belongs to $\STAB(G_m)$ if and only if $x\geq0$,
+$y\in\STAB(G_0)$, and for $1\leq j\leq m$,
+\begin{equation}\label{eq:pairs}
+ x_{A_j}+x_{B_j}+r\leq1,\qquad
+ x_{A_j}+x_{B_j}+C\leq2.
+\end{equation}
+The positive inequalities describing $\STAB(G_0)$ are in
+Table~\ref{tab:core}; coordinate nonnegativity is also required.
+\end{proposition}
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{p{.18\linewidth}p{.63\linewidth}c}
+\toprule Type & Left sides & Bound\\\midrule
+Clique & $a+b+c$; $a+c+q$; $a+A+q$; $b+c+p$; $b+B+p$;
+ $c+p+q$; $A+q+r$; $B+p+r$; $p+q+r$ & 1\\
+Rank & $C+A$; $C+B$; $C-c+A+B$ & 2\\
+Weighted & $a+c+A+p+2q+r$; $b+c+B+2p+q+r$ & 2\\
+Full & $a+b+c+A+B+2(p+q+r)$ & 3\\\bottomrule
+\end{tabular}
+\caption{The fifteen positive core inequalities. The eight coordinate
+inequalities complete the 23-facet description.}\label{tab:core}
+\end{table}
+
+\begin{lemma}[Exact core endpoint]\label{lem:endpoint}
+Among stable-set distributions of $G_0$ with marginal $y$, the minimum
+probability $z$ of selecting both private vertices is
+\begin{equation}\label{eq:zmin}
+ z_{\min}=\max(0,A+B+r-1,A+B+C-2).
+\end{equation}
+\end{lemma}
+\begin{proof}
+Lift every one of the 22 stable incidence vectors by the indicator that
+both private vertices are selected. The complete nine-dimensional
+lifted hull has 24 facets. Its only lower-$z$ facets are the three in
+\eqref{eq:zmin}; the others are upper-$z$ or $z$-independent facets.
+This finite assertion is certified by full-cube rational clipping and
+facet-rank checks, independently of rational double-description discovery.
+The exact artifact and acceptance command are given in
+Appendix~\ref{app:reproduction}.
+
+Any feasible decomposition of $y$ supplies a value $z^*$. Lower it to
+$z_{\min}$. All lower constraints hold, upper constraints remain valid,
+and the point stays in the cube since $0\leq z_{\min}\leq z^*\leq1$.
+Completeness of the lifted hull proves feasibility and hence the formula.
+\end{proof}
+
+\begin{proof}[Proof of Proposition~\ref{prop:description}]
+Collapse the first and second noncentral row cliques to their private
+representatives. Stable sets project to stable sets of $G_0$, and
+\eqref{eq:pairs} is valid by the indicated clique and rank-two supports.
+This proves necessity.
+
+For sufficiency choose the core distribution of Lemma~\ref{lem:endpoint}
+and let $T=A+B-z_{\min}=\min(A+B,1-r,2-C)$.
+Remove the absent/absent mass $1-T$. On the remaining mass construct a
+transportation table with row supplies
+$(x_{A_1},\ldots,x_{A_m},x_U,T-A)$ and column demands
+$(x_{B_1},\ldots,x_{B_m},x_V,T-B)$. The last labels mean absence.
+Forbid $(A_j,B_j)$ and the absent/absent cell, allowing every other cell.
+Each row forbids at most one column and these forbidden columns are
+distinct. Every set of at least two rows therefore sees every column.
+The weighted Hall conditions reduce to
+$x_{A_j}+x_{B_j}\leq T$ and $(T-A)+(T-B)\leq T$.
+The first follows from \eqref{eq:pairs} and nonnegativity, the second
+from $z_{\min}\geq0$. Ordinary max-flow/min-cut thus provides a table.
+
+Its joint-present mass is $z_{\min}$ and its single-present masses are
+$A-z_{\min},B-z_{\min}$. Condition within each of the four core
+presence patterns to choose actual row labels according to the table.
+Every label in a row has identical fixed-core neighbors, and forbidden
+matching pairs never occur. All outcomes are stable and have marginal
+$x$. Zero-mass patterns require no conditioning; $T=0$ is immediate.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:allweights}]
+Every positive core row except the full row omits at least one of
+$c,A,B$. After expansion its support has independence number at most
+two, because every triple of $G_m$ uses $Z$ and both noncentral rows.
+The stable bound is unchanged by expansion: projection gives one
+direction and choosing the private labels gives the other. Thus
+Lemma~\ref{lem:alpha2} proves these expanded rows quantum-mechanically.
+It also proves both per-column rows in \eqref{eq:pairs}; their supports
+have independence number at most two. Theorem~\ref{thm:full} proves the
+full row. Every squared profile therefore satisfies the complete system
+of Proposition~\ref{prop:description}, and lies in $\STAB(G_m)$.
+This proves every nonnegative weight, with attainment as before.
+\end{proof}
+
+\section{Three-row and published XX corollaries}\label{sec:xx}
+\subsection{A fixed three-row Gram identity}
+Let $J$ have all nine light cells $(r,c)$, $0\leq r,c\leq2$, with the
+same row/column adjacency and heavy selectors as $G_m$. Order the lights
+row-major, followed by $H_0,H_1,H_c$; equivalently its graph6 string is
+\verb|K{S{aSfF~Fln|. Write the light operators as $A_j,B_j,C_j$.
+Besides $K_j=-P_{H_0}P_{H_1}P_{A_j}P_{B_j}$ define
+\[
+ \Lambda_0=I,\qquad
+ \Lambda_j=-P_{A_0}P_{C_0}P_{A_j}P_{C_j}\quad(j=1,2).
+\]
+All five nontrivial operators are central Hermitian involutions in the
+full twelve-generator algebra. In each physical sector construct the
+three rows $(a_j)$, $(\epsilon_jb_j)$, $(\lambda_jc_j)$ of a real
+$3\times3$ matrix $B$, where $\lambda_0=1$.
+Equations~\eqref{eq:transfer}--\eqref{eq:e2} hold unchanged with $M=BB^{\mathsf T}$.
+The independent acceptance expands all amplitude polynomials, computes
+$e_2$ by squared two-by-two minors of $B$ and $e_3=\det(B)^2$, and
+checks all odd coefficients. The three even coefficients have 12, 39,
+and 21 nonzero monomials in the archived canonical encoding.
+
+\begin{corollary}\label{cor:J}
+The full-support inequality with weights one on the nine lights and
+two on the three heavies has exact bound three on $J$. Furthermore,
+$\beta(J,w)=\alpha(J,w)$ for every $w\geq0$.
+\end{corollary}
+\begin{proof}
+The identical Rayleigh estimate and Lemma~\ref{lem:envelope} prove the
+full row. A commuting light/heavy pair attains three. The exact complete
+stable-set hull has 46 vertices and 36 facets: 12 coordinate facets,
+20 rank facets, three weighted facets on SCF supports with independence
+number at most two, and the full row. Lemmas~\ref{lem:rank} and
+\ref{lem:alpha2} cover the other positive facets. Completeness therefore
+implies the all-weight claim. The finite algebra and hull obligations
+are independently checked, not inferred from floating-point optimization.
+\end{proof}
+
+\subsection{XX-strip and one specified closure}
+Use the published thirteen-vertex XX construction of
+Chudnovsky--Seymour \cite{cs}; the exact adjacency is reproduced in
+Appendix~\ref{app:graphs}. Call it $X$. Let $X^+$ add vertices $14,15$
+and only the edges $7$--$14$--$15$--$8$, with original one-based labels.
+
+\begin{corollary}\label{cor:XX}
+Both $X$ and $X^+$ are $\hbar$-perfect. The result includes every
+induced subgraph, in particular the eight published variants obtained
+by deleting any subset of $11,12,13$ from $X$.
+\end{corollary}
+\begin{proof}
+The complete exact hull counts and routes are shown in
+Table~\ref{tab:hulls}. In each graph the sole additional weighted row is
+\begin{equation}\label{eq:xx}
+ x_1+x_2+x_3+x_4+x_5+x_6+2x_9+2x_{10}+x_{11}+x_{12}+x_{13}\leq3.
+\end{equation}
+Its support embeds into $J$ with one heavy vertex omitted. The map from
+zero-based $J$ to one-based $X$ is
+\[
+\begin{array}{c|rrrrrrrrrrr}
+J&0&1&2&3&4&5&6&7&8&10&11\\\hline
+X&1&11&6&13&4&5&2&3&12&9&10.
+\end{array}
+\]
+Both edges and nonedges are independently checked. Corollary~\ref{cor:J}
+therefore proves \eqref{eq:xx}; the rank and independence-two lemmas
+cover all other positive rows. Complete facet coverage proves the
+claim. Heredity gives the deletion variants.
+\end{proof}
+
+\begin{table}[ht]\centering\small
+\begin{tabular}{lrrrrrrr}
+\toprule Graph & $n$ & $\alpha$ & Stable sets & Facets & Coord. & Rank & Other\\\midrule
+$J$ & 12 & 3 & 46 & 36 & 12 & 20 & $3+1$\\
+$X$ & 13 & 4 & 85 & 33 & 13 & 17 & $2+1$\\
+$X^+$ & 15 & 4 & 203 & 44 & 15 & 26 & $2+1$\\\bottomrule
+\end{tabular}
+\caption{Exact complete hulls. ``Other'' separates independence-two
+weighted supports from the single Gram-supported row.}\label{tab:hulls}
+\end{table}
+The stable quadruple $\{3,6,7,8\}$ in $X$ excludes an induced embedding
+into any $G_m$ or $J$, since those have independence number three.
+Nevertheless these are corollaries, not independent operator mechanisms.
+No arbitrary path extension, fuzzy modification, or strip-composition
+closure is asserted.
+
+\section{A composition frontier, not a quantum theorem}\label{sec:frontier}
+Take two copies of $X$ with vertices $7,8$ removed. In each copy let
+$A=\{1,2,13\}$ and $B=\{4,5,13\}$ in original labels. Join the two
+$B$-cliques completely. Add vertices $u,v$ with edge $uv$, join $u$ to
+the left $A$-clique and $v$ to the right $A$-clique, and add no other
+edges. Call this twenty-four-vertex graph $Y$.
+
+For its zero-based ordering, list the eleven retained original labels
+$1,2,3,4,5,6,9,10,11,12,13$ in the left copy, then the right copy, then
+$u=22,v=23$. Freeze weights $w_i=1+\mathbf1_{i\in\{6,7\}}$.
+The exact graph6 and Pauli realization are archived with this ordering.
+
+\begin{proposition}[Exact classical target]\label{prop:target}
+The graph $Y$ is SCF, has $\alpha(Y)=6$, and has 2167 stable sets.
+The inequality
+\begin{equation}\label{eq:target}
+ \sum_{i=0}^{23}x_i+x_6+x_7\leq6
+\end{equation}
+is a full-support facet of $\STAB(Y)$, with 88 tight stable sets of
+homogeneous rank 24.
+\end{proposition}
+\begin{proof}
+Exact enumeration by recursive graph bitsets agrees with a separate
+product construction from all stable sets of the two eleven-vertex
+cores and the four connector choices. Both enumerate every stable set,
+compute the same maximum six, and agree on all tight sets. Independent
+Fraction elimination verifies the homogeneous rank. SCF witnesses are
+checked from the graph, including the simplicial clique $\{u,v\}$.
+The data and checkers constitute the finite certificate.
+\end{proof}
+Because the tight affine span has codimension one, \eqref{eq:target}
+cannot be a nonnegative linear combination of valid inequalities on
+proper vertex supports: each positively weighted summand would have to
+be tight on all 88 points and hence define the same full-support
+hyperplane. This excludes that particular proof route, not nonlinear
+reductions or existing structural theorems.
+
+\begin{conjecture}[Frozen quantum obligation]\label{conj:target}
+Does every realization of $Y$ and every state satisfy
+\begin{equation}\label{eq:quantumtarget}
+ \sum_{i=0}^{23}\ev{P_i}^2+\ev{P_6}^2+\ev{P_7}^2\leq6\ ?
+\end{equation}
+\end{conjecture}
+No assertion of its truth is made here. The binary adjacency matrix has
+rank 14 over $\F_2$, and a seven-qubit Pauli realization is explicitly
+checked for every pair. This is a local simulation, not a hardware run.
+
+\subsection{A bounded physical attack}
+The registered attack fixes the amplitudes of its initial Hamiltonian
+proposal from one first-moment relaxation and tests 1024 sign classes
+modulo Pauli-conjugation gauge. The count is $2^{24-14}$; it is a finite
+set of initializations, not an enumeration of continuous quantum states.
+At each step it selects an extremal absolute-eigenvalue eigenvector of
+$H(a)=\sum_i\sqrt{w_i}a_iP_i$ and updates $a_i$ proportional to
+$\sqrt{w_i}\ev{P_i}$. The cap is 64 iterations per start and the
+stopping tolerance is $10^{-10}$. The threshold for a numerical
+violation candidate is $6+10^{-7}$.
+
+All 1024 starts finished their allocated work. Only 144 met the
+convergence test; 880 reached the iteration cap. The best saved state,
+reevaluated with independent bitwise Pauli action, gives
+$6.000000000000059$, consistent with six to floating-point precision.
+The positive control on the archived eight-vertex $G_8$ of Xu et al.\
+\cite[Fig.~11(a)]{xu} gives $3.0448154998549777>3$; it is labeled
+\artifact{positive_G8} in the code.
+The double-weight control, with weights two also at $17,18$, gives
+$7.000000000000041$, consistent with seven. Its upper bound seven
+already follows by summing two atom rows and the connector-edge bound.
+
+One dense eigensolver failed after a saved 64-start prefix. A second
+registered batch resumed without skipped classes; twelve resumed-start
+calls used a checked SciPy fallback. The resumed batch took 214.594
+seconds. The saved best and control states were reevaluated
+independently, but all optimizer trajectories were not independently
+replayed. These qualifications preclude a global-optimality claim.
+
+\subsection{Exact weakness of the first-moment baseline}
+Define the relaxation explicitly, with indices $0,\ldots,24$:
+\begin{equation}\label{eq:theta}
+ \begin{aligned}
+ \vartheta(Y,w)=\max_M\ &\sum_{i=0}^{23}w_iM_{i+1,i+1}\\
+ \text{subject to }\ &M\succeq0,\quad M_{00}=1,\\
+ &M_{0,i+1}=M_{i+1,i+1}\quad(0\leq i<24),\\
+ &M_{i+1,j+1}=0\quad\text{for every edge }ij.
+ \end{aligned}
+\end{equation}
+Every physical squared profile is feasible in this relaxation. For a
+pure state, use real Gram vectors $v_0=\psi$ and
+$v_{i+1}=\ev{P_i}P_i\psi$: their real inner products obey the diagonal
+equations, and the edge products have zero real part. Purification
+extends this construction to mixed states.
+
+\begin{proposition}[Rational relaxation witness]\label{prop:theta}
+There exists a rational feasible matrix in \eqref{eq:theta} with
+\[
+ \sum_iw_iM_{i+1,i+1}=\frac{325328979}{50000000}=6.50657958.
+\]
+In particular, this relaxation cannot certify the bound six.
+\end{proposition}
+\begin{proof}
+The archived matrix has common denominator $10^8$. The acceptance
+algorithm checks symmetry and every affine equation exactly, and
+computes a Fraction $LDL^{\mathsf T}$ factorization with 25 positive
+diagonal pivots and exact reconstruction. The objective is the stated
+rational number. This finite positive-definiteness certificate proves
+feasibility without relying on the numerical solver's status.
+\end{proof}
+The witness proves a relaxation gap of $25328979/50000000$ above the
+classical bound. It is \emph{not} a quantum state and does not refute
+\eqref{eq:quantumtarget}. Conversely, the physical attack does not
+give an upper bound that closes this gap.
+
+The exact degree histogram of $Y$ is
+$\{4:2,6:12,7:4,8:6\}$. In ordinary basic gear composition the two
+unattached gear hubs have degree five \cite{gear}. Thus $Y$ is not a
+direct output of that precise construction. General geared, fuzzy,
+lifting and strip arguments are not excluded by this degree test.
+
+\section{Verification, scope, and publication boundary}\label{sec:verification}
+The manuscript draws on research snapshot \texttt{4dc9dc7}; the full
+commit is in Appendix~\ref{app:reproduction}. Discovery and acceptance
+are separate programs. Universal algebra is checked by exact word
+rewriting and integer amplitude polynomials. Polyhedral discovery uses
+rational double description; independent acceptance clips every
+halfspace from the full rational unit cube and verifies the final
+vertices and facet ranks. Missing-facet and corrupted-certificate
+controls must be rejected. Numerical states are checked independently
+through their bitwise Pauli action.
+
+The accepted clean-source reproduction used code/data commit
+\texttt{a7a92f3}, followed by documentation-only commit
+\texttt{4dc9dc7}. All 127 tests passed in one run in 441.989 seconds,
+and all 64 artifact hashes matched. C011, C012, C014 and C016 discovery
+outputs were regenerated; saved C015 states, not every optimization
+trajectory, were reevaluated. These are same-host checks with different
+algorithms, not external replication or proof-assistant verification.
+
+Failed attempts remain in the ledger. A complete hull enumeration for
+$Y$ exceeded a 300-second cap and is not accepted as complete. The
+full-facet claim in Proposition~\ref{prop:target} instead uses exhaustive
+stable-set enumeration for just the frozen weight. For $X^+$, two
+clipping attempts timed out before acceptance; an exact candidate-edge
+index eventually passed both the full hull and missing-facet checks.
+The index retains the original exact adjacency rank test and falls back
+to full pair scanning when its index budget is exceeded.
+
+The established beta framework, closure rules and state-polynomial
+relaxations are prior art \cite{xu}. XX-strips are published classical
+objects \cite{cs}; gear composition describes classical stable-set
+polytopes under specific hypotheses \cite{gear}. These facts must not
+be relabeled as new quantum mechanisms. A quantum all-weight result for
+the specified family is the candidate mathematical contribution, but
+equivalence to a consequence of a larger known closure or embedding
+remains a priority question. We do not infer novelty from a failed
+keyword search. The wider source comparison and unresolved applicability
+questions are retained in the repository's novelty audit.
+
+The quantum consequences proved here are tight uncertainty bounds:
+for every proved graph,
+\[
+ \sum_iw_i\operatorname{Var}_\rho(P_i)
+ \geq \sum_iw_i-\alpha(G,w),
+\]
+since $P_i^2=I$. They also give valid Hamiltonian norm bounds by
+\eqref{eq:variational} and weighted Cauchy--Schwarz. These are standard
+consequences of all-weight equality, not demonstrated runtime or
+sample-complexity advantages. No paid cloud experiment or QPU job was
+performed. The unresolved composition facet is neither a hardware
+advantage claim nor a completed universal SCF theorem.
+
+\section{Conclusion}
+A coherent signed Gram representation and an exact fixed-core
+refinement prove all-weight Pauli uncertainty for an explicit unbounded
+SCF family. The same scalar envelope completes a three-row atom and
+supplies two XX-based corollaries. The composed twenty-four-operator
+target identifies the remaining boundary sharply: its full-support
+classical facet is exact, the first-moment relaxation has a certified
+gap, and the finite quantum attack finds no violation. The next
+mathematical step is an exact operator upper bound or a physical
+counterexample for this fixed target. None of the results here replaces
+that step with numerical agreement.
+
+\appendix
+\section{Explicit graph and operator conventions}\label{app:graphs}
+The XX graph $X$ uses the cycle $1$--$2$--$3$--$4$--$5$--$6$--$1$
+and the following additional adjacency lists, each adding only the
+listed edges:
+\[
+\begin{array}{c|l}
+7&1,2\\8&4,5\\9&6,1,2,3\\10&3,4,5,6,9\\
+11&3,4,6,1,9,10\\12&2,3,5,6,9,10\\13&1,2,4,5,7,8.
+\end{array}
+\]
+It has 37 edges. The graph6 strings of $X$ and $X^+$, respectively, are
+\begin{center}\verb|LhEM?rcNLhleuo|\qquad\verb|NhEM?rcNLhleuo?_?GG|.\end{center}
+The two-core graph $Y$ has graph6
+\begin{center}\small\verb|WhENH}vZuo???@??b@GoP?@C?FG?Bw?J[?B]EBkE?O???oB|.\end{center}
+The authoritative Pauli labels for $Y$ are integer pairs $(x,z)$ in
+\artifact{scf_two_xx_weight_c014.json}. For a seven-bit basis label $j$,
+\[
+ P(x,z)|j\rangle=i^{\operatorname{popcount}(x\mathbin{\&}z)}
+ (-1)^{\operatorname{popcount}(j\mathbin{\&}z)}|j\mathbin{\oplus}x\rangle.
+\]
+This formula fixes the Hermitian phase and bit ordering. Pairwise
+anticommutation is the binary symplectic product
+$x\cdot z'+z\cdot x'=1$ over $\F_2$. Every such product is checked.
+Stored complex states encode each amplitude as a pair of real and
+imaginary floating-point components. Their acceptance is numerical
+with an explicit tolerance, unlike rational hull and Gram certificates.
+
+\section{Certificate inventory and reproduction}\label{app:reproduction}
+The public repository is \url{https://github.com/YaroslavPelekhov/Quantum}.
+The research snapshot used for this draft is
+\begin{center}\small\texttt{4dc9dc7bc26cca5ea3a7f4cfa66cc4f7fc969a83}.\end{center}
+Source checkers are under
+\path{experiments/pauli_fourth_moment_phase0/}; data are under
+\path{results/pauli_fourth_moment_phase0/}.
+The latter directory's \artifact{manifest.json} lists every artifact's
+canonical SHA-256. JSON canonicalization here only normalizes CRLF to
+LF; it does not reorder keys or recompute numerical values.
+
+\small
+\begin{longtable}{p{.19\linewidth}>{\raggedright\arraybackslash}p{.73\linewidth}}
+\toprule Obligation & Principal artifacts / acceptance programs\\\midrule
+\endhead
+Uniform Gram & \artifact{scf_rectangular_gram_bridge.json};
+ \artifact{verify_scf_rectangular_gram_bridge.py}\\
+Uniform hull/core & \artifact{scf_uniform_facet_gate.json},
+ \artifact{scf_core_refinement.json};
+ \artifact{verify_scf_uniform_facet_gate.py},
+ \artifact{verify_scf_core_refinement.py}\\
+Three-row proof & \artifact{scf_three_row_gram_c009.json};
+ \artifact{verify_scf_three_row_gram.py} (also checks the target hull)\\
+XX atom & \artifact{scf_xx_gate_c011.json};
+ \artifact{verify_scf_xx_gate.py}\\
+Closed XX & \artifact{scf_xx_closure_c012.json};
+ \artifact{verify_scf_xx_closure.py}\\
+Joint facet & \artifact{scf_two_xx_weight_c014.json};
+ \artifact{verify_scf_two_xx_weight.py}\\
+Physical attack & \artifact{scf_two_xx_attack_c015.json};
+ \artifact{verify_scf_two_xx_attack.py}\\
+Theta witness & \artifact{scf_two_xx_baseline_c016.json};
+ \artifact{verify_scf_two_xx_baseline.py}\\
+Integrity & \artifact{manifest.json};
+ \artifact{verify_scf_research_bundle.py}\\\bottomrule
+\end{longtable}
+\normalsize
+For example, from the repository root run the following commands
+(replace the short filename in the second line for the other exact
+checkers listed above):
+\begin{quote}\small\ttfamily
+python -S experiments/pauli\_fourth\_moment\_phase0/\\
+\hspace*{1em}verify\_scf\_research\_bundle.py\par
+python -S experiments/pauli\_fourth\_moment\_phase0/\\
+\hspace*{1em}verify\_scf\_three\_row\_gram.py
+\end{quote}
+The displayed wrapped paths must be joined into one line each. All
+independent exact acceptance programs use the standard library. The full
+regression suite additionally imports NetworkX and must \emph{not} use
+\texttt{-S}:
+\begin{quote}\small\ttfamily\raggedright
+python -m unittest discover\\
+\hspace*{1em}-s experiments/pauli\_fourth\_moment\_phase0\\
+\hspace*{1em}-p "test\_scf*.py"
+\end{quote}
+Assertions are part of certificate acceptance: never invoke these
+checkers with \texttt{-O}. Discovery additionally uses the recorded
+NumPy/SciPy/SymPy/CVXPY environment and \texttt{cdd.gmp} for exact hulls.
+Rediscovery should run in a new archive rather than overwrite reference
+artifacts. The registered C015 attack is not extended by this manuscript.
+
+The paper-specific checker compares the headline constants with the
+archived JSON and verifies the claim-status flags. It supplements, not
+replaces, the mathematical checkers. Manuscript authorship, affiliations,
+funding, and final submission disclosures must be approved by the human
+authors before submission. This is an AI-assisted working draft, not a
+submitted or externally reviewed article.
+
+\begin{thebibliography}{9}
+\bibitem{cem}
+A. Chapman, S. J. Elman, and R. L. Mann.
+\emph{A Unified Graph-Theoretic Framework for Free-Fermion Solvability}.
+arXiv:2305.15625v1 (2023).
+\url{https://arxiv.org/abs/2305.15625v1}.
+
+\bibitem{xu}
+Z.-P. Xu, J. Wang, Q. Ye, G. Ko\ss mann, R. Schwonnek, and A. Winter.
+\emph{Simultaneous variances of Pauli strings, weighted independence
+numbers, and a new kind of perfection of graphs}.
+arXiv:2511.13531v1 (2025).
+\url{https://arxiv.org/abs/2511.13531v1}.
+
+\bibitem{cs}
+M. Chudnovsky and P. Seymour.
+\emph{The structure of claw-free graphs}. Author-hosted survey,
+XX-strip definition on printed page 6.
+\url{https://www.math.u-szeged.hu/~hajnal/courses/PhD_Specialis/Chudnovsky.pdf}.
+
+\bibitem{gear}
+A. Galluccio, C. Gentile, and P. Ventura.
+\emph{Gear Composition of Stable Set Polytopes and G-Perfection}.
+IASI Technical Report R.661 (2007), Definitions 2.2 and 2.4.
+\url{https://www.iasi.cnr.it/~gentile/ClaudioGentileFiles/papers/MOR.pdf}.
+Published version: \url{https://doi.org/10.1287/moor.1090.0407}.
+\end{thebibliography}
+\end{document}
