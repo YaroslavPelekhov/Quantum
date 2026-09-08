@@ -873,3 +873,42 @@ C009 rediscovery regenerated its canonical hash exactly; all 57 artifact
 hashes passed, the independent verifier passed with `python -S`, and all
 87 SCF tests passed again (27.980 seconds). This is same-host clean
 source reproduction, not an external reviewer or a different machine.
+
+## C010 — completed 2026-09-08: uniform all-weight F(E) closure
+
+Registrations d7408bd (four D_m hulls) and ae59ad0 (adaptive fixed core).
+The frozen D_0,...,D_3 graphs have orders 6,8,10,12 and exact facets
+11,17,23,27; every discovered positive facet uses rank or alpha-two bounds.
+The separate private-row core has 21 stable vertices and 17 facets.
+Lifting the joint row-presence event gives a 9D polytope with 21 vertices,
+18 facets and exactly three lower-z inequalities, matching the registration.
+Independent Fraction full-cube clipping verifies both the endpoint and
+each of the four expanded H-descriptions. Dropping a lower facet creates
+spurious vertices; corrupted endpoint, graph-scope and event controls fail.
+
+A uniform transportation/Hall argument proves completeness for every m.
+All independent triples in D_m require B0 and both expanded row groups;
+none of the core positive facets supports all three. Thus every expanded
+row has alpha<=2 support uniformly, and earlier quantum theorems suffice.
+This closes all weights on D_m without a new Gram inequality.
+
+C008's uniform two-node root cover now closes ALL claw-free F(E):
+two-column and mixed covers use C009 plus known splitting, rows {0,1}
+use C007, and rows {0,2}/{1,2} use D_m. Explicit induced maps/twin-quotient
+witnesses pass on all 2120 previously registered claw-free grid patterns.
+The analytic cover proof, not that finite audit, provides uniformity.
+Proof: [SCF_THREE_ROW_ALL_WEIGHT_C010.md](SCF_THREE_ROW_ALL_WEIGHT_C010.md).
+
+No paid runs, numerical beta optimization, QPU, external contact or
+unrelated changes. General H-SCF OPEN; A-star NOT CONFIRMED. Hall, matching
+and splitting are known tools, not new algorithms. The precise quantum
+construction theorem still needs external mathematical and priority review.
+
+All 95 SCF tests pass (30.543 seconds), including eight new C010 tests.
+
+Next C011 (not registered/run): adversarially test the significance and
+coverage boundary of this completed construction. F(E) always has alpha<=3:
+lights use three rows and a heavy's nonneighbors form a clique. Therefore
+no size increase of this construction can settle arbitrary-alpha SCF.
+Compare against known claw-free polyhedral theorems before selecting a
+genuinely uncovered SCF class; do not relabel F(E) as general SCF.

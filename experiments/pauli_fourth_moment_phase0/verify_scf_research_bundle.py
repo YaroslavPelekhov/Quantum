@@ -116,6 +116,13 @@ def main():
     assert [len(c) for c in gram['transfer_coefficients']] == [12, 39, 21]
     assert not gram['quantum_bound_proved'] and not gram['unrestricted_SCF_theorem']
     assert not gram['A_star_confirmed']
+    d_family = json.loads(read('scf_d_family_c010.json'))
+    d_core = json.loads(read('scf_d_core_c010.json'))
+    assert d_family['audit_m'] == [0, 1, 2, 3]
+    assert [len(r['facets_b_plus_ax']) for r in d_family['records']] == [11, 17, 23, 27]
+    assert len(d_core['points']) == 21 and len(d_core['facets_b_plus_ax']) == 18
+    assert len(d_core['lower_z_facets']) == 3
+    assert not d_core['unrestricted_SCF_theorem'] and not d_core['A_star_confirmed']
     print(json.dumps({'location': 'git_index' if args.git_index else 'worktree',
                       'artifact_hashes_checked': len(names), 'covered_types_exactly_once': 128,
                       'exact_census_occurrences': sum(occurrences.values()),
@@ -132,6 +139,7 @@ def main():
                       'C008_target_facets': 36,
                       'C008_target_open_quantum_facets': 1,
                       'C009_subsequently_closed_target_facets': 1,
+                      'C010_lifted_core_facets': 18,
                       'status': 'integrity_checks_passed'}))
 
 

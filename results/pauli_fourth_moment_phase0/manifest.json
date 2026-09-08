@@ -16,6 +16,16 @@
   },
   "artifacts": [
     {
+      "path": "scf_d_family_c010.json",
+      "bytes": 30933,
+      "sha256": "fe179e2361fd44ecba3358e33a7abe27563ee91cded08903fe893762e757b167"
+    },
+    {
+      "path": "scf_d_core_c010.json",
+      "bytes": 6831,
+      "sha256": "08e07ab89cdb8fd0cabb15ca03b327422c75c46a99d9b8e3cdf10d27b79d49aa"
+    },
+    {
       "path": "scf_three_row_gram_c009.json",
       "bytes": 42382,
       "sha256": "34b89211fd99fbc77819c1ad68734425a3d96effae89d477d7289e55071ea2db"

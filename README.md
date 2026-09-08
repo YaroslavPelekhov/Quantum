@@ -1,6 +1,13 @@
 # Quantum x Evolutionary Computing Research Artifact
 
-Latest cycle C009 (2026-09-08):
+Latest cycle C010 (2026-09-08):
+[all-weight uncertainty for every claw-free three-row construction F(E)](experiments/pauli_fourth_moment_phase0/SCF_THREE_ROW_ALL_WEIGHT_C010.md).
+The number of columns is unrestricted. A fixed 21-vertex joint-event
+polytope, uniform Hall refinement and the C008 root-cover classification
+close the remaining D_m family and hence all F(E). This is not unrestricted
+weighted SCF or confirmed A-star novelty. Known closure/flow tools are credited.
+
+Previous cycle C009 (2026-09-08):
 [exact all-weight theorem for the 12-vertex three-row target](experiments/pauli_fourth_moment_phase0/SCF_THREE_ROW_GRAM_C009.md).
 All universal Gram/transfer identities pass independent exact verification.
 The scalar spectral argument proves the last full facet (exact beta=3),

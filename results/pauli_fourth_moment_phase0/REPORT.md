@@ -4,6 +4,14 @@ Date: 2026-09-08
 
 ## Verdict
 
+C010: [all-weight closure of every claw-free F(E)](../../experiments/pauli_fourth_moment_phase0/SCF_THREE_ROW_ALL_WEIGHT_C010.md).
+Column count is now unrestricted within the three-row selector construction.
+The D_m endpoint certificate has 21 lifted vertices and 18 facets; Hall
+refinement proves the all-m description. Every positive expanded row has
+alpha<=2 support, so existing quantum bounds suffice. C008's root-cover
+classification, C007, C009 and known splitting complete F(E). This closes
+the construction, not the general weighted SCF conjecture or A-star novelty.
+
 C009: [the fixed three-row target is now proved for all nonnegative weights](../../experiments/pauli_fourth_moment_phase0/SCF_THREE_ROW_GRAM_C009.md).
 All three universal identities pass inversion-parity discovery and independent
 word-rewriting/minor verification, with 12,39,21 coefficient monomials.

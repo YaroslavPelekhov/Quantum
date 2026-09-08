@@ -1,5 +1,10 @@
 # Pauli fourth-moment phase 0
 
+C010 completed: [all claw-free F(E), arbitrary column count and all weights](SCF_THREE_ROW_ALL_WEIGHT_C010.md).
+The remaining row-pair cases are closed by a fixed-core endpoint lemma
+and a uniform refinement proof. This is a theorem for the construction,
+not all SCF graphs. External review and novelty remain open.
+
 C009 completed: [fixed three-row all-weight theorem](SCF_THREE_ROW_GRAM_C009.md).
 Independent full-algebra identities plus the spectral envelope close the
 last facet of the C008 target. The complete rational hull gives all weights.
