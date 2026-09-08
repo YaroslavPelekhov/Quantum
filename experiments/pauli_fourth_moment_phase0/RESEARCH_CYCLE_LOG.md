@@ -819,7 +819,7 @@ and all 78 SCF tests passed again (26.577 seconds for the combined suite).
 No repository cache or uncommitted source was used. This is same-host
 clean reproduction with independent algorithms, not external peer review.
 
-## C009 — next: a coherent Gram identity, not another census
+## C009 — candidate recorded before execution
 
 Preregister before computing: for the fixed C008 target use amplitudes
 a_j,b_j,c_j on rows A,B,C and r0,r1,rc on heavies. A candidate real sector
@@ -838,3 +838,31 @@ The old factorization through a single Z is unavailable, since all three
 light rows now occupy all three columns. No numerical agreement alone
 closes this obligation, and no unrestricted all-column/SCF theorem follows
 from this fixed target without a separate uniform proof.
+
+### C009 completed 2026-09-08 — fixed target all-weight theorem
+
+Registration commit `9b657c5`. All five proposed signs are central,
+Hermitian, mutually commuting involutions in the full 12-generator
+algebra. All three even transfer identities pass exactly, with 12,39,21
+monomials; all odd coefficients vanish. Discovery uses inversion parity;
+independent acceptance uses adjacent-letter rewriting, squared minors
+for e2 and det(B)^2 for e3. Neither assumes independent sector signs.
+
+The analytic Rayleigh/envelope/correct-branch argument closes the full
+(1-light,2-heavy) facet with exact beta=3. Together with rechecked complete
+C008 rational hull and earlier rank/alpha-two bounds, this proves ALL
+nonnegative weights for the fixed target `K{S{aSfF~Fln` and its induced
+subgraphs. Details: [C009 proof](SCF_THREE_ROW_GRAM_C009.md).
+No all-column family theorem or general H-SCF result follows yet. A-star
+novelty remains NOT CONFIRMED; external mathematical review is pending.
+
+All 87 combined SCF tests pass (28.378 seconds); 57 artifact hashes pass.
+Nine new tests pass, including wrong sign/coefficient/graph and overclaim
+rejection. No numerical optimization, paid compute, QPU or external contact.
+Artifact canonical LF SHA-256:
+`34b89211fd99fbc77819c1ad68734425a3d96effae89d477d7289e55071ea2db`.
+
+Next obligation (C010, not yet registered or run): combine C008's uniform
+root-cover classification with C009 heredity, explicitly identify the
+remaining unbounded two-row cases {0,2}/{1,2}, and test whether the same
+Gram bound extends there. Mere additional fixed graphs are not the goal.

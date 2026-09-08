@@ -1,6 +1,13 @@
 # Quantum x Evolutionary Computing Research Artifact
 
-Latest cycle C008 (2026-09-06):
+Latest cycle C009 (2026-09-08):
+[exact all-weight theorem for the 12-vertex three-row target](experiments/pauli_fourth_moment_phase0/SCF_THREE_ROW_GRAM_C009.md).
+All universal Gram/transfer identities pass independent exact verification.
+The scalar spectral argument proves the last full facet (exact beta=3),
+and the complete rational hull then establishes all nonnegative weights.
+This closes the fixed C008 target, not general weighted SCF or A-star novelty.
+
+Previous cycle C008 (2026-09-06; historical status before C009):
 [three-row structural reduction and a precisely isolated quantum target](experiments/pauli_fourth_moment_phase0/SCF_THREE_ROW_STRUCTURAL_GATE.md).
 A uniform claw/matching lemma is independently audited on all 4096 frozen
 root patterns. The selected 12-vertex SCF graph has 46 stable vertices and

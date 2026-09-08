@@ -1,8 +1,15 @@
 # Pauli fourth-moment / quantum-convolution phase 0
 
-Date: 2026-09-06
+Date: 2026-09-08
 
 ## Verdict
+
+C009: [the fixed three-row target is now proved for all nonnegative weights](../../experiments/pauli_fourth_moment_phase0/SCF_THREE_ROW_GRAM_C009.md).
+All three universal identities pass inversion-parity discovery and independent
+word-rewriting/minor verification, with 12,39,21 coefficient monomials.
+The spectral envelope proves beta=3 for the full facet; complete exact hull
+verification closes all weights. No general weighted SCF or A-star claim.
+The C008 account below records the preceding, then-unresolved stage.
 
 C008: [a uniform structural reduction identifies a new proof obligation](../../experiments/pauli_fourth_moment_phase0/SCF_THREE_ROW_STRUCTURAL_GATE.md).
 The three-row/two-row-one-column-selector construction is SCF exactly when

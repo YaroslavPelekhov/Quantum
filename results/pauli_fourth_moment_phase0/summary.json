@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-06",
+  "date": "2026-09-08",
   "research_cycles": {
     "C001": {"status": "complete_exact_structural_audit", "weighted_types": 47, "distinct_graph6": 46, "minimum_pair_counts": {"1": 36, "2": 8, "3": 3}, "one_pair_separator_route_covers_corpus": false},
     "C002": {"status": "complete_exact_obstructions", "attacks": 11, "controls": 3, "exact_coordinatewise_obstructions": 8, "canonical_left_pair_sum": "1/4", "canonical_right_pair_sum": "1/2", "quantum_conjecture_falsified": false},
@@ -9,8 +9,8 @@
     "C006": {"status": "complete_exact_G1_all_weight_theorem", "family_graph6": "IrqaaulLw", "frontier_graph6": "ICXmtizr_", "stable_vertices": 34, "facets": 27, "facet_routes": {"nonnegativity": 10, "SCF_rank": 14, "SCF_order9_all_weights": 2, "C005_rectangular_Gram": 1}, "independent_completeness": "standard-library Fraction edge clipping from the full unit cube", "missing_facet_control_extra_vertices": 3, "missing_facet_control_exact_gap": "1/4", "family_all_m_all_weight_theorem": false},
     "C007": {"status": "complete_computer_assisted_uniform_all_weight_family_theorem", "family_orders": "2m+8 for every integer m>=0", "all_nonnegative_real_weights": true, "unbounded_R_m_proved": true, "proof": "exact fixed-core joint-event lemma plus uniform weighted-Hall refinement and the C005 quantum Gram bound", "uniform_H_description_rows": "4m+23", "uniform_irredundancy_claim": false, "finite_audit_orders": [8,10,12,14], "finite_STAB_vertices": [22,34,50,70], "finite_exact_facets": [23,27,31,35], "lifted_core_dimension": 9, "lifted_core_vertices": 22, "lifted_core_facets": 24, "lower_joint_event_facets": 3, "classical_flow_novelty_claim": false, "bounded_MIR_matches": 0, "MIR_nonexistence_or_priority_proved": false, "external_review": "pending"},
     "C008": {"status": "complete_uniform_structural_reduction_and_exact_target", "root_patterns": 4096, "claw_free_SCF": 2120, "claw_present": 1976, "uniform_structure": "F(E) is SCF iff the three-row root outside column zero has matching number at most two", "target_graph6": "K{S{aSfF~Fln", "target_vertices": 12, "target_STAB_vertices": 46, "target_facets": 36, "facets_with_existing_quantum_proofs": 35, "remaining_quantum_facets": 1, "remaining_weight": "one on nine lights, two on three heavies, classical bound three", "target_GF2_adjacency_rank": 6, "outside_C007_hereditary_family": true, "target_quantum_bound": "open", "new_quantum_theorem": false, "classical_algorithm_novelty_claim": false},
-    "C009": {"status": "pending_operator_preregistration", "question": "Does a coherent signed 3-by-3 Gram matrix reproduce every universal transfer coefficient of the C008 target, allowing the existing scalar envelope to prove its sole unresolved facet?"},
-    "combined_tests_passed": 78,
+    "C009": {"status": "complete_computer_assisted_fixed_target_all_weight_theorem", "target_graph6": "K{S{aSfF~Fln", "vertices": 12, "all_nonnegative_weights": true, "full_facet_beta": 3, "universal_coefficient_terms": [12,39,21], "central_involutions": 5, "independent_acceptance": "adjacent-letter rewriting and squared minors; complete Fraction hull", "new_tests_passed": 9, "external_review": "pending", "unrestricted_SCF_theorem": false, "A_star_confirmed": false},
+    "combined_tests_passed": 87,
     "unrestricted_quantum_theorem": "open",
     "A_star_novelty": "not_confirmed"
   },

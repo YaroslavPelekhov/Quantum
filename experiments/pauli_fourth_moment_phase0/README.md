@@ -1,6 +1,12 @@
 # Pauli fourth-moment phase 0
 
-C008 completed: [three-row structural gate](SCF_THREE_ROW_STRUCTURAL_GATE.md).
+C009 completed: [fixed three-row all-weight theorem](SCF_THREE_ROW_GRAM_C009.md).
+Independent full-algebra identities plus the spectral envelope close the
+last facet of the C008 target. The complete rational hull gives all weights.
+Nine new tests include corrupted-certificate controls. General SCF and
+A-star novelty remain open; the next step is uniform extension, not a census.
+
+C008 completed (historical): [three-row structural gate](SCF_THREE_ROW_STRUCTURAL_GATE.md).
 An arbitrary-column structural proof and 4096-pattern exact audit isolate
 a 12-vertex target outside the earlier hereditary family. Its complete
 36-facet hull leaves exactly one quantum inequality unresolved. No beta

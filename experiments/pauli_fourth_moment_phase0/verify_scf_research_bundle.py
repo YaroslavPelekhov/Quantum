@@ -109,6 +109,13 @@ def main():
         'nonnegativity': 12, 'SCF_rank': 20, 'SCF_alpha_two': 3,
         'unresolved_by_rank_alpha_two_order9': 1}
     assert not three_target['all_weight_quantum_theorem'] and not three_target['A_star_confirmed']
+    gram = json.loads(read('scf_three_row_gram_c009.json'))
+    assert gram['graph6'] == t['graph6']
+    assert gram['identity_pass'] == [True]*3 and gram['residuals'] == [[], [], []]
+    assert gram['odd_zero'] == [True]*3 and gram['mutually_commuting']
+    assert [len(c) for c in gram['transfer_coefficients']] == [12, 39, 21]
+    assert not gram['quantum_bound_proved'] and not gram['unrestricted_SCF_theorem']
+    assert not gram['A_star_confirmed']
     print(json.dumps({'location': 'git_index' if args.git_index else 'worktree',
                       'artifact_hashes_checked': len(names), 'covered_types_exactly_once': 128,
                       'exact_census_occurrences': sum(occurrences.values()),
@@ -124,6 +131,7 @@ def main():
                       'C008_structural_patterns': 4096,
                       'C008_target_facets': 36,
                       'C008_target_open_quantum_facets': 1,
+                      'C009_subsequently_closed_target_facets': 1,
                       'status': 'integrity_checks_passed'}))
 
 
