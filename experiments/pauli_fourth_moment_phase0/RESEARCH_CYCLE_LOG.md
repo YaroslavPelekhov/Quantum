@@ -918,3 +918,25 @@ lights use three rows and a heavy's nonneighbors form a clique. Therefore
 no size increase of this construction can settle arbitrary-alpha SCF.
 Compare against known claw-free polyhedral theorems before selecting a
 genuinely uncovered SCF class; do not relabel F(E) as general SCF.
+
+## C011 — completed 2026-09-08: published XX-strip all-weight corollary
+
+Registration f8497ac. The Chudnovsky--Seymour source's full printed page 6
+was rendered and visually checked before graph transcription. Frozen eight
+deletions of vertices 11,12,13, no beta optimization. Full graph
+`LhEM?rcNLhleuo`: order 13, alpha 4, 85 stable vertices, 33 facets.
+The quadruple {3,6,7,8} in source labels excludes hereditary F(E).
+
+Independent full-cube Fraction clipping verifies all eight hulls. For the
+full graph, 17 positive rank rows and two alpha-two rows use earlier
+theorems. Its sole remaining row is on an 11-vertex induced subgraph of
+C009; every edge and nonedge of the map is independently verified.
+C009 is itself rechecked. Thus all weights of the full XX graph follow,
+and its variants follow by heredity. This is a corollary, not a new
+operator principle or a newly discovered graph. Details: SCF_XX_GATE_C011.md.
+Removing the C009-supported facet creates spurious rational vertices.
+
+Classical strip-composition literature was audited but not imported as a
+quantum theorem: compatibility of auxiliary marginals remains an extra
+obligation. General H-SCF and A-star remain open. Next C012 is a separately
+registered explicit XX-strip closure, not an unproved generic gluing rule.

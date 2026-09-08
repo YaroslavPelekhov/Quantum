@@ -123,6 +123,12 @@ def main():
     assert len(d_core['points']) == 21 and len(d_core['facets_b_plus_ax']) == 18
     assert len(d_core['lower_z_facets']) == 3
     assert not d_core['unrestricted_SCF_theorem'] and not d_core['A_star_confirmed']
+    xx = json.loads(read('scf_xx_gate_c011.json'))
+    assert [r['deletion_mask'] for r in xx['records']] == list(range(8))
+    assert xx['records'][0]['graph6'] == 'LhEM?rcNLhleuo'
+    assert [len(r['facets_b_plus_ax']) for r in xx['records']] == [33,30,30,29,26,23,23,22]
+    assert all(r['alpha'] == 4 for r in xx['records'])
+    assert not xx['unrestricted_SCF_theorem'] and not xx['A_star_confirmed']
     print(json.dumps({'location': 'git_index' if args.git_index else 'worktree',
                       'artifact_hashes_checked': len(names), 'covered_types_exactly_once': 128,
                       'exact_census_occurrences': sum(occurrences.values()),
@@ -140,6 +146,7 @@ def main():
                       'C008_target_open_quantum_facets': 1,
                       'C009_subsequently_closed_target_facets': 1,
                       'C010_lifted_core_facets': 18,
+                      'C011_published_XX_facets': 33,
                       'status': 'integrity_checks_passed'}))
 
 
