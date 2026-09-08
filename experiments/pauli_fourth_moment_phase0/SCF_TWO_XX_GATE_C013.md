@@ -48,3 +48,12 @@ https://www.math.u-szeged.hu/~hajnal/courses/PhD_Specialis/Chudnovsky.pdf
 
 General H-SCF, physical auxiliary compatibility, external review and
 A-star novelty remain OPEN. C003's false generic gluing is not a premise.
+
+## Execution outcome
+
+The one preregistered discovery process was terminated by the independent
+subprocess timeout after 300 seconds. No completed JSON artifact was
+written, no selected facet was obtained, and no H/V completeness result
+is accepted. The 24-vertex graph is retained. C014 switches to two frozen
+weight rows on this SAME graph and checks their exact supporting faces;
+it does not rebrand C013 as a successful enumeration.
