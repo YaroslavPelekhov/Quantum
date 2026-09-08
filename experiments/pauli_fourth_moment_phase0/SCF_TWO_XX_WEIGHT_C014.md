@@ -39,3 +39,34 @@ Published metadata: https://doi.org/10.1287/moor.1090.0407
 
 The open problem is quantum compatibility, not finding another name for
 a classical facet. H-SCF and A-star remain open, external review pending.
+
+## Completed exact structural outcome
+
+Graph6: `WhENH}vZuo???@??b@GoP?@C?FG?Bw?J[?B]EBkE?O???oB`.
+There are 2167 stable sets and alpha=6. The target row has exact bound
+six and 88 tight sets with homogeneous rank 24: it IS a full facet.
+In zero-based indices it is `sum(x_i for i=0,...,23)+x6+x7 <= 6`.
+The second row has bound seven, eight tight sets and homogeneous rank
+six, so is NOT a facet. Its quantum bound follows by summing the two
+C011 atom rows and `x22+x23<=1`, and its stable optimum attains seven.
+
+Both maxima and ALL tight sets match the independent exhaustive-core
+product verifier. Fraction elimination independently confirms both ranks.
+The Pauli binary adjacency rank is 14; a seven-qubit standard realization
+is constructed and every pairwise (anti)commutation sign is checked by
+binary symplectic products. This is a budget for simulation, not hardware.
+
+The target's full facet status excludes proving this row solely by a
+nonnegative sum of valid proper-support linear inequalities, including
+induced C009/C011 rows and rank rows. Indeed any such representation of
+a facet would require each positive summand's hyperplane to contain all
+88 tight stable vertices; their affine span has codimension one, so each
+summand must be the same full-support facet up to positive scaling.
+That does not exclude a nonlinear reduction, known graph operation, or
+the published geared/g-lifted machinery; priority is NOT established.
+
+The precise quantum obligation is now `sum_i <P_i>^2 + <P6>^2 + <P7>^2
+<=6` for the stated anticommutation graph, with arbitrary real states and
+all allowed sign/central relations. It remains OPEN. No all-weight or
+unrestricted SCF theorem follows. C015 must attack this fixed row rather
+than resume a larger facet census.
