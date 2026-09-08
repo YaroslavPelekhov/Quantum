@@ -120,3 +120,8 @@ coefficient, graph, odd-check and scope rejection.
 Artifact: `results/pauli_fourth_moment_phase0/scf_three_row_gram_c009.json`.
 Canonical LF SHA-256:
 `34b89211fd99fbc77819c1ad68734425a3d96effae89d477d7289e55071ea2db`.
+
+Clean-source reproduction of commit `cd89705` regenerated the same hash.
+The independent standard-library verifier, all 57 bundle hashes and all
+87 SCF tests passed in the fresh archive (27.980 seconds for the suite).
+This is same-host reproduction, not external mathematical review.

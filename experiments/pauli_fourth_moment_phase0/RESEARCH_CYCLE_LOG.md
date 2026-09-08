@@ -866,3 +866,10 @@ Next obligation (C010, not yet registered or run): combine C008's uniform
 root-cover classification with C009 heredity, explicitly identify the
 remaining unbounded two-row cases {0,2}/{1,2}, and test whether the same
 Gram bound extends there. Mere additional fixed graphs are not the goal.
+
+Clean reproduction of commit `cd89705`: archived the tracked phase-0
+experiment and result directories into a fresh temporary directory.
+C009 rediscovery regenerated its canonical hash exactly; all 57 artifact
+hashes passed, the independent verifier passed with `python -S`, and all
+87 SCF tests passed again (27.980 seconds). This is same-host clean
+source reproduction, not an external reviewer or a different machine.
