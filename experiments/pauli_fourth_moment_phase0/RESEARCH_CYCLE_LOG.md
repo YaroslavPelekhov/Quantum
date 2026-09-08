@@ -1030,3 +1030,14 @@ starts as a substitute for the proof. General H-SCF, C014's quantum bound,
 priority and A-star novelty remain OPEN. No paid jobs, QPU or external
 review/contact. The existing two-hour research heartbeat was inspected;
 no duplicate automation or limit reset was created.
+
+Clean-source acceptance: a fresh git archive of a7a92f3 reproduced C011,
+C012, C014 and C016 discovery outputs. All 64 bundle artifact hashes
+matched. Independent python -S acceptance of C014, saved C015 physical
+witnesses and C016 passed. The complete unittest suite then passed all
+127 tests in 441.989 seconds, including C011/C012 exact completeness and
+negative controls. Terminal marker: CLEAN_REPRODUCTION_C011_C016_PASSED.
+C015 optimizer trajectories were not rerun in this clean reproduction;
+the saved physical witnesses were reevaluated independently. This clean
+acceptance applies to a7a92f3 code/data; subsequent publication notes are
+documentation-only. Quantum C014 and A-star novelty remain OPEN.
