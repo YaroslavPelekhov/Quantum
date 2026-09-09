@@ -1,0 +1,12 @@
+{
+  "records": 60,
+  "nonuniform_seed_records": 56,
+  "states_checked": 960,
+  "classical_failures": 0,
+  "max_gap": 7.460698725481052e-14,
+  "violations": 0,
+  "strict_converged": 794,
+  "stationary_below_1e_8": 553,
+  "max_stationarity_residual": 0.0012485871624572536,
+  "quantum_transfer_proved": false
+}
