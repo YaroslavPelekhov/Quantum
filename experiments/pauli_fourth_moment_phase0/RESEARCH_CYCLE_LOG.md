@@ -1228,3 +1228,22 @@ finite failure is stronger than a measure-zero example, but generic
 d=2,r=2 one-step sampling succeeds and must not be attacked using the
 exceptional diagonal rank-two example. Novelty and sampling relevance
 remain unconfirmed; no new A-star label or paid/hardware run.
+
+### Alternating multi-time support audit — 2026-09-09
+
+Extended the exact invariant to all nested tail-marginal ranks under any
+sequence of the equation-50 tail filters. Generic Ginibre exact finite
+repair has threshold r>=d^(2k-1); below it the top causal rank equality
+is impossible at finite time. This closes the mathematical gap between
+the one-step obstruction and alternating multi-time updates, not the
+gap to author-code reproduction or sampling significance.
+
+Frozen 40-run, 200-update sweep included both time orders, k=2,3, low-rank
+and threshold-rank inputs. Ten descending full-support controls passed
+after a single sweep, max residual 8.257e-14. Explicitly retained 38
+numerical rank-threshold mismatches rather than calling all ranks verified.
+For the first mismatch, a post-hoc independent 80-digit calculation found
+the small marginal eigenvalue still positive at ~8.48e-16, consistent
+with exact rank preservation and numerical near-boundary loss. All raw
+spectra retained. Not all mismatches were independently replayed; no
+asymptotic rate, sampling-bias estimate, or A-star novelty claim follows.
