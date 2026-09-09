@@ -1206,3 +1206,25 @@ loss in the asymptotic limit. No generic-ensemble failure rate is inferred.
 Existing low-rank Sinkhorn warnings prevent presenting low-rank failure
 itself as novelty. Author code remains unretrieved; noncommuting dynamics
 and sampling-measure significance remain open research gates.
+
+### General support-rank invariant — 2026-09-09
+
+Previous goal turn was progress (publisher audit, diagonal theorem and
+published exact checks). This continuation extended the one-step result
+to arbitrary PSD inputs, without a diagonal/commutation assumption.
+The normalized filter preserves global rank, marginal rank and the
+support of the earlier marginal at every finite exact iteration.
+Causal output is possible iff rank(M)=dim(B)*rank(R); in that case one
+step suffices. A strict initial deficit therefore prohibits ALL finite
+exact termination. Asymptotic convergence and numerical truncation are
+separate questions. This is not a proof about every multi-time pass.
+
+Preregistered a 90-input d=2,3,4 / rank=1,...,d / ten-seed one-step sweep.
+All predictions passed. Thirty full-support cases had residual <=1.894e-14;
+sixty deficient cases had residual 0.125311–0.516817. One pure causal
+positive control also passed. Full spectra are saved in the new result
+JSON. This corrects interpretation in both directions: generic low-rank
+finite failure is stronger than a measure-zero example, but generic
+d=2,r=2 one-step sampling succeeds and must not be attacked using the
+exceptional diagonal rank-two example. Novelty and sampling relevance
+remain unconfirmed; no new A-star label or paid/hardware run.
