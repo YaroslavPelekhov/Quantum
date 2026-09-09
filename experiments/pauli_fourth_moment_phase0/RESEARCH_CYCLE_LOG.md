@@ -1361,3 +1361,21 @@ This genuinely improves the fixed-representation upper estimate, but
 the small positive remainder remains: no exact facet, graph-universal
 theorem, or A-star claim. Near-active-orbit diagnostics may guide a next
 registered rational certificate recovery, not substitute for its proof.
+
+### C022 timeout and C023 attributed scope correction — 2026-09-09
+
+C022 built all 2596 even-orbit constraints over 3283 selected dual orbits
+(8522668 entries). One 60-second feasibility solve timed out without a
+candidate, total 63.953 sec. No rational recovery attempted; no exact-six
+certificate, and no mathematical infeasibility conclusion.
+
+The preceding status-only turn was not experimental progress. Revalidated
+C014's full graph/SAUR check and C021's exact upper certificate. Read the
+closest primary source, Xu--Schwonnek--Winter (2024), Theorems 10/12 and
+Appendix C Theorem 30: weighted representation invariance removes the
+need for a new representation-sector campaign. C023 records the resulting
+fixed-graph sandwich 6 <= beta(G,w) <= 6+33/25600000000000, with explicit
+attribution and restrictions. Appendix B.2 equations 42--45 also already
+contain the symmetric-support PPT method; equation 46 is its known
+three-copy extension. Neither is our novel primitive. Exact six, a general
+new theorem, practical significance and A-star novelty remain unproved.
