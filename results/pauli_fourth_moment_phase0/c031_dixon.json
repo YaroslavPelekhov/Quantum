@@ -1,0 +1,40 @@
+{
+  "rows": 1046,
+  "variables": 3283,
+  "discovery_rank": 906,
+  "attempts": [
+    {
+      "lift": 8,
+      "modulus_bits": 128,
+      "all_reconstructed": false
+    },
+    {
+      "lift": 16,
+      "modulus_bits": 256,
+      "all_reconstructed": false
+    },
+    {
+      "lift": 24,
+      "modulus_bits": 384,
+      "all_reconstructed": false
+    },
+    {
+      "lift": 32,
+      "modulus_bits": 512,
+      "all_reconstructed": false
+    },
+    {
+      "lift": 40,
+      "modulus_bits": 640,
+      "all_reconstructed": true,
+      "exact_square_substitution": true
+    }
+  ],
+  "status": "exact_six_verified",
+  "exact_six_proved": true,
+  "exact_upper": "6",
+  "decimal_upper": 6.0,
+  "minimum_numerator": 0,
+  "denominator_bits": 332,
+  "seconds": 3.7030000000086147
+}

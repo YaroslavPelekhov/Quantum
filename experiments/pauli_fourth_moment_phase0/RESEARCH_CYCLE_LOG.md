@@ -1445,3 +1445,26 @@ b^T y=0 had maximum residual 0.80865 (3.218 sec), so exact recovery was
 not triggered. This does not rigorously exclude row-space membership,
 nonuniform functionals or other facial reductions. No further solver
 retry was made in this turn; no exact upper six or A-star claim.
+
+### C030 modular correction and C031 exact six — 2026-09-09
+
+Previous turn recorded failed bounded C028/C029 attempts. Changed from
+LP solving to exact correction of the saved near-six dual. C030 selected
+1046 nearly active rows / 3283 orbit variables, QR pivot rank 906, fixed
+rounding denominator 2^20. Eight CRT primes failed to reconstruct every
+rational (16.172 sec). Four modular unit tests passed.
+
+C031 reused one modular factorization via Dixon lifting; at 40 lifts /
+640 bits it reconstructed the correction, verified exact square-system
+substitution, and obtained a nonnegative FULL dual with upper EXACTLY six.
+Common denominator 332 bits; 3.703 sec. Standalone Python -S verification
+regenerates C014 source relations and checks all 16384 dual coordinates /
+8256 even constraints via two integer transforms. Six new tests pass.
+
+Together with the stable-set lower bound and attributed C023 weighted
+representation invariance, this closes beta(G_C014,w)=6 for the fixed
+graph and weights across finite-dimensional SAURs. Historical C014 source
+flags stay unchanged to preserve its hash/snapshot; the new certificate
+and C031 verifier establish the updated result. It is not an all-weight
+or all-SCF theorem, new relaxation, hardware advantage or confirmed A-star
+novelty. Manuscript/PDF integration and priority/generalization remain.

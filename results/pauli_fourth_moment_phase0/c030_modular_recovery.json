@@ -1,0 +1,51 @@
+{
+  "rows": 1046,
+  "variables": 3283,
+  "discovery_rank": 906,
+  "rounding_denominator": 1048576,
+  "attempts": [
+    {
+      "prime": 65521,
+      "singular": false,
+      "all_coordinates_reconstructed": false
+    },
+    {
+      "prime": 65519,
+      "singular": false,
+      "all_coordinates_reconstructed": false
+    },
+    {
+      "prime": 65497,
+      "singular": false,
+      "all_coordinates_reconstructed": false
+    },
+    {
+      "prime": 65479,
+      "singular": false,
+      "all_coordinates_reconstructed": false
+    },
+    {
+      "prime": 65449,
+      "singular": false,
+      "all_coordinates_reconstructed": false
+    },
+    {
+      "prime": 65447,
+      "singular": false,
+      "all_coordinates_reconstructed": false
+    },
+    {
+      "prime": 65437,
+      "singular": false,
+      "all_coordinates_reconstructed": false
+    },
+    {
+      "prime": 65423,
+      "singular": false,
+      "all_coordinates_reconstructed": false
+    }
+  ],
+  "status": "no_exact_correction",
+  "exact_six_proved": false,
+  "seconds": 16.171999999991385
+}
