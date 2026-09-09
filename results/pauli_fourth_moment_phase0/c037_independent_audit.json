@@ -1,0 +1,57 @@
+{
+  "exact_lp_pairs": 60,
+  "explained": 53,
+  "wheel_terms_checked": 47,
+  "frontier": [
+    {
+      "case": 0,
+      "variant": 1,
+      "target": 3,
+      "known_bound": "7/2",
+      "gap": "1/2"
+    },
+    {
+      "case": 5,
+      "variant": 1,
+      "target": 3,
+      "known_bound": "7/2",
+      "gap": "1/2"
+    },
+    {
+      "case": 8,
+      "variant": 0,
+      "target": 6,
+      "known_bound": "13/2",
+      "gap": "1/2"
+    },
+    {
+      "case": 11,
+      "variant": 0,
+      "target": 5,
+      "known_bound": "11/2",
+      "gap": "1/2"
+    },
+    {
+      "case": 11,
+      "variant": 1,
+      "target": 5,
+      "known_bound": "11/2",
+      "gap": "1/2"
+    },
+    {
+      "case": 17,
+      "variant": 1,
+      "target": 5,
+      "known_bound": "11/2",
+      "gap": "1/2"
+    },
+    {
+      "case": 26,
+      "variant": 0,
+      "target": 7,
+      "known_bound": "15/2",
+      "gap": "1/2"
+    }
+  ],
+  "quantum_transfer_proved": false
+}
