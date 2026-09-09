@@ -1,0 +1,10 @@
+{
+  "states_checked": 31,
+  "positive_control": 3.044592394235867,
+  "max_gap": 1.509903313490213e-14,
+  "claw_free_outputs": 16,
+  "non_claw_free_outputs": 14,
+  "converged_starts": 0,
+  "total_starts": 240,
+  "quantum_transfer_proved": false
+}

@@ -1517,3 +1517,20 @@ The original mapping result and extended lifting result are both archived.
 Quantum gear/lifting propagation is not established; C031 remains an
 exact fixed-instance result, not a general theorem. The next hypothesis
 must target this explicit quantum transfer gap, with classical credit.
+
+### C034 small proper-gear falsification screen — 2026-09-09
+
+Previous goal turn established exact classical ancestry. Registered a
+specific quantum proper-geared transfer implication on connected atlas
+seeds of orders 3..6. Deterministic first-12-per-order weighted-isomorphism
+selection produced 30 cases (1/5/12/12), 16 claw-free outputs and 14 others.
+Eight starts / 32 steps each: all 240 hit the iteration limit, none met
+strict convergence. No candidate violation; independently recalculated
+maximum excess 1.51e-14. Positive control 3.0445923942>3.
+
+Independent stdlib bitwise audit checked all 31 best states, graph
+construction, weights and seed bounds; three tests pass. This is a shallow
+screen, not a global upper proof or strong evidence. It omits nonuniform
+seed facets, proper g-lifting and XX vertex additions. No transfer theorem
+or A-star novelty claimed, no QPU/paid resources. Report records measured
+campaign body runtime separately from import/startup overhead.
