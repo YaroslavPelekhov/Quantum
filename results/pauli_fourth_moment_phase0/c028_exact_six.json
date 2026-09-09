@@ -1,0 +1,15 @@
+{
+  "rows": 2596,
+  "variables": 3346,
+  "matrix_entries": 8686216,
+  "method": "highs-ipm",
+  "minimize_orbit_sum": true,
+  "exact_face_used": true,
+  "equality_rows": 1030,
+  "solver_equality_rows": 898,
+  "inequality_rows": 1566,
+  "exact_redundancy_used": true,
+  "status": 1,
+  "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is Infeasible)",
+  "seconds": 64.54700000000594
+}

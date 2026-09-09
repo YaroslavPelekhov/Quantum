@@ -9,7 +9,7 @@ from threadpoolctl import threadpool_limits
 from c020_exact_certificate import objective,SOURCE,DATA
 
 
-def run(method='highs-ds', minimize_orbit_sum=False, exact_face=None):
+def run(method='highs-ds', minimize_orbit_sum=False, exact_face=None, row_relations=None):
     start=time.monotonic()
     orbits=json.loads((DATA/'c018_ppt_symmetry.json').read_text())
     even=lambda i:((i%128)&(i//128)).bit_count()%2==0
@@ -42,8 +42,16 @@ def run(method='highs-ds', minimize_orbit_sum=False, exact_face=None):
     cost=np.ones(len(groups)) if minimize_orbit_sum else np.zeros(len(groups))
     report.update(method=method,minimize_orbit_sum=minimize_orbit_sum)
     report.update(exact_face_used=exact_face is not None,equality_rows=int(sum(equal)))
+    eq_indices=np.flatnonzero(equal)
+    if row_relations is not None:
+        assert exact_face is not None
+        from verify_c027_row_relations import verify as verify_relations
+        verify_relations(row_relations)
+        eq_indices=eq_indices[row_relations['retained_rows']]
+    report.update(solver_equality_rows=len(eq_indices),inequality_rows=int(sum(~equal)),
+                  exact_redundancy_used=row_relations is not None)
     result=linprog(cost,A_ub=mat[~equal],b_ub=rhs[~equal],
-                   A_eq=mat[equal] if any(equal) else None,b_eq=rhs[equal] if any(equal) else None,
+                   A_eq=mat[eq_indices] if len(eq_indices) else None,b_eq=rhs[eq_indices] if len(eq_indices) else None,
                    bounds=(0,None),method=method,
                    options={'time_limit':60,'threads':1,'primal_feasibility_tolerance':1e-9})
     report.update(status=int(result.status),message=result.message,seconds=time.monotonic()-start)
@@ -54,6 +62,7 @@ def run(method='highs-ds', minimize_orbit_sum=False, exact_face=None):
         report.update(nonzero_variables=int(sum(result.x>1e-8)),
                       max_integer_constraint_residual=float(max(mat@result.x-rhs)),
                       minimum_dual=float(min(result.x)))
+        if any(equal):report['max_original_equality_residual']=float(max(abs(mat[equal]@result.x-rhs[equal])))
         arrays={'dual':full,'orbit_dual':result.x}
     return report,arrays
 

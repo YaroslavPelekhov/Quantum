@@ -1430,3 +1430,18 @@ Three tests pass. Deleting these rows is proved equivalent; independence
 of retained rows and feasibility are NOT proved. No reduced LP yet run,
 no exact upper six, no new method or A-star claim. Numerical dependence
 is not established as the cause of the Unknown solver status.
+
+### C028 reduced LP and C029 exposing-vector diagnostic — 2026-09-09
+
+Previous turn established exact redundancy identities, genuine progress.
+C028 reverified C025/C027 and supplied 898 retained equalities plus all
+1566 inequalities over 3346 variables to one interior-point solve.
+Timed out without a candidate after 64.547 seconds total. No recovery
+attempts and no infeasibility theorem. Eight C027/C021 tests passed.
+
+Then preregistered C029's specific equality-only exposing functional:
+sum of the 63 extra orbit variables. One least-squares test of A^T y=r,
+b^T y=0 had maximum residual 0.80865 (3.218 sec), so exact recovery was
+not triggered. This does not rigorously exclude row-space membership,
+nonuniform functionals or other facial reductions. No further solver
+retry was made in this turn; no exact upper six or A-star claim.
