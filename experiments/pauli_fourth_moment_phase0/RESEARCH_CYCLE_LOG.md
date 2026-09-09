@@ -1163,3 +1163,31 @@ No new optimization campaign. The IID archive is unaffected. Before a
 new operational hypothesis, specify conditional target or an explicit
 mixing/reset access resource and compare with the existing non-IID theory.
 No A-star novelty established; the article goal remains open.
+
+### Process-memory literature gate and causal-filter counterexample — 2026-09-09
+
+Generic memory detection is already covered by process-tensor witnesses,
+including White et al. Quantum 9,1695 (2025) for unitary-only control and
+Srivastava et al. PRResearch 8,023258 (2026) for RB blind spots. Their
+classical/quantum memory assumptions cannot be replaced by a memoryless
+depolarizing null. No old scalar hardware-witness claim was reopened.
+
+During theorem-level reading, selected a specific unverified ingredient:
+White et al. Section 5.1 pseudoinverse rank-preserving causal filter and
+its stated finite iteration bound. Registered d=2,k=1,r=1, GHZ fixed-point
+test, two valid controls and ten seeded Ginibre inputs before calculation
+in ../pauli_operational_phase0/CAUSAL_PROJECTION_GATE.md.
+
+The normalized equation-(50) transcription leaves GHZ exactly fixed with
+causal residual 1/2. Analytically, sum_j sqrt(p_j)|j,j,j> is a noncausal
+fixed point for any positive p_j, with squared defect
+(1-1/d) sum_j p_j^2. A separate Fraction verifier checks two rational
+projectors (residual squares 1/4 and 17/50). All ten random rank-one tests
+miss 1e-9 after three iterations, but reach it numerically by 30. These
+are not an exact proof of generic convergence; cutoff and roundoff remain.
+
+This challenges the universal written finite guarantee, NOT the authors'
+actual unretrieved code, almost-sure convergence, hardware data, or main
+unitary-witness result. Before proposing any novel causal sampler, audit
+publisher PDF, implementation/updates and operator-scaling prior art.
+No external messages, paid run, QPU call or confirmed A-star contribution.
