@@ -1087,3 +1087,27 @@ Production is capped at 10800 seconds and 720 complete paired cells; a
 numerical C014 violation pauses the campaign for independent review.
 This entry records prelaunch validation, not a completed production run.
 No QPU, paid API, circuit preparation demonstration or A* confirmation.
+
+### Operational phase 0 completed and audited — 2026-09-09
+
+All 720 paired cells completed in 7018.094 seconds, no runner errors.
+Post-run independent dense-Pauli/full-Kraus evaluation accepted 2160 saved
+states (maximum mean error 1.55e-15), and separately implemented intervals
+replayed all 6480 measurement records of 256 datasets. Frozen protocol,
+runner/input hashes, complete job schedule and allocations match. Shared
+NumPy/SciPy/RNG remain; optimizer trajectories were not rerun and earlier
+graph certificates were not reproved by this audit. No QPU data.
+
+The preregistered gain >=0.10 over BOTH baselines in EACH held-out family
+fails at all three budgets. G9 damping power is zero for all methods.
+At 10M shots antiC9 has ideal/noise-aware/score power
+0.0000813802 / 0.0144856771 / 0.0151367188; gain over noise-aware is only
+0.0006510417. Lower budgets give zero. C009 max excess 1.11e-14 and C014
+4.44e-14 are roundoff-scale, not physical counterexamples. Close this
+specific experimental advantage candidate, not general quantum research.
+Do not rescue it by changing the frozen split or hyperparameters.
+
+See ../pauli_operational_phase0/COMPLETED_AUDIT_RU.md and verify_completed.py.
+No new campaign launched. A-star novelty remains unconfirmed. Next task
+is a different, preregistered experimental capability after a prior-art
+gate, not another significance optimizer or mathematical census.

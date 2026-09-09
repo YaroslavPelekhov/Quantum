@@ -1,0 +1,1306 @@
+{
+  "completed_paired_cells": 720,
+  "planned_paired_cells": 720,
+  "records": [
+    {
+      "graph": "C009",
+      "channel": "amplitude_damping",
+      "shots": 10000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "amplitude_damping",
+      "shots": 10000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "amplitude_damping",
+      "shots": 10000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "amplitude_damping",
+      "shots": 1000000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "amplitude_damping",
+      "shots": 1000000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "amplitude_damping",
+      "shots": 1000000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "amplitude_damping",
+      "shots": 10000000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "amplitude_damping",
+      "shots": 10000000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "amplitude_damping",
+      "shots": 10000000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "depolarizing",
+      "shots": 10000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "depolarizing",
+      "shots": 10000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "depolarizing",
+      "shots": 10000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "depolarizing",
+      "shots": 1000000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "depolarizing",
+      "shots": 1000000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "depolarizing",
+      "shots": 1000000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "depolarizing",
+      "shots": 10000000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "depolarizing",
+      "shots": 10000000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "depolarizing",
+      "shots": 10000000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "none",
+      "shots": 10000,
+      "method": "ideal_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "none",
+      "shots": 10000,
+      "method": "noisy_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "none",
+      "shots": 10000,
+      "method": "noisy_score",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "none",
+      "shots": 1000000,
+      "method": "ideal_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "none",
+      "shots": 1000000,
+      "method": "noisy_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "none",
+      "shots": 1000000,
+      "method": "noisy_score",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "none",
+      "shots": 10000000,
+      "method": "ideal_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "none",
+      "shots": 10000000,
+      "method": "noisy_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C009",
+      "channel": "none",
+      "shots": 10000000,
+      "method": "noisy_score",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "amplitude_damping",
+      "shots": 10000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "amplitude_damping",
+      "shots": 10000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "amplitude_damping",
+      "shots": 10000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "amplitude_damping",
+      "shots": 1000000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "amplitude_damping",
+      "shots": 1000000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "amplitude_damping",
+      "shots": 1000000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "amplitude_damping",
+      "shots": 10000000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "amplitude_damping",
+      "shots": 10000000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "amplitude_damping",
+      "shots": 10000000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "depolarizing",
+      "shots": 10000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "depolarizing",
+      "shots": 10000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "depolarizing",
+      "shots": 10000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "depolarizing",
+      "shots": 1000000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "depolarizing",
+      "shots": 1000000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "depolarizing",
+      "shots": 1000000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "depolarizing",
+      "shots": 10000000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "depolarizing",
+      "shots": 10000000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "depolarizing",
+      "shots": 10000000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "none",
+      "shots": 10000,
+      "method": "ideal_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "none",
+      "shots": 10000,
+      "method": "noisy_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "none",
+      "shots": 10000,
+      "method": "noisy_score",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "none",
+      "shots": 1000000,
+      "method": "ideal_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "none",
+      "shots": 1000000,
+      "method": "noisy_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "none",
+      "shots": 1000000,
+      "method": "noisy_score",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "none",
+      "shots": 10000000,
+      "method": "ideal_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "none",
+      "shots": 10000000,
+      "method": "noisy_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "C014",
+      "channel": "none",
+      "shots": 10000000,
+      "method": "noisy_score",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "amplitude_damping",
+      "shots": 10000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "amplitude_damping",
+      "shots": 10000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "amplitude_damping",
+      "shots": 10000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "amplitude_damping",
+      "shots": 1000000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "amplitude_damping",
+      "shots": 1000000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "amplitude_damping",
+      "shots": 1000000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "amplitude_damping",
+      "shots": 10000000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "amplitude_damping",
+      "shots": 10000000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "amplitude_damping",
+      "shots": 10000000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "depolarizing",
+      "shots": 10000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "depolarizing",
+      "shots": 10000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "depolarizing",
+      "shots": 10000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "depolarizing",
+      "shots": 1000000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "depolarizing",
+      "shots": 1000000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "depolarizing",
+      "shots": 1000000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "depolarizing",
+      "shots": 10000000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "depolarizing",
+      "shots": 10000000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "depolarizing",
+      "shots": 10000000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "none",
+      "shots": 10000,
+      "method": "ideal_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "none",
+      "shots": 10000,
+      "method": "noisy_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "none",
+      "shots": 10000,
+      "method": "noisy_score",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "none",
+      "shots": 1000000,
+      "method": "ideal_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "none",
+      "shots": 1000000,
+      "method": "noisy_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "none",
+      "shots": 1000000,
+      "method": "noisy_score",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G8",
+      "channel": "none",
+      "shots": 10000000,
+      "method": "ideal_beta",
+      "cells": 24,
+      "mean_power": 0.95263671875
+    },
+    {
+      "graph": "G8",
+      "channel": "none",
+      "shots": 10000000,
+      "method": "noisy_beta",
+      "cells": 24,
+      "mean_power": 0.9505208333333334
+    },
+    {
+      "graph": "G8",
+      "channel": "none",
+      "shots": 10000000,
+      "method": "noisy_score",
+      "cells": 24,
+      "mean_power": 0.95947265625
+    },
+    {
+      "graph": "G9",
+      "channel": "amplitude_damping",
+      "shots": 10000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G9",
+      "channel": "amplitude_damping",
+      "shots": 10000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G9",
+      "channel": "amplitude_damping",
+      "shots": 10000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G9",
+      "channel": "amplitude_damping",
+      "shots": 1000000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G9",
+      "channel": "amplitude_damping",
+      "shots": 1000000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G9",
+      "channel": "amplitude_damping",
+      "shots": 1000000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G9",
+      "channel": "amplitude_damping",
+      "shots": 10000000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G9",
+      "channel": "amplitude_damping",
+      "shots": 10000000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G9",
+      "channel": "amplitude_damping",
+      "shots": 10000000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G9",
+      "channel": "depolarizing",
+      "shots": 10000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G9",
+      "channel": "depolarizing",
+      "shots": 10000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G9",
+      "channel": "depolarizing",
+      "shots": 10000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G9",
+      "channel": "depolarizing",
+      "shots": 1000000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G9",
+      "channel": "depolarizing",
+      "shots": 1000000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G9",
+      "channel": "depolarizing",
+      "shots": 1000000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G9",
+      "channel": "depolarizing",
+      "shots": 10000000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G9",
+      "channel": "depolarizing",
+      "shots": 10000000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G9",
+      "channel": "depolarizing",
+      "shots": 10000000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G9",
+      "channel": "none",
+      "shots": 10000,
+      "method": "ideal_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G9",
+      "channel": "none",
+      "shots": 10000,
+      "method": "noisy_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G9",
+      "channel": "none",
+      "shots": 10000,
+      "method": "noisy_score",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G9",
+      "channel": "none",
+      "shots": 1000000,
+      "method": "ideal_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G9",
+      "channel": "none",
+      "shots": 1000000,
+      "method": "noisy_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G9",
+      "channel": "none",
+      "shots": 1000000,
+      "method": "noisy_score",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "G9",
+      "channel": "none",
+      "shots": 10000000,
+      "method": "ideal_beta",
+      "cells": 24,
+      "mean_power": 0.9474283854166666
+    },
+    {
+      "graph": "G9",
+      "channel": "none",
+      "shots": 10000000,
+      "method": "noisy_beta",
+      "cells": 24,
+      "mean_power": 0.9484049479166666
+    },
+    {
+      "graph": "G9",
+      "channel": "none",
+      "shots": 10000000,
+      "method": "noisy_score",
+      "cells": 24,
+      "mean_power": 0.9532877604166666
+    },
+    {
+      "graph": "antiC7",
+      "channel": "amplitude_damping",
+      "shots": 10000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC7",
+      "channel": "amplitude_damping",
+      "shots": 10000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC7",
+      "channel": "amplitude_damping",
+      "shots": 10000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC7",
+      "channel": "amplitude_damping",
+      "shots": 1000000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC7",
+      "channel": "amplitude_damping",
+      "shots": 1000000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0005696614583333334
+    },
+    {
+      "graph": "antiC7",
+      "channel": "amplitude_damping",
+      "shots": 1000000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.00016276041666666666
+    },
+    {
+      "graph": "antiC7",
+      "channel": "amplitude_damping",
+      "shots": 10000000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.3871256510416667
+    },
+    {
+      "graph": "antiC7",
+      "channel": "amplitude_damping",
+      "shots": 10000000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.66259765625
+    },
+    {
+      "graph": "antiC7",
+      "channel": "amplitude_damping",
+      "shots": 10000000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.6630045572916666
+    },
+    {
+      "graph": "antiC7",
+      "channel": "depolarizing",
+      "shots": 10000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC7",
+      "channel": "depolarizing",
+      "shots": 10000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC7",
+      "channel": "depolarizing",
+      "shots": 10000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC7",
+      "channel": "depolarizing",
+      "shots": 1000000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.00048828125
+    },
+    {
+      "graph": "antiC7",
+      "channel": "depolarizing",
+      "shots": 1000000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0008138020833333334
+    },
+    {
+      "graph": "antiC7",
+      "channel": "depolarizing",
+      "shots": 1000000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0009765625
+    },
+    {
+      "graph": "antiC7",
+      "channel": "depolarizing",
+      "shots": 10000000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.5
+    },
+    {
+      "graph": "antiC7",
+      "channel": "depolarizing",
+      "shots": 10000000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.5
+    },
+    {
+      "graph": "antiC7",
+      "channel": "depolarizing",
+      "shots": 10000000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.5
+    },
+    {
+      "graph": "antiC7",
+      "channel": "none",
+      "shots": 10000,
+      "method": "ideal_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC7",
+      "channel": "none",
+      "shots": 10000,
+      "method": "noisy_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC7",
+      "channel": "none",
+      "shots": 10000,
+      "method": "noisy_score",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC7",
+      "channel": "none",
+      "shots": 1000000,
+      "method": "ideal_beta",
+      "cells": 24,
+      "mean_power": 0.8528645833333334
+    },
+    {
+      "graph": "antiC7",
+      "channel": "none",
+      "shots": 1000000,
+      "method": "noisy_beta",
+      "cells": 24,
+      "mean_power": 0.8408203125
+    },
+    {
+      "graph": "antiC7",
+      "channel": "none",
+      "shots": 1000000,
+      "method": "noisy_score",
+      "cells": 24,
+      "mean_power": 0.8426106770833334
+    },
+    {
+      "graph": "antiC7",
+      "channel": "none",
+      "shots": 10000000,
+      "method": "ideal_beta",
+      "cells": 24,
+      "mean_power": 1.0
+    },
+    {
+      "graph": "antiC7",
+      "channel": "none",
+      "shots": 10000000,
+      "method": "noisy_beta",
+      "cells": 24,
+      "mean_power": 1.0
+    },
+    {
+      "graph": "antiC7",
+      "channel": "none",
+      "shots": 10000000,
+      "method": "noisy_score",
+      "cells": 24,
+      "mean_power": 1.0
+    },
+    {
+      "graph": "antiC9",
+      "channel": "amplitude_damping",
+      "shots": 10000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC9",
+      "channel": "amplitude_damping",
+      "shots": 10000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC9",
+      "channel": "amplitude_damping",
+      "shots": 10000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC9",
+      "channel": "amplitude_damping",
+      "shots": 1000000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC9",
+      "channel": "amplitude_damping",
+      "shots": 1000000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC9",
+      "channel": "amplitude_damping",
+      "shots": 1000000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC9",
+      "channel": "amplitude_damping",
+      "shots": 10000000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 8.138020833333333e-05
+    },
+    {
+      "graph": "antiC9",
+      "channel": "amplitude_damping",
+      "shots": 10000000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.014485677083333334
+    },
+    {
+      "graph": "antiC9",
+      "channel": "amplitude_damping",
+      "shots": 10000000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.01513671875
+    },
+    {
+      "graph": "antiC9",
+      "channel": "depolarizing",
+      "shots": 10000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC9",
+      "channel": "depolarizing",
+      "shots": 10000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC9",
+      "channel": "depolarizing",
+      "shots": 10000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC9",
+      "channel": "depolarizing",
+      "shots": 1000000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC9",
+      "channel": "depolarizing",
+      "shots": 1000000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC9",
+      "channel": "depolarizing",
+      "shots": 1000000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC9",
+      "channel": "depolarizing",
+      "shots": 10000000,
+      "method": "ideal_beta",
+      "cells": 48,
+      "mean_power": 0.0026041666666666665
+    },
+    {
+      "graph": "antiC9",
+      "channel": "depolarizing",
+      "shots": 10000000,
+      "method": "noisy_beta",
+      "cells": 48,
+      "mean_power": 0.004313151041666667
+    },
+    {
+      "graph": "antiC9",
+      "channel": "depolarizing",
+      "shots": 10000000,
+      "method": "noisy_score",
+      "cells": 48,
+      "mean_power": 0.004150390625
+    },
+    {
+      "graph": "antiC9",
+      "channel": "none",
+      "shots": 10000,
+      "method": "ideal_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC9",
+      "channel": "none",
+      "shots": 10000,
+      "method": "noisy_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC9",
+      "channel": "none",
+      "shots": 10000,
+      "method": "noisy_score",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC9",
+      "channel": "none",
+      "shots": 1000000,
+      "method": "ideal_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC9",
+      "channel": "none",
+      "shots": 1000000,
+      "method": "noisy_beta",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC9",
+      "channel": "none",
+      "shots": 1000000,
+      "method": "noisy_score",
+      "cells": 24,
+      "mean_power": 0.0
+    },
+    {
+      "graph": "antiC9",
+      "channel": "none",
+      "shots": 10000000,
+      "method": "ideal_beta",
+      "cells": 24,
+      "mean_power": 1.0
+    },
+    {
+      "graph": "antiC9",
+      "channel": "none",
+      "shots": 10000000,
+      "method": "noisy_beta",
+      "cells": 24,
+      "mean_power": 1.0
+    },
+    {
+      "graph": "antiC9",
+      "channel": "none",
+      "shots": 10000000,
+      "method": "noisy_score",
+      "cells": 24,
+      "mean_power": 1.0
+    }
+  ],
+  "numerical_C014_candidates": [],
+  "type": "simulation_only",
+  "top_novelty_confirmed": false,
+  "warning": "Prefix averages may have unequal coverage. Repetitions are not independent graph families."
+}
