@@ -1,0 +1,26 @@
+{
+  "status": "candidate",
+  "best": {
+    "value": 6.56518007190949,
+    "iteration": 100,
+    "kind": "last"
+  },
+  "history": [
+    {
+      "iteration": 100,
+      "kind": "last",
+      "raw_value": 6.66666868022344,
+      "minimum_scaled_pt": -0.015458617516616369,
+      "repaired_value": 6.56518007190949
+    },
+    {
+      "iteration": 100,
+      "kind": "average",
+      "raw_value": 6.774508556896031,
+      "minimum_scaled_pt": -0.3170788772417703,
+      "repaired_value": 5.143586062641926
+    }
+  ],
+  "seconds": 0.1870000000053551,
+  "quantum_target_proved": false
+}

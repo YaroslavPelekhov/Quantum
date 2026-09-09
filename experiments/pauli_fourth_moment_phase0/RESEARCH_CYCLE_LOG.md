@@ -1320,3 +1320,24 @@ fails full PPT. An independent Walsh-convolution verifier reproduced all
 upper certificate, or physical violation was obtained. This is useful
 implementation and failed-route evidence, NOT an improved quantum bound
 or a confirmed A-star result. All unsatisfied constraints remain in scope.
+
+### C020 exact exclusion of standalone PPT route — 2026-09-09
+
+Switched from unfinished upper-bound LPs to a preregistered primal
+feasibility search on the SAME full-coordinate PPT relaxation. Fixed
+PDHG parameters, uniform start, no restarts; first checkpoint at 100
+iterations already yielded a uniformly repaired objective 6.56518.
+Runtime 0.187 seconds. Converted this candidate to rational probabilities
+and performed exact uniform feasibility repair. Objective is exactly
+3282590033509/500000010289 >6. All 16384 probabilities and PT coordinates
+are strictly positive and normalized. Original C014 weights/labels and
+source hash verified; objective rebuilt from local Bell eigenvalue tables.
+
+Both integer local PT and integer Walsh convolution agree in all
+coordinates. Verification passes with python -S; six negative/positive
+controls pass. Therefore the standalone PPT relaxation cannot establish
+C014's bound six, regardless of further optimizer budget. This is not
+a separable/tensor-square witness, so no uncertainty violation is claimed.
+PPT optimum, stronger relaxations and the original operator inequality
+remain open. The completed exact exclusion replaces timeout uncertainty
+about this proof route, but is not claimed as A-star novelty.
