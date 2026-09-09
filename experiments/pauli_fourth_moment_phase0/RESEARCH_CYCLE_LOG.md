@@ -1284,3 +1284,22 @@ return to the manuscript's real open operator obligation, not a new name
 for any falsified experimental effect. No new theorem or experiment is
 claimed from the revalidation. Next proof work needs constraints stronger
 than theta with central-sector coverage, not additional random starts.
+
+### C017 two-copy PPT route — 2026-09-09
+
+Built a Bell-diagonal PPT relaxation of the fixed C014 quadratic objective,
+using sparse intermediate four-by-four partial-transpose transforms rather
+than a dense two-copy operator. Registered G8 positive control and C014,
+one thread and 60-second cap each. The direct one-qubit formula check passed;
+G8 numerical optimum was 10/3 within rounding. A subsequent exact rational
+primal repair gives 333333354/100000135, verified with integer transforms
+and an independent direct small character matrix. It is a feasible relaxed
+value, not a physical counterexample and not an upper proof.
+
+C014 has 131072 variables / 114689 equalities / 589824 nonzeros. It timed
+out without a primal incumbent after the frozen 60 seconds. Saved this
+failure explicitly; no C014 numerical bound or theorem follows. The next
+useful implementation effort is a proved symmetry/dual reduction before
+another solve, not more random-state starts or increased time by default.
+Graph-universal representation coverage and rigorous dual certification
+remain obligations if this relaxation eventually returns six.
