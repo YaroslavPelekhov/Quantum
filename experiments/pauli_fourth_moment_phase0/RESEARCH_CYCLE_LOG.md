@@ -1247,3 +1247,23 @@ the small marginal eigenvalue still positive at ~8.48e-16, consistent
 with exact rank preservation and numerical near-boundary loss. All raw
 spectra retained. Not all mismatches were independently replayed; no
 asymptotic rate, sampling-bias estimate, or A-star novelty claim follows.
+
+### Practical causal-cutoff claim falsified — 2026-09-09
+
+Previous cycle was progress: exact multi-time invariant and numerical
+precision audit. This cycle deliberately tested whether that technical
+obstruction has practical consequences for temporal negativity.
+Registered 20 paired rank-two inputs and five rank-eight controls, each
+at cutoffs 1e-8/1e-12/1e-14 with common residual tolerance 1e-9. All 75
+runs converged in 1–11 sweeps. The primary median negativity difference
+was 2.3852e-12 versus the registered 0.01 relevance gate; median paired
+trace distance 2.4339e-10, maximum 1.5558e-9. Gate FAILED.
+
+Saved all 75 terminal states and independently rechecked them and all 75
+pair comparisons with explicit indices/SVD, without importing the sampler.
+The physical-instability interpretation is closed in this regime. Exact
+finite-iteration correction remains a limited mathematical result, not
+an established major contribution; original hardware or physical claims
+were not refuted. Do not keep searching cutoff settings to rescue it.
+The A-star objective is still unmet and active, but this branch should
+not be its main claim without independently justified new significance.
