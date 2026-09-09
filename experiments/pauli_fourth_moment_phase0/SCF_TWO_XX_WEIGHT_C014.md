@@ -1,5 +1,10 @@
 # C014: one fixed joint weight and one local-sum control
 
+Update C031: the frozen quantum target below is now proved exactly by
+[the rational certificate](C031_DIXON_GATE.md). Statements that it remains
+open are retained as the historical preregistration, not current status.
+No all-weight theorem or priority claim follows.
+
 Registered 2026-09-08 after C013's 300-second enumeration timeout and
 before computing either weight below. SAME 24-vertex graph, unchanged
 labels and edges. No new graph search and no complete hull enumeration.

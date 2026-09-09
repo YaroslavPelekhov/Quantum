@@ -1476,3 +1476,24 @@ certificate is c031_exact_six_certificate.json. Clean scoped archive of
 08b71d4 passed Python -S exact verification and eight C031 tests (2.255 sec).
 Five legacy C021 tests also passed in the working tree. No full historical
 campaign or discovery rerun is implied by this archive check.
+
+### C032 nearest-prior-art applicability audit — 2026-09-09
+
+Previous goal turn made decisive fixed-instance progress: exact C031
+upper six plus clean-archive verification. This turn tested whether that
+instance is immediately covered by the explicit closure rules of Xu et
+al. 2511.13531v1 (current arXiv page still lists only v1). Read Section
+III and the Section IX.1 claw-free inclusion wording; the latter cannot
+be used as a general theorem given the same paper's anti-heptagon
+counterexample. CEM's SCF free-fermion theorem remains attributed input,
+not a substitute for a weighted independence proof.
+
+C014 exact graph/facet and C031 reverified. Connected and co-connected,
+no twins, all 276 pair module closures reach the full graph; every forced
+addition trace checked. This proves modular primeness and excludes direct
+union/join/twin/product last steps. The nonuniform facet excludes the
+h-perfect class theorem. Three structural tests pass. More complicated
+induced embeddings and classical gear composition remain unaudited, so
+priority and A-star novelty are not confirmed. Next conceptual target:
+a genuinely proved quantum composition rule, not relabeling known graph
+operations or multiplying isolated certificates.
