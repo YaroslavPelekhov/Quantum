@@ -1135,3 +1135,31 @@ anticycle family. They are not two structurally unrelated held-out families.
 Keep the frozen protocol unchanged and attach this qualification to the
 completed report. Failed operational gain remains failed. No large new
 campaign, new quantum theorem, QPU call or A-star confirmation.
+
+### Correlated-copy target gate — 2026-09-09
+
+Read Fawzi--Kueng--Markham--Oufkir (2024), Results / Evaluating a learning
+algorithm, in the primary PMC full text. Their conditional post-measurement
+target and explicit obstruction to unconditional-marginal estimation already
+address the proposed generic non-IID route. Filip (2002) likewise already
+distinguishes uncorrelated-input purity from correlated-input witness use
+(primary abstract only). Do not call these distinctions new.
+
+COPY_CORRELATION_GATE.md gives the elementary common-latent-bit argument:
+for arbitrary N, universal estimation of unconditional F=<X>^2+<Z>^2
+to epsilon<1/2 with failure delta<1/2 is impossible on the two constant
+product strings and their balanced mixture, by linearity of outcome
+probabilities. Random pairing cannot help that permutation-invariant source.
+This is a specialization of the known target obstruction, not our new theorem.
+
+Three frozen rational two-qubit controls pass under python -S: independent
+maximally mixed, classically correlated mixture, and Bell pair all have
+marginal I/2, but <XX+ZZ> is respectively 0,1,2. Classical bias and an
+inter-copy entanglement witness are distinct. Weighted Cauchy-Schwarz still
+bounds every inter-copy separable state's score by the corresponding
+one-copy universal beta bound; it does not identify marginal squares.
+
+No new optimization campaign. The IID archive is unaffected. Before a
+new operational hypothesis, specify conditional target or an explicit
+mixing/reset access resource and compare with the existing non-IID theory.
+No A-star novelty established; the article goal remains open.
