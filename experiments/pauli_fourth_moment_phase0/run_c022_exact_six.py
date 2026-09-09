@@ -9,13 +9,22 @@ from threadpoolctl import threadpool_limits
 from c020_exact_certificate import objective,SOURCE,DATA
 
 
-def run(method='highs-ds', minimize_orbit_sum=False):
+def run(method='highs-ds', minimize_orbit_sum=False, exact_face=None):
     start=time.monotonic()
     orbits=json.loads((DATA/'c018_ppt_symmetry.json').read_text())
-    with np.load(DATA/'c021_bosonic_ppt.npz',allow_pickle=False) as data:u=-data['C014_dual']
     even=lambda i:((i%128)&(i//128)).bit_count()%2==0
     rows=[g[0] for g in orbits['affine_orbits'] if even(g[0])]
-    groups=[g for g in orbits['linear_orbits'] if float(np.mean(u[g]))>1e-8]
+    if exact_face is None:
+        with np.load(DATA/'c021_bosonic_ppt.npz',allow_pickle=False) as data:u=-data['C014_dual']
+        groups=[g for g in orbits['linear_orbits'] if float(np.mean(u[g]))>1e-8]
+        equal=np.zeros(len(rows),dtype=bool)
+    else:
+        from verify_c025_exact_face import verify
+        verify(exact_face)
+        zeros=set(exact_face['forced_zero_coordinates'])
+        active=set(exact_face['forced_active_coordinates'])
+        groups=[g for g in orbits['linear_orbits'] if not set(g)&zeros]
+        equal=np.array([v in active for v in rows])
     report=dict(rows=len(rows),variables=len(groups),matrix_entries=len(rows)*len(groups))
     if len(rows)*len(groups)>10_000_000:
         report['status']='matrix_size_cap';return report,{}
@@ -32,7 +41,10 @@ def run(method='highs-ds', minimize_orbit_sum=False):
     print(json.dumps(report),flush=True)
     cost=np.ones(len(groups)) if minimize_orbit_sum else np.zeros(len(groups))
     report.update(method=method,minimize_orbit_sum=minimize_orbit_sum)
-    result=linprog(cost,A_ub=mat,b_ub=rhs,bounds=(0,None),method=method,
+    report.update(exact_face_used=exact_face is not None,equality_rows=int(sum(equal)))
+    result=linprog(cost,A_ub=mat[~equal],b_ub=rhs[~equal],
+                   A_eq=mat[equal] if any(equal) else None,b_eq=rhs[equal] if any(equal) else None,
+                   bounds=(0,None),method=method,
                    options={'time_limit':60,'threads':1,'primal_feasibility_tolerance':1e-9})
     report.update(status=int(result.status),message=result.message,seconds=time.monotonic()-start)
     arrays={}

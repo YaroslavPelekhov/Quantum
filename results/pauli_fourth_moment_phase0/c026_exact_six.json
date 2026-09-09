@@ -1,0 +1,12 @@
+{
+  "rows": 2596,
+  "variables": 3346,
+  "matrix_entries": 8686216,
+  "method": "highs-ipm",
+  "minimize_orbit_sum": true,
+  "exact_face_used": true,
+  "equality_rows": 1030,
+  "status": 4,
+  "message": "The HiGHS status code was not recognized. (HiGHS Status 15: model_status is Unknown; primal_status is Infeasible)",
+  "seconds": 35.703000000008615
+}

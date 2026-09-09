@@ -1,0 +1,71 @@
+{
+  "status": "no_exact_relations",
+  "attempts": [
+    {
+      "denominator": 1,
+      "max_matrix_residual": 128,
+      "max_rhs_residual": 7680,
+      "accepted": false
+    },
+    {
+      "denominator": 2,
+      "max_matrix_residual": 112,
+      "max_rhs_residual": 5632,
+      "accepted": false
+    },
+    {
+      "denominator": 4,
+      "max_matrix_residual": 64,
+      "max_rhs_residual": 5376,
+      "accepted": false
+    },
+    {
+      "denominator": 8,
+      "max_matrix_residual": 48,
+      "max_rhs_residual": 5120,
+      "accepted": false
+    },
+    {
+      "denominator": 16,
+      "max_matrix_residual": 48,
+      "max_rhs_residual": 512,
+      "accepted": false
+    },
+    {
+      "denominator": 32,
+      "max_matrix_residual": 48,
+      "max_rhs_residual": 512,
+      "accepted": false
+    },
+    {
+      "denominator": 64,
+      "max_matrix_residual": 48,
+      "max_rhs_residual": 512,
+      "accepted": false
+    },
+    {
+      "denominator": 128,
+      "max_matrix_residual": 48,
+      "max_rhs_residual": 512,
+      "accepted": false
+    },
+    {
+      "denominator": 256,
+      "max_matrix_residual": 48,
+      "max_rhs_residual": 512,
+      "accepted": false
+    },
+    {
+      "denominator": 512,
+      "max_matrix_residual": 48,
+      "max_rhs_residual": 512,
+      "accepted": false
+    },
+    {
+      "denominator": 1024,
+      "max_matrix_residual": 48,
+      "max_rhs_residual": 512,
+      "accepted": false
+    }
+  ]
+}

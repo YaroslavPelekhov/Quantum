@@ -1411,3 +1411,22 @@ excluding 126 coordinates in 63 additional orbits. Necessity of those
 extra variables is not proved, nor is timeout causality. A structurally
 justified next system should retain them. No new solve, exact upper six,
 new Bell formalism or A-star novelty claimed.
+
+### C026 structural LP and C027 exact row redundancy — 2026-09-09
+
+Previous turn produced independently verified exact face constraints.
+C026 used all 3346 permitted variables, 1030 equalities / 1566 inequalities,
+8686216 entries, one interior-point solve. It returned Unknown (status 4,
+HiGHS 15) without candidate after 35.703 sec: neither timeout nor proof
+of infeasibility. No rational recovery. Nine C021/C025 tests passed.
+
+Changed next action to equality conditioning: C027 pivoted QR suggested
+rank 898 at three tolerances. Dyadic recovery failed all 11 denominators;
+a separately registered bounded-fraction recovery succeeded at denominator
+48. Exact identities express 132 rows using 898 retained rows, including
+every column and RHS. Independent stdlib verifier regenerates the matrix
+by direct character sums and checks relations with Python integers.
+Three tests pass. Deleting these rows is proved equivalent; independence
+of retained rows and feasibility are NOT proved. No reduced LP yet run,
+no exact upper six, no new method or A-star claim. Numerical dependence
+is not established as the cause of the Unknown solver status.

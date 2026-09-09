@@ -1,0 +1,16 @@
+{
+  "rows": 1030,
+  "columns": 3346,
+  "numerical_ranks": {
+    "1e-08": 898,
+    "1e-10": 898,
+    "1e-12": 898
+  },
+  "max_diagonal": 208.51858430365397,
+  "min_diagonal": 3.991580189311363e-14,
+  "last_retained_diagonal": 14.848908780124768,
+  "first_discarded_diagonal": 1.1513425119157401e-12,
+  "seconds": 1.25,
+  "exact_rank_proved": false,
+  "exact_six_proved": false
+}
