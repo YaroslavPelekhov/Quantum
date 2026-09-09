@@ -1497,3 +1497,23 @@ induced embeddings and classical gear composition remain unaudited, so
 priority and A-star novelty are not confirmed. Next conceptual target:
 a genuinely proved quantum composition rule, not relabeling known graph
 operations or multiplying isolated certificates.
+
+### C033 classical ancestry bridge — 2026-09-09
+
+Previous turn proved direct closure-route obstructions, not novelty.
+Read/visually checked the gear source definitions and Theorem 3.1 on
+printed pp.5--7/10 (not the full proof). Found exact construction beyond
+the direct-output obstruction: remove original XX vertices 11/12 in each
+atom (C014 indices 8,9,19,20), leaving 20 vertices. Two inverse ordinary
+gear operations and one edge subdivision identify a 9-vertex seed.
+Every forward edge reconstruction checked. Classical bounds along the
+row chain are 3,4,6; exhaustive stable-set counts 40,162,1080.
+
+Re-add the four vertices in order 8,9,19,20: all restricted classical
+maxima equal five, yielding coefficient one each with unchanged RHS six.
+This establishes known classical ancestry of the final C014 row and
+precludes claiming a new polyhedral construction. Three tests passed.
+The original mapping result and extended lifting result are both archived.
+Quantum gear/lifting propagation is not established; C031 remains an
+exact fixed-instance result, not a general theorem. The next hypothesis
+must target this explicit quantum transfer gap, with classical credit.
