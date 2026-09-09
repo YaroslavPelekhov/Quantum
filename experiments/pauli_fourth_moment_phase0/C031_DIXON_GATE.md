@@ -69,3 +69,8 @@ LF-normalized source bytes for its SHA256; no other whitespace or content
 is ignored. Legacy raw-hash mode remains unchanged. Tests cover both line
 endings, altered source and unknown normalization mode. Use the portable
 certificate for clean checkouts; the discovery artifact is historical.
+
+Clean scoped Git archive of commit `08b71d4` subsequently passed both
+the standalone Python -S verifier and all eight C031 tests (2.255 sec
+for the test suite). This verifies the shipped certificate, not a full
+rerun of discovery or the historical 127-test campaign.

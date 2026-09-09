@@ -1468,3 +1468,11 @@ flags stay unchanged to preserve its hash/snapshot; the new certificate
 and C031 verifier establish the updated result. It is not an all-weight
 or all-SCF theorem, new relaxation, hardware advantage or confirmed A-star
 novelty. Manuscript/PDF integration and priority/generalization remain.
+
+C031 clean-archive audit initially failed on raw source SHA256 after
+Git CRLF/LF normalization. Added explicit LF-only hash normalization,
+preserving all coefficients and legacy raw-hash handling. Portable
+certificate is c031_exact_six_certificate.json. Clean scoped archive of
+08b71d4 passed Python -S exact verification and eight C031 tests (2.255 sec).
+Five legacy C021 tests also passed in the working tree. No full historical
+campaign or discovery rerun is implied by this archive check.
