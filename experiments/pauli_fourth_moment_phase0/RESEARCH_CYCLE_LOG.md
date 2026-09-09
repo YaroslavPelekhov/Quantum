@@ -1379,3 +1379,16 @@ attribution and restrictions. Appendix B.2 equations 42--45 also already
 contain the symmetric-support PPT method; equation 46 is its known
 three-copy extension. Neither is our novel primitive. Exact six, a general
 new theorem, practical significance and A-star novelty remain unproved.
+
+### C024 minimum-orbit-mass recovery — 2026-09-09
+
+Previous goal turn made progress by establishing and publishing the
+attributed fixed-graph scope correction C023. This turn preregistered
+one alternate certificate-discovery objective: minimize sum of orbit
+coefficients, same C022 support/constraints and exact RHS six, one-thread
+HiGHS interior point, 60-second solve cap. It timed out with no candidate
+after 61.937 seconds total. No rational recovery attempts, improved upper
+bound, or infeasibility proof. Saved raw JSON and empty candidate archive.
+Five C021 exact-verifier tests passed. Do not continue blind solver swaps
+on the same dense-orbit problem; a structural reduction is needed before
+another recovery campaign. No QPU or paid resources used.

@@ -9,7 +9,7 @@ from threadpoolctl import threadpool_limits
 from c020_exact_certificate import objective,SOURCE,DATA
 
 
-def run():
+def run(method='highs-ds', minimize_orbit_sum=False):
     start=time.monotonic()
     orbits=json.loads((DATA/'c018_ppt_symmetry.json').read_text())
     with np.load(DATA/'c021_bosonic_ppt.npz',allow_pickle=False) as data:u=-data['C014_dual']
@@ -30,7 +30,9 @@ def run():
     c=np.array(objective(json.loads(SOURCE.read_text())))
     rhs=128*(6-c[rows])
     print(json.dumps(report),flush=True)
-    result=linprog(np.zeros(len(groups)),A_ub=mat,b_ub=rhs,bounds=(0,None),method='highs-ds',
+    cost=np.ones(len(groups)) if minimize_orbit_sum else np.zeros(len(groups))
+    report.update(method=method,minimize_orbit_sum=minimize_orbit_sum)
+    result=linprog(cost,A_ub=mat,b_ub=rhs,bounds=(0,None),method=method,
                    options={'time_limit':60,'threads':1,'primal_feasibility_tolerance':1e-9})
     report.update(status=int(result.status),message=result.message,seconds=time.monotonic()-start)
     arrays={}

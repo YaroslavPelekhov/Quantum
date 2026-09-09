@@ -8,10 +8,10 @@ from c020_exact_certificate import DATA,SOURCE,objective,pt_integer
 from c021_exact_dual import verify
 
 
-def run():
+def run(stem='c022'):
     import numpy as np
-    report=json.loads((DATA/'c022_exact_six.json').read_text())
-    with np.load(DATA/'c022_exact_six.npz',allow_pickle=False) as data:
+    report=json.loads((DATA/f'{stem}_exact_six.json').read_text())
+    with np.load(DATA/f'{stem}_exact_six.npz',allow_pickle=False) as data:
         if 'dual' not in data:return dict(attempts=[],status='no_solver_candidate')
         raw=data['dual'].copy()
     c=objective(json.loads(SOURCE.read_text()));even=[i for i in range(16384) if not ((i%128)&(i//128)).bit_count()%2]
@@ -32,7 +32,7 @@ def run():
             certificate=dict(source_sha256=hashlib.sha256(SOURCE.read_bytes()).hexdigest(),
                              dual_numerators=u,dual_denominator=den,exact_upper='6',symmetric_support_required=True)
             verify(certificate)
-            with (DATA/'c022_exact_six_certificate.json').open('x',encoding='utf-8') as stream:json.dump(certificate,stream,indent=2)
+            with (DATA/f'{stem}_exact_six_certificate.json').open('x',encoding='utf-8') as stream:json.dump(certificate,stream,indent=2)
             return dict(status='exact_six_verified',attempts=attempts)
     return dict(status='no_exact_six_recovered',attempts=attempts)
 
