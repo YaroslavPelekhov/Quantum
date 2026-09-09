@@ -1267,3 +1267,20 @@ an established major contribution; original hardware or physical claims
 were not refuted. Do not keep searching cutoff settings to rescue it.
 The A-star objective is still unmet and active, but this branch should
 not be its main claim without independently justified new significance.
+
+### Deterministic-memory prior-art gate and return to C014 — 2026-09-09
+
+Inspected Milz/Pollock/Modi PRA98,012108 (2018), Sections IV and V.1,
+including the actual SWAP invisibility/selective-break equations 26–27.
+The proposed deterministic-only invisible memory example is a direct
+trace-preservation extension, so it is rejected before a large run.
+Added the precise access restrictions and source mapping in
+../pauli_operational_phase0/DETERMINISTIC_MEMORY_PRIOR_GATE.md.
+
+Revalidated C014 and C016 using their existing exact independent scripts.
+The full classical facet at six and rational theta witness 6.50657958
+remain valid; the quantum upper bound remains unresolved. This is a
+return to the manuscript's real open operator obligation, not a new name
+for any falsified experimental effect. No new theorem or experiment is
+claimed from the revalidation. Next proof work needs constraints stronger
+than theta with central-sector coverage, not additional random starts.
