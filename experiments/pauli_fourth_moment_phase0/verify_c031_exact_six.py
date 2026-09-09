@@ -21,4 +21,4 @@ def check(cert):
 
 if __name__=='__main__':
     if not __debug__:raise RuntimeError('Assertions required')
-    print(json.dumps(check(json.loads((DATA/'c031_candidate.json').read_text())),indent=2))
+    print(json.dumps(check(json.loads((DATA/'c031_exact_six_certificate.json').read_text())),indent=2))

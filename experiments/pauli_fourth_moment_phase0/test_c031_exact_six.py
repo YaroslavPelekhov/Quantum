@@ -1,16 +1,18 @@
 import copy
 import json
 import unittest
+from unittest.mock import patch
 import numpy as np
 from fractions import Fraction
 from verify_c031_exact_six import DATA,check
 from run_c031_dixon import factor,solve_factored
 from run_c030_modular_recovery import reconstruct
+from c020_exact_certificate import SOURCE
 
 
 class ExactSix(unittest.TestCase):
     @classmethod
-    def setUpClass(cls):cls.cert=json.loads((DATA/'c031_candidate.json').read_text())
+    def setUpClass(cls):cls.cert=json.loads((DATA/'c031_exact_six_certificate.json').read_text())
     def test_valid(self):
         self.assertEqual(check(self.cert)['fixed_representation_quantum_maximum'],6)
     def test_negative_coordinate(self):
@@ -24,6 +26,16 @@ class ExactSix(unittest.TestCase):
         with self.assertRaises(AssertionError):check(bad)
     def test_wrong_source(self):
         bad=copy.deepcopy(self.cert);bad['source_sha256']='0'*64
+        with self.assertRaises(AssertionError):check(bad)
+    def test_line_endings(self):
+        raw=SOURCE.read_bytes().replace(b'\r\n',b'\n')
+        for content in (raw,raw.replace(b'\n',b'\r\n')):
+            with patch('c021_exact_dual.SOURCE') as source:
+                source.read_bytes.return_value=content
+                source.read_text.return_value=raw.decode('utf-8')
+                self.assertTrue(check(self.cert)['exact_bound_six_proved'])
+    def test_unknown_normalization(self):
+        bad=copy.deepcopy(self.cert);bad['source_hash_normalization']='ignore-all-whitespace'
         with self.assertRaises(AssertionError):check(bad)
     def test_factor_reuse(self):
         a=np.array([[0,2,1],[1,0,3],[2,1,0]],dtype=np.int64)

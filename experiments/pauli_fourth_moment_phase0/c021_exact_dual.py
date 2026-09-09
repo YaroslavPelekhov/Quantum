@@ -12,7 +12,11 @@ from c020_exact_certificate import pt_integer,walsh,objective,SOURCE,DATA
 
 def verify(cert):
     assert cert['symmetric_support_required'] is True
-    assert cert['source_sha256']==hashlib.sha256(SOURCE.read_bytes()).hexdigest()
+    normalization=cert.get('source_hash_normalization','raw')
+    assert normalization in ('raw','lf')
+    source_bytes=SOURCE.read_bytes()
+    if normalization=='lf':source_bytes=source_bytes.replace(b'\r\n',b'\n')
+    assert cert['source_sha256']==hashlib.sha256(source_bytes).hexdigest()
     u=cert['dual_numerators'];den=cert['dual_denominator']
     assert len(u)==16384 and all(type(v) is int and v>=0 for v in u)
     assert type(den) is int and den>0

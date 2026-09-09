@@ -16,13 +16,13 @@ At 40 lifts / 640 modulus bits, all rational correction coordinates were
 reconstructed and substituted exactly into the 906-row square system.
 The resulting FULL dual has nonnegative numerators and exact upper six.
 Common denominator has 332 bits. Total discovery runtime 3.703 seconds.
-The certificate is `results/pauli_fourth_moment_phase0/c031_candidate.json`;
-its historical filename does not indicate unverified status.
+The portable certificate is `results/pauli_fourth_moment_phase0/c031_exact_six_certificate.json`.
+The original `c031_candidate.json` is retained as a raw-hash discovery artifact.
 
 `verify_c031_exact_six.py` runs with Python -S and checks the frozen source
 graph/Pauli relations and the saved full certificate. The existing C021
 verifier checks all 16384 dual coordinates and 8256 even inequalities,
-with two agreeing integer transforms and regenerated objective. Six new
+with two agreeing integer transforms and regenerated objective. Eight new
 tests pass, including negative coefficient, wrong denominator, missing
 symmetric support and wrong source. No floating point is used by this
 standalone certificate verifier. Discovery QR support/rank is not trusted
@@ -59,3 +59,13 @@ practical hardware advantage, or A-star novelty. The certificate's large
 rationals are exact but not yet a conceptual general proof. Priority and
 generalization remain research requirements. The manuscript/PDF predates
 this result and must be updated and checked separately.
+
+## Archive portability audit
+
+The first clean Git archive failed the RAW source hash because Git
+normalized CRLF to LF. No coefficient or mathematical inequality failed.
+The portable certificate retains identical numbers and explicitly uses
+LF-normalized source bytes for its SHA256; no other whitespace or content
+is ignored. Legacy raw-hash mode remains unchanged. Tests cover both line
+endings, altered source and unknown normalization mode. Use the portable
+certificate for clean checkouts; the discovery artifact is historical.
