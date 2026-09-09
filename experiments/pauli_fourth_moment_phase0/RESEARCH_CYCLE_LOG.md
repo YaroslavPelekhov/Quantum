@@ -1191,3 +1191,18 @@ actual unretrieved code, almost-sure convergence, hardware data, or main
 unitary-witness result. Before proposing any novel causal sampler, audit
 publisher PDF, implementation/updates and operator-scaling prior art.
 No external messages, paid run, QPU call or confirmed A-star contribution.
+
+### Publisher and diagonal-dynamics audit — 2026-09-09
+
+The previous status-only turn was no research progress; this continuation
+completed the publisher-PDF verification (visually, pages 26–27) and
+derived the full diagonal support-count recurrence for the causal filter.
+Added CAUSAL_PUBLISHER_AUDIT.md and check_diagonal_causal_filter.py in the
+operational folder. All 255 nonempty diagonal supports / 1530 exact finite
+iterates pass the closed-form check. A separable rank-two noncausal fixed
+point removes entanglement as an explanation for the failure. Unequal
+column counts also separate finite rank preservation from possible rank
+loss in the asymptotic limit. No generic-ensemble failure rate is inferred.
+Existing low-rank Sinkhorn warnings prevent presenting low-rank failure
+itself as novelty. Author code remains unretrieved; noncommuting dynamics
+and sampling-measure significance remain open research gates.
