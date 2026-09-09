@@ -1392,3 +1392,22 @@ bound, or infeasibility proof. Saved raw JSON and empty candidate archive.
 Five C021 exact-verifier tests passed. Do not continue blind solver swaps
 on the same dense-orbit problem; a structural reduction is needed before
 another recovery campaign. No QPU or paid resources used.
+
+### C025 exact saturated-stabilizer face — 2026-09-09
+
+Previous turn made experimental progress by recording the bounded C024
+failure, without upgrading it to an impossibility claim. This turn moved
+to structural complementary slackness rather than another optimizer swap.
+Enumerated all Lagrangian extensions of the 88 tight stable-set spans:
+all rank five, 15 extensions each, 1320 distinct spaces, 10.125 sec.
+Independent verification proves completeness by extension counts, checks
+the exact aggregate primal objective six, and compares two integer PT
+algorithms. Four tests pass including false upper-claim rejection.
+
+Any exact-six dual must vanish on 6540 coordinates and meet equality on
+3784 even coordinates: 3346 free linear orbits / 1030 forced affine-orbit
+equalities. C022/C024's heuristic kept only 3283 of these free orbits,
+excluding 126 coordinates in 63 additional orbits. Necessity of those
+extra variables is not proved, nor is timeout causality. A structurally
+justified next system should retain them. No new solve, exact upper six,
+new Bell formalism or A-star novelty claimed.
