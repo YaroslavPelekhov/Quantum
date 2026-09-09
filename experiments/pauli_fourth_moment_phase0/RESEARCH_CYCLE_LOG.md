@@ -1341,3 +1341,23 @@ a separable/tensor-square witness, so no uncertainty violation is claimed.
 PPT optimum, stronger relaxations and the original operator inequality
 remain open. The completed exact exclusion replaces timeout uncertainty
 about this proof route, but is not claimed as A-star novelty.
+
+### C021 symmetric-support PPT and exact near-six bound — 2026-09-09
+
+Previous turn produced an exact exclusion of standalone PPT. Added the
+independently justified pure-identical-copy support condition, not merely
+swap invariance. C020 has exact nonzero antisymmetric mass and is therefore
+excluded. Frozen PDHG with G8 control and C014, no restarts: G8 retained
+its violation; C014 after 20000 steps / 21.938 sec gave numerical primal
+5.99999999942047 and dual 6.000000000000007.
+
+Converted the dual to rational nonnegative coordinates and computed the
+actual exact maximum rather than asserting rounding to six. Certified
+upper is 6+33/25600000000000 for the archived C014 representation.
+All 16384 dual coordinates / 8256 symmetric support inequalities verified
+via integer local transform and integer Walsh convolution, source and
+objective regenerated; python -S verification and five tests pass.
+This genuinely improves the fixed-representation upper estimate, but
+the small positive remainder remains: no exact facet, graph-universal
+theorem, or A-star claim. Near-active-orbit diagnostics may guide a next
+registered rational certificate recovery, not substitute for its proof.
