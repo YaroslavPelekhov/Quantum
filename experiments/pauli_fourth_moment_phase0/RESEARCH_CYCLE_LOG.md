@@ -1111,3 +1111,27 @@ See ../pauli_operational_phase0/COMPLETED_AUDIT_RU.md and verify_completed.py.
 No new campaign launched. A-star novelty remains unconfirmed. Next task
 is a different, preregistered experimental capability after a prior-art
 gate, not another significance optimizer or mathematical census.
+
+### Post-campaign capability and structural-diversity gate — 2026-09-09
+
+Rejected generic two-copy/Bell quadratic measurement as a new contribution:
+the commuting lift is already explicit in Xu et al. IV.2, equations
+(10)-(14), and doubling-qubit expectation estimation is existing work
+(arXiv:2412.14466; abstract-level check only). Cotler--Gong--Kannan,
+Noisy quantum learning theory (2026), also blocks treating noise resilience
+of Bell/SWAP primitives as an untouched topic; its oracle assumptions must
+be matched rather than importing its bounds into our different task.
+
+Registered a bounded exact G8/G9 structural diagnostic before execution
+in ../pauli_operational_phase0/NEXT_CAPABILITY_GATE.md. Discovery finds two
+weight-preserving G8 induced embeddings in G9, no copy/split pair. Separate
+stdlib acceptance verifies the map i -> i+1, omitting G9's XIII vertex of
+weight one. All edges/nonedges and weights agree; changed weight and word
+controls are rejected. No equality of noisy tasks or beta is inferred.
+
+Correct the structural-diversity interpretation: G9 is a held-out instance
+containing development G8, and antiC9 is another size of development's
+anticycle family. They are not two structurally unrelated held-out families.
+Keep the frozen protocol unchanged and attach this qualification to the
+completed report. Failed operational gain remains failed. No large new
+campaign, new quantum theorem, QPU call or A-star confirmation.
