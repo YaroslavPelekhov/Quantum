@@ -1,0 +1,187 @@
+{
+  "status": "iteration_cap",
+  "history": [
+    {
+      "iteration": 0,
+      "solver_status": 0,
+      "constraints": 0,
+      "value": 15.875,
+      "min_lambda": 0.0,
+      "min_pt": -0.0032958984375,
+      "trace": 1.0
+    },
+    {
+      "iteration": 1,
+      "solver_status": 0,
+      "constraints": 32,
+      "value": 14.85546875,
+      "min_lambda": 0.0,
+      "min_pt": -0.0031585693359375,
+      "trace": 1.0
+    },
+    {
+      "iteration": 2,
+      "solver_status": 0,
+      "constraints": 64,
+      "value": 14.270246107756755,
+      "min_lambda": 0.0,
+      "min_pt": -0.0029755846742088744,
+      "trace": 1.0000000000000058
+    },
+    {
+      "iteration": 3,
+      "solver_status": 0,
+      "constraints": 96,
+      "value": 13.752479338857803,
+      "min_lambda": 0.0,
+      "min_pt": -0.002148474904950313,
+      "trace": 1.0000000000000002
+    },
+    {
+      "iteration": 4,
+      "solver_status": 0,
+      "constraints": 128,
+      "value": 13.376293911534049,
+      "min_lambda": 0.0,
+      "min_pt": -0.0018144862073939177,
+      "trace": 0.9999999999999579
+    },
+    {
+      "iteration": 5,
+      "solver_status": 0,
+      "constraints": 160,
+      "value": 12.843391669986055,
+      "min_lambda": 0.0,
+      "min_pt": -0.0019380968832614848,
+      "trace": 1.0000000000000013
+    },
+    {
+      "iteration": 6,
+      "solver_status": 0,
+      "constraints": 192,
+      "value": 12.409764107507463,
+      "min_lambda": 0.0,
+      "min_pt": -0.0017665619485813652,
+      "trace": 1.000000000000002
+    },
+    {
+      "iteration": 7,
+      "solver_status": 0,
+      "constraints": 224,
+      "value": 12.132319234744553,
+      "min_lambda": 0.0,
+      "min_pt": -0.0015935116925638467,
+      "trace": 1.0000000000012907
+    },
+    {
+      "iteration": 8,
+      "solver_status": 0,
+      "constraints": 256,
+      "value": 11.723529984628232,
+      "min_lambda": 0.0,
+      "min_pt": -0.0016541363065509323,
+      "trace": 1.0000000000000133
+    },
+    {
+      "iteration": 9,
+      "solver_status": 0,
+      "constraints": 288,
+      "value": 11.465947099711443,
+      "min_lambda": 0.0,
+      "min_pt": -0.001701509740984935,
+      "trace": 0.9999999999999992
+    },
+    {
+      "iteration": 10,
+      "solver_status": 0,
+      "constraints": 320,
+      "value": 11.22685699992956,
+      "min_lambda": 0.0,
+      "min_pt": -0.0013818190560657784,
+      "trace": 0.9999999999994877
+    },
+    {
+      "iteration": 11,
+      "solver_status": 0,
+      "constraints": 352,
+      "value": 10.99561415259004,
+      "min_lambda": 0.0,
+      "min_pt": -0.0012845803258999117,
+      "trace": 1.000000000000002
+    },
+    {
+      "iteration": 12,
+      "solver_status": 0,
+      "constraints": 384,
+      "value": 10.800311508990143,
+      "min_lambda": 0.0,
+      "min_pt": -0.0013963619907180166,
+      "trace": 0.9999999999999969
+    },
+    {
+      "iteration": 13,
+      "solver_status": 0,
+      "constraints": 416,
+      "value": 10.611660483003817,
+      "min_lambda": 0.0,
+      "min_pt": -0.0011364334618369867,
+      "trace": 0.9999999999999998
+    },
+    {
+      "iteration": 14,
+      "solver_status": 0,
+      "constraints": 448,
+      "value": 10.386486320347693,
+      "min_lambda": 0.0,
+      "min_pt": -0.0014641088484563555,
+      "trace": 1.0000000000000007
+    },
+    {
+      "iteration": 15,
+      "solver_status": 0,
+      "constraints": 480,
+      "value": 10.192697604709025,
+      "min_lambda": 0.0,
+      "min_pt": -0.0014195228968267466,
+      "trace": 0.9999999999999931
+    },
+    {
+      "iteration": 16,
+      "solver_status": 0,
+      "constraints": 512,
+      "value": 9.993440246310781,
+      "min_lambda": 0.0,
+      "min_pt": -0.0011381359243567662,
+      "trace": 0.9999999999999815
+    },
+    {
+      "iteration": 17,
+      "solver_status": 0,
+      "constraints": 544,
+      "value": 9.859755930527708,
+      "min_lambda": 0.0,
+      "min_pt": -0.0012424014726507547,
+      "trace": 1.0000000000000022
+    },
+    {
+      "iteration": 18,
+      "solver_status": 0,
+      "constraints": 576,
+      "value": 9.68797326941809,
+      "min_lambda": 0.0,
+      "min_pt": -0.001171010207473072,
+      "trace": 0.9999999999977482
+    },
+    {
+      "iteration": 19,
+      "solver_status": 0,
+      "constraints": 608,
+      "value": 9.546589668255269,
+      "min_lambda": 0.0,
+      "min_pt": -0.001207693838967796,
+      "trace": 1.0000000000000022
+    }
+  ],
+  "seconds": 40.875,
+  "quantum_target_proved": false
+}

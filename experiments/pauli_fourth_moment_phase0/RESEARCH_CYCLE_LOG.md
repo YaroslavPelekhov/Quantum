@@ -1303,3 +1303,20 @@ useful implementation effort is a proved symmetry/dual reduction before
 another solve, not more random-state starts or increased time by default.
 Graph-universal representation coverage and rigorous dual certification
 remain obligations if this relaxation eventually returns six.
+
+### C018/C019 symmetry and constraint-generation audit — 2026-09-09
+
+Derived distinct affine Bell and linear PT actions, verified 16 valid
+weighted graph automorphisms against every label and objective coordinate.
+Exact orbit partitions reduce 16384 probability entries to 5184 masses,
+but a dense orbit matrix exceeds the frozen size budget, so C018 stopped
+without constructing or solving it. Registered C019 before a different
+bounded constraint-generation run on the same fixed relaxation.
+
+C019 solved 20 truncated LPs in 40.875 seconds, ending with 608 cuts,
+objective 9.54659 and full PT minimum -0.00120769. Every saved candidate
+fails full PPT. An independent Walsh-convolution verifier reproduced all
+20 minima and original-objective values. No PPT witness above six, exact
+upper certificate, or physical violation was obtained. This is useful
+implementation and failed-route evidence, NOT an improved quantum bound
+or a confirmed A-star result. All unsatisfied constraints remain in scope.
