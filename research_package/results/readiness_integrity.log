@@ -1,0 +1,14 @@
+
+test_all_six_measured_circuits_are_hashed (test_hardware_package.HardwarePackageTests.test_all_six_measured_circuits_are_hashed) ... ok
+test_plan_is_balanced_and_exactly_60000_shots (test_hardware_package.HardwarePackageTests.test_plan_is_balanced_and_exactly_60000_shots) ... ok
+test_scorers_and_exact_preflight_are_present (test_hardware_package.HardwarePackageTests.test_scorers_and_exact_preflight_are_present) ... ok
+test_submission_is_impossible_from_preparation_script (test_hardware_package.HardwarePackageTests.test_submission_is_impossible_from_preparation_script) ... ok
+test_cp_extremes_and_symmetry (test_readiness.ReadinessTests.test_cp_extremes_and_symmetry) ... ok
+test_noiseless_readout_identity (test_readiness.ReadinessTests.test_noiseless_readout_identity) ... ok
+test_readout_exact_product (test_readiness.ReadinessTests.test_readout_exact_product) ... ok
+test_scorer_little_endian_and_forbidden (test_readiness.ReadinessTests.test_scorer_little_endian_and_forbidden) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.050s
+
+OK

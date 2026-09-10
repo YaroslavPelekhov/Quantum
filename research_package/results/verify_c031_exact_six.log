@@ -1,0 +1,14 @@
+{
+  "exact_upper": "6",
+  "decimal_upper": 6.0,
+  "gap_above_six": "0",
+  "dual_coordinates_checked": 16384,
+  "symmetric_constraints_checked": 8256,
+  "exact_bound_six_proved": true,
+  "scope": "archived C014 Pauli representation",
+  "classical_stable_lower_bound": 6,
+  "fixed_representation_quantum_maximum": 6,
+  "representation_transfer": "Published Xu--Schwonnek--Winter weighted invariance; see C023",
+  "unrestricted_SCF_theorem": false,
+  "A_star_confirmed": false
+}

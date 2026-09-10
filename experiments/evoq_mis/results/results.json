@@ -1,0 +1,944 @@
+{
+  "experiment": "Evolutionary parameter search for depth-p QAOA on QOBLIB MIS",
+  "timestamp_local": "2026-08-02 17:48:27",
+  "configuration": {
+    "budget": 60,
+    "shots": 4096,
+    "trials": 8,
+    "noise_shots": 256,
+    "noise_trials": 4,
+    "search_repeats": 12,
+    "p": 1,
+    "seed": 20260802
+  },
+  "environment": {
+    "python": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "qiskit": "2.5.1",
+    "qiskit_aer": "0.17.2",
+    "numpy": "2.5.1"
+  },
+  "instances": {
+    "train": {
+      "name": "mammalia-kangaroo-interactions",
+      "vertices": 17,
+      "edges": 91,
+      "exact_optimum": 4,
+      "source": "C:\\Users\\psgpe\\Downloads\\Taiwan\\QOBLIB\\07-independentset\\instances\\mammalia-kangaroo-interactions.gph"
+    },
+    "held_out": {
+      "name": "farm",
+      "vertices": 17,
+      "edges": 39,
+      "exact_optimum": 10,
+      "source": "C:\\Users\\psgpe\\Downloads\\Taiwan\\QOBLIB\\07-independentset\\instances\\farm.gph"
+    }
+  },
+  "score_definition": "E[feasible size]/optimum + 0.25*P(optimum) + 0.10*P(feasible); no repair is used during search",
+  "noise_model": "Independent depolarizing error: 0.001 after 1-qubit gates and 0.01 after RZZ; generic stress test, not hardware-calibrated",
+  "search": {
+    "differential_evolution": {
+      "champion_params": [
+        1.05,
+        2.5323777167741177,
+        6.156612811893789
+      ],
+      "champion_score": 0.3618325230089704,
+      "summary": {
+        "mean": 0.18116844023666737,
+        "std": 0.10890413455524318,
+        "median": 0.15385372093748828,
+        "min": 0.030614641978615735,
+        "max": 0.3618325230089704
+      }
+    },
+    "random_search": {
+      "champion_params": [
+        2.4513507666779746,
+        2.5587722465094367,
+        2.4381672264127325
+      ],
+      "champion_score": 0.30154137923534186,
+      "summary": {
+        "mean": 0.19073796475519644,
+        "std": 0.09533183049987526,
+        "median": 0.21211529450525723,
+        "min": 0.04207686657638338,
+        "max": 0.30154137923534186
+      }
+    },
+    "fixed_schedule": {
+      "params": [
+        2.0,
+        0.7853981633974483,
+        0.7853981633974483
+      ]
+    },
+    "paired_evolution_wins": 6,
+    "paired_random_wins": 6,
+    "replicates": [
+      {
+        "replicate": 0,
+        "evolution_seed": 20260802,
+        "random_seed": 20260803,
+        "evolution_score": 0.16677312151482085,
+        "random_score": 0.21293673759695608,
+        "evolution_params": [
+          1.0599487844832218,
+          2.6350647923032637,
+          0.44965974343070014
+        ],
+        "random_params": [
+          1.078763939772611,
+          2.589308869104106,
+          6.10334507722074
+        ]
+      },
+      {
+        "replicate": 1,
+        "evolution_seed": 20270809,
+        "random_seed": 20270810,
+        "evolution_score": 0.08908646194008354,
+        "random_score": 0.30154137923534186,
+        "evolution_params": [
+          1.1464609258147709,
+          0.47109824082159124,
+          4.7979224702835515
+        ],
+        "random_params": [
+          2.4513507666779746,
+          2.5587722465094367,
+          2.4381672264127325
+        ]
+      },
+      {
+        "replicate": 2,
+        "evolution_seed": 20280816,
+        "random_seed": 20280817,
+        "evolution_score": 0.3618325230089704,
+        "random_score": 0.28434940076522675,
+        "evolution_params": [
+          1.05,
+          2.5323777167741177,
+          6.156612811893789
+        ],
+        "random_params": [
+          1.6828539737605213,
+          2.4498194341701565,
+          3.642283846344731
+        ]
+      },
+      {
+        "replicate": 3,
+        "evolution_seed": 20290823,
+        "random_seed": 20290824,
+        "evolution_score": 0.135331377844837,
+        "random_score": 0.27444169537415464,
+        "evolution_params": [
+          3.7944184091561803,
+          0.7616417873930915,
+          4.802487734746464
+        ],
+        "random_params": [
+          2.14841275347887,
+          0.7902831234170453,
+          5.67369650606318
+        ]
+      },
+      {
+        "replicate": 4,
+        "evolution_seed": 20300830,
+        "random_seed": 20300831,
+        "evolution_score": 0.21400087850190283,
+        "random_score": 0.12992934894063593,
+        "evolution_params": [
+          1.05,
+          2.1376490021705985,
+          6.26951436508384
+        ],
+        "random_params": [
+          1.4776204546233238,
+          2.7674769438332936,
+          0.26668252178408425
+        ]
+      },
+      {
+        "replicate": 5,
+        "evolution_seed": 20310837,
+        "random_seed": 20310838,
+        "evolution_score": 0.030614641978615735,
+        "random_score": 0.12211026016464646,
+        "evolution_params": [
+          4.0,
+          1.983246737260609,
+          3.0557822965243115
+        ],
+        "random_params": [
+          2.5213485413428147,
+          2.3749173173243197,
+          2.709096767573529
+        ]
+      },
+      {
+        "replicate": 6,
+        "evolution_seed": 20320844,
+        "random_seed": 20320845,
+        "evolution_score": 0.05143567496278041,
+        "random_score": 0.2112938514135584,
+        "evolution_params": [
+          2.046026501232796,
+          0.8839218740363983,
+          2.7003794430313466
+        ],
+        "random_params": [
+          3.6018441799837477,
+          2.283334880784958,
+          5.273984617402939
+        ]
+      },
+      {
+        "replicate": 7,
+        "evolution_seed": 20330851,
+        "random_seed": 20330852,
+        "evolution_score": 0.1277375018140758,
+        "random_score": 0.264025768515762,
+        "evolution_params": [
+          2.416846572316521,
+          2.311574305923248,
+          2.381938831598626
+        ],
+        "random_params": [
+          1.80870056997967,
+          2.432146669940921,
+          3.346923739015931
+        ]
+      },
+      {
+        "replicate": 8,
+        "evolution_seed": 20340858,
+        "random_seed": 20340859,
+        "evolution_score": 0.20834703746417596,
+        "random_score": 0.08448288928557735,
+        "evolution_params": [
+          3.4733560066617244,
+          2.647656939990966,
+          3.544442622817244
+        ],
+        "random_params": [
+          1.8727134137004966,
+          2.3953195498453463,
+          0.05406365632776234
+        ]
+      },
+      {
+        "replicate": 9,
+        "evolution_seed": 20350865,
+        "random_seed": 20350866,
+        "evolution_score": 0.14093432036015568,
+        "random_score": 0.07210790938627723,
+        "evolution_params": [
+          3.2779464771244298,
+          2.357586712931996,
+          1.7318693697194176
+        ],
+        "random_params": [
+          3.8937120489938115,
+          2.5122275780478427,
+          6.259014051808175
+        ]
+      },
+      {
+        "replicate": 10,
+        "evolution_seed": 20360872,
+        "random_seed": 20360873,
+        "evolution_score": 0.30870033775069755,
+        "random_score": 0.2895594698078376,
+        "evolution_params": [
+          3.0865896009796177,
+          2.4301544612262966,
+          1.8828386640462837
+        ],
+        "random_params": [
+          3.9986986704800698,
+          2.222860018808392,
+          0.06779900938676638
+        ]
+      },
+      {
+        "replicate": 11,
+        "evolution_seed": 20370879,
+        "random_seed": 20370880,
+        "evolution_score": 0.33922740569889254,
+        "random_score": 0.04207686657638338,
+        "evolution_params": [
+          4.0,
+          2.5947869817734013,
+          3.07239209493361
+        ],
+        "random_params": [
+          3.6375743302374337,
+          2.8730470272832633,
+          5.187096379325756
+        ]
+      }
+    ],
+    "total_search_seconds": 11.481265900001745
+  },
+  "exact_train": {
+    "differential_evolution": {
+      "score": 0.3618325230089704,
+      "feasible_probability": 0.712255797449313,
+      "optimal_probability": 0.012666738591721943,
+      "expected_feasible_size_unconditional": 1.1497610344644345,
+      "expected_size_given_feasible": 1.614252967237176,
+      "approximation_ratio_unconditional": 0.2874402586161086
+    },
+    "random_search": {
+      "score": 0.30154137923534186,
+      "feasible_probability": 0.39826782019139173,
+      "optimal_probability": 0.04919137296381733,
+      "expected_feasible_size_unconditional": 0.9976670159009934,
+      "expected_size_given_feasible": 2.505015382416672,
+      "approximation_ratio_unconditional": 0.24941675397524835
+    },
+    "fixed_schedule": {
+      "score": 0.004051475414023175,
+      "feasible_probability": 0.0059294627767538235,
+      "optimal_probability": 0.0004941256100395706,
+      "expected_feasible_size_unconditional": 0.013339990935351598,
+      "expected_size_given_feasible": 2.249780703177765,
+      "approximation_ratio_unconditional": 0.0033349977338378994
+    }
+  },
+  "exact_held_out_transfer": {
+    "differential_evolution": {
+      "score": 0.1890772187750073,
+      "feasible_probability": 0.4038092211264588,
+      "optimal_probability": 1.7061141960905377e-05,
+      "expected_feasible_size_unconditional": 1.4869203137687121,
+      "expected_size_given_feasible": 3.6822346691856778,
+      "approximation_ratio_unconditional": 0.1486920313768712
+    },
+    "random_search": {
+      "score": 0.047842450564958366,
+      "feasible_probability": 0.061778733943003,
+      "optimal_probability": 0.0014363956738540026,
+      "expected_feasible_size_unconditional": 0.41305478252194566,
+      "expected_size_given_feasible": 6.686035082930473,
+      "approximation_ratio_unconditional": 0.041305478252194563
+    },
+    "fixed_schedule": {
+      "score": 0.01074152511094225,
+      "feasible_probability": 0.015001720410182337,
+      "optimal_probability": 0.00013233539340250298,
+      "expected_feasible_size_unconditional": 0.09208269221573391,
+      "expected_size_given_feasible": 6.138142139566424,
+      "approximation_ratio_unconditional": 0.009208269221573391
+    }
+  },
+  "finite_shot_train": {
+    "differential_evolution": {
+      "noiseless_shots": {
+        "aggregate": {
+          "shots": {
+            "mean": 4096.0,
+            "std": 0.0
+          },
+          "raw_feasible_rate": {
+            "mean": 0.708740234375,
+            "std": 0.007554282884417932
+          },
+          "raw_optimal_rate": {
+            "mean": 0.0120849609375,
+            "std": 0.0013244166815044311
+          },
+          "raw_expected_feasible_size_unconditional": {
+            "mean": 1.141448974609375,
+            "std": 0.018982031720757218
+          },
+          "repaired_expected_size": {
+            "mean": 3.805206298828125,
+            "std": 0.00785211329368458
+          },
+          "repaired_optimal_rate": {
+            "mean": 0.8232421875,
+            "std": 0.007501118894402937
+          },
+          "best_repaired_size": {
+            "mean": 4.0,
+            "std": 0.0
+          }
+        },
+        "trials": [
+          {
+            "shots": 4096,
+            "raw_feasible_rate": 0.70263671875,
+            "raw_optimal_rate": 0.011962890625,
+            "raw_expected_feasible_size_unconditional": 1.141845703125,
+            "repaired_expected_size": 3.8134765625,
+            "repaired_optimal_rate": 0.830078125,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          },
+          {
+            "shots": 4096,
+            "raw_feasible_rate": 0.70849609375,
+            "raw_optimal_rate": 0.012451171875,
+            "raw_expected_feasible_size_unconditional": 1.112548828125,
+            "repaired_expected_size": 3.802001953125,
+            "repaired_optimal_rate": 0.821044921875,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          },
+          {
+            "shots": 4096,
+            "raw_feasible_rate": 0.7158203125,
+            "raw_optimal_rate": 0.0126953125,
+            "raw_expected_feasible_size_unconditional": 1.153076171875,
+            "repaired_expected_size": 3.78955078125,
+            "repaired_optimal_rate": 0.806884765625,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          },
+          {
+            "shots": 4096,
+            "raw_feasible_rate": 0.71435546875,
+            "raw_optimal_rate": 0.011962890625,
+            "raw_expected_feasible_size_unconditional": 1.158935546875,
+            "repaired_expected_size": 3.81103515625,
+            "repaired_optimal_rate": 0.828369140625,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          },
+          {
+            "shots": 4096,
+            "raw_feasible_rate": 0.712890625,
+            "raw_optimal_rate": 0.01025390625,
+            "raw_expected_feasible_size_unconditional": 1.162841796875,
+            "repaired_expected_size": 3.799560546875,
+            "repaired_optimal_rate": 0.8203125,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          },
+          {
+            "shots": 4096,
+            "raw_feasible_rate": 0.698974609375,
+            "raw_optimal_rate": 0.0146484375,
+            "raw_expected_feasible_size_unconditional": 1.134521484375,
+            "repaired_expected_size": 3.810302734375,
+            "repaired_optimal_rate": 0.82861328125,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          },
+          {
+            "shots": 4096,
+            "raw_feasible_rate": 0.717529296875,
+            "raw_optimal_rate": 0.011962890625,
+            "raw_expected_feasible_size_unconditional": 1.151611328125,
+            "repaired_expected_size": 3.808837890625,
+            "repaired_optimal_rate": 0.82421875,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          },
+          {
+            "shots": 4096,
+            "raw_feasible_rate": 0.69921875,
+            "raw_optimal_rate": 0.0107421875,
+            "raw_expected_feasible_size_unconditional": 1.1162109375,
+            "repaired_expected_size": 3.806884765625,
+            "repaired_optimal_rate": 0.826416015625,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          }
+        ]
+      },
+      "depolarizing_noise": {
+        "aggregate": {
+          "shots": {
+            "mean": 256.0,
+            "std": 0.0
+          },
+          "raw_feasible_rate": {
+            "mean": 0.4296875,
+            "std": 0.04290952357626063
+          },
+          "raw_optimal_rate": {
+            "mean": 0.0068359375,
+            "std": 0.004915256793796061
+          },
+          "raw_expected_feasible_size_unconditional": {
+            "mean": 0.697265625,
+            "std": 0.08393136650772563
+          },
+          "repaired_expected_size": {
+            "mean": 3.818359375,
+            "std": 0.024185124506519155
+          },
+          "repaired_optimal_rate": {
+            "mean": 0.8271484375,
+            "std": 0.025390625
+          },
+          "best_repaired_size": {
+            "mean": 4.0,
+            "std": 0.0
+          }
+        },
+        "trials": [
+          {
+            "shots": 256,
+            "raw_feasible_rate": 0.42578125,
+            "raw_optimal_rate": 0.0,
+            "raw_expected_feasible_size_unconditional": 0.6796875,
+            "repaired_expected_size": 3.81640625,
+            "repaired_optimal_rate": 0.82421875,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 216
+          },
+          {
+            "shots": 256,
+            "raw_feasible_rate": 0.453125,
+            "raw_optimal_rate": 0.01171875,
+            "raw_expected_feasible_size_unconditional": 0.75390625,
+            "repaired_expected_size": 3.83984375,
+            "repaired_optimal_rate": 0.8515625,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 65760
+          },
+          {
+            "shots": 256,
+            "raw_feasible_rate": 0.46875,
+            "raw_optimal_rate": 0.0078125,
+            "raw_expected_feasible_size_unconditional": 0.76953125,
+            "repaired_expected_size": 3.78515625,
+            "repaired_optimal_rate": 0.79296875,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 198
+          },
+          {
+            "shots": 256,
+            "raw_feasible_rate": 0.37109375,
+            "raw_optimal_rate": 0.0078125,
+            "raw_expected_feasible_size_unconditional": 0.5859375,
+            "repaired_expected_size": 3.83203125,
+            "repaired_optimal_rate": 0.83984375,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 232
+          }
+        ]
+      }
+    },
+    "random_search": {
+      "noiseless_shots": {
+        "aggregate": {
+          "shots": {
+            "mean": 4096.0,
+            "std": 0.0
+          },
+          "raw_feasible_rate": {
+            "mean": 0.402587890625,
+            "std": 0.010168851642936341
+          },
+          "raw_optimal_rate": {
+            "mean": 0.050933837890625,
+            "std": 0.0024585665745345663
+          },
+          "raw_expected_feasible_size_unconditional": {
+            "mean": 1.00689697265625,
+            "std": 0.0279622866140977
+          },
+          "repaired_expected_size": {
+            "mean": 3.853363037109375,
+            "std": 0.004872228868850068
+          },
+          "repaired_optimal_rate": {
+            "mean": 0.861419677734375,
+            "std": 0.0045747875247664814
+          },
+          "best_repaired_size": {
+            "mean": 4.0,
+            "std": 0.0
+          }
+        },
+        "trials": [
+          {
+            "shots": 4096,
+            "raw_feasible_rate": 0.3994140625,
+            "raw_optimal_rate": 0.052001953125,
+            "raw_expected_feasible_size_unconditional": 1.002685546875,
+            "repaired_expected_size": 3.84521484375,
+            "repaired_optimal_rate": 0.8544921875,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          },
+          {
+            "shots": 4096,
+            "raw_feasible_rate": 0.3935546875,
+            "raw_optimal_rate": 0.048828125,
+            "raw_expected_feasible_size_unconditional": 0.982666015625,
+            "repaired_expected_size": 3.856689453125,
+            "repaired_optimal_rate": 0.86376953125,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          },
+          {
+            "shots": 4096,
+            "raw_feasible_rate": 0.390380859375,
+            "raw_optimal_rate": 0.0498046875,
+            "raw_expected_feasible_size_unconditional": 0.975341796875,
+            "repaired_expected_size": 3.856201171875,
+            "repaired_optimal_rate": 0.862548828125,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          },
+          {
+            "shots": 4096,
+            "raw_feasible_rate": 0.413818359375,
+            "raw_optimal_rate": 0.05126953125,
+            "raw_expected_feasible_size_unconditional": 1.03857421875,
+            "repaired_expected_size": 3.849609375,
+            "repaired_optimal_rate": 0.856689453125,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          },
+          {
+            "shots": 4096,
+            "raw_feasible_rate": 0.4091796875,
+            "raw_optimal_rate": 0.05322265625,
+            "raw_expected_feasible_size_unconditional": 1.02734375,
+            "repaired_expected_size": 3.852783203125,
+            "repaired_optimal_rate": 0.86376953125,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          },
+          {
+            "shots": 4096,
+            "raw_feasible_rate": 0.394287109375,
+            "raw_optimal_rate": 0.04931640625,
+            "raw_expected_feasible_size_unconditional": 0.971923828125,
+            "repaired_expected_size": 3.85009765625,
+            "repaired_optimal_rate": 0.859375,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          },
+          {
+            "shots": 4096,
+            "raw_feasible_rate": 0.40185546875,
+            "raw_optimal_rate": 0.05517578125,
+            "raw_expected_feasible_size_unconditional": 1.015869140625,
+            "repaired_expected_size": 3.8603515625,
+            "repaired_optimal_rate": 0.869140625,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          },
+          {
+            "shots": 4096,
+            "raw_feasible_rate": 0.418212890625,
+            "raw_optimal_rate": 0.0478515625,
+            "raw_expected_feasible_size_unconditional": 1.040771484375,
+            "repaired_expected_size": 3.85595703125,
+            "repaired_optimal_rate": 0.861572265625,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          }
+        ]
+      },
+      "depolarizing_noise": {
+        "aggregate": {
+          "shots": {
+            "mean": 256.0,
+            "std": 0.0
+          },
+          "raw_feasible_rate": {
+            "mean": 0.220703125,
+            "std": 0.0386040809384729
+          },
+          "raw_optimal_rate": {
+            "mean": 0.01953125,
+            "std": 0.004510548978043951
+          },
+          "raw_expected_feasible_size_unconditional": {
+            "mean": 0.5390625,
+            "std": 0.10942149309455462
+          },
+          "repaired_expected_size": {
+            "mean": 3.873046875,
+            "std": 0.017026948998205758
+          },
+          "repaired_optimal_rate": {
+            "mean": 0.876953125,
+            "std": 0.01761425684696443
+          },
+          "best_repaired_size": {
+            "mean": 4.0,
+            "std": 0.0
+          }
+        },
+        "trials": [
+          {
+            "shots": 256,
+            "raw_feasible_rate": 0.203125,
+            "raw_optimal_rate": 0.015625,
+            "raw_expected_feasible_size_unconditional": 0.51171875,
+            "repaired_expected_size": 3.88671875,
+            "repaired_optimal_rate": 0.890625,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 65760
+          },
+          {
+            "shots": 256,
+            "raw_feasible_rate": 0.2421875,
+            "raw_optimal_rate": 0.0234375,
+            "raw_expected_feasible_size_unconditional": 0.59765625,
+            "repaired_expected_size": 3.8671875,
+            "repaired_optimal_rate": 0.87890625,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          },
+          {
+            "shots": 256,
+            "raw_feasible_rate": 0.26171875,
+            "raw_optimal_rate": 0.0234375,
+            "raw_expected_feasible_size_unconditional": 0.6484375,
+            "repaired_expected_size": 3.8515625,
+            "repaired_optimal_rate": 0.8515625,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          },
+          {
+            "shots": 256,
+            "raw_feasible_rate": 0.17578125,
+            "raw_optimal_rate": 0.015625,
+            "raw_expected_feasible_size_unconditional": 0.3984375,
+            "repaired_expected_size": 3.88671875,
+            "repaired_optimal_rate": 0.88671875,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          }
+        ]
+      }
+    },
+    "fixed_schedule": {
+      "noiseless_shots": {
+        "aggregate": {
+          "shots": {
+            "mean": 4096.0,
+            "std": 0.0
+          },
+          "raw_feasible_rate": {
+            "mean": 0.0057373046875,
+            "std": 0.0006780908933880992
+          },
+          "raw_optimal_rate": {
+            "mean": 0.0006103515625,
+            "std": 0.0002918038597007797
+          },
+          "raw_expected_feasible_size_unconditional": {
+            "mean": 0.012969970703125,
+            "std": 0.0014202037193490765
+          },
+          "repaired_expected_size": {
+            "mean": 3.945037841796875,
+            "std": 0.002173644972645351
+          },
+          "repaired_optimal_rate": {
+            "mean": 0.945159912109375,
+            "std": 0.002120101138450351
+          },
+          "best_repaired_size": {
+            "mean": 4.0,
+            "std": 0.0
+          }
+        },
+        "trials": [
+          {
+            "shots": 4096,
+            "raw_feasible_rate": 0.007080078125,
+            "raw_optimal_rate": 0.000244140625,
+            "raw_expected_feasible_size_unconditional": 0.01513671875,
+            "repaired_expected_size": 3.946533203125,
+            "repaired_optimal_rate": 0.94677734375,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 198
+          },
+          {
+            "shots": 4096,
+            "raw_feasible_rate": 0.005859375,
+            "raw_optimal_rate": 0.00048828125,
+            "raw_expected_feasible_size_unconditional": 0.011474609375,
+            "repaired_expected_size": 3.94677734375,
+            "repaired_optimal_rate": 0.947021484375,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          },
+          {
+            "shots": 4096,
+            "raw_feasible_rate": 0.00537109375,
+            "raw_optimal_rate": 0.000732421875,
+            "raw_expected_feasible_size_unconditional": 0.013427734375,
+            "repaired_expected_size": 3.945556640625,
+            "repaired_optimal_rate": 0.945556640625,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          },
+          {
+            "shots": 4096,
+            "raw_feasible_rate": 0.005859375,
+            "raw_optimal_rate": 0.0009765625,
+            "raw_expected_feasible_size_unconditional": 0.013916015625,
+            "repaired_expected_size": 3.94677734375,
+            "repaired_optimal_rate": 0.94677734375,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 198
+          },
+          {
+            "shots": 4096,
+            "raw_feasible_rate": 0.005615234375,
+            "raw_optimal_rate": 0.000732421875,
+            "raw_expected_feasible_size_unconditional": 0.013671875,
+            "repaired_expected_size": 3.946044921875,
+            "repaired_optimal_rate": 0.946044921875,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          },
+          {
+            "shots": 4096,
+            "raw_feasible_rate": 0.005126953125,
+            "raw_optimal_rate": 0.0009765625,
+            "raw_expected_feasible_size_unconditional": 0.01220703125,
+            "repaired_expected_size": 3.942138671875,
+            "repaired_optimal_rate": 0.9423828125,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 198
+          },
+          {
+            "shots": 4096,
+            "raw_feasible_rate": 0.0048828125,
+            "raw_optimal_rate": 0.000244140625,
+            "raw_expected_feasible_size_unconditional": 0.0107421875,
+            "repaired_expected_size": 3.9453125,
+            "repaired_optimal_rate": 0.9453125,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          },
+          {
+            "shots": 4096,
+            "raw_feasible_rate": 0.006103515625,
+            "raw_optimal_rate": 0.00048828125,
+            "raw_expected_feasible_size_unconditional": 0.01318359375,
+            "repaired_expected_size": 3.941162109375,
+            "repaired_optimal_rate": 0.94140625,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          }
+        ]
+      },
+      "depolarizing_noise": {
+        "aggregate": {
+          "shots": {
+            "mean": 256.0,
+            "std": 0.0
+          },
+          "raw_feasible_rate": {
+            "mean": 0.00390625,
+            "std": 0.00318943976924893
+          },
+          "raw_optimal_rate": {
+            "mean": 0.0009765625,
+            "std": 0.001953125
+          },
+          "raw_expected_feasible_size_unconditional": {
+            "mean": 0.0087890625,
+            "std": 0.008052940675034493
+          },
+          "repaired_expected_size": {
+            "mean": 3.94140625,
+            "std": 0.023653518391386654
+          },
+          "repaired_optimal_rate": {
+            "mean": 0.94140625,
+            "std": 0.023653518391386654
+          },
+          "best_repaired_size": {
+            "mean": 4.0,
+            "std": 0.0
+          }
+        },
+        "trials": [
+          {
+            "shots": 256,
+            "raw_feasible_rate": 0.0078125,
+            "raw_optimal_rate": 0.0,
+            "raw_expected_feasible_size_unconditional": 0.015625,
+            "repaired_expected_size": 3.96484375,
+            "repaired_optimal_rate": 0.96484375,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          },
+          {
+            "shots": 256,
+            "raw_feasible_rate": 0.00390625,
+            "raw_optimal_rate": 0.00390625,
+            "raw_expected_feasible_size_unconditional": 0.015625,
+            "repaired_expected_size": 3.9296875,
+            "repaired_optimal_rate": 0.9296875,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 226
+          },
+          {
+            "shots": 256,
+            "raw_feasible_rate": 0.00390625,
+            "raw_optimal_rate": 0.0,
+            "raw_expected_feasible_size_unconditional": 0.00390625,
+            "repaired_expected_size": 3.9140625,
+            "repaired_optimal_rate": 0.9140625,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 232
+          },
+          {
+            "shots": 256,
+            "raw_feasible_rate": 0.0,
+            "raw_optimal_rate": 0.0,
+            "raw_expected_feasible_size_unconditional": 0.0,
+            "repaired_expected_size": 3.95703125,
+            "repaired_optimal_rate": 0.95703125,
+            "best_repaired_size": 4,
+            "best_repaired_mask": 198
+          }
+        ]
+      }
+    }
+  },
+  "best_repaired_solution": {
+    "mask": 226,
+    "vertices_1_based": [
+      2,
+      6,
+      7,
+      8
+    ],
+    "size": 4
+  },
+  "compiled_circuit": {
+    "depth": 31,
+    "size": 159,
+    "operations": {
+      "rzz": 91,
+      "h": 17,
+      "rz": 17,
+      "rx": 17,
+      "measure": 17,
+      "barrier": 1
+    }
+  },
+  "promotion_gate": {
+    "checks": {
+      "exact_optimal_solution_found": true,
+      "raw_train_feasible_probability_at_least_0_5": true,
+      "held_out_score_beats_fixed_schedule": true,
+      "replicated_mean_beats_equal_budget_random": false,
+      "strict_majority_of_paired_runs_beat_random": false
+    },
+    "promote_to_larger_or_hardware_experiment": false,
+    "reason": "All checks must pass; repair-only success cannot compensate for a weak raw quantum distribution."
+  }
+}

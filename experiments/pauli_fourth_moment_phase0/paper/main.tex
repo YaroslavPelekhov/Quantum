@@ -23,30 +23,44 @@
 \newcommand{\artifact}[1]{\nolinkurl{#1}}
 \setlength{\emergencystretch}{2em}
 \setlength{\parskip}{3pt}
-\title{Weighted Pauli uncertainty for structured\newline simplicial claw-free graphs:\newline exact certificates and a composition frontier}
+\title{Matching polytopes as exact Pauli uncertainty bodies:\newline all line graphs and a simplicial claw-free frontier}
 \author{Research manuscript\smallskip\\\small Draft for internal mathematical and priority review}
-\date{9 September 2026}
+\date{10 September 2026}
 \begin{document}
 \maketitle
 \begin{abstract}
 For Pauli observables with a prescribed anticommutation graph, weighted
 sums of squared expectations need not equal the corresponding weighted
-independence number. We give computer-assisted proofs of equality for an
-explicit family of simplicial claw-free graphs of order $2m+8$, for every
-$m\geq0$ and every nonnegative weight vector. A signed rectangular Gram
+independence number. Our main analytic result proves equality for every
+line graph and every nonnegative weight vector. The proof maps a line-graph
+Hamiltonian to a Majorana bilinear and shows that squared entries of a
+skew polar factor satisfy Edmonds' full matching-polytope description.
+It yields the sharp inequality
+$\norm{A}_*^2/4\leq\nu(R,w)\sum_e A_e^2/w_e$ and reduces the complete
+weighted uncertainty problem to maximum-weight matching. This strictly
+extends the previously sufficient $h$-perfect route: the infinite family
+$L(K_{2k+1})$, $k\geq2$, is not $h$-perfect but is covered by our theorem.
+We also give computer-assisted proofs of equality for an explicit family
+of simplicial claw-free graphs of order $2m+8$, for every $m\geq0$ and
+every nonnegative weight vector. A signed rectangular Gram
 identity controls one full-support weighted inequality; an exact
 eight-vertex core and a uniform transportation argument supply the
 remaining weights. A related three-row identity proves a twelve-vertex
 case and yields all-weight corollaries for a published XX-strip and one
 specified closure. We then isolate a twenty-four-vertex composition with
-a full-support classical facet of bound six. Its quantum validity remains
-open: a bounded seven-qubit attack completed 1024 starting sign classes
-without finding a violation, while a rational feasible point of the
-first-moment relaxation has objective $6.50657958$. Exact algebraic and
-polyhedral acceptance is separated from numerical discovery. The archived
-bundle passes 127 tests and checks 64 artifact hashes. The results do not
-establish weighted perfection of all simplicial claw-free graphs or a
-general quantum strip-composition rule.
+a full-support classical facet of bound six. A rational two-copy dual
+certificate now proves its quantum maximum is exactly six; all 16384
+dual coordinates and 8256 symmetric-support inequalities are checked
+with integer arithmetic. A rational feasible point of the first-moment
+relaxation has objective $6.50657958$. The classical facet has known
+gear/lifting ancestry, so its polyhedral construction is not claimed new.
+Exact algebraic and
+polyhedral acceptance is separated from numerical discovery. The earlier
+archived bundle passes 127 tests and checks 64 artifact hashes; the new
+line-graph audit adds 1245 finite root-graph stress cases, 47 direct dense
+Majorana checks, and five corruption-controlled tests. The results do not establish weighted
+perfection of all simplicial claw-free graphs or a general quantum
+strip-composition rule.
 \end{abstract}
 \noindent\textbf{Status.} Theorem statements below have internal analytic
 and exact-computation support. External proof review and priority assessment
@@ -76,12 +90,14 @@ polytope can have non-rank facets. The contribution examined here is a
 specific route from coherent, sign-dependent transfer coefficients to
 all-weight bounds on explicitly defined graphs.
 
-The paper has two different kinds of outcome. Sections~\ref{sec:gram}--
+The paper has three different kinds of outcome. Section~\ref{sec:line}
+gives an analytic arbitrary-size theorem. Sections~\ref{sec:gram}--
 \ref{sec:xx} give proved, restricted results. Section~\ref{sec:frontier}
-gives a deliberately unresolved quantum target, accompanied by exact
-classical certificates and bounded numerical evidence. Keeping these
-separate prevents the absence of a numerical violation from being used
-as an upper-bound proof.
+gives an exact fixed-weight quantum certificate for a composed graph,
+alongside its classical ancestry and earlier failed numerical attempts.
+The unresolved question is now a general quantum composition rule, not
+the truth of that single inequality. Numerical nonviolations are kept
+separate from upper-bound proofs.
 
 The construction uses known classical ideas: stable-set facets, matching,
 transportation, and the published XX-strip. We do not claim new graph
@@ -165,6 +181,127 @@ uniform weights attain the ratio. Lemma~\ref{lem:rank} gives $b=2$ in
 the SCF case. Cliques are immediate. The half-integral and join tools
 are standard; no new polyhedral principle is asserted.
 \end{proof}
+
+\section{All line graphs are hbar-perfect}\label{sec:line}
+Let $R=(V,E)$ be a finite simple graph and $L(R)$ its line graph: the
+vertices of $L(R)$ are the edges of $R$, with adjacency when two root
+edges share an endpoint. Write $\nu(R,w)$ for the maximum weight of a
+matching. Then $\alpha(L(R),w)=\nu(R,w)$.
+
+\begin{lemma}[Skew trace norm controlled by matching]\label{lem:skewmatching}
+Let $w_e>0$ and let $A=-A^{\mathsf T}$ be a real matrix supported on
+$E(R)$, with upper-triangular entry $A_e$ on edge $e$. Then
+\begin{equation}\label{eq:skewmatching}
+ \left(\frac{\norm{A}_*}{2}\right)^2
+ \leq \nu(R,w)\sum_{e\in E}\frac{A_e^2}{w_e}.
+\end{equation}
+The constant is sharp for every $R,w$.
+\end{lemma}
+\begin{proof}
+By nuclear/operator-norm duality, choose a real $Q$ with
+$\norm{Q}_{\rm op}\leq1$ and
+$\langle A,Q\rangle_F=\norm{A}_*$. Replacing $Q$ by
+$(Q-Q^{\mathsf T})/2$ preserves the pairing with skew $A$ and does not
+increase the operator norm. Hence take $Q$ skew and put $x_e=Q_e^2$.
+
+For each vertex $v$, the incident sum $\sum_{e\in\delta(v)}x_e$ is at
+most the squared norm of row $v$ of $Q$, hence at most one. If
+$S\subseteq V$ has odd cardinality, the odd-order skew principal matrix
+$Q[S]$ has rank at most $|S|-1$. All its singular values are at most
+one, so
+\[
+ 2\sum_{e\in E(S)}x_e\leq\norm{Q[S]}_F^2\leq |S|-1.
+\]
+Thus $x$ satisfies the nonnegativity, degree and odd-set inequalities
+in Edmonds' matching-polytope theorem \cite{edmonds}. It follows that
+$\sum_e w_ex_e\leq\nu(R,w)$. Since skew symmetry gives
+$\norm{A}_*/2=\sum_e A_eQ_e$, weighted Cauchy--Schwarz proves
+\eqref{eq:skewmatching}. For sharpness, support $A$ on a
+maximum-weight matching and take $A_e$ proportional to $w_e$.
+\end{proof}
+
+\begin{theorem}[Line-graph $\hbar$-perfection]\label{thm:line}
+For every finite simple graph $R$ and every nonnegative edge weight $w$,
+\[
+ \beta(L(R),w)=\alpha(L(R),w)=\nu(R,w).
+\]
+Consequently every finite line graph is $\hbar$-perfect.
+\end{theorem}
+\begin{proof}
+Zero-weight edges may be deleted. Assign a Majorana operator $\gamma_v$
+to each root vertex and represent $e=uv$ by the Hermitian involution
+$P_e=i\gamma_u\gamma_v$. This is a Pauli realization after a
+Jordan--Wigner transform, and its frustration graph is $L(R)$
+\cite{cf}. Representation invariance of the weighted beta number
+\cite{xu} permits this choice.
+
+For real coefficients $c_e$, let $A$ be the skew matrix with entries
+$A_e=c_e$. Orthogonal skew normal form shows
+\[
+ \norm{\sum_e c_eP_e}=\frac{\norm{A}_*}{2}.
+\]
+Combining the variational identity \eqref{eq:variational} with
+Lemma~\ref{lem:skewmatching}, under
+$\sum_e c_e^2/w_e=1$, proves the upper bound $\beta\leq\nu$.
+A maximum-weight matching is a stable set of $L(R)$; its Pauli
+involutions commute and a joint eigenstate attains $\nu$. Hence equality.
+\end{proof}
+
+There is an independent polyhedral derivation. Every line graph is SCF:
+it is claw-free, and a root star is a simplicial clique. Apply
+Lemma~\ref{lem:rank} to the line-graph support corresponding to a root star
+to obtain the degree inequality. Apply it to the support $E(S)$ induced by
+an odd root-vertex set $S$ to obtain
+\[
+ \sum_{e\in E(S)}\ev{P_e}^2\leq\nu(R[S])\leq (|S|-1)/2.
+\]
+Together with nonnegativity, these are Edmonds' complete
+matching-polytope inequalities. This gives a second proof of
+Theorem~\ref{thm:line}. The polar argument remains useful because it yields
+the sharp coefficient-dependent matrix inequality \eqref{eq:skewmatching}
+directly.
+
+\begin{corollary}[Strictly beyond $h$-perfect graphs]\label{cor:strict}
+For every $k\geq2$, $L(K_{2k+1})$ is $\hbar$-perfect but not
+$h$-perfect.
+\end{corollary}
+\begin{proof}
+The first statement is Theorem~\ref{thm:line}. For the second, assign
+$x_e=1/(2k)$ to every edge of $K_{2k+1}$. Maximal cliques of its line
+graph are root stars and triangles; their values are respectively one
+and $3/(2k)\leq1$. Every odd cycle of length $\ell\geq5$ has value
+$\ell/(2k)\leq(\ell-1)/2$. Thus $x$ satisfies nonnegativity, clique
+and odd-hole inequalities. Its total value is $(2k+1)/2$, while every
+matching has size at most $k$. It therefore violates the full odd-set
+matching inequality by $1/2$, excluding $h$-perfection.
+\end{proof}
+
+The theorem supplies an exact polynomial-time uncertainty oracle for all
+line-graph Pauli families: compute a maximum-weight matching rather than
+simulate a state or solve a noncommutative SDP. It also identifies the
+convex mechanism missing from clique and odd-hole bounds: odd principal
+skew matrices lose one rank, producing every blossom constraint at once.
+The finite C038 campaign verifies the polar-factor inequalities on all
+1245 nonempty NetworkX atlas roots, compares the trace-norm formula with
+dense Jordan--Wigner matrices in 47 small-root cases, and checks the
+strictness witnesses $L(K_5),L(K_7),L(K_9)$ exactly. The largest direct
+norm discrepancy is $7.11\times10^{-15}$. These checks guard constants and
+indexing; the arbitrary-size conclusion is analytic.
+
+The closest published structures do not by themselves state this result.
+Chapman and Flammia identify line-graph Hamiltonians with quadratic
+Majorana models \cite{cf}. Zurel, Cohen, and Raussendorf use
+$L(K_{2n+1})$ to construct vertices of a Pauli simulation polytope
+\cite{zurel}; their objective is magic-state simulation, not the weighted
+beta body. McNulty studies measurement-incompatibility robustness on line
+graphs and obtains skew-energy bounds \cite{mcnulty}, a different
+optimization invariant. Classical work relates skew energy and matching
+number for unweighted oriented graphs \cite{tianwong}; consequently the
+matrix inequality should not be marketed as the first connection between
+these objects. Our priority-sensitive claim is only the exact all-weight
+Pauli beta/matching identity and its blossom-polytope proof. The repository
+contains the search protocol and unresolved priority risks; external
+expert review remains necessary.
 
 \section{A signed Gram bound beyond a single graph}\label{sec:gram}
 \subsection{The rectangular family}
@@ -490,7 +627,7 @@ Nevertheless these are corollaries, not independent operator mechanisms.
 No arbitrary path extension, fuzzy modification, or strip-composition
 closure is asserted.
 
-\section{A composition frontier, not a quantum theorem}\label{sec:frontier}
+\section{A fixed composition theorem and its frontier}\label{sec:frontier}
 Take two copies of $X$ with vertices $7,8$ removed. In each copy let
 $A=\{1,2,13\}$ and $B=\{4,5,13\}$ in original labels. Join the two
 $B$-cliques completely. Add vertices $u,v$ with edge $uv$, join $u$ to
@@ -527,15 +664,65 @@ be tight on all 88 points and hence define the same full-support
 hyperplane. This excludes that particular proof route, not nonlinear
 reductions or existing structural theorems.
 
-\begin{conjecture}[Frozen quantum obligation]\label{conj:target}
-Does every realization of $Y$ and every state satisfy
+\begin{theorem}[Exact composed quantum facet, C031]\label{thm:target}
+For the fixed graph $Y$ and weights above, $\beta(Y,w)=6$. Every
+finite-dimensional realization with the prescribed exact pairwise
+relations and every state satisfy
 \begin{equation}\label{eq:quantumtarget}
- \sum_{i=0}^{23}\ev{P_i}^2+\ev{P_6}^2+\ev{P_7}^2\leq6\ ?
+ \sum_{i=0}^{23}\ev{P_i}^2+\ev{P_6}^2+\ev{P_7}^2\leq6.
 \end{equation}
-\end{conjecture}
-No assertion of its truth is made here. The binary adjacency matrix has
+\end{theorem}
+The binary adjacency matrix has
 rank 14 over $\F_2$, and a seven-qubit Pauli realization is explicitly
 checked for every pair. This is a local simulation, not a hardware run.
+
+\begin{proof}
+Put $d=128$ and label Bell coordinates by $v=(x,z)\in\F_2^{14}$.
+Write $\tau(v)=(-1)^{x\cdot z}$ and let $[v,p]$ be the binary
+symplectic form. For the archived Pauli labels $p_i$, define
+\[
+ c_v=\sum_i w_i\tau(p_i)(-1)^{[v,p_i]},\qquad
+ A_{vu}=\frac{\tau(v+u)}{128}.
+\]
+The matrix $A$ is real symmetric and implements partial transposition
+on Bell-diagonal states; its tensor-product and Walsh-transform
+implementations are checked independently with integers.
+
+Convexity permits maximizing the weighted squared expectations over
+pure states. Twirling two identical copies by identical Pauli operators
+preserves the objective and symmetric support, and produces a
+Bell-diagonal probability vector $\lambda$ satisfying
+\[
+ \lambda\geq0,\quad \sum_v\lambda_v=1,\quad
+ \lambda_v=0\ (\tau(v)=-1),\quad A\lambda\geq0.
+\]
+The last condition holds because the twirled state is separable. The
+two-copy symmetric-support PPT relaxation is established prior art
+\cite[Appendix B.2, Eqs.~(42)--(45)]{xsw2024}, not a new method here.
+
+The archived rational vector $u$ has a common denominator of 332 bits.
+Exact acceptance checks $u_v\geq0$ for all 16384 coordinates and
+$(c+Au)_v\leq6$ for all 8256 coordinates with $\tau(v)=1$.
+Thus, without a solver tolerance or rounding argument,
+\[
+ c^{\mathsf T}\lambda\leq(c+Au)^{\mathsf T}\lambda\leq6.
+\]
+The verifier regenerates $c$ from the archived operators, checks the
+source hash, and evaluates $Au$ by two agreeing integer algorithms.
+The common eigenstate of a maximum-weight stable set supplies the
+matching lower bound six. Finally, weighted representation invariance
+\cite[Theorems 10 and 12]{xsw2024} transfers this equality from the
+archived realization to all realizations in the stated scope.
+\end{proof}
+
+The certificate is a computer-assisted proof for one graph and one
+weight vector, not an all-weight or general SCF theorem. Discovery used
+nearly active constraints only to select a square correction system;
+those choices are not trusted by acceptance. Dixon lifting reconstructed
+the rational correction at 40 lifts (640 modulus bits). Full-coordinate
+checks, including constraints outside that system, prove the bound.
+The portable certificate and standalone checker are listed in
+Appendix~\ref{app:reproduction}.
 
 \subsection{A bounded physical attack}
 The registered attack fixes the amplitudes of its initial Hamiltonian
@@ -600,7 +787,8 @@ feasibility without relying on the numerical solver's status.
 The witness proves a relaxation gap of $25328979/50000000$ above the
 classical bound. It is \emph{not} a quantum state and does not refute
 \eqref{eq:quantumtarget}. Conversely, the physical attack does not
-give an upper bound that closes this gap.
+give an upper bound that closes this gap; Theorem~\ref{thm:target}
+closes it by a separate exact certificate.
 
 The exact degree histogram of $Y$ is
 $\{4:2,6:12,7:4,8:6\}$. In ordinary basic gear composition the two
@@ -608,9 +796,34 @@ unattached gear hubs have degree five \cite{gear}. Thus $Y$ is not a
 direct output of that precise construction. General geared, fuzzy,
 lifting and strip arguments are not excluded by this degree test.
 
+\subsection{Classical ancestry and the remaining transfer question}
+Deleting vertices $8,9,19,20$ leaves a twenty-vertex graph that does
+admit two ordinary gear contractions. Exact reconstruction identifies
+a nine-vertex edge-subdivided seed of stable bound three, a fourteen-
+vertex intermediate of bound four, and the twenty-vertex core of bound
+six. The first row transition is proper g-lifting; the second is proper
+geared lifting with the left hubs doubled, in the terminology and
+formulas of \cite[Definitions 2.4 and 2.7]{gear}. Reintroducing the four
+deleted vertices in the displayed order gives maximal classical lifting
+coefficient one each: every restricted stable optimum is five.
+Therefore neither the classical row nor its construction is claimed new.
+These classical operations do not themselves prove that squared quantum
+expectations satisfy the lifted rows. Theorem~\ref{thm:target} settles
+one final instance, without establishing a quantum transfer rule.
+
+A preregistered small screen tested proper geared unit-seed rank rows
+on 30 selected constructions from connected graphs of orders three
+through six. There were 240 starts, capped at 32 steps each; none met
+the strict convergence test. No violation above $10^{-6}$ was found.
+Independent bitwise checks covered 31 saved best states including a
+positive control of $3.0445923942>3$. This is weak falsification evidence,
+not a global optimization result. It omits nonuniform seed facets,
+proper g-lifting, and the four XX vertex additions.
+
 \section{Verification, scope, and publication boundary}\label{sec:verification}
 The manuscript draws on research snapshot \texttt{4dc9dc7}; the full
-commit is in Appendix~\ref{app:reproduction}. Discovery and acceptance
+commit is in Appendix~\ref{app:reproduction}, with later results through
+C034 added separately. Discovery and acceptance
 are separate programs. Universal algebra is checked by exact word
 rewriting and integer amplitude polynomials. Polyhedral discovery uses
 rational double description; independent acceptance clips every
@@ -626,6 +839,14 @@ and all 64 artifact hashes matched. C011, C012, C014 and C016 discovery
 outputs were regenerated; saved C015 states, not every optimization
 trajectory, were reevaluated. These are same-host checks with different
 algorithms, not external replication or proof-assistant verification.
+
+For C031 separately, a clean scoped archive of commit \texttt{08b71d4}
+passed the standalone standard-library exact verifier and eight C031
+tests. The first archive attempt exposed a CRLF/LF source-hash mismatch;
+explicit LF normalization fixed portability without changing any
+coefficient. This later check did not rerun the historical 127-test
+campaign or all discovery trajectories. Later C033 construction tests
+and C034 state-audit tests are recorded separately.
 
 Failed attempts remain in the ledger. A complete hull enumeration for
 $Y$ exceeded a 300-second cap and is not accepted as complete. The
@@ -645,7 +866,10 @@ the specified family is the candidate mathematical contribution, but
 equivalence to a consequence of a larger known closure or embedding
 remains a priority question. We do not infer novelty from a failed
 keyword search. The wider source comparison and unresolved applicability
-questions are retained in the repository's novelty audit.
+questions are retained in the repository's novelty audit. The line-graph
+theorem is distinct: it covers a general free-fermion class and gives a
+maximum-weight-matching oracle, but it does not imply the non-line SCF
+results below.
 
 The quantum consequences proved here are tight uncertainty bounds:
 for every proved graph,
@@ -657,20 +881,24 @@ since $P_i^2=I$. They also give valid Hamiltonian norm bounds by
 \eqref{eq:variational} and weighted Cauchy--Schwarz. These are standard
 consequences of all-weight equality, not demonstrated runtime or
 sample-complexity advantages. No paid cloud experiment or QPU job was
-performed. The unresolved composition facet is neither a hardware
+performed. The certified composition facet is neither a hardware
 advantage claim nor a completed universal SCF theorem.
 
 \section{Conclusion}
+Nuclear-norm duality and Edmonds' matching polytope prove that every line
+graph is $\hbar$-perfect for all nonnegative weights. The result contains
+an explicit infinite family outside the $h$-perfect sufficient class and
+turns its weighted Pauli uncertainty problem into maximum-weight matching.
 A coherent signed Gram representation and an exact fixed-core
 refinement prove all-weight Pauli uncertainty for an explicit unbounded
 SCF family. The same scalar envelope completes a three-row atom and
 supplies two XX-based corollaries. The composed twenty-four-operator
-target identifies the remaining boundary sharply: its full-support
-classical facet is exact, the first-moment relaxation has a certified
-gap, and the finite quantum attack finds no violation. The next
-mathematical step is an exact operator upper bound or a physical
-counterexample for this fixed target. None of the results here replaces
-that step with numerical agreement.
+target now has an exact rational quantum upper certificate matching
+its classical bound six, despite a certified first-moment relaxation
+gap. Its classical gear/lifting ancestry is established. The remaining
+boundary for the broader SCF program is a conceptual quantum composition
+theorem. External review and a broader priority assessment remain
+necessary before a first-discovery or venue-level claim.
 
 \appendix
 \section{Explicit graph and operator conventions}\label{app:graphs}
@@ -702,13 +930,15 @@ with an explicit tolerance, unlike rational hull and Gram certificates.
 
 \section{Certificate inventory and reproduction}\label{app:reproduction}
 The public repository is \url{https://github.com/YaroslavPelekhov/Quantum}.
-The research snapshot used for this draft is
+The original research snapshot used for this draft is
 \begin{center}\small\texttt{4dc9dc7bc26cca5ea3a7f4cfa66cc4f7fc969a83}.\end{center}
 Source checkers are under
 \path{experiments/pauli_fourth_moment_phase0/}; data are under
 \path{results/pauli_fourth_moment_phase0/}.
-The latter directory's \artifact{manifest.json} lists every artifact's
-canonical SHA-256. JSON canonicalization here only normalizes CRLF to
+The latter directory's \artifact{manifest.json} lists the 64 earlier
+artifacts' canonical SHA-256, not the later C031--C034 additions. The
+exact-six archive audit used \texttt{08b71d4}; subsequent research through
+C034 is in \texttt{efe5ea0}. JSON canonicalization here only normalizes CRLF to
 LF; it does not reorder keys or recompute numerical values.
 
 \small
@@ -733,6 +963,15 @@ Physical attack & \artifact{scf_two_xx_attack_c015.json};
  \artifact{verify_scf_two_xx_attack.py}\\
 Theta witness & \artifact{scf_two_xx_baseline_c016.json};
  \artifact{verify_scf_two_xx_baseline.py}\\
+Exact quantum six & \artifact{c031_exact_six_certificate.json};
+ \artifact{verify_c031_exact_six.py}, \artifact{test_c031_exact_six.py}\\
+Classical ancestry & \artifact{c033_gear_bridge_with_lifting.json};
+ \artifact{run_c033_gear_bridge.py}\\
+Transfer screen & \artifact{c034_gear_falsification.json};
+ \artifact{verify_c034_states.py}\\
+Line graphs & \artifact{c038_line_graph_hbar.json};
+ \artifact{verify_c038_line_graph_hbar.py},
+ \artifact{test_c038_line_graph_hbar.py}\\
 Integrity & \artifact{manifest.json};
  \artifact{verify_scf_research_bundle.py}\\\bottomrule
 \end{longtable}
@@ -768,7 +1007,39 @@ funding, and final submission disclosures must be approved by the human
 authors before submission. This is an AI-assisted working draft, not a
 submitted or externally reviewed article.
 
-\begin{thebibliography}{9}
+\begin{thebibliography}{99}
+\bibitem{edmonds}
+J. Edmonds.
+\emph{Maximum matching and a polyhedron with 0,1-vertices}.
+Journal of Research of the National Bureau of Standards B 69B,
+125--130 (1965).
+
+\bibitem{cf}
+A. Chapman and S. T. Flammia.
+\emph{Characterization of solvable spin models via graph invariants}.
+Quantum 4, 278 (2020).
+\url{https://doi.org/10.22331/q-2020-06-04-278}.
+
+\bibitem{zurel}
+M. Zurel, L. Z. Cohen, and R. Raussendorf.
+\emph{Simulation of quantum computation with magic states via
+Jordan--Wigner transformations}.
+Physical Review A 112, 042602 (2025).
+\url{https://doi.org/10.1103/ng4l-96kd}.
+
+\bibitem{mcnulty}
+D. McNulty.
+\emph{A Graph-Theoretic Approach to Quantum Measurement Incompatibility}.
+arXiv:2511.15954v1 (2025).
+\url{https://arxiv.org/abs/2511.15954v1}.
+
+\bibitem{tianwong}
+F. Tian and D. Wong.
+\emph{Relation between the skew energy of an oriented graph and its
+matching number}.
+Discrete Applied Mathematics 222, 179--184 (2017).
+\url{https://doi.org/10.1016/j.dam.2017.01.004}.
+
 \bibitem{cem}
 A. Chapman, S. J. Elman, and R. L. Mann.
 \emph{A Unified Graph-Theoretic Framework for Free-Fermion Solvability}.
@@ -781,6 +1052,12 @@ Z.-P. Xu, J. Wang, Q. Ye, G. Ko\ss mann, R. Schwonnek, and A. Winter.
 numbers, and a new kind of perfection of graphs}.
 arXiv:2511.13531v1 (2025).
 \url{https://arxiv.org/abs/2511.13531v1}.
+
+\bibitem{xsw2024}
+Z.-P. Xu, R. Schwonnek, and A. Winter.
+\emph{Bounding the joint numerical range of Pauli strings by graph parameters}.
+PRX Quantum 5, 020318 (2024).
+\url{https://arxiv.org/abs/2308.00753v2}.
 
 \bibitem{cs}
 M. Chudnovsky and P. Seymour.

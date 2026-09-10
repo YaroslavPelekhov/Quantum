@@ -1,0 +1,193 @@
+{
+  "experiment": "Hardware-aware routing and synthetic calibrated-noise audit",
+  "schedule_source": "C:\\Users\\psgpe\\Downloads\\Taiwan\\experiments\\evoq_mis\\results_multitask_normalized\\results.json",
+  "params": [
+    1.9690861816853942,
+    2.429169571985075,
+    3.0458159206431894,
+    0.6599543218178855,
+    6.283185307179586
+  ],
+  "resource_audit": {
+    "ibm32_first20": {
+      "unconstrained_basis": {
+        "qubits": 20,
+        "classical_bits": 20,
+        "depth": 94,
+        "size": 578,
+        "two_qubit_operations": 172,
+        "operations": {
+          "rz": 286,
+          "cx": 172,
+          "sx": 100,
+          "measure": 20,
+          "barrier": 1
+        }
+      },
+      "line": {
+        "qubits": 20,
+        "classical_bits": 20,
+        "depth": 1109,
+        "size": 2228,
+        "two_qubit_operations": 1822,
+        "operations": {
+          "cx": 1822,
+          "rz": 286,
+          "sx": 100,
+          "measure": 20,
+          "barrier": 1
+        }
+      },
+      "grid_5x5": {
+        "qubits": 25,
+        "classical_bits": 20,
+        "depth": 494,
+        "size": 1019,
+        "two_qubit_operations": 613,
+        "operations": {
+          "cx": 613,
+          "rz": 286,
+          "sx": 100,
+          "measure": 20,
+          "barrier": 1
+        }
+      },
+      "hexagonal_lattice_30": {
+        "qubits": 30,
+        "classical_bits": 20,
+        "depth": 532,
+        "size": 1193,
+        "two_qubit_operations": 787,
+        "operations": {
+          "cx": 787,
+          "rz": 286,
+          "sx": 100,
+          "measure": 20,
+          "barrier": 1
+        }
+      }
+    },
+    "football_first22": {
+      "unconstrained_basis": {
+        "qubits": 22,
+        "classical_bits": 22,
+        "depth": 121,
+        "size": 664,
+        "two_qubit_operations": 208,
+        "operations": {
+          "rz": 324,
+          "cx": 208,
+          "sx": 110,
+          "measure": 22,
+          "barrier": 1
+        }
+      },
+      "line": {
+        "qubits": 22,
+        "classical_bits": 22,
+        "depth": 1266,
+        "size": 3298,
+        "two_qubit_operations": 2842,
+        "operations": {
+          "cx": 2842,
+          "rz": 324,
+          "sx": 110,
+          "measure": 22,
+          "barrier": 1
+        }
+      },
+      "grid_5x5": {
+        "qubits": 25,
+        "classical_bits": 22,
+        "depth": 606,
+        "size": 1348,
+        "two_qubit_operations": 892,
+        "operations": {
+          "cx": 892,
+          "rz": 324,
+          "sx": 110,
+          "measure": 22,
+          "barrier": 1
+        }
+      },
+      "hexagonal_lattice_30": {
+        "qubits": 30,
+        "classical_bits": 22,
+        "depth": 684,
+        "size": 1570,
+        "two_qubit_operations": 1114,
+        "operations": {
+          "cx": 1114,
+          "rz": 324,
+          "sx": 110,
+          "measure": 22,
+          "barrier": 1
+        }
+      }
+    },
+    "johnson8-2-4_first24": {
+      "unconstrained_basis": {
+        "qubits": 24,
+        "classical_bits": 24,
+        "depth": 181,
+        "size": 1284,
+        "two_qubit_operations": 600,
+        "operations": {
+          "cx": 600,
+          "rz": 540,
+          "sx": 120,
+          "measure": 24,
+          "barrier": 1
+        }
+      },
+      "line": {
+        "qubits": 24,
+        "classical_bits": 24,
+        "depth": 3615,
+        "size": 11520,
+        "two_qubit_operations": 10836,
+        "operations": {
+          "cx": 10836,
+          "rz": 540,
+          "sx": 120,
+          "measure": 24,
+          "barrier": 1
+        }
+      },
+      "grid_5x5": {
+        "qubits": 25,
+        "classical_bits": 24,
+        "depth": 1429,
+        "size": 3627,
+        "two_qubit_operations": 2943,
+        "operations": {
+          "cx": 2943,
+          "rz": 540,
+          "sx": 120,
+          "measure": 24,
+          "barrier": 1
+        }
+      },
+      "hexagonal_lattice_30": {
+        "qubits": 30,
+        "classical_bits": 24,
+        "depth": 1621,
+        "size": 4341,
+        "two_qubit_operations": 3657,
+        "operations": {
+          "cx": 3657,
+          "rz": 540,
+          "sx": 120,
+          "measure": 24,
+          "barrier": 1
+        }
+      }
+    }
+  },
+  "analytical_error_proxy": {},
+  "limitations": [
+    "GenericBackendV2 generates synthetic backend properties; this is not a named QPU calibration.",
+    "Hardware-routed noisy MPS was attempted at 128 and 16 shots but did not finish the first 20-qubit case within a practical CPU budget.",
+    "The no-error survival proxy assumes independent errors and is not a substitute for density-matrix, trajectory or QPU data."
+  ]
+}

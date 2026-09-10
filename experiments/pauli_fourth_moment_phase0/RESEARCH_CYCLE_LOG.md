@@ -1534,3 +1534,24 @@ screen, not a global upper proof or strong evidence. It omits nonuniform
 seed facets, proper g-lifting and XX vertex additions. No transfer theorem
 or A-star novelty claimed, no QPU/paid resources. Report records measured
 campaign body runtime separately from import/startup overhead.
+
+### C038 all-line-graph theorem and priority falsification — 2026-09-10
+
+Changed object rather than continuing local gear variants. Proved for every
+finite simple root graph and every nonnegative edge weight that
+`beta(L(R),w)=alpha(L(R),w)=nu(R,w)`. The primary proof maps the Hamiltonian
+to a Majorana bilinear, uses nuclear-norm duality, and proves that squared
+entries of a skew contraction satisfy every Edmonds degree and odd-set
+constraint. A second route combines the SCF rank inequality with the same
+matching-polytope description. `L(K_(2k+1))`, `k>=2`, is an explicit
+infinite h-imperfect/hbar-perfect separation.
+
+The C038 audit covers all 1245 nonempty NetworkX atlas roots, 47 direct
+dense Jordan--Wigner norm comparisons (maximum discrepancy `7.11e-15`),
+and exact `K5/K7/K9` witnesses. Five corruption-controlled tests and the
+stdlib verifier pass. Adversarial prior-art review found the known
+line-graph free-fermion mapping, a distinct `L(K_(2n+1))` magic-polytope
+construction, line-graph measurement-incompatibility bounds, and classical
+skew-energy/matching work. No exact all-weight beta/matching statement was
+found, but negative search is not priority proof. Status: strong A/A-star
+candidate; external proof and priority review required. No QPU or paid job.

@@ -1,0 +1,2668 @@
+{
+  "experiment": "Feasibility-preserving MIS mixer with evolutionary shared schedules",
+  "configuration": {
+    "budget": 300,
+    "repeats": 12,
+    "seed": 20260803,
+    "shots": 4096,
+    "shot_trials": 8
+  },
+  "genome": "[order policy in {natural, degree-ascending, degree-descending, fixed-random}, beta1, beta2, beta3, gamma2, gamma3]",
+  "search_seconds": 77.55775579999317,
+  "unique_train_genomes": 7187,
+  "replicates": [
+    {
+      "replicate": 0,
+      "feasible_de": {
+        "params": [
+          0.0,
+          3.141592653589793,
+          3.141592653589793,
+          1.5933208236404783,
+          0.0,
+          2.274221993445512
+        ],
+        "order_policy": 0,
+        "train_aggregate_score": 1.3494020826979518,
+        "train_tasks": {
+          "mammalia-kangaroo-interactions": {
+            "score": 1.349239420874788,
+            "feasible_probability": 1.0000000000000002,
+            "optimal_probability": 0.9984792275337406,
+            "expected_feasible_size_unconditional": 3.998478455965411,
+            "expected_size_given_feasible": 3.9984784559654103,
+            "approximation_ratio_unconditional": 0.9996196139913528
+          },
+          "mammalia_induced_11": {
+            "score": 1.3497042438784654,
+            "feasible_probability": 0.9999999999999998,
+            "optimal_probability": 0.9994929895059788,
+            "expected_feasible_size_unconditional": 2.999492989505912,
+            "expected_size_given_feasible": 2.9994929895059124,
+            "approximation_ratio_unconditional": 0.9998309965019706
+          },
+          "mammalia_induced_13": {
+            "score": 1.3497040940034761,
+            "feasible_probability": 1.0000000000000002,
+            "optimal_probability": 0.9994927325774632,
+            "expected_feasible_size_unconditional": 2.999492732577331,
+            "expected_size_given_feasible": 2.9994927325773304,
+            "approximation_ratio_unconditional": 0.9998309108591102
+          },
+          "mammalia_induced_15": {
+            "score": 1.3492394208747878,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.9984792275337404,
+            "expected_feasible_size_unconditional": 3.9984784559654103,
+            "expected_size_given_feasible": 3.9984784559654103,
+            "approximation_ratio_unconditional": 0.9996196139913526
+          }
+        },
+        "validation": {
+          "aggregate_score": 0.5998477941977849,
+          "tasks": {
+            "farm": {
+              "score": 0.5998477941977849,
+              "feasible_probability": 1.0000000000000002,
+              "optimal_probability": 3.341798710960934e-17,
+              "expected_feasible_size_unconditional": 4.998477941977849,
+              "expected_size_given_feasible": 4.998477941977848,
+              "approximation_ratio_unconditional": 0.4998477941977849
+            }
+          }
+        },
+        "frozen_test": {
+          "aggregate_score": 0.6777809403204229,
+          "tasks": {
+            "karate_first17": {
+              "score": 0.5999998713791954,
+              "feasible_probability": 1.0000000000000002,
+              "optimal_probability": 6.591188963342611e-14,
+              "expected_feasible_size_unconditional": 4.999998713791789,
+              "expected_size_given_feasible": 4.999998713791788,
+              "approximation_ratio_unconditional": 0.4999998713791789
+            },
+            "chesapeake_first17": {
+              "score": 0.7665539120541298,
+              "feasible_probability": 1.0,
+              "optimal_probability": 1.3195758671758258e-13,
+              "expected_feasible_size_unconditional": 5.998985208486872,
+              "expected_size_given_feasible": 5.998985208486872,
+              "approximation_ratio_unconditional": 0.6665539120540969
+            },
+            "aves-sparrow-social_first17": {
+              "score": 0.7667932690238077,
+              "feasible_probability": 1.0000000000000002,
+              "optimal_probability": 0.0005067525218613523,
+              "expected_feasible_size_unconditional": 1.9999997426800271,
+              "expected_size_given_feasible": 1.9999997426800267,
+              "approximation_ratio_unconditional": 0.6666665808933424
+            }
+          }
+        }
+      },
+      "feasible_random": {
+        "params": [
+          0.6611788009073031,
+          1.4981008668416287,
+          0.23414511087879727,
+          0.19031582154308804,
+          5.37889150778117,
+          4.1302271552046514
+        ],
+        "order_policy": 0,
+        "train_aggregate_score": 1.2673367608187789,
+        "train_tasks": {
+          "mammalia-kangaroo-interactions": {
+            "score": 1.2616825539510939,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.8289115388130252,
+            "expected_feasible_size_unconditional": 3.8178186769913496,
+            "expected_size_given_feasible": 3.8178186769913496,
+            "approximation_ratio_unconditional": 0.9544546692478374
+          },
+          "mammalia_induced_11": {
+            "score": 1.2779672425728206,
+            "feasible_probability": 0.9999999999999999,
+            "optimal_probability": 0.8791308076476915,
+            "expected_feasible_size_unconditional": 2.8745536219826926,
+            "expected_size_given_feasible": 2.874553621982693,
+            "approximation_ratio_unconditional": 0.9581845406608975
+          },
+          "mammalia_induced_13": {
+            "score": 1.277980442638453,
+            "feasible_probability": 0.9999999999999999,
+            "optimal_probability": 0.8791172147638058,
+            "expected_feasible_size_unconditional": 2.874603416842504,
+            "expected_size_given_feasible": 2.8746034168425045,
+            "approximation_ratio_unconditional": 0.9582011389475014
+          },
+          "mammalia_induced_15": {
+            "score": 1.2615820399270836,
+            "feasible_probability": 1.0000000000000002,
+            "optimal_probability": 0.8288542953983256,
+            "expected_feasible_size_unconditional": 3.817473864310008,
+            "expected_size_given_feasible": 3.8174738643100072,
+            "approximation_ratio_unconditional": 0.954368466077502
+          }
+        },
+        "validation": {
+          "aggregate_score": 0.5762548289363267,
+          "tasks": {
+            "farm": {
+              "score": 0.5762548289363267,
+              "feasible_probability": 1.0,
+              "optimal_probability": 2.824081878739261e-12,
+              "expected_feasible_size_unconditional": 4.762548289356206,
+              "expected_size_given_feasible": 4.762548289356206,
+              "approximation_ratio_unconditional": 0.47625482893562066
+            }
+          }
+        },
+        "frozen_test": {
+          "aggregate_score": 0.655719884169572,
+          "tasks": {
+            "karate_first17": {
+              "score": 0.5805667904411166,
+              "feasible_probability": 1.0,
+              "optimal_probability": 8.827807893702606e-07,
+              "expected_feasible_size_unconditional": 4.805665697459192,
+              "expected_size_given_feasible": 4.805665697459192,
+              "approximation_ratio_unconditional": 0.4805665697459192
+            },
+            "chesapeake_first17": {
+              "score": 0.7380406718201289,
+              "feasible_probability": 1.0000000000000002,
+              "optimal_probability": 2.5689772183757837e-09,
+              "expected_feasible_size_unconditional": 5.7423660406009605,
+              "expected_size_given_feasible": 5.74236604060096,
+              "approximation_ratio_unconditional": 0.6380406711778845
+            },
+            "aves-sparrow-social_first17": {
+              "score": 0.7451775964697709,
+              "feasible_probability": 0.9999999999999999,
+              "optimal_probability": 0.0054735586127369566,
+              "expected_feasible_size_unconditional": 1.9314276204497602,
+              "expected_size_given_feasible": 1.9314276204497605,
+              "approximation_ratio_unconditional": 0.6438092068165867
+            }
+          }
+        }
+      }
+    },
+    {
+      "replicate": 1,
+      "feasible_de": {
+        "params": [
+          0.0,
+          1.568434114305262,
+          3.141592653589793,
+          0.0,
+          3.239091678847151,
+          1.9710002013506855
+        ],
+        "order_policy": 0,
+        "train_aggregate_score": 1.349993420234297,
+        "train_tasks": {
+          "mammalia-kangaroo-interactions": {
+            "score": 1.3499916299827204,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.9999832600121454,
+            "expected_feasible_size_unconditional": 3.9999832599187357,
+            "expected_size_given_feasible": 3.9999832599187357,
+            "approximation_ratio_unconditional": 0.9999958149796839
+          },
+          "mammalia_induced_11": {
+            "score": 1.349996744996307,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.9999944199936688,
+            "expected_feasible_size_unconditional": 2.9999944199936692,
+            "expected_size_given_feasible": 2.9999944199936692,
+            "approximation_ratio_unconditional": 0.9999981399978898
+          },
+          "mammalia_induced_13": {
+            "score": 1.3499967449781436,
+            "feasible_probability": 0.9999999999999998,
+            "optimal_probability": 0.9999944199625322,
+            "expected_feasible_size_unconditional": 2.999994419962532,
+            "expected_size_given_feasible": 2.9999944199625324,
+            "approximation_ratio_unconditional": 0.9999981399875106
+          },
+          "mammalia_induced_15": {
+            "score": 1.3499916299827204,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.9999832600121454,
+            "expected_feasible_size_unconditional": 3.9999832599187357,
+            "expected_size_given_feasible": 3.9999832599187357,
+            "approximation_ratio_unconditional": 0.9999958149796839
+          }
+        },
+        "validation": {
+          "aggregate_score": 0.5999983259856463,
+          "tasks": {
+            "farm": {
+              "score": 0.5999983259856464,
+              "feasible_probability": 1.0,
+              "optimal_probability": 5.409552515681885e-27,
+              "expected_feasible_size_unconditional": 4.999983259856464,
+              "expected_size_given_feasible": 4.999983259856464,
+              "approximation_ratio_unconditional": 0.49999832598564636
+            }
+          }
+        },
+        "frozen_test": {
+          "aggregate_score": 0.6777778139295225,
+          "tasks": {
+            "karate_first17": {
+              "score": 0.5999999999844315,
+              "feasible_probability": 0.9999999999999999,
+              "optimal_probability": 9.694527560022197e-22,
+              "expected_feasible_size_unconditional": 4.999999999844316,
+              "expected_size_given_feasible": 4.9999999998443165,
+              "approximation_ratio_unconditional": 0.49999999998443156
+            },
+            "chesapeake_first17": {
+              "score": 0.766665426654881,
+              "feasible_probability": 1.0,
+              "optimal_probability": 1.938927150455988e-21,
+              "expected_feasible_size_unconditional": 5.99998883989393,
+              "expected_size_given_feasible": 5.99998883989393,
+              "approximation_ratio_unconditional": 0.666665426654881
+            },
+            "aves-sparrow-social_first17": {
+              "score": 0.7666680616500862,
+              "feasible_probability": 1.0,
+              "optimal_probability": 5.579975193579119e-06,
+              "expected_feasible_size_unconditional": 1.9999999999688634,
+              "expected_size_given_feasible": 1.9999999999688634,
+              "approximation_ratio_unconditional": 0.6666666666562878
+            }
+          }
+        }
+      },
+      "feasible_random": {
+        "params": [
+          0.7569332573973309,
+          1.256273793130203,
+          3.099366109147032,
+          2.840415238832857,
+          4.682992901498527,
+          3.861694196945558
+        ],
+        "order_policy": 0,
+        "train_aggregate_score": 1.2623882218801452,
+        "train_tasks": {
+          "mammalia-kangaroo-interactions": {
+            "score": 1.2504155775748964,
+            "feasible_probability": 0.9999999999999999,
+            "optimal_probability": 0.8087772026313459,
+            "expected_feasible_size_unconditional": 3.7928851076682393,
+            "expected_size_given_feasible": 3.7928851076682397,
+            "approximation_ratio_unconditional": 0.9482212769170598
+          },
+          "mammalia_induced_11": {
+            "score": 1.2847224211783814,
+            "feasible_probability": 1.0000000000000002,
+            "optimal_probability": 0.891995291700187,
+            "expected_feasible_size_unconditional": 2.885170794760004,
+            "expected_size_given_feasible": 2.8851707947600036,
+            "approximation_ratio_unconditional": 0.9617235982533346
+          },
+          "mammalia_induced_13": {
+            "score": 1.2893016182089065,
+            "feasible_probability": 0.9999999999999999,
+            "optimal_probability": 0.8975614642355711,
+            "expected_feasible_size_unconditional": 2.8947337564500413,
+            "expected_size_given_feasible": 2.8947337564500417,
+            "approximation_ratio_unconditional": 0.9649112521500137
+          },
+          "mammalia_induced_15": {
+            "score": 1.2486553450773958,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.8050176134459999,
+            "expected_feasible_size_unconditional": 3.789603766863583,
+            "expected_size_given_feasible": 3.789603766863583,
+            "approximation_ratio_unconditional": 0.9474009417158957
+          }
+        },
+        "validation": {
+          "aggregate_score": 0.5709675447790944,
+          "tasks": {
+            "farm": {
+              "score": 0.5709675447790944,
+              "feasible_probability": 1.0000000000000004,
+              "optimal_probability": 3.949472066825638e-06,
+              "expected_feasible_size_unconditional": 4.709665574110776,
+              "expected_size_given_feasible": 4.709665574110774,
+              "approximation_ratio_unconditional": 0.4709665574110776
+            }
+          }
+        },
+        "frozen_test": {
+          "aggregate_score": 0.678704136212611,
+          "tasks": {
+            "karate_first17": {
+              "score": 0.6110790062576184,
+              "feasible_probability": 0.9999999999999999,
+              "optimal_probability": 2.2496973536757126e-05,
+              "expected_feasible_size_unconditional": 5.110733820142341,
+              "expected_size_given_feasible": 5.110733820142342,
+              "approximation_ratio_unconditional": 0.5110733820142341
+            },
+            "chesapeake_first17": {
+              "score": 0.738839588849564,
+              "feasible_probability": 0.9999999999999999,
+              "optimal_probability": 0.000104120047179397,
+              "expected_feasible_size_unconditional": 5.749322029539924,
+              "expected_size_given_feasible": 5.7493220295399246,
+              "approximation_ratio_unconditional": 0.6388135588377692
+            },
+            "aves-sparrow-social_first17": {
+              "score": 0.7731404091870704,
+              "feasible_probability": 0.9999999999999999,
+              "optimal_probability": 0.07526795672204377,
+              "expected_feasible_size_unconditional": 1.9629702600196786,
+              "expected_size_given_feasible": 1.9629702600196788,
+              "approximation_ratio_unconditional": 0.6543234200065595
+            }
+          }
+        }
+      }
+    },
+    {
+      "replicate": 2,
+      "feasible_de": {
+        "params": [
+          0.0,
+          1.5903085824650398,
+          3.1015999111322055,
+          0.0,
+          6.283185307179586,
+          0.70577475679356
+        ],
+        "order_policy": 0,
+        "train_aggregate_score": 1.3480870434526413,
+        "train_tasks": {
+          "mammalia-kangaroo-interactions": {
+            "score": 1.3485758434106772,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.9971529751029944,
+            "expected_feasible_size_unconditional": 3.997150398539714,
+            "expected_size_given_feasible": 3.997150398539714,
+            "approximation_ratio_unconditional": 0.9992875996349285
+          },
+          "mammalia_induced_11": {
+            "score": 1.34782377255783,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.996271692351318,
+            "expected_feasible_size_unconditional": 2.996267548410001,
+            "expected_size_given_feasible": 2.996267548410001,
+            "approximation_ratio_unconditional": 0.9987558494700003
+          },
+          "mammalia_induced_13": {
+            "score": 1.3478240365292438,
+            "feasible_probability": 0.9999999999999998,
+            "optimal_probability": 0.9962721237074443,
+            "expected_feasible_size_unconditional": 2.996268016807148,
+            "expected_size_given_feasible": 2.9962680168071483,
+            "approximation_ratio_unconditional": 0.9987560056023826
+          },
+          "mammalia_induced_15": {
+            "score": 1.348575842846778,
+            "feasible_probability": 1.0000000000000002,
+            "optimal_probability": 0.997152975102895,
+            "expected_feasible_size_unconditional": 3.997150396284217,
+            "expected_size_given_feasible": 3.997150396284216,
+            "approximation_ratio_unconditional": 0.9992875990710542
+          }
+        },
+        "validation": {
+          "aggregate_score": 0.5995361923896052,
+          "tasks": {
+            "farm": {
+              "score": 0.5995361923896052,
+              "feasible_probability": 1.0000000000000002,
+              "optimal_probability": 8.10842197152378e-18,
+              "expected_feasible_size_unconditional": 4.995361923896052,
+              "expected_size_given_feasible": 4.995361923896051,
+              "approximation_ratio_unconditional": 0.4995361923896052
+            }
+          }
+        },
+        "frozen_test": {
+          "aggregate_score": 0.6774307644888329,
+          "tasks": {
+            "karate_first17": {
+              "score": 0.599826315470564,
+              "feasible_probability": 1.0,
+              "optimal_probability": 1.9221981350729145e-12,
+              "expected_feasible_size_unconditional": 4.998263154700834,
+              "expected_size_given_feasible": 4.998263154700834,
+              "approximation_ratio_unconditional": 0.4998263154700834
+            },
+            "chesapeake_first17": {
+              "score": 0.7660234599851038,
+              "feasible_probability": 1.0,
+              "optimal_probability": 4.172673637366169e-14,
+              "expected_feasible_size_unconditional": 5.994211139865841,
+              "expected_size_given_feasible": 5.994211139865841,
+              "approximation_ratio_unconditional": 0.6660234599850934
+            },
+            "aves-sparrow-social_first17": {
+              "score": 0.7662196667486055,
+              "feasible_probability": 0.9999999999999999,
+              "optimal_probability": 0.00037913227485521087,
+              "expected_feasible_size_unconditional": 1.9983746510396754,
+              "expected_size_given_feasible": 1.9983746510396756,
+              "approximation_ratio_unconditional": 0.6661248836798918
+            }
+          }
+        }
+      },
+      "feasible_random": {
+        "params": [
+          1.8808854909517414,
+          0.4491531613759088,
+          0.25546054119214584,
+          1.8032501753529184,
+          3.7115274908848965,
+          6.129841914693158
+        ],
+        "order_policy": 1,
+        "train_aggregate_score": 1.2860172030038473,
+        "train_tasks": {
+          "mammalia-kangaroo-interactions": {
+            "score": 1.2782642391690797,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.8707549933464585,
+            "expected_feasible_size_unconditional": 3.8423019633298603,
+            "expected_size_given_feasible": 3.8423019633298603,
+            "approximation_ratio_unconditional": 0.9605754908324651
+          },
+          "mammalia_induced_11": {
+            "score": 1.291900450347474,
+            "feasible_probability": 0.9999999999999997,
+            "optimal_probability": 0.904558725884089,
+            "expected_feasible_size_unconditional": 2.8972823066293554,
+            "expected_size_given_feasible": 2.8972823066293563,
+            "approximation_ratio_unconditional": 0.9657607688764518
+          },
+          "mammalia_induced_13": {
+            "score": 1.29825515716928,
+            "feasible_probability": 1.0000000000000002,
+            "optimal_probability": 0.9194154196095914,
+            "expected_feasible_size_unconditional": 2.9052039068006463,
+            "expected_size_given_feasible": 2.905203906800646,
+            "approximation_ratio_unconditional": 0.9684013022668821
+          },
+          "mammalia_induced_15": {
+            "score": 1.2889397604748711,
+            "feasible_probability": 0.9999999999999998,
+            "optimal_probability": 0.8873372181908804,
+            "expected_feasible_size_unconditional": 3.8684218237086037,
+            "expected_size_given_feasible": 3.8684218237086045,
+            "approximation_ratio_unconditional": 0.9671054559271509
+          }
+        },
+        "validation": {
+          "aggregate_score": 1.2179078808447596,
+          "tasks": {
+            "farm": {
+              "score": 1.2179078808447596,
+              "feasible_probability": 1.0000000000000002,
+              "optimal_probability": 0.6816732000825253,
+              "expected_feasible_size_unconditional": 9.474895808241282,
+              "expected_size_given_feasible": 9.47489580824128,
+              "approximation_ratio_unconditional": 0.9474895808241282
+            }
+          }
+        },
+        "frozen_test": {
+          "aggregate_score": 1.2181466309331381,
+          "tasks": {
+            "karate_first17": {
+              "score": 1.2154407715925248,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.6595293604352848,
+              "expected_feasible_size_unconditional": 9.505584314837035,
+              "expected_size_given_feasible": 9.505584314837035,
+              "approximation_ratio_unconditional": 0.9505584314837036
+            },
+            "chesapeake_first17": {
+              "score": 1.2389352964468747,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.7248735050310452,
+              "expected_feasible_size_unconditional": 8.61945228170202,
+              "expected_size_given_feasible": 8.61945228170202,
+              "approximation_ratio_unconditional": 0.9577169201891134
+            },
+            "aves-sparrow-social_first17": {
+              "score": 1.2102354032323965,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.7806265578904739,
+              "expected_feasible_size_unconditional": 2.745236291279334,
+              "expected_size_given_feasible": 2.745236291279334,
+              "approximation_ratio_unconditional": 0.915078763759778
+            }
+          }
+        }
+      }
+    },
+    {
+      "replicate": 3,
+      "feasible_de": {
+        "params": [
+          1.7488148470882772,
+          1.5921567786496873,
+          3.141592653589793,
+          3.141592653589793,
+          3.485163977077734,
+          3.201770561757765
+        ],
+        "order_policy": 1,
+        "train_aggregate_score": 1.349610473356095,
+        "train_tasks": {
+          "mammalia-kangaroo-interactions": {
+            "score": 1.3495439564558618,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.9990880169232934,
+            "expected_feasible_size_unconditional": 3.9990878089001534,
+            "expected_size_given_feasible": 3.9990878089001534,
+            "approximation_ratio_unconditional": 0.9997719522250383
+          },
+          "mammalia_induced_11": {
+            "score": 1.34973400474223,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.9995440081295616,
+            "expected_feasible_size_unconditional": 2.999544008129518,
+            "expected_size_given_feasible": 2.999544008129518,
+            "approximation_ratio_unconditional": 0.9998480027098394
+          },
+          "mammalia_induced_13": {
+            "score": 1.3497340047422552,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.9995440081296049,
+            "expected_feasible_size_unconditional": 2.9995440081295617,
+            "expected_size_given_feasible": 2.9995440081295617,
+            "approximation_ratio_unconditional": 0.9998480027098539
+          },
+          "mammalia_induced_15": {
+            "score": 1.3495439564558618,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.9990880169232935,
+            "expected_feasible_size_unconditional": 3.9990878089001534,
+            "expected_size_given_feasible": 3.9990878089001534,
+            "approximation_ratio_unconditional": 0.9997719522250383
+          }
+        },
+        "validation": {
+          "aggregate_score": 1.3485647907844935,
+          "tasks": {
+            "farm": {
+              "score": 1.3485647907844938,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.9959014813880003,
+              "expected_feasible_size_unconditional": 9.995894204374936,
+              "expected_size_given_feasible": 9.995894204374936,
+              "approximation_ratio_unconditional": 0.9995894204374937
+            }
+          }
+        },
+        "frozen_test": {
+          "aggregate_score": 1.349088823166452,
+          "tasks": {
+            "karate_first17": {
+              "score": 1.348723972357525,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.9963558111596934,
+              "expected_feasible_size_unconditional": 9.996350195676015,
+              "expected_size_given_feasible": 9.996350195676015,
+              "approximation_ratio_unconditional": 0.9996350195676016
+            },
+            "chesapeake_first17": {
+              "score": 1.349012197662312,
+              "feasible_probability": 1.0000000000000002,
+              "optimal_probability": 0.9972655075957684,
+              "expected_feasible_size_unconditional": 8.997262386870329,
+              "expected_size_given_feasible": 8.997262386870327,
+              "approximation_ratio_unconditional": 0.9996958207633698
+            },
+            "aves-sparrow-social_first17": {
+              "score": 1.3499993933767107,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.9999989600743612,
+              "expected_feasible_size_unconditional": 2.999998960074361,
+              "expected_size_given_feasible": 2.999998960074361,
+              "approximation_ratio_unconditional": 0.9999996533581204
+            }
+          }
+        }
+      },
+      "feasible_random": {
+        "params": [
+          1.4316566553730024,
+          1.3446879761285622,
+          2.9704297230456156,
+          3.131888800778772,
+          2.7716856006443185,
+          3.6979256423262648
+        ],
+        "order_policy": 1,
+        "train_aggregate_score": 1.3247107853849647,
+        "train_tasks": {
+          "mammalia-kangaroo-interactions": {
+            "score": 1.3231723209461446,
+            "feasible_probability": 0.9999999999999999,
+            "optimal_probability": 0.9469067916426867,
+            "expected_feasible_size_unconditional": 3.9457824921418916,
+            "expected_size_given_feasible": 3.945782492141892,
+            "approximation_ratio_unconditional": 0.9864456230354729
+          },
+          "mammalia_induced_11": {
+            "score": 1.3286100076602032,
+            "feasible_probability": 1.0000000000000002,
+            "optimal_probability": 0.963695394624005,
+            "expected_feasible_size_unconditional": 2.9630584770126056,
+            "expected_size_given_feasible": 2.963058477012605,
+            "approximation_ratio_unconditional": 0.9876861590042019
+          },
+          "mammalia_induced_13": {
+            "score": 1.3264874021293231,
+            "feasible_probability": 1.0000000000000002,
+            "optimal_probability": 0.9599746806687859,
+            "expected_feasible_size_unconditional": 2.95948119588638,
+            "expected_size_given_feasible": 2.9594811958863794,
+            "approximation_ratio_unconditional": 0.9864937319621266
+          },
+          "mammalia_induced_15": {
+            "score": 1.3232107784135936,
+            "feasible_probability": 1.0000000000000002,
+            "optimal_probability": 0.9469388343520823,
+            "expected_feasible_size_unconditional": 3.9459042793022916,
+            "expected_size_given_feasible": 3.9459042793022907,
+            "approximation_ratio_unconditional": 0.9864760698255729
+          }
+        },
+        "validation": {
+          "aggregate_score": 1.3174536396242291,
+          "tasks": {
+            "farm": {
+              "score": 1.3174536396242291,
+              "feasible_probability": 0.9999999999999999,
+              "optimal_probability": 0.9087782983802102,
+              "expected_feasible_size_unconditional": 9.902590650291765,
+              "expected_size_given_feasible": 9.902590650291767,
+              "approximation_ratio_unconditional": 0.9902590650291765
+            }
+          }
+        },
+        "frozen_test": {
+          "aggregate_score": 1.322405710352187,
+          "tasks": {
+            "karate_first17": {
+              "score": 1.3179528648031311,
+              "feasible_probability": 1.0000000000000002,
+              "optimal_probability": 0.9101444128792887,
+              "expected_feasible_size_unconditional": 9.904167615833089,
+              "expected_size_given_feasible": 9.904167615833087,
+              "approximation_ratio_unconditional": 0.9904167615833088
+            },
+            "chesapeake_first17": {
+              "score": 1.3195285284982021,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.9167286212268153,
+              "expected_feasible_size_unconditional": 8.913117358723483,
+              "expected_size_given_feasible": 8.913117358723483,
+              "approximation_ratio_unconditional": 0.9903463731914981
+            },
+            "aves-sparrow-social_first17": {
+              "score": 1.3354608248897282,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.9755355446846912,
+              "expected_feasible_size_unconditional": 2.974730816155666,
+              "expected_size_given_feasible": 2.974730816155666,
+              "approximation_ratio_unconditional": 0.9915769387185552
+            }
+          }
+        }
+      }
+    },
+    {
+      "replicate": 4,
+      "feasible_de": {
+        "params": [
+          0.0171037361708066,
+          1.5734514935528345,
+          3.141592653589793,
+          3.141592653589793,
+          6.283185307179586,
+          6.283185307179586
+        ],
+        "order_policy": 0,
+        "train_aggregate_score": 1.3499916870455115,
+        "train_tasks": {
+          "mammalia-kangaroo-interactions": {
+            "score": 1.3499894252212084,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.9999788505169671,
+            "expected_feasible_size_unconditional": 3.9999788503678655,
+            "expected_size_given_feasible": 3.9999788503678655,
+            "approximation_ratio_unconditional": 0.9999947125919664
+          },
+          "mammalia_induced_11": {
+            "score": 1.3499958875908566,
+            "feasible_probability": 0.9999999999999999,
+            "optimal_probability": 0.9999929501557538,
+            "expected_feasible_size_unconditional": 2.9999929501557543,
+            "expected_size_given_feasible": 2.9999929501557547,
+            "approximation_ratio_unconditional": 0.9999976500519181
+          },
+          "mammalia_induced_13": {
+            "score": 1.349995887561865,
+            "feasible_probability": 1.0000000000000002,
+            "optimal_probability": 0.9999929501060539,
+            "expected_feasible_size_unconditional": 2.9999929501060545,
+            "expected_size_given_feasible": 2.999992950106054,
+            "approximation_ratio_unconditional": 0.9999976500353515
+          },
+          "mammalia_induced_15": {
+            "score": 1.3499894252212084,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.9999788505169671,
+            "expected_feasible_size_unconditional": 3.9999788503678655,
+            "expected_size_given_feasible": 3.9999788503678655,
+            "approximation_ratio_unconditional": 0.9999947125919664
+          }
+        },
+        "validation": {
+          "aggregate_score": 0.5999978850268465,
+          "tasks": {
+            "farm": {
+              "score": 0.5999978850268465,
+              "feasible_probability": 1.0,
+              "optimal_probability": 1.7413348885232654e-26,
+              "expected_feasible_size_unconditional": 4.999978850268465,
+              "expected_size_given_feasible": 4.999978850268465,
+              "approximation_ratio_unconditional": 0.4999978850268465
+            }
+          }
+        },
+        "frozen_test": {
+          "aggregate_score": 0.6777778234473285,
+          "tasks": {
+            "karate_first17": {
+              "score": 0.5999999999751495,
+              "feasible_probability": 0.9999999999999999,
+              "optimal_probability": 2.4700331355864945e-21,
+              "expected_feasible_size_unconditional": 4.999999999751495,
+              "expected_size_given_feasible": 4.999999999751496,
+              "approximation_ratio_unconditional": 0.4999999999751495
+            },
+            "chesapeake_first17": {
+              "score": 0.7666651000180453,
+              "feasible_probability": 0.9999999999999999,
+              "optimal_probability": 4.940135925550632e-21,
+              "expected_feasible_size_unconditional": 5.999985900162408,
+              "expected_size_given_feasible": 5.999985900162409,
+              "approximation_ratio_unconditional": 0.6666651000180454
+            },
+            "aves-sparrow-social_first17": {
+              "score": 0.7666684290987354,
+              "feasible_probability": 1.0,
+              "optimal_probability": 7.04979454338543e-06,
+              "expected_feasible_size_unconditional": 1.999999999950299,
+              "expected_size_given_feasible": 1.999999999950299,
+              "approximation_ratio_unconditional": 0.6666666666500997
+            }
+          }
+        }
+      },
+      "feasible_random": {
+        "params": [
+          1.4179817826761423,
+          3.117790423214261,
+          1.6853753172938983,
+          0.05871836574245596,
+          0.16448864039990194,
+          3.0148754380273273
+        ],
+        "order_policy": 1,
+        "train_aggregate_score": 1.342067266663043,
+        "train_tasks": {
+          "mammalia-kangaroo-interactions": {
+            "score": 1.3403768502480404,
+            "feasible_probability": 1.0000000000000002,
+            "optimal_probability": 0.9815506177221536,
+            "expected_feasible_size_unconditional": 3.979956783270008,
+            "expected_size_given_feasible": 3.979956783270007,
+            "approximation_ratio_unconditional": 0.994989195817502
+          },
+          "mammalia_induced_11": {
+            "score": 1.3434060644154042,
+            "feasible_probability": 1.0000000000000004,
+            "optimal_probability": 0.9895869896452923,
+            "expected_feasible_size_unconditional": 2.9880279510122434,
+            "expected_size_given_feasible": 2.988027951012242,
+            "approximation_ratio_unconditional": 0.9960093170040811
+          },
+          "mammalia_induced_13": {
+            "score": 1.3433464945732256,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.9895131665376662,
+            "expected_feasible_size_unconditional": 2.987904608816427,
+            "expected_size_given_feasible": 2.987904608816427,
+            "approximation_ratio_unconditional": 0.9959682029388089
+          },
+          "mammalia_induced_15": {
+            "score": 1.3440375141269358,
+            "feasible_probability": 1.0000000000000002,
+            "optimal_probability": 0.9888746276635687,
+            "expected_feasible_size_unconditional": 3.9872754288441747,
+            "expected_size_given_feasible": 3.987275428844174,
+            "approximation_ratio_unconditional": 0.9968188572110437
+          }
+        },
+        "validation": {
+          "aggregate_score": 1.336056593189947,
+          "tasks": {
+            "farm": {
+              "score": 1.336056593189947,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.9635165341480967,
+              "expected_feasible_size_unconditional": 9.951774596529228,
+              "expected_size_given_feasible": 9.951774596529228,
+              "approximation_ratio_unconditional": 0.9951774596529228
+            }
+          }
+        },
+        "frozen_test": {
+          "aggregate_score": 1.3343579762704267,
+          "tasks": {
+            "karate_first17": {
+              "score": 1.336145777795626,
+              "feasible_probability": 1.0000000000000002,
+              "optimal_probability": 0.9624615400958795,
+              "expected_feasible_size_unconditional": 9.95530392771656,
+              "expected_size_given_feasible": 9.955303927716558,
+              "approximation_ratio_unconditional": 0.995530392771656
+            },
+            "chesapeake_first17": {
+              "score": 1.3315648188457287,
+              "feasible_probability": 1.0000000000000002,
+              "optimal_probability": 0.9504020056709079,
+              "expected_feasible_size_unconditional": 8.945678856852014,
+              "expected_size_given_feasible": 8.945678856852012,
+              "approximation_ratio_unconditional": 0.9939643174280016
+            },
+            "aves-sparrow-social_first17": {
+              "score": 1.3389545345731098,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.9826122583535307,
+              "expected_feasible_size_unconditional": 2.979904409954181,
+              "expected_size_given_feasible": 2.979904409954181,
+              "approximation_ratio_unconditional": 0.993301469984727
+            }
+          }
+        }
+      }
+    },
+    {
+      "replicate": 5,
+      "feasible_de": {
+        "params": [
+          1.2152470834290543,
+          3.141592653589793,
+          0.0,
+          1.5709076582195738,
+          3.1419712509482665,
+          0.0
+        ],
+        "order_policy": 1,
+        "train_aggregate_score": 1.3499999894128727,
+        "train_tasks": {
+          "mammalia-kangaroo-interactions": {
+            "score": 1.3499999876053144,
+            "feasible_probability": 1.0000000000000002,
+            "optimal_probability": 0.9999999752106282,
+            "expected_feasible_size_unconditional": 3.9999999752106286,
+            "expected_size_given_feasible": 3.9999999752106277,
+            "approximation_ratio_unconditional": 0.9999999938026571
+          },
+          "mammalia_induced_11": {
+            "score": 1.3499999927697668,
+            "feasible_probability": 1.0000000000000002,
+            "optimal_probability": 0.9999999876053142,
+            "expected_feasible_size_unconditional": 2.9999999876053143,
+            "expected_size_given_feasible": 2.999999987605314,
+            "approximation_ratio_unconditional": 0.9999999958684381
+          },
+          "mammalia_induced_13": {
+            "score": 1.3499999927697668,
+            "feasible_probability": 1.0000000000000002,
+            "optimal_probability": 0.9999999876053142,
+            "expected_feasible_size_unconditional": 2.9999999876053147,
+            "expected_size_given_feasible": 2.9999999876053143,
+            "approximation_ratio_unconditional": 0.9999999958684382
+          },
+          "mammalia_induced_15": {
+            "score": 1.3499999876053144,
+            "feasible_probability": 1.0000000000000002,
+            "optimal_probability": 0.9999999752106282,
+            "expected_feasible_size_unconditional": 3.9999999752106286,
+            "expected_size_given_feasible": 3.9999999752106277,
+            "approximation_ratio_unconditional": 0.9999999938026571
+          }
+        },
+        "validation": {
+          "aggregate_score": 1.3499999609567404,
+          "tasks": {
+            "farm": {
+              "score": 1.3499999609567404,
+              "feasible_probability": 0.9999999999999998,
+              "optimal_probability": 0.9999998884478307,
+              "expected_feasible_size_unconditional": 9.999999888447826,
+              "expected_size_given_feasible": 9.999999888447828,
+              "approximation_ratio_unconditional": 0.9999999888447826
+            }
+          }
+        },
+        "frozen_test": {
+          "aggregate_score": 1.3499999752244003,
+          "tasks": {
+            "karate_first17": {
+              "score": 1.3499999652948802,
+              "feasible_probability": 1.0000000000000002,
+              "optimal_probability": 0.9999999008425156,
+              "expected_feasible_size_unconditional": 9.999999900842512,
+              "expected_size_given_feasible": 9.99999990084251,
+              "approximation_ratio_unconditional": 0.9999999900842512
+            },
+            "chesapeake_first17": {
+              "score": 1.3499999731448473,
+              "feasible_probability": 0.9999999999999998,
+              "optimal_probability": 0.9999999256318854,
+              "expected_feasible_size_unconditional": 8.999999925631885,
+              "expected_size_given_feasible": 8.999999925631887,
+              "approximation_ratio_unconditional": 0.999999991736876
+            },
+            "aves-sparrow-social_first17": {
+              "score": 1.3499999999999996,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.9999999999999992,
+              "expected_feasible_size_unconditional": 2.999999999999999,
+              "expected_size_given_feasible": 2.999999999999999,
+              "approximation_ratio_unconditional": 0.9999999999999997
+            }
+          }
+        }
+      },
+      "feasible_random": {
+        "params": [
+          0.8972150188421499,
+          3.0604074434730566,
+          1.3952420057458232,
+          0.12629438850551344,
+          2.157557292838544,
+          2.3168321450760145
+        ],
+        "order_policy": 0,
+        "train_aggregate_score": 1.2515436813863556,
+        "train_tasks": {
+          "mammalia-kangaroo-interactions": {
+            "score": 1.2231358716220222,
+            "feasible_probability": 0.9999999999999998,
+            "optimal_probability": 0.7586144073760801,
+            "expected_feasible_size_unconditional": 3.733929079112009,
+            "expected_size_given_feasible": 3.73392907911201,
+            "approximation_ratio_unconditional": 0.9334822697780023
+          },
+          "mammalia_induced_11": {
+            "score": 1.3001741261798807,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.9198448652407041,
+            "expected_feasible_size_unconditional": 2.9106387296091136,
+            "expected_size_given_feasible": 2.9106387296091136,
+            "approximation_ratio_unconditional": 0.9702129098697045
+          },
+          "mammalia_induced_13": {
+            "score": 1.299996012563805,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.9162474763304446,
+            "expected_feasible_size_unconditional": 2.912802430443582,
+            "expected_size_given_feasible": 2.912802430443582,
+            "approximation_ratio_unconditional": 0.9709341434811939
+          },
+          "mammalia_induced_15": {
+            "score": 1.2315678176328584,
+            "feasible_probability": 0.9999999999999999,
+            "optimal_probability": 0.7739878108589888,
+            "expected_feasible_size_unconditional": 3.752283459672444,
+            "expected_size_given_feasible": 3.7522834596724444,
+            "approximation_ratio_unconditional": 0.938070864918111
+          }
+        },
+        "validation": {
+          "aggregate_score": 0.5940615491357473,
+          "tasks": {
+            "farm": {
+              "score": 0.5940615491357473,
+              "feasible_probability": 0.9999999999999998,
+              "optimal_probability": 0.002301349611972245,
+              "expected_feasible_size_unconditional": 4.934862117327543,
+              "expected_size_given_feasible": 4.934862117327544,
+              "approximation_ratio_unconditional": 0.4934862117327543
+            }
+          }
+        },
+        "frozen_test": {
+          "aggregate_score": 0.6838934436502144,
+          "tasks": {
+            "karate_first17": {
+              "score": 0.6173577741703409,
+              "feasible_probability": 1.0000000000000002,
+              "optimal_probability": 0.011109811100821182,
+              "expected_feasible_size_unconditional": 5.145803213951355,
+              "expected_size_given_feasible": 5.145803213951354,
+              "approximation_ratio_unconditional": 0.5145803213951355
+            },
+            "chesapeake_first17": {
+              "score": 0.7327306546239011,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.0006712035399429444,
+              "expected_feasible_size_unconditional": 5.6930656836502385,
+              "expected_size_given_feasible": 5.6930656836502385,
+              "approximation_ratio_unconditional": 0.6325628537389154
+            },
+            "aves-sparrow-social_first17": {
+              "score": 0.7871377629162385,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.07100836821248187,
+              "expected_feasible_size_unconditional": 2.008157012589354,
+              "expected_size_given_feasible": 2.008157012589354,
+              "approximation_ratio_unconditional": 0.6693856708631181
+            }
+          }
+        }
+      }
+    },
+    {
+      "replicate": 6,
+      "feasible_de": {
+        "params": [
+          0.0,
+          1.5681064223420271,
+          0.0,
+          3.141592653589793,
+          1.992441258704786,
+          5.52314960025642
+        ],
+        "order_policy": 0,
+        "train_aggregate_score": 1.3499914681066747,
+        "train_tasks": {
+          "mammalia-kangaroo-interactions": {
+            "score": 1.3499891467126703,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.99997829350387,
+            "expected_feasible_size_unconditional": 3.999978293346811,
+            "expected_size_given_feasible": 3.999978293346811,
+            "approximation_ratio_unconditional": 0.9999945733367027
+          },
+          "mammalia_induced_11": {
+            "score": 1.3499957792822386,
+            "feasible_probability": 0.9999999999999999,
+            "optimal_probability": 0.9999927644838371,
+            "expected_feasible_size_unconditional": 2.999992764483838,
+            "expected_size_given_feasible": 2.9999927644838382,
+            "approximation_ratio_unconditional": 0.9999975881612793
+          },
+          "mammalia_induced_13": {
+            "score": 1.3499957792516997,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.9999927644314849,
+            "expected_feasible_size_unconditional": 2.9999927644314854,
+            "expected_size_given_feasible": 2.9999927644314854,
+            "approximation_ratio_unconditional": 0.9999975881438284
+          },
+          "mammalia_induced_15": {
+            "score": 1.3499891467126703,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.99997829350387,
+            "expected_feasible_size_unconditional": 3.999978293346811,
+            "expected_size_given_feasible": 3.999978293346811,
+            "approximation_ratio_unconditional": 0.9999945733367027
+          }
+        },
+        "validation": {
+          "aggregate_score": 0.5999978293242105,
+          "tasks": {
+            "farm": {
+              "score": 0.5999978293242105,
+              "feasible_probability": 1.0,
+              "optimal_probability": 1.9830418403815176e-26,
+              "expected_feasible_size_unconditional": 4.999978293242106,
+              "expected_size_given_feasible": 4.999978293242106,
+              "approximation_ratio_unconditional": 0.49999782932421055
+            }
+          }
+        },
+        "frozen_test": {
+          "aggregate_score": 0.677777824649483,
+          "tasks": {
+            "karate_first17": {
+              "score": 0.5999999999738234,
+              "feasible_probability": 0.9999999999999999,
+              "optimal_probability": 2.740705426095999e-21,
+              "expected_feasible_size_unconditional": 4.999999999738233,
+              "expected_size_given_feasible": 4.999999999738234,
+              "approximation_ratio_unconditional": 0.49999999997382333
+            },
+            "chesapeake_first17": {
+              "score": 0.7666650587567354,
+              "feasible_probability": 0.9999999999999999,
+              "optimal_probability": 5.481490175013496e-21,
+              "expected_feasible_size_unconditional": 5.999985528810619,
+              "expected_size_given_feasible": 5.99998552881062,
+              "approximation_ratio_unconditional": 0.6666650587567354
+            },
+            "aves-sparrow-social_first17": {
+              "score": 0.7666684755151674,
+              "feasible_probability": 1.0,
+              "optimal_probability": 7.235463807445748e-06,
+              "expected_feasible_size_unconditional": 1.9999999999476465,
+              "expected_size_given_feasible": 1.9999999999476465,
+              "approximation_ratio_unconditional": 0.6666666666492155
+            }
+          }
+        }
+      },
+      "feasible_random": {
+        "params": [
+          1.203151033865831,
+          1.8104613706166754,
+          0.21495515413630972,
+          0.16232779164398928,
+          2.3045951655549892,
+          3.2327569662949664
+        ],
+        "order_policy": 1,
+        "train_aggregate_score": 1.3084845489842953,
+        "train_tasks": {
+          "mammalia-kangaroo-interactions": {
+            "score": 1.3017315916722128,
+            "feasible_probability": 0.9999999999999999,
+            "optimal_probability": 0.9048075977210219,
+            "expected_feasible_size_unconditional": 3.9021187689678283,
+            "expected_size_given_feasible": 3.9021187689678287,
+            "approximation_ratio_unconditional": 0.9755296922419571
+          },
+          "mammalia_induced_11": {
+            "score": 1.3212067618757473,
+            "feasible_probability": 0.9999999999999999,
+            "optimal_probability": 0.9508184296501349,
+            "expected_feasible_size_unconditional": 2.9505064633896403,
+            "expected_size_given_feasible": 2.9505064633896407,
+            "approximation_ratio_unconditional": 0.9835021544632134
+          },
+          "mammalia_induced_13": {
+            "score": 1.3208472882067808,
+            "feasible_probability": 1.0000000000000002,
+            "optimal_probability": 0.9501843374507404,
+            "expected_feasible_size_unconditional": 2.9499036115322865,
+            "expected_size_given_feasible": 2.949903611532286,
+            "approximation_ratio_unconditional": 0.9833012038440955
+          },
+          "mammalia_induced_15": {
+            "score": 1.3017306561625595,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.9048080373457715,
+            "expected_feasible_size_unconditional": 3.902114587304466,
+            "expected_size_given_feasible": 3.902114587304466,
+            "approximation_ratio_unconditional": 0.9755286468261165
+          }
+        },
+        "validation": {
+          "aggregate_score": 1.2167500558009336,
+          "tasks": {
+            "farm": {
+              "score": 1.2167500558009336,
+              "feasible_probability": 0.9999999999999999,
+              "optimal_probability": 0.6404694235646069,
+              "expected_feasible_size_unconditional": 9.566326999097818,
+              "expected_size_given_feasible": 9.56632699909782,
+              "approximation_ratio_unconditional": 0.9566326999097818
+            }
+          }
+        },
+        "frozen_test": {
+          "aggregate_score": 1.2578224430300493,
+          "tasks": {
+            "karate_first17": {
+              "score": 1.2275266617734717,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.6675228974151969,
+              "expected_feasible_size_unconditional": 9.606459374196723,
+              "expected_size_given_feasible": 9.606459374196723,
+              "approximation_ratio_unconditional": 0.9606459374196723
+            },
+            "chesapeake_first17": {
+              "score": 1.2499974264435387,
+              "feasible_probability": 1.0000000000000002,
+              "optimal_probability": 0.7340882271954073,
+              "expected_feasible_size_unconditional": 8.698278326802182,
+              "expected_size_given_feasible": 8.69827832680218,
+              "approximation_ratio_unconditional": 0.9664753696446868
+            },
+            "aves-sparrow-social_first17": {
+              "score": 1.3348949596315947,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.9742896851533944,
+              "expected_feasible_size_unconditional": 2.973967615029738,
+              "expected_size_given_feasible": 2.973967615029738,
+              "approximation_ratio_unconditional": 0.9913225383432459
+            }
+          }
+        }
+      }
+    },
+    {
+      "replicate": 7,
+      "feasible_de": {
+        "params": [
+          0.2251106059288448,
+          3.141592653589793,
+          1.5484299388644218,
+          0.0,
+          0.0,
+          5.806356540969835
+        ],
+        "order_policy": 0,
+        "train_aggregate_score": 1.3494104426657132,
+        "train_tasks": {
+          "mammalia-kangaroo-interactions": {
+            "score": 1.3492500548392563,
+            "feasible_probability": 0.9999999999999997,
+            "optimal_probability": 0.9985004847487078,
+            "expected_feasible_size_unconditional": 3.9984997346083166,
+            "expected_size_given_feasible": 3.998499734608318,
+            "approximation_ratio_unconditional": 0.9996249336520792
+          },
+          "mammalia_induced_11": {
+            "score": 1.3497083786293609,
+            "feasible_probability": 0.9999999999999997,
+            "optimal_probability": 0.999500077650369,
+            "expected_feasible_size_unconditional": 2.999500077650306,
+            "expected_size_given_feasible": 2.999500077650307,
+            "approximation_ratio_unconditional": 0.9998333592167686
+          },
+          "mammalia_induced_13": {
+            "score": 1.3497082329146197,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.9994998278537053,
+            "expected_feasible_size_unconditional": 2.99949982785358,
+            "expected_size_given_feasible": 2.99949982785358,
+            "approximation_ratio_unconditional": 0.9998332759511933
+          },
+          "mammalia_induced_15": {
+            "score": 1.3492500548392563,
+            "feasible_probability": 0.9999999999999998,
+            "optimal_probability": 0.9985004847487078,
+            "expected_feasible_size_unconditional": 3.9984997346083166,
+            "expected_size_given_feasible": 3.9984997346083175,
+            "approximation_ratio_unconditional": 0.9996249336520792
+          }
+        },
+        "validation": {
+          "aggregate_score": 0.5998499234889858,
+          "tasks": {
+            "farm": {
+              "score": 0.5998499234889858,
+              "feasible_probability": 1.0,
+              "optimal_probability": 3.1147543010116495e-17,
+              "expected_feasible_size_unconditional": 4.9984992348898585,
+              "expected_size_given_feasible": 4.9984992348898585,
+              "approximation_ratio_unconditional": 0.4998499234889858
+            }
+          }
+        },
+        "frozen_test": {
+          "aggregate_score": 0.6777808978129499,
+          "tasks": {
+            "karate_first17": {
+              "score": 0.5999998749515976,
+              "feasible_probability": 1.0,
+              "optimal_probability": 6.230482156215466e-14,
+              "expected_feasible_size_unconditional": 4.99999874951582,
+              "expected_size_given_feasible": 4.99999874951582,
+              "approximation_ratio_unconditional": 0.499999874951582
+            },
+            "chesapeake_first17": {
+              "score": 0.7665554895734132,
+              "feasible_probability": 0.9999999999999999,
+              "optimal_probability": 1.2473435809930747e-13,
+              "expected_feasible_size_unconditional": 5.998999406160439,
+              "expected_size_given_feasible": 5.99899940616044,
+              "approximation_ratio_unconditional": 0.6665554895733821
+            },
+            "aves-sparrow-social_first17": {
+              "score": 0.7667915011641493,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.0004996715524985179,
+              "expected_feasible_size_unconditional": 1.9999997498280742,
+              "expected_size_given_feasible": 1.9999997498280742,
+              "approximation_ratio_unconditional": 0.6666665832760247
+            }
+          }
+        }
+      },
+      "feasible_random": {
+        "params": [
+          0.3412475691883182,
+          1.4391746779106946,
+          2.8250028258253224,
+          3.026790457122425,
+          4.109167090982527,
+          5.429669534037576
+        ],
+        "order_policy": 0,
+        "train_aggregate_score": 1.197550428532685,
+        "train_tasks": {
+          "mammalia-kangaroo-interactions": {
+            "score": 1.194198639114553,
+            "feasible_probability": 0.9999999999999999,
+            "optimal_probability": 0.7058418211776383,
+            "expected_feasible_size_unconditional": 3.6709527352805735,
+            "expected_size_given_feasible": 3.670952735280574,
+            "approximation_ratio_unconditional": 0.9177381838201434
+          },
+          "mammalia_induced_11": {
+            "score": 1.2045021932184612,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.7628918879077409,
+            "expected_feasible_size_unconditional": 2.7413376637245777,
+            "expected_size_given_feasible": 2.7413376637245777,
+            "approximation_ratio_unconditional": 0.9137792212415259
+          },
+          "mammalia_induced_13": {
+            "score": 1.2020882578850367,
+            "feasible_probability": 0.9999999999999998,
+            "optimal_probability": 0.7615795424489611,
+            "expected_feasible_size_unconditional": 2.735080116818389,
+            "expected_size_given_feasible": 2.7350801168183896,
+            "approximation_ratio_unconditional": 0.9116933722727963
+          },
+          "mammalia_induced_15": {
+            "score": 1.1951585486294867,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.707603313003569,
+            "expected_feasible_size_unconditional": 3.6730308815143773,
+            "expected_size_given_feasible": 3.6730308815143773,
+            "approximation_ratio_unconditional": 0.9182577203785943
+          }
+        },
+        "validation": {
+          "aggregate_score": 0.5638384336709833,
+          "tasks": {
+            "farm": {
+              "score": 0.5638384336709833,
+              "feasible_probability": 1.0000000000000002,
+              "optimal_probability": 2.7865261964385146e-09,
+              "expected_feasible_size_unconditional": 4.638384329743517,
+              "expected_size_given_feasible": 4.638384329743516,
+              "approximation_ratio_unconditional": 0.46383843297435173
+            }
+          }
+        },
+        "frozen_test": {
+          "aggregate_score": 0.6407125619759628,
+          "tasks": {
+            "karate_first17": {
+              "score": 0.5684435954805624,
+              "feasible_probability": 1.0,
+              "optimal_probability": 1.486720460796093e-05,
+              "expected_feasible_size_unconditional": 4.684398786794105,
+              "expected_size_given_feasible": 4.684398786794105,
+              "approximation_ratio_unconditional": 0.4684398786794105
+            },
+            "chesapeake_first17": {
+              "score": 0.7132468236322642,
+              "feasible_probability": 1.0,
+              "optimal_probability": 4.3729242073520926e-07,
+              "expected_feasible_size_unconditional": 5.519220428782431,
+              "expected_size_given_feasible": 5.519220428782431,
+              "approximation_ratio_unconditional": 0.613246714309159
+            },
+            "aves-sparrow-social_first17": {
+              "score": 0.7333645094520054,
+              "feasible_probability": 1.0000000000000002,
+              "optimal_probability": 0.01570920399680597,
+              "expected_feasible_size_unconditional": 1.8883116253584113,
+              "expected_size_given_feasible": 1.888311625358411,
+              "approximation_ratio_unconditional": 0.6294372084528038
+            }
+          }
+        }
+      }
+    },
+    {
+      "replicate": 8,
+      "feasible_de": {
+        "params": [
+          0.0,
+          1.5852771300544584,
+          0.0,
+          3.141592653589793,
+          2.026803933115512,
+          4.152373902816336
+        ],
+        "order_policy": 0,
+        "train_aggregate_score": 1.3497527937068925,
+        "train_tasks": {
+          "mammalia-kangaroo-interactions": {
+            "score": 1.349685536444837,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.9993711388237744,
+            "expected_feasible_size_unconditional": 3.999371006955573,
+            "expected_size_given_feasible": 3.999371006955573,
+            "approximation_ratio_unconditional": 0.9998427517388933
+          },
+          "mammalia_induced_11": {
+            "score": 1.349877712865854,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.9997903649128929,
+            "expected_feasible_size_unconditional": 2.9997903649128914,
+            "expected_size_given_feasible": 2.9997903649128914,
+            "approximation_ratio_unconditional": 0.9999301216376305
+          },
+          "mammalia_induced_13": {
+            "score": 1.3498776872355667,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.999790320975259,
+            "expected_feasible_size_unconditional": 2.999790320975255,
+            "expected_size_given_feasible": 2.999790320975255,
+            "approximation_ratio_unconditional": 0.9999301069917518
+          },
+          "mammalia_induced_15": {
+            "score": 1.3496855364448368,
+            "feasible_probability": 0.9999999999999999,
+            "optimal_probability": 0.9993711388237744,
+            "expected_feasible_size_unconditional": 3.9993710069555726,
+            "expected_size_given_feasible": 3.999371006955573,
+            "approximation_ratio_unconditional": 0.9998427517388931
+          }
+        },
+        "validation": {
+          "aggregate_score": 0.5999370919071089,
+          "tasks": {
+            "farm": {
+              "score": 0.5999370919071089,
+              "feasible_probability": 1.0,
+              "optimal_probability": 4.0444926277300363e-19,
+              "expected_feasible_size_unconditional": 4.999370919071088,
+              "expected_size_given_feasible": 4.999370919071088,
+              "approximation_ratio_unconditional": 0.49993709190710883
+            }
+          }
+        },
+        "frozen_test": {
+          "aggregate_score": 0.6777791153973661,
+          "tasks": {
+            "karate_first17": {
+              "score": 0.5999999780201234,
+              "feasible_probability": 1.0,
+              "optimal_probability": 1.9293017189266957e-15,
+              "expected_feasible_size_unconditional": 4.999999780201229,
+              "expected_size_given_feasible": 4.999999780201229,
+              "approximation_ratio_unconditional": 0.49999997802012286
+            },
+            "chesapeake_first17": {
+              "score": 0.7666200664479235,
+              "feasible_probability": 1.0,
+              "optimal_probability": 3.860221913447344e-15,
+              "expected_feasible_size_unconditional": 5.999580598031303,
+              "expected_size_given_feasible": 5.999580598031303,
+              "approximation_ratio_unconditional": 0.6666200664479225
+            },
+            "aves-sparrow-social_first17": {
+              "score": 0.766719049780507,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.00020959107574224754,
+              "expected_feasible_size_unconditional": 1.9999999560347146,
+              "expected_size_given_feasible": 1.9999999560347146,
+              "approximation_ratio_unconditional": 0.6666666520115715
+            }
+          }
+        }
+      },
+      "feasible_random": {
+        "params": [
+          1.381704785985651,
+          0.00997812626607288,
+          1.2127265470119255,
+          2.85195158209744,
+          2.039346013670717,
+          3.0685499359725203
+        ],
+        "order_policy": 1,
+        "train_aggregate_score": 1.3209462151413596,
+        "train_tasks": {
+          "mammalia-kangaroo-interactions": {
+            "score": 1.3203422914224308,
+            "feasible_probability": 0.9999999999999999,
+            "optimal_probability": 0.9421071866832871,
+            "expected_feasible_size_unconditional": 3.939261979006435,
+            "expected_size_given_feasible": 3.9392619790064356,
+            "approximation_ratio_unconditional": 0.9848154947516088
+          },
+          "mammalia_induced_11": {
+            "score": 1.3219725494265862,
+            "feasible_probability": 0.9999999999999998,
+            "optimal_probability": 0.9535708133675643,
+            "expected_feasible_size_unconditional": 2.950739538254085,
+            "expected_size_given_feasible": 2.9507395382540853,
+            "approximation_ratio_unconditional": 0.983579846084695
+          },
+          "mammalia_induced_13": {
+            "score": 1.321820435628922,
+            "feasible_probability": 0.9999999999999998,
+            "optimal_probability": 0.9523058244793404,
+            "expected_feasible_size_unconditional": 2.951231938527261,
+            "expected_size_given_feasible": 2.9512319385272616,
+            "approximation_ratio_unconditional": 0.9837439795090871
+          },
+          "mammalia_induced_15": {
+            "score": 1.320684881891378,
+            "feasible_probability": 1.0000000000000002,
+            "optimal_probability": 0.942709428367502,
+            "expected_feasible_size_unconditional": 3.940030099198009,
+            "expected_size_given_feasible": 3.940030099198008,
+            "approximation_ratio_unconditional": 0.9850075247995023
+          }
+        },
+        "validation": {
+          "aggregate_score": 1.3262364236279314,
+          "tasks": {
+            "farm": {
+              "score": 1.3262364236279314,
+              "feasible_probability": 1.0000000000000002,
+              "optimal_probability": 0.9362497176634479,
+              "expected_feasible_size_unconditional": 9.921739942120693,
+              "expected_size_given_feasible": 9.921739942120691,
+              "approximation_ratio_unconditional": 0.9921739942120693
+            }
+          }
+        },
+        "frozen_test": {
+          "aggregate_score": 1.3303061835248722,
+          "tasks": {
+            "karate_first17": {
+              "score": 1.3271356639165284,
+              "feasible_probability": 1.0000000000000002,
+              "optimal_probability": 0.9381897929265106,
+              "expected_feasible_size_unconditional": 9.925882156849006,
+              "expected_size_given_feasible": 9.925882156849005,
+              "approximation_ratio_unconditional": 0.9925882156849006
+            },
+            "chesapeake_first17": {
+              "score": 1.3280493818255332,
+              "feasible_probability": 0.9999999999999999,
+              "optimal_probability": 0.9408021143586373,
+              "expected_feasible_size_unconditional": 8.935639679122865,
+              "expected_size_given_feasible": 8.935639679122866,
+              "approximation_ratio_unconditional": 0.9928488532358739
+            },
+            "aves-sparrow-social_first17": {
+              "score": 1.3398098871861404,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.9840034044327735,
+              "expected_feasible_size_unconditional": 2.9814271082338406,
+              "expected_size_given_feasible": 2.9814271082338406,
+              "approximation_ratio_unconditional": 0.9938090360779469
+            }
+          }
+        }
+      }
+    },
+    {
+      "replicate": 9,
+      "feasible_de": {
+        "params": [
+          1.334294530824894,
+          0.0,
+          1.6243744579371364,
+          3.141592653589793,
+          3.1481265808825794,
+          4.914916742125738
+        ],
+        "order_policy": 1,
+        "train_aggregate_score": 1.3475560062037673,
+        "train_tasks": {
+          "mammalia-kangaroo-interactions": {
+            "score": 1.347138268550284,
+            "feasible_probability": 0.9999999999999998,
+            "optimal_probability": 0.9942806377150922,
+            "expected_feasible_size_unconditional": 3.9942724364860442,
+            "expected_size_given_feasible": 3.994272436486045,
+            "approximation_ratio_unconditional": 0.9985681091215111
+          },
+          "mammalia_induced_11": {
+            "score": 1.348331804683632,
+            "feasible_probability": 1.0000000000000002,
+            "optimal_probability": 0.9971402366393874,
+            "expected_feasible_size_unconditional": 2.997140236571355,
+            "expected_size_given_feasible": 2.9971402365713544,
+            "approximation_ratio_unconditional": 0.9990467455237849
+          },
+          "mammalia_induced_13": {
+            "score": 1.3483318047228172,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.9971402367064522,
+            "expected_feasible_size_unconditional": 2.997140236638612,
+            "expected_size_given_feasible": 2.997140236638612,
+            "approximation_ratio_unconditional": 0.9990467455462041
+          },
+          "mammalia_induced_15": {
+            "score": 1.3471382685501876,
+            "feasible_probability": 0.9999999999999998,
+            "optimal_probability": 0.9942806377150922,
+            "expected_feasible_size_unconditional": 3.9942724364856588,
+            "expected_size_given_feasible": 3.9942724364856597,
+            "approximation_ratio_unconditional": 0.9985681091214147
+          }
+        },
+        "validation": {
+          "aggregate_score": 1.3410377335225667,
+          "tasks": {
+            "farm": {
+              "score": 1.3410377335225667,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.9744752674689124,
+              "expected_feasible_size_unconditional": 9.974189166553385,
+              "expected_size_given_feasible": 9.974189166553385,
+              "approximation_ratio_unconditional": 0.9974189166553385
+            }
+          }
+        },
+        "frozen_test": {
+          "aggregate_score": 1.3442956168848348,
+          "tasks": {
+            "karate_first17": {
+              "score": 1.342022362941374,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.9772699362201284,
+              "expected_feasible_size_unconditional": 9.977048788863417,
+              "expected_size_given_feasible": 9.977048788863417,
+              "approximation_ratio_unconditional": 0.9977048788863417
+            },
+            "chesapeake_first17": {
+              "score": 1.34381113535604,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.9828994857693599,
+              "expected_feasible_size_unconditional": 8.982776375223299,
+              "expected_size_given_feasible": 8.982776375223299,
+              "approximation_ratio_unconditional": 0.9980862639136999
+            },
+            "aves-sparrow-social_first17": {
+              "score": 1.349976107427255,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.9999590413038666,
+              "expected_feasible_size_unconditional": 2.999959041303865,
+              "expected_size_given_feasible": 2.999959041303865,
+              "approximation_ratio_unconditional": 0.9999863471012883
+            }
+          }
+        }
+      },
+      "feasible_random": {
+        "params": [
+          1.4032202624337224,
+          1.4441867528869832,
+          2.6896307956957775,
+          3.0056591898653964,
+          3.3299106382748964,
+          2.012045983904113
+        ],
+        "order_policy": 1,
+        "train_aggregate_score": 1.1932199763126108,
+        "train_tasks": {
+          "mammalia-kangaroo-interactions": {
+            "score": 1.1858560029619634,
+            "feasible_probability": 1.0000000000000002,
+            "optimal_probability": 0.6952057436686048,
+            "expected_feasible_size_unconditional": 3.648218268179248,
+            "expected_size_given_feasible": 3.648218268179247,
+            "approximation_ratio_unconditional": 0.912054567044812
+          },
+          "mammalia_induced_11": {
+            "score": 1.2066230017205228,
+            "feasible_probability": 0.9999999999999998,
+            "optimal_probability": 0.7713578398452262,
+            "expected_feasible_size_unconditional": 2.7413506252776485,
+            "expected_size_given_feasible": 2.741350625277649,
+            "approximation_ratio_unconditional": 0.9137835417592162
+          },
+          "mammalia_induced_13": {
+            "score": 1.2045427506039221,
+            "feasible_probability": 0.9999999999999997,
+            "optimal_probability": 0.7592652133657678,
+            "expected_feasible_size_unconditional": 2.744179341787441,
+            "expected_size_given_feasible": 2.744179341787442,
+            "approximation_ratio_unconditional": 0.9147264472624803
+          },
+          "mammalia_induced_15": {
+            "score": 1.18848210427943,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.6974193137834636,
+            "expected_feasible_size_unconditional": 3.6565091033342565,
+            "expected_size_given_feasible": 3.6565091033342565,
+            "approximation_ratio_unconditional": 0.9141272758335641
+          }
+        },
+        "validation": {
+          "aggregate_score": 1.1000976412720953,
+          "tasks": {
+            "farm": {
+              "score": 1.1000976412720953,
+              "feasible_probability": 1.0000000000000002,
+              "optimal_probability": 0.37702727051772494,
+              "expected_feasible_size_unconditional": 9.05840823642664,
+              "expected_size_given_feasible": 9.058408236426638,
+              "approximation_ratio_unconditional": 0.905840823642664
+            }
+          }
+        },
+        "frozen_test": {
+          "aggregate_score": 1.10601205330391,
+          "tasks": {
+            "karate_first17": {
+              "score": 1.0925005907235645,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.36087022411979003,
+              "expected_feasible_size_unconditional": 9.02283034693617,
+              "expected_size_given_feasible": 9.02283034693617,
+              "approximation_ratio_unconditional": 0.9022830346936169
+            },
+            "chesapeake_first17": {
+              "score": 1.1033328304614203,
+              "feasible_probability": 0.9999999999999999,
+              "optimal_probability": 0.4006558829396646,
+              "expected_feasible_size_unconditional": 8.128519737538536,
+              "expected_size_given_feasible": 8.128519737538538,
+              "approximation_ratio_unconditional": 0.903168859726504
+            },
+            "aves-sparrow-social_first17": {
+              "score": 1.1395746191871896,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.6672319066408786,
+              "expected_feasible_size_unconditional": 2.6182999275809093,
+              "expected_size_given_feasible": 2.6182999275809093,
+              "approximation_ratio_unconditional": 0.8727666425269698
+            }
+          }
+        }
+      }
+    },
+    {
+      "replicate": 10,
+      "feasible_de": {
+        "params": [
+          0.4235816310596807,
+          1.5704531690054035,
+          3.141592653589793,
+          3.141592653589793,
+          2.397115244843739,
+          4.533929711183479
+        ],
+        "order_policy": 0,
+        "train_aggregate_score": 1.3499998611445723,
+        "train_tasks": {
+          "mammalia-kangaroo-interactions": {
+            "score": 1.3499998233641215,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.9999996467282639,
+            "expected_feasible_size_unconditional": 3.999999646728222,
+            "expected_size_given_feasible": 3.999999646728222,
+            "approximation_ratio_unconditional": 0.9999999116820555
+          },
+          "mammalia_induced_11": {
+            "score": 1.3499999313082711,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.9999998822427502,
+            "expected_feasible_size_unconditional": 2.9999998822427503,
+            "expected_size_given_feasible": 2.9999998822427503,
+            "approximation_ratio_unconditional": 0.9999999607475835
+          },
+          "mammalia_induced_13": {
+            "score": 1.349999931308263,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.9999998822427363,
+            "expected_feasible_size_unconditional": 2.9999998822427365,
+            "expected_size_given_feasible": 2.9999998822427365,
+            "approximation_ratio_unconditional": 0.9999999607475788
+          },
+          "mammalia_induced_15": {
+            "score": 1.3499998233641215,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.9999996467282639,
+            "expected_feasible_size_unconditional": 3.999999646728222,
+            "expected_size_given_feasible": 3.999999646728222,
+            "approximation_ratio_unconditional": 0.9999999116820555
+          }
+        },
+        "validation": {
+          "aggregate_score": 0.5999999646728195,
+          "tasks": {
+            "farm": {
+              "score": 0.5999999646728195,
+              "feasible_probability": 1.0,
+              "optimal_probability": 2.2643211295048302e-35,
+              "expected_feasible_size_unconditional": 4.999999646728194,
+              "expected_size_given_feasible": 4.999999646728194,
+              "approximation_ratio_unconditional": 0.49999996467281943
+            }
+          }
+        },
+        "frozen_test": {
+          "aggregate_score": 0.6777777785410124,
+          "tasks": {
+            "karate_first17": {
+              "score": 0.599999999999993,
+              "feasible_probability": 0.9999999999999999,
+              "optimal_probability": 1.9228719501267085e-28,
+              "expected_feasible_size_unconditional": 4.99999999999993,
+              "expected_size_given_feasible": 4.999999999999931,
+              "approximation_ratio_unconditional": 0.499999999999993
+            },
+            "chesapeake_first17": {
+              "score": 0.7666666404983841,
+              "feasible_probability": 1.0,
+              "optimal_probability": 3.845744805982083e-28,
+              "expected_feasible_size_unconditional": 5.999999764485457,
+              "expected_size_given_feasible": 5.999999764485457,
+              "approximation_ratio_unconditional": 0.6666666404983841
+            },
+            "aves-sparrow-social_first17": {
+              "score": 0.7666666961059709,
+              "feasible_probability": 1.0,
+              "optimal_probability": 1.1775723613396616e-07,
+              "expected_feasible_size_unconditional": 1.999999999999986,
+              "expected_size_given_feasible": 1.999999999999986,
+              "approximation_ratio_unconditional": 0.666666666666662
+            }
+          }
+        }
+      },
+      "feasible_random": {
+        "params": [
+          0.6549248221754737,
+          1.0139488613352656,
+          0.0009240545742239649,
+          2.6222707114779764,
+          5.236928979140397,
+          3.5965807645023737
+        ],
+        "order_policy": 0,
+        "train_aggregate_score": 1.2439649260970538,
+        "train_tasks": {
+          "mammalia-kangaroo-interactions": {
+            "score": 1.2275638979869656,
+            "feasible_probability": 0.9999999999999999,
+            "optimal_probability": 0.7663242233483315,
+            "expected_feasible_size_unconditional": 3.743931368599531,
+            "expected_size_given_feasible": 3.7439313685995312,
+            "approximation_ratio_unconditional": 0.9359828421498827
+          },
+          "mammalia_induced_11": {
+            "score": 1.2721997951029895,
+            "feasible_probability": 0.9999999999999999,
+            "optimal_probability": 0.8728311626222959,
+            "expected_feasible_size_unconditional": 2.8619760133422463,
+            "expected_size_given_feasible": 2.8619760133422467,
+            "approximation_ratio_unconditional": 0.9539920044474154
+          },
+          "mammalia_induced_13": {
+            "score": 1.2749365130439747,
+            "feasible_probability": 0.9999999999999998,
+            "optimal_probability": 0.8776474559409753,
+            "expected_feasible_size_unconditional": 2.866573947176192,
+            "expected_size_given_feasible": 2.8665739471761924,
+            "approximation_ratio_unconditional": 0.9555246490587307
+          },
+          "mammalia_induced_15": {
+            "score": 1.2292755464430085,
+            "feasible_probability": 0.9999999999999998,
+            "optimal_probability": 0.7693707246639233,
+            "expected_feasible_size_unconditional": 3.7477314611081103,
+            "expected_size_given_feasible": 3.747731461108111,
+            "approximation_ratio_unconditional": 0.9369328652770276
+          }
+        },
+        "validation": {
+          "aggregate_score": 0.579832361457874,
+          "tasks": {
+            "farm": {
+              "score": 0.579832361457874,
+              "feasible_probability": 0.9999999999999998,
+              "optimal_probability": 0.0010695785075321746,
+              "expected_feasible_size_unconditional": 4.795649668309911,
+              "expected_size_given_feasible": 4.7956496683099115,
+              "approximation_ratio_unconditional": 0.47956496683099104
+            }
+          }
+        },
+        "frozen_test": {
+          "aggregate_score": 0.7385402180217575,
+          "tasks": {
+            "karate_first17": {
+              "score": 0.6703557840677763,
+              "feasible_probability": 1.0000000000000002,
+              "optimal_probability": 0.006653795049864442,
+              "expected_feasible_size_unconditional": 5.686923353053102,
+              "expected_size_given_feasible": 5.686923353053101,
+              "approximation_ratio_unconditional": 0.5686923353053102
+            },
+            "chesapeake_first17": {
+              "score": 0.7817002927832397,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.007380886276233453,
+              "expected_feasible_size_unconditional": 6.1186956409276325,
+              "expected_size_given_feasible": 6.1186956409276325,
+              "approximation_ratio_unconditional": 0.6798550712141814
+            },
+            "aves-sparrow-social_first17": {
+              "score": 0.8512302780122326,
+              "feasible_probability": 0.9999999999999998,
+              "optimal_probability": 0.22118918182399505,
+              "expected_feasible_size_unconditional": 2.0877989476687016,
+              "expected_size_given_feasible": 2.087798947668702,
+              "approximation_ratio_unconditional": 0.6959329825562338
+            }
+          }
+        }
+      }
+    },
+    {
+      "replicate": 11,
+      "feasible_de": {
+        "params": [
+          0.0,
+          3.141592653589793,
+          1.5738577394840665,
+          0.0,
+          3.2490649491972032,
+          6.283185307179586
+        ],
+        "order_policy": 0,
+        "train_aggregate_score": 1.3499889486728358,
+        "train_tasks": {
+          "mammalia-kangaroo-interactions": {
+            "score": 1.3499859417822373,
+            "feasible_probability": 1.0000000000000002,
+            "optimal_probability": 0.999971883696231,
+            "expected_feasible_size_unconditional": 3.999971883432718,
+            "expected_size_given_feasible": 3.999971883432717,
+            "approximation_ratio_unconditional": 0.9999929708581795
+          },
+          "mammalia_induced_11": {
+            "score": 1.3499945329238519,
+            "feasible_probability": 0.9999999999999997,
+            "optimal_probability": 0.9999906278694605,
+            "expected_feasible_size_unconditional": 2.999990627869461,
+            "expected_size_given_feasible": 2.9999906278694617,
+            "approximation_ratio_unconditional": 0.9999968759564869
+          },
+          "mammalia_induced_13": {
+            "score": 1.3499945328726146,
+            "feasible_probability": 0.9999999999999999,
+            "optimal_probability": 0.9999906277816245,
+            "expected_feasible_size_unconditional": 2.9999906277816253,
+            "expected_size_given_feasible": 2.9999906277816257,
+            "approximation_ratio_unconditional": 0.9999968759272084
+          },
+          "mammalia_induced_15": {
+            "score": 1.3499859417822373,
+            "feasible_probability": 1.0000000000000002,
+            "optimal_probability": 0.999971883696231,
+            "expected_feasible_size_unconditional": 3.999971883432718,
+            "expected_size_given_feasible": 3.999971883432717,
+            "approximation_ratio_unconditional": 0.9999929708581795
+          }
+        },
+        "validation": {
+          "aggregate_score": 0.5999971883257045,
+          "tasks": {
+            "farm": {
+              "score": 0.5999971883257046,
+              "feasible_probability": 1.0,
+              "optimal_probability": 7.237098429959752e-26,
+              "expected_feasible_size_unconditional": 4.999971883257046,
+              "expected_size_given_feasible": 4.999971883257046,
+              "approximation_ratio_unconditional": 0.49999718832570456
+            }
+          }
+        },
+        "frozen_test": {
+          "aggregate_score": 0.677777838480857,
+          "tasks": {
+            "karate_first17": {
+              "score": 0.599999999956081,
+              "feasible_probability": 0.9999999999999999,
+              "optimal_probability": 7.714968490370627e-21,
+              "expected_feasible_size_unconditional": 4.99999999956081,
+              "expected_size_given_feasible": 4.999999999560811,
+              "approximation_ratio_unconditional": 0.499999999956081
+            },
+            "chesapeake_first17": {
+              "score": 0.7666645839417128,
+              "feasible_probability": 1.0000000000000002,
+              "optimal_probability": 1.5430183760120523e-20,
+              "expected_feasible_size_unconditional": 5.999981255475414,
+              "expected_size_given_feasible": 5.999981255475413,
+              "approximation_ratio_unconditional": 0.6666645839417127
+            },
+            "aves-sparrow-social_first17": {
+              "score": 0.7666690096480614,
+              "feasible_probability": 1.0,
+              "optimal_probability": 9.372042696816297e-06,
+              "expected_feasible_size_unconditional": 1.9999999999121616,
+              "expected_size_given_feasible": 1.9999999999121616,
+              "approximation_ratio_unconditional": 0.6666666666373872
+            }
+          }
+        }
+      },
+      "feasible_random": {
+        "params": [
+          1.4425049122908462,
+          1.5492269897291553,
+          0.159461151672958,
+          0.1572309635994827,
+          6.01801238981249,
+          2.23172898128981
+        ],
+        "order_policy": 1,
+        "train_aggregate_score": 1.3197610872130834,
+        "train_tasks": {
+          "mammalia-kangaroo-interactions": {
+            "score": 1.3188558182007146,
+            "feasible_probability": 0.9999999999999999,
+            "optimal_probability": 0.9383957507992153,
+            "expected_feasible_size_unconditional": 3.9370275220036426,
+            "expected_size_given_feasible": 3.937027522003643,
+            "approximation_ratio_unconditional": 0.9842568805009106
+          },
+          "mammalia_induced_11": {
+            "score": 1.3211486157181904,
+            "feasible_probability": 1.0,
+            "optimal_probability": 0.9509761824166182,
+            "expected_feasible_size_unconditional": 2.9502137103421076,
+            "expected_size_given_feasible": 2.9502137103421076,
+            "approximation_ratio_unconditional": 0.9834045701140358
+          },
+          "mammalia_induced_13": {
+            "score": 1.321761944334432,
+            "feasible_probability": 0.9999999999999998,
+            "optimal_probability": 0.9519984526965038,
+            "expected_feasible_size_unconditional": 2.9512869934809185,
+            "expected_size_given_feasible": 2.951286993480919,
+            "approximation_ratio_unconditional": 0.9837623311603062
+          },
+          "mammalia_induced_15": {
+            "score": 1.3188462547763147,
+            "feasible_probability": 0.9999999999999999,
+            "optimal_probability": 0.9383936387588474,
+            "expected_feasible_size_unconditional": 3.936991380346411,
+            "expected_size_given_feasible": 3.9369913803464116,
+            "approximation_ratio_unconditional": 0.9842478450866028
+          }
+        },
+        "validation": {
+          "aggregate_score": 1.2979077523039173,
+          "tasks": {
+            "farm": {
+              "score": 1.2979077523039173,
+              "feasible_probability": 0.9999999999999998,
+              "optimal_probability": 0.854178166548677,
+              "expected_feasible_size_unconditional": 9.84363210666748,
+              "expected_size_given_feasible": 9.843632106667481,
+              "approximation_ratio_unconditional": 0.9843632106667479
+            }
+          }
+        },
+        "frozen_test": {
+          "aggregate_score": 1.302573922127057,
+          "tasks": {
+            "karate_first17": {
+              "score": 1.296980264147087,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.8516324571183305,
+              "expected_feasible_size_unconditional": 9.840721498675043,
+              "expected_size_given_feasible": 9.840721498675043,
+              "approximation_ratio_unconditional": 0.9840721498675042
+            },
+            "chesapeake_first17": {
+              "score": 1.2995960063143621,
+              "feasible_probability": 0.9999999999999998,
+              "optimal_probability": 0.8632210687682405,
+              "expected_feasible_size_unconditional": 8.854116652100718,
+              "expected_size_given_feasible": 8.85411665210072,
+              "approximation_ratio_unconditional": 0.983790739122302
+            },
+            "aves-sparrow-social_first17": {
+              "score": 1.3183373418939694,
+              "feasible_probability": 1.0,
+              "optimal_probability": 0.9461741141638169,
+              "expected_feasible_size_unconditional": 2.9453814400590455,
+              "expected_size_given_feasible": 2.9453814400590455,
+              "approximation_ratio_unconditional": 0.9817938133530152
+            }
+          }
+        }
+      }
+    }
+  ],
+  "comparisons": {
+    "train": {
+      "first": {
+        "mean": 1.3494820180583187,
+        "std": 0.000816370970505981,
+        "median": 1.3498708711898642,
+        "min": 1.3475560062037673,
+        "max": 1.3499999894128727
+      },
+      "second": {
+        "mean": 1.2764992584515185,
+        "std": 0.04928301920295876,
+        "median": 1.276676981911313,
+        "min": 1.1932199763126108,
+        "max": 1.342067266663043
+      },
+      "difference": {
+        "mean": 0.07298275960680019,
+        "std": 0.04890764803234809,
+        "median": 0.07206758116398349,
+        "min": 0.007924420382468433,
+        "max": 0.15433602989115647,
+        "bootstrap_95_percent_ci": [
+          0.0476143752152487,
+          0.0998543783256836
+        ]
+      },
+      "first_wins": 12,
+      "second_wins": 0,
+      "paired_t_test_two_sided": {
+        "statistic": 5.169328430267371,
+        "p_value": 0.0003088244830512362
+      },
+      "wilcoxon_one_sided_first_greater": {
+        "statistic": 78.0,
+        "p_value": 0.000244140625
+      }
+    },
+    "validation": {
+      "first": {
+        "mean": 0.786563723381876,
+        "std": 0.3376811433264286,
+        "median": 0.5999978571755284,
+        "min": 0.5995361923896052,
+        "max": 1.3499999609567404
+      },
+      "second": {
+        "mean": 0.9747803920536532,
+        "std": 0.3568720557054008,
+        "median": 1.1584238485365144,
+        "min": 0.5638384336709833,
+        "max": 1.336056593189947
+      },
+      "difference": {
+        "mean": -0.18821666867177722,
+        "std": 0.47935552057106784,
+        "median": 0.02188028423820182,
+        "min": -0.7360587081631006,
+        "max": 0.7559384118209931,
+        "bootstrap_95_percent_ci": [
+          -0.444579894179052,
+          0.07776978188491003
+        ]
+      },
+      "first_wins": 7,
+      "second_wins": 5,
+      "paired_t_test_two_sided": {
+        "statistic": -1.360163048012894,
+        "p_value": 0.20100068034811458
+      },
+      "wilcoxon_one_sided_first_greater": {
+        "statistic": 33.0,
+        "p_value": 0.68896484375
+      }
+    },
+    "frozen_test": {
+      "first": {
+        "mean": 0.8452537676952886,
+        "std": 0.30304648102864545,
+        "median": 0.6777784769391115,
+        "min": 0.6774307644888329,
+        "max": 1.3499999752244003
+      },
+      "second": {
+        "mean": 1.0224329302976465,
+        "std": 0.3096604887667927,
+        "median": 1.162079342118524,
+        "min": 0.6407125619759628,
+        "max": 1.3343579762704267
+      },
+      "difference": {
+        "mean": -0.17717916260235797,
+        "std": 0.42705309419790194,
+        "median": -0.030844380881916822,
+        "min": -0.6565801528230982,
+        "max": 0.6661065315741859,
+        "bootstrap_95_percent_ci": [
+          -0.40227288245750314,
+          0.05432586444754801
+        ]
+      },
+      "first_wins": 5,
+      "second_wins": 7,
+      "paired_t_test_two_sided": {
+        "statistic": -1.4372138539175545,
+        "p_value": 0.17848757555474523
+      },
+      "wilcoxon_one_sided_first_greater": {
+        "statistic": 27.0,
+        "p_value": 0.830322265625
+      }
+    }
+  },
+  "penalty_normalized_de_frozen_test_comparison": {
+    "first": {
+      "mean": 0.8452537676952886,
+      "std": 0.30304648102864545,
+      "median": 0.6777784769391115,
+      "min": 0.6774307644888329,
+      "max": 1.3499999752244003
+    },
+    "second": {
+      "mean": 0.2508963235258128,
+      "std": 0.04771713584190267,
+      "median": 0.2522304435914825,
+      "min": 0.16167191195057445,
+      "max": 0.3384582627307696
+    },
+    "difference": {
+      "mean": 0.5943574441694758,
+      "std": 0.2724689490130477,
+      "median": 0.4542454217781125,
+      "min": 0.40269336649871745,
+      "max": 1.0886757463606256,
+      "bootstrap_95_percent_ci": [
+        0.45315575542590675,
+        0.749299015469464
+      ]
+    },
+    "first_wins": 12,
+    "second_wins": 0,
+    "paired_t_test_two_sided": {
+      "statistic": 7.556510897019806,
+      "p_value": 1.1187084780325414e-05
+    },
+    "wilcoxon_one_sided_first_greater": {
+      "statistic": 78.0,
+      "p_value": 0.000244140625
+    }
+  },
+  "champion": {
+    "replicate": 5,
+    "params": [
+      1.2152470834290543,
+      3.141592653589793,
+      0.0,
+      1.5709076582195738,
+      3.1419712509482665,
+      0.0
+    ],
+    "order_policy": 1,
+    "train_aggregate_score": 1.3499999894128727,
+    "train_tasks": {
+      "mammalia-kangaroo-interactions": {
+        "score": 1.3499999876053144,
+        "feasible_probability": 1.0000000000000002,
+        "optimal_probability": 0.9999999752106282,
+        "expected_feasible_size_unconditional": 3.9999999752106286,
+        "expected_size_given_feasible": 3.9999999752106277,
+        "approximation_ratio_unconditional": 0.9999999938026571
+      },
+      "mammalia_induced_11": {
+        "score": 1.3499999927697668,
+        "feasible_probability": 1.0000000000000002,
+        "optimal_probability": 0.9999999876053142,
+        "expected_feasible_size_unconditional": 2.9999999876053143,
+        "expected_size_given_feasible": 2.999999987605314,
+        "approximation_ratio_unconditional": 0.9999999958684381
+      },
+      "mammalia_induced_13": {
+        "score": 1.3499999927697668,
+        "feasible_probability": 1.0000000000000002,
+        "optimal_probability": 0.9999999876053142,
+        "expected_feasible_size_unconditional": 2.9999999876053147,
+        "expected_size_given_feasible": 2.9999999876053143,
+        "approximation_ratio_unconditional": 0.9999999958684382
+      },
+      "mammalia_induced_15": {
+        "score": 1.3499999876053144,
+        "feasible_probability": 1.0000000000000002,
+        "optimal_probability": 0.9999999752106282,
+        "expected_feasible_size_unconditional": 3.9999999752106286,
+        "expected_size_given_feasible": 3.9999999752106277,
+        "approximation_ratio_unconditional": 0.9999999938026571
+      }
+    },
+    "validation": {
+      "aggregate_score": 1.3499999609567404,
+      "tasks": {
+        "farm": {
+          "score": 1.3499999609567404,
+          "feasible_probability": 0.9999999999999998,
+          "optimal_probability": 0.9999998884478307,
+          "expected_feasible_size_unconditional": 9.999999888447826,
+          "expected_size_given_feasible": 9.999999888447828,
+          "approximation_ratio_unconditional": 0.9999999888447826
+        }
+      }
+    },
+    "frozen_test": {
+      "aggregate_score": 1.3499999752244003,
+      "tasks": {
+        "karate_first17": {
+          "score": 1.3499999652948802,
+          "feasible_probability": 1.0000000000000002,
+          "optimal_probability": 0.9999999008425156,
+          "expected_feasible_size_unconditional": 9.999999900842512,
+          "expected_size_given_feasible": 9.99999990084251,
+          "approximation_ratio_unconditional": 0.9999999900842512
+        },
+        "chesapeake_first17": {
+          "score": 1.3499999731448473,
+          "feasible_probability": 0.9999999999999998,
+          "optimal_probability": 0.9999999256318854,
+          "expected_feasible_size_unconditional": 8.999999925631885,
+          "expected_size_given_feasible": 8.999999925631887,
+          "approximation_ratio_unconditional": 0.999999991736876
+        },
+        "aves-sparrow-social_first17": {
+          "score": 1.3499999999999996,
+          "feasible_probability": 1.0,
+          "optimal_probability": 0.9999999999999992,
+          "expected_feasible_size_unconditional": 2.999999999999999,
+          "expected_size_given_feasible": 2.999999999999999,
+          "approximation_ratio_unconditional": 0.9999999999999997
+        }
+      }
+    }
+  },
+  "finite_shot_champion": {
+    "mammalia-kangaroo-interactions": {
+      "shots": {
+        "mean": 4096.0,
+        "std": 0.0,
+        "median": 4096.0,
+        "min": 4096.0,
+        "max": 4096.0
+      },
+      "raw_feasible_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "raw_optimal_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "raw_expected_feasible_size_unconditional": {
+        "mean": 4.0,
+        "std": 0.0,
+        "median": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "repaired_expected_size": {
+        "mean": 4.0,
+        "std": 0.0,
+        "median": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "repaired_optimal_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "best_repaired_size": {
+        "mean": 4.0,
+        "std": 0.0,
+        "median": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      }
+    },
+    "farm": {
+      "shots": {
+        "mean": 4096.0,
+        "std": 0.0,
+        "median": 4096.0,
+        "min": 4096.0,
+        "max": 4096.0
+      },
+      "raw_feasible_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "raw_optimal_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "raw_expected_feasible_size_unconditional": {
+        "mean": 10.0,
+        "std": 0.0,
+        "median": 10.0,
+        "min": 10.0,
+        "max": 10.0
+      },
+      "repaired_expected_size": {
+        "mean": 10.0,
+        "std": 0.0,
+        "median": 10.0,
+        "min": 10.0,
+        "max": 10.0
+      },
+      "repaired_optimal_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "best_repaired_size": {
+        "mean": 10.0,
+        "std": 0.0,
+        "median": 10.0,
+        "min": 10.0,
+        "max": 10.0
+      }
+    },
+    "karate_first17": {
+      "shots": {
+        "mean": 4096.0,
+        "std": 0.0,
+        "median": 4096.0,
+        "min": 4096.0,
+        "max": 4096.0
+      },
+      "raw_feasible_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "raw_optimal_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "raw_expected_feasible_size_unconditional": {
+        "mean": 10.0,
+        "std": 0.0,
+        "median": 10.0,
+        "min": 10.0,
+        "max": 10.0
+      },
+      "repaired_expected_size": {
+        "mean": 10.0,
+        "std": 0.0,
+        "median": 10.0,
+        "min": 10.0,
+        "max": 10.0
+      },
+      "repaired_optimal_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "best_repaired_size": {
+        "mean": 10.0,
+        "std": 0.0,
+        "median": 10.0,
+        "min": 10.0,
+        "max": 10.0
+      }
+    },
+    "chesapeake_first17": {
+      "shots": {
+        "mean": 4096.0,
+        "std": 0.0,
+        "median": 4096.0,
+        "min": 4096.0,
+        "max": 4096.0
+      },
+      "raw_feasible_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "raw_optimal_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "raw_expected_feasible_size_unconditional": {
+        "mean": 9.0,
+        "std": 0.0,
+        "median": 9.0,
+        "min": 9.0,
+        "max": 9.0
+      },
+      "repaired_expected_size": {
+        "mean": 9.0,
+        "std": 0.0,
+        "median": 9.0,
+        "min": 9.0,
+        "max": 9.0
+      },
+      "repaired_optimal_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "best_repaired_size": {
+        "mean": 9.0,
+        "std": 0.0,
+        "median": 9.0,
+        "min": 9.0,
+        "max": 9.0
+      }
+    },
+    "aves-sparrow-social_first17": {
+      "shots": {
+        "mean": 4096.0,
+        "std": 0.0,
+        "median": 4096.0,
+        "min": 4096.0,
+        "max": 4096.0
+      },
+      "raw_feasible_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "raw_optimal_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "raw_expected_feasible_size_unconditional": {
+        "mean": 3.0,
+        "std": 0.0,
+        "median": 3.0,
+        "min": 3.0,
+        "max": 3.0
+      },
+      "repaired_expected_size": {
+        "mean": 3.0,
+        "std": 0.0,
+        "median": 3.0,
+        "min": 3.0,
+        "max": 3.0
+      },
+      "repaired_optimal_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "best_repaired_size": {
+        "mean": 3.0,
+        "std": 0.0,
+        "median": 3.0,
+        "min": 3.0,
+        "max": 3.0
+      }
+    }
+  },
+  "promotion_gate": {
+    "checks": {
+      "feasible_probability_is_one": true,
+      "de_beats_random_train_mean": true,
+      "de_beats_random_frozen_test_mean": false,
+      "de_wins_random_frozen_test_majority": false
+    },
+    "promote_to_circuit_resource_audit": false
+  }
+}

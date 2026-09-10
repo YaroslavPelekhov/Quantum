@@ -25,7 +25,7 @@
 \large When Better QAOA Schedules Depend on the Simulator:
 Exact and Cross-Backend Rank Reversals on QOBLIB}
 \author{Anonymous Authors}
-\date{Advisor-ready research artifact, 12 August 2026}
+\date{Research artifact; local planning addendum, 9 September 2026}
 
 \begin{document}
 \maketitle
@@ -475,5 +475,84 @@ independent backend artifacts, frozen 300-row design, TVD computations, and
 NumPy-safe JSON serialization. The analysis
 scripts regenerate the CSV tables, figures, statistical summaries, and reports
 from the JSON artifacts.
+
+\section{Post-freeze breadth and hardware-readiness addendum}
+
+The original five-case replication is unchanged. An independently documented
+50-instance eligibility screen admitted eight graphs; the three additional
+eligible cases were \texttt{es60fst01}, \texttt{es60fst03}, and
+\texttt{mammalia-kangaroo-interactions}. Their subsequent single-backend Aer
+pilot completed 18 exact rows and 108 seeded MPS rows (54,000 shots), with
+24/24 candidate-versus-LR effect signs preserved. These observations are not
+pooled with the original deterministic two-backend cohorts and do not
+establish population-level prevalence of reversals.
+
+\subsection{Finite-shot planning}
+
+The 9 September protocol uses the already observed exact BKS probabilities
+for sorted ordering and matched-random versus LR on each of the five original
+cases. It is a post-hoc planning analysis, not an independent validation set.
+For each of five budgets per schedule (500, 2,000, 10,000, 50,000, 200,000),
+10,000 independent pairs of binomial counts are generated with seed 20260909.
+Each arm receives a two-sided Clopper--Pearson interval with error probability
+$0.05/(2\cdot5)=0.005$. Subtracting the arm intervals gives an effect interval;
+a sign is reported only if this excludes zero. A union bound controls the
+familywise error at 0.05 across the five comparisons at a \emph{fixed} budget.
+The five budgets are alternative planning scenarios, not repeated peeking.
+No drift robustness or cross-budget simultaneous guarantee is asserted.
+
+For \texttt{football}, correct sign resolution is 53.43\% at 10,000 shots per
+arm and 100\% in the 10,000 replicates at 50,000 shots. The 24-qubit small-gap
+case needs substantially more shots (full rates are in the machine-readable
+artifact). Zero wrong resolved signs were observed across the 250,000
+simulated comparisons. This observation is not a proof of zero error: the
+statistical guarantee comes from interval coverage and the union bound.
+Increasing shots cannot remove a simulator's systematic bias.
+
+\subsection{Synthetic noise and circuit mapping}
+
+Six archived circuits (three cases of three or seven qubits, two schedules)
+are hash-checked and transpiled to a bidirectional line, basis
+$\{R_Z,\mathrm{SX},X,\mathrm{CX}\}$, optimization level one, initial identity
+layout, and seed 20260909. Final logical-to-physical permutations are inverted
+before applying the frozen BKS decoder. Both schedules have respectively
+156, 1,232, and 708 CX gates on \texttt{karate}, \texttt{chesapeake}, and
+\texttt{football}. Zero-noise BKS probabilities agree with archived exact
+references within $10^{-9}$.
+
+The channel after each CX is $\mathcal D_\lambda(\rho)=(1-\lambda)\rho+
+\lambda I/4$, with $\lambda\in\{0,10^{-4},10^{-3},0.003,0.01\}$; the
+corresponding one-qubit channel after SX and X has parameter $\lambda/10$.
+RZ gates are noise-free in this synthetic model. For nonzero $\lambda$, a
+1\% independent symmetric bit-flip channel is applied to the output
+distribution. All 30 jobs use exact density-matrix evolution, not sampled
+trajectories. These parameters are channel parameters, not reported device
+gate infidelities. The noiseless-to-smallest-noise comparison changes both
+gate and readout noise; it is not an isolation of either contribution.
+
+\begin{table}[H]
+\centering
+\caption{Matched-random minus LR BKS probability under synthetic noise.}
+\begin{tabular}{lrrr}
+\toprule
+Case & No noise & $\lambda=10^{-3}$ & $\lambda=0.01$ \\
+\midrule
+karate & $+0.086412$ & $+0.065200$ & $+0.001615$ \\
+chesapeake & $-0.134214$ & $-0.047042$ & $-0.000319$ \\
+football & $+0.019269$ & $-0.001387$ & $-0.003512$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The football sign reversal demonstrates why a hardware ranking cannot by
+itself adjudicate the ideal ranking. This local model is not a calibration
+of a named device and is not evidence for a new physical mechanism. Actual
+hardware validation requires a target-specific transpilation, recorded
+calibration, fixed measurement budget, interleaved schedules, and explicit
+accounting for time dependence. No QPU job was submitted for this addendum.
+
+The repository-level \texttt{research\_package} directory contains the frozen
+planning protocol, runner, six compiled circuit files, unit tests, and
+\texttt{results/readiness.json} with source and circuit hashes.
 
 \end{document}

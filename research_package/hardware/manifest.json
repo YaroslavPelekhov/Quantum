@@ -1,0 +1,554 @@
+{
+  "status": "prepared_not_submitted",
+  "provider": "Amazon Braket",
+  "backend": null,
+  "local_exact_preflight_passed": true,
+  "approved_max_cost": null,
+  "submission_enabled": false,
+  "shots_total": 60000,
+  "circuits": [
+    {
+      "case": "karate",
+      "method": "published_lr",
+      "qubits": 3,
+      "file": "karate__published_lr.qpy",
+      "sha256": "b38f18b2cc8ad68ba1a1f3049a7ba56f4af0f9c3d489feeb31c0abea2d147f96",
+      "scorer": {
+        "constant_selected": 19,
+        "weights": [
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "impossible": false,
+        "bks": 20
+      },
+      "exact_bks": 0.9088221515603738,
+      "source_sha256": "16aaef638e6760a26466ae333df17b34cd5348ece69e1ec67624cfe091d17861",
+      "bit_convention": "Integer bit i is logical qubit i, classical register meas; transpile WITH measurements"
+    },
+    {
+      "case": "karate",
+      "method": "prior_matched_random",
+      "qubits": 3,
+      "file": "karate__prior_matched_random.qpy",
+      "sha256": "8f0f2bf7a7b5411b10e668a68b5ac5ac60296ace2d91da8daf1b6701eed796d6",
+      "scorer": {
+        "constant_selected": 19,
+        "weights": [
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "impossible": false,
+        "bks": 20
+      },
+      "exact_bks": 0.995234158667834,
+      "source_sha256": "35a7e1b6ba9d9048981dd77d091e30b86f00d7b6f9e08b141d16718d567a7abe",
+      "bit_convention": "Integer bit i is logical qubit i, classical register meas; transpile WITH measurements"
+    },
+    {
+      "case": "chesapeake",
+      "method": "published_lr",
+      "qubits": 7,
+      "file": "chesapeake__published_lr.qpy",
+      "sha256": "e4db75fe6e2a82a49bc2958ae711a6df64fae9b4a2fe21056f1ec1f5792735a1",
+      "scorer": {
+        "constant_selected": 14,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            66,
+            66
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 17
+      },
+      "exact_bks": 0.7982931304718344,
+      "source_sha256": "02fcc7d04a10b262d867653a6d6b3876bccac57b1e1a22c457357575f111a2e9",
+      "bit_convention": "Integer bit i is logical qubit i, classical register meas; transpile WITH measurements"
+    },
+    {
+      "case": "chesapeake",
+      "method": "prior_matched_random",
+      "qubits": 7,
+      "file": "chesapeake__prior_matched_random.qpy",
+      "sha256": "436ad309b5a3d1a9a4da045d1ab2c099f66aa22c91a93afec9f1c15d1fff7d9c",
+      "scorer": {
+        "constant_selected": 14,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            66,
+            66
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 17
+      },
+      "exact_bks": 0.6640795390180093,
+      "source_sha256": "f1d5e3cdd24d4be91b3e3a91da8105a8a12695da5251a86453a4a67a5d2b9672",
+      "bit_convention": "Integer bit i is logical qubit i, classical register meas; transpile WITH measurements"
+    },
+    {
+      "case": "football",
+      "method": "published_lr",
+      "qubits": 7,
+      "file": "football__published_lr.qpy",
+      "sha256": "445e9b234e4addfc93a100f9998fd355c1b76741dbfa89c4d4bce913f2caf9cd",
+      "scorer": {
+        "constant_selected": 13,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            72,
+            72
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 16
+      },
+      "exact_bks": 0.8627678117715563,
+      "source_sha256": "093e3201a84d816685dd2caa55a1d3dfdb2e7ec0acbc1e7e1ccb81e6a8c82533",
+      "bit_convention": "Integer bit i is logical qubit i, classical register meas; transpile WITH measurements"
+    },
+    {
+      "case": "football",
+      "method": "prior_matched_random",
+      "qubits": 7,
+      "file": "football__prior_matched_random.qpy",
+      "sha256": "b341866f3ceb858a54a887c384f67a39e0db7d21fcae3385dd33dbadeb8d81c7",
+      "scorer": {
+        "constant_selected": 13,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            72,
+            72
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 16
+      },
+      "exact_bks": 0.8820366866508706,
+      "source_sha256": "769b1bd4951dc0bbaf323209e3ea97e056cf3b3f338a3c7a54850ca6a1eb885d",
+      "bit_convention": "Integer bit i is logical qubit i, classical register meas; transpile WITH measurements"
+    }
+  ],
+  "planned_tasks": [
+    {
+      "block": 0,
+      "case": "chesapeake",
+      "method": "prior_matched_random",
+      "shots": 2500,
+      "circuit": "chesapeake__prior_matched_random.qpy"
+    },
+    {
+      "block": 0,
+      "case": "chesapeake",
+      "method": "published_lr",
+      "shots": 2500,
+      "circuit": "chesapeake__published_lr.qpy"
+    },
+    {
+      "block": 0,
+      "case": "football",
+      "method": "prior_matched_random",
+      "shots": 2500,
+      "circuit": "football__prior_matched_random.qpy"
+    },
+    {
+      "block": 0,
+      "case": "football",
+      "method": "published_lr",
+      "shots": 2500,
+      "circuit": "football__published_lr.qpy"
+    },
+    {
+      "block": 0,
+      "case": "karate",
+      "method": "published_lr",
+      "shots": 2500,
+      "circuit": "karate__published_lr.qpy"
+    },
+    {
+      "block": 0,
+      "case": "karate",
+      "method": "prior_matched_random",
+      "shots": 2500,
+      "circuit": "karate__prior_matched_random.qpy"
+    },
+    {
+      "block": 1,
+      "case": "football",
+      "method": "prior_matched_random",
+      "shots": 2500,
+      "circuit": "football__prior_matched_random.qpy"
+    },
+    {
+      "block": 1,
+      "case": "football",
+      "method": "published_lr",
+      "shots": 2500,
+      "circuit": "football__published_lr.qpy"
+    },
+    {
+      "block": 1,
+      "case": "chesapeake",
+      "method": "prior_matched_random",
+      "shots": 2500,
+      "circuit": "chesapeake__prior_matched_random.qpy"
+    },
+    {
+      "block": 1,
+      "case": "chesapeake",
+      "method": "published_lr",
+      "shots": 2500,
+      "circuit": "chesapeake__published_lr.qpy"
+    },
+    {
+      "block": 1,
+      "case": "karate",
+      "method": "published_lr",
+      "shots": 2500,
+      "circuit": "karate__published_lr.qpy"
+    },
+    {
+      "block": 1,
+      "case": "karate",
+      "method": "prior_matched_random",
+      "shots": 2500,
+      "circuit": "karate__prior_matched_random.qpy"
+    },
+    {
+      "block": 2,
+      "case": "karate",
+      "method": "prior_matched_random",
+      "shots": 2500,
+      "circuit": "karate__prior_matched_random.qpy"
+    },
+    {
+      "block": 2,
+      "case": "karate",
+      "method": "published_lr",
+      "shots": 2500,
+      "circuit": "karate__published_lr.qpy"
+    },
+    {
+      "block": 2,
+      "case": "football",
+      "method": "prior_matched_random",
+      "shots": 2500,
+      "circuit": "football__prior_matched_random.qpy"
+    },
+    {
+      "block": 2,
+      "case": "football",
+      "method": "published_lr",
+      "shots": 2500,
+      "circuit": "football__published_lr.qpy"
+    },
+    {
+      "block": 2,
+      "case": "chesapeake",
+      "method": "published_lr",
+      "shots": 2500,
+      "circuit": "chesapeake__published_lr.qpy"
+    },
+    {
+      "block": 2,
+      "case": "chesapeake",
+      "method": "prior_matched_random",
+      "shots": 2500,
+      "circuit": "chesapeake__prior_matched_random.qpy"
+    },
+    {
+      "block": 3,
+      "case": "karate",
+      "method": "prior_matched_random",
+      "shots": 2500,
+      "circuit": "karate__prior_matched_random.qpy"
+    },
+    {
+      "block": 3,
+      "case": "karate",
+      "method": "published_lr",
+      "shots": 2500,
+      "circuit": "karate__published_lr.qpy"
+    },
+    {
+      "block": 3,
+      "case": "football",
+      "method": "prior_matched_random",
+      "shots": 2500,
+      "circuit": "football__prior_matched_random.qpy"
+    },
+    {
+      "block": 3,
+      "case": "football",
+      "method": "published_lr",
+      "shots": 2500,
+      "circuit": "football__published_lr.qpy"
+    },
+    {
+      "block": 3,
+      "case": "chesapeake",
+      "method": "published_lr",
+      "shots": 2500,
+      "circuit": "chesapeake__published_lr.qpy"
+    },
+    {
+      "block": 3,
+      "case": "chesapeake",
+      "method": "prior_matched_random",
+      "shots": 2500,
+      "circuit": "chesapeake__prior_matched_random.qpy"
+    }
+  ],
+  "warning": "Logical circuits only; requires device ISA transpilation, calibration, budget approval and a new frozen manifest"
+}

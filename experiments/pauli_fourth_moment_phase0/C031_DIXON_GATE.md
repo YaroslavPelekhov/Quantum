@@ -57,8 +57,9 @@ This closes the fixed C014 inequality, not all weights on G, a general SCF
 composition theorem, a new relaxation or quantum-simulation algorithm,
 practical hardware advantage, or A-star novelty. The certificate's large
 rationals are exact but not yet a conceptual general proof. Priority and
-generalization remain research requirements. The manuscript/PDF predates
-this result and must be updated and checked separately.
+generalization remain research requirements. The local manuscript now includes
+this fixed-instance theorem. The prepared 9 September PDF is built separately
+under output/pdf/prepared_20260910; older PDF snapshots may predate C031.
 
 ## Archive portability audit
 

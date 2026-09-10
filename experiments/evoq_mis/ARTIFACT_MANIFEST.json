@@ -1,0 +1,133 @@
+{
+  "generated_by": "C:\\Users\\psgpe\\Downloads\\Taiwan\\experiments\\evoq_mis\\build_manifest.py",
+  "environment": {
+    "python": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "qiskit": "2.5.1",
+    "qiskit_aer": "0.17.2"
+  },
+  "repositories": {
+    "QOBLIB": "52407861bcbab7cee26c4b3a564ea6f8fd80de7d",
+    "metriq-gym": "21a3d7f46d1598e033d589e3741f2e4f548d801a",
+    "QAOA-Parameter-Transfer-via-GAT": "ab8434ffcb2cfcac16d136d8677f327752d9ca8d"
+  },
+  "artifacts": [
+    {
+      "path": "experiments\\evoq_mis\\EXTERNAL_BASELINE_AUDIT.md",
+      "bytes": 2251,
+      "sha256": "068ba33590e381012f0c8e4bebbc6efec16b9f4eed8d7a637241b746d3b1aedc"
+    },
+    {
+      "path": "experiments\\evoq_mis\\NOVELTY_AUDIT.md",
+      "bytes": 6214,
+      "sha256": "989a488c2bc657e531e0fb858a2a4b41b381c378a0f4f42abe79dbfc42836951"
+    },
+    {
+      "path": "experiments\\evoq_mis\\paper\\generated\\paper_summary.json",
+      "bytes": 11810,
+      "sha256": "8f220bbbeb679e6a4ebd74b529c37bb094d327fd3e52cb884b319e7d5b4cdce4"
+    },
+    {
+      "path": "experiments\\evoq_mis\\paper\\main.tex",
+      "bytes": 27635,
+      "sha256": "0800fed59719d90d4d3f09e2997c676a5f3e2402a1d1ca9d858e5c1dd30b408a"
+    },
+    {
+      "path": "experiments\\evoq_mis\\paper\\output\\pdf\\gsn_qaoa_mis_manuscript.pdf",
+      "bytes": 681778,
+      "sha256": "a752e89bd2b3c87fa186259877a949b83f43a4935c57ed0d134068a9fbe19805"
+    },
+    {
+      "path": "experiments\\evoq_mis\\paper\\references.bib",
+      "bytes": 3917,
+      "sha256": "752c9c6b48340ca639412170f0766eb9d2736fc01cefd5a059211c66c2c1315c"
+    },
+    {
+      "path": "experiments\\evoq_mis\\RESEARCH_CYCLE_REPORT.md",
+      "bytes": 11128,
+      "sha256": "03abe30987cc1208cd20e56d0a9abad80b5a7b9485ece34b88f364a87b031f4c"
+    },
+    {
+      "path": "experiments\\evoq_mis\\results\\results.json",
+      "bytes": 31443,
+      "sha256": "df5e388d5531ca9c45cf1839a8a65f6264c4da401ffe9fc7dfc24c85d85b6759"
+    },
+    {
+      "path": "experiments\\evoq_mis\\results_classical_sanity\\results.json",
+      "bytes": 7086,
+      "sha256": "c0290a464c26648dd19750d8feb70c9a5f067d78ea013d625457adee997cc737"
+    },
+    {
+      "path": "experiments\\evoq_mis\\results_confirmatory\\checkpoint.json",
+      "bytes": 45206,
+      "sha256": "99824adc1a91d8a57ab15af8aa0e6be5d69b91900059a8bf7d32bbf79d69ecae"
+    },
+    {
+      "path": "experiments\\evoq_mis\\results_confirmatory\\results.json",
+      "bytes": 57492,
+      "sha256": "fa531a60198647e577651369c7eedcddf3339b5aa07a85faa41c8964749ca063"
+    },
+    {
+      "path": "experiments\\evoq_mis\\results_feasible_mixer\\results.json",
+      "bytes": 108241,
+      "sha256": "e1857537012432b26a6d5940bcae3f0ad7621436bdea3b47d9a1bac481e67705"
+    },
+    {
+      "path": "experiments\\evoq_mis\\results_hardware_audit\\resource_checkpoint.json",
+      "bytes": 4844,
+      "sha256": "a742593bfc9fefa6b2573f34ae38bd239057f2d9ac3e982f8a20bd7b981ee47a"
+    },
+    {
+      "path": "experiments\\evoq_mis\\results_hardware_audit\\results.json",
+      "bytes": 7759,
+      "sha256": "5d618afcbdbde3bbf9baafa7b78944060a303d0b248c9008d13348dd1c6035f1"
+    },
+    {
+      "path": "experiments\\evoq_mis\\results_metriq_lrqaoa\\result.json",
+      "bytes": 1884,
+      "sha256": "c4fe78f9aa2bf8673a2b97c9c4c03e430cb35890fe77e4183c07382a277625f5"
+    },
+    {
+      "path": "experiments\\evoq_mis\\results_multitask_normalized\\results.json",
+      "bytes": 169001,
+      "sha256": "608b323fdfa97d940c3f51ba82cd4f43a724d0d9bde2acefb71bfef838a828da"
+    },
+    {
+      "path": "experiments\\evoq_mis\\results_objective_ablation\\results.json",
+      "bytes": 167661,
+      "sha256": "7dc88406d2d9c876f5500fd753238ab7c52bb30f4104988b33483fc373873d22"
+    },
+    {
+      "path": "experiments\\evoq_mis\\results_p2_pareto\\results.json",
+      "bytes": 61217,
+      "sha256": "39abe5399ecbcc8b855c87024b99a45aa8b3ec3e4a7ef54b031b01ab7d435f5a"
+    },
+    {
+      "path": "experiments\\evoq_mis\\results_p2_pareto\\transfer_audit.json",
+      "bytes": 15991,
+      "sha256": "be04d7e8b91c4b9e054f60fe6ad4722162de00c1b6e052a4ab2e72a4e2bb1bf7"
+    },
+    {
+      "path": "experiments\\evoq_mis\\results_random_subsets\\checkpoint.json",
+      "bytes": 90383,
+      "sha256": "7f5a3aac4037c4e67d5663571074c3e483b2177cb395d3c90c265c4125c33bd6"
+    },
+    {
+      "path": "experiments\\evoq_mis\\results_random_subsets\\results.json",
+      "bytes": 104728,
+      "sha256": "7a876586285e2294d7053e0fe0dd962fcdd4acaad205e8de4ac80f5df598d594"
+    },
+    {
+      "path": "experiments\\evoq_mis\\results_scaleup_20_24\\checkpoint.json",
+      "bytes": 65853,
+      "sha256": "b113636994ad1f33c49e8a9c375eb1143a0b58c989cd3a4e938cde4e92fe282c"
+    },
+    {
+      "path": "experiments\\evoq_mis\\results_scaleup_20_24\\results.json",
+      "bytes": 112665,
+      "sha256": "313f30e82bcbbc5e2263d0bca817824ca50d07dc10da72983866095a3fc707a8"
+    }
+  ]
+}

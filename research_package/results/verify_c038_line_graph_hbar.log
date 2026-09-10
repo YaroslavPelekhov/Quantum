@@ -1,0 +1,9 @@
+{
+  "status": "C038_exact_separation_and_frozen_stress_summary_verified",
+  "atlas_nonempty_roots": 1245,
+  "direct_majorana_norm_cases": 47,
+  "strict_infinite_family_templates": 3,
+  "arbitrary_size_theorem": true,
+  "unrestricted_SCF_theorem": false,
+  "A_star_confirmed": false
+}

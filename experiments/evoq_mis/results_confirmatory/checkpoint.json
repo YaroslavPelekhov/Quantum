@@ -1,0 +1,1025 @@
+[
+  {
+    "graph": {
+      "name": "insecta-ant-colony1-day38_first20",
+      "vertices": 20,
+      "edges": 142,
+      "exact_optimum": 5,
+      "source": "induced:C:\\Users\\psgpe\\Downloads\\Taiwan\\QOBLIB\\07-independentset\\instances\\insecta-ant-colony1-day38.gph;vertices_1_based=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20"
+    },
+    "methods": {
+      "normalized_de": [
+        {
+          "replicate": 0,
+          "score": 0.11939149635424254,
+          "feasible_probability": 0.5385613816202901,
+          "optimal_probability": 5.655910496977063e-06,
+          "expected_feasible_size_unconditional": 0.32766972107294634,
+          "expected_size_given_feasible": 0.6084166675433259,
+          "approximation_ratio_unconditional": 0.06553394421458927
+        },
+        {
+          "replicate": 1,
+          "score": 0.20027416493583478,
+          "feasible_probability": 0.5075668719400243,
+          "optimal_probability": 0.00018801994622062024,
+          "expected_feasible_size_unconditional": 0.7473523637763859,
+          "expected_size_given_feasible": 1.4724214780209208,
+          "approximation_ratio_unconditional": 0.1494704727552772
+        },
+        {
+          "replicate": 2,
+          "score": 0.25176340361636806,
+          "feasible_probability": 0.6998335188906133,
+          "optimal_probability": 0.000150120601880016,
+          "expected_feasible_size_unconditional": 0.9087126078841836,
+          "expected_size_given_feasible": 1.2984696836537475,
+          "approximation_ratio_unconditional": 0.18174252157683674
+        },
+        {
+          "replicate": 3,
+          "score": 0.24717074153829688,
+          "feasible_probability": 0.7964206545552348,
+          "optimal_probability": 5.518762024163122e-05,
+          "expected_feasible_size_unconditional": 0.837574395888565,
+          "expected_size_given_feasible": 1.0516733727307872,
+          "approximation_ratio_unconditional": 0.167514879177713
+        },
+        {
+          "replicate": 4,
+          "score": 0.23430598084112939,
+          "feasible_probability": 0.6040987289722548,
+          "optimal_probability": 0.0004860542489827173,
+          "expected_feasible_size_unconditional": 0.868872971908291,
+          "expected_size_given_feasible": 1.4382963085959362,
+          "approximation_ratio_unconditional": 0.1737745943816582
+        },
+        {
+          "replicate": 5,
+          "score": 0.1807008561517837,
+          "feasible_probability": 0.41409602501615733,
+          "optimal_probability": 1.8785599853421066e-05,
+          "expected_feasible_size_unconditional": 0.6964327862510229,
+          "expected_size_given_feasible": 1.6818147100635639,
+          "approximation_ratio_unconditional": 0.13928655725020458
+        },
+        {
+          "replicate": 6,
+          "score": 0.16643192585174765,
+          "feasible_probability": 0.3800091745681498,
+          "optimal_probability": 0.0004264312259696037,
+          "expected_feasible_size_unconditional": 0.6416220029422014,
+          "expected_size_given_feasible": 1.6884381901341032,
+          "approximation_ratio_unconditional": 0.12832440058844027
+        },
+        {
+          "replicate": 7,
+          "score": 0.23449650380797346,
+          "feasible_probability": 0.7914996986265745,
+          "optimal_probability": 4.367847831647136e-05,
+          "expected_feasible_size_unconditional": 0.7766780716286845,
+          "expected_size_given_feasible": 0.9812739953993554,
+          "approximation_ratio_unconditional": 0.1553356143257369
+        },
+        {
+          "replicate": 8,
+          "score": 0.23639303090473107,
+          "feasible_probability": 0.6034140660906485,
+          "optimal_probability": 0.00021476034083639487,
+          "expected_feasible_size_unconditional": 0.8799896710522855,
+          "expected_size_given_feasible": 1.4583512723750265,
+          "approximation_ratio_unconditional": 0.17599793421045712
+        },
+        {
+          "replicate": 9,
+          "score": 0.3080634391160953,
+          "feasible_probability": 0.8033765580341521,
+          "optimal_probability": 0.00016801434233005075,
+          "expected_feasible_size_unconditional": 1.138418898635488,
+          "expected_size_given_feasible": 1.4170427145909987,
+          "approximation_ratio_unconditional": 0.22768377972709758
+        },
+        {
+          "replicate": 10,
+          "score": 0.23542905498418765,
+          "feasible_probability": 0.6801656568548502,
+          "optimal_probability": 8.903234631331102e-05,
+          "expected_feasible_size_unconditional": 0.8369511560606216,
+          "expected_size_given_feasible": 1.2305107551750882,
+          "approximation_ratio_unconditional": 0.16739023121212432
+        },
+        {
+          "replicate": 11,
+          "score": 0.2409137353652312,
+          "feasible_probability": 0.802619064595469,
+          "optimal_probability": 3.610667615518786e-05,
+          "expected_feasible_size_unconditional": 0.8032140111832275,
+          "expected_size_given_feasible": 1.0007412564864235,
+          "approximation_ratio_unconditional": 0.1606428022366455
+        }
+      ],
+      "unnormalized_de": [
+        {
+          "replicate": 0,
+          "score": 0.06905886283749078,
+          "feasible_probability": 0.21037651575188862,
+          "optimal_probability": 4.148454175752329e-06,
+          "expected_feasible_size_unconditional": 0.24010087074378988,
+          "expected_size_given_feasible": 1.1412912220057738,
+          "approximation_ratio_unconditional": 0.04802017414875798
+        },
+        {
+          "replicate": 1,
+          "score": 0.05241192884629177,
+          "feasible_probability": 0.15300189252369456,
+          "optimal_probability": 3.5998006083391484e-05,
+          "expected_feasible_size_unconditional": 0.18551370046200732,
+          "expected_size_given_feasible": 1.2124928483043296,
+          "approximation_ratio_unconditional": 0.037102740092401464
+        },
+        {
+          "replicate": 2,
+          "score": 0.08641813580295547,
+          "feasible_probability": 0.20914965440887295,
+          "optimal_probability": 0.0003182865041915062,
+          "expected_feasible_size_unconditional": 0.32711799368010147,
+          "expected_size_given_feasible": 1.5640379354421914,
+          "approximation_ratio_unconditional": 0.0654235987360203
+        },
+        {
+          "replicate": 3,
+          "score": 0.07424426933098086,
+          "feasible_probability": 0.283725465359284,
+          "optimal_probability": 7.195731012686713e-06,
+          "expected_feasible_size_unconditional": 0.22934961931149642,
+          "expected_size_given_feasible": 0.808350491278846,
+          "approximation_ratio_unconditional": 0.04586992386229928
+        },
+        {
+          "replicate": 4,
+          "score": 0.09892462755982481,
+          "feasible_probability": 0.2652260349714242,
+          "optimal_probability": 1.816074280443818e-05,
+          "expected_feasible_size_unconditional": 0.36198741938490636,
+          "expected_size_given_feasible": 1.3648261168022489,
+          "approximation_ratio_unconditional": 0.07239748387698128
+        },
+        {
+          "replicate": 5,
+          "score": 0.06164689911883413,
+          "feasible_probability": 0.2083282634218712,
+          "optimal_probability": 0.00012010774557288855,
+          "expected_feasible_size_unconditional": 0.20392022920126895,
+          "expected_size_given_feasible": 0.9788409208227506,
+          "approximation_ratio_unconditional": 0.04078404584025379
+        },
+        {
+          "replicate": 6,
+          "score": 0.07210475744078332,
+          "feasible_probability": 0.20747323540156742,
+          "optimal_probability": 7.940988163900766e-05,
+          "expected_feasible_size_unconditional": 0.25668790715108414,
+          "expected_size_given_feasible": 1.2372097377006774,
+          "approximation_ratio_unconditional": 0.05133758143021683
+        },
+        {
+          "replicate": 7,
+          "score": 0.07774530537356575,
+          "feasible_probability": 0.28062807819999014,
+          "optimal_probability": 9.778260507795493e-06,
+          "expected_feasible_size_unconditional": 0.24840026494219897,
+          "expected_size_given_feasible": 0.8851582725987099,
+          "approximation_ratio_unconditional": 0.04968005298843979
+        },
+        {
+          "replicate": 8,
+          "score": 0.17131560598578738,
+          "feasible_probability": 0.7881574623403842,
+          "optimal_probability": 1.7584891717158002e-05,
+          "expected_feasible_size_unconditional": 0.4624773176440983,
+          "expected_size_given_feasible": 0.5867828952235012,
+          "approximation_ratio_unconditional": 0.09249546352881965
+        },
+        {
+          "replicate": 9,
+          "score": 0.10104438607077658,
+          "feasible_probability": 0.2736999601886891,
+          "optimal_probability": 3.863856550922204e-05,
+          "expected_feasible_size_unconditional": 0.3683236520526518,
+          "expected_size_given_feasible": 1.3457205174554245,
+          "approximation_ratio_unconditional": 0.07366473041053036
+        },
+        {
+          "replicate": 10,
+          "score": 0.03438975677190287,
+          "feasible_probability": 0.075807831748613,
+          "optimal_probability": 0.00034182382211694787,
+          "expected_feasible_size_unconditional": 0.13361758820756164,
+          "expected_size_given_feasible": 1.7625829037117442,
+          "approximation_ratio_unconditional": 0.026723517641512328
+        },
+        {
+          "replicate": 11,
+          "score": 0.18646219173018913,
+          "feasible_probability": 0.6565931364145695,
+          "optimal_probability": 1.3060977950075073e-06,
+          "expected_feasible_size_unconditional": 0.6040127578214171,
+          "expected_size_given_feasible": 0.9199193904458461,
+          "approximation_ratio_unconditional": 0.1208025515642834
+        }
+      ],
+      "normalized_random": [
+        {
+          "replicate": 0,
+          "score": 0.18985676908709787,
+          "feasible_probability": 0.6999206505967827,
+          "optimal_probability": 7.467907868947118e-05,
+          "expected_feasible_size_unconditional": 0.5992301712887361,
+          "expected_size_given_feasible": 0.8561401507125223,
+          "approximation_ratio_unconditional": 0.11984603425774723
+        },
+        {
+          "replicate": 1,
+          "score": 0.09558755515258602,
+          "feasible_probability": 0.2744230635564326,
+          "optimal_probability": 2.3171435940893423e-06,
+          "expected_feasible_size_unconditional": 0.3407233475552211,
+          "expected_size_given_feasible": 1.2415988041950945,
+          "approximation_ratio_unconditional": 0.06814466951104423
+        },
+        {
+          "replicate": 2,
+          "score": 0.2101136391657374,
+          "feasible_probability": 0.636725242833022,
+          "optimal_probability": 4.549731562095931e-05,
+          "expected_feasible_size_unconditional": 0.7321487027676498,
+          "expected_size_given_feasible": 1.1498659916639304,
+          "approximation_ratio_unconditional": 0.14642974055352995
+        },
+        {
+          "replicate": 3,
+          "score": 0.24349355595328911,
+          "feasible_probability": 0.5796172398358972,
+          "optimal_probability": 8.737897729408172e-05,
+          "expected_feasible_size_unconditional": 0.9275499361268793,
+          "expected_size_given_feasible": 1.6002801027614184,
+          "approximation_ratio_unconditional": 0.18550998722537587
+        },
+        {
+          "replicate": 4,
+          "score": 0.24877715762573777,
+          "feasible_probability": 0.7281898116726166,
+          "optimal_probability": 6.002110997754766e-05,
+          "expected_feasible_size_unconditional": 0.8797158559049086,
+          "expected_size_given_feasible": 1.2080859163412958,
+          "approximation_ratio_unconditional": 0.17594317118098174
+        },
+        {
+          "replicate": 5,
+          "score": 0.14698698128970472,
+          "feasible_probability": 0.5004555387653116,
+          "optimal_probability": 6.06216183062822e-06,
+          "expected_feasible_size_unconditional": 0.4846995593635795,
+          "expected_size_given_feasible": 0.9685167249010689,
+          "approximation_ratio_unconditional": 0.0969399118727159
+        },
+        {
+          "replicate": 6,
+          "score": 0.19139760538756848,
+          "feasible_probability": 0.6806665314643073,
+          "optimal_probability": 5.104185466855817e-05,
+          "expected_feasible_size_unconditional": 0.616590958887353,
+          "expected_size_given_feasible": 0.9058634887789921,
+          "approximation_ratio_unconditional": 0.12331819177747061
+        },
+        {
+          "replicate": 7,
+          "score": 0.16860254900812388,
+          "feasible_probability": 0.4074361778513247,
+          "optimal_probability": 0.00042608599552162356,
+          "expected_feasible_size_unconditional": 0.638762048620555,
+          "expected_size_given_feasible": 1.5677597703501973,
+          "approximation_ratio_unconditional": 0.127752409724111
+        },
+        {
+          "replicate": 8,
+          "score": 0.20466728278196417,
+          "feasible_probability": 0.7574134547629003,
+          "optimal_probability": 1.4289606273344489e-05,
+          "expected_feasible_size_unconditional": 0.644611824520529,
+          "expected_size_given_feasible": 0.8510699413470512,
+          "approximation_ratio_unconditional": 0.1289223649041058
+        },
+        {
+          "replicate": 9,
+          "score": 0.25281483931808885,
+          "feasible_probability": 0.7931192632981034,
+          "optimal_probability": 0.00011029991986835797,
+          "expected_feasible_size_unconditional": 0.867376690041557,
+          "expected_size_given_feasible": 1.0936270623848698,
+          "approximation_ratio_unconditional": 0.1734753380083114
+        },
+        {
+          "replicate": 10,
+          "score": 0.16704624235717308,
+          "feasible_probability": 0.651707223048487,
+          "optimal_probability": 2.495179398384557e-05,
+          "expected_feasible_size_unconditional": 0.5093464105191421,
+          "expected_size_given_feasible": 0.7815571049474875,
+          "approximation_ratio_unconditional": 0.10186928210382842
+        },
+        {
+          "replicate": 11,
+          "score": 0.13306897261478645,
+          "feasible_probability": 0.397960405757158,
+          "optimal_probability": 1.5564845429274526e-05,
+          "expected_feasible_size_unconditional": 0.4663452041385667,
+          "expected_size_given_feasible": 1.1718381964439404,
+          "approximation_ratio_unconditional": 0.09326904082771334
+        }
+      ]
+    }
+  },
+  {
+    "graph": {
+      "name": "sloane_1dc_64_first22",
+      "vertices": 22,
+      "edges": 109,
+      "exact_optimum": 5,
+      "source": "induced:C:\\Users\\psgpe\\Downloads\\Taiwan\\QOBLIB\\07-independentset\\instances\\sloane_1dc_64.gph;vertices_1_based=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22"
+    },
+    "methods": {
+      "normalized_de": [
+        {
+          "replicate": 0,
+          "score": 0.18673857607177777,
+          "feasible_probability": 0.5799632343790841,
+          "optimal_probability": 3.563361344711493e-05,
+          "expected_feasible_size_unconditional": 0.6436667211525378,
+          "expected_size_given_feasible": 1.1098405605687323,
+          "approximation_ratio_unconditional": 0.12873334423050756
+        },
+        {
+          "replicate": 1,
+          "score": 0.17646174357648864,
+          "feasible_probability": 0.3398096656921236,
+          "optimal_probability": 0.00036834417077299204,
+          "expected_feasible_size_unconditional": 0.7119434548229151,
+          "expected_size_given_feasible": 2.09512420246443,
+          "approximation_ratio_unconditional": 0.142388690964583
+        },
+        {
+          "replicate": 2,
+          "score": 0.21957517698554696,
+          "feasible_probability": 0.45186602616290206,
+          "optimal_probability": 0.0003848013971095029,
+          "expected_feasible_size_unconditional": 0.8714618700998968,
+          "expected_size_given_feasible": 1.9285846238542537,
+          "approximation_ratio_unconditional": 0.17429237401997938
+        },
+        {
+          "replicate": 3,
+          "score": 0.24812637343692973,
+          "feasible_probability": 0.5931567708927239,
+          "optimal_probability": 0.00016715208208529882,
+          "expected_feasible_size_unconditional": 0.94384454163568,
+          "expected_size_given_feasible": 1.5912227389989284,
+          "approximation_ratio_unconditional": 0.188768908327136
+        },
+        {
+          "replicate": 4,
+          "score": 0.2939365146726822,
+          "feasible_probability": 0.5152033943953966,
+          "optimal_probability": 0.0017415530353801073,
+          "expected_feasible_size_unconditional": 1.2099039348714875,
+          "expected_size_given_feasible": 2.3484005502163634,
+          "approximation_ratio_unconditional": 0.2419807869742975
+        },
+        {
+          "replicate": 5,
+          "score": 0.26569302497436903,
+          "feasible_probability": 0.5372298568493892,
+          "optimal_probability": 0.00017971143774313743,
+          "expected_feasible_size_unconditional": 1.0596255571499715,
+          "expected_size_given_feasible": 1.9723876914887002,
+          "approximation_ratio_unconditional": 0.21192511142999432
+        },
+        {
+          "replicate": 6,
+          "score": 0.18258488062770467,
+          "feasible_probability": 0.3447303538305346,
+          "optimal_probability": 0.00038472119370013935,
+          "expected_feasible_size_unconditional": 0.7400783247311309,
+          "expected_size_given_feasible": 2.1468324924324613,
+          "approximation_ratio_unconditional": 0.14801566494622617
+        },
+        {
+          "replicate": 7,
+          "score": 0.2531795316626228,
+          "feasible_probability": 0.6279698132003243,
+          "optimal_probability": 0.00014526011805692925,
+          "expected_feasible_size_unconditional": 0.9517311765653806,
+          "expected_size_given_feasible": 1.5155683546555692,
+          "approximation_ratio_unconditional": 0.19034623531307612
+        },
+        {
+          "replicate": 8,
+          "score": 0.2037977704688168,
+          "feasible_probability": 0.3938903449218803,
+          "optimal_probability": 0.000469195977884969,
+          "expected_feasible_size_unconditional": 0.8214571849107877,
+          "expected_size_given_feasible": 2.0854971326441274,
+          "approximation_ratio_unconditional": 0.16429143698215753
+        },
+        {
+          "replicate": 9,
+          "score": 0.30135061259972257,
+          "feasible_probability": 0.573630992367341,
+          "optimal_probability": 0.0005190529162382616,
+          "expected_feasible_size_unconditional": 1.2192887506696446,
+          "expected_size_given_feasible": 2.125562891289594,
+          "approximation_ratio_unconditional": 0.2438577501339289
+        },
+        {
+          "replicate": 10,
+          "score": 0.2531410450717093,
+          "feasible_probability": 0.546826855627861,
+          "optimal_probability": 0.0002700578440862506,
+          "expected_feasible_size_unconditional": 0.9919542252395082,
+          "expected_size_given_feasible": 1.8140188526413108,
+          "approximation_ratio_unconditional": 0.19839084504790164
+        },
+        {
+          "replicate": 11,
+          "score": 0.2259375156778558,
+          "feasible_probability": 0.5537821251779912,
+          "optimal_probability": 0.0001291059814740871,
+          "expected_feasible_size_unconditional": 0.8526351333234408,
+          "expected_size_given_feasible": 1.5396580975765428,
+          "approximation_ratio_unconditional": 0.17052702666468816
+        }
+      ],
+      "unnormalized_de": [
+        {
+          "replicate": 0,
+          "score": 0.15311629415020217,
+          "feasible_probability": 0.5174287122243666,
+          "optimal_probability": 6.544244240817784e-07,
+          "expected_feasible_size_unconditional": 0.5068662966082974,
+          "expected_size_given_feasible": 0.9795867230276755,
+          "approximation_ratio_unconditional": 0.10137325932165948
+        },
+        {
+          "replicate": 1,
+          "score": 0.12850030108267366,
+          "feasible_probability": 0.2509264365468438,
+          "optimal_probability": 0.0002943988123392304,
+          "expected_feasible_size_unconditional": 0.5166702886245224,
+          "expected_size_given_feasible": 2.059050834717722,
+          "approximation_ratio_unconditional": 0.10333405772490448
+        },
+        {
+          "replicate": 2,
+          "score": 0.09553971647781193,
+          "feasible_probability": 0.16046076326067155,
+          "optimal_probability": 0.0008583483545206807,
+          "expected_feasible_size_unconditional": 0.396395265315573,
+          "expected_size_given_feasible": 2.4703563491818956,
+          "approximation_ratio_unconditional": 0.0792790530631146
+        },
+        {
+          "replicate": 3,
+          "score": 0.2072542074497107,
+          "feasible_probability": 0.5109257616712461,
+          "optimal_probability": 9.905700652905345e-05,
+          "expected_feasible_size_unconditional": 0.7806843351547692,
+          "expected_size_given_feasible": 1.5279799801073615,
+          "approximation_ratio_unconditional": 0.15613686703095384
+        },
+        {
+          "replicate": 4,
+          "score": 0.2345517943499923,
+          "feasible_probability": 0.6838028776728784,
+          "optimal_probability": 1.9834097435757772e-06,
+          "expected_feasible_size_unconditional": 0.8308550536513429,
+          "expected_size_given_feasible": 1.2150505369016773,
+          "approximation_ratio_unconditional": 0.16617101073026858
+        },
+        {
+          "replicate": 5,
+          "score": 0.2249899011239385,
+          "feasible_probability": 0.42575505239854516,
+          "optimal_probability": 0.0008823471675688725,
+          "expected_feasible_size_unconditional": 0.9109690454609588,
+          "expected_size_given_feasible": 2.139655279083358,
+          "approximation_ratio_unconditional": 0.18219380909219177
+        },
+        {
+          "replicate": 6,
+          "score": 0.11759866434525595,
+          "feasible_probability": 0.24006256783707647,
+          "optimal_probability": 0.00036782380977525475,
+          "expected_feasible_size_unconditional": 0.46750225804552253,
+          "expected_size_given_feasible": 1.947418384538829,
+          "approximation_ratio_unconditional": 0.0935004516091045
+        },
+        {
+          "replicate": 7,
+          "score": 0.20580691822523747,
+          "feasible_probability": 0.4832287032465016,
+          "optimal_probability": 0.00012301759261987985,
+          "expected_feasible_size_unconditional": 0.7872664675121617,
+          "expected_size_given_feasible": 1.6291798525688286,
+          "approximation_ratio_unconditional": 0.15745329350243234
+        },
+        {
+          "replicate": 8,
+          "score": 0.29231911201693694,
+          "feasible_probability": 0.8044546485154092,
+          "optimal_probability": 0.00011009568168636729,
+          "expected_feasible_size_unconditional": 1.0592306162248721,
+          "expected_size_given_feasible": 1.316706439797001,
+          "approximation_ratio_unconditional": 0.21184612324497443
+        },
+        {
+          "replicate": 9,
+          "score": 0.18848327529293304,
+          "feasible_probability": 0.4436005399576193,
+          "optimal_probability": 6.661673458939567e-05,
+          "expected_feasible_size_unconditional": 0.7205328355676188,
+          "expected_size_given_feasible": 1.6242830444626084,
+          "approximation_ratio_unconditional": 0.14410656711352376
+        },
+        {
+          "replicate": 10,
+          "score": 0.03840631868683415,
+          "feasible_probability": 0.06044969260373318,
+          "optimal_probability": 0.0006180294414938263,
+          "expected_feasible_size_unconditional": 0.16103421033043686,
+          "expected_size_given_feasible": 2.6639376214212858,
+          "approximation_ratio_unconditional": 0.03220684206608737
+        },
+        {
+          "replicate": 11,
+          "score": 0.23994707889552375,
+          "feasible_probability": 0.6953803730664481,
+          "optimal_probability": 4.888484464593315e-06,
+          "expected_feasible_size_unconditional": 0.8520390973388141,
+          "expected_size_given_feasible": 1.2252849380570543,
+          "approximation_ratio_unconditional": 0.17040781946776282
+        }
+      ],
+      "normalized_random": [
+        {
+          "replicate": 0,
+          "score": 0.28772004182364314,
+          "feasible_probability": 0.7230238250254168,
+          "optimal_probability": 0.00026726394082940517,
+          "expected_feasible_size_unconditional": 1.0767542166794706,
+          "expected_size_given_feasible": 1.489237531891316,
+          "approximation_ratio_unconditional": 0.2153508433358941
+        },
+        {
+          "replicate": 1,
+          "score": 0.1192697824968964,
+          "feasible_probability": 0.3299290604297816,
+          "optimal_probability": 6.3420753654464915e-06,
+          "expected_feasible_size_unconditional": 0.43137645467538444,
+          "expected_size_given_feasible": 1.3074824452064107,
+          "approximation_ratio_unconditional": 0.08627529093507688
+        },
+        {
+          "replicate": 2,
+          "score": 0.24357165536748496,
+          "feasible_probability": 0.5476625471858751,
+          "optimal_probability": 0.00018861542279917246,
+          "expected_feasible_size_unconditional": 0.9437912339659883,
+          "expected_size_given_feasible": 1.7233079727938163,
+          "approximation_ratio_unconditional": 0.18875824679319766
+        },
+        {
+          "replicate": 3,
+          "score": 0.25380736995068487,
+          "feasible_probability": 0.46923729755067445,
+          "optimal_probability": 0.0004896201539470136,
+          "expected_feasible_size_unconditional": 1.0338061757856531,
+          "expected_size_given_feasible": 2.2031628371868908,
+          "approximation_ratio_unconditional": 0.20676123515713063
+        },
+        {
+          "replicate": 4,
+          "score": 0.25606123206550385,
+          "feasible_probability": 0.5648539719935739,
+          "optimal_probability": 0.00033037492571616543,
+          "expected_feasible_size_unconditional": 0.9974662056735869,
+          "expected_size_given_feasible": 1.7658833169804367,
+          "approximation_ratio_unconditional": 0.1994932411347174
+        },
+        {
+          "replicate": 5,
+          "score": 0.14004452805118442,
+          "feasible_probability": 0.4686072696060221,
+          "optimal_probability": 2.407608867670971e-06,
+          "expected_feasible_size_unconditional": 0.4659159959418265,
+          "expected_size_given_feasible": 0.9942568674479627,
+          "approximation_ratio_unconditional": 0.09318319918836529
+        },
+        {
+          "replicate": 6,
+          "score": 0.2008231473083073,
+          "feasible_probability": 0.5781416635317037,
+          "optimal_probability": 1.9590297088338556e-05,
+          "expected_feasible_size_unconditional": 0.7150204169043242,
+          "expected_size_given_feasible": 1.2367564249503606,
+          "approximation_ratio_unconditional": 0.14300408338086484
+        },
+        {
+          "replicate": 7,
+          "score": 0.12155897289465162,
+          "feasible_probability": 0.24196194415086436,
+          "optimal_probability": 0.00011631874047557179,
+          "expected_feasible_size_unconditional": 0.4866684939722314,
+          "expected_size_given_feasible": 2.0113431295162325,
+          "approximation_ratio_unconditional": 0.09733369879444628
+        },
+        {
+          "replicate": 8,
+          "score": 0.20033327260733466,
+          "feasible_probability": 0.5635096065877647,
+          "optimal_probability": 4.6154245270827695e-05,
+          "expected_feasible_size_unconditional": 0.7198538669362022,
+          "expected_size_given_feasible": 1.277447373604069,
+          "approximation_ratio_unconditional": 0.14397077338724046
+        },
+        {
+          "replicate": 9,
+          "score": 0.3491842479545386,
+          "feasible_probability": 0.755263146188477,
+          "optimal_probability": 0.00045347007656344583,
+          "expected_feasible_size_unconditional": 1.3677228290827501,
+          "expected_size_given_feasible": 1.8109222407913346,
+          "approximation_ratio_unconditional": 0.27354456581655
+        },
+        {
+          "replicate": 10,
+          "score": 0.20379979327709755,
+          "feasible_probability": 0.5684610883291049,
+          "optimal_probability": 0.00010732187713463214,
+          "expected_feasible_size_unconditional": 0.7346342698745171,
+          "expected_size_given_feasible": 1.292321119170795,
+          "approximation_ratio_unconditional": 0.1469268539749034
+        },
+        {
+          "replicate": 11,
+          "score": 0.13324473667362755,
+          "feasible_probability": 0.3393474337465632,
+          "optimal_probability": 8.897651297202034e-06,
+          "expected_feasible_size_unconditional": 0.4965388444307347,
+          "expected_size_given_feasible": 1.46321673615946,
+          "approximation_ratio_unconditional": 0.09930776888614694
+        }
+      ]
+    }
+  },
+  {
+    "graph": {
+      "name": "hamming6-4_first24",
+      "vertices": 24,
+      "edges": 48,
+      "exact_optimum": 10,
+      "source": "induced:C:\\Users\\psgpe\\Downloads\\Taiwan\\QOBLIB\\07-independentset\\instances\\hamming6-4.gph;vertices_1_based=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24"
+    },
+    "methods": {
+      "normalized_de": [
+        {
+          "replicate": 0,
+          "score": 0.025111295286712732,
+          "feasible_probability": 0.07704973948873015,
+          "optimal_probability": 1.8187919639882213e-07,
+          "expected_feasible_size_unconditional": 0.17406275868040616,
+          "expected_size_given_feasible": 2.259096005196304,
+          "approximation_ratio_unconditional": 0.017406275868040617
+        },
+        {
+          "replicate": 1,
+          "score": 0.23079985291926058,
+          "feasible_probability": 0.482542630196538,
+          "optimal_probability": 7.762560049959695e-06,
+          "expected_feasible_size_unconditional": 1.825436492595943,
+          "expected_size_given_feasible": 3.782953833223914,
+          "approximation_ratio_unconditional": 0.1825436492595943
+        },
+        {
+          "replicate": 2,
+          "score": 0.08653540833610883,
+          "feasible_probability": 0.13248943469035263,
+          "optimal_probability": 0.00023921656913886486,
+          "expected_feasible_size_unconditional": 0.7322666072478884,
+          "expected_size_given_feasible": 5.526981143510074,
+          "approximation_ratio_unconditional": 0.07322666072478884
+        },
+        {
+          "replicate": 3,
+          "score": 0.13135882891108214,
+          "feasible_probability": 0.3472070066218147,
+          "optimal_probability": 6.569293281476515e-07,
+          "expected_feasible_size_unconditional": 0.9663796401656863,
+          "expected_size_given_feasible": 2.7832953302647137,
+          "approximation_ratio_unconditional": 0.09663796401656863
+        },
+        {
+          "replicate": 4,
+          "score": 0.05454016139348686,
+          "feasible_probability": 0.08265339147964544,
+          "optimal_probability": 0.00025503496442563664,
+          "expected_feasible_size_unconditional": 0.462110635044159,
+          "expected_size_given_feasible": 5.590945837448912,
+          "approximation_ratio_unconditional": 0.0462110635044159
+        },
+        {
+          "replicate": 5,
+          "score": 0.20146008722371883,
+          "feasible_probability": 0.37034104709700755,
+          "optimal_probability": 1.821973864048414e-06,
+          "expected_feasible_size_unconditional": 1.6442552702055209,
+          "expected_size_given_feasible": 4.439840744347258,
+          "approximation_ratio_unconditional": 0.16442552702055208
+        },
+        {
+          "replicate": 6,
+          "score": 0.1318623321201189,
+          "feasible_probability": 0.21333708953766894,
+          "optimal_probability": 0.0002056027706405392,
+          "expected_feasible_size_unconditional": 1.1047722247369187,
+          "expected_size_given_feasible": 5.178528624024605,
+          "approximation_ratio_unconditional": 0.11047722247369188
+        },
+        {
+          "replicate": 7,
+          "score": 0.09900927268613775,
+          "feasible_probability": 0.26030915279560524,
+          "optimal_probability": 6.50111318714171e-07,
+          "expected_feasible_size_unconditional": 0.7297819487874754,
+          "expected_size_given_feasible": 2.803520125780979,
+          "approximation_ratio_unconditional": 0.07297819487874754
+        },
+        {
+          "replicate": 8,
+          "score": 0.2832207776517166,
+          "feasible_probability": 0.5341475345830715,
+          "optimal_probability": 2.1989845450474246e-05,
+          "expected_feasible_size_unconditional": 2.2980052673204683,
+          "expected_size_given_feasible": 4.302192032233519,
+          "approximation_ratio_unconditional": 0.22980052673204682
+        },
+        {
+          "replicate": 9,
+          "score": 0.2845959235282275,
+          "feasible_probability": 0.5485856207271644,
+          "optimal_probability": 2.701175031846688e-05,
+          "expected_feasible_size_unconditional": 2.2973060851793146,
+          "expected_size_given_feasible": 4.187689210909641,
+          "approximation_ratio_unconditional": 0.22973060851793145
+        },
+        {
+          "replicate": 10,
+          "score": 0.10751065100109973,
+          "feasible_probability": 0.24911497155654813,
+          "optimal_probability": 2.1061111840502718e-06,
+          "expected_feasible_size_unconditional": 0.825986273176489,
+          "expected_size_given_feasible": 3.315682987720364,
+          "approximation_ratio_unconditional": 0.0825986273176489
+        },
+        {
+          "replicate": 11,
+          "score": 0.18094707220920206,
+          "feasible_probability": 0.519256416145891,
+          "optimal_probability": 1.5723678592296755e-07,
+          "expected_feasible_size_unconditional": 1.2902139128541648,
+          "expected_size_given_feasible": 2.484733693674118,
+          "approximation_ratio_unconditional": 0.12902139128541648
+        }
+      ],
+      "unnormalized_de": [
+        {
+          "replicate": 0,
+          "score": 0.11818616613699716,
+          "feasible_probability": 0.2833457505494284,
+          "optimal_probability": 2.453750189664474e-07,
+          "expected_feasible_size_unconditional": 0.8985152973829957,
+          "expected_size_given_feasible": 3.1710914867814606,
+          "approximation_ratio_unconditional": 0.08985152973829957
+        },
+        {
+          "replicate": 1,
+          "score": 0.07563117791849863,
+          "feasible_probability": 0.10940696963029795,
+          "optimal_probability": 0.0001489193021970154,
+          "expected_feasible_size_unconditional": 0.6465325112991959,
+          "expected_size_given_feasible": 5.909427100338518,
+          "approximation_ratio_unconditional": 0.06465325112991958
+        },
+        {
+          "replicate": 2,
+          "score": 0.0015006905814729916,
+          "feasible_probability": 0.0017413189457832425,
+          "optimal_probability": 6.82625704754807e-05,
+          "expected_feasible_size_unconditional": 0.013094930442757972,
+          "expected_size_given_feasible": 7.5201217298350205,
+          "approximation_ratio_unconditional": 0.0013094930442757971
+        },
+        {
+          "replicate": 3,
+          "score": 0.16771963833451387,
+          "feasible_probability": 0.2949363915924742,
+          "optimal_probability": 2.1081258097928822e-05,
+          "expected_feasible_size_unconditional": 1.3822072886074195,
+          "expected_size_given_feasible": 4.6864589382963375,
+          "approximation_ratio_unconditional": 0.13822072886074194
+        },
+        {
+          "replicate": 4,
+          "score": 0.15236530133882922,
+          "feasible_probability": 0.4738971972173094,
+          "optimal_probability": 4.2259727536322713e-10,
+          "expected_feasible_size_unconditional": 1.0497558151144895,
+          "expected_size_given_feasible": 2.2151551460497783,
+          "approximation_ratio_unconditional": 0.10497558151144895
+        },
+        {
+          "replicate": 5,
+          "score": 0.346135229848552,
+          "feasible_probability": 0.47798935451435764,
+          "optimal_probability": 0.0008161903994112973,
+          "expected_feasible_size_unconditional": 2.981322467972634,
+          "expected_size_given_feasible": 6.2372152011663315,
+          "approximation_ratio_unconditional": 0.2981322467972634
+        },
+        {
+          "replicate": 6,
+          "score": 0.00393168852297034,
+          "feasible_probability": 0.005029753670563579,
+          "optimal_probability": 4.610461209425855e-05,
+          "expected_feasible_size_unconditional": 0.03417187002890417,
+          "expected_size_given_feasible": 6.793945045240206,
+          "approximation_ratio_unconditional": 0.003417187002890417
+        },
+        {
+          "replicate": 7,
+          "score": 0.1572914282695187,
+          "feasible_probability": 0.2717728404164367,
+          "optimal_probability": 2.4366705888139123e-05,
+          "expected_feasible_size_unconditional": 1.30108052551403,
+          "expected_size_given_feasible": 4.787382446017742,
+          "approximation_ratio_unconditional": 0.130108052551403
+        },
+        {
+          "replicate": 8,
+          "score": 0.23372964642073168,
+          "feasible_probability": 0.4603496896785704,
+          "optimal_probability": 5.5307628231786435e-06,
+          "expected_feasible_size_unconditional": 1.8769329476216883,
+          "expected_size_given_feasible": 4.077189557643056,
+          "approximation_ratio_unconditional": 0.18769329476216884
+        },
+        {
+          "replicate": 9,
+          "score": 0.09847469456770044,
+          "feasible_probability": 0.1817170402725086,
+          "optimal_probability": 4.809527430752643e-06,
+          "expected_feasible_size_unconditional": 0.8030178815859189,
+          "expected_size_given_feasible": 4.419056574890765,
+          "approximation_ratio_unconditional": 0.08030178815859189
+        },
+        {
+          "replicate": 10,
+          "score": 0.0007810695443316972,
+          "feasible_probability": 0.0008199745836150385,
+          "optimal_probability": 9.577900154408049e-05,
+          "expected_feasible_size_unconditional": 0.006751273355841732,
+          "expected_size_given_feasible": 8.233515392729927,
+          "approximation_ratio_unconditional": 0.0006751273355841733
+        },
+        {
+          "replicate": 11,
+          "score": 0.22795504660284197,
+          "feasible_probability": 0.7711118266224539,
+          "optimal_probability": 5.458538813990848e-10,
+          "expected_feasible_size_unconditional": 1.5084386380413308,
+          "expected_size_given_feasible": 1.9561866203614608,
+          "approximation_ratio_unconditional": 0.1508438638041331
+        }
+      ],
+      "normalized_random": [
+        {
+          "replicate": 0,
+          "score": 0.09097793375685476,
+          "feasible_probability": 0.1749230766110444,
+          "optimal_probability": 1.5818820549005523e-05,
+          "expected_feasible_size_unconditional": 0.7348167139061307,
+          "expected_size_given_feasible": 4.200799163509198,
+          "approximation_ratio_unconditional": 0.07348167139061307
+        },
+        {
+          "replicate": 1,
+          "score": 0.015299709664336074,
+          "feasible_probability": 0.021606032190167206,
+          "optimal_probability": 0.00018645288916828613,
+          "expected_feasible_size_unconditional": 0.13092493223027282,
+          "expected_size_given_feasible": 6.059647189170443,
+          "approximation_ratio_unconditional": 0.013092493223027283
+        },
+        {
+          "replicate": 2,
+          "score": 0.0902488633732686,
+          "feasible_probability": 0.22728876069930642,
+          "optimal_probability": 5.261581158874264e-07,
+          "expected_feasible_size_unconditional": 0.6751985576380898,
+          "expected_size_given_feasible": 2.970664081940019,
+          "approximation_ratio_unconditional": 0.06751985576380898
+        },
+        {
+          "replicate": 3,
+          "score": 0.1586507946278585,
+          "feasible_probability": 0.3291927876446725,
+          "optimal_probability": 1.0239439364366071e-06,
+          "expected_feasible_size_unconditional": 1.2573125987740714,
+          "expected_size_given_feasible": 3.8193807579138164,
+          "approximation_ratio_unconditional": 0.12573125987740713
+        },
+        {
+          "replicate": 4,
+          "score": 0.1240176547174944,
+          "feasible_probability": 0.2102519163045639,
+          "optimal_probability": 7.295178214027143e-05,
+          "expected_feasible_size_unconditional": 1.0297422514150294,
+          "expected_size_given_feasible": 4.897659291358749,
+          "approximation_ratio_unconditional": 0.10297422514150294
+        },
+        {
+          "replicate": 5,
+          "score": 0.017180423678088905,
+          "feasible_probability": 0.03482101523922908,
+          "optimal_probability": 4.6672228645442135e-06,
+          "expected_feasible_size_unconditional": 0.1369715534844986,
+          "expected_size_given_feasible": 3.9335887406920733,
+          "approximation_ratio_unconditional": 0.01369715534844986
+        },
+        {
+          "replicate": 6,
+          "score": 0.10655603368739289,
+          "feasible_probability": 0.2477137805963115,
+          "optimal_probability": 6.907222441192321e-07,
+          "expected_feasible_size_unconditional": 0.817844829472007,
+          "expected_size_given_feasible": 3.301571787824003,
+          "approximation_ratio_unconditional": 0.0817844829472007
+        },
+        {
+          "replicate": 7,
+          "score": 0.2736358178653004,
+          "feasible_probability": 0.5225555739503757,
+          "optimal_probability": 1.0885370557133294e-05,
+          "expected_feasible_size_unconditional": 2.2137753912762355,
+          "expected_size_given_feasible": 4.2364401063425765,
+          "approximation_ratio_unconditional": 0.22137753912762353
+        },
+        {
+          "replicate": 8,
+          "score": 0.07935348625141647,
+          "feasible_probability": 0.22947430059597515,
+          "optimal_probability": 1.894391129559092e-09,
+          "expected_feasible_size_unconditional": 0.5640605571822117,
+          "expected_size_given_feasible": 2.4580554585732335,
+          "approximation_ratio_unconditional": 0.056406055718221174
+        },
+        {
+          "replicate": 9,
+          "score": 0.11441493706082527,
+          "feasible_probability": 0.20605756804572162,
+          "optimal_probability": 1.7467961207993087e-05,
+          "expected_feasible_size_unconditional": 0.938048132659511,
+          "expected_size_given_feasible": 4.552359525331143,
+          "approximation_ratio_unconditional": 0.09380481326595111
+        },
+        {
+          "replicate": 10,
+          "score": 0.03299261104362505,
+          "feasible_probability": 0.05310784819157606,
+          "optimal_probability": 3.411683696025936e-05,
+          "expected_feasible_size_unconditional": 0.27673297015227377,
+          "expected_size_given_feasible": 5.2107735405511875,
+          "approximation_ratio_unconditional": 0.027673297015227378
+        },
+        {
+          "replicate": 11,
+          "score": 0.002197763836453091,
+          "feasible_probability": 0.0038358083091990423,
+          "optimal_probability": 7.933783361031944e-07,
+          "expected_feasible_size_unconditional": 0.018139846609491608,
+          "expected_size_given_feasible": 4.7290805867406345,
+          "approximation_ratio_unconditional": 0.0018139846609491607
+        }
+      ]
+    }
+  }
+]

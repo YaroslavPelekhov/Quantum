@@ -1,0 +1,18 @@
+[
+  {
+    "pdf": "output\\pdf\\prepared_20260910\\gsn_qaoa_mis_manuscript.pdf",
+    "warnings": []
+  },
+  {
+    "pdf": "output\\pdf\\prepared_20260910\\qaoa_mps_cross_backend_rank_reversal_manuscript.pdf",
+    "warnings": []
+  },
+  {
+    "pdf": "output\\pdf\\prepared_20260910\\qaoa_mps_cross_backend_rank_reversal_supplement.pdf",
+    "warnings": []
+  },
+  {
+    "pdf": "output\\pdf\\prepared_20260910\\weighted_pauli_uncertainty_manuscript.pdf",
+    "warnings": []
+  }
+]

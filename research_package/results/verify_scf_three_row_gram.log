@@ -1,0 +1,1 @@
+{"status": "exact_C009_Gram_identities_verified", "coefficient_terms": [12, 39, 21], "hull_rechecked": true, "target_all_weight_theorem_supported": true, "analytic_argument": "SCF_THREE_ROW_GRAM_C009.md", "unrestricted_SCF_theorem": false, "A_star_confirmed": false, "source_sha256_LF": "34b89211fd99fbc77819c1ad68734425a3d96effae89d477d7289e55071ea2db"}

@@ -1,0 +1,13 @@
+suite,name,vertices,edges,exact_optimum,source
+scaleup,ibm32_first20,20,43,9,"induced:C:\Users\psgpe\Downloads\Taiwan\QOBLIB\07-independentset\instances\ibm32.gph;vertices_1_based=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20"
+scaleup,football_first22,22,52,12,"induced:C:\Users\psgpe\Downloads\Taiwan\QOBLIB\07-independentset\instances\football.gph;vertices_1_based=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22"
+scaleup,johnson8-2-4_first24,24,150,7,"induced:C:\Users\psgpe\Downloads\Taiwan\QOBLIB\07-independentset\instances\johnson8-2-4.gph;vertices_1_based=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24"
+confirmatory,insecta-ant-colony1-day38_first20,20,142,5,"induced:C:\Users\psgpe\Downloads\Taiwan\QOBLIB\07-independentset\instances\insecta-ant-colony1-day38.gph;vertices_1_based=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20"
+confirmatory,sloane_1dc_64_first22,22,109,5,"induced:C:\Users\psgpe\Downloads\Taiwan\QOBLIB\07-independentset\instances\sloane_1dc_64.gph;vertices_1_based=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22"
+confirmatory,hamming6-4_first24,24,48,10,"induced:C:\Users\psgpe\Downloads\Taiwan\QOBLIB\07-independentset\instances\hamming6-4.gph;vertices_1_based=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24"
+random_subsets,es60fst01_random_seed4101,20,5,16,"induced:C:\Users\psgpe\Downloads\Taiwan\QOBLIB\07-independentset\instances\es60fst01.gph;vertices_1_based=8,14,17,26,28,29,40,48,50,52,53,58,60,64,76,85,105,107,118,121"
+random_subsets,es60fst01_random_seed4102,20,6,15,"induced:C:\Users\psgpe\Downloads\Taiwan\QOBLIB\07-independentset\instances\es60fst01.gph;vertices_1_based=3,8,13,17,36,37,41,56,59,62,67,73,83,88,104,105,106,111,117,118"
+random_subsets,aves-sparrow-social_random_seed5201,22,68,10,"induced:C:\Users\psgpe\Downloads\Taiwan\QOBLIB\07-independentset\instances\aves-sparrow-social.gph;vertices_1_based=1,5,6,7,9,10,11,15,17,18,23,25,27,29,34,35,38,40,43,44,46,47"
+random_subsets,aves-sparrow-social_random_seed5202,22,67,9,"induced:C:\Users\psgpe\Downloads\Taiwan\QOBLIB\07-independentset\instances\aves-sparrow-social.gph;vertices_1_based=2,3,7,8,9,13,14,16,20,21,25,26,27,28,32,34,39,42,43,44,46,49"
+random_subsets,MANN-a9_random_seed6301,24,255,2,"induced:C:\Users\psgpe\Downloads\Taiwan\QOBLIB\07-independentset\instances\MANN-a9.gph;vertices_1_based=1,4,5,7,8,9,10,11,14,15,19,20,22,24,25,27,29,30,31,34,41,42,43,45"
+random_subsets,MANN-a9_random_seed6302,24,256,3,"induced:C:\Users\psgpe\Downloads\Taiwan\QOBLIB\07-independentset\instances\MANN-a9.gph;vertices_1_based=1,2,7,8,9,10,11,12,17,18,20,21,24,26,29,32,34,36,38,39,40,43,44,45"

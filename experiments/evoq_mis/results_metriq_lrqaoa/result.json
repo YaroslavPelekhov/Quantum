@@ -1,0 +1,106 @@
+{
+  "params": {
+    "benchmark_name": "Linear Ramp QAOA",
+    "graph_type": "1D",
+    "num_qubits": 10,
+    "qaoa_layers": [
+      3,
+      5,
+      7,
+      10
+    ],
+    "delta_beta": 0.3,
+    "delta_gamma": 0.3,
+    "shots": 4096,
+    "trials": 1,
+    "seed": 20260803,
+    "execution": "Direct use of metriq_gym.circuits.qaoa_circuit on local Qiskit Aer"
+  },
+  "platform": {
+    "provider": "local",
+    "device": "aer_simulator",
+    "simulator": true
+  },
+  "instance": {
+    "weighted_edges": [
+      [
+        0,
+        1,
+        0.2
+      ],
+      [
+        1,
+        2,
+        0.2
+      ],
+      [
+        2,
+        3,
+        1.0
+      ],
+      [
+        3,
+        4,
+        0.3
+      ],
+      [
+        4,
+        5,
+        0.1
+      ],
+      [
+        5,
+        6,
+        0.3
+      ],
+      [
+        6,
+        7,
+        0.3
+      ],
+      [
+        7,
+        8,
+        0.3
+      ],
+      [
+        8,
+        9,
+        0.3
+      ]
+    ],
+    "exact_maxcut": 3.0,
+    "uniform_random_approx_ratio": 0.5
+  },
+  "results": [
+    {
+      "layers": 3,
+      "approx_ratio": 0.6734944661458333,
+      "optimal_probability": 0.00927734375,
+      "circuit_depth": 11,
+      "two_qubit_gates": 27
+    },
+    {
+      "layers": 5,
+      "approx_ratio": 0.7054117838541667,
+      "optimal_probability": 0.011962890625,
+      "circuit_depth": 17,
+      "two_qubit_gates": 45
+    },
+    {
+      "layers": 7,
+      "approx_ratio": 0.726220703125,
+      "optimal_probability": 0.017333984375,
+      "circuit_depth": 23,
+      "two_qubit_gates": 63
+    },
+    {
+      "layers": 10,
+      "approx_ratio": 0.7522867838541667,
+      "optimal_probability": 0.025146484375,
+      "circuit_depth": 32,
+      "two_qubit_gates": 90
+    }
+  ],
+  "score": 0.7522867838541667
+}

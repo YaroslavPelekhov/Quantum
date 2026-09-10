@@ -10,10 +10,14 @@ __pycache__/
 # Local scratch and generated QA renders
 tmp/
 **/tmp/
+.prior_art_*/
+results/**/_prior_art_*
 
 # LaTeX intermediates (final named PDFs are tracked)
 *.aux
 *.log
+!research_package/results/*.log
+output/research_packages/*.zip
 *.out
 *.fls
 *.fdb_latexmk
@@ -39,4 +43,5 @@ experiments/evoq_mis_full_qoblib/results/mps_ladder/references/*.npy
 experiments/evoq_mis_full_qoblib/results/**/safe_runner.lock
 experiments/evoq_mis_full_qoblib/results/**/safe_runner*.log
 experiments/evoq_mis_full_qoblib/results/**/resource_monitor.csv
+results/**/active_job.json
 

@@ -1,0 +1,2215 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "case": "karate",
+      "method": "published_lr",
+      "qubits": 3,
+      "p2": 0.0,
+      "p1": 0.0,
+      "readout": 0.0,
+      "bks_rate": 0.908822151560378,
+      "ideal_reference": 0.9088221515603738,
+      "cx": 156,
+      "depth": 314,
+      "final_logical_to_physical": [
+        2,
+        0,
+        1
+      ],
+      "circuit_file": "research_package\\results\\circuits\\karate__published_lr__synthetic_line.qpy",
+      "circuit_sha256": "0067d82c4bd68d0add51f494c041eef913e4b9730735e182f338adae24d0b1b7",
+      "scorer": {
+        "constant_selected": 19,
+        "weights": [
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "impossible": false,
+        "bks": 20
+      }
+    },
+    {
+      "case": "karate",
+      "method": "published_lr",
+      "qubits": 3,
+      "p2": 0.0001,
+      "p1": 1e-05,
+      "readout": 0.01,
+      "bks_rate": 0.8779951315616483,
+      "ideal_reference": 0.9088221515603738,
+      "cx": 156,
+      "depth": 314,
+      "final_logical_to_physical": [
+        2,
+        0,
+        1
+      ],
+      "circuit_file": "research_package\\results\\circuits\\karate__published_lr__synthetic_line.qpy",
+      "circuit_sha256": "0067d82c4bd68d0add51f494c041eef913e4b9730735e182f338adae24d0b1b7",
+      "scorer": {
+        "constant_selected": 19,
+        "weights": [
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "impossible": false,
+        "bks": 20
+      }
+    },
+    {
+      "case": "karate",
+      "method": "published_lr",
+      "qubits": 3,
+      "p2": 0.001,
+      "p1": 0.0001,
+      "readout": 0.01,
+      "bks_rate": 0.8282107075644883,
+      "ideal_reference": 0.9088221515603738,
+      "cx": 156,
+      "depth": 314,
+      "final_logical_to_physical": [
+        2,
+        0,
+        1
+      ],
+      "circuit_file": "research_package\\results\\circuits\\karate__published_lr__synthetic_line.qpy",
+      "circuit_sha256": "0067d82c4bd68d0add51f494c041eef913e4b9730735e182f338adae24d0b1b7",
+      "scorer": {
+        "constant_selected": 19,
+        "weights": [
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "impossible": false,
+        "bks": 20
+      }
+    },
+    {
+      "case": "karate",
+      "method": "published_lr",
+      "qubits": 3,
+      "p2": 0.003,
+      "p1": 0.00030000000000000003,
+      "readout": 0.01,
+      "bks_rate": 0.7341560778648367,
+      "ideal_reference": 0.9088221515603738,
+      "cx": 156,
+      "depth": 314,
+      "final_logical_to_physical": [
+        2,
+        0,
+        1
+      ],
+      "circuit_file": "research_package\\results\\circuits\\karate__published_lr__synthetic_line.qpy",
+      "circuit_sha256": "0067d82c4bd68d0add51f494c041eef913e4b9730735e182f338adae24d0b1b7",
+      "scorer": {
+        "constant_selected": 19,
+        "weights": [
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "impossible": false,
+        "bks": 20
+      }
+    },
+    {
+      "case": "karate",
+      "method": "published_lr",
+      "qubits": 3,
+      "p2": 0.01,
+      "p1": 0.001,
+      "readout": 0.01,
+      "bks_rate": 0.5326457095070236,
+      "ideal_reference": 0.9088221515603738,
+      "cx": 156,
+      "depth": 314,
+      "final_logical_to_physical": [
+        2,
+        0,
+        1
+      ],
+      "circuit_file": "research_package\\results\\circuits\\karate__published_lr__synthetic_line.qpy",
+      "circuit_sha256": "0067d82c4bd68d0add51f494c041eef913e4b9730735e182f338adae24d0b1b7",
+      "scorer": {
+        "constant_selected": 19,
+        "weights": [
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "impossible": false,
+        "bks": 20
+      }
+    },
+    {
+      "case": "karate",
+      "method": "prior_matched_random",
+      "qubits": 3,
+      "p2": 0.0,
+      "p1": 0.0,
+      "readout": 0.0,
+      "bks_rate": 0.9952341586678369,
+      "ideal_reference": 0.995234158667834,
+      "cx": 156,
+      "depth": 314,
+      "final_logical_to_physical": [
+        2,
+        0,
+        1
+      ],
+      "circuit_file": "research_package\\results\\circuits\\karate__prior_matched_random__synthetic_line.qpy",
+      "circuit_sha256": "e48b2cae91235f953b8f4e6daf51436f7de6676b8be714dbcaa5abc888097028",
+      "scorer": {
+        "constant_selected": 19,
+        "weights": [
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "impossible": false,
+        "bks": 20
+      }
+    },
+    {
+      "case": "karate",
+      "method": "prior_matched_random",
+      "qubits": 3,
+      "p2": 0.0001,
+      "p1": 1e-05,
+      "readout": 0.01,
+      "bks_rate": 0.9582792159278382,
+      "ideal_reference": 0.995234158667834,
+      "cx": 156,
+      "depth": 314,
+      "final_logical_to_physical": [
+        2,
+        0,
+        1
+      ],
+      "circuit_file": "research_package\\results\\circuits\\karate__prior_matched_random__synthetic_line.qpy",
+      "circuit_sha256": "e48b2cae91235f953b8f4e6daf51436f7de6676b8be714dbcaa5abc888097028",
+      "scorer": {
+        "constant_selected": 19,
+        "weights": [
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "impossible": false,
+        "bks": 20
+      }
+    },
+    {
+      "case": "karate",
+      "method": "prior_matched_random",
+      "qubits": 3,
+      "p2": 0.001,
+      "p1": 0.0001,
+      "readout": 0.01,
+      "bks_rate": 0.8934107082495135,
+      "ideal_reference": 0.995234158667834,
+      "cx": 156,
+      "depth": 314,
+      "final_logical_to_physical": [
+        2,
+        0,
+        1
+      ],
+      "circuit_file": "research_package\\results\\circuits\\karate__prior_matched_random__synthetic_line.qpy",
+      "circuit_sha256": "e48b2cae91235f953b8f4e6daf51436f7de6676b8be714dbcaa5abc888097028",
+      "scorer": {
+        "constant_selected": 19,
+        "weights": [
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "impossible": false,
+        "bks": 20
+      }
+    },
+    {
+      "case": "karate",
+      "method": "prior_matched_random",
+      "qubits": 3,
+      "p2": 0.003,
+      "p1": 0.00030000000000000003,
+      "readout": 0.01,
+      "bks_rate": 0.7738736604445102,
+      "ideal_reference": 0.995234158667834,
+      "cx": 156,
+      "depth": 314,
+      "final_logical_to_physical": [
+        2,
+        0,
+        1
+      ],
+      "circuit_file": "research_package\\results\\circuits\\karate__prior_matched_random__synthetic_line.qpy",
+      "circuit_sha256": "e48b2cae91235f953b8f4e6daf51436f7de6676b8be714dbcaa5abc888097028",
+      "scorer": {
+        "constant_selected": 19,
+        "weights": [
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "impossible": false,
+        "bks": 20
+      }
+    },
+    {
+      "case": "karate",
+      "method": "prior_matched_random",
+      "qubits": 3,
+      "p2": 0.01,
+      "p1": 0.001,
+      "readout": 0.01,
+      "bks_rate": 0.5342603275753706,
+      "ideal_reference": 0.995234158667834,
+      "cx": 156,
+      "depth": 314,
+      "final_logical_to_physical": [
+        2,
+        0,
+        1
+      ],
+      "circuit_file": "research_package\\results\\circuits\\karate__prior_matched_random__synthetic_line.qpy",
+      "circuit_sha256": "e48b2cae91235f953b8f4e6daf51436f7de6676b8be714dbcaa5abc888097028",
+      "scorer": {
+        "constant_selected": 19,
+        "weights": [
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "impossible": false,
+        "bks": 20
+      }
+    },
+    {
+      "case": "chesapeake",
+      "method": "published_lr",
+      "qubits": 7,
+      "p2": 0.0,
+      "p1": 0.0,
+      "readout": 0.0,
+      "bks_rate": 0.7982931304718413,
+      "ideal_reference": 0.7982931304718344,
+      "cx": 1232,
+      "depth": 1091,
+      "final_logical_to_physical": [
+        0,
+        5,
+        1,
+        6,
+        2,
+        4,
+        3
+      ],
+      "circuit_file": "research_package\\results\\circuits\\chesapeake__published_lr__synthetic_line.qpy",
+      "circuit_sha256": "fa997de17e78ab91333ce4917afdcf1dbbf851b7dc04357121f52e55d6fe4a6b",
+      "scorer": {
+        "constant_selected": 14,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            66,
+            66
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 17
+      }
+    },
+    {
+      "case": "chesapeake",
+      "method": "published_lr",
+      "qubits": 7,
+      "p2": 0.0001,
+      "p1": 1e-05,
+      "readout": 0.01,
+      "bks_rate": 0.6783939746146936,
+      "ideal_reference": 0.7982931304718344,
+      "cx": 1232,
+      "depth": 1091,
+      "final_logical_to_physical": [
+        0,
+        5,
+        1,
+        6,
+        2,
+        4,
+        3
+      ],
+      "circuit_file": "research_package\\results\\circuits\\chesapeake__published_lr__synthetic_line.qpy",
+      "circuit_sha256": "fa997de17e78ab91333ce4917afdcf1dbbf851b7dc04357121f52e55d6fe4a6b",
+      "scorer": {
+        "constant_selected": 14,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            66,
+            66
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 17
+      }
+    },
+    {
+      "case": "chesapeake",
+      "method": "published_lr",
+      "qubits": 7,
+      "p2": 0.001,
+      "p1": 0.0001,
+      "readout": 0.01,
+      "bks_rate": 0.30064341018218566,
+      "ideal_reference": 0.7982931304718344,
+      "cx": 1232,
+      "depth": 1091,
+      "final_logical_to_physical": [
+        0,
+        5,
+        1,
+        6,
+        2,
+        4,
+        3
+      ],
+      "circuit_file": "research_package\\results\\circuits\\chesapeake__published_lr__synthetic_line.qpy",
+      "circuit_sha256": "fa997de17e78ab91333ce4917afdcf1dbbf851b7dc04357121f52e55d6fe4a6b",
+      "scorer": {
+        "constant_selected": 14,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            66,
+            66
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 17
+      }
+    },
+    {
+      "case": "chesapeake",
+      "method": "published_lr",
+      "qubits": 7,
+      "p2": 0.003,
+      "p1": 0.00030000000000000003,
+      "readout": 0.01,
+      "bks_rate": 0.060598916585545066,
+      "ideal_reference": 0.7982931304718344,
+      "cx": 1232,
+      "depth": 1091,
+      "final_logical_to_physical": [
+        0,
+        5,
+        1,
+        6,
+        2,
+        4,
+        3
+      ],
+      "circuit_file": "research_package\\results\\circuits\\chesapeake__published_lr__synthetic_line.qpy",
+      "circuit_sha256": "fa997de17e78ab91333ce4917afdcf1dbbf851b7dc04357121f52e55d6fe4a6b",
+      "scorer": {
+        "constant_selected": 14,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            66,
+            66
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 17
+      }
+    },
+    {
+      "case": "chesapeake",
+      "method": "published_lr",
+      "qubits": 7,
+      "p2": 0.01,
+      "p1": 0.001,
+      "readout": 0.01,
+      "bks_rate": 0.008376413034913498,
+      "ideal_reference": 0.7982931304718344,
+      "cx": 1232,
+      "depth": 1091,
+      "final_logical_to_physical": [
+        0,
+        5,
+        1,
+        6,
+        2,
+        4,
+        3
+      ],
+      "circuit_file": "research_package\\results\\circuits\\chesapeake__published_lr__synthetic_line.qpy",
+      "circuit_sha256": "fa997de17e78ab91333ce4917afdcf1dbbf851b7dc04357121f52e55d6fe4a6b",
+      "scorer": {
+        "constant_selected": 14,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            66,
+            66
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 17
+      }
+    },
+    {
+      "case": "chesapeake",
+      "method": "prior_matched_random",
+      "qubits": 7,
+      "p2": 0.0,
+      "p1": 0.0,
+      "readout": 0.0,
+      "bks_rate": 0.6640795390180165,
+      "ideal_reference": 0.6640795390180093,
+      "cx": 1232,
+      "depth": 1091,
+      "final_logical_to_physical": [
+        0,
+        5,
+        1,
+        6,
+        2,
+        4,
+        3
+      ],
+      "circuit_file": "research_package\\results\\circuits\\chesapeake__prior_matched_random__synthetic_line.qpy",
+      "circuit_sha256": "fd49582a60935c1f563933dbe6cbb92e49fe5c46c1a56dc8426d9e1b336f86db",
+      "scorer": {
+        "constant_selected": 14,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            66,
+            66
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 17
+      }
+    },
+    {
+      "case": "chesapeake",
+      "method": "prior_matched_random",
+      "qubits": 7,
+      "p2": 0.0001,
+      "p1": 1e-05,
+      "readout": 0.01,
+      "bks_rate": 0.5660405460497614,
+      "ideal_reference": 0.6640795390180093,
+      "cx": 1232,
+      "depth": 1091,
+      "final_logical_to_physical": [
+        0,
+        5,
+        1,
+        6,
+        2,
+        4,
+        3
+      ],
+      "circuit_file": "research_package\\results\\circuits\\chesapeake__prior_matched_random__synthetic_line.qpy",
+      "circuit_sha256": "fd49582a60935c1f563933dbe6cbb92e49fe5c46c1a56dc8426d9e1b336f86db",
+      "scorer": {
+        "constant_selected": 14,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            66,
+            66
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 17
+      }
+    },
+    {
+      "case": "chesapeake",
+      "method": "prior_matched_random",
+      "qubits": 7,
+      "p2": 0.001,
+      "p1": 0.0001,
+      "readout": 0.01,
+      "bks_rate": 0.2536014208736986,
+      "ideal_reference": 0.6640795390180093,
+      "cx": 1232,
+      "depth": 1091,
+      "final_logical_to_physical": [
+        0,
+        5,
+        1,
+        6,
+        2,
+        4,
+        3
+      ],
+      "circuit_file": "research_package\\results\\circuits\\chesapeake__prior_matched_random__synthetic_line.qpy",
+      "circuit_sha256": "fd49582a60935c1f563933dbe6cbb92e49fe5c46c1a56dc8426d9e1b336f86db",
+      "scorer": {
+        "constant_selected": 14,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            66,
+            66
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 17
+      }
+    },
+    {
+      "case": "chesapeake",
+      "method": "prior_matched_random",
+      "qubits": 7,
+      "p2": 0.003,
+      "p1": 0.00030000000000000003,
+      "readout": 0.01,
+      "bks_rate": 0.051968963116690664,
+      "ideal_reference": 0.6640795390180093,
+      "cx": 1232,
+      "depth": 1091,
+      "final_logical_to_physical": [
+        0,
+        5,
+        1,
+        6,
+        2,
+        4,
+        3
+      ],
+      "circuit_file": "research_package\\results\\circuits\\chesapeake__prior_matched_random__synthetic_line.qpy",
+      "circuit_sha256": "fd49582a60935c1f563933dbe6cbb92e49fe5c46c1a56dc8426d9e1b336f86db",
+      "scorer": {
+        "constant_selected": 14,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            66,
+            66
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 17
+      }
+    },
+    {
+      "case": "chesapeake",
+      "method": "prior_matched_random",
+      "qubits": 7,
+      "p2": 0.01,
+      "p1": 0.001,
+      "readout": 0.01,
+      "bks_rate": 0.008057466220425852,
+      "ideal_reference": 0.6640795390180093,
+      "cx": 1232,
+      "depth": 1091,
+      "final_logical_to_physical": [
+        0,
+        5,
+        1,
+        6,
+        2,
+        4,
+        3
+      ],
+      "circuit_file": "research_package\\results\\circuits\\chesapeake__prior_matched_random__synthetic_line.qpy",
+      "circuit_sha256": "fd49582a60935c1f563933dbe6cbb92e49fe5c46c1a56dc8426d9e1b336f86db",
+      "scorer": {
+        "constant_selected": 14,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            66,
+            66
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 17
+      }
+    },
+    {
+      "case": "football",
+      "method": "published_lr",
+      "qubits": 7,
+      "p2": 0.0,
+      "p1": 0.0,
+      "readout": 0.0,
+      "bks_rate": 0.8627678117715631,
+      "ideal_reference": 0.8627678117715563,
+      "cx": 708,
+      "depth": 747,
+      "final_logical_to_physical": [
+        6,
+        0,
+        4,
+        5,
+        3,
+        1,
+        2
+      ],
+      "circuit_file": "research_package\\results\\circuits\\football__published_lr__synthetic_line.qpy",
+      "circuit_sha256": "54d6cfb8a40e68b6a6ac3cc2c71437e63914e58a680eee92533c527766b9ed4a",
+      "scorer": {
+        "constant_selected": 13,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            72,
+            72
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 16
+      }
+    },
+    {
+      "case": "football",
+      "method": "published_lr",
+      "qubits": 7,
+      "p2": 0.0001,
+      "p1": 1e-05,
+      "readout": 0.01,
+      "bks_rate": 0.7702042111252765,
+      "ideal_reference": 0.8627678117715563,
+      "cx": 708,
+      "depth": 747,
+      "final_logical_to_physical": [
+        6,
+        0,
+        4,
+        5,
+        3,
+        1,
+        2
+      ],
+      "circuit_file": "research_package\\results\\circuits\\football__published_lr__synthetic_line.qpy",
+      "circuit_sha256": "54d6cfb8a40e68b6a6ac3cc2c71437e63914e58a680eee92533c527766b9ed4a",
+      "scorer": {
+        "constant_selected": 13,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            72,
+            72
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 16
+      }
+    },
+    {
+      "case": "football",
+      "method": "published_lr",
+      "qubits": 7,
+      "p2": 0.001,
+      "p1": 0.0001,
+      "readout": 0.01,
+      "bks_rate": 0.514685069305617,
+      "ideal_reference": 0.8627678117715563,
+      "cx": 708,
+      "depth": 747,
+      "final_logical_to_physical": [
+        6,
+        0,
+        4,
+        5,
+        3,
+        1,
+        2
+      ],
+      "circuit_file": "research_package\\results\\circuits\\football__published_lr__synthetic_line.qpy",
+      "circuit_sha256": "54d6cfb8a40e68b6a6ac3cc2c71437e63914e58a680eee92533c527766b9ed4a",
+      "scorer": {
+        "constant_selected": 13,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            72,
+            72
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 16
+      }
+    },
+    {
+      "case": "football",
+      "method": "published_lr",
+      "qubits": 7,
+      "p2": 0.003,
+      "p1": 0.00030000000000000003,
+      "readout": 0.01,
+      "bks_rate": 0.22900667722293555,
+      "ideal_reference": 0.8627678117715563,
+      "cx": 708,
+      "depth": 747,
+      "final_logical_to_physical": [
+        6,
+        0,
+        4,
+        5,
+        3,
+        1,
+        2
+      ],
+      "circuit_file": "research_package\\results\\circuits\\football__published_lr__synthetic_line.qpy",
+      "circuit_sha256": "54d6cfb8a40e68b6a6ac3cc2c71437e63914e58a680eee92533c527766b9ed4a",
+      "scorer": {
+        "constant_selected": 13,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            72,
+            72
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 16
+      }
+    },
+    {
+      "case": "football",
+      "method": "published_lr",
+      "qubits": 7,
+      "p2": 0.01,
+      "p1": 0.001,
+      "readout": 0.01,
+      "bks_rate": 0.046604600714118594,
+      "ideal_reference": 0.8627678117715563,
+      "cx": 708,
+      "depth": 747,
+      "final_logical_to_physical": [
+        6,
+        0,
+        4,
+        5,
+        3,
+        1,
+        2
+      ],
+      "circuit_file": "research_package\\results\\circuits\\football__published_lr__synthetic_line.qpy",
+      "circuit_sha256": "54d6cfb8a40e68b6a6ac3cc2c71437e63914e58a680eee92533c527766b9ed4a",
+      "scorer": {
+        "constant_selected": 13,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            72,
+            72
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 16
+      }
+    },
+    {
+      "case": "football",
+      "method": "prior_matched_random",
+      "qubits": 7,
+      "p2": 0.0,
+      "p1": 0.0,
+      "readout": 0.0,
+      "bks_rate": 0.8820366866508806,
+      "ideal_reference": 0.8820366866508706,
+      "cx": 708,
+      "depth": 747,
+      "final_logical_to_physical": [
+        6,
+        0,
+        4,
+        5,
+        3,
+        1,
+        2
+      ],
+      "circuit_file": "research_package\\results\\circuits\\football__prior_matched_random__synthetic_line.qpy",
+      "circuit_sha256": "9f28b6948c9c0cd0adcddb43c18823931c509edfe1894219be14f54643eaf298",
+      "scorer": {
+        "constant_selected": 13,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            72,
+            72
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 16
+      }
+    },
+    {
+      "case": "football",
+      "method": "prior_matched_random",
+      "qubits": 7,
+      "p2": 0.0001,
+      "p1": 1e-05,
+      "readout": 0.01,
+      "bks_rate": 0.7841506542321413,
+      "ideal_reference": 0.8820366866508706,
+      "cx": 708,
+      "depth": 747,
+      "final_logical_to_physical": [
+        6,
+        0,
+        4,
+        5,
+        3,
+        1,
+        2
+      ],
+      "circuit_file": "research_package\\results\\circuits\\football__prior_matched_random__synthetic_line.qpy",
+      "circuit_sha256": "9f28b6948c9c0cd0adcddb43c18823931c509edfe1894219be14f54643eaf298",
+      "scorer": {
+        "constant_selected": 13,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            72,
+            72
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 16
+      }
+    },
+    {
+      "case": "football",
+      "method": "prior_matched_random",
+      "qubits": 7,
+      "p2": 0.001,
+      "p1": 0.0001,
+      "readout": 0.01,
+      "bks_rate": 0.5132975983361336,
+      "ideal_reference": 0.8820366866508706,
+      "cx": 708,
+      "depth": 747,
+      "final_logical_to_physical": [
+        6,
+        0,
+        4,
+        5,
+        3,
+        1,
+        2
+      ],
+      "circuit_file": "research_package\\results\\circuits\\football__prior_matched_random__synthetic_line.qpy",
+      "circuit_sha256": "9f28b6948c9c0cd0adcddb43c18823931c509edfe1894219be14f54643eaf298",
+      "scorer": {
+        "constant_selected": 13,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            72,
+            72
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 16
+      }
+    },
+    {
+      "case": "football",
+      "method": "prior_matched_random",
+      "qubits": 7,
+      "p2": 0.003,
+      "p1": 0.00030000000000000003,
+      "readout": 0.01,
+      "bks_rate": 0.21867827284220429,
+      "ideal_reference": 0.8820366866508706,
+      "cx": 708,
+      "depth": 747,
+      "final_logical_to_physical": [
+        6,
+        0,
+        4,
+        5,
+        3,
+        1,
+        2
+      ],
+      "circuit_file": "research_package\\results\\circuits\\football__prior_matched_random__synthetic_line.qpy",
+      "circuit_sha256": "9f28b6948c9c0cd0adcddb43c18823931c509edfe1894219be14f54643eaf298",
+      "scorer": {
+        "constant_selected": 13,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            72,
+            72
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 16
+      }
+    },
+    {
+      "case": "football",
+      "method": "prior_matched_random",
+      "qubits": 7,
+      "p2": 0.01,
+      "p1": 0.001,
+      "readout": 0.01,
+      "bks_rate": 0.0430929668789137,
+      "ideal_reference": 0.8820366866508706,
+      "cx": 708,
+      "depth": 747,
+      "final_logical_to_physical": [
+        6,
+        0,
+        4,
+        5,
+        3,
+        1,
+        2
+      ],
+      "circuit_file": "research_package\\results\\circuits\\football__prior_matched_random__synthetic_line.qpy",
+      "circuit_sha256": "9f28b6948c9c0cd0adcddb43c18823931c509edfe1894219be14f54643eaf298",
+      "scorer": {
+        "constant_selected": 13,
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            65,
+            65
+          ],
+          [
+            68,
+            68
+          ],
+          [
+            72,
+            72
+          ],
+          [
+            80,
+            80
+          ],
+          [
+            96,
+            96
+          ]
+        ],
+        "impossible": false,
+        "bks": 16
+      }
+    }
+  ]
+}

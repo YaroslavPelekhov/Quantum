@@ -1,0 +1,399 @@
+{
+  "branch_count": 38,
+  "branches": [
+    {
+      "branch": "ansatz_event_rank",
+      "source_files": 2,
+      "reports": [
+        "results/ansatz_event_rank/REPORT.md"
+      ]
+    },
+    {
+      "branch": "aquila_configuration_curvature_phase0",
+      "source_files": 14,
+      "reports": [
+        "experiments/aquila_configuration_curvature_phase0/COMPILER_THEOREM_AND_KILL.md",
+        "experiments/aquila_configuration_curvature_phase0/PRIOR_ART_AUDIT.md",
+        "experiments/aquila_configuration_curvature_phase0/README.md",
+        "results/aquila_configuration_curvature_phase0/FINAL_REPORT.md",
+        "results/aquila_configuration_curvature_phase0/POSTHOC_ASYMPTOTIC_NOTE.md"
+      ]
+    },
+    {
+      "branch": "aquila_gauge_resource_phase0",
+      "source_files": 19,
+      "reports": [
+        "experiments/aquila_gauge_resource_phase0/PRIOR_ART_AUDIT.md",
+        "experiments/aquila_gauge_resource_phase0/README.md",
+        "experiments/aquila_gauge_resource_phase0/THEORY_AND_SCOPE.md",
+        "results/aquila_gauge_resource_phase0/ATTEMPTS.md",
+        "results/aquila_gauge_resource_phase0/FINAL_REPORT.md"
+      ]
+    },
+    {
+      "branch": "aquila_one_mask_phase0",
+      "source_files": 16,
+      "reports": [
+        "experiments/aquila_one_mask_phase0/PRIOR_ART_AUDIT.md",
+        "experiments/aquila_one_mask_phase0/README.md",
+        "experiments/aquila_one_mask_phase0/THEORY_AND_SCOPE.md",
+        "results/aquila_one_mask_phase0/FINAL_REPORT.md",
+        "results/aquila_one_mask_phase0/REFERENCE_AUDIT.md"
+      ]
+    },
+    {
+      "branch": "causal_boundary_response_phase0",
+      "source_files": 19,
+      "reports": [
+        "experiments/causal_boundary_response_phase0/CAPACITY_AUDIT_PREREGISTRATION.md",
+        "experiments/causal_boundary_response_phase0/NUMERICAL_AUDIT_PREREGISTRATION.md",
+        "experiments/causal_boundary_response_phase0/PHYSICAL_SURROGATE_PREREGISTRATION.md",
+        "experiments/causal_boundary_response_phase0/PRIOR_ART_AUDIT.md",
+        "experiments/causal_boundary_response_phase0/README.md",
+        "experiments/causal_boundary_response_phase0/THEOREMS_AND_BOUNDARY.md",
+        "results/causal_boundary_response_phase0/FINAL_REPORT.md"
+      ]
+    },
+    {
+      "branch": "causal_certification_debt",
+      "source_files": 9,
+      "reports": [
+        "experiments/causal_certification_debt/README.md",
+        "experiments/causal_certification_debt/THEOREMS.md",
+        "results/causal_certification_debt/CONTROLLER_REPORT.md",
+        "results/causal_certification_debt/REPORT.md"
+      ]
+    },
+    {
+      "branch": "cmrt_phase0",
+      "source_files": 15,
+      "reports": [
+        "experiments/cmrt_phase0/PRIOR_ART_AUDIT.md",
+        "experiments/cmrt_phase0/README.md",
+        "results/cmrt_phase0/FINAL_REPORT.md"
+      ]
+    },
+    {
+      "branch": "coherent_frontier_rank",
+      "source_files": 2,
+      "reports": [
+        "results/coherent_frontier_rank/REPORT.md"
+      ]
+    },
+    {
+      "branch": "compressed_observable_telescope",
+      "source_files": 16,
+      "reports": [
+        "experiments/compressed_observable_telescope/README.md",
+        "experiments/compressed_observable_telescope/THEORY.md",
+        "results/compressed_observable_telescope/REPORT.md"
+      ]
+    },
+    {
+      "branch": "contrastive_tensor_simulation",
+      "source_files": 9,
+      "reports": [
+        "experiments/contrastive_tensor_simulation/THEORY.md",
+        "results/contrastive_tensor_simulation/REPORT.md"
+      ]
+    },
+    {
+      "branch": "dcs_transfer_identifiability_phase0",
+      "source_files": 5,
+      "reports": [
+        "experiments/dcs_transfer_identifiability_phase0/PRIOR_ART_AUDIT.md",
+        "experiments/dcs_transfer_identifiability_phase0/README.md"
+      ]
+    },
+    {
+      "branch": "dcsrdt_structural_audit",
+      "source_files": 4,
+      "reports": [
+        "results/dcsrdt_structural_audit/REPORT.md"
+      ]
+    },
+    {
+      "branch": "decision_balanced_truncation",
+      "source_files": 9,
+      "reports": [
+        "experiments/decision_balanced_truncation/README.md",
+        "results/decision_balanced_truncation/REPORT.md"
+      ]
+    },
+    {
+      "branch": "decision_certified_allocation",
+      "source_files": 6,
+      "reports": [
+        "experiments/decision_certified_allocation/NOVELTY_AND_THEOREM.md",
+        "experiments/decision_certified_allocation/README.md",
+        "results/decision_certified_allocation/REPORT.md"
+      ]
+    },
+    {
+      "branch": "decision_certified_bond_allocation",
+      "source_files": 8,
+      "reports": [
+        "experiments/decision_certified_bond_allocation/README.md",
+        "experiments/decision_certified_bond_allocation/THEORY.md",
+        "results/decision_certified_bond_allocation/REPORT.md"
+      ]
+    },
+    {
+      "branch": "decision_conditioned_srdt",
+      "source_files": 7,
+      "reports": [
+        "experiments/decision_conditioned_srdt/README.md",
+        "results/decision_conditioned_srdt/REPORT.md"
+      ]
+    },
+    {
+      "branch": "decisioncert_mps",
+      "source_files": 3,
+      "reports": [
+        "experiments/decisioncert_mps/README.md",
+        "results/decisioncert_mps/EXPLORATORY_REPORT.md",
+        "results/decisioncert_mps/FINAL_STATUS.md",
+        "results/decisioncert_mps/THEORY_NOTE.md"
+      ]
+    },
+    {
+      "branch": "drift_qae_phase0",
+      "source_files": 15,
+      "reports": [
+        "experiments/drift_qae_phase0/PRIOR_ART_AUDIT.md",
+        "experiments/drift_qae_phase0/README.md",
+        "experiments/drift_qae_phase0/THEORY_AND_SCOPE.md",
+        "results/drift_qae_phase0/FINAL_REPORT.md",
+        "results/drift_qae_phase0/STRONG_ESTIMATOR_REPORT.md"
+      ]
+    },
+    {
+      "branch": "dynamical_kernel_geometry_phase0",
+      "source_files": 10,
+      "reports": [
+        "experiments/dynamical_kernel_geometry_phase0/README.md",
+        "results/dynamical_kernel_geometry_phase0/FINAL_REPORT.md"
+      ]
+    },
+    {
+      "branch": "event_conditioned_width_phase0",
+      "source_files": 15,
+      "reports": [
+        "experiments/event_conditioned_width_phase0/README.md",
+        "results/event_conditioned_width_phase0/FALSIFICATION_REPORT.md"
+      ]
+    },
+    {
+      "branch": "evoq_mis",
+      "source_files": 77,
+      "reports": [
+        "experiments/evoq_mis/EXTERNAL_BASELINE_AUDIT.md",
+        "experiments/evoq_mis/NOVELTY_AUDIT.md",
+        "experiments/evoq_mis/README.md",
+        "experiments/evoq_mis/RESEARCH_CYCLE_REPORT.md",
+        "experiments/evoq_mis/paper/README.md"
+      ]
+    },
+    {
+      "branch": "evoq_mis_full_qoblib",
+      "source_files": 232,
+      "reports": [
+        "experiments/evoq_mis_full_qoblib/CROSS_CASE_REPLICATION_REPORT.md",
+        "experiments/evoq_mis_full_qoblib/EXACT_EXTENSION_REPORT.md",
+        "experiments/evoq_mis_full_qoblib/EXPANDED_QOBLIB_PILOT_REPORT.md",
+        "experiments/evoq_mis_full_qoblib/EXTENDED_BASELINE_REPORT.md",
+        "experiments/evoq_mis_full_qoblib/EXTERNAL_VALIDITY_REPORT.md",
+        "experiments/evoq_mis_full_qoblib/INDEPENDENT_LADDER_REPORT.md",
+        "experiments/evoq_mis_full_qoblib/MPS_LADDER_REPORT.md",
+        "experiments/evoq_mis_full_qoblib/QOBLIB_COHORT_SCREEN_REPORT.md",
+        "experiments/evoq_mis_full_qoblib/RANK_CERTIFICATE_REPORT.md",
+        "experiments/evoq_mis_full_qoblib/README.md",
+        "experiments/evoq_mis_full_qoblib/RESEARCH_CYCLE_REPORT.md",
+        "experiments/evoq_mis_full_qoblib/RESOURCE_AWARE_REPORT.md",
+        "experiments/evoq_mis_full_qoblib/paper/README.md"
+      ]
+    },
+    {
+      "branch": "exact_event_contraction",
+      "source_files": 10,
+      "reports": [
+        "experiments/exact_event_contraction/PRIOR_ART_AUDIT.md",
+        "experiments/exact_event_contraction/README.md",
+        "results/exact_event_contraction/REPORT.md"
+      ]
+    },
+    {
+      "branch": "global_decision_balanced_contraction",
+      "source_files": 6,
+      "reports": [
+        "experiments/global_decision_balanced_contraction/README.md",
+        "results/global_decision_balanced_contraction/REPORT.md"
+      ]
+    },
+    {
+      "branch": "hardware_model_witness_phase0",
+      "source_files": 8,
+      "reports": [
+        "experiments/hardware_model_witness_phase0/PRIOR_ART_AUDIT.md",
+        "experiments/hardware_model_witness_phase0/README.md",
+        "results/hardware_model_witness_phase0/FINAL_REPORT.md"
+      ]
+    },
+    {
+      "branch": "interleaved_drift_boundary_phase0",
+      "source_files": 11,
+      "reports": [
+        "experiments/interleaved_drift_boundary_phase0/PRIOR_ART_AUDIT.md",
+        "experiments/interleaved_drift_boundary_phase0/README.md",
+        "experiments/interleaved_drift_boundary_phase0/THEORY_AND_SCOPE.md",
+        "results/interleaved_drift_boundary_phase0/FINAL_REPORT.md"
+      ]
+    },
+    {
+      "branch": "observable_telescope",
+      "source_files": 5,
+      "reports": [
+        "experiments/observable_telescope/README.md",
+        "results/observable_telescope/REPORT.md"
+      ]
+    },
+    {
+      "branch": "pauli_fourth_moment_phase0",
+      "source_files": 203,
+      "reports": [
+        "experiments/pauli_fourth_moment_phase0/C017_PPT_GATE.md",
+        "experiments/pauli_fourth_moment_phase0/C018_PPT_SYMMETRY_GATE.md",
+        "experiments/pauli_fourth_moment_phase0/C019_PPT_CUT_GATE.md",
+        "experiments/pauli_fourth_moment_phase0/C020_PPT_PRIMAL_GATE.md",
+        "experiments/pauli_fourth_moment_phase0/C021_BOSONIC_PPT_GATE.md",
+        "experiments/pauli_fourth_moment_phase0/C022_EXACT_SIX_GATE.md",
+        "experiments/pauli_fourth_moment_phase0/C024_SPARSE_CERTIFICATE_GATE.md",
+        "experiments/pauli_fourth_moment_phase0/C025_EXACT_FACE_GATE.md",
+        "experiments/pauli_fourth_moment_phase0/C026_STRUCTURAL_RECOVERY_GATE.md",
+        "experiments/pauli_fourth_moment_phase0/C027_EQUALITY_RANK_GATE.md",
+        "experiments/pauli_fourth_moment_phase0/C028_REDUCED_EQUALITY_GATE.md",
+        "experiments/pauli_fourth_moment_phase0/C029_FORCED_ZERO_GATE.md",
+        "experiments/pauli_fourth_moment_phase0/C030_MODULAR_RECOVERY_GATE.md",
+        "experiments/pauli_fourth_moment_phase0/C031_DIXON_GATE.md",
+        "experiments/pauli_fourth_moment_phase0/C032_PRIOR_ART_GATE.md",
+        "experiments/pauli_fourth_moment_phase0/C034_GEAR_FALSIFICATION_GATE.md",
+        "experiments/pauli_fourth_moment_phase0/C035_WEIGHTED_GEAR_GATE.md",
+        "experiments/pauli_fourth_moment_phase0/C036_KNOWN_BOUND_AUDIT.md",
+        "experiments/pauli_fourth_moment_phase0/C037_WHEEL_AUDIT.md",
+        "experiments/pauli_fourth_moment_phase0/LINE_GRAPH_HBAR_THEOREM_C038.md",
+        "experiments/pauli_fourth_moment_phase0/LINE_GRAPH_PRIORITY_AUDIT_C038.md",
+        "experiments/pauli_fourth_moment_phase0/NOVELTY_AUDIT_20260907.md",
+        "experiments/pauli_fourth_moment_phase0/POSTFREEZE_THEORY_NOTE.md",
+        "experiments/pauli_fourth_moment_phase0/PRIOR_ART_AUDIT.md",
+        "experiments/pauli_fourth_moment_phase0/README.md",
+        "experiments/pauli_fourth_moment_phase0/SCF_BOUNDARY_ROUTE_AUDIT.md",
+        "experiments/pauli_fourth_moment_phase0/SCF_CROSS_CLAW_OPERATOR_GATE.md",
+        "experiments/pauli_fourth_moment_phase0/SCF_GENERALIZATION_THEOREMS.md",
+        "experiments/pauli_fourth_moment_phase0/SCF_ORDER9_EXACT_THEOREM.md",
+        "experiments/pauli_fourth_moment_phase0/SCF_THREE_ROW_STRUCTURAL_GATE.md",
+        "experiments/pauli_fourth_moment_phase0/SCF_TWO_XX_GATE_C013.md",
+        "experiments/pauli_fourth_moment_phase0/SCF_XX_GATE_C011.md",
+        "experiments/pauli_fourth_moment_phase0/paper/README_RU.md",
+        "results/pauli_fourth_moment_phase0/REPORT.md"
+      ]
+    },
+    {
+      "branch": "pauli_operational_phase0",
+      "source_files": 26,
+      "reports": [
+        "experiments/pauli_operational_phase0/CAUSAL_CUTOFF_GATE.md",
+        "experiments/pauli_operational_phase0/CAUSAL_MULTITIME_GATE.md",
+        "experiments/pauli_operational_phase0/CAUSAL_PROJECTION_GATE.md",
+        "experiments/pauli_operational_phase0/CAUSAL_PUBLISHER_AUDIT.md",
+        "experiments/pauli_operational_phase0/COMPLETED_AUDIT_RU.md",
+        "experiments/pauli_operational_phase0/COPY_CORRELATION_GATE.md",
+        "experiments/pauli_operational_phase0/DETERMINISTIC_MEMORY_PRIOR_GATE.md",
+        "experiments/pauli_operational_phase0/NEXT_CAPABILITY_GATE.md",
+        "experiments/pauli_operational_phase0/README_RU.md",
+        "results/pauli_operational_phase0/LAUNCH_20260909.md",
+        "results/pauli_operational_phase0/campaign_20260909/REPORT.md",
+        "results/pauli_operational_phase0/pilot_20260909/REPORT.md"
+      ]
+    },
+    {
+      "branch": "quantum_safe_kernelization_phase0",
+      "source_files": 10,
+      "reports": [
+        "experiments/quantum_safe_kernelization_phase0/PRIOR_ART_AUDIT.md",
+        "experiments/quantum_safe_kernelization_phase0/README.md",
+        "experiments/quantum_safe_kernelization_phase0/THEOREMS_AND_BOUNDARY.md",
+        "results/quantum_safe_kernelization_phase0/FINAL_REPORT.md"
+      ]
+    },
+    {
+      "branch": "rankcert_mps",
+      "source_files": 10,
+      "reports": [
+        "experiments/rankcert_mps/README.md",
+        "results/rankcert_mps/AER_DISCARDED_VALUE_SEMANTICS.md",
+        "results/rankcert_mps/CUTENSORNET_DIAGNOSTICS.md",
+        "results/rankcert_mps/FINAL_REPORT.md",
+        "results/rankcert_mps/FINAL_STATUS.md",
+        "results/rankcert_mps/NUMERICAL_ROUNDOFF_AUDIT.md"
+      ]
+    },
+    {
+      "branch": "signed_decision_cot",
+      "source_files": 12,
+      "reports": [
+        "experiments/signed_decision_cot/README.md",
+        "experiments/signed_decision_cot/THEORY.md",
+        "results/signed_decision_cot/REPORT.md",
+        "results/signed_decision_cot/RESEARCH_REPORT.md",
+        "results/signed_decision_cot/RESET_INTERVENTION_REPORT.md",
+        "results/signed_decision_cot/SORTED_DESIGN_RESULT.md"
+      ]
+    },
+    {
+      "branch": "signed_reduced_density_truncation",
+      "source_files": 11,
+      "reports": [
+        "experiments/signed_reduced_density_truncation/README.md",
+        "experiments/signed_reduced_density_truncation/THEORY.md",
+        "results/signed_reduced_density_truncation/REPORT.md"
+      ]
+    },
+    {
+      "branch": "sparse_mps_dcsrdt",
+      "source_files": 9,
+      "reports": [
+        "experiments/sparse_mps_dcsrdt/README.md",
+        "results/sparse_mps_dcsrdt/REPORT.md"
+      ]
+    },
+    {
+      "branch": "symmetry_claim_falsification",
+      "source_files": 10,
+      "reports": [
+        "results/symmetry_claim_falsification/REPORT.md"
+      ]
+    },
+    {
+      "branch": "symmetry_quotient_backend",
+      "source_files": 4,
+      "reports": [
+        "results/symmetry_quotient_backend/COMPLETION_AUDIT.md",
+        "results/symmetry_quotient_backend/REPORT.md"
+      ]
+    },
+    {
+      "branch": "symmetry_quotient_breadth",
+      "source_files": 2,
+      "reports": [
+        "results/symmetry_quotient_breadth/REPORT.md"
+      ]
+    },
+    {
+      "branch": "symmetry_quotient_decision_rank",
+      "source_files": 4,
+      "reports": [
+        "results/symmetry_quotient_decision_rank/REPORT.md"
+      ]
+    }
+  ]
+}

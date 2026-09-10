@@ -1,0 +1,13 @@
+graph,topology,one_qubit_operations,two_qubit_operations,no_error_survival_proxy
+ibm32_first20,unconstrained_basis,386,172,0.08054775489684397
+ibm32_first20,line,386,1822,5.059697185537322e-09
+ibm32_first20,grid_5x5,386,613,0.0009575782152408815
+ibm32_first20,hexagonal_lattice_30,386,787,0.00016660886942236803
+football_first22,unconstrained_basis,434,208,0.05134711314916052
+football_first22,line,434,2842,1.6353796962508016e-13
+football_first22,grid_5x5,434,892,5.308711645698725e-05
+football_first22,hexagonal_lattice_30,434,1114,5.701673403996703e-06
+johnson8-2-4_first24,unconstrained_basis,660,600,0.0007651821041032287
+johnson8-2-4_first24,line,660,10836,1.605523640903787e-48
+johnson8-2-4_first24,grid_5x5,660,2943,4.539685285501057e-14
+johnson8-2-4_first24,hexagonal_lattice_30,660,3657,3.4717999215583663e-17

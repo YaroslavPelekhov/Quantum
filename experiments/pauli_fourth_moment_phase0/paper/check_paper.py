@@ -67,9 +67,29 @@ def main():
     # Keep headline claims and their limitations present in the actual source.
     for token in ('2167', '1024', '144', '880', '441.989', '325328979',
                   '50000000', '25328979', '6.50657958', '127', '64',
-                  'quantum validity remains', 'External proof review',
-                  'not independently', 'No assertion of its truth',
+                  'Exact composed quantum facet', 'External proof review',
+                  'not independently', 'Dixon lifting', '332 bits',
+                  '16384', '8256', '240 starts', 'none met',
                   '4dc9dc7bc26cca5ea3a7f4cfa66cc4f7fc969a83'):
+        assert token in tex, token
+    assert 'No assertion of its truth' not in tex and 'quantum validity remains' not in tex
+    from verify_c031_exact_six import check
+    exact=check(read('c031_exact_six_certificate.json'))
+    assert exact['exact_bound_six_proved'] is True
+    bridge=read('c033_gear_bridge_with_lifting.json')
+    assert bridge['stable_bounds']==[6,4,3]
+    assert [r['maximal_classical_coefficient'] for r in bridge['sequential_lifting']]==[1]*4
+    from verify_c034_states import verify as verify_screen
+    screen=verify_screen(read('c034_gear_falsification.json'))
+    assert screen['total_starts']==240 and screen['converged_starts']==0
+    from verify_c038_line_graph_hbar import verify as verify_line_graph
+    line_graph = verify_line_graph(read('c038_line_graph_hbar.json'))
+    assert line_graph['arbitrary_size_theorem'] is True
+    assert line_graph['atlas_nonempty_roots'] == 1245
+    assert line_graph['direct_majorana_norm_cases'] == 47
+    for token in ('Matching polytopes as exact Pauli uncertainty bodies',
+                  'every finite line graph is', '1245', 'L(K_{2k+1})',
+                  'maximum-weight matching'):
         assert token in tex, token
     labels = re.findall(r'\\label\{([^}]+)\}', tex)
     assert len(labels) == len(set(labels)), Counter(labels)
@@ -80,7 +100,11 @@ def main():
     print(json.dumps({'status': 'paper_ledger_checks_passed',
                       'artifact_hashes': 64, 'target_stable_sets': 2167,
                       'target_tight_sets': 88, 'physical_best': actual,
-                      'quantum_target_proved': False,
+                      'quantum_target_proved': True,
+                      'line_graph_all_weight_theorem': True,
+                      'line_graph_audit_roots': 1245,
+                      'line_graph_direct_majorana_cases': 47,
+                      'all_weight_composition_proved':False,
                       'scope': 'headline consistency; run exact certificate checkers separately'}))
 
 

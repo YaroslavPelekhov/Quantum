@@ -1,11 +1,30 @@
 # Pauli fourth-moment phase 0
 
-Latest C014-C016: [consolidated report in Russian](LATEST_RESEARCH_RU.md).
-An exact full 24-vertex joint facet has stable bound six and 88 tight
-sets. A seven-qubit attack covers 1024 starting sign classes without
-violation, but is not a proof. The exact feasible theta matrix gives
-6.50657958, so that relaxation cannot certify six. All 127 tests pass.
-The operator inequality, general H-SCF and novelty remain open.
+C038 completed: [every line graph is hbar-perfect for all weights](LINE_GRAPH_HBAR_THEOREM_C038.md).
+The analytic proof uses a Majorana realization, nuclear-norm duality and
+Edmonds' matching polytope. It yields the exact identity
+`beta(L(R),w)=alpha(L(R),w)=nu(R,w)` at arbitrary size and an infinite
+separation `L(K_(2k+1))` from the previously sufficient h-perfect class.
+All 1,245 nonempty atlas roots pass the finite polar-factor stress audit;
+47 small roots also pass a direct dense Jordan--Wigner norm check, and
+five corruption-controlled tests plus a `python -S` witness verifier pass.
+External proof review and publication priority remain open, so this is a
+strong A-star candidate rather than an acceptance claim.
+
+The [adversarial C038 priority audit](LINE_GRAPH_PRIORITY_AUDIT_C038.md)
+separates the claim from free-fermion solvability, magic-state simulation,
+measurement incompatibility, and classical skew-energy bounds. It also
+records the main remaining risk: the weighted matrix inequality may exist
+under different notation, and the SCF-rank/Edmonds proof is short once its
+ingredients are combined.
+
+Current fixed C014 result: [C031 exact certificate](C031_DIXON_GATE.md)
+proves beta(G,w)=6 for the specified 24-vertex graph and weights. The
+seven-qubit 1024-start attack and theta value 6.50657958 are historical
+diagnostics, not its proof. The local manuscript now includes C031.
+General H-SCF, literature priority, and publication significance remain open.
+Historical test counts refer to their recorded snapshots, not every later
+working copy. See the repository-level research_package for current checks.
 
 C012 completed: [fixed closed XX graph, all weights](SCF_XX_CLOSURE_C012.md).
 The independently complete 44-facet hull and the missing-facet control

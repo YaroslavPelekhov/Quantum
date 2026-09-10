@@ -1,0 +1,163 @@
+{
+  "complete": true,
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "qaoa_integrity",
+      "command": [
+        "C:\\Users\\psgpe\\Downloads\\Taiwan\\.venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib",
+      "exit_code": 0,
+      "seconds": 14.25,
+      "log_sha256": "f2a0a5a61d669d6d7bf46f00059495143ea320e8d8b0177e5936445c47092787",
+      "log_file": "qaoa_integrity.log"
+    },
+    {
+      "name": "gsn_integrity",
+      "command": [
+        "C:\\Users\\psgpe\\Downloads\\Taiwan\\.venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "-v",
+        "test_qaoa_mis.py"
+      ],
+      "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis",
+      "exit_code": 0,
+      "seconds": 0.9690000000009604,
+      "log_sha256": "549c15a8dfc4d66cdf22cc3ab19b4a5468114e10cbf81e11ebc7a2e494cc7e48",
+      "log_file": "gsn_integrity.log"
+    },
+    {
+      "name": "readiness_integrity",
+      "command": [
+        "C:\\Users\\psgpe\\Downloads\\Taiwan\\.venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-v",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\research_package",
+      "exit_code": 0,
+      "seconds": 1.4369999999998981,
+      "log_sha256": "d7d840912bc637ce2c5f9b1977a592956db2cc35a108318b3abeebd426451c28",
+      "log_file": "readiness_integrity.log"
+    },
+    {
+      "name": "pauli_full_suite",
+      "command": [
+        "C:\\Users\\psgpe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\pauli_fourth_moment_phase0",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
+      "exit_code": 0,
+      "seconds": 288.125,
+      "log_sha256": "2fb92a6afab491c466b42b1754bfd680566f1970aa024ec6531799f6044960a5",
+      "log_file": "pauli_full_suite.log"
+    },
+    {
+      "name": "verify_scf_rectangular_gram_bridge",
+      "command": [
+        "C:\\Users\\psgpe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-S",
+        "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\pauli_fourth_moment_phase0\\verify_scf_rectangular_gram_bridge.py"
+      ],
+      "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
+      "exit_code": 0,
+      "seconds": 0.1720000000004802,
+      "log_sha256": "f6515da40c4c51f5f275b443b8c83ecbeddbf6a97bb0e8588abee444df51a6d9",
+      "log_file": "verify_scf_rectangular_gram_bridge.log"
+    },
+    {
+      "name": "verify_scf_core_refinement",
+      "command": [
+        "C:\\Users\\psgpe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-S",
+        "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\pauli_fourth_moment_phase0\\verify_scf_core_refinement.py"
+      ],
+      "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
+      "exit_code": 0,
+      "seconds": 0.26599999999962165,
+      "log_sha256": "4ea4740c8dbcb3fc0305cd8d8b830a9693fdb5f61f3d55c349ea57aacb19d5eb",
+      "log_file": "verify_scf_core_refinement.log"
+    },
+    {
+      "name": "verify_scf_three_row_gram",
+      "command": [
+        "C:\\Users\\psgpe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-S",
+        "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\pauli_fourth_moment_phase0\\verify_scf_three_row_gram.py"
+      ],
+      "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
+      "exit_code": 0,
+      "seconds": 1.6869999999998981,
+      "log_sha256": "5a72dfd93d258e58d38957d30d1bfe4633ea37f0d2ee62241e007dad3197f5bb",
+      "log_file": "verify_scf_three_row_gram.log"
+    },
+    {
+      "name": "verify_scf_d_closure",
+      "command": [
+        "C:\\Users\\psgpe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-S",
+        "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\pauli_fourth_moment_phase0\\verify_scf_d_closure.py"
+      ],
+      "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
+      "exit_code": 0,
+      "seconds": 2.063000000000102,
+      "log_sha256": "a7f6649e490128b27611115de6ad8e96b56e1920aee16b6f43638a8524202fa8",
+      "log_file": "verify_scf_d_closure.log"
+    },
+    {
+      "name": "verify_c031_exact_six",
+      "command": [
+        "C:\\Users\\psgpe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-S",
+        "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\pauli_fourth_moment_phase0\\verify_c031_exact_six.py"
+      ],
+      "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
+      "exit_code": 0,
+      "seconds": 0.5779999999995198,
+      "log_sha256": "2150aa8562ab044956f021473835b237fbc82ab6e92f09589b7f4568a1436d96",
+      "log_file": "verify_c031_exact_six.log"
+    },
+    {
+      "name": "verify_c038_line_graph_hbar",
+      "command": [
+        "C:\\Users\\psgpe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-S",
+        "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\pauli_fourth_moment_phase0\\verify_c038_line_graph_hbar.py"
+      ],
+      "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
+      "exit_code": 0,
+      "seconds": 0.07799999999951979,
+      "log_sha256": "c2e19213903d850bf421851238a2c1b843f7a9cf45f21da05c30284f3cadb529",
+      "log_file": "verify_c038_line_graph_hbar.log"
+    },
+    {
+      "name": "check_paper",
+      "command": [
+        "C:\\Users\\psgpe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-S",
+        "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\pauli_fourth_moment_phase0\\paper\\check_paper.py"
+      ],
+      "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
+      "exit_code": 0,
+      "seconds": 0.625,
+      "log_sha256": "7a172cb0f716053c13d3c58990c4ad6340de616de62f662f1fce09c2798553b2",
+      "log_file": "check_paper.log"
+    }
+  ]
+}

@@ -1,0 +1,431 @@
+{
+  "protocol": "Each schedule is selected on the train graph only, then frozen and evaluated exactly on QOBLIB farm.",
+  "replicates": [
+    {
+      "replicate": 0,
+      "differential_evolution": {
+        "score": 0.06017158606606397,
+        "feasible_probability": 0.08672456622075264,
+        "optimal_probability": 0.000531778011405683,
+        "expected_feasible_size_unconditional": 0.5136618494113728,
+        "expected_size_given_feasible": 5.9229105638173465,
+        "approximation_ratio_unconditional": 0.05136618494113728
+      },
+      "random_search": {
+        "score": 0.0048102141794005475,
+        "feasible_probability": 0.008111186061244845,
+        "optimal_probability": 2.5940098577655755e-05,
+        "expected_feasible_size_unconditional": 0.0399261054863165,
+        "expected_size_given_feasible": 4.922351082178102,
+        "approximation_ratio_unconditional": 0.003992610548631649
+      }
+    },
+    {
+      "replicate": 1,
+      "differential_evolution": {
+        "score": 0.26648989900768416,
+        "feasible_probability": 0.6498100877343833,
+        "optimal_probability": 6.0107126784285245e-06,
+        "expected_feasible_size_unconditional": 2.0150738755607622,
+        "expected_size_given_feasible": 3.101019688054527,
+        "approximation_ratio_unconditional": 0.20150738755607622
+      },
+      "random_search": {
+        "score": 0.04392162851329387,
+        "feasible_probability": 0.05657722193112129,
+        "optimal_probability": 0.0013118549825926163,
+        "expected_feasible_size_unconditional": 0.3793594257453359,
+        "expected_size_given_feasible": 6.705161773534565,
+        "approximation_ratio_unconditional": 0.03793594257453359
+      }
+    },
+    {
+      "replicate": 2,
+      "differential_evolution": {
+        "score": 0.06371889611923291,
+        "feasible_probability": 0.09551214526402807,
+        "optimal_probability": 0.00039858480608527416,
+        "expected_feasible_size_unconditional": 0.5406803539130879,
+        "expected_size_given_feasible": 5.660854464303607,
+        "approximation_ratio_unconditional": 0.05406803539130879
+      },
+      "random_search": {
+        "score": 0.19230509964627499,
+        "feasible_probability": 0.6101563872399842,
+        "optimal_probability": 2.3738354188031997e-07,
+        "expected_feasible_size_unconditional": 1.3128940157639108,
+        "expected_size_given_feasible": 2.1517336263621356,
+        "approximation_ratio_unconditional": 0.13128940157639107
+      }
+    },
+    {
+      "replicate": 3,
+      "differential_evolution": {
+        "score": 0.10397093965474719,
+        "feasible_probability": 0.16736337389458514,
+        "optimal_probability": 0.00033720219700254924,
+        "expected_feasible_size_unconditional": 0.8715030171603804,
+        "expected_size_given_feasible": 5.207250528477647,
+        "approximation_ratio_unconditional": 0.08715030171603803
+      },
+      "random_search": {
+        "score": 0.1062106601375107,
+        "feasible_probability": 0.1830821465469287,
+        "optimal_probability": 9.318734235268979e-05,
+        "expected_feasible_size_unconditional": 0.8787914864722965,
+        "expected_size_given_feasible": 4.799984613721139,
+        "approximation_ratio_unconditional": 0.08787914864722965
+      }
+    },
+    {
+      "replicate": 4,
+      "differential_evolution": {
+        "score": 0.2424437485036936,
+        "feasible_probability": 0.45018563222725994,
+        "optimal_probability": 0.00010055100198927813,
+        "expected_feasible_size_unconditional": 1.974000475304703,
+        "expected_size_given_feasible": 4.3848588981804735,
+        "approximation_ratio_unconditional": 0.1974000475304703
+      },
+      "random_search": {
+        "score": 0.16851964537938197,
+        "feasible_probability": 0.6980879144569511,
+        "optimal_probability": 2.798055747443521e-10,
+        "expected_feasible_size_unconditional": 0.9871085386373545,
+        "expected_size_given_feasible": 1.414017515838582,
+        "approximation_ratio_unconditional": 0.09871085386373545
+      }
+    },
+    {
+      "replicate": 5,
+      "differential_evolution": {
+        "score": 0.18797837414913687,
+        "feasible_probability": 0.38954106211715905,
+        "optimal_probability": 1.929407935744364e-05,
+        "expected_feasible_size_unconditional": 1.4901944441758161,
+        "expected_size_given_feasible": 3.8255131206877047,
+        "approximation_ratio_unconditional": 0.1490194444175816
+      },
+      "random_search": {
+        "score": 0.23575687789680502,
+        "feasible_probability": 0.869508831601278,
+        "optimal_probability": 1.511453416321596e-08,
+        "expected_feasible_size_unconditional": 1.4880599095804368,
+        "expected_size_given_feasible": 1.7113798681492882,
+        "approximation_ratio_unconditional": 0.14880599095804367
+      }
+    },
+    {
+      "replicate": 6,
+      "differential_evolution": {
+        "score": 0.21768447801757623,
+        "feasible_probability": 0.5061503900953244,
+        "optimal_probability": 1.1584173851305486e-05,
+        "expected_feasible_size_unconditional": 1.6706654296458099,
+        "expected_size_given_feasible": 3.3007293135369706,
+        "approximation_ratio_unconditional": 0.16706654296458098
+      },
+      "random_search": {
+        "score": 0.18168012113846127,
+        "feasible_probability": 0.32887732730655883,
+        "optimal_probability": 0.00012532047167092787,
+        "expected_feasible_size_unconditional": 1.4876105828988766,
+        "expected_size_given_feasible": 4.523299295461068,
+        "approximation_ratio_unconditional": 0.14876105828988767
+      }
+    },
+    {
+      "replicate": 7,
+      "differential_evolution": {
+        "score": 0.15553972497799057,
+        "feasible_probability": 0.2540767819567536,
+        "optimal_probability": 0.0006128289074977651,
+        "expected_feasible_size_unconditional": 1.2997883955544076,
+        "expected_size_given_feasible": 5.115730707639569,
+        "approximation_ratio_unconditional": 0.12997883955544076
+      },
+      "random_search": {
+        "score": 0.0832436538655019,
+        "feasible_probability": 0.11185654886743024,
+        "optimal_probability": 0.00216934206145919,
+        "expected_feasible_size_unconditional": 0.7151566346339406,
+        "expected_size_given_feasible": 6.393515997722472,
+        "approximation_ratio_unconditional": 0.07151566346339407
+      }
+    },
+    {
+      "replicate": 8,
+      "differential_evolution": {
+        "score": 0.12313211353665914,
+        "feasible_probability": 0.1879261175554839,
+        "optimal_probability": 0.000867228055017734,
+        "expected_feasible_size_unconditional": 1.0412269476735632,
+        "expected_size_given_feasible": 5.540618628308266,
+        "approximation_ratio_unconditional": 0.10412269476735632
+      },
+      "random_search": {
+        "score": 0.1926648805920726,
+        "feasible_probability": 0.43639864693302977,
+        "optimal_probability": 2.000883841183716e-06,
+        "expected_feasible_size_unconditional": 1.4902451567780932,
+        "expected_size_given_feasible": 3.414871167111542,
+        "approximation_ratio_unconditional": 0.14902451567780933
+      }
+    },
+    {
+      "replicate": 9,
+      "differential_evolution": {
+        "score": 0.20395737446065687,
+        "feasible_probability": 0.40327830057887737,
+        "optimal_probability": 5.265316860192005e-05,
+        "expected_feasible_size_unconditional": 1.6361638111061867,
+        "expected_size_given_feasible": 4.057158068652813,
+        "approximation_ratio_unconditional": 0.16361638111061866
+      },
+      "random_search": {
+        "score": 0.03072450960903175,
+        "feasible_probability": 0.0389658986918832,
+        "optimal_probability": 0.0009985954107362396,
+        "expected_feasible_size_unconditional": 0.26578270887159366,
+        "expected_size_given_feasible": 6.820905401752163,
+        "approximation_ratio_unconditional": 0.026578270887159368
+      }
+    },
+    {
+      "replicate": 10,
+      "differential_evolution": {
+        "score": 0.001395310377643697,
+        "feasible_probability": 0.001436812709116559,
+        "optimal_probability": 0.0002167229004236071,
+        "expected_feasible_size_unconditional": 0.011974483816261393,
+        "expected_size_given_feasible": 8.334060340838747,
+        "approximation_ratio_unconditional": 0.0011974483816261394
+      },
+      "random_search": {
+        "score": 0.17195154586293734,
+        "feasible_probability": 0.2684194447935764,
+        "optimal_probability": 0.0004716751733595148,
+        "expected_feasible_size_unconditional": 1.4499168259023982,
+        "expected_size_given_feasible": 5.401683276028804,
+        "approximation_ratio_unconditional": 0.1449916825902398
+      }
+    },
+    {
+      "replicate": 11,
+      "differential_evolution": {
+        "score": 0.19347211250668572,
+        "feasible_probability": 0.43752734524584735,
+        "optimal_probability": 1.5439578336689268e-05,
+        "expected_feasible_size_unconditional": 1.497155180875168,
+        "expected_size_given_feasible": 3.4218551072137307,
+        "approximation_ratio_unconditional": 0.1497155180875168
+      },
+      "random_search": {
+        "score": 0.059806843035023476,
+        "feasible_probability": 0.09982709753667751,
+        "optimal_probability": 0.00011911475080060777,
+        "expected_feasible_size_unconditional": 0.4979435459365557,
+        "expected_size_given_feasible": 4.988059937870137,
+        "approximation_ratio_unconditional": 0.04979435459365557
+      }
+    }
+  ],
+  "train_score_audit": {
+    "differential_evolution": {
+      "mean": 0.31976688954512017,
+      "std": 0.041948248320788514,
+      "median": 0.3413863648557776,
+      "min": 0.2547197247526972,
+      "max": 0.3708070377106632
+    },
+    "random_search": {
+      "mean": 0.27419875548077466,
+      "std": 0.056449778979913164,
+      "median": 0.270115610431406,
+      "min": 0.19970329028442968,
+      "max": 0.3881425130163898
+    },
+    "difference_de_minus_random": {
+      "mean": 0.045568134064345484,
+      "std": 0.07912110877746906,
+      "median": 0.028688167854573274,
+      "min": -0.13342278826369258,
+      "max": 0.13686196564750375,
+      "bootstrap_95_percent_ci": [
+        -0.0001900031672535515,
+        0.08629135928981702
+      ]
+    },
+    "paired_de_wins": 10,
+    "paired_random_wins": 2,
+    "paired_t_test_two_sided": {
+      "statistic": 1.995076272946062,
+      "p_value": 0.07140360372660437
+    },
+    "wilcoxon_one_sided_de_greater": {
+      "statistic": 65.0,
+      "p_value": 0.021240234375
+    }
+  },
+  "held_out_metric_audits": {
+    "score": {
+      "differential_evolution": {
+        "mean": 0.15166287978148094,
+        "std": 0.08167313030770924,
+        "median": 0.17175904956356372,
+        "min": 0.001395310377643697,
+        "max": 0.26648989900768416
+      },
+      "random_search": {
+        "mean": 0.12263297332130794,
+        "std": 0.07679568082313407,
+        "median": 0.13736515275844632,
+        "min": 0.0048102141794005475,
+        "max": 0.23575687789680502
+      },
+      "difference_de_minus_random": {
+        "mean": 0.02902990646017296,
+        "std": 0.11874302962315915,
+        "median": 0.045682864382889196,
+        "min": -0.17055623548529364,
+        "max": 0.2225682704943903,
+        "bootstrap_95_percent_ci": [
+          -0.0354805796035368,
+          0.09328724614938601
+        ]
+      },
+      "paired_de_wins": 7,
+      "paired_random_wins": 5,
+      "paired_t_test_two_sided": {
+        "statistic": 0.8468922022212728,
+        "p_value": 0.4151006064360258
+      },
+      "wilcoxon_one_sided_de_greater": {
+        "statistic": 51.0,
+        "p_value": 0.190185546875
+      }
+    },
+    "approximation_ratio_unconditional": {
+      "differential_evolution": {
+        "mean": 0.12135073553497931,
+        "std": 0.06256455256834663,
+        "median": 0.1394991419865112,
+        "min": 0.0011974483816261394,
+        "max": 0.20150738755607622
+      },
+      "random_search": {
+        "mean": 0.09160662447255924,
+        "std": 0.053310087199956446,
+        "median": 0.09329500125548254,
+        "min": 0.003992610548631649,
+        "max": 0.14902451567780933
+      },
+      "difference_de_minus_random": {
+        "mean": 0.029744111062420083,
+        "std": 0.0900990728334414,
+        "median": 0.032839529533599476,
+        "min": -0.14379423420861367,
+        "max": 0.16357144498154264,
+        "bootstrap_95_percent_ci": [
+          -0.020531609700936402,
+          0.0768922168902605
+        ]
+      },
+      "paired_de_wins": 8,
+      "paired_random_wins": 4,
+      "paired_t_test_two_sided": {
+        "statistic": 1.1435924913749262,
+        "p_value": 0.2770700245559757
+      },
+      "wilcoxon_one_sided_de_greater": {
+        "statistic": 54.0,
+        "p_value": 0.133056640625
+      }
+    },
+    "optimal_probability": {
+      "differential_evolution": {
+        "mean": 0.0002641564660206398,
+        "std": 0.00028703749661128787,
+        "median": 0.0001586369512064426,
+        "min": 6.0107126784285245e-06,
+        "max": 0.000867228055017734
+      },
+      "random_search": {
+        "mean": 0.0004431069961060203,
+        "std": 0.0006960804154551131,
+        "median": 0.00010615104657664878,
+        "min": 2.798055747443521e-10,
+        "max": 0.00216934206145919
+      },
+      "difference_de_minus_random": {
+        "mean": -0.00017895053008538055,
+        "std": 0.0007361059038934357,
+        "median": -4.2198103820319046e-05,
+        "min": -0.001556513153961425,
+        "max": 0.0008652271711765504,
+        "bootstrap_95_percent_ci": [
+          -0.0005936411519939481,
+          0.00020048929146268378
+        ]
+      },
+      "paired_de_wins": 6,
+      "paired_random_wins": 6,
+      "paired_t_test_two_sided": {
+        "statistic": -0.8421380904836024,
+        "p_value": 0.4176442366782756
+      },
+      "wilcoxon_one_sided_de_greater": {
+        "statistic": 32.0,
+        "p_value": 0.71533203125
+      }
+    },
+    "feasible_probability": {
+      "differential_evolution": {
+        "mean": 0.30246105129996426,
+        "std": 0.19855146925771724,
+        "median": 0.3218089220369563,
+        "min": 0.001436812709116559,
+        "max": 0.6498100877343833
+      },
+      "random_search": {
+        "mean": 0.309155720997222,
+        "std": 0.2860658921690222,
+        "median": 0.22575079567025252,
+        "min": 0.008111186061244845,
+        "max": 0.869508831601278
+      },
+      "difference_de_minus_random": {
+        "mean": -0.006694669697257734,
+        "std": 0.3497964981013909,
+        "median": 0.031447303753582116,
+        "min": -0.5146442419759562,
+        "max": 0.5932328658032621,
+        "bootstrap_95_percent_ci": [
+          -0.19155695992763386,
+          0.18197619336448304
+        ]
+      },
+      "paired_de_wins": 6,
+      "paired_random_wins": 6,
+      "paired_t_test_two_sided": {
+        "statistic": -0.06629859428827736,
+        "p_value": 0.9483297469485665
+      },
+      "wilcoxon_one_sided_de_greater": {
+        "statistic": 38.0,
+        "p_value": 0.545166015625
+      }
+    }
+  },
+  "promotion_gate": {
+    "checks": {
+      "train_mean_difference_positive": true,
+      "train_bootstrap_ci_excludes_zero": false,
+      "train_wilcoxon_one_sided_p_below_0_05": true,
+      "held_out_mean_difference_positive": true,
+      "held_out_strict_majority_wins": true
+    },
+    "promote": false,
+    "reason": "Exploratory n=12 statistics; promotion still means next simulator stage, not a claim of quantum advantage."
+  }
+}

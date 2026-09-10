@@ -1,18 +1,24 @@
 # Quantum x Evolutionary Computing Research Artifact
 
-Manuscript draft (2026-09-09):
-[Weighted Pauli uncertainty - PDF](output/pdf/weighted_pauli_uncertainty_manuscript.pdf),
-[LaTeX source and review checklist](experiments/pauli_fourth_moment_phase0/paper/README_RU.md).
-Twelve pages: proved restricted all-weight results, exact certificates,
-and an explicitly OPEN composition target. Not submitted or externally reviewed.
+Current preparation cycle (2026-09-10): [unified research package](research_package/START_HERE_RU.md).
+Three distinct manuscripts are preserved: early graph-scale normalization
+(`experiments/evoq_mis`, restored from the original local folder), QAOA
+cross-backend ranking, and weighted Pauli uncertainty. Four prepared PDFs
+are in `output/pdf/prepared_20260910`. Older PDFs remain historical snapshots.
 
-Latest research C014-C016 (2026-09-08):
-[Russian consolidated report](experiments/pauli_fourth_moment_phase0/LATEST_RESEARCH_RU.md).
-Two interacting XX atoms yield a full 24-vertex facet with exact stable
-bound six. A seven-qubit, 1024-start numerical attack finds no violation;
-this is NOT a quantum proof. An exact rational moment matrix certifies
-the ordinary theta relaxation is at least 6.50657958. The specific quantum
-inequality and A-star novelty remain OPEN. 127 regression tests pass.
+The local Pauli manuscript is now led by the C038 theorem
+`beta(L(R),w)=alpha(L(R),w)=nu(R,w)` for every finite root graph and all
+nonnegative weights. It also retains the exact C031 proof for the fixed C014
+graph and weights. The prepared manuscript has 15 pages and is not externally
+reviewed or submitted; its honest status is a strong A/A* candidate, not a
+guarantee of venue acceptance or priority.
+
+The new local shot/noise planning study is separate from the frozen QAOA
+replication. It supplies no QPU evidence. Hardware execution still requires
+a named device, target-specific compilation and an approved budget.
+
+Historical research chronology follows; superseded next-step proposals and
+test counts refer to their original snapshots, not the latest working tree.
 
 Latest proved cycle C012 (2026-09-08):
 [one closed XX-strip graph, all weights](experiments/pauli_fourth_moment_phase0/SCF_XX_CLOSURE_C012.md).

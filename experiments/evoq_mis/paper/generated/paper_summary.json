@@ -1,0 +1,386 @@
+{
+  "normalization_effects": [
+    {
+      "suite": "Frozen 17-qubit",
+      "normalized_mean": 0.2508963235258128,
+      "unnormalized_mean": 0.16764045198651967,
+      "difference": 0.08325587153929315,
+      "ci_low": 0.046492582628043636,
+      "ci_high": 0.12474875671992282,
+      "paired_t_p": 0.002181335947510905,
+      "wins": 11,
+      "losses": 1
+    },
+    {
+      "suite": "Scale-up 20--24",
+      "normalized_mean": 0.20246513102025734,
+      "unnormalized_mean": 0.14257198764380205,
+      "difference": 0.059893143376455314,
+      "ci_low": 0.02539585917756932,
+      "ci_high": 0.09865421967495568,
+      "paired_t_p": 0.010152742132626003,
+      "wins": 10,
+      "losses": 2
+    },
+    {
+      "suite": "Confirmatory 20--24",
+      "normalized_mean": 0.20230024340446448,
+      "unnormalized_mean": 0.133221724640372,
+      "difference": 0.06907851876409245,
+      "ci_low": 0.034425744605453286,
+      "ci_high": 0.1055174004637977,
+      "paired_t_p": 0.003742567195342242,
+      "wins": 10,
+      "losses": 2
+    },
+    {
+      "suite": "Random subsets 20--24",
+      "normalized_mean": 0.24549533286804293,
+      "unnormalized_mean": 0.13742483661874183,
+      "difference": 0.10807049624930108,
+      "ci_low": 0.05786753015395054,
+      "ci_high": 0.1602672588444083,
+      "paired_t_p": 0.0023135433058038674,
+      "wins": 10,
+      "losses": 2
+    }
+  ],
+  "suite_method_means": [
+    {
+      "suite": "Frozen 17",
+      "normalized_de": 0.2508963235258128,
+      "unnormalized_de": 0.16764045198651967,
+      "normalized_random": 0.23282740522586423
+    },
+    {
+      "suite": "Scale 20--24",
+      "normalized_de": 0.20246513102025734,
+      "unnormalized_de": 0.14257198764380205,
+      "normalized_random": 0.17625945122491413
+    },
+    {
+      "suite": "Confirmatory",
+      "normalized_de": 0.20230024340446448,
+      "unnormalized_de": 0.133221724640372,
+      "normalized_random": 0.16298216554932574
+    },
+    {
+      "suite": "Random subsets",
+      "normalized_de": 0.24549533286804293,
+      "unnormalized_de": 0.13742483661874183,
+      "normalized_random": 0.20469679193923077
+    }
+  ],
+  "classical_summary": {
+    "graphs": 12,
+    "minimum_degree_greedy_optimal_count": 8,
+    "random_order_1000_optimal_count": 12,
+    "minimum_degree_greedy_mean_ratio": 0.8986772486772486,
+    "random_order_1000_best_mean_ratio": 1.0
+  },
+  "confirmatory_metric_sensitivity": {
+    "score": {
+      "first": {
+        "mean": 0.20230024340446448,
+        "std": 0.04439577657365231,
+        "median": 0.2006027520814301,
+        "min": 0.11041378923757768,
+        "max": 0.29800332508134847
+      },
+      "second": {
+        "mean": 0.133221724640372,
+        "std": 0.06659668536797961,
+        "median": 0.13814100129995532,
+        "min": 0.024525715001022904,
+        "max": 0.23245478814115197
+      },
+      "difference": {
+        "mean": 0.06907851876409245,
+        "std": 0.06534834664266971,
+        "median": 0.0538799141765859,
+        "min": -0.00303998513731904,
+        "max": 0.17416786868464265,
+        "bootstrap_95_percent_ci": [
+          0.034425744605453286,
+          0.1055174004637977
+        ]
+      },
+      "first_wins": 10,
+      "second_wins": 2,
+      "paired_t_test_two_sided": {
+        "statistic": 3.6618372264336188,
+        "p_value": 0.003742567195342242
+      },
+      "wilcoxon_one_sided_first_greater": {
+        "statistic": 75.0,
+        "p_value": 0.001220703125
+      }
+    },
+    "approximation_ratio_unconditional": {
+      "first": {
+        "mean": 0.1536464893969639,
+        "std": 0.038070772206015624,
+        "median": 0.15218549528469466,
+        "min": 0.07055785477104581,
+        "max": 0.23375737945965266
+      },
+      "second": {
+        "mean": 0.09923592118845043,
+        "std": 0.04799155375290076,
+        "median": 0.10588574745415352,
+        "min": 0.019868495681061294,
+        "max": 0.17370336724323632
+      },
+      "difference": {
+        "mean": 0.054410568208513484,
+        "std": 0.04966715097638361,
+        "median": 0.03851943341818257,
+        "min": -0.009190466298526531,
+        "max": 0.134399684232104,
+        "bootstrap_95_percent_ci": [
+          0.028263870277062147,
+          0.08214852198080029
+        ]
+      },
+      "first_wins": 10,
+      "second_wins": 2,
+      "paired_t_test_two_sided": {
+        "statistic": 3.7949375695275385,
+        "p_value": 0.0029692040351102485
+      },
+      "wilcoxon_one_sided_first_greater": {
+        "statistic": 74.0,
+        "p_value": 0.001708984375
+      }
+    },
+    "optimal_probability": {
+      "first": {
+        "mean": 0.00020662860575767822,
+        "std": 0.00022013149680731847,
+        "median": 0.00015422049643786396,
+        "min": 1.3823801046830272e-05,
+        "max": 0.0008275474162628203
+      },
+      "second": {
+        "mean": 0.00015697194739757968,
+        "std": 0.00019732629319207812,
+        "median": 4.839564920708639e-05,
+        "min": 1.6827512062668516e-06,
+        "max": 0.0006062151041843528
+      },
+      "difference": {
+        "mean": 4.9656658360098534e-05,
+        "std": 0.00031990067603055084,
+        "median": 3.0078865406557223e-05,
+        "min": -0.0005394421003641505,
+        "max": 0.0008208325578810572,
+        "bootstrap_95_percent_ci": [
+          -0.00011400403457950641,
+          0.00023120670541282794
+        ]
+      },
+      "first_wins": 9,
+      "second_wins": 3,
+      "paired_t_test_two_sided": {
+        "statistic": 0.5377159953583011,
+        "p_value": 0.6014822436788181
+      },
+      "wilcoxon_one_sided_first_greater": {
+        "statistic": 51.0,
+        "p_value": 0.190185546875
+      }
+    },
+    "feasible_probability": {
+      "first": {
+        "mean": 0.48602096856061133,
+        "std": 0.10028539094191656,
+        "median": 0.46767110864465755,
+        "min": 0.31269220597878444,
+        "max": 0.6418643903762192
+      },
+      "second": {
+        "mean": 0.3394656046507219,
+        "std": 0.20727653869714086,
+        "median": 0.3411301000647686,
+        "min": 0.045692499645320406,
+        "max": 0.7076951120344904
+      },
+      "difference": {
+        "mean": 0.14655536390988946,
+        "std": 0.1895433121868114,
+        "median": 0.1882766839644536,
+        "min": -0.1738366183129212,
+        "max": 0.4463433283677661,
+        "bootstrap_95_percent_ci": [
+          0.04315205522611503,
+          0.24793414375158163
+        ]
+      },
+      "first_wins": 9,
+      "second_wins": 3,
+      "paired_t_test_two_sided": {
+        "statistic": 2.67845204861137,
+        "p_value": 0.021467470343075827
+      },
+      "wilcoxon_one_sided_first_greater": {
+        "statistic": 65.0,
+        "p_value": 0.021240234375
+      }
+    }
+  },
+  "random_subset_metric_sensitivity": {
+    "score": {
+      "first": {
+        "mean": 0.24549533286804293,
+        "std": 0.08766280171259512,
+        "median": 0.26117185548615174,
+        "min": 0.10380921386538748,
+        "max": 0.41801490732751806
+      },
+      "second": {
+        "mean": 0.13742483661874183,
+        "std": 0.08542781573556596,
+        "median": 0.15482532955994058,
+        "min": 0.0048138252290306095,
+        "max": 0.26976881857470136
+      },
+      "difference": {
+        "mean": 0.10807049624930108,
+        "std": 0.09502623215476298,
+        "median": 0.10505942091458141,
+        "min": -0.04158448316025384,
+        "max": 0.29726678667642814,
+        "bootstrap_95_percent_ci": [
+          0.05786753015395054,
+          0.1602672588444083
+        ]
+      },
+      "first_wins": 10,
+      "second_wins": 2,
+      "paired_t_test_two_sided": {
+        "statistic": 3.939619325285204,
+        "p_value": 0.0023135433058038674
+      },
+      "wilcoxon_one_sided_first_greater": {
+        "statistic": 75.0,
+        "p_value": 0.001220703125
+      }
+    },
+    "approximation_ratio_unconditional": {
+      "first": {
+        "mean": 0.1966814575729525,
+        "std": 0.07363904105581158,
+        "median": 0.2059739477869364,
+        "min": 0.08327488653263002,
+        "max": 0.3442078639410037
+      },
+      "second": {
+        "mean": 0.10791176496356235,
+        "std": 0.06564780049569226,
+        "median": 0.12563756632905038,
+        "min": 0.003857237433017873,
+        "max": 0.20516064807280363
+      },
+      "difference": {
+        "mean": 0.08876969260939012,
+        "std": 0.07840202176312892,
+        "median": 0.08012485497731395,
+        "min": -0.03781088454714221,
+        "max": 0.24328542852799065,
+        "bootstrap_95_percent_ci": [
+          0.04672454163150723,
+          0.13177305583259144
+        ]
+      },
+      "first_wins": 10,
+      "second_wins": 2,
+      "paired_t_test_two_sided": {
+        "statistic": 3.92218502314293,
+        "p_value": 0.002383868590586158
+      },
+      "wilcoxon_one_sided_first_greater": {
+        "statistic": 75.0,
+        "p_value": 0.001220703125
+      }
+    },
+    "optimal_probability": {
+      "first": {
+        "mean": 0.012200022523300083,
+        "std": 0.018320437160765715,
+        "median": 0.009322368434698379,
+        "min": 0.0020937043969378555,
+        "max": 0.06916946136739648
+      },
+      "second": {
+        "mean": 0.0009355353288303726,
+        "std": 0.0009098549664033894,
+        "median": 0.0005280259084554719,
+        "min": 0.00016000431275738013,
+        "max": 0.0032790052830358684
+      },
+      "difference": {
+        "mean": 0.011264487194469715,
+        "std": 0.018243288451704868,
+        "median": 0.008284060292774221,
+        "min": -0.001185300886098013,
+        "max": 0.06781188872254017,
+        "bootstrap_95_percent_ci": [
+          0.004408377405537767,
+          0.022343811627437735
+        ]
+      },
+      "first_wins": 11,
+      "second_wins": 1,
+      "paired_t_test_two_sided": {
+        "statistic": 2.138941583221773,
+        "p_value": 0.055707657616372884
+      },
+      "wilcoxon_one_sided_first_greater": {
+        "statistic": 77.0,
+        "p_value": 0.00048828125
+      }
+    },
+    "feasible_probability": {
+      "first": {
+        "mean": 0.45763869664265394,
+        "std": 0.14082262791461048,
+        "median": 0.5097465998411157,
+        "min": 0.17957838001884982,
+        "max": 0.6202307715520503
+      },
+      "second": {
+        "mean": 0.2927918782297189,
+        "std": 0.22727895991249206,
+        "median": 0.2826134705781501,
+        "min": 0.008036360049350136,
+        "max": 0.7241710068681253
+      },
+      "difference": {
+        "mean": 0.16484681841293497,
+        "std": 0.21279717744300342,
+        "median": 0.2321992769105024,
+        "min": -0.1545750470301832,
+        "max": 0.5289334209280764,
+        "bootstrap_95_percent_ci": [
+          0.04963816510271984,
+          0.2792364950212581
+        ]
+      },
+      "first_wins": 8,
+      "second_wins": 4,
+      "paired_t_test_two_sided": {
+        "statistic": 2.683523046575746,
+        "p_value": 0.021273886873521337
+      },
+      "wilcoxon_one_sided_first_greater": {
+        "statistic": 67.0,
+        "p_value": 0.013427734375
+      }
+    }
+  },
+  "hardware_limits": [
+    "GenericBackendV2 generates synthetic backend properties; this is not a named QPU calibration.",
+    "Hardware-routed noisy MPS was attempted at 128 and 16 shots but did not finish the first 20-qubit case within a practical CPU budget.",
+    "The no-error survival proxy assumes independent errors and is not a substitute for density-matrix, trajectory or QPU data."
+  ]
+}

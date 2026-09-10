@@ -1,0 +1,12 @@
+
+test_feasible_mixer_never_leaves_independent_sets (test_qaoa_mis.QAOAMISTest.test_feasible_mixer_never_leaves_independent_sets) ... ok
+test_known_qoblib_solution (test_qaoa_mis.QAOAMISTest.test_known_qoblib_solution) ... ok
+test_normalized_cost_and_induced_graph (test_qaoa_mis.QAOAMISTest.test_normalized_cost_and_induced_graph) ... ok
+test_qoblib_instance_and_exact_optimum (test_qaoa_mis.QAOAMISTest.test_qoblib_instance_and_exact_optimum) ... ok
+test_repair_always_feasible_on_deterministic_sample (test_qaoa_mis.QAOAMISTest.test_repair_always_feasible_on_deterministic_sample) ... ok
+test_statevector_is_normalized (test_qaoa_mis.QAOAMISTest.test_statevector_is_normalized) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.068s
+
+OK
