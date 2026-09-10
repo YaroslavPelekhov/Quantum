@@ -109,7 +109,9 @@ adversarial audit, но отрицательный поиск не являет�
 - Не заявляется новый алгоритм maximum-weight matching.
 - Численный atlas-аудит не выдаётся за доказательство теоремы.
 - Локальная симуляция шума не выдаётся за реальные аппаратные данные.
-- GitHub push, журнальная подача и платные Amazon Braket jobs не выполнялись.
+- Код, результаты и рукописи опубликованы в отдельной GitHub-ветке
+  [`research/c038-line-graph-hbar`](https://github.com/YaroslavPelekhov/Quantum/tree/research/c038-line-graph-hbar).
+  Журнальная подача и платные Amazon Braket jobs не выполнялись.
 
 ## Готовые материалы
 

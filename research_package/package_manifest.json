@@ -1,7 +1,9 @@
 {
-  "base_commit": "04d4b08a7c2d1ed119cd49366da9e064213ef8b9",
+  "base_commit": "8c518f0acaf39e33b8b9fd8c70755d00f3328c32",
   "working_tree_snapshot": true,
-  "uploaded": false,
+  "uploaded": true,
+  "publication_branch": "research/c038-line-graph-hbar",
+  "publication_url": "https://github.com/YaroslavPelekhov/Quantum/tree/research/c038-line-graph-hbar",
   "complete_self_contained_reproduction": false,
   "exclusions": [
     "Caches and runtime state",
@@ -4507,8 +4509,8 @@
     },
     {
       "path": "research_package/assemble_archive.py",
-      "bytes": 4580,
-      "sha256": "f59f4147ed14b5fe75217e7904a6904e078610b4909260c4531ca038052dbd14"
+      "bytes": 4882,
+      "sha256": "e56928c4f1ba0b2a9b4ed2d80912b81e583bb1672a1a5e97078276582af964c6"
     },
     {
       "path": "research_package/BRAKET_BUDGET_RU.md",
@@ -4527,8 +4529,8 @@
     },
     {
       "path": "research_package/FINAL_REPORT_C038_RU.md",
-      "bytes": 10960,
-      "sha256": "96be6069ad0faec9ad1c54cfa70ef65ef4026dd0ab5c83c7e79dbe13acbabe18"
+      "bytes": 11180,
+      "sha256": "c8f5f82e5207524ad486d3a84002f99f5534f09ed8d4139e4c802d7d631d38f7"
     },
     {
       "path": "research_package/hardware/chesapeake__prior_matched_random.qasm",
@@ -4602,8 +4604,8 @@
     },
     {
       "path": "research_package/PLAN_RU.md",
-      "bytes": 6190,
-      "sha256": "2011e99575adbaa9b1a7f4ef01b608603857f0b91cb50ce62a8e44e0ca6e50e5"
+      "bytes": 6409,
+      "sha256": "69098fe08a40b1f09b511b06df716d9c2a91c5267ca73973afc9ea028c4e44fb"
     },
     {
       "path": "research_package/prepare_hardware.py",
@@ -4737,8 +4739,8 @@
     },
     {
       "path": "research_package/START_HERE_RU.md",
-      "bytes": 12417,
-      "sha256": "22ede93b9afe4f85d19b9ec90913d8bd98ffa6bc21c76e5df5d49226187f7460"
+      "bytes": 12584,
+      "sha256": "ba25c56c9182c0ce36349c1dc9b67a392ef0d223f2db197c63416e702f26e8dd"
     },
     {
       "path": "research_package/test_hardware_package.py",

@@ -1,10 +1,12 @@
 {
   "archive": "output/research_packages/quantum_research_package_20260910_final.zip",
-  "bytes": 60214718,
-  "sha256": "f0dc4a5ed4c130d292a9f955920067b638650f6509920ed36d59275690a3d1a4",
+  "bytes": 60215171,
+  "sha256": "332054f9e2eb00eee5be49bd36a1df59d5c4d619d3683189d132596a08c8495d",
   "files": 2404,
   "branches": 38,
   "crc_verified": true,
   "all_archived_hashes_verified": true,
-  "uploaded": false
+  "uploaded": true,
+  "publication_branch": "research/c038-line-graph-hbar",
+  "publication_url": "https://github.com/YaroslavPelekhov/Quantum/tree/research/c038-line-graph-hbar"
 }

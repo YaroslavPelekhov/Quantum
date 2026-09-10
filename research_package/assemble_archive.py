@@ -59,7 +59,10 @@ def main():
         raise RuntimeError('Insufficient disk space for safe archive creation; no archive written')
     records=[dict(path=p.relative_to(ROOT).as_posix(),bytes=p.stat().st_size,sha256=sha(p)) for p in sorted(selected)]
     base=subprocess.run(['git','rev-parse','HEAD'],cwd=ROOT,capture_output=True,text=True,check=True).stdout.strip()
-    manifest=dict(base_commit=base,working_tree_snapshot=True,uploaded=False,
+    publication_branch='research/c038-line-graph-hbar'
+    publication_url='https://github.com/YaroslavPelekhov/Quantum/tree/'+publication_branch
+    manifest=dict(base_commit=base,working_tree_snapshot=True,uploaded=True,
+        publication_branch=publication_branch,publication_url=publication_url,
         complete_self_contained_reproduction=False,
         exclusions=['Caches and runtime state','Git metadata','Third-party submodule working trees',
                     'Dense 24q reference arrays not present in this checkout; see exact_references.json'],
@@ -84,7 +87,8 @@ def main():
     temporary.replace(archive)
     summary=dict(archive=archive.relative_to(ROOT).as_posix(),bytes=archive.stat().st_size,
         sha256=sha(archive),files=len(selected),branches=len(branches),crc_verified=True,
-        all_archived_hashes_verified=True,uploaded=False)
+        all_archived_hashes_verified=True,uploaded=True,
+        publication_branch=publication_branch,publication_url=publication_url)
     write_json(HERE/'archive_summary.json',summary)
     print(json.dumps(summary,indent=2))
 
