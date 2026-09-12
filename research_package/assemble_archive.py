@@ -53,6 +53,9 @@ def main():
     selected=set()
     for name in ('experiments','results','prior_work','research_package','output/pdf/prepared_20260910'):
         selected.update(p for p in (ROOT/name).rglob('*') if include(p))
+    standalone=ROOT/'output/pdf/c038_line_graph_pauli_matching_theorem.pdf'
+    if include(standalone):
+        selected.add(standalone)
     selected.update(p for p in ROOT.iterdir() if p.is_file() and include(p))
     required=sum(p.stat().st_size for p in selected)+64*1024*1024
     if shutil.disk_usage(ROOT).free < required:

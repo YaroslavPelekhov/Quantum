@@ -14,7 +14,8 @@ matching. Даны два аналитических пути — через к�
 
 [Доказательство](../experiments/pauli_fourth_moment_phase0/LINE_GRAPH_HBAR_THEOREM_C038.md) ·
 [жёсткий аудит приоритета](../experiments/pauli_fourth_moment_phase0/LINE_GRAPH_PRIORITY_AUDIT_C038.md) ·
-[итоговый отчёт](FINAL_REPORT_C038_RU.md)
+[итоговый отчёт](FINAL_REPORT_C038_RU.md) ·
+[самостоятельная C038-only статья](../output/pdf/c038_line_graph_pauli_matching_theorem.pdf)
 
 Текущий честный статус: **сильный A/A* candidate**, а не подтверждённая
 редакцией A*-статья. Необходимы внешняя математическая проверка и

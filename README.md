@@ -13,6 +13,12 @@ graph and weights. The prepared manuscript has 15 pages and is not externally
 reviewed or submitted; its honest status is a strong A/A* candidate, not a
 guarantee of venue acceptance or priority.
 
+A focused standalone version containing only the C038 theorem, its two proofs,
+strict separation and reproducibility boundary is available as
+[source](experiments/pauli_fourth_moment_phase0/paper_c038/main.tex) and
+[PDF](output/pdf/c038_line_graph_pauli_matching_theorem.pdf). It is the preferred
+manuscript for independent submission after author metadata is completed.
+
 The new local shot/noise planning study is separate from the frozen QAOA
 replication. It supplies no QPU evidence. Hardware execution still requires
 a named device, target-specific compilation and an approved budget.

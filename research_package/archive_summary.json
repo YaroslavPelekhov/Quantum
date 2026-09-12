@@ -1,8 +1,8 @@
 {
   "archive": "output/research_packages/quantum_research_package_20260910_final.zip",
-  "bytes": 60215171,
-  "sha256": "332054f9e2eb00eee5be49bd36a1df59d5c4d619d3683189d132596a08c8495d",
-  "files": 2404,
+  "bytes": 60603896,
+  "sha256": "350e557076c13c0878df9b628d140a85c579ac6cc9310dbe5685da3e3e0b02cb",
+  "files": 2410,
   "branches": 38,
   "crc_verified": true,
   "all_archived_hashes_verified": true,

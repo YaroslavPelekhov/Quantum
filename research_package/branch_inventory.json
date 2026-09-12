@@ -259,7 +259,7 @@
     },
     {
       "branch": "pauli_fourth_moment_phase0",
-      "source_files": 203,
+      "source_files": 208,
       "reports": [
         "experiments/pauli_fourth_moment_phase0/C017_PPT_GATE.md",
         "experiments/pauli_fourth_moment_phase0/C018_PPT_SYMMETRY_GATE.md",
@@ -294,6 +294,7 @@
         "experiments/pauli_fourth_moment_phase0/SCF_TWO_XX_GATE_C013.md",
         "experiments/pauli_fourth_moment_phase0/SCF_XX_GATE_C011.md",
         "experiments/pauli_fourth_moment_phase0/paper/README_RU.md",
+        "experiments/pauli_fourth_moment_phase0/paper_c038/README_RU.md",
         "results/pauli_fourth_moment_phase0/REPORT.md"
       ]
     },

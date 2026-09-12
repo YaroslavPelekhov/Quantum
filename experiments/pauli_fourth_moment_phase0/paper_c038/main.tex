@@ -1,0 +1,452 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[margin=25mm]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true,linkcolor=MidnightBlue,citecolor=MidnightBlue,urlcolor=MidnightBlue]{hyperref}
+\usepackage{microtype}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\STAB}{\operatorname{STAB}}
+\newcommand{\MATCH}{\operatorname{MATCH}}
+\newcommand{\R}{\mathbb R}
+\setlength{\emergencystretch}{2em}
+\setlength{\parskip}{3pt}
+
+\title{Exact weighted Pauli uncertainty on all line graphs\thanks{Independent
+working manuscript. Author metadata and disclosure statement must be completed
+before submission.}}
+\author{Anonymous author\\Independent researcher}
+\date{12 September 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+For a family of Pauli observables, let its frustration graph join exactly
+the anticommuting pairs. We prove that the complete weighted quadratic
+uncertainty problem is exact on every line graph. More precisely, for every
+finite simple graph $R$ and every nonnegative edge weight $w$,
+\[
+ \beta(L(R),w)=\alpha(L(R),w)=\nu(R,w),
+\]
+where $\nu(R,w)$ is the maximum weight of a matching of $R$. The main proof
+maps the Hamiltonian to a Majorana bilinear. Nuclear-norm duality produces
+a skew contraction $Q$, and the squared supported entries $Q_e^2$ satisfy
+both the degree and all odd-set inequalities of Edmonds' matching polytope.
+It also yields the sharp matrix inequality
+\[
+ \left(\norm{A}_*/2\right)^2\leq
+ \nu(R,w)\sum_{e\in E(R)}A_e^2/w_e
+\]
+for every real skew matrix supported on $R$. A second proof derives the same
+matching-polytope constraints from simplicial claw-free rank inequalities.
+The family $L(K_{2k+1})$, $k\geq2$, proves that the result strictly extends
+the previously sufficient $h$-perfect route. The theorem is analytic; a
+finite stress test over 1245 root graphs and 47 direct Jordan--Wigner norm
+checks is supplied only as falsification and reproducibility evidence.
+\end{abstract}
+
+\noindent\textbf{Status and scope.}
+This is a self-contained working manuscript, not an externally reviewed
+article. The proof uses classical matching-polytope and Majorana tools, which
+are cited explicitly. A documented search found no prior statement of the
+all-weight equality above, but a negative literature search is not a proof of
+priority. No quantum advantage or new matching algorithm is claimed.
+
+\section{Introduction}
+
+Let $P_1,\ldots,P_n$ be Hermitian Pauli observables. Their frustration graph
+$G$ has vertex set $[n]$ and an edge $ij$ exactly when
+$P_iP_j=-P_jP_i$; nonedges commute. For nonnegative $w$, define
+\begin{equation}\label{eq:beta}
+ \beta(G,w)=\sup_{\{P_i\},\rho}\sum_i w_i\tr(\rho P_i)^2,
+ \qquad
+ \alpha(G,w)=\max_{S\text{ stable in }G}\sum_{i\in S}w_i.
+\end{equation}
+The supremum uses Pauli realizations with exactly the prescribed pairwise
+relations. Representation invariance of this graph parameter is established
+in the beta-number framework of Xu et al.~\cite{xu}. Since the observables in
+a stable set commute, a common eigenstate gives
+$\beta(G,w)\geq\alpha(G,w)$. The difficult direction is the upper bound.
+
+The equality $\beta(G,w)=\alpha(G,w)$ for every nonnegative $w$ is called
+$\hbar$-perfection~\cite{xu}. Known sufficient classes do not settle all line
+graphs. Line graphs are also the natural frustration graphs of quadratic
+Majorana Hamiltonians~\cite{cf,cem}, while their stable sets are precisely
+matchings. This suggests that a quantum uncertainty body and a classical
+matching polytope might coincide. The missing issue is not the degree
+constraints but the entire family of blossom, or odd-set, constraints.
+
+Our contribution is a direct mechanism for all of them. If $Q$ is a skew
+contraction, every odd principal submatrix loses at least one rank. This turns
+its Frobenius norm into the corresponding odd-set inequality. Together with
+row-norm degree constraints, Edmonds' theorem identifies the squared entries
+of $Q$ as a point of the matching polytope. Weighted Cauchy--Schwarz then
+closes the quantum bound exactly.
+
+The resulting theorem has three useful forms:
+\begin{enumerate}
+ \item every finite line graph is $\hbar$-perfect;
+ \item every nonnegative weighted instance is solved by maximum-weight
+ matching, without state simulation;
+ \item a sharp support-sensitive nuclear-norm inequality holds for all real
+ skew matrices.
+\end{enumerate}
+The last form distinguishes the result from a merely unweighted skew-energy
+estimate. We also give an independent proof through known simplicial
+claw-free rank bounds and exhibit an infinite separation from the
+$h$-perfect sufficient class.
+
+\section{Definitions and the variational reduction}
+
+For a finite simple root graph $R=(V,E)$, its line graph $L(R)$ has one vertex
+for every edge of $R$; two vertices are adjacent when their root edges share
+an endpoint. A matching of $R$ is therefore a stable set of $L(R)$, and
+\begin{equation}\label{eq:alpha-nu}
+ \alpha(L(R),w)=\nu(R,w),
+\end{equation}
+where $\nu(R,w)$ denotes maximum matching weight.
+
+We use the following elementary variational identity. For fixed observables,
+\begin{equation}\label{eq:variational}
+ \max_\rho\sum_i w_i\tr(\rho P_i)^2
+ =\max_{\norm{a}_2=1}\norm{\sum_i a_i\sqrt{w_i}P_i}^2.
+\end{equation}
+Indeed, Euclidean duality rewrites the squared norm of the expectation vector
+as a maximization over $a$. For fixed $a$, maximization over density matrices
+gives the squared spectral norm of the Hermitian linear combination. Compactness
+allows the two maxima to be interchanged. With
+$c_i=a_i\sqrt{w_i}$, the constraint is
+$\sum_i c_i^2/w_i=1$. Zero-weight coordinates may be deleted.
+
+For a real matrix $M$, write $\norm{M}_{\rm op}$ for its operator norm,
+$\norm{M}_F$ for its Frobenius norm, and $\norm{M}_*$ for its nuclear norm.
+If $A=-A^{\mathsf T}$, then its nonzero singular values occur in equal pairs.
+
+\section{A skew-contraction lemma}
+
+\begin{lemma}[Squared skew contractions lie in a matching polytope]
+\label{lem:contraction}
+Let $R=(V,E)$ be finite and simple. If $Q=-Q^{\mathsf T}$ and
+$\norm{Q}_{\rm op}\leq1$, define $x_e=Q_{uv}^2$ for every $e=uv\in E$.
+Then $x\in\MATCH(R)$.
+\end{lemma}
+
+\begin{proof}
+Nonnegativity is immediate. For each $v\in V$,
+\[
+ \sum_{e\in\delta(v)}x_e
+ \leq\sum_{u\in V}Q_{vu}^2
+ =\norm{e_v^{\mathsf T}Q}_2^2\leq1.
+\]
+Now let $S\subseteq V$ have odd cardinality. The principal matrix $Q[S]$
+is odd-order and skew-symmetric, hence singular and of rank at most $|S|-1$.
+Compression cannot increase operator norm, so every singular value of $Q[S]$
+is at most one. Consequently
+\[
+ 2\sum_{e\in E(S)}x_e
+ \leq \norm{Q[S]}_F^2
+ \leq \operatorname{rank}Q[S]\leq |S|-1.
+\]
+Thus $x$ satisfies nonnegativity, all degree inequalities, and all odd-set
+inequalities. Edmonds' matching-polytope theorem~\cite{edmonds} states that
+these inequalities describe $\MATCH(R)$ exactly.
+\end{proof}
+
+The lemma is support-monotone: entries of $Q$ outside $E$ are irrelevant and
+only strengthen the row and Frobenius estimates. This matters because the
+nuclear-norm dual optimizer need not share the sparsity pattern of $A$.
+
+\begin{theorem}[Sharp weighted skew-matrix inequality]
+\label{thm:matrix}
+Let $w_e>0$, and let $A=-A^{\mathsf T}$ be real and supported on $E(R)$.
+With $A_e=A_{uv}$ in any fixed orientation,
+\begin{equation}\label{eq:matrix}
+ \left(\frac{\norm{A}_*}{2}\right)^2
+ \leq \nu(R,w)\sum_{e\in E}\frac{A_e^2}{w_e}.
+\end{equation}
+The constant is attained for every $R,w$.
+\end{theorem}
+
+\begin{proof}
+By nuclear/operator-norm duality, there is a real $Q$ with
+$\norm{Q}_{\rm op}\leq1$ and
+$\langle A,Q\rangle_F=\norm{A}_*$. Replacing $Q$ by
+$(Q-Q^{\mathsf T})/2$ preserves its pairing with skew $A$ and does not
+increase its operator norm. Hence take $Q$ skew. Skew symmetry gives
+\[
+ \frac{\norm{A}_*}{2}=\sum_{e\in E}A_eQ_e.
+\]
+By Lemma~\ref{lem:contraction}, $x_e=Q_e^2$ belongs to $\MATCH(R)$, so
+$\sum_e w_eQ_e^2\leq\nu(R,w)$. Weighted Cauchy--Schwarz yields
+\[
+ \left(\sum_e A_eQ_e\right)^2
+ \leq\left(\sum_e\frac{A_e^2}{w_e}\right)
+       \left(\sum_e w_eQ_e^2\right),
+\]
+which proves~\eqref{eq:matrix}. For sharpness, choose a maximum-weight
+matching $M$ and set $A_e=w_e$ on $M$ and zero elsewhere. Then
+$\norm{A}_*/2=\sum_{e\in M}w_e=\nu(R,w)$ and both sides equal
+$\nu(R,w)^2$.
+\end{proof}
+
+\section{Exact Pauli uncertainty on line graphs}
+
+\begin{theorem}[All line graphs are $\hbar$-perfect]
+\label{thm:main}
+For every finite simple graph $R$ and every nonnegative edge weight $w$,
+\begin{equation}\label{eq:main}
+ \boxed{\beta(L(R),w)=\alpha(L(R),w)=\nu(R,w).}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Delete zero-weight edges. Assign a Majorana operator $\gamma_v$ to each root
+vertex and represent $e=uv$ by $P_e=i\gamma_u\gamma_v$. After a
+Jordan--Wigner transform these are Pauli observables, and two anticommute
+exactly when the root edges share one endpoint~\cite{cf}. By representation
+invariance~\cite{xu}, this realization computes $\beta(L(R),w)$.
+
+For real $c_e$, define $A=-A^{\mathsf T}$ by $A_{uv}=c_e$ in a fixed
+orientation. Orthogonal skew normal form gives two-by-two blocks
+$\bigl(\begin{smallmatrix}0&s_j\\-s_j&0\end{smallmatrix}\bigr)$. A compatible
+orthogonal change of Majorana generators turns
+$\sum_ec_ei\gamma_u\gamma_v$ into a sum of commuting involutions with
+coefficients $s_j$. Hence
+\begin{equation}\label{eq:maj-norm}
+ \norm{\sum_ec_ei\gamma_u\gamma_v}=\sum_js_j=\frac{\norm{A}_*}{2}.
+\end{equation}
+Combining~\eqref{eq:variational}, Theorem~\ref{thm:matrix}, and the normalized
+constraint $\sum_ec_e^2/w_e=1$ gives
+$\beta(L(R),w)\leq\nu(R,w)$.
+
+Conversely, a maximum-weight matching is a stable set of $L(R)$. Its Pauli
+observables commute and have a common eigenstate, whose squared expectations
+on the matching are all one. Therefore
+$\beta(L(R),w)\geq\nu(R,w)$. Equation~\eqref{eq:alpha-nu} completes the proof.
+\end{proof}
+
+\begin{corollary}[Exact uncertainty body]
+For any Pauli realization with frustration graph $L(R)$, every squared
+expectation profile $y_e=\tr(\rho P_e)^2$ belongs to $\MATCH(R)$, and every
+matching incidence vector is attainable as a dominated profile. Thus all
+nonnegative support functions of the downward uncertainty body equal those
+of $\MATCH(R)$.
+\end{corollary}
+
+\begin{proof}
+Theorem~\ref{thm:main} supplies every nonnegative weighted inequality valid
+for $\MATCH(R)$. Separation for compact downward-closed subsets of the
+nonnegative orthant gives membership. A common eigenstate attains value one
+on any fixed matching; uncontrolled coordinates can be discarded by
+downward closure.
+\end{proof}
+
+The theorem is constructive at the level of values: a maximum-weight
+matching algorithm returns both the exact quantum optimum and a commuting
+set attaining it. It does not assert an efficient circuit preparing a chosen
+common eigenstate under every hardware connectivity model.
+
+\section{An independent graph-polyhedral proof}
+
+Every line graph is claw-free. For a nonisolated root vertex $v$, the star
+$\delta(v)$ is a clique in $L(R)$, and for each edge $uv\in\delta(v)$ its
+neighbors outside the star are edges incident with $u$, hence form a clique.
+Thus each connected line graph admits a simplicial clique. Induced subgraphs
+of line graphs are again line graphs, so the class is hereditary in the form
+needed below.
+
+The simplicial claw-free sector theorem of Chapman, Elman, and Mann~\cite{cem}
+implies the rank inequality
+\begin{equation}\label{eq:rank}
+ \sum_{e\in U}\tr(\rho P_e)^2\leq\alpha(L(R)[U])
+\end{equation}
+for every induced support $U$. One obtains it by expressing the Hamiltonian
+norm through at most $\alpha$ nonnegative single-particle energies and applying
+Cauchy--Schwarz; this argument is representation-independent.
+
+Apply~\eqref{eq:rank} first to $U=\delta(v)$. Since this is a clique,
+$\sum_{e\in\delta(v)}y_e\leq1$. For an odd root-vertex set $S$, apply it to
+$U=E(S)$. Then
+\[
+ \sum_{e\in E(S)}y_e
+ \leq\alpha(L(R[S]))=\nu(R[S])\leq\frac{|S|-1}{2}.
+\]
+Together with $y\geq0$, these are exactly Edmonds' inequalities, so
+$y\in\MATCH(R)$. This reproves Theorem~\ref{thm:main}. The first proof is
+retained because it is direct and yields the stronger coefficient-sensitive
+matrix inequality~\eqref{eq:matrix}.
+
+\section{Strictly beyond the \texorpdfstring{$h$}{h}-perfect sufficient class}
+
+Xu et al.~show that $h$-perfect graphs are $\hbar$-perfect~\cite{xu}. The
+converse route does not explain Theorem~\ref{thm:main}.
+
+\begin{theorem}[Infinite strict separation]
+For every integer $k\geq2$, $L(K_{2k+1})$ is $\hbar$-perfect but not
+$h$-perfect.
+\end{theorem}
+
+\begin{proof}
+The first claim is Theorem~\ref{thm:main}. For the second, assign
+$x_e=1/(2k)$ to every edge of $K_{2k+1}$. Maximal cliques of its line graph
+are root stars and triangles. Their values are respectively $1$ and
+$3/(2k)\leq1$. An induced odd cycle of length $\ell\geq5$ has value
+$\ell/(2k)\leq(\ell-1)/2$. Hence $x$ satisfies nonnegativity, all clique
+inequalities, and all induced odd-cycle inequalities used by the $h$-perfect
+relaxation.
+
+However,
+\[
+ \sum_e x_e=\frac{\binom{2k+1}{2}}{2k}=\frac{2k+1}{2},
+ \qquad \nu(K_{2k+1})=k.
+\]
+The full-root odd-set inequality is violated by exactly $1/2$, so the stable-set
+polytope is strictly smaller than that relaxation. Thus the line graph is not
+$h$-perfect.
+\end{proof}
+
+The witness shows why triangle and odd-hole checks alone miss the mechanism:
+the new proof supplies blossom inequalities for arbitrary odd vertex sets,
+not merely chordless cycles.
+
+\section{Computational falsification and reproducibility}
+
+The proof is arbitrary-size and does not depend on enumeration. We nevertheless
+implemented a stress audit designed to expose normalization, orientation, and
+odd-set errors. It evaluates every nonempty graph in the NetworkX graph atlas,
+giving 1245 root graphs of order at most seven. For random positive weights and
+supported skew matrices, the code independently computes maximum-weight
+matching, the nuclear-norm expression, a polar dual optimizer, all degree and
+odd-set residuals, and the theorem ratio.
+
+The largest observed ratio to the proved bound is
+$1.0000000000000002$. The maximum polar-pairing discrepancy is
+$3.20\times10^{-14}$; maximum degree and odd-set excesses are
+$1.33\times10^{-15}$ and $2.22\times10^{-15}$. In 47 small-root cases a dense
+Jordan--Wigner construction directly checks~\eqref{eq:maj-norm}; its maximum
+error is $7.11\times10^{-15}$. Exact rational records for $K_5,K_7,K_9$
+check the strict separation. A standard-library verifier checks the frozen
+summary and source hash, while five tests deliberately corrupt the gap, scope,
+hash, or norm data and require rejection.
+
+From the repository root:
+\begin{quote}\small\ttfamily\raggedright
+python experiments/pauli\_fourth\_moment\_phase0/\\
+\hspace*{1em}run\_c038\_line\_graph\_hbar.py\par
+python -S experiments/pauli\_fourth\_moment\_phase0/\\
+\hspace*{1em}verify\_c038\_line\_graph\_hbar.py\par
+python -m unittest discover -s\\
+\hspace*{1em}experiments/pauli\_fourth\_moment\_phase0\\
+\hspace*{1em}-p test\_c038\_line\_graph\_hbar.py -v
+\end{quote}
+The wrapped paths are single commands. Numerical agreement is falsification
+support, not the proof of Theorem~\ref{thm:main}.
+
+\section{Relation to prior work and claim boundary}
+
+Chapman and Flammia identify line-graph frustration structures as the free
+fermion setting for quadratic Majorana Hamiltonians~\cite{cf}. Chapman,
+Elman, and Mann develop the wider simplicial claw-free framework~\cite{cem}.
+Xu et al.~define weighted beta numbers and $\hbar$-perfection and establish
+other sufficient graph classes~\cite{xu}; their accessible manuscript does
+not state the all-line-graph weighted matching equality used here.
+
+The graphs $L(K_{2k+1})$ already appear in magic-state simulation via
+Jordan--Wigner transformations~\cite{zurel}; the separating graphs themselves
+are not new. McNulty studies measurement incompatibility on line graphs using
+skew-energy bounds~\cite{mcnulty}. Classical skew-energy inequalities related
+to matching are studied by Tian and Wong~\cite{tianwong}. The uniform shadow
+of~\eqref{eq:matrix} is therefore close to known rank and skew-energy bounds.
+Our priority-sensitive claim is the exact all-weight Pauli beta/matching
+identity, its complete matching-polytope mechanism, and the sharp weighted
+matrix form. The underlying ingredients -- Edmonds' theorem, nuclear duality,
+Majorana normal form, and line-graph solvability -- are not claimed new.
+
+The repository contains a source-by-source adversarial audit with explicit
+overlap and falsification criteria. This supports careful positioning but
+cannot exclude differently worded or inaccessible prior results. Journal
+referees remain the independent priority check when no pre-submission expert
+is available.
+
+\section{Conclusion}
+
+Odd principal submatrices of a skew contraction lose one rank. That elementary
+fact generates every blossom inequality and turns the quantum optimization on
+a line graph into the classical matching polytope. Consequently all finite
+line graphs are $\hbar$-perfect for arbitrary nonnegative weights, and the
+associated skew-matrix inequality is sharp. The infinite family
+$L(K_{2k+1})$ shows that this mechanism is genuinely broader than the known
+$h$-perfect sufficient route.
+
+The result concerns exact uncertainty values, not quantum advantage or hardware
+performance. The next scientific tests are independent refereeing and a wider
+bibliographic priority search; adding more random instances would not strengthen
+the analytic theorem.
+
+\section*{Data and code availability}
+
+Source, frozen records, verifier, and tests are available in the
+\href{https://github.com/YaroslavPelekhov/Quantum/tree/research/c038-line-graph-hbar}{public C038 GitHub branch}.
+The repository index identifies the theorem note, priority audit, generator,
+frozen JSON, independent verifier, and corruption-controlled tests. Every
+reported numerical constant is read from that frozen JSON by the manuscript
+checker.
+
+\section*{Declarations}
+
+No external funding, competing-interest, authorship, affiliation, or
+AI-assistance declaration is made in this anonymous working version. These
+fields must be completed truthfully by the author before submission. No QPU
+data are used in the theorem or its verification.
+
+\clearpage
+\begin{thebibliography}{99}
+\bibitem{edmonds}
+J. Edmonds, \emph{Maximum matching and a polyhedron with 0,1-vertices},
+Journal of Research of the National Bureau of Standards B 69B, 125--130
+(1965). \url{https://doi.org/10.6028/jres.069B.013}.
+
+\bibitem{cf}
+A. Chapman and S. T. Flammia,
+\emph{Characterization of solvable spin models via graph invariants},
+Quantum 4, 278 (2020).
+\url{https://doi.org/10.22331/q-2020-06-04-278}.
+
+\bibitem{cem}
+A. Chapman, S. J. Elman, and R. L. Mann,
+\emph{A Unified Graph-Theoretic Framework for Free-Fermion Solvability},
+arXiv:2305.15625 (2023).
+\url{https://arxiv.org/abs/2305.15625}.
+
+\bibitem{xu}
+Z.-P. Xu, J. Wang, Q. Ye, G. Ko\ss mann, R. Schwonnek, and A. Winter,
+\emph{Simultaneous variances of Pauli strings, weighted independence numbers,
+and a new kind of perfection of graphs}, arXiv:2511.13531 (2025).
+\url{https://arxiv.org/abs/2511.13531}.
+
+\bibitem{zurel}
+M. Zurel, L. Z. Cohen, and R. Raussendorf,
+\emph{Simulation of quantum computation with magic states via Jordan--Wigner
+transformations}, Physical Review A 112, 042602 (2025).
+\url{https://doi.org/10.1103/ng4l-96kd}.
+
+\bibitem{mcnulty}
+D. McNulty, \emph{A Graph-Theoretic Approach to Quantum Measurement
+Incompatibility}, arXiv:2511.15954 (2025).
+\url{https://arxiv.org/abs/2511.15954}.
+
+\bibitem{tianwong}
+F. Tian and D. Wong, \emph{Relation between the skew energy of an oriented
+graph and its matching number}, Discrete Applied Mathematics 222, 179--184
+(2017). \url{https://doi.org/10.1016/j.dam.2017.01.004}.
+\end{thebibliography}
+
+\end{document}
