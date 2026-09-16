@@ -1,0 +1,8 @@
+{
+  "status": "C040_scaled_ablations_verified",
+  "graphs": 180,
+  "weighted_instances": 720,
+  "full_blossom_spot_checks": 40,
+  "structured_rows": 30,
+  "artifact_hashes": 7
+}

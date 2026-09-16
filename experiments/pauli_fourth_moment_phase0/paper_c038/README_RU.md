@@ -16,6 +16,11 @@
 ограничения; точный Householder-контрпример показывает необходимость
 skew-symmetry. Итоговые таблицы и графики встроены в статью.
 
+C040--C041 масштабируют проверку до случайных корней порядка 40,
+контролируемых семейств порядка 132 и weak-coupling конструкций порядка 80.
+Добавлены пять уровней baseline, четыре режима весов, density stress,
+три графика, десять таблиц/графиков с хешами и независимые verifiers.
+
 Перед публичной подачей автор самостоятельно заполняет имя, аффилиацию,
 контакт, funding/conflict statements и точное раскрытие AI-помощи. Текущая
 версия анонимна и не проходила внешнее рецензирование.
@@ -26,6 +31,8 @@ skew-symmetry. Итоговые таблицы и графики встроен�
 python experiments/pauli_fourth_moment_phase0/paper_c038/check_paper.py
 python -S experiments/pauli_fourth_moment_phase0/verify_c039_central_ablations.py
 python -m unittest discover -s experiments/pauli_fourth_moment_phase0 -p test_c039_central_ablations.py -v
+python -S experiments/pauli_fourth_moment_phase0/verify_c040_scaled_ablations.py
+python -S experiments/pauli_fourth_moment_phase0/verify_c041_density_coupling_stress.py
 ```
 
 Воспроизводимая сборка без зависимости от Perl/latexmk:

@@ -27,7 +27,8 @@ def main():
     for script in ('verify_scf_rectangular_gram_bridge.py', 'verify_scf_core_refinement.py',
                    'verify_scf_three_row_gram.py', 'verify_scf_d_closure.py',
                    'verify_c031_exact_six.py', 'verify_c038_line_graph_hbar.py',
-                   'verify_c039_central_ablations.py', 'paper/check_paper.py',
+                   'verify_c039_central_ablations.py', 'verify_c040_scaled_ablations.py',
+                   'verify_c041_density_coupling_stress.py', 'paper/check_paper.py',
                    'paper_c038/check_paper.py'):
         name = {
             'paper/check_paper.py': 'pauli_full_paper_check',

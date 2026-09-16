@@ -1,5 +1,5 @@
 {
-  "base_commit": "bfc2fbf233fac165039d3c462e9d39b3d5786c46",
+  "base_commit": "b46845341948a8f876d15d0b73fd453aad6a8d75",
   "working_tree_snapshot": true,
   "uploaded": true,
   "publication_branch": "research/c038-line-graph-hbar",
@@ -2933,6 +2933,11 @@
       "sha256": "6f89b51bbf383ab217e0546535215cc88215721f76982ecefccb5baf00779e46"
     },
     {
+      "path": "experiments/pauli_fourth_moment_phase0/C040_C041_SCALED_STRESS.md",
+      "bytes": 7908,
+      "sha256": "3be9503e5450c40ef6a08b61ec452ef10df19e6f86384976d4c475c57a87fbc9"
+    },
+    {
       "path": "experiments/pauli_fourth_moment_phase0/check_novelty_modules_20260907.py",
       "bytes": 1990,
       "sha256": "4cd80a7e8e63be28848717e4e17969a95bdc33bd9bec0099bbb42fc465667beb"
@@ -2944,8 +2949,8 @@
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/LATEST_RESEARCH_RU.md",
-      "bytes": 27640,
-      "sha256": "4990480944e41f83cdf9a01800680feb25262f48edfe5ff5ae9dd572ac5b4b98"
+      "bytes": 29022,
+      "sha256": "2b465f43d655dd4225d4ce9d874da4cabbcd2a1205470fbd65235cd4605964fd"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/LINE_GRAPH_HBAR_THEOREM_C038.md",
@@ -2999,8 +3004,8 @@
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/paper_c038/check_paper.py",
-      "bytes": 2593,
-      "sha256": "e54cab9eab5304070918bff5dd0a43bcfc40c61badf5a0c4dfc94b8f0e4032e8"
+      "bytes": 3686,
+      "sha256": "90f391e311f563d98e1164c31a02421d6d4eedddd1ad9306ee75779235b25922"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/paper_c038/figures/c039_baseline_gaps.png",
@@ -3013,19 +3018,34 @@
       "sha256": "505a9e1284a84df558cb6666191c1561532679be454d04c2dc4132be889ad178"
     },
     {
+      "path": "experiments/pauli_fourth_moment_phase0/paper_c038/figures/c040_scaled_random_ablations.png",
+      "bytes": 151399,
+      "sha256": "14b689b684743b69722547ed4e11070239cb85dab0bd0a2829e02385664d9430"
+    },
+    {
+      "path": "experiments/pauli_fourth_moment_phase0/paper_c038/figures/c040_structured_and_tightness.png",
+      "bytes": 90758,
+      "sha256": "44aaa034c5d9efc5f495878f0d5a37f72d4dc9f2dc05c06ee548eea3db3fa4b9"
+    },
+    {
+      "path": "experiments/pauli_fourth_moment_phase0/paper_c038/figures/c041_density_coupling_stress.png",
+      "bytes": 140786,
+      "sha256": "889bb291addbcaecfa7b9cc20fdf58a324e34b41a9b171b78fd6db55e1f5b24e"
+    },
+    {
       "path": "experiments/pauli_fourth_moment_phase0/paper_c038/main.tex",
-      "bytes": 26991,
-      "sha256": "57de9f1ba7fde1db12964a15b74267c81b5bc35d2c31c1e0cd525f39a5732381"
+      "bytes": 33077,
+      "sha256": "692ce641b7b680b1c18a05b7edfd0d9215726714624ca227ea705214789baf63"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/paper_c038/README_RU.md",
-      "bytes": 2299,
-      "sha256": "55e6db3f67fb1ede53ee399ac4e51d8ea0e36e17f9e84f6181814f79722edfc2"
+      "bytes": 2928,
+      "sha256": "9d381a16992807eadf775ddf843f81bc5f8f1cf6b7383aa744cc2805e0de5154"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/paper_c038/SELF_REVIEW_CHECKLIST_RU.md",
-      "bytes": 4833,
-      "sha256": "5919966077bb8f2f3ee4d715c53cd24971ec07d542beae7c3714505f6648fb14"
+      "bytes": 5213,
+      "sha256": "82cfc449cb722b87899faaec2dc82a3426615e4aa67a7854d172ca579ee1b5c2"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/POSTFREEZE_THEORY_NOTE.md",
@@ -3074,8 +3094,8 @@
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/RESEARCH_CYCLE_LOG.md",
-      "bytes": 93681,
-      "sha256": "87cbd81469c386bbc1ad209f63f25439d5cdaf2c6bd95a5c34f4430c4e67fa6c"
+      "bytes": 95182,
+      "sha256": "a39be60038d537571026824a7d237621da623b2924748a249fc8a3babc437eaf"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/RESEARCH_PROGRAM_RU.md",
@@ -3196,6 +3216,16 @@
       "path": "experiments/pauli_fourth_moment_phase0/run_c039_central_ablations.py",
       "bytes": 20183,
       "sha256": "d91241ca94d1d6baf5a043edf08224fce479567b3ade13569f4dbe0aa435e2df"
+    },
+    {
+      "path": "experiments/pauli_fourth_moment_phase0/run_c040_scaled_ablations.py",
+      "bytes": 20865,
+      "sha256": "b5aa9bfd8c707e81181a026283904c223231f26c14b900df5c1074f4de99b716"
+    },
+    {
+      "path": "experiments/pauli_fourth_moment_phase0/run_c041_density_coupling_stress.py",
+      "bytes": 9023,
+      "sha256": "461b03f50847092feea7a842aaaf27fea4c34734b836421c8f9e6d2517cc6b54"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/run_cnc_positivity_audit.py",
@@ -3618,6 +3648,16 @@
       "sha256": "39313fa388c5d12b1afc67893b7f15f7e23e6634cbe7e584f9889661f1950032"
     },
     {
+      "path": "experiments/pauli_fourth_moment_phase0/test_c040_scaled_ablations.py",
+      "bytes": 1705,
+      "sha256": "0ac9cd15549376f1d836f82fa50b71c687ac06a9417bd6b934d26744decd0421"
+    },
+    {
+      "path": "experiments/pauli_fourth_moment_phase0/test_c041_density_coupling_stress.py",
+      "bytes": 1452,
+      "sha256": "0be97f4e246f794cc8cb6ccca7bb0d1bda1bddbb499d45684c27d9d90f9b7705"
+    },
+    {
       "path": "experiments/pauli_fourth_moment_phase0/test_scf_almost_clique_closure.py",
       "bytes": 2263,
       "sha256": "19201ce6153b34ab70457a0219b7ca8de87d3d033e9fc2e9c03313a4bbaa64aa"
@@ -3766,6 +3806,16 @@
       "path": "experiments/pauli_fourth_moment_phase0/verify_c039_central_ablations.py",
       "bytes": 6078,
       "sha256": "c29f7a8978d10fcd56775ad2b053925b83c19f216e85207a7d9a71730bd97211"
+    },
+    {
+      "path": "experiments/pauli_fourth_moment_phase0/verify_c040_scaled_ablations.py",
+      "bytes": 5109,
+      "sha256": "97162d74627f8cdba70c7522caa32772a1f5340b3f5fd45a316f78ad30a1b98c"
+    },
+    {
+      "path": "experiments/pauli_fourth_moment_phase0/verify_c041_density_coupling_stress.py",
+      "bytes": 3215,
+      "sha256": "0e7bcd8c19bc1c095cfbe35aca1219ad71be255a4c8eea812810f3ab89a19b18"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/verify_n6_cover.py",
@@ -4354,8 +4404,8 @@
     },
     {
       "path": "output/pdf/c038_line_graph_pauli_matching_theorem.pdf",
-      "bytes": 622791,
-      "sha256": "2e8c6bc780e0b0eb84490aac2d18f6ac8ab41b1609cb4dc27d584b314ae285ea"
+      "bytes": 947128,
+      "sha256": "3fbd48a8f1d53451b9ea7749c2de71e5aeeb8807da40a4c494fa561c12536cd6"
     },
     {
       "path": "output/pdf/prepared_20260910/gsn_qaoa_mis_manuscript.pdf",
@@ -4549,8 +4599,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 37622,
-      "sha256": "9bf905db357bf4ec5f89cda8d03b3cffb7f5f4ea0f4c07ee02289d5644cd5017"
+      "bytes": 38052,
+      "sha256": "30ce55ea8507a225b557b8f78f3bdf5724416af066a94e1ea2b87f94d97c7c8f"
     },
     {
       "path": "REPRODUCIBILITY.md",
@@ -4580,7 +4630,7 @@
     {
       "path": "research_package/branch_inventory.json",
       "bytes": 15707,
-      "sha256": "3c5f2e4ba0c9548985e19d922ac536de7babc50897382b11bd232a523098f11e"
+      "sha256": "239e01b749618745f9c207048405bac7107d57a16705278da61b2b784f2ce32d"
     },
     {
       "path": "research_package/build_papers.py",
@@ -4589,8 +4639,8 @@
     },
     {
       "path": "research_package/FINAL_REPORT_C038_RU.md",
-      "bytes": 13771,
-      "sha256": "a5a7ab32c23e4ec7163d43343a50a885e841c57a7d43c776cfe75ce31b1a0402"
+      "bytes": 16049,
+      "sha256": "19ecfc06ebc4dbb4e4c13841089df2afd32d18b517cfb1a48b5b6f65f2ff75a6"
     },
     {
       "path": "research_package/hardware/chesapeake__prior_matched_random.qasm",
@@ -4684,8 +4734,8 @@
     },
     {
       "path": "research_package/results/c038_standalone_paper_check.log",
-      "bytes": 246,
-      "sha256": "f2e45441dc5d764397e35a8b11b8e9454a67b248b150d562118f6e2dd8c56e1f"
+      "bytes": 312,
+      "sha256": "ebe267f93b57b149775082e7af7cc9f4a6619c104d6996b83030e8be365882db"
     },
     {
       "path": "research_package/results/check_paper.log",
@@ -4725,7 +4775,7 @@
     {
       "path": "research_package/results/gsn_integrity.log",
       "bytes": 795,
-      "sha256": "fea0bc2eaa644c91b78470867344e2c8c516c0b999e3740094e6b77d1824e3ff"
+      "sha256": "88d0f29fb010034f1dd7141fc8be570b2ad5c26ab10c0ed6fc901ed12a0a5b16"
     },
     {
       "path": "research_package/results/noise_checkpoint.json",
@@ -4739,13 +4789,13 @@
     },
     {
       "path": "research_package/results/pauli_full_suite.log",
-      "bytes": 296,
-      "sha256": "4b2503763feed2c23247d04592cb5ec5e6f268420c6962b84712b3cce4c47632"
+      "bytes": 307,
+      "sha256": "0240bf1e7347e99131ccf7122b43a2916452d17d8a51a71d48c98804702ff9b6"
     },
     {
       "path": "research_package/results/qaoa_integrity.log",
       "bytes": 136,
-      "sha256": "64a777095038525b36ddf48cc1e5acf7d4b38065ce901e53e0969376b5424987"
+      "sha256": "0a934735e7feb3497a30d1207ce2b6c9625689eb599b8f5273723fe568282be8"
     },
     {
       "path": "research_package/results/readiness.json",
@@ -4764,8 +4814,8 @@
     },
     {
       "path": "research_package/results/validation.json",
-      "bytes": 8001,
-      "sha256": "05955461edc5ccd3e24fe1e9e69233d2903fa6390f01552b10ce90a4aefaa9d7"
+      "bytes": 9292,
+      "sha256": "3e6ae1672e4e21dcef12b651cb2f0a186edf6c05b88aa3d67434d032f98aa15d"
     },
     {
       "path": "research_package/results/verify_c031_exact_six.log",
@@ -4781,6 +4831,16 @@
       "path": "research_package/results/verify_c039_central_ablations.log",
       "bytes": 191,
       "sha256": "beb6cac9fd9e0796bbe3b2b3bd0da0e233092ee86dd4c432db0d91405505570c"
+    },
+    {
+      "path": "research_package/results/verify_c040_scaled_ablations.log",
+      "bytes": 186,
+      "sha256": "83e4bd411799cfef8e6d8866eed25ff349c2d8e2311af1d33d118a31764410d1"
+    },
+    {
+      "path": "research_package/results/verify_c041_density_coupling_stress.log",
+      "bytes": 206,
+      "sha256": "aec25b1e51e9e5153832baa18e46f3a10d4ab2bb3f0f154cac70c1c9d839b85f"
     },
     {
       "path": "research_package/results/verify_scf_core_refinement.log",
@@ -4814,8 +4874,8 @@
     },
     {
       "path": "research_package/START_HERE_RU.md",
-      "bytes": 14108,
-      "sha256": "413318e82ceb799d0504f9fa8b31157cf627003f963865a2a82e6b6a09f27be8"
+      "bytes": 15682,
+      "sha256": "4c435d7562e80554258f1db61d7b47cd189acd0ddb59457e12e74cf790595d48"
     },
     {
       "path": "research_package/test_hardware_package.py",
@@ -4829,8 +4889,8 @@
     },
     {
       "path": "research_package/validate_package.py",
-      "bytes": 3045,
-      "sha256": "ba05ab44919a3acbace6da66f03058e0d34cf9d498ec66717252de8327158567"
+      "bytes": 3141,
+      "sha256": "e3e071ee44715c43336761acf59ed13f30ce57ee4ad5af11e2fd5f07f064cda4"
     },
     {
       "path": "results/ansatz_event_rank/development.json",
@@ -6766,6 +6826,51 @@
       "path": "results/pauli_fourth_moment_phase0/c039_family_ablations.csv",
       "bytes": 643,
       "sha256": "927875255e7632ddbe4821e3b006c95f7a25cf3e44eb736c2784f8f9eb526324"
+    },
+    {
+      "path": "results/pauli_fourth_moment_phase0/c040_baseline_summary.csv",
+      "bytes": 486,
+      "sha256": "c8e3bda291567dfe6b49c140084e2e3a867dc9b85960f2d9afaabc74042b104a"
+    },
+    {
+      "path": "results/pauli_fourth_moment_phase0/c040_by_family.csv",
+      "bytes": 1648,
+      "sha256": "21451da97e9d2add08117f9e6a36b65a22af07cce85bb9bcb1da47710aeaa889"
+    },
+    {
+      "path": "results/pauli_fourth_moment_phase0/c040_by_order.csv",
+      "bytes": 1743,
+      "sha256": "b17b0fba23a01c20e9aa88630655e48771befaf6c33711945c511db117094fc5"
+    },
+    {
+      "path": "results/pauli_fourth_moment_phase0/c040_by_weight.csv",
+      "bytes": 1385,
+      "sha256": "bb967bd6376d8288ba4e32d2b3cc5a664d9e63a5e0b45d77ba25d50794b1981d"
+    },
+    {
+      "path": "results/pauli_fourth_moment_phase0/c040_scaled_ablations.json",
+      "bytes": 612802,
+      "sha256": "183922ce97113b6af70d0e441eea4d0dfa6c09926acb72a735f3bbedad83fdf0"
+    },
+    {
+      "path": "results/pauli_fourth_moment_phase0/c040_structured_ablations.csv",
+      "bytes": 2244,
+      "sha256": "f102cc15b545e2db0aae6fd05cffd743803f19a4331bba24820af6b75be5e71a"
+    },
+    {
+      "path": "results/pauli_fourth_moment_phase0/c041_coupling_ablations.csv",
+      "bytes": 2310,
+      "sha256": "38c12afc257e02e73f12069ec677fd941c1e2da4142d8b489dd45fdda87cfe7d"
+    },
+    {
+      "path": "results/pauli_fourth_moment_phase0/c041_density_coupling_stress.json",
+      "bytes": 90473,
+      "sha256": "4a0009dfa8ad8f8e2d7c8e2bc9ac87099ee626a273ae602320c064cbb403ccca"
+    },
+    {
+      "path": "results/pauli_fourth_moment_phase0/c041_density_summary.csv",
+      "bytes": 4227,
+      "sha256": "dd84db796856adda4743751df1b2ebe3cb1f03814d91f08e79783fb7825c757c"
     },
     {
       "path": "results/pauli_fourth_moment_phase0/cnc_positivity_audit.json",

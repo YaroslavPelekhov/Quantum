@@ -1576,3 +1576,27 @@ Frozen JSON, three CSV tables, two figures, a standard-library verifier, and
 five corruption tests were added. These experiments test necessity and
 interpretation of the analytic proof; they are not population estimates,
 hardware evidence, or a substitute for priority review.
+
+### C040--C041 scaled baselines and density/coupling stress — 2026-09-16
+
+Scaled the C039 mechanism audit to 180 seeded sparse roots of orders 10--30,
+five graph generators and four weight models: 720 weighted instances. Nested
+degree, clique, and complete odd-cycle-through-5/7/9 LPs were compared with
+exact maximum-weight matching. Exact fractions increase from 77.22% to 93.89%;
+40 full-blossom LP spot checks are all exact. Lognormal weights are easiest in
+this sample (99.44% odd9 exact), geometric roots hardest (80.56%). These are
+descriptive frozen-seed results, not population estimates.
+
+Structured direct sums through order 132 preserve missing-constraint ratios:
+K3 1.5, C5 1.25, C7 7/6, C9 9/8, C11 1.1, and K5 1.25. The K5 gap survives all
+local odd cycles through nine. Block-diagonal non-skew Householder controls keep
+violation 4/3 through order 96. Among 540 Gaussian matrix directions the median
+theorem ratio is 0.3315; 180 matching-supported controls equal one.
+
+C041 adds 45 ER density roots through order 40, 90 weighted cases, and 28
+weak-coupling rows. Explicit enumeration reaches 384,484 odd cycles and 393.7
+seconds. Odd9 is strict in 5/90, maximum 29/28. Rings of weakly coupled K5
+blocks through order 80 follow ratio 2.5/(2+epsilon/2), preserving 1.2195 at
+epsilon 0.1 and 1.1111 at 0.5. Two stdlib verifiers and eleven corruption tests
+check aggregates, nested baselines, 40 blossom controls, formulas, scope, and
+ten artifact hashes. No QPU or paid resource used.

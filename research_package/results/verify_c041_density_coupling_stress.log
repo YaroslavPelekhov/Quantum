@@ -1,0 +1,8 @@
+{
+  "status": "C041_density_coupling_stress_verified",
+  "density_graphs": 45,
+  "density_weighted_instances": 90,
+  "strict_odd9_instances": 5,
+  "coupling_instances": 28,
+  "artifact_hashes": 3
+}

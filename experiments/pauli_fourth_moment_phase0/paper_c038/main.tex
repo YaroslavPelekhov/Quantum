@@ -54,8 +54,11 @@ instances separates the ingredients: degree constraints are exact on 66.89\%,
 cliques plus odd cycles on 84.69\%, and the complete odd-set system on 100\%.
 All three are exact on 710 bipartite controls. A symmetric norm-one
 contraction violates a triangle odd-set inequality, while its skew control
-saturates it. These computations test the mechanism; the theorem remains
-analytic.
+saturates it. Scaled tests add 180 sparse roots through order 30, four weight
+regimes, controlled families through order 132, and a density stress through
+order 40. Local relaxations are often nearly exact on random sparse cases but
+retain constant gaps on planted blossoms. These computations test the
+mechanism; the theorem remains analytic.
 \end{abstract}
 
 \noindent\textbf{Status and scope.}
@@ -417,6 +420,104 @@ directions are usually nonsaturating although equality is globally attainable.}
 \label{fig:ablations}
 \end{figure}
 
+\section{Scaling, density, and weak coupling}
+
+The atlas is exhaustive but small. A separate preregistered campaign samples
+180 sparse roots at orders $10,14,18,22,26,30$: six replicates from each of
+five generators, with uniform, integer, lognormal, and Pareto edge weights.
+For each of 720 weighted instances we compare a nested hierarchy: degree
+constraints, all line-graph clique constraints, and every simple odd-root-cycle
+constraint through lengths five, seven, and nine. The reference value is exact
+maximum-weight matching. Forty cases at orders 10 and 14 also enumerate every
+odd vertex set; their full blossom LPs all equal matching.
+
+\begin{table}[H]
+\centering
+\caption{Scaled sparse ensemble. Ratios are LP value divided by exact matching.
+The odd-cycle rows are truncated at the displayed length.}
+\label{tab:scaled}
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Baseline & Mean & 95th pct. & Maximum & Exact \\
+\midrule
+Degree only & 1.007353 & 1.045550 & 1.500000 & 77.22\% \\
+All cliques & 1.002541 & 1.013284 & 1.166667 & 91.67\% \\
+Odd cycles $\leq5$ & 1.002156 & 1.008641 & 1.166667 & 93.47\% \\
+Odd cycles $\leq7$ & 1.002068 & 1.005697 & 1.166667 & 93.89\% \\
+Odd cycles $\leq9$ & 1.002041 & 1.005697 & 1.166667 & 93.89\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Figure~\ref{fig:scaled-random} shows that local constraints are numerically
+close on most sampled sparse graphs, especially with heterogeneous weights,
+but do not converge to universal exactness. Under the odd-through-nine
+baseline, exact fractions are 87.22\%, 93.33\%, 99.44\%, and 95.56\% for
+uniform, integer, lognormal, and Pareto weights. These values describe the
+frozen generators and seeds, not an application distribution.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/c040_scaled_random_ablations.png}
+\caption{Scaling and weight ablations on 720 weighted sparse instances. Local
+constraints usually make the remaining gap small, but exactness depends on
+the graph and weight ensemble.}
+\label{fig:scaled-random}
+\end{figure}
+
+Controlled direct sums prevent a misleading ``typical equals sufficient''
+interpretation. Disjoint $K_3,C_5,C_7,C_9,C_{11}$ components retain ratios
+$3/2,5/4,7/6,9/8,11/10$ until the corresponding missing local constraint is
+added. More importantly, disjoint $K_5$ components retain ratio $5/4$ after
+all odd cycles through nine, although every simple cycle within a component is
+already covered. The missing inequality is the full five-vertex blossom.
+Orders reach 132, so the gap is not a vanishing finite-size effect.
+
+For 540 Gaussian matrix directions on the scaled roots, the median theorem
+ratio is $0.3315$, the 95th percentile is $0.4982$, and the maximum is
+$0.7418$; 180 matching-supported controls all attain one. Removing skewness
+also scales: block-diagonal copies of the symmetric Householder counterexample
+retain violation ratio $4/3$ through order 96. Figure~\ref{fig:structured}
+summarizes both controls.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/c040_structured_and_tightness.png}
+\caption{Left: local obstructions persist under direct sums. Right: generic
+Gaussian directions are far from equality while matching-supported directions
+remain exactly sharp.}
+\label{fig:structured}
+\end{figure}
+
+A final density stress uses 45 Erdos--Renyi roots at orders 20, 30, and 40,
+expected degrees two through six, and two weight regimes. Odd-through-nine is
+strict in 5 of 90 weighted cases, with maximum ratio $29/28$. One graph already
+contains 384,484 enumerated odd cycles through length nine; the complete run
+takes 393.7 seconds. Thus explicit local-cycle enumeration can become large
+even when its remaining value gap is small.
+
+To test robustness beyond disconnected unions, even numbers of $K_5$ blocks
+are joined in a ring by weak weighted bridges. With $b$ blocks and bridge
+weight $\varepsilon$, the observed local optimum is $2.5b$ and matching is
+$2b+\varepsilon b/2$, giving ratio
+\[
+ \frac{2.5}{2+\varepsilon/2}.
+\]
+It is $1.2195$ at $\varepsilon=0.1$, $1.1111$ at $\varepsilon=0.5$, and closes
+only at unit bridge weight, identically for 2, 4, 8, and 16 blocks (up to 80
+vertices). Figure~\ref{fig:density} separates this planted mechanism from the
+nonmonotone random density sweep.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/c041_density_coupling_stress.png}
+\caption{Density and weak-coupling stress. Random exactness is nonmonotone,
+whereas planted blossom gaps survive connectivity and weak bridges with a
+size-independent curve.}
+\label{fig:density}
+\end{figure}
+
 \section{Computational falsification and reproducibility}
 
 The proof is arbitrary-size and does not depend on enumeration. We nevertheless
@@ -445,6 +546,12 @@ SHA-256 hashes of all five derived artifacts. Five additional corruption tests
 require rejection of altered ratios, counterexample entries, hashes, or scope
 flags.
 
+The two scaled records add 225 sampled roots, 810 weighted random instances, 58
+structured or coupling rows, ten hashed tables or figures, two independent
+standard-library verifiers, and eleven corruption tests. Their scope fields
+explicitly distinguish seeded ensembles, truncated odd-cycle systems, and
+controlled constructions from exhaustive or application-level claims.
+
 From the repository root:
 \begin{quote}\small\ttfamily\raggedright
 python experiments/pauli\_fourth\_moment\_phase0/\\
@@ -462,6 +569,15 @@ python -S experiments/pauli\_fourth\_moment\_phase0/\\
 python -m unittest discover -s\\
 \hspace*{1em}experiments/pauli\_fourth\_moment\_phase0\\
 \hspace*{1em}-p test\_c039\_central\_ablations.py -v
+\medskip\par
+python experiments/pauli\_fourth\_moment\_phase0/\\
+\hspace*{1em}run\_c040\_scaled\_ablations.py --overwrite\par
+python -S experiments/pauli\_fourth\_moment\_phase0/\\
+\hspace*{1em}verify\_c040\_scaled\_ablations.py\par
+python experiments/pauli\_fourth\_moment\_phase0/\\
+\hspace*{1em}run\_c041\_density\_coupling\_stress.py --overwrite\par
+python -S experiments/pauli\_fourth\_moment\_phase0/\\
+\hspace*{1em}verify\_c041\_density\_coupling\_stress.py
 \end{quote}
 The wrapped paths are single commands. Numerical agreement is falsification
 support, not the proof of Theorem~\ref{thm:main}.
@@ -509,6 +625,13 @@ odd-set constraints eliminate it. Removing skewness breaks the key conclusion
 on the smallest possible odd root. These are finite tests of the proof's
 named ingredients, not empirical substitutes for the theorem.
 
+Scaling clarifies the practical boundary. Local constraints are often nearly
+exact on seeded sparse ensembles, but constant gaps persist on direct sums and
+under weak coupling. Explicitly enumerating short odd cycles can require
+hundreds of thousands of rows by order 40, while the complete mathematical
+object remains maximum-weight matching rather than an ever longer list of
+local repairs.
+
 The result concerns exact uncertainty values, not quantum advantage or hardware
 performance. The next scientific tests are independent refereeing and a wider
 bibliographic priority search; adding more random instances would not strengthen
@@ -519,11 +642,11 @@ the analytic theorem.
 Source, frozen records, verifier, and tests are available in the
 \href{https://github.com/YaroslavPelekhov/Quantum/tree/research/c038-line-graph-hbar}{public C038 GitHub branch}.
 The repository index identifies the theorem note, priority audit, generator,
-frozen JSON, independent verifier, and corruption-controlled tests. Every
-reported numerical constant is read from the two frozen JSON records by the
-manuscript checker. The second record includes graph identifiers, all weight
-vectors and relaxation values, aggregate summaries, explicit scope flags, and
-hashes for the three CSV tables and two figures.
+frozen JSON, independent verifiers, and corruption-controlled tests. Every
+reported numerical constant is read from four frozen JSON records by the
+manuscript checker. They include graph identifiers, generator seeds, weight
+regimes, relaxation values, aggregate summaries, explicit scope flags, and
+hashes for all derived tables and figures.
 
 \section*{Declarations}
 

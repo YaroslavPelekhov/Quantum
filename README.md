@@ -26,6 +26,12 @@ baseline. Controlled odd-cycle/odd-complete families and an exact symmetric
 Householder counterexample isolate full odd sets and skewness as necessary
 ingredients. See [central report](experiments/pauli_fourth_moment_phase0/C039_CENTRAL_ABLATIONS.md).
 
+C040--C041 scale the same question to 180 seeded sparse roots through order 30,
+45 density-stress roots through order 40, controlled direct sums through order
+132, and weakly coupled K5 rings through order 80. Local odd-cycle relaxations
+are usually close on random sparse instances but retain size-independent gaps
+on planted blossoms. See the [scaled report](experiments/pauli_fourth_moment_phase0/C040_C041_SCALED_STRESS.md).
+
 The new local shot/noise planning study is separate from the frozen QAOA
 replication. It supplies no QPU evidence. Hardware execution still requires
 a named device, target-specific compilation and an approved budget.

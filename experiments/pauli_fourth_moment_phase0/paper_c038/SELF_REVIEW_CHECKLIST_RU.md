@@ -41,6 +41,11 @@
 - Сверить 6 225 baseline-строк: full matching должен быть exact во всех,
   bipartite positive control -- exact для всех трёх baseline.
 - Проверить рационально Householder-контрпример `4/3 > 1` и skew-control `=1`.
+- Запустить C040/C041 verifiers и 11 corruption-тестов; отдельно проверить
+  nested monotonicity пяти baseline, 40 full-blossom spot checks и формулу
+  weak-coupling `2.5/(2+epsilon/2)`.
+- Не называть truncated odd-cycle baseline полным h-perfect relaxation на
+  произвольных больших графах.
 - Пересобрать PDF минимум два раза для разрешения ссылок.
 - Убедиться, что финальный PDF не содержит `Anonymous author`, если подача не
   double-blind.
