@@ -1,4 +1,29 @@
-# Квантовое исследование: итог до C044
+# Квантовое исследование: итог до C045
+
+## C045 — центральная статья и adversarial priority audit, 16 сентября 2026
+
+Главная идея теперь зафиксирована без смешения двух сюжетов: для любого
+конечного корневого графа `R` и всех неотрицательных весов
+`BETA(L(R))=MATCH(R)`, то есть
+`beta(L(R),w)=alpha(L(R),w)=nu(R,w)`. Ключевой мост — квадраты
+поддерживаемых элементов любой skew contraction удовлетворяют всем
+blossom/odd-set inequalities из-за потери одного ранга в нечётных главных
+подматрицах.
+
+Расширенный поиск сравнил девять ближайших первичных/издательских источников:
+beta-body/hbar-perfect работы, line-graph free fermions, Edmonds matching
+polytope, skew-energy/trace-norm литературу, weighted oriented graphs и
+line-graph measurement incompatibility. Точного совпадения с комбинацией
+all-weight Pauli identity, полного matching-polytope mechanism и
+arbitrary-entry weighted nuclear-norm inequality не найдено. Честный статус:
+**сильный A/A* candidate; приоритет поддержан, но не сертифицирован внешней
+рецензией**.
+
+Рукопись переработана: заголовок, abstract и основной conclusion посвящены
+line-graph theorem; SCF quasi-line theorem обозначена вторичным расширением;
+масштабные C040--C044 таблицы, density stress, полный reproducibility ledger и
+расширенная карта prior art находятся в приложениях. См.
+[C045 priority and submission-focus audit](C045_PRIORITY_AND_SUBMISSION_AUDIT.md).
 
 ## C044 — доказательство усилено до автономного, 16 сентября 2026
 

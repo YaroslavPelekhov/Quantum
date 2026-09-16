@@ -34,6 +34,13 @@ C044 заменил краткий three-arc sketch полностью авто�
 1 027 351 алгебраическая строка, 4 194 302 deficit-подмножества и
 3 803 174 циркулянтные клики до порядка 30.
 
+C045 провёл расширенный поиск приоритета по девяти ближайшим источникам и
+перестроил статью вокруг одной headline-теоремы. Точного совпадения с
+all-weight beta/matching identity, полным blossom-механизмом и weighted
+nuclear-norm формой не найдено, но приоритет не объявлен сертифицированным.
+SCF quasi-line theorem теперь вторична; масштабные тесты и полный ledger
+вынесены в приложения.
+
 Перед публичной подачей автор самостоятельно заполняет имя, аффилиацию,
 контакт, funding/conflict statements и точное раскрытие AI-помощи. Текущая
 версия анонимна и не проходила внешнее рецензирование.
@@ -47,6 +54,8 @@ python -m unittest discover -s experiments/pauli_fourth_moment_phase0 -p test_c0
 python -S experiments/pauli_fourth_moment_phase0/verify_c040_scaled_ablations.py
 python -S experiments/pauli_fourth_moment_phase0/verify_c041_density_coupling_stress.py
 python -S experiments/pauli_fourth_moment_phase0/verify_c043_quasiline_scf_theorem.py
+python -S experiments/pauli_fourth_moment_phase0/verify_c044_proof_hardening.py
+python -S experiments/pauli_fourth_moment_phase0/verify_c045_priority_submission_audit.py
 ```
 
 Воспроизводимая сборка без зависимости от Perl/latexmk:

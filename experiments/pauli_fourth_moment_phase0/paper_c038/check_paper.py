@@ -12,6 +12,7 @@ DENSITY = ROOT / "results" / "pauli_fourth_moment_phase0" / "c041_density_coupli
 BOUNDARY = ROOT / "results" / "pauli_fourth_moment_phase0" / "c042_rank_perfect_boundary.json"
 QUASILINE = ROOT / "results" / "pauli_fourth_moment_phase0" / "c043_quasiline_scf_falsification.json"
 HARDENING = ROOT / "results" / "pauli_fourth_moment_phase0" / "c044_proof_hardening.json"
+PRIORITY = ROOT / "results" / "pauli_fourth_moment_phase0" / "c045_priority_submission_audit.json"
 
 
 def main():
@@ -23,6 +24,7 @@ def main():
     boundary = json.loads(BOUNDARY.read_text(encoding="utf-8"))
     quasiline = json.loads(QUASILINE.read_text(encoding="utf-8"))
     hardening = json.loads(HARDENING.read_text(encoding="utf-8"))
+    priority = json.loads(PRIORITY.read_text(encoding="utf-8"))
     required = [
         r"\beta(L(R),w)=\alpha(L(R),w)=\nu(R,w)",
         r"\left(\frac{\norm{A}_*}{2}\right)^2",
@@ -55,6 +57,9 @@ def main():
         "3,803,174 cliques",
         "4,194,302",
         "oriolostauffer2022",
+        "Exact weighted Pauli uncertainty on line graphs",
+        "Contribution hierarchy, priority boundary, and conclusion",
+        "C045 search",
     ]
     for item in required:
         assert item in text, item
@@ -99,8 +104,13 @@ def main():
     assert hardening["algebraic_parameter_audit"]["admissible_maximum_pairs"] == 1027351
     assert hardening["sumset_disjointness_audit"]["subsets_checked"] == 4194302
     assert hardening["exact_circulant_clique_audit"]["cliques_enumerated"] == 3803174
+    assert priority["status"] == "priority_survives_search_not_certified"
+    assert priority["sources_checked"] == 9
+    assert priority["exact_collision_found"] is False
+    assert priority["priority_certified"] is False
+    assert priority["manuscript_decisions"]["line_graph_theorem_is_headline"] is True
     print(json.dumps({
-        "status": "standalone_C038_C044_paper_checked",
+        "status": "standalone_C038_C045_paper_checked",
         "atlas_roots": report["atlas_nonempty_roots"],
         "direct_majorana_cases": report["direct_majorana_norm_cases"],
         "weighted_ablation_cases": ablations["weighted_instances"],
@@ -113,6 +123,7 @@ def main():
         "C043_random_CFI_controls": quasiline["random_proper_circular_arc_attack"]["graphs_tested"],
         "C044_all_deletions": hardening["all_deletions_heredity_audit"]["all_one_vertex_deletions"],
         "C044_exact_cliques": hardening["exact_circulant_clique_audit"]["cliques_enumerated"],
+        "C045_sources_checked": priority["sources_checked"],
         "full_polytope_exact_fraction": ablations["baseline_summary"]["full_matching"]["exact_fraction"],
         "external_reviewed": False,
         "priority_confirmed": False,

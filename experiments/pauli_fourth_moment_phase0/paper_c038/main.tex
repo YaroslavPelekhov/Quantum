@@ -19,7 +19,7 @@
 \setlength{\emergencystretch}{2em}
 \setlength{\parskip}{3pt}
 
-\title{Exact weighted Pauli uncertainty from matching polytopes and simplicial quasi-line graphs\thanks{Independent
+\title{Exact weighted Pauli uncertainty on line graphs via the matching polytope\thanks{Independent
 working manuscript. Author metadata and disclosure statement must be completed
 before submission.}}
 \author{Anonymous author\\Independent researcher}
@@ -29,10 +29,10 @@ before submission.}}
 \maketitle
 
 \begin{abstract}
-For a family of Pauli observables, let its frustration graph join exactly
-the anticommuting pairs. We prove that the complete weighted quadratic
-uncertainty problem is exact on every line graph. More precisely, for every
-finite simple graph $R$ and every nonnegative edge weight $w$,
+For Pauli observables, let the frustration graph join exactly the
+anticommuting pairs. We prove that the complete weighted quadratic uncertainty
+problem is exact on every line graph. For every finite simple graph $R$ and
+every nonnegative edge weight $w$,
 \[
  \beta(L(R),w)=\alpha(L(R),w)=\nu(R,w),
 \]
@@ -45,25 +45,15 @@ It also yields the sharp matrix inequality
  \left(\norm{A}_*/2\right)^2\leq
  \nu(R,w)\sum_{e\in E(R)}A_e^2/w_e
 \]
-for every real skew matrix supported on $R$. A second proof derives the same
-matching-polytope constraints from simplicial claw-free rank inequalities.
-The family $L(K_{2k+1})$, $k\geq2$, proves that the result strictly extends
-the previously sufficient $h$-perfect route. A centralized ablation over all
-1245 nonempty graph-atlas roots through seven vertices and 6225 weighted
-instances separates the ingredients: degree constraints are exact on 66.89\%,
-cliques plus odd cycles on 84.69\%, and the complete odd-set system on 100\%.
-All three are exact on 710 bipartite controls. A symmetric norm-one
-contraction violates a triangle odd-set inequality, while its skew control
-saturates it. Scaled tests add 180 sparse roots through order 30, four weight
-regimes, controlled families through order 132, and a density stress through
-order 40. Local relaxations are often nearly exact on random sparse cases but
-retain constant gaps on planted blossoms. These computations test the
-mechanism; the theorem remains analytic.
-Beyond line graphs, we prove that every simplicial claw-free quasi-line graph
-is rank-perfect and therefore $\hbar$-perfect. The proof excludes the
-clique-circulants responsible for every nonrank quasi-line facet. An exact
-nine-vertex witness shows this extension is strict over both line graphs and
-$h$-perfect graphs.
+for every real skew matrix supported on $R$. The family $L(K_{2k+1})$,
+$k\geq2$, proves that the theorem strictly extends the previously sufficient
+$h$-perfect route. An exhaustive small-root ablation separates the mechanism:
+degree constraints are exact on 66.89\% of 6225 weighted instances, cliques
+plus odd cycles on 84.69\%, and the complete odd-set system on 100\%. Removing
+skewness fails already on a triangle. As a secondary extension, we prove that
+every simplicial claw-free quasi-line graph is rank-perfect and hence
+$\hbar$-perfect. The analytic theorem, not the finite computation, carries the
+claim.
 \end{abstract}
 
 \noindent\textbf{Status and scope.}
@@ -71,7 +61,9 @@ This is a self-contained working manuscript, not an externally reviewed
 article. The proof uses classical matching-polytope and Majorana tools, which
 are cited explicitly. A documented search found no prior statement of the
 all-weight equality above, but a negative literature search is not a proof of
-priority. No quantum advantage or new matching algorithm is claimed.
+priority. The expanded C045 search was frozen on 16 September 2026 and found
+no exact collision, but this remains support rather than certification.
+No quantum advantage or new matching algorithm is claimed.
 
 \section{Introduction}
 
@@ -118,9 +110,11 @@ claw-free rank bounds and exhibit an infinite separation from the
 $h$-perfect sufficient class. Finally, rather than reporting only successful
 theorem checks, we compare the complete mechanism against two explicit weaker
 baselines and ablate skewness itself.
-We then combine a simplicial-clique heredity lemma with the modern facet
-structure of fuzzy circular interval graphs to prove $\hbar$-perfection for
-the strictly larger class of simplicial claw-free quasi-line graphs.
+As a secondary extension, we combine a simplicial-clique heredity lemma with
+the modern facet structure of fuzzy circular interval graphs to prove
+$\hbar$-perfection for simplicial claw-free quasi-line graphs. This extension
+is separated from the headline contribution because it depends on the
+classical quasi-line facet classification.
 
 \section{Definitions and the variational reduction}
 
@@ -335,7 +329,7 @@ The witness shows why triangle and odd-hole checks alone miss the mechanism:
 the new proof supplies blossom inequalities for arbitrary odd vertex sets,
 not merely chordless cycles.
 
-\section{Beyond line graphs: the rank-perfect SCF bridge}
+\section{Secondary extension beyond line graphs: the rank-perfect SCF bridge}
 
 Call a graph \emph{rank-perfect} when nonnegativity and the inequalities
 \begin{equation}\label{eq:all-rank}
@@ -609,6 +603,45 @@ directions are usually nonsaturating although equality is globally attainable.}
 \label{fig:ablations}
 \end{figure}
 
+\section{Contribution hierarchy, priority boundary, and conclusion}
+
+The paper has one headline result: for every finite root graph and every
+nonnegative weight, the complete Pauli beta body of its line graph is the
+classical matching polytope. Lemma~\ref{lem:contraction} is the mechanism, and
+Theorem~\ref{thm:matrix} is its support-sensitive matrix form. The second
+graph-polyhedral proof, the strict $L(K_{2k+1})$ separation, and the central
+ablations are robustness checks and consequences of that result.
+
+The simplicial claw-free quasi-line theorem is a secondary structural
+extension. It establishes that the line-graph identity is not an isolated
+coincidence, but it relies on the published quasi-line facet classification
+and is not needed for Theorem~\ref{thm:main}. Keeping that dependency explicit
+also makes the main theorem independently assessable if a referee asks for
+the extension to be split off.
+
+The closest prior literatures contain the ingredients separately. Beta
+numbers and representation invariance are due to Xu et al.~\cite{xu,xuprx};
+line-graph Majorana solvability is due to Chapman and
+Flammia~\cite{cf}; and Edmonds supplies the matching polytope and weighted
+oracle~\cite{edmonds}. Skew-energy and trace-norm work relates spectral
+quantities to matching, rank, or degree~\cite{tianwong,zhoutrace}, while
+McNulty studies a different line-graph invariant, measurement
+incompatibility~\cite{mcnulty}. The priority-sensitive conjunction here is
+the all-weight beta/matching identity, the generation of every blossom
+inequality by odd skew contractions, and the arbitrary-entry weighted matrix
+form. A source-by-source C045 audit found no exact statement of that
+conjunction. Negative search cannot establish priority, so we make no
+``first'' claim and retain external refereeing as the independent check.
+
+In summary, odd principal submatrices of a skew contraction lose one rank.
+That fact supplies every blossom inequality and converts an exact quantum
+uncertainty problem into maximum-weight matching. The result is analytic,
+arbitrary-size, and all-weight; it is not a hardware, speedup, or new
+matching-algorithm claim. The appendices report the broader computational
+falsification, proof-hardening ledger, and expanded source boundary.
+
+\appendix
+
 \section{Scaling, density, and weak coupling}
 
 The atlas is exhaustive but small. A separate preregistered campaign samples
@@ -809,7 +842,7 @@ python -S experiments/pauli\_fourth\_moment\_phase0/\\
 The wrapped paths are single commands. Numerical agreement is falsification
 support, not the proof of Theorem~\ref{thm:main}.
 
-\section{Relation to prior work and claim boundary}
+\section{Expanded relation to prior work and claim boundary}
 
 Chapman and Flammia identify line-graph frustration structures as the free
 fermion setting for quadratic Majorana Hamiltonians~\cite{cf}. Chapman,
@@ -839,7 +872,7 @@ cannot exclude differently worded or inaccessible prior results. Journal
 referees remain the independent priority check when no pre-submission expert
 is available.
 
-\section{Conclusion}
+\section{Extended discussion and scope}
 
 Odd principal submatrices of a skew contraction lose one rank. That elementary
 fact generates every blossom inequality and turns the quantum optimization on
@@ -880,7 +913,7 @@ Source, frozen records, verifier, and tests are available in the
 \href{https://github.com/YaroslavPelekhov/Quantum/tree/research/c038-line-graph-hbar}{public C038 GitHub branch}.
 The repository index identifies the theorem note, priority audit, generator,
 frozen JSON, independent verifiers, and corruption-controlled tests. Every
-reported numerical constant is read from seven frozen JSON records by the
+reported numerical constant is read from eight frozen JSON records by the
 manuscript checker. They include graph identifiers, generator seeds, weight
 regimes, relaxation values, aggregate summaries, explicit scope flags, and
 hashes for all derived tables and figures.
@@ -916,6 +949,12 @@ Z.-P. Xu, J. Wang, Q. Ye, G. Ko\ss mann, R. Schwonnek, and A. Winter,
 \emph{Simultaneous variances of Pauli strings, weighted independence numbers,
 and a new kind of perfection of graphs}, arXiv:2511.13531 (2025).
 \url{https://arxiv.org/abs/2511.13531}.
+
+\bibitem{xuprx}
+Z.-P. Xu, R. Schwonnek, and A. Winter,
+\emph{Bounding the joint numerical range of Pauli strings by graph
+parameters}, PRX Quantum 5, 020318 (2024).
+\url{https://doi.org/10.1103/PRXQuantum.5.020318}.
 
 \bibitem{oriolo}
 G. Oriolo, \emph{Clique family inequalities for the stable set polytope of
@@ -954,6 +993,12 @@ Incompatibility}, arXiv:2511.15954 (2025).
 F. Tian and D. Wong, \emph{Relation between the skew energy of an oriented
 graph and its matching number}, Discrete Applied Mathematics 222, 179--184
 (2017). \url{https://doi.org/10.1016/j.dam.2017.01.004}.
+
+\bibitem{zhoutrace}
+Q. Zhou, F. Xu, Y. Zhang, and D. Wong,
+\emph{Relation between the trace norm of an oriented graph and its rank},
+Linear Algebra and its Applications 675, 204--218 (2023).
+\url{https://doi.org/10.1016/j.laa.2023.06.023}.
 \end{thebibliography}
 
 \end{document}

@@ -1,5 +1,20 @@
 # Quantum x Evolutionary Computing Research Artifact
 
+## C045: focused line-graph theorem and adversarial priority audit
+
+The standalone paper is now centered on one result:
+`BETA(L(R)) = MATCH(R)`, equivalently
+`beta(L(R),w)=alpha(L(R),w)=nu(R,w)` for every finite root graph and every
+nonnegative weight. A source-by-source audit of nine closest works found no
+exact collision for the conjunction of the all-weight Pauli identity, the
+full blossom mechanism, and the support-sensitive weighted matrix inequality.
+The search supports priority but does not certify it.
+
+The title and abstract now lead only with the line-graph theorem. The SCF
+quasi-line theorem is a secondary extension, while scaled experiments,
+density stress, full reproducibility commands, and the expanded source map
+are appendices. See the [C045 audit](experiments/pauli_fourth_moment_phase0/C045_PRIORITY_AND_SUBMISSION_AUDIT.md).
+
 ## C044: hardened SCF quasi-line theorem
 
 The latest cycle hardens the proof that every **simplicial claw-free quasi-line graph is

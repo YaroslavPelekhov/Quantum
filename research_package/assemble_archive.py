@@ -44,7 +44,7 @@ def main():
             continue
         files=[p for p in directory.rglob('*') if include(p)]
         reports=[str(p.relative_to(ROOT)).replace('\\','/') for p in files
-                 if p.suffix=='.md' and any(t in p.name for t in ('REPORT','README','THEORY','THEOREM','AUDIT','GATE'))]
+                 if p.suffix=='.md' and any(t in p.name for t in ('REPORT','README','THEORY','THEOREM','AUDIT','GATE','PROOF'))]
         results=ROOT/'results'/directory.name
         if results.exists():
             reports += [str(p.relative_to(ROOT)).replace('\\','/') for p in results.rglob('*.md') if include(p)]

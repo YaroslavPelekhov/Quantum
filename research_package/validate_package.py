@@ -32,6 +32,7 @@ def main():
                    'verify_c042_rank_perfect_boundary.py',
                    'verify_c043_quasiline_scf_theorem.py', 'paper/check_paper.py',
                    'verify_c044_proof_hardening.py',
+                   'verify_c045_priority_submission_audit.py',
                    'paper_c038/check_paper.py'):
         name = {
             'paper/check_paper.py': 'pauli_full_paper_check',

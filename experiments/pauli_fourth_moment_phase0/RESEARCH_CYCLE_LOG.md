@@ -1655,3 +1655,21 @@ order-nine SCF graphs, 1,027,351 admissible algebra rows through order 160,
 `C(n,p)` through order 30. No `p>=3` simplicial clique was found. A literal
 dependency audit maps Definition 8 and Theorem 26 of Oriolo--Stauffer to each
 step of the main proof. Independent verification and mutation tests pass.
+
+### C045 priority and submission-focus audit — 2026-09-16
+
+Froze the priority-sensitive conjunction before search: the all-weight Pauli
+identity `BETA(L(R))=MATCH(R)`, the odd-principal-rank-loss generation of every
+blossom inequality, and the arbitrary-entry weighted nuclear-norm form.
+Compared nine nearest primary/publisher sources spanning beta bodies,
+line-graph free fermions, matching polytopes, skew energy/trace norm, weighted
+oriented graphs, and measurement incompatibility. No exact collision was
+found. Each nearest source contains a neighboring ingredient, but not the
+frozen conjunction. This is documented support, not a priority certificate.
+
+The manuscript is now centered on the line-graph theorem in its title,
+abstract, contribution hierarchy, and main conclusion. The SCF quasi-line
+theorem is explicitly secondary. C040--C044 scale/proof ledgers and the
+expanded source map are appendices; the central C039 matching-polytope and
+skewness ablations remain in the main text. A frozen JSON record, independent
+standard-library verifier, and five mutation tests enforce the honest scope.

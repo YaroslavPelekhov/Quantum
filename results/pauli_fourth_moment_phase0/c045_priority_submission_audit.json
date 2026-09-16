@@ -1,0 +1,34 @@
+{
+  "cycle": "C045",
+  "audit_date": "2026-09-16",
+  "status": "priority_survives_search_not_certified",
+  "headline_claim": "BETA(L(R)) equals MATCH(R) for every finite simple root graph",
+  "sources_checked": 9,
+  "closest_source_classes": [
+    "weighted Pauli beta bodies",
+    "line-graph free-fermion solvability",
+    "matching polytopes",
+    "skew energy and trace norm",
+    "line-graph measurement incompatibility"
+  ],
+  "exact_collision_found": false,
+  "priority_certified": false,
+  "external_reviewed": false,
+  "section7_proof_hardened_by_c044": true,
+  "manuscript_decisions": {
+    "line_graph_theorem_is_headline": true,
+    "scf_quasiline_is_secondary": true,
+    "scaled_experiments_moved_to_appendix": true,
+    "reproducibility_ledger_moved_to_appendix": true,
+    "main_text_priority_boundary_added": true
+  },
+  "forbidden_claims": [
+    "first ever",
+    "definitively novel",
+    "quantum advantage",
+    "new matching algorithm",
+    "hardware validation of the theorem"
+  ],
+  "remaining_risk": "an unindexed equivalent theorem in matrix-analysis or fermionic-covariance language",
+  "report_sha256": "9eb1a1473ef670db4b5856b60b263e0e03ed46dd1dbefb328473d820b9d0e7d4"
+}

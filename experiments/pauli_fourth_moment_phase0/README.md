@@ -8,8 +8,14 @@ separation `L(K_(2k+1))` from the previously sufficient h-perfect class.
 All 1,245 nonempty atlas roots pass the finite polar-factor stress audit;
 47 small roots also pass a direct dense Jordan--Wigner norm check, and
 five corruption-controlled tests plus a `python -S` witness verifier pass.
-External proof review and publication priority remain open, so this is a
-strong A-star candidate rather than an acceptance claim.
+The C044 sumset proof hardening removes the last geometric sketch in the
+SCF quasi-line extension. The expanded [C045 priority and submission-focus
+audit](C045_PRIORITY_AND_SUBMISSION_AUDIT.md) found no exact collision across
+nine nearest primary/publisher sources, refocused the title and abstract on
+the line-graph theorem, and moved scaled experiments and the long
+reproducibility ledger to appendices. External proof review and publication
+priority remain open, so this is a strong A/A-star candidate rather than an
+acceptance claim.
 
 The [adversarial C038 priority audit](LINE_GRAPH_PRIORITY_AUDIT_C038.md)
 separates the claim from free-fermion solvability, magic-state simulation,

@@ -6,6 +6,6 @@ test_repair_always_feasible_on_deterministic_sample (test_qaoa_mis.QAOAMISTest.t
 test_statevector_is_normalized (test_qaoa_mis.QAOAMISTest.test_statevector_is_normalized) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.058s
+Ran 6 tests in 0.057s
 
 OK
