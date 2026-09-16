@@ -1,4 +1,4 @@
-"""Check standalone C038 manuscript claims against the frozen artifact."""
+"""Check standalone manuscript claims against the C038/C039 artifacts."""
 import json
 from pathlib import Path
 
@@ -6,19 +6,29 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 TEX = Path(__file__).with_name("main.tex")
 DATA = ROOT / "results" / "pauli_fourth_moment_phase0" / "c038_line_graph_hbar.json"
+ABLATIONS = ROOT / "results" / "pauli_fourth_moment_phase0" / "c039_central_ablations.json"
 
 
 def main():
     text = TEX.read_text(encoding="utf-8")
     report = json.loads(DATA.read_text(encoding="utf-8"))
+    ablations = json.loads(ABLATIONS.read_text(encoding="utf-8"))
     required = [
         r"\beta(L(R),w)=\alpha(L(R),w)=\nu(R,w)",
         r"\left(\frac{\norm{A}_*}{2}\right)^2",
         "1245 root graphs",
-        "47 direct Jordan--Wigner norm",
+        "47 small-root cases",
         r"L(K_{2k+1})",
         "not an externally reviewed",
         "No quantum advantage",
+        "6225 weighted",
+        "66.89\\%",
+        "84.69\\%",
+        "Householder",
+        "953 strict cases",
+        "4980 seeded Gaussian",
+        "c039_baseline_gaps.png",
+        "c039_mechanism_ablations.png",
     ]
     for item in required:
         assert item in text, item
@@ -28,10 +38,21 @@ def main():
     assert report["unrestricted_SCF_theorem"] is False
     assert report["A_star_confirmed"] is False
     assert len(report["strict_hperfect_separations"]) == 3
+    assert ablations["atlas_root_graphs"] == 1245
+    assert ablations["weighted_instances"] == 6225
+    assert ablations["strictness_counts"]["degree_only"]["strict_instances"] == 2061
+    assert ablations["strictness_counts"]["h_relaxation"]["strict_instances"] == 953
+    assert ablations["baseline_summary"]["full_matching"]["exact_fraction"] == 1.0
+    assert ablations["baseline_summary_by_graph_class"]["bipartite_roots"]["instances"] == 710
+    assert ablations["skewness_ablation"]["K3_odd_set_sum"] == "4/3"
+    assert ablations["skew_control"]["K3_odd_set_sum"] == "1"
+    assert ablations["claims"]["experiments_replace_analytic_proof"] is False
     print(json.dumps({
         "status": "standalone_C038_paper_checked",
         "atlas_roots": report["atlas_nonempty_roots"],
         "direct_majorana_cases": report["direct_majorana_norm_cases"],
+        "weighted_ablation_cases": ablations["weighted_instances"],
+        "full_polytope_exact_fraction": ablations["baseline_summary"]["full_matching"]["exact_fraction"],
         "external_reviewed": False,
         "priority_confirmed": False,
     }, indent=2))

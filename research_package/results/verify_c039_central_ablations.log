@@ -1,0 +1,7 @@
+{
+  "status": "C039_baselines_ablations_and_artifacts_verified",
+  "weighted_instances": 6225,
+  "degree_strict_instances": 2061,
+  "h_strict_instances": 953,
+  "artifact_hashes": 5
+}

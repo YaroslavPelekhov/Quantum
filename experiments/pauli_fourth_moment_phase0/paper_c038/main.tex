@@ -1,7 +1,7 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs,array}
+\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs,array,graphicx,float}
 \usepackage[margin=25mm]{geometry}
 \usepackage[dvipsnames]{xcolor}
 \usepackage[colorlinks=true,linkcolor=MidnightBlue,citecolor=MidnightBlue,urlcolor=MidnightBlue]{hyperref}
@@ -19,11 +19,11 @@
 \setlength{\emergencystretch}{2em}
 \setlength{\parskip}{3pt}
 
-\title{Exact weighted Pauli uncertainty on all line graphs\thanks{Independent
+\title{Skew contractions and exact weighted Pauli uncertainty on all line graphs\thanks{Independent
 working manuscript. Author metadata and disclosure statement must be completed
 before submission.}}
 \author{Anonymous author\\Independent researcher}
-\date{12 September 2026}
+\date{16 September 2026}
 
 \begin{document}
 \maketitle
@@ -48,9 +48,14 @@ It also yields the sharp matrix inequality
 for every real skew matrix supported on $R$. A second proof derives the same
 matching-polytope constraints from simplicial claw-free rank inequalities.
 The family $L(K_{2k+1})$, $k\geq2$, proves that the result strictly extends
-the previously sufficient $h$-perfect route. The theorem is analytic; a
-finite stress test over 1245 root graphs and 47 direct Jordan--Wigner norm
-checks is supplied only as falsification and reproducibility evidence.
+the previously sufficient $h$-perfect route. A centralized ablation over all
+1245 nonempty graph-atlas roots through seven vertices and 6225 weighted
+instances separates the ingredients: degree constraints are exact on 66.89\%,
+cliques plus odd cycles on 84.69\%, and the complete odd-set system on 100\%.
+All three are exact on 710 bipartite controls. A symmetric norm-one
+contraction violates a triangle odd-set inequality, while its skew control
+saturates it. These computations test the mechanism; the theorem remains
+analytic.
 \end{abstract}
 
 \noindent\textbf{Status and scope.}
@@ -102,7 +107,9 @@ The resulting theorem has three useful forms:
 The last form distinguishes the result from a merely unweighted skew-energy
 estimate. We also give an independent proof through known simplicial
 claw-free rank bounds and exhibit an infinite separation from the
-$h$-perfect sufficient class.
+$h$-perfect sufficient class. Finally, rather than reporting only successful
+theorem checks, we compare the complete mechanism against two explicit weaker
+baselines and ablate skewness itself.
 
 \section{Definitions and the variational reduction}
 
@@ -317,6 +324,99 @@ The witness shows why triangle and odd-hole checks alone miss the mechanism:
 the new proof supplies blossom inequalities for arbitrary odd vertex sets,
 not merely chordless cycles.
 
+\section{Baseline comparison and mechanism ablations}
+
+The proof identifies a specific chain---skew contraction, squared entries,
+and the complete matching polytope. We tested whether any named link is
+dispensable. The benchmark contains every nonempty unlabeled root in the
+NetworkX graph atlas through order seven. Each of the 1245 roots receives one
+uniform and four seeded positive integer weight vectors, for 6225 weighted
+instances. This is exhaustive over the small unweighted root types, but the
+four nonuniform weights are stress cases rather than a probability model for
+applications.
+
+For each instance we compare the exact maximum-weight matching against three
+linear relaxations on the same edge coordinates: degree inequalities only;
+degree, root-triangle clique, and all simple odd-root-cycle inequalities; and
+degree plus every odd-root-vertex-set inequality. In line-graph coordinates,
+the second is the clique-and-odd-hole system used by the $h$-perfect route,
+while the third is Edmonds' full matching polytope.
+
+\begin{table}[H]
+\centering
+\caption{Relaxation value divided by exact maximum matching weight over 6225
+weighted instances. ``Exact'' uses relative tolerance $2\times10^{-7}$.}
+\label{tab:baselines}
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+Baseline & Mean & Median & 95th pct. & Maximum & Exact \\
+\midrule
+Degree only & 1.0351 & 1.0000 & 1.1667 & 1.5000 & 66.89\% \\
+Cliques + odd cycles & 1.0168 & 1.0000 & 1.1667 & 1.2500 & 84.69\% \\
+All odd sets & 1.0000 & 1.0000 & 1.0000 & 1.0000 & 100.00\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Degree-only is strict on 2061 weighted cases from 797 roots; adding the
+clique-and-odd-cycle constraints still leaves 953 strict cases from 555 roots.
+The full odd-set system agrees with the discrete matching value in every
+instance. The maximum degree gap is the uniform triangle, $3/2$ versus $1$.
+The maximum second-baseline gap is $5/2$ versus $2$ on a five-vertex,
+nine-edge root; the same $5/4$ ratio occurs for $K_5$. Figure~\ref{fig:gaps}
+shows both the aggregate distribution and its dependence on root order.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/c039_baseline_gaps.png}
+\caption{Weaker relaxations systematically overestimate weighted matching.
+The complete blossom system closes every tested gap. Percentages describe
+this finite benchmark, not a population of quantum models.}
+\label{fig:gaps}
+\end{figure}
+
+The bipartite subset is a positive control: all three descriptions are exact
+on all 710 weighted cases. Among the 5515 nonbipartite cases, degree-only is
+exact on 62.63\%, the clique-and-odd-cycle baseline on 82.72\%, and the full
+polytope on 100\%. Thus the implementation recovers the classical bipartite
+boundary before detecting the missing nonbipartite inequalities.
+
+Controlled families separate the two kinds of odd constraint. With uniform
+weights on an odd cycle $C_n$, the odd-cycle constraint repairs the
+degree-only value $n/2$ to the matching value $(n-1)/2$. On an odd complete
+root $K_n$, however, both weaker relaxations retain value $n/2$, exceeding the
+matching value by $1/2$. We checked $n=5,7,9,11,13$. The complete-root blossom,
+not another local cycle inequality, is the missing object.
+
+Skewness is also necessary. On $K_3$, let $Q=I-(2/3)J$. This symmetric
+Householder matrix has operator norm one and each off-diagonal square is
+$4/9$. Every degree sum is only $8/9$, but the triangle odd-set sum is
+$4/3>1$. A general contraction can therefore pass all degree tests and fail
+the matching polytope. In contrast, the skew cross-product matrix generated
+by $(1,1,1)/\sqrt3$ has norm one, edge squares $1/3$, and triangle sum exactly
+one. The odd-dimensional rank loss used in Lemma~\ref{lem:contraction} is
+precisely what disappears in the ablation.
+
+Finally, the sharp constant should not be confused with typical saturation.
+Across 4980 seeded Gaussian coefficient directions, the median theorem ratio
+is $0.3992$, the 95th percentile is $0.7360$, and the maximum is one. After
+excluding roots with fewer than three edges or matching value below two, the
+corresponding values are $0.3968$, $0.7129$, and $0.9997$. By contrast, one
+matching-supported construction for every root gives ratio exactly one in all
+1245 cases. The theorem is an exact worst-case support function, not a claim
+that generic Hamiltonians nearly saturate it. Figure~\ref{fig:ablations}
+collects these controlled checks.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/c039_mechanism_ablations.png}
+\caption{Mechanism ablations. Odd cycles repair cycle roots but not odd
+complete roots; removing skewness violates the blossom constraint; random
+directions are usually nonsaturating although equality is globally attainable.}
+\label{fig:ablations}
+\end{figure}
+
 \section{Computational falsification and reproducibility}
 
 The proof is arbitrary-size and does not depend on enumeration. We nevertheless
@@ -337,6 +437,14 @@ check the strict separation. A standard-library verifier checks the frozen
 summary and source hash, while five tests deliberately corrupt the gap, scope,
 hash, or norm data and require rejection.
 
+The baseline-and-ablation run is independently frozen in a second JSON file,
+three CSV tables, and two figures. Its verifier recomputes every aggregate,
+checks all 6225 full-polytope equalities, proves the Householder counterexample
+with rational arithmetic, checks the controlled-family formulas, and verifies
+SHA-256 hashes of all five derived artifacts. Five additional corruption tests
+require rejection of altered ratios, counterexample entries, hashes, or scope
+flags.
+
 From the repository root:
 \begin{quote}\small\ttfamily\raggedright
 python experiments/pauli\_fourth\_moment\_phase0/\\
@@ -346,6 +454,14 @@ python -S experiments/pauli\_fourth\_moment\_phase0/\\
 python -m unittest discover -s\\
 \hspace*{1em}experiments/pauli\_fourth\_moment\_phase0\\
 \hspace*{1em}-p test\_c038\_line\_graph\_hbar.py -v
+\medskip\par
+python experiments/pauli\_fourth\_moment\_phase0/\\
+\hspace*{1em}run\_c039\_central\_ablations.py --overwrite\par
+python -S experiments/pauli\_fourth\_moment\_phase0/\\
+\hspace*{1em}verify\_c039\_central\_ablations.py\par
+python -m unittest discover -s\\
+\hspace*{1em}experiments/pauli\_fourth\_moment\_phase0\\
+\hspace*{1em}-p test\_c039\_central\_ablations.py -v
 \end{quote}
 The wrapped paths are single commands. Numerical agreement is falsification
 support, not the proof of Theorem~\ref{thm:main}.
@@ -386,6 +502,13 @@ associated skew-matrix inequality is sharp. The infinite family
 $L(K_{2k+1})$ shows that this mechanism is genuinely broader than the known
 $h$-perfect sufficient route.
 
+The ablations sharpen that interpretation. Degree constraints alone explain
+the entire bipartite control but fail broadly outside it. Adding every clique
+and odd-cycle inequality reduces rather than eliminates the gap, while full
+odd-set constraints eliminate it. Removing skewness breaks the key conclusion
+on the smallest possible odd root. These are finite tests of the proof's
+named ingredients, not empirical substitutes for the theorem.
+
 The result concerns exact uncertainty values, not quantum advantage or hardware
 performance. The next scientific tests are independent refereeing and a wider
 bibliographic priority search; adding more random instances would not strengthen
@@ -397,8 +520,10 @@ Source, frozen records, verifier, and tests are available in the
 \href{https://github.com/YaroslavPelekhov/Quantum/tree/research/c038-line-graph-hbar}{public C038 GitHub branch}.
 The repository index identifies the theorem note, priority audit, generator,
 frozen JSON, independent verifier, and corruption-controlled tests. Every
-reported numerical constant is read from that frozen JSON by the manuscript
-checker.
+reported numerical constant is read from the two frozen JSON records by the
+manuscript checker. The second record includes graph identifiers, all weight
+vectors and relaxation values, aggregate summaries, explicit scope flags, and
+hashes for the three CSV tables and two figures.
 
 \section*{Declarations}
 
@@ -407,7 +532,6 @@ AI-assistance declaration is made in this anonymous working version. These
 fields must be completed truthfully by the author before submission. No QPU
 data are used in the theorem or its verification.
 
-\clearpage
 \begin{thebibliography}{99}
 \bibitem{edmonds}
 J. Edmonds, \emph{Maximum matching and a polyhedron with 0,1-vertices},

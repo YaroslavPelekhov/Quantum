@@ -1,8 +1,8 @@
 {
-  "archive": "output/research_packages/quantum_research_package_20260910_final.zip",
-  "bytes": 60603896,
-  "sha256": "350e557076c13c0878df9b628d140a85c579ac6cc9310dbe5685da3e3e0b02cb",
-  "files": 2410,
+  "archive": "output/research_packages/quantum_research_package_20260916_final.zip",
+  "bytes": 61144275,
+  "sha256": "930a28e4ef2e1e8cbb6b490338f633841613b02bba3d1dbab7e6bef594eb90c7",
+  "files": 2423,
   "branches": 38,
   "crc_verified": true,
   "all_archived_hashes_verified": true,

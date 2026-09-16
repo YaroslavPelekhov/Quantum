@@ -34,8 +34,8 @@ def main():
         f"-output-directory={BUILD}",
         str(HERE / "main.tex"),
     ]
-    run(args)
-    run(args)
+    run(args, cwd=HERE)
+    run(args, cwd=HERE)
     run(["python", str(HERE / "check_paper.py")])
     log = (BUILD / "main.log").read_text(encoding="utf-8", errors="replace")
     forbidden = ("Overfull", "undefined references", "multiply defined")

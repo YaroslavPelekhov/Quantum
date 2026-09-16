@@ -1,4 +1,3 @@
-
 test_all_six_measured_circuits_are_hashed (test_hardware_package.HardwarePackageTests.test_all_six_measured_circuits_are_hashed) ... ok
 test_plan_is_balanced_and_exactly_60000_shots (test_hardware_package.HardwarePackageTests.test_plan_is_balanced_and_exactly_60000_shots) ... ok
 test_scorers_and_exact_preflight_are_present (test_hardware_package.HardwarePackageTests.test_scorers_and_exact_preflight_are_present) ... ok
@@ -9,6 +8,6 @@ test_readout_exact_product (test_readiness.ReadinessTests.test_readout_exact_pro
 test_scorer_little_endian_and_forbidden (test_readiness.ReadinessTests.test_scorer_little_endian_and_forbidden) ... ok
 
 ----------------------------------------------------------------------
-Ran 8 tests in 0.050s
+Ran 8 tests in 0.004s
 
 OK

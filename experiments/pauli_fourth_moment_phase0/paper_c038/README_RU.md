@@ -10,6 +10,12 @@
 
 для любого конечного простого графа `R` и любых неотрицательных весов.
 
+Центральный механизм теперь проверен отдельным C039-циклом: 6 225 взвешенных
+случаев сравнивают degree-only, clique+odd-cycle и полный blossom baseline;
+контролируемые семейства разделяют локальные odd-cycle и общие odd-set
+ограничения; точный Householder-контрпример показывает необходимость
+skew-symmetry. Итоговые таблицы и графики встроены в статью.
+
 Перед публичной подачей автор самостоятельно заполняет имя, аффилиацию,
 контакт, funding/conflict statements и точное раскрытие AI-помощи. Текущая
 версия анонимна и не проходила внешнее рецензирование.
@@ -18,6 +24,8 @@
 
 ```text
 python experiments/pauli_fourth_moment_phase0/paper_c038/check_paper.py
+python -S experiments/pauli_fourth_moment_phase0/verify_c039_central_ablations.py
+python -m unittest discover -s experiments/pauli_fourth_moment_phase0 -p test_c039_central_ablations.py -v
 ```
 
 Воспроизводимая сборка без зависимости от Perl/latexmk:

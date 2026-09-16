@@ -1,6 +1,6 @@
 # Quantum x Evolutionary Computing Research Artifact
 
-Current preparation cycle (2026-09-10): [unified research package](research_package/START_HERE_RU.md).
+Current preparation cycle (2026-09-16): [unified research package](research_package/START_HERE_RU.md).
 Three distinct manuscripts are preserved: early graph-scale normalization
 (`experiments/evoq_mis`, restored from the original local folder), QAOA
 cross-backend ranking, and weighted Pauli uncertainty. Four prepared PDFs
@@ -13,11 +13,18 @@ graph and weights. The prepared manuscript has 15 pages and is not externally
 reviewed or submitted; its honest status is a strong A/A* candidate, not a
 guarantee of venue acceptance or priority.
 
-A focused standalone version containing only the C038 theorem, its two proofs,
-strict separation and reproducibility boundary is available as
+A focused standalone version containing the C038 theorem, its two proofs,
+strict separation, centralized C039 baseline/ablation study, and reproducibility boundary is available as
 [source](experiments/pauli_fourth_moment_phase0/paper_c038/main.tex) and
 [PDF](output/pdf/c038_line_graph_pauli_matching_theorem.pdf). It is the preferred
 manuscript for independent submission after author metadata is completed.
+
+The C039 mechanism audit compares degree-only, clique-plus-odd-cycle, and
+full blossom descriptions on 6225 weighted atlas instances. Exact fractions
+are 66.89%, 84.69%, and 100%; all 710 bipartite controls are exact for every
+baseline. Controlled odd-cycle/odd-complete families and an exact symmetric
+Householder counterexample isolate full odd sets and skewness as necessary
+ingredients. See [central report](experiments/pauli_fourth_moment_phase0/C039_CENTRAL_ABLATIONS.md).
 
 The new local shot/noise planning study is separate from the frozen QAOA
 replication. It supplies no QPU evidence. Hardware execution still requires

@@ -36,6 +36,11 @@
 ## Артефакт и воспроизводимость
 
 - Запустить `check_paper.py`, C038 verifier и пять тестов без `-O`.
+- Запустить C039 verifier и пять corruption-тестов; проверить, что три CSV и
+  два PNG совпадают с SHA-256, записанными в JSON.
+- Сверить 6 225 baseline-строк: full matching должен быть exact во всех,
+  bipartite positive control -- exact для всех трёх baseline.
+- Проверить рационально Householder-контрпример `4/3 > 1` и skew-control `=1`.
 - Пересобрать PDF минимум два раза для разрешения ссылок.
 - Убедиться, что финальный PDF не содержит `Anonymous author`, если подача не
   double-blind.

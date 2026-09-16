@@ -1555,3 +1555,24 @@ construction, line-graph measurement-incompatibility bounds, and classical
 skew-energy/matching work. No exact all-weight beta/matching statement was
 found, but negative search is not priority proof. Status: strong A/A-star
 candidate; external proof and priority review required. No QPU or paid job.
+
+### C039 centralized baselines and mechanism ablations — 2026-09-16
+
+Centralized the standalone line-graph paper around the chain skew contraction
+to squared edge entries to Edmonds' matching polytope. Enumerated all 1245
+nonempty NetworkX atlas roots through order seven with one uniform and four
+seeded positive integer weight vectors: 6225 weighted LP comparisons.
+Degree-only is exact on 66.89% and strict on 2061 cases; the stronger
+clique-plus-all-simple-odd-cycle baseline is exact on 84.69% and strict on 953;
+the complete odd-set description matches exact weighted matching on every
+case. All 710 bipartite controls are exact for all three baselines.
+
+Controlled `C_n` versus `K_n`, `n=5,7,9,11,13`, distinguishes odd-cycle from
+full-root blossom constraints. The symmetric norm-one Householder contraction
+on `K3` passes degree constraints but has odd-set sum `4/3>1`; a matched skew
+cross-product control saturates at one. Random theorem directions have median
+ratio 0.3992 while matching-supported directions attain one on every root.
+Frozen JSON, three CSV tables, two figures, a standard-library verifier, and
+five corruption tests were added. These experiments test necessity and
+interpretation of the analytic proof; they are not population estimates,
+hardware evidence, or a substitute for priority review.

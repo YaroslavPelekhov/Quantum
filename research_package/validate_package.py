@@ -27,8 +27,13 @@ def main():
     for script in ('verify_scf_rectangular_gram_bridge.py', 'verify_scf_core_refinement.py',
                    'verify_scf_three_row_gram.py', 'verify_scf_d_closure.py',
                    'verify_c031_exact_six.py', 'verify_c038_line_graph_hbar.py',
-                   'paper/check_paper.py'):
-        commands.append((Path(script).stem, math, ROOT, ['-S',str(phase / script)]))
+                   'verify_c039_central_ablations.py', 'paper/check_paper.py',
+                   'paper_c038/check_paper.py'):
+        name = {
+            'paper/check_paper.py': 'pauli_full_paper_check',
+            'paper_c038/check_paper.py': 'c038_standalone_paper_check',
+        }.get(script, Path(script).stem)
+        commands.append((name, math, ROOT, ['-S',str(phase / script)]))
     output = HERE / 'results'
     output.mkdir(exist_ok=True)
     records = []
@@ -36,7 +41,8 @@ def main():
         start = time.monotonic()
         run = subprocess.run([str(python), *argv], cwd=cwd, capture_output=True,
                              text=True, encoding='utf-8', errors='replace', timeout=1200)
-        log = run.stdout + '\n' + run.stderr
+        parts = [part.rstrip('\r\n') for part in (run.stdout, run.stderr) if part.rstrip('\r\n')]
+        log = '\n'.join(parts) + '\n'
         (output / f'{name}.log').write_text(log, encoding='utf-8')
         records.append(dict(name=name, command=[str(python), *argv], cwd=str(cwd),
                             exit_code=run.returncode, seconds=time.monotonic()-start,
