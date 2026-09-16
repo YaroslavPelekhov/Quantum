@@ -1,4 +1,4 @@
-"""Check standalone manuscript claims against the C038--C041 artifacts."""
+"""Check standalone manuscript claims against the C038--C042 artifacts."""
 import json
 from pathlib import Path
 
@@ -9,6 +9,7 @@ DATA = ROOT / "results" / "pauli_fourth_moment_phase0" / "c038_line_graph_hbar.j
 ABLATIONS = ROOT / "results" / "pauli_fourth_moment_phase0" / "c039_central_ablations.json"
 SCALED = ROOT / "results" / "pauli_fourth_moment_phase0" / "c040_scaled_ablations.json"
 DENSITY = ROOT / "results" / "pauli_fourth_moment_phase0" / "c041_density_coupling_stress.json"
+BOUNDARY = ROOT / "results" / "pauli_fourth_moment_phase0" / "c042_rank_perfect_boundary.json"
 
 
 def main():
@@ -17,6 +18,7 @@ def main():
     ablations = json.loads(ABLATIONS.read_text(encoding="utf-8"))
     scaled = json.loads(SCALED.read_text(encoding="utf-8"))
     density = json.loads(DENSITY.read_text(encoding="utf-8"))
+    boundary = json.loads(BOUNDARY.read_text(encoding="utf-8"))
     required = [
         r"\beta(L(R),w)=\alpha(L(R),w)=\nu(R,w)",
         r"\left(\frac{\norm{A}_*}{2}\right)^2",
@@ -38,6 +40,12 @@ def main():
         "c040_scaled_random_ablations.png",
         "c040_structured_and_tightness.png",
         "c041_density_coupling_stress.png",
+        "Every rank-perfect simplicial claw-free graph",
+        r"H?\textasciigrave{}adQY",
+        "4308 SCF graphs",
+        "60 connected SCF",
+        "c042_rank_perfect_boundary.png",
+        "remains a conjecture",
     ]
     for item in required:
         assert item in text, item
@@ -64,13 +72,22 @@ def main():
     assert density["density_graphs"] == 45
     assert density["density_weighted_instances"] == 90
     assert len(density["coupling_ablations"]) == 28
+    assert boundary["order9"]["SCF_graphs"] == 4308
+    assert boundary["order9"]["quasi_line_non_line_graphs"] == 3048
+    assert boundary["strict_witness"]["graph6"] == "H?`adQY"
+    assert boundary["strict_witness"]["line_graph"] is False
+    assert boundary["strict_witness"]["nonrank_facets"] == 0
+    assert boundary["sampled_circular_arc_stress"]["graphs"] == 60
+    assert "all SCF quasi-line graphs are rank-perfect" in boundary["scope"]["not_proved"]
     print(json.dumps({
-        "status": "standalone_C038_paper_checked",
+        "status": "standalone_C038_C042_paper_checked",
         "atlas_roots": report["atlas_nonempty_roots"],
         "direct_majorana_cases": report["direct_majorana_norm_cases"],
         "weighted_ablation_cases": ablations["weighted_instances"],
         "scaled_weighted_cases": scaled["weighted_instances"],
         "density_weighted_cases": density["density_weighted_instances"],
+        "order9_SCF_graphs": boundary["order9"]["SCF_graphs"],
+        "C042_sampled_graphs": boundary["sampled_circular_arc_stress"]["graphs"],
         "full_polytope_exact_fraction": ablations["baseline_summary"]["full_matching"]["exact_fraction"],
         "external_reviewed": False,
         "priority_confirmed": False,

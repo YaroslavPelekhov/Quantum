@@ -1,5 +1,19 @@
 # Quantum x Evolutionary Computing Research Artifact
 
+## C042: analytic boundary beyond line graphs
+
+The latest cycle proves that every **rank-perfect simplicial claw-free graph**
+is hbar-perfect. Since semi-line graphs are classically rank-perfect, every SCF
+semi-line graph now has exact weighted Pauli uncertainty. An exact nine-vertex
+witness is SCF and rank-perfect but neither line nor h-perfect, so this is a
+strict extension rather than a rephrasing of C038.
+
+The adversarial boundary audit reclassifies all 4308 order-nine SCF records,
+sweeps 868 web graphs, and checks 60 larger connected proper circular-arc
+stress graphs. It supports—but does not prove—the stronger conjecture that all
+SCF quasi-line graphs are rank-perfect. The unrestricted quasi-line statement
+is false. See the [C042 report](experiments/pauli_fourth_moment_phase0/C042_RANK_PERFECT_BOUNDARY.md).
+
 Current preparation cycle (2026-09-16): [unified research package](research_package/START_HERE_RU.md).
 Three distinct manuscripts are preserved: early graph-scale normalization
 (`experiments/evoq_mis`, restored from the original local folder), QAOA

@@ -1,10 +1,12 @@
 {
-  "status": "standalone_C038_paper_checked",
+  "status": "standalone_C038_C042_paper_checked",
   "atlas_roots": 1245,
   "direct_majorana_cases": 47,
   "weighted_ablation_cases": 6225,
   "scaled_weighted_cases": 720,
   "density_weighted_cases": 90,
+  "order9_SCF_graphs": 4308,
+  "C042_sampled_graphs": 60,
   "full_polytope_exact_fraction": 1.0,
   "external_reviewed": false,
   "priority_confirmed": false

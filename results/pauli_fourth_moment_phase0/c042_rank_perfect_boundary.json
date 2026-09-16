@@ -1,0 +1,3627 @@
+{
+  "experiment": "C042_rank_perfect_boundary",
+  "seed": 20260919,
+  "analytic_result": {
+    "theorem": "Every rank-perfect simplicial-claw-free graph is hbar-perfect.",
+    "proof": "BETA satisfies every induced-subgraph rank inequality by the SCF rank theorem; rank-perfectness identifies their intersection with STAB; the universal reverse inclusion STAB subset BETA gives equality.",
+    "semi_line_corollary": "Every SCF semi-line graph is hbar-perfect, using the classical rank-perfectness of semi-line graphs."
+  },
+  "upstream": {
+    "scf_order9_census": {
+      "path": "results/pauli_fourth_moment_phase0/scf_order9_census.json",
+      "sha256": "cb5ea83cb99a0c19a3f3039bd795dd84c9f6c61fbe78a7c6a8e1fefa2ebb57b0"
+    },
+    "exact_facet_census": {
+      "path": "results/pauli_fourth_moment_phase0/scf_exact_facet_census.json",
+      "sha256": "a6903553f42d11078101363fc20235c1c9136906e7f415d2c33ffc8014cb66c8"
+    }
+  },
+  "order9": {
+    "SCF_graphs": 4308,
+    "line_graphs": 710,
+    "quasi_line_graphs": 3758,
+    "quasi_line_non_line_graphs": 3048,
+    "quasi_line_graphs_with_nonrank_facets": 0,
+    "all_nonrank_graphs_outside_quasi_line": 550,
+    "classes": [
+      {
+        "class": "line",
+        "graphs": 710,
+        "graphs_with_nonrank_facets": 0
+      },
+      {
+        "class": "quasi_line_non_line",
+        "graphs": 3048,
+        "graphs_with_nonrank_facets": 0
+      },
+      {
+        "class": "SCF_not_quasi_line",
+        "graphs": 550,
+        "graphs_with_nonrank_facets": 550
+      }
+    ]
+  },
+  "strict_witness": {
+    "graph6": "H?`adQY",
+    "vertices": 9,
+    "edges": 12,
+    "quasi_line": true,
+    "SCF": true,
+    "simplicial_cliques": [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        0,
+        4,
+        7
+      ],
+      [
+        0,
+        4,
+        8
+      ],
+      [
+        3,
+        6,
+        8
+      ]
+    ],
+    "line_graph": false,
+    "stable_sets": 55,
+    "exact_facets": 17,
+    "nonrank_facets": 0,
+    "rank_facet_count_excluding_nonnegativity": 8,
+    "not_hperfect_facet": {
+      "support_mask": 503,
+      "alpha": 3,
+      "roots": 12,
+      "support_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_graph6": "GCXDcg",
+      "support_edges": 10
+    },
+    "interpretation": "rank-perfect SCF, but neither line nor h-perfect"
+  },
+  "web_stress": {
+    "orders": [
+      5,
+      60
+    ],
+    "cases": 868,
+    "SCF_cases": 112,
+    "SCF_outside_cycles_or_alpha_le_2": 0
+  },
+  "sampled_circular_arc_stress": {
+    "orders": [
+      10,
+      11,
+      12
+    ],
+    "samples_per_order": 20,
+    "graphs": 60,
+    "all_connected_SCF_quasi_line_non_line_alpha_ge_3": true,
+    "graphs_with_detected_nonrank_facets": 0,
+    "method": "seeded equal-length circular-arc graphs conditioned on at most 120 stable sets; Qhull discovery with exact integer validity and affine-rank checks for every reported rank facet",
+    "records": [
+      {
+        "order": 10,
+        "graph6": "I~?GWMB{G",
+        "edges": 19,
+        "alpha": 3,
+        "points": [
+          31,
+          184,
+          192,
+          297,
+          1359,
+          1892,
+          2191,
+          2605,
+          3140,
+          4095
+        ],
+        "threshold": 1039,
+        "stable_sets": 48,
+        "rank_facets": 5,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 112,
+            "alpha": 1,
+            "roots": 32
+          },
+          {
+            "support_mask": 224,
+            "alpha": 1,
+            "roots": 28
+          },
+          {
+            "support_mask": 448,
+            "alpha": 1,
+            "roots": 30
+          },
+          {
+            "support_mask": 527,
+            "alpha": 1,
+            "roots": 39
+          },
+          {
+            "support_mask": 769,
+            "alpha": 1,
+            "roots": 24
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 10,
+        "graph6": "I~?GKEB{W",
+        "edges": 19,
+        "alpha": 3,
+        "points": [
+          95,
+          556,
+          662,
+          833,
+          1839,
+          2081,
+          2994,
+          3463,
+          3479,
+          4045
+        ],
+        "threshold": 950,
+        "stable_sets": 54,
+        "rank_facets": 5,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 48,
+            "alpha": 1,
+            "roots": 34
+          },
+          {
+            "support_mask": 96,
+            "alpha": 1,
+            "roots": 26
+          },
+          {
+            "support_mask": 448,
+            "alpha": 1,
+            "roots": 36
+          },
+          {
+            "support_mask": 527,
+            "alpha": 1,
+            "roots": 43
+          },
+          {
+            "support_mask": 897,
+            "alpha": 1,
+            "roots": 34
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 10,
+        "graph6": "Ij[xwA@oW",
+        "edges": 20,
+        "alpha": 3,
+        "points": [
+          368,
+          677,
+          1490,
+          1510,
+          1518,
+          1795,
+          1808,
+          3411,
+          3620,
+          3896
+        ],
+        "threshold": 883,
+        "stable_sets": 45,
+        "rank_facets": 5,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 30,
+            "alpha": 1,
+            "roots": 27
+          },
+          {
+            "support_mask": 124,
+            "alpha": 1,
+            "roots": 36
+          },
+          {
+            "support_mask": 515,
+            "alpha": 1,
+            "roots": 27
+          },
+          {
+            "support_mask": 769,
+            "alpha": 1,
+            "roots": 27
+          },
+          {
+            "support_mask": 896,
+            "alpha": 1,
+            "roots": 30
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 10,
+        "graph6": "I~Kww?@_G",
+        "edges": 17,
+        "alpha": 4,
+        "points": [
+          272,
+          404,
+          671,
+          979,
+          1480,
+          1518,
+          1615,
+          2553,
+          2995,
+          3593
+        ],
+        "threshold": 864,
+        "stable_sets": 67,
+        "rank_facets": 6,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 15,
+            "alpha": 1,
+            "roots": 47
+          },
+          {
+            "support_mask": 60,
+            "alpha": 1,
+            "roots": 41
+          },
+          {
+            "support_mask": 120,
+            "alpha": 1,
+            "roots": 49
+          },
+          {
+            "support_mask": 384,
+            "alpha": 1,
+            "roots": 41
+          },
+          {
+            "support_mask": 513,
+            "alpha": 1,
+            "roots": 34
+          },
+          {
+            "support_mask": 768,
+            "alpha": 1,
+            "roots": 37
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 10,
+        "graph6": "I~?GGNbww",
+        "edges": 21,
+        "alpha": 3,
+        "points": [
+          117,
+          131,
+          142,
+          651,
+          2163,
+          2781,
+          3092,
+          3389,
+          3644,
+          3728
+        ],
+        "threshold": 640,
+        "stable_sets": 47,
+        "rank_facets": 5,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 15,
+            "alpha": 1,
+            "roots": 34
+          },
+          {
+            "support_mask": 48,
+            "alpha": 1,
+            "roots": 28
+          },
+          {
+            "support_mask": 224,
+            "alpha": 1,
+            "roots": 29
+          },
+          {
+            "support_mask": 775,
+            "alpha": 1,
+            "roots": 33
+          },
+          {
+            "support_mask": 960,
+            "alpha": 1,
+            "roots": 32
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 10,
+        "graph6": "I~CWWCB?w",
+        "edges": 17,
+        "alpha": 3,
+        "points": [
+          379,
+          409,
+          516,
+          1504,
+          1884,
+          1944,
+          3010,
+          3103,
+          3107,
+          3159
+        ],
+        "threshold": 1140,
+        "stable_sets": 57,
+        "rank_facets": 4,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 15,
+            "alpha": 1,
+            "roots": 44
+          },
+          {
+            "support_mask": 56,
+            "alpha": 1,
+            "roots": 37
+          },
+          {
+            "support_mask": 112,
+            "alpha": 1,
+            "roots": 37
+          },
+          {
+            "support_mask": 960,
+            "alpha": 1,
+            "roots": 44
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 10,
+        "graph6": "Ij[ww[N?W",
+        "edges": 22,
+        "alpha": 4,
+        "points": [
+          204,
+          1017,
+          1270,
+          1302,
+          1787,
+          1930,
+          2130,
+          2441,
+          2588,
+          3186
+        ],
+        "threshold": 853,
+        "stable_sets": 48,
+        "rank_facets": 6,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 3,
+            "alpha": 1,
+            "roots": 28
+          },
+          {
+            "support_mask": 30,
+            "alpha": 1,
+            "roots": 32
+          },
+          {
+            "support_mask": 60,
+            "alpha": 1,
+            "roots": 30
+          },
+          {
+            "support_mask": 120,
+            "alpha": 1,
+            "roots": 28
+          },
+          {
+            "support_mask": 496,
+            "alpha": 1,
+            "roots": 34
+          },
+          {
+            "support_mask": 896,
+            "alpha": 1,
+            "roots": 31
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 10,
+        "graph6": "I~[GKMF{W",
+        "edges": 24,
+        "alpha": 3,
+        "points": [
+          72,
+          572,
+          626,
+          663,
+          1514,
+          2539,
+          2681,
+          3237,
+          3379,
+          4029
+        ],
+        "threshold": 1082,
+        "stable_sets": 34,
+        "rank_facets": 6,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 30,
+            "alpha": 1,
+            "roots": 23
+          },
+          {
+            "support_mask": 48,
+            "alpha": 1,
+            "roots": 14
+          },
+          {
+            "support_mask": 480,
+            "alpha": 1,
+            "roots": 25
+          },
+          {
+            "support_mask": 527,
+            "alpha": 1,
+            "roots": 25
+          },
+          {
+            "support_mask": 897,
+            "alpha": 1,
+            "roots": 20
+          },
+          {
+            "support_mask": 959,
+            "alpha": 2,
+            "roots": 17
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 10,
+        "graph6": "IjKwwE@oG",
+        "edges": 18,
+        "alpha": 3,
+        "points": [
+          19,
+          525,
+          1106,
+          1413,
+          1685,
+          1889,
+          2193,
+          2885,
+          3269,
+          4064
+        ],
+        "threshold": 900,
+        "stable_sets": 54,
+        "rank_facets": 8,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 14,
+            "alpha": 1,
+            "roots": 29
+          },
+          {
+            "support_mask": 60,
+            "alpha": 1,
+            "roots": 38
+          },
+          {
+            "support_mask": 120,
+            "alpha": 1,
+            "roots": 37
+          },
+          {
+            "support_mask": 192,
+            "alpha": 1,
+            "roots": 28
+          },
+          {
+            "support_mask": 384,
+            "alpha": 1,
+            "roots": 29
+          },
+          {
+            "support_mask": 515,
+            "alpha": 1,
+            "roots": 35
+          },
+          {
+            "support_mask": 769,
+            "alpha": 1,
+            "roots": 35
+          },
+          {
+            "support_mask": 1023,
+            "alpha": 3,
+            "roots": 16
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 10,
+        "graph6": "IwCW{MBow",
+        "edges": 20,
+        "alpha": 3,
+        "points": [
+          346,
+          802,
+          1125,
+          2476,
+          2517,
+          2677,
+          3008,
+          3566,
+          3831,
+          3971
+        ],
+        "threshold": 1034,
+        "stable_sets": 49,
+        "rank_facets": 6,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 7,
+            "alpha": 1,
+            "roots": 33
+          },
+          {
+            "support_mask": 120,
+            "alpha": 1,
+            "roots": 37
+          },
+          {
+            "support_mask": 224,
+            "alpha": 1,
+            "roots": 22
+          },
+          {
+            "support_mask": 515,
+            "alpha": 1,
+            "roots": 25
+          },
+          {
+            "support_mask": 897,
+            "alpha": 1,
+            "roots": 34
+          },
+          {
+            "support_mask": 960,
+            "alpha": 1,
+            "roots": 33
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 10,
+        "graph6": "IjKx{A@_W",
+        "edges": 19,
+        "alpha": 3,
+        "points": [
+          293,
+          1273,
+          1569,
+          2046,
+          2410,
+          2474,
+          2497,
+          3718,
+          3927,
+          4004
+        ],
+        "threshold": 1017,
+        "stable_sets": 46,
+        "rank_facets": 4,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 3,
+            "alpha": 1,
+            "roots": 22
+          },
+          {
+            "support_mask": 14,
+            "alpha": 1,
+            "roots": 26
+          },
+          {
+            "support_mask": 124,
+            "alpha": 1,
+            "roots": 37
+          },
+          {
+            "support_mask": 897,
+            "alpha": 1,
+            "roots": 36
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 10,
+        "graph6": "I~KGW[?_G",
+        "edges": 16,
+        "alpha": 3,
+        "points": [
+          352,
+          709,
+          779,
+          905,
+          1581,
+          1871,
+          1917,
+          2216,
+          3581,
+          3807
+        ],
+        "threshold": 841,
+        "stable_sets": 64,
+        "rank_facets": 5,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 15,
+            "alpha": 1,
+            "roots": 49
+          },
+          {
+            "support_mask": 28,
+            "alpha": 1,
+            "roots": 32
+          },
+          {
+            "support_mask": 240,
+            "alpha": 1,
+            "roots": 50
+          },
+          {
+            "support_mask": 513,
+            "alpha": 1,
+            "roots": 28
+          },
+          {
+            "support_mask": 768,
+            "alpha": 1,
+            "roots": 41
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 10,
+        "graph6": "I~~~w[B?G",
+        "edges": 27,
+        "alpha": 3,
+        "points": [
+          1131,
+          1161,
+          1189,
+          1238,
+          1701,
+          1786,
+          1897,
+          2394,
+          2675,
+          3296
+        ],
+        "threshold": 879,
+        "stable_sets": 33,
+        "rank_facets": 4,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 127,
+            "alpha": 1,
+            "roots": 28
+          },
+          {
+            "support_mask": 240,
+            "alpha": 1,
+            "roots": 18
+          },
+          {
+            "support_mask": 448,
+            "alpha": 1,
+            "roots": 19
+          },
+          {
+            "support_mask": 768,
+            "alpha": 1,
+            "roots": 20
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 10,
+        "graph6": "I~[xwKB?w",
+        "edges": 23,
+        "alpha": 3,
+        "points": [
+          1811,
+          1997,
+          2472,
+          2564,
+          2776,
+          2950,
+          3106,
+          3647,
+          3821,
+          3889
+        ],
+        "threshold": 848,
+        "stable_sets": 40,
+        "rank_facets": 5,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 15,
+            "alpha": 1,
+            "roots": 28
+          },
+          {
+            "support_mask": 30,
+            "alpha": 1,
+            "roots": 24
+          },
+          {
+            "support_mask": 124,
+            "alpha": 1,
+            "roots": 28
+          },
+          {
+            "support_mask": 224,
+            "alpha": 1,
+            "roots": 19
+          },
+          {
+            "support_mask": 960,
+            "alpha": 1,
+            "roots": 30
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 10,
+        "graph6": "I~|xwKB_?",
+        "edges": 23,
+        "alpha": 3,
+        "points": [
+          737,
+          1268,
+          1499,
+          1591,
+          1611,
+          1800,
+          2372,
+          2580,
+          2866,
+          4057
+        ],
+        "threshold": 921,
+        "stable_sets": 44,
+        "rank_facets": 6,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 31,
+            "alpha": 1,
+            "roots": 32
+          },
+          {
+            "support_mask": 62,
+            "alpha": 1,
+            "roots": 32
+          },
+          {
+            "support_mask": 124,
+            "alpha": 1,
+            "roots": 29
+          },
+          {
+            "support_mask": 224,
+            "alpha": 1,
+            "roots": 22
+          },
+          {
+            "support_mask": 448,
+            "alpha": 1,
+            "roots": 30
+          },
+          {
+            "support_mask": 513,
+            "alpha": 1,
+            "roots": 25
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 10,
+        "graph6": "Iz?GGMFpw",
+        "edges": 19,
+        "alpha": 4,
+        "points": [
+          318,
+          433,
+          899,
+          1167,
+          2490,
+          3073,
+          3331,
+          3488,
+          3738,
+          3809
+        ],
+        "threshold": 743,
+        "stable_sets": 56,
+        "rank_facets": 6,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 7,
+            "alpha": 1,
+            "roots": 34
+          },
+          {
+            "support_mask": 14,
+            "alpha": 1,
+            "roots": 38
+          },
+          {
+            "support_mask": 48,
+            "alpha": 1,
+            "roots": 31
+          },
+          {
+            "support_mask": 515,
+            "alpha": 1,
+            "roots": 29
+          },
+          {
+            "support_mask": 769,
+            "alpha": 1,
+            "roots": 28
+          },
+          {
+            "support_mask": 992,
+            "alpha": 1,
+            "roots": 44
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 10,
+        "graph6": "Iz[WwMF`w",
+        "edges": 24,
+        "alpha": 3,
+        "points": [
+          357,
+          842,
+          931,
+          1619,
+          1747,
+          2695,
+          2731,
+          2938,
+          3371,
+          3387
+        ],
+        "threshold": 1171,
+        "stable_sets": 34,
+        "rank_facets": 6,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 7,
+            "alpha": 1,
+            "roots": 20
+          },
+          {
+            "support_mask": 30,
+            "alpha": 1,
+            "roots": 24
+          },
+          {
+            "support_mask": 120,
+            "alpha": 1,
+            "roots": 20
+          },
+          {
+            "support_mask": 769,
+            "alpha": 1,
+            "roots": 18
+          },
+          {
+            "support_mask": 895,
+            "alpha": 2,
+            "roots": 18
+          },
+          {
+            "support_mask": 992,
+            "alpha": 1,
+            "roots": 26
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 10,
+        "graph6": "Iz\\wwC@?W",
+        "edges": 19,
+        "alpha": 3,
+        "points": [
+          439,
+          1006,
+          1107,
+          1430,
+          1731,
+          1789,
+          2177,
+          2922,
+          3050,
+          3226
+        ],
+        "threshold": 863,
+        "stable_sets": 52,
+        "rank_facets": 5,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 7,
+            "alpha": 1,
+            "roots": 33
+          },
+          {
+            "support_mask": 62,
+            "alpha": 1,
+            "roots": 38
+          },
+          {
+            "support_mask": 120,
+            "alpha": 1,
+            "roots": 36
+          },
+          {
+            "support_mask": 192,
+            "alpha": 1,
+            "roots": 22
+          },
+          {
+            "support_mask": 896,
+            "alpha": 1,
+            "roots": 38
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 10,
+        "graph6": "Ij[WGEB_W",
+        "edges": 17,
+        "alpha": 4,
+        "points": [
+          160,
+          728,
+          1071,
+          1279,
+          1339,
+          1921,
+          2750,
+          3305,
+          3463,
+          3755
+        ],
+        "threshold": 838,
+        "stable_sets": 58,
+        "rank_facets": 8,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 3,
+            "alpha": 1,
+            "roots": 26
+          },
+          {
+            "support_mask": 30,
+            "alpha": 1,
+            "roots": 43
+          },
+          {
+            "support_mask": 56,
+            "alpha": 1,
+            "roots": 34
+          },
+          {
+            "support_mask": 96,
+            "alpha": 1,
+            "roots": 30
+          },
+          {
+            "support_mask": 448,
+            "alpha": 1,
+            "roots": 36
+          },
+          {
+            "support_mask": 769,
+            "alpha": 1,
+            "roots": 37
+          },
+          {
+            "support_mask": 896,
+            "alpha": 1,
+            "roots": 35
+          },
+          {
+            "support_mask": 1019,
+            "alpha": 3,
+            "roots": 12
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 10,
+        "graph6": "Iz?GW[N_W",
+        "edges": 18,
+        "alpha": 3,
+        "points": [
+          445,
+          1113,
+          1170,
+          1424,
+          2759,
+          2789,
+          2945,
+          2979,
+          3285,
+          3885
+        ],
+        "threshold": 935,
+        "stable_sets": 52,
+        "rank_facets": 5,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 7,
+            "alpha": 1,
+            "roots": 32
+          },
+          {
+            "support_mask": 14,
+            "alpha": 1,
+            "roots": 36
+          },
+          {
+            "support_mask": 496,
+            "alpha": 1,
+            "roots": 42
+          },
+          {
+            "support_mask": 513,
+            "alpha": 1,
+            "roots": 28
+          },
+          {
+            "support_mask": 896,
+            "alpha": 1,
+            "roots": 28
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 11,
+        "graph6": "J~CWW[F@wF_",
+        "edges": 25,
+        "alpha": 3,
+        "points": [
+          563,
+          729,
+          826,
+          1472,
+          1978,
+          2277,
+          2670,
+          2919,
+          3091,
+          3259,
+          3400
+        ],
+        "threshold": 1011,
+        "stable_sets": 54,
+        "rank_facets": 5,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 15,
+            "alpha": 1,
+            "roots": 42
+          },
+          {
+            "support_mask": 56,
+            "alpha": 1,
+            "roots": 30
+          },
+          {
+            "support_mask": 240,
+            "alpha": 1,
+            "roots": 34
+          },
+          {
+            "support_mask": 992,
+            "alpha": 1,
+            "roots": 36
+          },
+          {
+            "support_mask": 1984,
+            "alpha": 1,
+            "roots": 41
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 11,
+        "graph6": "J~C?GNBo]@_",
+        "edges": 22,
+        "alpha": 4,
+        "points": [
+          47,
+          193,
+          508,
+          775,
+          1405,
+          2735,
+          2785,
+          2859,
+          3567,
+          3645,
+          3728
+        ],
+        "threshold": 789,
+        "stable_sets": 81,
+        "rank_facets": 6,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 15,
+            "alpha": 1,
+            "roots": 55
+          },
+          {
+            "support_mask": 24,
+            "alpha": 1,
+            "roots": 47
+          },
+          {
+            "support_mask": 224,
+            "alpha": 1,
+            "roots": 57
+          },
+          {
+            "support_mask": 448,
+            "alpha": 1,
+            "roots": 43
+          },
+          {
+            "support_mask": 896,
+            "alpha": 1,
+            "roots": 39
+          },
+          {
+            "support_mask": 1795,
+            "alpha": 1,
+            "roots": 61
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 11,
+        "graph6": "JjCGW[NB{N_",
+        "edges": 26,
+        "alpha": 3,
+        "points": [
+          192,
+          817,
+          1285,
+          1307,
+          2282,
+          2500,
+          2855,
+          2885,
+          3077,
+          3105,
+          3326
+        ],
+        "threshold": 977,
+        "stable_sets": 54,
+        "rank_facets": 6,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 3,
+            "alpha": 1,
+            "roots": 29
+          },
+          {
+            "support_mask": 14,
+            "alpha": 1,
+            "roots": 38
+          },
+          {
+            "support_mask": 24,
+            "alpha": 1,
+            "roots": 21
+          },
+          {
+            "support_mask": 1008,
+            "alpha": 1,
+            "roots": 43
+          },
+          {
+            "support_mask": 1025,
+            "alpha": 1,
+            "roots": 27
+          },
+          {
+            "support_mask": 2016,
+            "alpha": 1,
+            "roots": 42
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 11,
+        "graph6": "JzKww{F?G@_",
+        "edges": 23,
+        "alpha": 3,
+        "points": [
+          148,
+          205,
+          411,
+          986,
+          1082,
+          1207,
+          1237,
+          1483,
+          2022,
+          2345,
+          2767
+        ],
+        "threshold": 822,
+        "stable_sets": 69,
+        "rank_facets": 6,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 7,
+            "alpha": 1,
+            "roots": 48
+          },
+          {
+            "support_mask": 14,
+            "alpha": 1,
+            "roots": 35
+          },
+          {
+            "support_mask": 60,
+            "alpha": 1,
+            "roots": 39
+          },
+          {
+            "support_mask": 248,
+            "alpha": 1,
+            "roots": 53
+          },
+          {
+            "support_mask": 480,
+            "alpha": 1,
+            "roots": 42
+          },
+          {
+            "support_mask": 1792,
+            "alpha": 1,
+            "roots": 49
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 11,
+        "graph6": "JjKxw{^FwB_",
+        "edges": 31,
+        "alpha": 3,
+        "points": [
+          266,
+          420,
+          1242,
+          1368,
+          1410,
+          1545,
+          2124,
+          2280,
+          2328,
+          2335,
+          3169
+        ],
+        "threshold": 973,
+        "stable_sets": 47,
+        "rank_facets": 5,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 3,
+            "alpha": 1,
+            "roots": 29
+          },
+          {
+            "support_mask": 14,
+            "alpha": 1,
+            "roots": 25
+          },
+          {
+            "support_mask": 124,
+            "alpha": 1,
+            "roots": 32
+          },
+          {
+            "support_mask": 1016,
+            "alpha": 1,
+            "roots": 37
+          },
+          {
+            "support_mask": 1920,
+            "alpha": 1,
+            "roots": 31
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 11,
+        "graph6": "J~\\wW[B?wF_",
+        "edges": 27,
+        "alpha": 3,
+        "points": [
+          893,
+          1367,
+          1688,
+          1759,
+          2208,
+          2344,
+          2837,
+          3243,
+          3555,
+          3613,
+          3863
+        ],
+        "threshold": 1045,
+        "stable_sets": 46,
+        "rank_facets": 4,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 15,
+            "alpha": 1,
+            "roots": 32
+          },
+          {
+            "support_mask": 62,
+            "alpha": 1,
+            "roots": 34
+          },
+          {
+            "support_mask": 240,
+            "alpha": 1,
+            "roots": 26
+          },
+          {
+            "support_mask": 1984,
+            "alpha": 1,
+            "roots": 37
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 11,
+        "graph6": "J~\\xw[@?[@_",
+        "edges": 26,
+        "alpha": 3,
+        "points": [
+          877,
+          1242,
+          1501,
+          1580,
+          1967,
+          2036,
+          2321,
+          2758,
+          3577,
+          3679,
+          4068
+        ],
+        "threshold": 994,
+        "stable_sets": 53,
+        "rank_facets": 7,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 15,
+            "alpha": 1,
+            "roots": 35
+          },
+          {
+            "support_mask": 62,
+            "alpha": 1,
+            "roots": 36
+          },
+          {
+            "support_mask": 124,
+            "alpha": 1,
+            "roots": 37
+          },
+          {
+            "support_mask": 240,
+            "alpha": 1,
+            "roots": 34
+          },
+          {
+            "support_mask": 896,
+            "alpha": 1,
+            "roots": 33
+          },
+          {
+            "support_mask": 1025,
+            "alpha": 1,
+            "roots": 25
+          },
+          {
+            "support_mask": 1792,
+            "alpha": 1,
+            "roots": 36
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 11,
+        "graph6": "JHKWw{F@{N_",
+        "edges": 26,
+        "alpha": 4,
+        "points": [
+          167,
+          1529,
+          1912,
+          2331,
+          2396,
+          2858,
+          2951,
+          3038,
+          3422,
+          3431,
+          3522
+        ],
+        "threshold": 767,
+        "stable_sets": 67,
+        "rank_facets": 5,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 6,
+            "alpha": 1,
+            "roots": 40
+          },
+          {
+            "support_mask": 28,
+            "alpha": 1,
+            "roots": 41
+          },
+          {
+            "support_mask": 248,
+            "alpha": 1,
+            "roots": 46
+          },
+          {
+            "support_mask": 1025,
+            "alpha": 1,
+            "roots": 37
+          },
+          {
+            "support_mask": 2016,
+            "alpha": 1,
+            "roots": 53
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 11,
+        "graph6": "JzCGGKF?w?_",
+        "edges": 17,
+        "alpha": 4,
+        "points": [
+          47,
+          113,
+          342,
+          887,
+          1152,
+          1798,
+          2063,
+          2203,
+          2261,
+          2700,
+          3335
+        ],
+        "threshold": 806,
+        "stable_sets": 108,
+        "rank_facets": 7,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 7,
+            "alpha": 1,
+            "roots": 75
+          },
+          {
+            "support_mask": 14,
+            "alpha": 1,
+            "roots": 66
+          },
+          {
+            "support_mask": 24,
+            "alpha": 1,
+            "roots": 60
+          },
+          {
+            "support_mask": 48,
+            "alpha": 1,
+            "roots": 54
+          },
+          {
+            "support_mask": 480,
+            "alpha": 1,
+            "roots": 78
+          },
+          {
+            "support_mask": 960,
+            "alpha": 1,
+            "roots": 76
+          },
+          {
+            "support_mask": 1536,
+            "alpha": 1,
+            "roots": 62
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 11,
+        "graph6": "J~{WwKBoN@_",
+        "edges": 27,
+        "alpha": 3,
+        "points": [
+          665,
+          792,
+          887,
+          1572,
+          1575,
+          1969,
+          2346,
+          2749,
+          3128,
+          3940,
+          4066
+        ],
+        "threshold": 993,
+        "stable_sets": 50,
+        "rank_facets": 9,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 31,
+            "alpha": 1,
+            "roots": 36
+          },
+          {
+            "support_mask": 120,
+            "alpha": 1,
+            "roots": 32
+          },
+          {
+            "support_mask": 224,
+            "alpha": 1,
+            "roots": 31
+          },
+          {
+            "support_mask": 448,
+            "alpha": 1,
+            "roots": 30
+          },
+          {
+            "support_mask": 1031,
+            "alpha": 1,
+            "roots": 30
+          },
+          {
+            "support_mask": 1375,
+            "alpha": 2,
+            "roots": 17
+          },
+          {
+            "support_mask": 1539,
+            "alpha": 1,
+            "roots": 32
+          },
+          {
+            "support_mask": 1792,
+            "alpha": 1,
+            "roots": 30
+          },
+          {
+            "support_mask": 1883,
+            "alpha": 2,
+            "roots": 19
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 11,
+        "graph6": "JwCWw{F?}F_",
+        "edges": 25,
+        "alpha": 3,
+        "points": [
+          182,
+          202,
+          804,
+          2106,
+          2157,
+          2424,
+          2740,
+          2840,
+          3046,
+          3415,
+          3456
+        ],
+        "threshold": 858,
+        "stable_sets": 60,
+        "rank_facets": 5,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 7,
+            "alpha": 1,
+            "roots": 43
+          },
+          {
+            "support_mask": 248,
+            "alpha": 1,
+            "roots": 46
+          },
+          {
+            "support_mask": 480,
+            "alpha": 1,
+            "roots": 30
+          },
+          {
+            "support_mask": 1027,
+            "alpha": 1,
+            "roots": 34
+          },
+          {
+            "support_mask": 1984,
+            "alpha": 1,
+            "roots": 44
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 11,
+        "graph6": "J~{WGMBwN@_",
+        "edges": 27,
+        "alpha": 3,
+        "points": [
+          99,
+          508,
+          509,
+          1023,
+          1038,
+          1770,
+          2259,
+          2292,
+          3126,
+          3470,
+          3703
+        ],
+        "threshold": 1142,
+        "stable_sets": 50,
+        "rank_facets": 7,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 31,
+            "alpha": 1,
+            "roots": 36
+          },
+          {
+            "support_mask": 56,
+            "alpha": 1,
+            "roots": 29
+          },
+          {
+            "support_mask": 224,
+            "alpha": 1,
+            "roots": 33
+          },
+          {
+            "support_mask": 448,
+            "alpha": 1,
+            "roots": 32
+          },
+          {
+            "support_mask": 505,
+            "alpha": 2,
+            "roots": 20
+          },
+          {
+            "support_mask": 1543,
+            "alpha": 1,
+            "roots": 36
+          },
+          {
+            "support_mask": 1793,
+            "alpha": 1,
+            "roots": 32
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 11,
+        "graph6": "JxKWw{^@}?_",
+        "edges": 27,
+        "alpha": 3,
+        "points": [
+          642,
+          711,
+          1568,
+          2411,
+          2446,
+          2616,
+          2735,
+          2780,
+          2897,
+          3420,
+          3987
+        ],
+        "threshold": 941,
+        "stable_sets": 48,
+        "rank_facets": 6,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 7,
+            "alpha": 1,
+            "roots": 31
+          },
+          {
+            "support_mask": 28,
+            "alpha": 1,
+            "roots": 25
+          },
+          {
+            "support_mask": 504,
+            "alpha": 1,
+            "roots": 38
+          },
+          {
+            "support_mask": 992,
+            "alpha": 1,
+            "roots": 34
+          },
+          {
+            "support_mask": 1027,
+            "alpha": 1,
+            "roots": 32
+          },
+          {
+            "support_mask": 1536,
+            "alpha": 1,
+            "roots": 22
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 11,
+        "graph6": "J~Kx{B@o]B_",
+        "edges": 28,
+        "alpha": 3,
+        "points": [
+          233,
+          312,
+          958,
+          1411,
+          1551,
+          1596,
+          1832,
+          3145,
+          3306,
+          3520,
+          3848
+        ],
+        "threshold": 1194,
+        "stable_sets": 42,
+        "rank_facets": 4,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 15,
+            "alpha": 1,
+            "roots": 22
+          },
+          {
+            "support_mask": 124,
+            "alpha": 1,
+            "roots": 34
+          },
+          {
+            "support_mask": 1795,
+            "alpha": 1,
+            "roots": 30
+          },
+          {
+            "support_mask": 1921,
+            "alpha": 1,
+            "roots": 32
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 11,
+        "graph6": "JhCGWC@o]B_",
+        "edges": 18,
+        "alpha": 4,
+        "points": [
+          281,
+          373,
+          1145,
+          1359,
+          2144,
+          2531,
+          2625,
+          3414,
+          3545,
+          3691,
+          3888
+        ],
+        "threshold": 791,
+        "stable_sets": 101,
+        "rank_facets": 8,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 6,
+            "alpha": 1,
+            "roots": 49
+          },
+          {
+            "support_mask": 12,
+            "alpha": 1,
+            "roots": 60
+          },
+          {
+            "support_mask": 24,
+            "alpha": 1,
+            "roots": 49
+          },
+          {
+            "support_mask": 112,
+            "alpha": 1,
+            "roots": 71
+          },
+          {
+            "support_mask": 192,
+            "alpha": 1,
+            "roots": 43
+          },
+          {
+            "support_mask": 1539,
+            "alpha": 1,
+            "roots": 71
+          },
+          {
+            "support_mask": 1758,
+            "alpha": 3,
+            "roots": 13
+          },
+          {
+            "support_mask": 1920,
+            "alpha": 1,
+            "roots": 72
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 11,
+        "graph6": "JzCW[A@_[B_",
+        "edges": 20,
+        "alpha": 3,
+        "points": [
+          496,
+          906,
+          1009,
+          1633,
+          2417,
+          2425,
+          2972,
+          3902,
+          3925,
+          4006,
+          4025
+        ],
+        "threshold": 838,
+        "stable_sets": 76,
+        "rank_facets": 5,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 7,
+            "alpha": 1,
+            "roots": 46
+          },
+          {
+            "support_mask": 14,
+            "alpha": 1,
+            "roots": 52
+          },
+          {
+            "support_mask": 56,
+            "alpha": 1,
+            "roots": 44
+          },
+          {
+            "support_mask": 112,
+            "alpha": 1,
+            "roots": 54
+          },
+          {
+            "support_mask": 1921,
+            "alpha": 1,
+            "roots": 62
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 11,
+        "graph6": "J~|zx{F_K@_",
+        "edges": 32,
+        "alpha": 3,
+        "points": [
+          141,
+          537,
+          762,
+          910,
+          990,
+          1377,
+          1408,
+          1867,
+          2253,
+          3091,
+          3236
+        ],
+        "threshold": 1172,
+        "stable_sets": 37,
+        "rank_facets": 8,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 31,
+            "alpha": 1,
+            "roots": 24
+          },
+          {
+            "support_mask": 126,
+            "alpha": 1,
+            "roots": 27
+          },
+          {
+            "support_mask": 252,
+            "alpha": 1,
+            "roots": 27
+          },
+          {
+            "support_mask": 480,
+            "alpha": 1,
+            "roots": 21
+          },
+          {
+            "support_mask": 1537,
+            "alpha": 1,
+            "roots": 23
+          },
+          {
+            "support_mask": 1792,
+            "alpha": 1,
+            "roots": 24
+          },
+          {
+            "support_mask": 1919,
+            "alpha": 2,
+            "roots": 21
+          },
+          {
+            "support_mask": 2045,
+            "alpha": 2,
+            "roots": 21
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 11,
+        "graph6": "Jj[ww{^?{?_",
+        "edges": 27,
+        "alpha": 3,
+        "points": [
+          214,
+          901,
+          1330,
+          1631,
+          1743,
+          2008,
+          2359,
+          2531,
+          2623,
+          3104,
+          3970
+        ],
+        "threshold": 1013,
+        "stable_sets": 55,
+        "rank_facets": 8,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 3,
+            "alpha": 1,
+            "roots": 28
+          },
+          {
+            "support_mask": 30,
+            "alpha": 1,
+            "roots": 36
+          },
+          {
+            "support_mask": 60,
+            "alpha": 1,
+            "roots": 32
+          },
+          {
+            "support_mask": 504,
+            "alpha": 1,
+            "roots": 42
+          },
+          {
+            "support_mask": 960,
+            "alpha": 1,
+            "roots": 36
+          },
+          {
+            "support_mask": 1025,
+            "alpha": 1,
+            "roots": 32
+          },
+          {
+            "support_mask": 1536,
+            "alpha": 1,
+            "roots": 28
+          },
+          {
+            "support_mask": 2047,
+            "alpha": 3,
+            "roots": 15
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 11,
+        "graph6": "J~{GGKF?~o_",
+        "edges": 26,
+        "alpha": 3,
+        "points": [
+          76,
+          215,
+          303,
+          323,
+          714,
+          1531,
+          1956,
+          1961,
+          2452,
+          2687,
+          3777
+        ],
+        "threshold": 1111,
+        "stable_sets": 45,
+        "rank_facets": 6,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 48,
+            "alpha": 1,
+            "roots": 16
+          },
+          {
+            "support_mask": 480,
+            "alpha": 1,
+            "roots": 32
+          },
+          {
+            "support_mask": 960,
+            "alpha": 1,
+            "roots": 32
+          },
+          {
+            "support_mask": 1055,
+            "alpha": 1,
+            "roots": 38
+          },
+          {
+            "support_mask": 1536,
+            "alpha": 1,
+            "roots": 16
+          },
+          {
+            "support_mask": 2032,
+            "alpha": 2,
+            "roots": 13
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 11,
+        "graph6": "J~Kww[F?WB_",
+        "edges": 25,
+        "alpha": 3,
+        "points": [
+          89,
+          439,
+          780,
+          830,
+          1501,
+          1541,
+          1640,
+          2237,
+          2353,
+          2866,
+          3025
+        ],
+        "threshold": 818,
+        "stable_sets": 58,
+        "rank_facets": 6,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 15,
+            "alpha": 1,
+            "roots": 43
+          },
+          {
+            "support_mask": 60,
+            "alpha": 1,
+            "roots": 34
+          },
+          {
+            "support_mask": 120,
+            "alpha": 1,
+            "roots": 38
+          },
+          {
+            "support_mask": 240,
+            "alpha": 1,
+            "roots": 38
+          },
+          {
+            "support_mask": 480,
+            "alpha": 1,
+            "roots": 34
+          },
+          {
+            "support_mask": 1920,
+            "alpha": 1,
+            "roots": 43
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 12,
+        "graph6": "K~CGW[Nw~F{^",
+        "edges": 38,
+        "alpha": 3,
+        "points": [
+          134,
+          276,
+          571,
+          1010,
+          1904,
+          2329,
+          2853,
+          2974,
+          3048,
+          3678,
+          3693,
+          3890
+        ],
+        "threshold": 1169,
+        "stable_sets": 44,
+        "rank_facets": 6,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 15,
+            "alpha": 1,
+            "roots": 29
+          },
+          {
+            "support_mask": 24,
+            "alpha": 1,
+            "roots": 18
+          },
+          {
+            "support_mask": 496,
+            "alpha": 1,
+            "roots": 33
+          },
+          {
+            "support_mask": 3591,
+            "alpha": 1,
+            "roots": 33
+          },
+          {
+            "support_mask": 4032,
+            "alpha": 1,
+            "roots": 30
+          },
+          {
+            "support_mask": 4063,
+            "alpha": 2,
+            "roots": 24
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 12,
+        "graph6": "K~{WGKF?w?w@",
+        "edges": 25,
+        "alpha": 4,
+        "points": [
+          663,
+          678,
+          956,
+          1050,
+          1144,
+          1758,
+          2254,
+          2444,
+          2455,
+          3022,
+          3389,
+          4023
+        ],
+        "threshold": 789,
+        "stable_sets": 90,
+        "rank_facets": 8,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 31,
+            "alpha": 1,
+            "roots": 71
+          },
+          {
+            "support_mask": 56,
+            "alpha": 1,
+            "roots": 44
+          },
+          {
+            "support_mask": 480,
+            "alpha": 1,
+            "roots": 64
+          },
+          {
+            "support_mask": 960,
+            "alpha": 1,
+            "roots": 64
+          },
+          {
+            "support_mask": 1536,
+            "alpha": 1,
+            "roots": 44
+          },
+          {
+            "support_mask": 2051,
+            "alpha": 1,
+            "roots": 48
+          },
+          {
+            "support_mask": 3072,
+            "alpha": 1,
+            "roots": 52
+          },
+          {
+            "support_mask": 4091,
+            "alpha": 3,
+            "roots": 26
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 12,
+        "graph6": "K~CGWKF@wNoB",
+        "edges": 27,
+        "alpha": 4,
+        "points": [
+          299,
+          741,
+          848,
+          1095,
+          1826,
+          2443,
+          2571,
+          2723,
+          2815,
+          3145,
+          3253,
+          3946
+        ],
+        "threshold": 878,
+        "stable_sets": 84,
+        "rank_facets": 6,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 15,
+            "alpha": 1,
+            "roots": 64
+          },
+          {
+            "support_mask": 24,
+            "alpha": 1,
+            "roots": 41
+          },
+          {
+            "support_mask": 112,
+            "alpha": 1,
+            "roots": 47
+          },
+          {
+            "support_mask": 2016,
+            "alpha": 1,
+            "roots": 68
+          },
+          {
+            "support_mask": 2049,
+            "alpha": 1,
+            "roots": 41
+          },
+          {
+            "support_mask": 3584,
+            "alpha": 1,
+            "roots": 47
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 12,
+        "graph6": "KxKxx{NB{@wF",
+        "edges": 35,
+        "alpha": 3,
+        "points": [
+          247,
+          426,
+          1315,
+          1668,
+          1706,
+          1714,
+          1945,
+          1969,
+          2807,
+          2817,
+          3278,
+          3635
+        ],
+        "threshold": 1117,
+        "stable_sets": 53,
+        "rank_facets": 8,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 7,
+            "alpha": 1,
+            "roots": 31
+          },
+          {
+            "support_mask": 252,
+            "alpha": 1,
+            "roots": 41
+          },
+          {
+            "support_mask": 1008,
+            "alpha": 1,
+            "roots": 38
+          },
+          {
+            "support_mask": 2051,
+            "alpha": 1,
+            "roots": 33
+          },
+          {
+            "support_mask": 3063,
+            "alpha": 2,
+            "roots": 27
+          },
+          {
+            "support_mask": 3073,
+            "alpha": 1,
+            "roots": 30
+          },
+          {
+            "support_mask": 3840,
+            "alpha": 1,
+            "roots": 34
+          },
+          {
+            "support_mask": 4085,
+            "alpha": 2,
+            "roots": 24
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 12,
+        "graph6": "K~|xw?@?[@wF",
+        "edges": 29,
+        "alpha": 4,
+        "points": [
+          195,
+          445,
+          518,
+          519,
+          1130,
+          1279,
+          1460,
+          2457,
+          3029,
+          3122,
+          3583,
+          3623
+        ],
+        "threshold": 944,
+        "stable_sets": 72,
+        "rank_facets": 7,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 31,
+            "alpha": 1,
+            "roots": 48
+          },
+          {
+            "support_mask": 62,
+            "alpha": 1,
+            "roots": 48
+          },
+          {
+            "support_mask": 124,
+            "alpha": 1,
+            "roots": 54
+          },
+          {
+            "support_mask": 896,
+            "alpha": 1,
+            "roots": 47
+          },
+          {
+            "support_mask": 2051,
+            "alpha": 1,
+            "roots": 36
+          },
+          {
+            "support_mask": 3073,
+            "alpha": 1,
+            "roots": 40
+          },
+          {
+            "support_mask": 3840,
+            "alpha": 1,
+            "roots": 50
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 12,
+        "graph6": "K~|xwKF?wBwF",
+        "edges": 34,
+        "alpha": 3,
+        "points": [
+          266,
+          538,
+          1252,
+          1286,
+          1308,
+          1638,
+          1764,
+          2462,
+          2740,
+          2813,
+          2941,
+          3704
+        ],
+        "threshold": 1134,
+        "stable_sets": 52,
+        "rank_facets": 13,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 31,
+            "alpha": 1,
+            "roots": 38
+          },
+          {
+            "support_mask": 62,
+            "alpha": 1,
+            "roots": 35
+          },
+          {
+            "support_mask": 124,
+            "alpha": 1,
+            "roots": 35
+          },
+          {
+            "support_mask": 480,
+            "alpha": 1,
+            "roots": 30
+          },
+          {
+            "support_mask": 960,
+            "alpha": 1,
+            "roots": 31
+          },
+          {
+            "support_mask": 1920,
+            "alpha": 1,
+            "roots": 35
+          },
+          {
+            "support_mask": 2051,
+            "alpha": 1,
+            "roots": 27
+          },
+          {
+            "support_mask": 2431,
+            "alpha": 2,
+            "roots": 20
+          },
+          {
+            "support_mask": 2911,
+            "alpha": 2,
+            "roots": 22
+          },
+          {
+            "support_mask": 2942,
+            "alpha": 2,
+            "roots": 20
+          },
+          {
+            "support_mask": 3042,
+            "alpha": 2,
+            "roots": 13
+          },
+          {
+            "support_mask": 3840,
+            "alpha": 1,
+            "roots": 35
+          },
+          {
+            "support_mask": 4002,
+            "alpha": 2,
+            "roots": 14
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 12,
+        "graph6": "KzKxw{^_}?wB",
+        "edges": 34,
+        "alpha": 3,
+        "points": [
+          155,
+          520,
+          1155,
+          1443,
+          1691,
+          1885,
+          2123,
+          2315,
+          2394,
+          3168,
+          3988,
+          4033
+        ],
+        "threshold": 1084,
+        "stable_sets": 51,
+        "rank_facets": 11,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 7,
+            "alpha": 1,
+            "roots": 26
+          },
+          {
+            "support_mask": 14,
+            "alpha": 1,
+            "roots": 24
+          },
+          {
+            "support_mask": 124,
+            "alpha": 1,
+            "roots": 34
+          },
+          {
+            "support_mask": 504,
+            "alpha": 1,
+            "roots": 40
+          },
+          {
+            "support_mask": 960,
+            "alpha": 1,
+            "roots": 29
+          },
+          {
+            "support_mask": 975,
+            "alpha": 2,
+            "roots": 18
+          },
+          {
+            "support_mask": 1021,
+            "alpha": 2,
+            "roots": 18
+          },
+          {
+            "support_mask": 3075,
+            "alpha": 1,
+            "roots": 36
+          },
+          {
+            "support_mask": 3585,
+            "alpha": 1,
+            "roots": 35
+          },
+          {
+            "support_mask": 3663,
+            "alpha": 2,
+            "roots": 18
+          },
+          {
+            "support_mask": 4043,
+            "alpha": 2,
+            "roots": 23
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 12,
+        "graph6": "K~~xwC??M@wF",
+        "edges": 30,
+        "alpha": 3,
+        "points": [
+          319,
+          372,
+          832,
+          854,
+          1003,
+          1013,
+          1459,
+          2196,
+          3259,
+          3513,
+          3813,
+          3855
+        ],
+        "threshold": 759,
+        "stable_sets": 73,
+        "rank_facets": 5,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 63,
+            "alpha": 1,
+            "roots": 58
+          },
+          {
+            "support_mask": 124,
+            "alpha": 1,
+            "roots": 51
+          },
+          {
+            "support_mask": 192,
+            "alpha": 1,
+            "roots": 42
+          },
+          {
+            "support_mask": 3075,
+            "alpha": 1,
+            "roots": 40
+          },
+          {
+            "support_mask": 3840,
+            "alpha": 1,
+            "roots": 56
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 12,
+        "graph6": "KwCWw}@_[@{F",
+        "edges": 27,
+        "alpha": 3,
+        "points": [
+          109,
+          551,
+          580,
+          2430,
+          2554,
+          2641,
+          2645,
+          2913,
+          3574,
+          3673,
+          3789,
+          3900
+        ],
+        "threshold": 843,
+        "stable_sets": 78,
+        "rank_facets": 4,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 248,
+            "alpha": 1,
+            "roots": 64
+          },
+          {
+            "support_mask": 896,
+            "alpha": 1,
+            "roots": 38
+          },
+          {
+            "support_mask": 2055,
+            "alpha": 1,
+            "roots": 56
+          },
+          {
+            "support_mask": 3841,
+            "alpha": 1,
+            "roots": 60
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 12,
+        "graph6": "KxKww{F?w?w@",
+        "edges": 26,
+        "alpha": 4,
+        "points": [
+          407,
+          540,
+          1179,
+          1552,
+          1721,
+          2026,
+          2238,
+          2400,
+          2636,
+          3012,
+          3571,
+          4015
+        ],
+        "threshold": 876,
+        "stable_sets": 93,
+        "rank_facets": 10,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 7,
+            "alpha": 1,
+            "roots": 58
+          },
+          {
+            "support_mask": 60,
+            "alpha": 1,
+            "roots": 61
+          },
+          {
+            "support_mask": 248,
+            "alpha": 1,
+            "roots": 67
+          },
+          {
+            "support_mask": 480,
+            "alpha": 1,
+            "roots": 55
+          },
+          {
+            "support_mask": 960,
+            "alpha": 1,
+            "roots": 62
+          },
+          {
+            "support_mask": 1536,
+            "alpha": 1,
+            "roots": 49
+          },
+          {
+            "support_mask": 2051,
+            "alpha": 1,
+            "roots": 62
+          },
+          {
+            "support_mask": 3072,
+            "alpha": 1,
+            "roots": 49
+          },
+          {
+            "support_mask": 3839,
+            "alpha": 3,
+            "roots": 28
+          },
+          {
+            "support_mask": 4071,
+            "alpha": 3,
+            "roots": 22
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 12,
+        "graph6": "K~~zw[@_N@{F",
+        "edges": 37,
+        "alpha": 3,
+        "points": [
+          219,
+          528,
+          566,
+          990,
+          1041,
+          1238,
+          1446,
+          2099,
+          2767,
+          3271,
+          3620,
+          3843
+        ],
+        "threshold": 1100,
+        "stable_sets": 48,
+        "rank_facets": 10,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 63,
+            "alpha": 1,
+            "roots": 34
+          },
+          {
+            "support_mask": 126,
+            "alpha": 1,
+            "roots": 36
+          },
+          {
+            "support_mask": 240,
+            "alpha": 1,
+            "roots": 30
+          },
+          {
+            "support_mask": 384,
+            "alpha": 1,
+            "roots": 22
+          },
+          {
+            "support_mask": 3079,
+            "alpha": 1,
+            "roots": 29
+          },
+          {
+            "support_mask": 3511,
+            "alpha": 2,
+            "roots": 19
+          },
+          {
+            "support_mask": 3574,
+            "alpha": 2,
+            "roots": 20
+          },
+          {
+            "support_mask": 3585,
+            "alpha": 1,
+            "roots": 30
+          },
+          {
+            "support_mask": 3840,
+            "alpha": 1,
+            "roots": 34
+          },
+          {
+            "support_mask": 4017,
+            "alpha": 2,
+            "roots": 19
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 12,
+        "graph6": "K~|zwK@?[BoN",
+        "edges": 33,
+        "alpha": 3,
+        "points": [
+          883,
+          1189,
+          1465,
+          1869,
+          1994,
+          2062,
+          2108,
+          3173,
+          3288,
+          3423,
+          3999,
+          4023
+        ],
+        "threshold": 1124,
+        "stable_sets": 50,
+        "rank_facets": 6,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 31,
+            "alpha": 1,
+            "roots": 34
+          },
+          {
+            "support_mask": 126,
+            "alpha": 1,
+            "roots": 40
+          },
+          {
+            "support_mask": 224,
+            "alpha": 1,
+            "roots": 22
+          },
+          {
+            "support_mask": 3073,
+            "alpha": 1,
+            "roots": 24
+          },
+          {
+            "support_mask": 3327,
+            "alpha": 2,
+            "roots": 23
+          },
+          {
+            "support_mask": 3968,
+            "alpha": 1,
+            "roots": 40
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 12,
+        "graph6": "K~?GW[N?G@{B",
+        "edges": 24,
+        "alpha": 3,
+        "points": [
+          328,
+          416,
+          534,
+          718,
+          1972,
+          2077,
+          2220,
+          2476,
+          2720,
+          3407,
+          3487,
+          3887
+        ],
+        "threshold": 863,
+        "stable_sets": 92,
+        "rank_facets": 5,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 15,
+            "alpha": 1,
+            "roots": 70
+          },
+          {
+            "support_mask": 496,
+            "alpha": 1,
+            "roots": 75
+          },
+          {
+            "support_mask": 1792,
+            "alpha": 1,
+            "roots": 57
+          },
+          {
+            "support_mask": 2055,
+            "alpha": 1,
+            "roots": 60
+          },
+          {
+            "support_mask": 3584,
+            "alpha": 1,
+            "roots": 62
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 12,
+        "graph6": "KxKGWKFp}Nw~",
+        "edges": 35,
+        "alpha": 3,
+        "points": [
+          517,
+          541,
+          1437,
+          1829,
+          2205,
+          2949,
+          3085,
+          3327,
+          3400,
+          3729,
+          3826,
+          3928
+        ],
+        "threshold": 1006,
+        "stable_sets": 56,
+        "rank_facets": 6,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 7,
+            "alpha": 1,
+            "roots": 34
+          },
+          {
+            "support_mask": 28,
+            "alpha": 1,
+            "roots": 38
+          },
+          {
+            "support_mask": 112,
+            "alpha": 1,
+            "roots": 26
+          },
+          {
+            "support_mask": 3587,
+            "alpha": 1,
+            "roots": 38
+          },
+          {
+            "support_mask": 3703,
+            "alpha": 2,
+            "roots": 22
+          },
+          {
+            "support_mask": 4064,
+            "alpha": 1,
+            "roots": 46
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 12,
+        "graph6": "K~|wWCB_}B}N",
+        "edges": 36,
+        "alpha": 3,
+        "points": [
+          529,
+          630,
+          996,
+          1060,
+          1427,
+          1783,
+          2324,
+          3235,
+          3373,
+          3498,
+          3812,
+          4023
+        ],
+        "threshold": 1211,
+        "stable_sets": 47,
+        "rank_facets": 14,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 31,
+            "alpha": 1,
+            "roots": 32
+          },
+          {
+            "support_mask": 62,
+            "alpha": 1,
+            "roots": 34
+          },
+          {
+            "support_mask": 112,
+            "alpha": 1,
+            "roots": 24
+          },
+          {
+            "support_mask": 960,
+            "alpha": 1,
+            "roots": 31
+          },
+          {
+            "support_mask": 2063,
+            "alpha": 1,
+            "roots": 30
+          },
+          {
+            "support_mask": 2687,
+            "alpha": 2,
+            "roots": 17
+          },
+          {
+            "support_mask": 3039,
+            "alpha": 2,
+            "roots": 24
+          },
+          {
+            "support_mask": 3070,
+            "alpha": 2,
+            "roots": 25
+          },
+          {
+            "support_mask": 3075,
+            "alpha": 1,
+            "roots": 24
+          },
+          {
+            "support_mask": 3585,
+            "alpha": 1,
+            "roots": 25
+          },
+          {
+            "support_mask": 3699,
+            "alpha": 2,
+            "roots": 16
+          },
+          {
+            "support_mask": 3968,
+            "alpha": 1,
+            "roots": 34
+          },
+          {
+            "support_mask": 4051,
+            "alpha": 2,
+            "roots": 18
+          },
+          {
+            "support_mask": 4082,
+            "alpha": 2,
+            "roots": 20
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 12,
+        "graph6": "K~{WWKF@w?_@",
+        "edges": 25,
+        "alpha": 3,
+        "points": [
+          177,
+          368,
+          644,
+          726,
+          837,
+          1416,
+          1531,
+          1624,
+          1803,
+          2146,
+          2851,
+          3476
+        ],
+        "threshold": 756,
+        "stable_sets": 93,
+        "rank_facets": 6,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 31,
+            "alpha": 1,
+            "roots": 76
+          },
+          {
+            "support_mask": 56,
+            "alpha": 1,
+            "roots": 37
+          },
+          {
+            "support_mask": 112,
+            "alpha": 1,
+            "roots": 38
+          },
+          {
+            "support_mask": 992,
+            "alpha": 1,
+            "roots": 75
+          },
+          {
+            "support_mask": 1536,
+            "alpha": 1,
+            "roots": 39
+          },
+          {
+            "support_mask": 3072,
+            "alpha": 1,
+            "roots": 60
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 12,
+        "graph6": "KJ[WGKF_{FoN",
+        "edges": 28,
+        "alpha": 3,
+        "points": [
+          557,
+          1988,
+          1994,
+          2041,
+          2236,
+          2849,
+          3120,
+          3405,
+          3464,
+          3881,
+          3927,
+          3972
+        ],
+        "threshold": 835,
+        "stable_sets": 75,
+        "rank_facets": 6,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 30,
+            "alpha": 1,
+            "roots": 58
+          },
+          {
+            "support_mask": 56,
+            "alpha": 1,
+            "roots": 39
+          },
+          {
+            "support_mask": 480,
+            "alpha": 1,
+            "roots": 50
+          },
+          {
+            "support_mask": 1984,
+            "alpha": 1,
+            "roots": 51
+          },
+          {
+            "support_mask": 3585,
+            "alpha": 1,
+            "roots": 52
+          },
+          {
+            "support_mask": 3968,
+            "alpha": 1,
+            "roots": 49
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 12,
+        "graph6": "KzCWW]Nb{@oF",
+        "edges": 31,
+        "alpha": 3,
+        "points": [
+          133,
+          1018,
+          1033,
+          1245,
+          2236,
+          2269,
+          2395,
+          2419,
+          3225,
+          3235,
+          3629,
+          3975
+        ],
+        "threshold": 1045,
+        "stable_sets": 70,
+        "rank_facets": 6,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 7,
+            "alpha": 1,
+            "roots": 42
+          },
+          {
+            "support_mask": 14,
+            "alpha": 1,
+            "roots": 48
+          },
+          {
+            "support_mask": 56,
+            "alpha": 1,
+            "roots": 34
+          },
+          {
+            "support_mask": 831,
+            "alpha": 2,
+            "roots": 23
+          },
+          {
+            "support_mask": 1008,
+            "alpha": 1,
+            "roots": 56
+          },
+          {
+            "support_mask": 3841,
+            "alpha": 1,
+            "roots": 52
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 12,
+        "graph6": "Kz\\ww{^?K?{@",
+        "edges": 31,
+        "alpha": 3,
+        "points": [
+          111,
+          425,
+          503,
+          1139,
+          1194,
+          1249,
+          1457,
+          1626,
+          1777,
+          2676,
+          3587,
+          3782
+        ],
+        "threshold": 920,
+        "stable_sets": 68,
+        "rank_facets": 6,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 62,
+            "alpha": 1,
+            "roots": 43
+          },
+          {
+            "support_mask": 504,
+            "alpha": 1,
+            "roots": 55
+          },
+          {
+            "support_mask": 768,
+            "alpha": 1,
+            "roots": 32
+          },
+          {
+            "support_mask": 1536,
+            "alpha": 1,
+            "roots": 39
+          },
+          {
+            "support_mask": 2055,
+            "alpha": 1,
+            "roots": 48
+          },
+          {
+            "support_mask": 3073,
+            "alpha": 1,
+            "roots": 41
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      },
+      {
+        "order": 12,
+        "graph6": "Kj[wwCB?WBo?",
+        "edges": 22,
+        "alpha": 4,
+        "points": [
+          25,
+          624,
+          900,
+          1080,
+          1274,
+          1550,
+          1709,
+          2314,
+          2423,
+          2477,
+          2734,
+          3609
+        ],
+        "threshold": 729,
+        "stable_sets": 119,
+        "rank_facets": 7,
+        "rank_facet_certificates": [
+          {
+            "support_mask": 3,
+            "alpha": 1,
+            "roots": 57
+          },
+          {
+            "support_mask": 30,
+            "alpha": 1,
+            "roots": 80
+          },
+          {
+            "support_mask": 60,
+            "alpha": 1,
+            "roots": 79
+          },
+          {
+            "support_mask": 120,
+            "alpha": 1,
+            "roots": 79
+          },
+          {
+            "support_mask": 448,
+            "alpha": 1,
+            "roots": 62
+          },
+          {
+            "support_mask": 1920,
+            "alpha": 1,
+            "roots": 92
+          },
+          {
+            "support_mask": 2049,
+            "alpha": 1,
+            "roots": 75
+          }
+        ],
+        "nonrank_facets": 0,
+        "nonrank_candidates": []
+      }
+    ]
+  },
+  "scope": {
+    "proved": [
+      "SCF intersect rank-perfect implies hbar-perfect",
+      "SCF semi-line corollary",
+      "strict finite separation from line and h-perfect classes"
+    ],
+    "not_proved": [
+      "all SCF quasi-line graphs are rank-perfect",
+      "all SCF graphs are hbar-perfect",
+      "publication priority"
+    ],
+    "order9_exhaustive": true,
+    "larger_sampling_exhaustive": false
+  },
+  "runtime_seconds": 109.09299999999712,
+  "source_sha256": "5ef2a7822f93cf4c12df53bd05c8a6faa209576d62aa430a576b0d238b49d767",
+  "artifacts": {
+    "results/pauli_fourth_moment_phase0/c042_order9_boundary.csv": "48eacba99677d0903a0950d3754a392f324b63b8baf46c19b4bb2b7997c7c6ab",
+    "results/pauli_fourth_moment_phase0/c042_circular_arc_stress.csv": "82478f83336833263accc257e22e6cb90e04b94153df14878e9bf62a01e41f0a",
+    "results/pauli_fourth_moment_phase0/c042_web_boundary.csv": "c634ab23d541dbb98f2615d47cbaa60e629d54dff0f92f00775f8973f977a8d2",
+    "experiments/pauli_fourth_moment_phase0/paper_c038/figures/c042_rank_perfect_boundary.png": "3e1fa1d8fa028013f2f94bcff336a8aae345222d2beb9d9b134fbab434ca1c83"
+  }
+}

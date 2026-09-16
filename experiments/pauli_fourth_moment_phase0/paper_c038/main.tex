@@ -59,6 +59,10 @@ regimes, controlled families through order 132, and a density stress through
 order 40. Local relaxations are often nearly exact on random sparse cases but
 retain constant gaps on planted blossoms. These computations test the
 mechanism; the theorem remains analytic.
+Beyond line graphs, we prove the general bridge that every rank-perfect
+simplicial claw-free graph is $\hbar$-perfect. Hence every simplicial
+claw-free semi-line graph is $\hbar$-perfect. An exact nine-vertex witness
+shows this extension is strict over both line graphs and $h$-perfect graphs.
 \end{abstract}
 
 \noindent\textbf{Status and scope.}
@@ -264,7 +268,7 @@ matching algorithm returns both the exact quantum optimum and a commuting
 set attaining it. It does not assert an efficient circuit preparing a chosen
 common eigenstate under every hardware connectivity model.
 
-\section{An independent graph-polyhedral proof}
+\section{An independent graph-polyhedral proof}\label{sec:scf-proof}
 
 Every line graph is claw-free. For a nonisolated root vertex $v$, the star
 $\delta(v)$ is a clique in $L(R)$, and for each edge $uv\in\delta(v)$ its
@@ -326,6 +330,70 @@ $h$-perfect.
 The witness shows why triangle and odd-hole checks alone miss the mechanism:
 the new proof supplies blossom inequalities for arbitrary odd vertex sets,
 not merely chordless cycles.
+
+\section{Beyond line graphs: the rank-perfect SCF bridge}
+
+Call a graph \emph{rank-perfect} when nonnegativity and the inequalities
+\begin{equation}\label{eq:all-rank}
+ \sum_{v\in U}x_v\leq\alpha(G[U]),\qquad U\subseteq V(G),
+\end{equation}
+describe $\STAB(G)$. The SCF sector theorem used in
+Section~\ref{sec:scf-proof} supplies~\eqref{eq:all-rank} for every squared Pauli expectation
+profile whenever $G$ is simplicial claw-free.
+
+\begin{theorem}[Rank-perfect SCF bridge]\label{thm:rank-perfect-scf}
+Every rank-perfect simplicial claw-free graph is $\hbar$-perfect.
+\end{theorem}
+
+\begin{proof}
+Let $y$ be any squared expectation profile. The SCF rank theorem gives
+nonnegativity and~\eqref{eq:all-rank}; rank-perfectness therefore implies
+$y\in\STAB(G)$. Hence $\beta(G,w)\leq\alpha(G,w)$ for every $w\geq0$.
+The reverse inequality follows universally by choosing a common eigenstate
+for the commuting Pauli observables indexed by a stable set. Thus equality
+holds for every nonnegative weight.
+\end{proof}
+
+Semi-line graphs are rank-perfect~\cite{oriolo,eosv}, giving an immediate
+named class beyond the matching construction.
+
+\begin{corollary}
+Every simplicial claw-free semi-line graph is $\hbar$-perfect.
+\end{corollary}
+
+The extension is strict. The graph with graph6 code
+\texttt{H?\textasciigrave{}adQY} has nine
+vertices and twelve edges. Exact classification certifies that it is SCF and
+quasi-line but not a line graph. Its stable-set polytope has seventeen facets:
+nine nonnegativity facets and eight rank facets. One rank facet is supported
+on eight vertices, has stability number three, and its support is neither a
+clique nor an odd hole. The graph is therefore rank-perfect but not
+$h$-perfect, while Theorem~\ref{thm:rank-perfect-scf} proves it
+$\hbar$-perfect.
+
+Figure~\ref{fig:rank-perfect-boundary} reports the adversarial finite boundary
+audit. Among all 4308 SCF graphs in the exact order-nine census, all 3758
+quasi-line members have only rank facets; all 550 records with nonrank facets
+lie outside quasi-line. A further seeded stress contains 60 connected SCF,
+quasi-line, non-line proper circular-arc graphs at orders 10--12, with no
+discovered nonrank facet. Candidate facets were found numerically and every
+reported rank facet was checked by exact validity and affine-rank calculations.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/c042_rank_perfect_boundary.png}
+\caption{Rank-perfect boundary audit. The order-nine panel is exhaustive for
+the frozen SCF census; the larger proper circular-arc panel is a conditioned
+seeded sample, and the web panel is an exact family sweep. These computations
+support, but do not prove, the stronger SCF quasi-line conjecture.}
+\label{fig:rank-perfect-boundary}
+\end{figure}
+
+The tempting statement that all quasi-line graphs are $\hbar$-perfect is
+false: the anti-heptagon is quasi-line and is the smallest known
+$\hbar$-imperfect graph~\cite{xu}. We therefore record only the conjecture
+that every \emph{SCF} quasi-line graph is rank-perfect. Neither that conjecture
+nor unrestricted SCF $\hbar$-perfection is used in any theorem here.
 
 \section{Baseline comparison and mechanism ablations}
 
@@ -552,6 +620,11 @@ standard-library verifiers, and eleven corruption tests. Their scope fields
 explicitly distinguish seeded ensembles, truncated odd-cycle systems, and
 controlled constructions from exhaustive or application-level claims.
 
+The C042 record adds an exhaustive reclassification of 4308 order-nine SCF
+graphs, 868 web graphs, and 60 conditioned proper circular-arc stress graphs.
+Its independent verifier reconstructs the graph classes, strict witness, and
+exact rank-facet certificates. Six tests include five intentional corruptions.
+
 From the repository root:
 \begin{quote}\small\ttfamily\raggedright
 python experiments/pauli\_fourth\_moment\_phase0/\\
@@ -578,6 +651,11 @@ python experiments/pauli\_fourth\_moment\_phase0/\\
 \hspace*{1em}run\_c041\_density\_coupling\_stress.py --overwrite\par
 python -S experiments/pauli\_fourth\_moment\_phase0/\\
 \hspace*{1em}verify\_c041\_density\_coupling\_stress.py
+\medskip\par
+python experiments/pauli\_fourth\_moment\_phase0/\\
+\hspace*{1em}run\_c042\_rank\_perfect\_boundary.py\par
+python -S experiments/pauli\_fourth\_moment\_phase0/\\
+\hspace*{1em}verify\_c042\_rank\_perfect\_boundary.py
 \end{quote}
 The wrapped paths are single commands. Numerical agreement is falsification
 support, not the proof of Theorem~\ref{thm:main}.
@@ -589,7 +667,10 @@ fermion setting for quadratic Majorana Hamiltonians~\cite{cf}. Chapman,
 Elman, and Mann develop the wider simplicial claw-free framework~\cite{cem}.
 Xu et al.~define weighted beta numbers and $\hbar$-perfection and establish
 other sufficient graph classes~\cite{xu}; their accessible manuscript does
-not state the all-line-graph weighted matching equality used here.
+not state the all-line-graph weighted matching equality used here. Oriolo and
+Eisenbrand et al.~supply the classical semi-line and quasi-line polyhedral
+boundary used only in Theorem~\ref{thm:rank-perfect-scf}'s corollary
+\cite{oriolo,eosv}.
 
 The graphs $L(K_{2k+1})$ already appear in magic-state simulation via
 Jordan--Wigner transformations~\cite{zurel}; the separating graphs themselves
@@ -632,6 +713,12 @@ hundreds of thousands of rows by order 40, while the complete mathematical
 object remains maximum-weight matching rather than an ever longer list of
 local repairs.
 
+The rank-perfect SCF bridge also shows that the line-graph mechanism is not the
+only analytic route. It extends exact Pauli uncertainty to every SCF semi-line
+graph and to a certified graph that is neither line nor $h$-perfect. The
+larger quasi-line statement remains a conjecture, explicitly separated from
+the proved result.
+
 The result concerns exact uncertainty values, not quantum advantage or hardware
 performance. The next scientific tests are independent refereeing and a wider
 bibliographic priority search; adding more random instances would not strengthen
@@ -643,7 +730,7 @@ Source, frozen records, verifier, and tests are available in the
 \href{https://github.com/YaroslavPelekhov/Quantum/tree/research/c038-line-graph-hbar}{public C038 GitHub branch}.
 The repository index identifies the theorem note, priority audit, generator,
 frozen JSON, independent verifiers, and corruption-controlled tests. Every
-reported numerical constant is read from four frozen JSON records by the
+reported numerical constant is read from five frozen JSON records by the
 manuscript checker. They include graph identifiers, generator seeds, weight
 regimes, relaxation values, aggregate summaries, explicit scope flags, and
 hashes for all derived tables and figures.
@@ -678,6 +765,16 @@ Z.-P. Xu, J. Wang, Q. Ye, G. Ko\ss mann, R. Schwonnek, and A. Winter,
 \emph{Simultaneous variances of Pauli strings, weighted independence numbers,
 and a new kind of perfection of graphs}, arXiv:2511.13531 (2025).
 \url{https://arxiv.org/abs/2511.13531}.
+
+\bibitem{oriolo}
+G. Oriolo, \emph{Clique family inequalities for the stable set polytope of
+quasi-line graphs}, Discrete Applied Mathematics 132, 185--201 (2003).
+\url{https://doi.org/10.1016/S0166-218X(03)00400-1}.
+
+\bibitem{eosv}
+F. Eisenbrand, G. Oriolo, G. Stauffer, and P. Ventura,
+\emph{The stable set polytope of quasi-line graphs}, Combinatorica 28,
+45--67 (2008). \url{https://doi.org/10.1007/s00493-008-2169-1}.
 
 \bibitem{zurel}
 M. Zurel, L. Z. Cohen, and R. Raussendorf,

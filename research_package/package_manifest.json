@@ -1,5 +1,5 @@
 {
-  "base_commit": "b46845341948a8f876d15d0b73fd453aad6a8d75",
+  "base_commit": "cd1fe3d8d7a65182c762c3566538542c766ca883",
   "working_tree_snapshot": true,
   "uploaded": true,
   "publication_branch": "research/c038-line-graph-hbar",
@@ -2938,6 +2938,11 @@
       "sha256": "3be9503e5450c40ef6a08b61ec452ef10df19e6f86384976d4c475c57a87fbc9"
     },
     {
+      "path": "experiments/pauli_fourth_moment_phase0/C042_RANK_PERFECT_BOUNDARY.md",
+      "bytes": 6215,
+      "sha256": "68da8a29671507704586289a0528b0c1d67a458286e5e57750e9925b74609683"
+    },
+    {
       "path": "experiments/pauli_fourth_moment_phase0/check_novelty_modules_20260907.py",
       "bytes": 1990,
       "sha256": "4cd80a7e8e63be28848717e4e17969a95bdc33bd9bec0099bbb42fc465667beb"
@@ -2949,8 +2954,8 @@
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/LATEST_RESEARCH_RU.md",
-      "bytes": 29022,
-      "sha256": "2b465f43d655dd4225d4ce9d874da4cabbcd2a1205470fbd65235cd4605964fd"
+      "bytes": 30883,
+      "sha256": "a8cac6f2e481349768380d419922c14768a9236875b192ad2520ffdae52188f0"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/LINE_GRAPH_HBAR_THEOREM_C038.md",
@@ -3004,8 +3009,8 @@
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/paper_c038/check_paper.py",
-      "bytes": 3686,
-      "sha256": "90f391e311f563d98e1164c31a02421d6d4eedddd1ad9306ee75779235b25922"
+      "bytes": 4678,
+      "sha256": "e050366aa559d314b78dc61649a5ca596ba6d76d9e43029298f4b5c126cbd18b"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/paper_c038/figures/c039_baseline_gaps.png",
@@ -3033,19 +3038,24 @@
       "sha256": "889bb291addbcaecfa7b9cc20fdf58a324e34b41a9b171b78fd6db55e1f5b24e"
     },
     {
+      "path": "experiments/pauli_fourth_moment_phase0/paper_c038/figures/c042_rank_perfect_boundary.png",
+      "bytes": 101532,
+      "sha256": "3e1fa1d8fa028013f2f94bcff336a8aae345222d2beb9d9b134fbab434ca1c83"
+    },
+    {
       "path": "experiments/pauli_fourth_moment_phase0/paper_c038/main.tex",
-      "bytes": 33077,
-      "sha256": "692ce641b7b680b1c18a05b7edfd0d9215726714624ca227ea705214789baf63"
+      "bytes": 37992,
+      "sha256": "88563f77954c1df40f61fdeaa494647713d43b48f3b7a736a13ba81b08ec656f"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/paper_c038/README_RU.md",
-      "bytes": 2928,
-      "sha256": "9d381a16992807eadf775ddf843f81bc5f8f1cf6b7383aa744cc2805e0de5154"
+      "bytes": 3492,
+      "sha256": "b48a64d8a965569267f40804b30b9a4063cfb201595b7b678f313228ad12bfbc"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/paper_c038/SELF_REVIEW_CHECKLIST_RU.md",
-      "bytes": 5213,
-      "sha256": "82cfc449cb722b87899faaec2dc82a3426615e4aa67a7854d172ca579ee1b5c2"
+      "bytes": 5610,
+      "sha256": "2b9f6509c1c1927b36830e3a9cf7c3a9cb50bdf046f0e8c05d237fc4bf318daa"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/POSTFREEZE_THEORY_NOTE.md",
@@ -3094,8 +3104,8 @@
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/RESEARCH_CYCLE_LOG.md",
-      "bytes": 95182,
-      "sha256": "a39be60038d537571026824a7d237621da623b2924748a249fc8a3babc437eaf"
+      "bytes": 96461,
+      "sha256": "4517baa38b0c2095a2882776cc81d6bb8178b720fc3e7ea9e5457754ec4acd2a"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/RESEARCH_PROGRAM_RU.md",
@@ -3226,6 +3236,11 @@
       "path": "experiments/pauli_fourth_moment_phase0/run_c041_density_coupling_stress.py",
       "bytes": 9023,
       "sha256": "461b03f50847092feea7a842aaaf27fea4c34734b836421c8f9e6d2517cc6b54"
+    },
+    {
+      "path": "experiments/pauli_fourth_moment_phase0/run_c042_rank_perfect_boundary.py",
+      "bytes": 19570,
+      "sha256": "5ef2a7822f93cf4c12df53bd05c8a6faa209576d62aa430a576b0d238b49d767"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/run_cnc_positivity_audit.py",
@@ -3658,6 +3673,11 @@
       "sha256": "0be97f4e246f794cc8cb6ccca7bb0d1bda1bddbb499d45684c27d9d90f9b7705"
     },
     {
+      "path": "experiments/pauli_fourth_moment_phase0/test_c042_rank_perfect_boundary.py",
+      "bytes": 1825,
+      "sha256": "7d2d2678184846fdfdd20c6c47bfd77e37487b1dca2ab41be317102ecfbc993b"
+    },
+    {
       "path": "experiments/pauli_fourth_moment_phase0/test_scf_almost_clique_closure.py",
       "bytes": 2263,
       "sha256": "19201ce6153b34ab70457a0219b7ca8de87d3d033e9fc2e9c03313a4bbaa64aa"
@@ -3816,6 +3836,11 @@
       "path": "experiments/pauli_fourth_moment_phase0/verify_c041_density_coupling_stress.py",
       "bytes": 3215,
       "sha256": "0e7bcd8c19bc1c095cfbe35aca1219ad71be255a4c8eea812810f3ab89a19b18"
+    },
+    {
+      "path": "experiments/pauli_fourth_moment_phase0/verify_c042_rank_perfect_boundary.py",
+      "bytes": 10728,
+      "sha256": "b0cb96ca51d637cf4bb2fba84aed49cfb739210acaf1f71979ea8e13347f8c2c"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/verify_n6_cover.py",
@@ -4404,8 +4429,8 @@
     },
     {
       "path": "output/pdf/c038_line_graph_pauli_matching_theorem.pdf",
-      "bytes": 947128,
-      "sha256": "3fbd48a8f1d53451b9ea7749c2de71e5aeeb8807da40a4c494fa561c12536cd6"
+      "bytes": 1051584,
+      "sha256": "00ba956ee6ef7593278e431053702e04fa816d7520a1c1e90e05ddece7f82ec1"
     },
     {
       "path": "output/pdf/prepared_20260910/gsn_qaoa_mis_manuscript.pdf",
@@ -4599,8 +4624,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 38052,
-      "sha256": "30ce55ea8507a225b557b8f78f3bdf5724416af066a94e1ea2b87f94d97c7c8f"
+      "bytes": 38882,
+      "sha256": "541e0ec7385e92e11b63e8275d19dcff0cac2e047a3dc77ada610a8470bf5379"
     },
     {
       "path": "REPRODUCIBILITY.md",
@@ -4630,7 +4655,7 @@
     {
       "path": "research_package/branch_inventory.json",
       "bytes": 15707,
-      "sha256": "239e01b749618745f9c207048405bac7107d57a16705278da61b2b784f2ce32d"
+      "sha256": "90cd55c1d17e7e23b47f9bf9215ce0eaca7aeccd23cbdb6745e0f3d02aa2a37b"
     },
     {
       "path": "research_package/build_papers.py",
@@ -4639,8 +4664,8 @@
     },
     {
       "path": "research_package/FINAL_REPORT_C038_RU.md",
-      "bytes": 16049,
-      "sha256": "19ecfc06ebc4dbb4e4c13841089df2afd32d18b517cfb1a48b5b6f65f2ff75a6"
+      "bytes": 17455,
+      "sha256": "7b3d25e5bb24114f7933fdbb2a14dccbc264dd1f91a68e1a2f2647537ccf1434"
     },
     {
       "path": "research_package/hardware/chesapeake__prior_matched_random.qasm",
@@ -4734,8 +4759,8 @@
     },
     {
       "path": "research_package/results/c038_standalone_paper_check.log",
-      "bytes": 312,
-      "sha256": "ebe267f93b57b149775082e7af7cc9f4a6619c104d6996b83030e8be365882db"
+      "bytes": 377,
+      "sha256": "a973119dc7af0833c2f8f13f80ccc02f24849da977161c326657530b87fdee88"
     },
     {
       "path": "research_package/results/check_paper.log",
@@ -4775,7 +4800,7 @@
     {
       "path": "research_package/results/gsn_integrity.log",
       "bytes": 795,
-      "sha256": "88d0f29fb010034f1dd7141fc8be570b2ad5c26ab10c0ed6fc901ed12a0a5b16"
+      "sha256": "4f3120940d3c308477faabed222424e3440726814ff1fcb5b356f17409de7cb6"
     },
     {
       "path": "research_package/results/noise_checkpoint.json",
@@ -4789,13 +4814,13 @@
     },
     {
       "path": "research_package/results/pauli_full_suite.log",
-      "bytes": 307,
-      "sha256": "0240bf1e7347e99131ccf7122b43a2916452d17d8a51a71d48c98804702ff9b6"
+      "bytes": 313,
+      "sha256": "6a4ee9ff200f0227035023d35e2b47041ad8471aa2cee4b14900492e7042e829"
     },
     {
       "path": "research_package/results/qaoa_integrity.log",
       "bytes": 136,
-      "sha256": "0a934735e7feb3497a30d1207ce2b6c9625689eb599b8f5273723fe568282be8"
+      "sha256": "473aea7830686c49c7d6f72e369a3a50fefebe27f77274eb247c5a4f06b23541"
     },
     {
       "path": "research_package/results/readiness.json",
@@ -4805,7 +4830,7 @@
     {
       "path": "research_package/results/readiness_integrity.log",
       "bytes": 1107,
-      "sha256": "12839637a6cb4ebc1e3c88e74350393cec1f75403a04ebf43e15d42f61d34203"
+      "sha256": "63c7b26c1a04322e8bc60c06430654c549c058781c233aa09894e94d1d49c73e"
     },
     {
       "path": "research_package/results/shot_planning.json",
@@ -4814,8 +4839,8 @@
     },
     {
       "path": "research_package/results/validation.json",
-      "bytes": 9292,
-      "sha256": "3e6ae1672e4e21dcef12b651cb2f0a186edf6c05b88aa3d67434d032f98aa15d"
+      "bytes": 9953,
+      "sha256": "e1106af8fe215b1bf91f6ef15b58dd8f37087c026ea7e99f8d8d6082a37f465a"
     },
     {
       "path": "research_package/results/verify_c031_exact_six.log",
@@ -4841,6 +4866,11 @@
       "path": "research_package/results/verify_c041_density_coupling_stress.log",
       "bytes": 206,
       "sha256": "aec25b1e51e9e5153832baa18e46f3a10d4ab2bb3f0f154cac70c1c9d839b85f"
+    },
+    {
+      "path": "research_package/results/verify_c042_rank_perfect_boundary.log",
+      "bytes": 187,
+      "sha256": "2d8c9778643e685c05bf0edcf9500d01aafacc7b9b431fee94d234075fd5490c"
     },
     {
       "path": "research_package/results/verify_scf_core_refinement.log",
@@ -4874,8 +4904,8 @@
     },
     {
       "path": "research_package/START_HERE_RU.md",
-      "bytes": 15682,
-      "sha256": "4c435d7562e80554258f1db61d7b47cd189acd0ddb59457e12e74cf790595d48"
+      "bytes": 16622,
+      "sha256": "a35cd558cf052a16b9d8bb44650cb71a19b1e9ed606897205e1aacf887a3ccb2"
     },
     {
       "path": "research_package/test_hardware_package.py",
@@ -4889,8 +4919,8 @@
     },
     {
       "path": "research_package/validate_package.py",
-      "bytes": 3141,
-      "sha256": "e3e071ee44715c43336761acf59ed13f30ce57ee4ad5af11e2fd5f07f064cda4"
+      "bytes": 3200,
+      "sha256": "f427b9118f75f82d390428f1915f1ed213e9a5e4588f17d73d875dafdfa1cc09"
     },
     {
       "path": "results/ansatz_event_rank/development.json",
@@ -6871,6 +6901,26 @@
       "path": "results/pauli_fourth_moment_phase0/c041_density_summary.csv",
       "bytes": 4227,
       "sha256": "dd84db796856adda4743751df1b2ebe3cb1f03814d91f08e79783fb7825c757c"
+    },
+    {
+      "path": "results/pauli_fourth_moment_phase0/c042_circular_arc_stress.csv",
+      "bytes": 1733,
+      "sha256": "82478f83336833263accc257e22e6cb90e04b94153df14878e9bf62a01e41f0a"
+    },
+    {
+      "path": "results/pauli_fourth_moment_phase0/c042_order9_boundary.csv",
+      "bytes": 109,
+      "sha256": "48eacba99677d0903a0950d3754a392f324b63b8baf46c19b4bb2b7997c7c6ab"
+    },
+    {
+      "path": "results/pauli_fourth_moment_phase0/c042_rank_perfect_boundary.json",
+      "bytes": 78664,
+      "sha256": "575705cf35b71a4796bc925bfdcaa70c233834682fa7bec794f8244092a1e770"
+    },
+    {
+      "path": "results/pauli_fourth_moment_phase0/c042_web_boundary.csv",
+      "bytes": 12775,
+      "sha256": "c634ab23d541dbb98f2615d47cbaa60e629d54dff0f92f00775f8973f977a8d2"
     },
     {
       "path": "results/pauli_fourth_moment_phase0/cnc_positivity_audit.json",

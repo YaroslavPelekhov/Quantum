@@ -1577,6 +1577,28 @@ five corruption tests were added. These experiments test necessity and
 interpretation of the analytic proof; they are not population estimates,
 hardware evidence, or a substitute for priority review.
 
+### C042 rank-perfect SCF boundary — 2026-09-16
+
+The SCF induced-subgraph rank theorem immediately yields a general bridge:
+every rank-perfect SCF graph is hbar-perfect. Classical rank-perfectness of
+semi-line graphs therefore proves the SCF semi-line corollary. This is strict:
+the exact witness ``H?`adQY`` has nine vertices, is SCF and quasi-line, is not
+a line graph, has only rank facets, and has a rank facet whose support is
+neither a clique nor an odd hole. It is consequently outside both the line and
+h-perfect routes.
+
+All 4308 order-nine SCF records were independently reclassified: 710 are line,
+3048 are quasi-line non-line, and 550 are outside quasi-line. Exactly the last
+550 have nonrank facets. An exact sweep of 868 web graphs and a conditioned
+seeded stress of 60 connected proper circular-arc SCF quasi-line non-line
+graphs through order 12 found no surviving nonrank obstruction. The stronger
+claim that every SCF quasi-line graph is rank-perfect remains a conjecture.
+The unrestricted quasi-line claim is already false by the anti-heptagon.
+
+The frozen record, three CSV tables, figure, standard-library verifier, and six
+tests pass. C042 is a proved analytic extension plus a sharply delimited open
+boundary, not a hardware or quantum-advantage claim.
+
 ### C040--C041 scaled baselines and density/coupling stress — 2026-09-16
 
 Scaled the C039 mechanism audit to 180 seeded sparse roots of orders 10--30,

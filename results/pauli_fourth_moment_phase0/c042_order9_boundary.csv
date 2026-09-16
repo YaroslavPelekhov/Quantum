@@ -1,0 +1,4 @@
+class,graphs,graphs_with_nonrank_facets
+line,710,0
+quasi_line_non_line,3048,0
+SCF_not_quasi_line,550,550

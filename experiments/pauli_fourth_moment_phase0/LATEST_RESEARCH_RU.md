@@ -1,4 +1,25 @@
-# Квантовое исследование: итог до C041
+# Квантовое исследование: итог до C042
+
+## C042 — rank-perfect граница за пределами line graphs, 16 сентября 2026
+
+[Полный отчёт](C042_RANK_PERFECT_BOUNDARY.md) фиксирует новый аналитический
+мост: любой rank-perfect simplicial claw-free граф является hbar-perfect.
+Отсюда, по классическому результату о semi-line графах, все SCF semi-line
+графы имеют точную weighted Pauli uncertainty. Найден строгий девятивершинный
+свидетель ``H?`adQY``: он SCF и rank-perfect, но не line graph и не h-perfect.
+
+Перепроверены все 4308 SCF-графов порядка 9: 710 line, 3048 quasi-line
+non-line и 550 SCF вне quasi-line. У всех 3758 quasi-line случаев нет nonrank
+facets, а все 550 nonrank случаев лежат вне quasi-line. Дополнительно пройдены
+868 web-графов и 60 новых connected proper circular-arc stress-примеров
+порядков 10--12; контрпример не найден. Это поддерживает гипотезу «каждый SCF
+quasi-line граф rank-perfect», но не доказывает её. Общий quasi-line claim
+ложен из-за anti-heptagon, поэтому SCF-условие существенно.
+
+Независимый verifier восстановил census, witness и точные facet certificates;
+6 тестов, включая 5 намеренно испорченных контролей, прошли. Честный статус:
+аналитическое расширение доказано, более сильная quasi-line граница остаётся
+гипотезой, A* и приоритет требуют внешней рецензии.
 
 ## C040--C041 — масштабирование и stress-абляции, 16 сентября 2026
 
