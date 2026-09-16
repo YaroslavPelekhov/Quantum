@@ -1,19 +1,19 @@
 # Quantum x Evolutionary Computing Research Artifact
 
-## C043: SCF quasi-line theorem
+## C044: hardened SCF quasi-line theorem
 
-The latest cycle proves that every **simplicial claw-free quasi-line graph is
+The latest cycle hardens the proof that every **simplicial claw-free quasi-line graph is
 rank-perfect**, and therefore hbar-perfect for all nonnegative Pauli weights.
 The proof combines SCF heredity with the clique-circulant structure of every
 nonrank fuzzy-circular-interval facet. The only SCF-compatible circulant has
 parameter `p=2`, where the clique-family inequality collapses to a rank
 inequality.
 
-The frozen audit checks 4,308 induced deletions, 6,162 circulant parameter
-pairs through order 160, all 18,149 cliques in the small circulants through
-order 18, a published exact nonrank-web positive control, and 250 seeded
-exact-CFI stress graphs. See the
-[C043 report](experiments/pauli_fourth_moment_phase0/C043_QUASILINE_SCF_THEOREM.md).
+The autonomous sumset proof is backed by all 38,772 one-vertex deletions in
+the frozen SCF census, 1,027,351 algebraic parameter rows, 4,194,302 deficit
+subsets, and all 3,803,174 circulant cliques through order 30. See the
+[C044 report](experiments/pauli_fourth_moment_phase0/C044_PROOF_HARDENING.md)
+and the original [C043 theorem report](experiments/pauli_fourth_moment_phase0/C043_QUASILINE_SCF_THEOREM.md).
 This is a genuine theorem and a substantially stronger A/A* candidate, but
 publication priority and venue status remain unconfirmed until external
 review.

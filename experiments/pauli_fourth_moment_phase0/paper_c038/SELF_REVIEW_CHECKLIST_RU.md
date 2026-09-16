@@ -49,6 +49,8 @@
   и unrestricted quasi-line statements не заявлены.
 - Перепроверить 6162 circulant cases, полный перебор 18 149 малых клик,
   exact nonrank `W_25^5` positive control и пять C043 corruption tests.
+- Запустить C044 verifier: 38 772 удалений, 1 027 351 algebra rows,
+  4 194 302 deficit subsets, 3 803 174 cliques и пять mutation tests.
 - Проверить точный strict witness ``H?`adQY`` и явно сохранить ограничения
   conditioned 60-graph proper circular-arc stress sample.
 - Не называть truncated odd-cycle baseline полным h-perfect relaxation на

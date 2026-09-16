@@ -1,0 +1,60 @@
+{
+  "experiment": "C044_SCF_quasiline_proof_hardening",
+  "analytic_result": {
+    "theorem": "Every simplicial claw-free quasi-line graph is rank-perfect.",
+    "new_proof_component": "Autonomous left/right sumset proof of the nonlocal circulant clique bound |K| <= 3p-n.",
+    "external_geometric_lemma_required": false
+  },
+  "all_deletions_heredity_audit": {
+    "graphs": 4308,
+    "all_one_vertex_deletions": 38772,
+    "failures": 0,
+    "source": "results/pauli_fourth_moment_phase0/scf_order9_census.json",
+    "source_sha256": "cb5ea83cb99a0c19a3f3039bd795dd84c9f6c61fbe78a7c6a8e1fefa2ebb57b0"
+  },
+  "algebraic_parameter_audit": {
+    "max_order": 160,
+    "admissible_maximum_pairs": 1027351,
+    "failures": 0
+  },
+  "sumset_disjointness_audit": {
+    "max_h": 20,
+    "subsets_checked": 4194302,
+    "failures": 0
+  },
+  "exact_circulant_clique_audit": {
+    "max_order": 30,
+    "parameter_cases": 182,
+    "cliques_enumerated": 3803174,
+    "nonlocal_cliques": 2001856,
+    "tight_nonlocal_cliques": 6487,
+    "first_nonlocal": {
+      "order": 9,
+      "p": 4,
+      "clique": [
+        0,
+        3,
+        6
+      ],
+      "a": 3,
+      "b": 3,
+      "h": 0,
+      "bound": 3,
+      "size": 3,
+      "tight": true
+    },
+    "simplicial_cliques_p_equals_2": 455,
+    "simplicial_cliques_p_at_least_3": 0
+  },
+  "dependency_audit": {
+    "report": "experiments/pauli_fourth_moment_phase0/C044_PROOF_HARDENING.md",
+    "report_sha256": "c4d62e4d91b990392c7f90791c45ad0f0a3a9a9543df671f1d80cdd357393f20",
+    "oriolo_stauffer_theorem_26_checked": true,
+    "clique_circulant_definition_8_checked": true,
+    "non_FCIG_rank_facet_reduction_checked": true,
+    "p_equals_2_coefficient_collapse_checked": true
+  },
+  "status": "proof_hardened_and_all_controls_passed",
+  "runtime_seconds": 71.75,
+  "source_sha256": "08e8f5341b74c20adc3cc598936bd0da58467be4df441a19c0adc9ef23b7c4d0"
+}

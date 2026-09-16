@@ -388,7 +388,7 @@ def certify_circulant_obstruction(order: int, p: int) -> dict:
     """Machine-check the proof templates for C(order,p), where distance < p.
 
     Local cliques (those contained in p consecutive vertices) are excluded by
-    three explicit witness templates.  A circular three-arc count bounds any
+    three explicit witness templates.  A left/right sumset argument bounds any
     nonlocal clique by 3p-order.  Except at order=2p+1 this is at most p-2,
     too small for a simplicial clique by the degree/clique-number bound.  At
     the boundary the graph is an odd antihole, which has no simplicial clique.
@@ -452,7 +452,7 @@ def certify_circulant_obstruction(order: int, p: int) -> dict:
         "order": order,
         "p": p,
         "SCF": False,
-        "certificate": "local_witnesses_plus_nonlocal_three_arc_bound",
+        "certificate": "local_witnesses_plus_nonlocal_sumset_bound",
         "local_clique_templates_checked": checked - 1,
         "nonlocal_clique_size_upper_bound": nonlocal_size_bound,
         "nonlocal_certificate": nonlocal_certificate,

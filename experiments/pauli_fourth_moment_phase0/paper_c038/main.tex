@@ -405,28 +405,58 @@ $K=\{0,\ldots,p-1\}$. Vertex $1$ then has the two outside neighbors $-1$
 and $p$; their two circular separations are $p+1$ and $n-p-1$, both larger
 than $p-1$. Thus no local clique is simplicial.
 
-For completeness, we use the elementary discrete circular-diameter fact that
-a pairwise $(p-1)$-close subset $S\subseteq\mathbb Z_n$ which is not contained
-in $p$ consecutive residues satisfies
+For completeness, we prove the required discrete circular-diameter bound
+directly. Put $r=p-1$ and $q=n-r$. Rotate a clique $S$ so that $0\in S$, and
+write
+\[
+ A=\{a\in[1,r]:-a\in S\},\qquad
+ B=\{b\in[1,r]:b\in S\}.
+\]
+Thus $S=\{0\}\cup(-A)\cup B$. If either side is empty, or if
+$\max A+\max B\leq r$, then $S$ is local. Otherwise put
+$a=\max A$, $b=\max B$. Adjacency of $-a$ and $b$ forces
+$a+b\geq q$; write $h=a+b-q\geq0$.
+
+Compatibility with $b$ forces every element of $A$ to lie either in
+$[1,r-b]$ or in $[q-b,a]=[a-h,a]$. Symmetrically, every element of $B$ lies
+either in $[1,r-a]$ or in $[b-h,b]$. For the two high tails define their
+deficit sets
+\[
+ X=\{a-x:x\in A\cap[a-h,a]\},\qquad
+ Y=\{b-y:y\in B\cap[b-h,b]\}.
+\]
+Both are subsets of $\{0,\ldots,h\}$. We have $h+1\notin X+Y$: equality
+would give a cross-distance
+$a+b-(h+1)=q-1$, strictly between $r$ and $q$, so the corresponding two
+vertices would be nonadjacent. Consequently $X$ and
+$h+1-Y=\{h+1-y:y\in Y\}$ are disjoint subsets of
+$\{0,\ldots,h+1\}$, and hence $|X|+|Y|\leq h+2$. Therefore
 \begin{equation}\label{eq:nonlocal-clique-bound}
- |S|\leq 3p-n.
+\begin{split}
+ |S|&=1+|A|+|B|\\
+ &\leq1+(r-b)+(r-a)+(h+2)\\
+ &=3r-n+3=3p-n.
+\end{split}
 \end{equation}
-Here is a short count. Choose an inclusion-minimal nonlocal subset. The
-circular-arc Helly obstruction gives three cyclic extreme points; if their
-clockwise gaps are $a,b,c$, then $a+b+c=n$ and each is at most $p-1$.
-Assign every point of $S$ to the half-open gap following one of these three
-extremes. Pairwise closeness to the other two extremes leaves respectively at
-most $p-a$, $p-b$, and $p-c$ admissible integer positions. Summing gives
-$(p-a)+(p-b)+(p-c)=3p-n$, proving~\eqref{eq:nonlocal-clique-bound}.
 Apply this fact to a nonlocal clique $K$.
 The graph is $2(p-1)$-regular and has clique number $p$. If $K$ were
 simplicial, then for any $v\in K$ the set $N(v)\setminus K$ would be a
 clique, so $2p-1-|K|\leq p$ and hence $|K|\geq p-1$. When
 $n\geq2p+2$, equation~\eqref{eq:nonlocal-clique-bound} instead gives
 $|K|\leq p-2$, a contradiction. At the remaining boundary $n=2p+1$,
-$C(n,p)$ is the complement of the odd cycle $C_{2p+1}$; odd antiholes of
-length at least seven have no simplicial clique~\cite{csss}. Hence no
-nonlocal clique is simplicial either.
+$C(n,p)$ is the complement of the odd cycle $C_{2p+1}$. A clique $K$ is
+therefore a stable set in that cycle. If $|K|\geq3$, the cyclic gaps between
+successive vertices of $K$ are at least two; since $|K|\leq p$, they sum to
+$2p+1>2|K|$, so some
+gap contains two consecutive internal vertices. Choose a vertex of $K$ not
+incident with that gap. The two internal vertices both belong to
+$N(v)\setminus K$ in the antihole but are nonadjacent there, contradicting
+simpliciality. If $|K|=1$, deleting $v$ and its two cycle neighbors leaves a
+path containing a consecutive pair. If $K=\{u,v\}$, the longer $u$--$v$ arc
+has length at least four; the vertices at distances two and three from $v$
+along that arc give the same obstruction. Thus no boundary clique is
+simplicial. This also gives
+a direct proof of the odd-antihole observation recorded in~\cite{csss}.
 \end{proof}
 
 \begin{theorem}[SCF quasi-line theorem]\label{thm:scf-quasiline}
@@ -509,7 +539,7 @@ while the third is Edmonds' full matching polytope.
 \caption{Relaxation value divided by exact maximum matching weight over 6225
 weighted instances. ``Exact'' uses relative tolerance $2\times10^{-7}$.}
 \label{tab:baselines}
-\small
+\footnotesize
 \begin{tabular}{lrrrrr}
 \toprule
 Baseline & Mean & Median & 95th pct. & Maximum & Exact \\
@@ -725,6 +755,15 @@ the tempting local-cliques-only proof. Its standard-library verifier
 reconstructs the circulant witnesses and the positive-control facet; five
 mutation tests must reject corrupted records.
 
+C044 removes the only geometric proof sketch from the new theorem. Its
+left/right sumset argument is fully contained in Lemma~\ref{lem:circulant-obstruction}.
+The corresponding audit checks all 38,772 one-vertex deletions of the frozen
+SCF census, 1,027,351 admissible algebra rows through order 160, 4,194,302
+deficit subsets, and all 3,803,174 cliques of every $C(n,p)$ through order 30.
+No simplicial clique occurs for $p\geq3$. A separate standard-library verifier
+recomputes the algebra and sumset counts, checks all frozen hashes, and is
+protected by five mutation tests.
+
 From the repository root:
 \begin{quote}\small\ttfamily\raggedright
 python experiments/pauli\_fourth\_moment\_phase0/\\
@@ -761,6 +800,11 @@ python experiments/pauli\_fourth\_moment\_phase0/\\
 \hspace*{1em}run\_c043\_quasiline\_scf\_falsification.py --overwrite\par
 python -S experiments/pauli\_fourth\_moment\_phase0/\\
 \hspace*{1em}verify\_c043\_quasiline\_scf\_theorem.py
+\medskip\par
+python experiments/pauli\_fourth\_moment\_phase0/\\
+\hspace*{1em}run\_c044\_proof\_hardening.py --overwrite\par
+python -S experiments/pauli\_fourth\_moment\_phase0/\\
+\hspace*{1em}verify\_c044\_proof\_hardening.py
 \end{quote}
 The wrapped paths are single commands. Numerical agreement is falsification
 support, not the proof of Theorem~\ref{thm:main}.
@@ -836,7 +880,7 @@ Source, frozen records, verifier, and tests are available in the
 \href{https://github.com/YaroslavPelekhov/Quantum/tree/research/c038-line-graph-hbar}{public C038 GitHub branch}.
 The repository index identifies the theorem note, priority audit, generator,
 frozen JSON, independent verifiers, and corruption-controlled tests. Every
-reported numerical constant is read from six frozen JSON records by the
+reported numerical constant is read from seven frozen JSON records by the
 manuscript checker. They include graph identifiers, generator seeds, weight
 regimes, relaxation values, aggregate summaries, explicit scope flags, and
 hashes for all derived tables and figures.

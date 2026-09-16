@@ -1640,3 +1640,18 @@ CFI as an exact positive control, and 250 seeded proper-circular-arc SCF
 graphs at orders 10--14. The independent standard-library verifier and five
 mutation tests pass. No QPU evidence is involved. Priority and A* venue status
 remain subject to external review.
+
+### C044 autonomous proof hardening — 2026-09-16
+
+Replaced the nonlocal-clique three-arc sketch by a self-contained left/right
+sumset proof. For `r=p-1`, `q=n-r`, and extreme distances `a,b`, the high-tail
+deficit sets `X,Y subseteq {0,...,h}` with `h=a+b-q` obey
+`h+1 notin X+Y`. Disjointness of `X` and `h+1-Y` gives
+`|K|<=3p-n` directly, with no imported circular-arc Helly statement.
+
+The hardened campaign checks all 38,772 one-vertex deletions of the 4,308
+order-nine SCF graphs, 1,027,351 admissible algebra rows through order 160,
+4,194,302 deficit subsets through `h=20`, and all 3,803,174 cliques of every
+`C(n,p)` through order 30. No `p>=3` simplicial clique was found. A literal
+dependency audit maps Definition 8 and Theorem 26 of Oriolo--Stauffer to each
+step of the main proof. Independent verification and mutation tests pass.

@@ -34,10 +34,13 @@ an extrapolation from the finite census.
 4. **New obstruction lemma.** For `n>2p`, `C(n,p)` has a simplicial clique if
    and only if `p=2`. For `p>=3`, local cliques (those fitting inside `p`
    consecutive vertices) are excluded by three explicit witness families.
-   Every nonlocal clique satisfies the three-arc bound `|K| <= 3p-n`.
+   Every nonlocal clique satisfies `|K| <= 3p-n`. The final proof is
+   autonomous: splitting the clique around vertex `0` into left/right sets
+   reduces the bound to a forbidden sum `h+1 notin X+Y`, after which a
+   disjoint-set count gives the result.
    Simpliciality would require `|K| >= p-1`, which is impossible for
-   `n>=2p+2`; at `n=2p+1` the graph is an odd antihole, known to have no
-   simplicial clique.
+   `n>=2p+2`; at `n=2p+1` a direct cyclic-gap argument proves that the odd
+   antihole has no simplicial clique.
 5. **Facet collapses to rank.** Heredity forces the induced `C(n,p)` to be
    SCF, hence `p=2`. Coprimality makes `n` odd, so the clique-family
    coefficients `p-r` and `p-r-1` are `1` and `0`. The facet is rank, a

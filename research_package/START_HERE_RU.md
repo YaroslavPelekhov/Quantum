@@ -1,6 +1,6 @@
 # Квантовый исследовательский пакет — 16 сентября 2026
 
-## C043: доказана вся SCF quasi-line граница
+## C044: доказательство SCF quasi-line границы усилено
 
 Новый главный результат: каждый simplicial claw-free quasi-line граф
 rank-perfect и потому hbar-perfect для всех неотрицательных весов. Это
@@ -10,6 +10,11 @@ SCF core вынуждает `p=2`, где facet уже rank. Проверены 
 циркулянтные пары параметров, все 18 149 клик малых циркулянтов, точный
 nonrank positive control и 250 exact-CFI
 stress-графов. Подробности: [отчёт C043](../experiments/pauli_fourth_moment_phase0/C043_QUASILINE_SCF_THEOREM.md).
+
+C044 заменяет three-arc sketch автономным left/right sumset-доказательством.
+Полный hardening-аудит содержит 38 772 удаления, 1 027 351 algebra rows,
+4 194 302 deficit subsets и 3 803 174 точных clique cases. Подробности:
+[отчёт C044](../experiments/pauli_fourth_moment_phase0/C044_PROOF_HARDENING.md).
 
 ## C042: доказанная граница за пределами line graphs (предыдущий этап)
 

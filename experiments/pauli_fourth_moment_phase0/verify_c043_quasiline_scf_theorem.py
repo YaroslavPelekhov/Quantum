@@ -84,7 +84,7 @@ def verify_circulant_record(row: dict) -> None:
     if p == 2:
         assert row["certificate"] == "edge_{0,1}_is_simplicial"
         return
-    assert row["certificate"] == "local_witnesses_plus_nonlocal_three_arc_bound"
+    assert row["certificate"] == "local_witnesses_plus_nonlocal_sumset_bound"
     checked = 0
     for span in range(p - 1):
         left = (-(p - span - 1)) % order
