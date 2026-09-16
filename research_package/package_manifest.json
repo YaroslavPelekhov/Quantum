@@ -1,5 +1,5 @@
 {
-  "base_commit": "be295528f01b73da496bde756dd0bac8ffdeddb7",
+  "base_commit": "7d1708018463e4fca8d7511dccd1b63007516098",
   "working_tree_snapshot": true,
   "uploaded": true,
   "publication_branch": "research/c038-line-graph-hbar",
@@ -2958,6 +2958,11 @@
       "sha256": "9eb1a1473ef670db4b5856b60b263e0e03ed46dd1dbefb328473d820b9d0e7d4"
     },
     {
+      "path": "experiments/pauli_fourth_moment_phase0/C046_MOCK_REFEREE_BODY_AUDIT.md",
+      "bytes": 5567,
+      "sha256": "f0533b8d31567c55a2e6cc31ef1714ea196ef6d45defa3c8c5094402d65ec880"
+    },
+    {
       "path": "experiments/pauli_fourth_moment_phase0/check_novelty_modules_20260907.py",
       "bytes": 1990,
       "sha256": "4cd80a7e8e63be28848717e4e17969a95bdc33bd9bec0099bbb42fc465667beb"
@@ -2969,8 +2974,8 @@
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/LATEST_RESEARCH_RU.md",
-      "bytes": 35830,
-      "sha256": "a3aaf929f939981f3d57297e6d29691e4d238f1a6dc5d883a50de2402e83f1d5"
+      "bytes": 37077,
+      "sha256": "d52200549895e75cf22d21d2195dde3a42837c634c476cabac34746650ee7388"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/LINE_GRAPH_HBAR_THEOREM_C038.md",
@@ -3024,8 +3029,8 @@
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/paper_c038/check_paper.py",
-      "bytes": 7213,
-      "sha256": "27eb52a4d5877f051fc61828015d54d361f6668f5fab4da8e4510cec8cd0926e"
+      "bytes": 8007,
+      "sha256": "443600f27653e0e9b5a34b0b99b71eb48f709005355739dc172d795cb28e4afb"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/paper_c038/figures/c039_baseline_gaps.png",
@@ -3059,13 +3064,13 @@
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/paper_c038/main.tex",
-      "bytes": 48431,
-      "sha256": "3c3bab7eec70a490914b6fc8391f61e6c5bf362c7b343995a190d26d8b853473"
+      "bytes": 50667,
+      "sha256": "4ee5f874620061726c998f69b336855837696c821b7af7b317ee0964164d3b83"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/paper_c038/README_RU.md",
-      "bytes": 4913,
-      "sha256": "fbd20a3be639d6797ad67a7d59d8e4b10d92dadbab6c6ed8750fdf08d8d4f357"
+      "bytes": 5730,
+      "sha256": "9a4d3e15b91bc552120ccc8cd41f32efa9cbc1af86dfcd80da24991635095ae8"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/paper_c038/SELF_REVIEW_CHECKLIST_RU.md",
@@ -3099,8 +3104,8 @@
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/README.md",
-      "bytes": 11258,
-      "sha256": "af378252db038af319b77496ed2592820f4af2757d975bbeb2ab224ecbf666f0"
+      "bytes": 11747,
+      "sha256": "a8895fa7246d0d016287434b7f61a6502de69c7750ad66961a6ac817f30cbdcf"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/recover_c022_exact.py",
@@ -3119,8 +3124,8 @@
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/RESEARCH_CYCLE_LOG.md",
-      "bytes": 99500,
-      "sha256": "de786fb7fc3a19912be6a1815c9c76bec38acf8edaa457a230e9cba6b9599b4d"
+      "bytes": 100596,
+      "sha256": "a6ae3dea6b6712ced854d77a62214daac9c6572edf3aef4551bccaa016b921d4"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/RESEARCH_PROGRAM_RU.md",
@@ -3718,6 +3723,11 @@
       "sha256": "91ef435693fd21c890f1522f63678bb2ca408ba762ed04d82ccd56353e1d0744"
     },
     {
+      "path": "experiments/pauli_fourth_moment_phase0/test_c046_mock_referee_body_audit.py",
+      "bytes": 2379,
+      "sha256": "b0bebbadf45c4f48086c1e55c9309e75b4bd2bdef330dff774650217beff41b2"
+    },
+    {
       "path": "experiments/pauli_fourth_moment_phase0/test_scf_almost_clique_closure.py",
       "bytes": 2263,
       "sha256": "19201ce6153b34ab70457a0219b7ca8de87d3d033e9fc2e9c03313a4bbaa64aa"
@@ -3896,6 +3906,11 @@
       "path": "experiments/pauli_fourth_moment_phase0/verify_c045_priority_submission_audit.py",
       "bytes": 2332,
       "sha256": "2a84f95bedf91b1ce10782d72bc35a12c5a3627abd91fd896d09e35763a39dfe"
+    },
+    {
+      "path": "experiments/pauli_fourth_moment_phase0/verify_c046_mock_referee_body_audit.py",
+      "bytes": 2387,
+      "sha256": "2dc73e42f827f7f2585d22a328bdcb1832adaf21c849ebec772aa590c4310adb"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/verify_n6_cover.py",
@@ -4484,8 +4499,8 @@
     },
     {
       "path": "output/pdf/c038_line_graph_pauli_matching_theorem.pdf",
-      "bytes": 1081542,
-      "sha256": "bd580455be71b7568b92c6f60b12037321dc3dc552656796d7a09c4c654c8a19"
+      "bytes": 1088814,
+      "sha256": "b393cc9a36481c4325922f00febe704767066bc66c7d9f12252163ca7bc4b5a0"
     },
     {
       "path": "output/pdf/prepared_20260910/gsn_qaoa_mis_manuscript.pdf",
@@ -4679,8 +4694,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 40759,
-      "sha256": "b590d8a2c1bb30ab9aa44dd04ca744d1adba42fbeced31f1d87bb777b7bb8492"
+      "bytes": 41462,
+      "sha256": "29f08be8569485426da235da55d64d1529ac4b2832a4e299b52bd6d507227762"
     },
     {
       "path": "REPRODUCIBILITY.md",
@@ -4700,7 +4715,7 @@
     {
       "path": "research_package/assemble_archive.py",
       "bytes": 5027,
-      "sha256": "b888686162403939117a9ca211883749c6af8642363739d745b038dbd708d97f"
+      "sha256": "216a1f36677fdcfe529e02d3e3b7512286a15df160da3b21e5deab58c6bd3255"
     },
     {
       "path": "research_package/BRAKET_BUDGET_RU.md",
@@ -4709,8 +4724,8 @@
     },
     {
       "path": "research_package/branch_inventory.json",
-      "bytes": 15952,
-      "sha256": "fd87ecad14036b32a1d969f31ff63852065f6a1ba30caae73b535ad21c02e189"
+      "bytes": 16035,
+      "sha256": "084c2e4fb13a42fabdfba09730723d24729d2cb15b06d1d66e10288c86e8f64b"
     },
     {
       "path": "research_package/build_papers.py",
@@ -4814,8 +4829,8 @@
     },
     {
       "path": "research_package/results/c038_standalone_paper_check.log",
-      "bytes": 580,
-      "sha256": "819fb1fa33cebcf55179108eb0bfc1d79d193597c54c709ca8896dded71c53d7"
+      "bytes": 612,
+      "sha256": "347323ffdfaab286205a499a49a349c13f303f4a3523b511f507b7904bf43f51"
     },
     {
       "path": "research_package/results/check_paper.log",
@@ -4855,7 +4870,7 @@
     {
       "path": "research_package/results/gsn_integrity.log",
       "bytes": 795,
-      "sha256": "88d0f29fb010034f1dd7141fc8be570b2ad5c26ab10c0ed6fc901ed12a0a5b16"
+      "sha256": "7288c7ae57ce351b2119315eef8021f5d78bf0e5f47c40ef797dd9364d850ca8"
     },
     {
       "path": "research_package/results/noise_checkpoint.json",
@@ -4869,13 +4884,13 @@
     },
     {
       "path": "research_package/results/pauli_full_suite.log",
-      "bytes": 330,
-      "sha256": "e4812b91c263be60c31616c22bb694fc95d41f418735db5219fa44f452d0a9dd"
+      "bytes": 336,
+      "sha256": "5f3b91d27536a67226c3493162870565aded74c115a78c21a1b2debcc1505ae4"
     },
     {
       "path": "research_package/results/qaoa_integrity.log",
-      "bytes": 136,
-      "sha256": "1bd34ab9b1cb2076ffde537d8c15870856756cc03a74ae1aaecf0a7320b709fd"
+      "bytes": 137,
+      "sha256": "b3255accba14efb7d1ba04200a43e86db14952f9434a7f51f5c19c5f54b5fedd"
     },
     {
       "path": "research_package/results/readiness.json",
@@ -4885,7 +4900,7 @@
     {
       "path": "research_package/results/readiness_integrity.log",
       "bytes": 1107,
-      "sha256": "12839637a6cb4ebc1e3c88e74350393cec1f75403a04ebf43e15d42f61d34203"
+      "sha256": "ebc61dfc3f2ed7b29f49cb5170ded2c224ff2f8020553da8245a48f8d565298a"
     },
     {
       "path": "research_package/results/shot_planning.json",
@@ -4894,8 +4909,8 @@
     },
     {
       "path": "research_package/results/validation.json",
-      "bytes": 11893,
-      "sha256": "357801333810779d9503a0243d5f287fdada294df7b3649a2c350e3024df933c"
+      "bytes": 12541,
+      "sha256": "eb6b1c368fb93e4359219a0f7d2144dff7985e306f83a0cad58eb363139b1fd7"
     },
     {
       "path": "research_package/results/verify_c031_exact_six.log",
@@ -4943,6 +4958,11 @@
       "sha256": "2057356af0f58cad2c9355f6822258abefdc086282a7506118ac1d086b3b11ea"
     },
     {
+      "path": "research_package/results/verify_c046_mock_referee_body_audit.log",
+      "bytes": 159,
+      "sha256": "a865153f3ff594574f7cec61802c97ad4632f9b9e74330fd049d45cd2cba5134"
+    },
+    {
       "path": "research_package/results/verify_scf_core_refinement.log",
       "bytes": 235,
       "sha256": "db6b491de7406bf2efbb86f1d8b3f39fa6993f9894b2875d87ab9853cc042986"
@@ -4974,8 +4994,8 @@
     },
     {
       "path": "research_package/START_HERE_RU.md",
-      "bytes": 19297,
-      "sha256": "f6eed346fee2054f02bccd72ef9aaec8a1bc9ffa6bbc8403e97737dc5f95d9d4"
+      "bytes": 20135,
+      "sha256": "eec0eb507e055e179878a77ff9d811330e584fe661938bf7707ccc8c6d249046"
     },
     {
       "path": "research_package/test_hardware_package.py",
@@ -4989,8 +5009,8 @@
     },
     {
       "path": "research_package/validate_package.py",
-      "bytes": 3375,
-      "sha256": "e8d5bac35a40481b26ae8b9903fcd3baa5c900f9c01b93754e3f38ba3105217f"
+      "bytes": 3436,
+      "sha256": "073afe8539a3de40b122823f8f8056912ea5402af34c8031257ba241376116c4"
     },
     {
       "path": "results/ansatz_event_rank/development.json",
@@ -7006,6 +7026,11 @@
       "path": "results/pauli_fourth_moment_phase0/c045_priority_submission_audit.json",
       "bytes": 1200,
       "sha256": "9a06f391f025b4ecc739398f8c03bee41179004f70a57de3863a9bdb663c26b9"
+    },
+    {
+      "path": "results/pauli_fourth_moment_phase0/c046_mock_referee_body_audit.json",
+      "bytes": 1099,
+      "sha256": "201d97ded01867523c29c5734a25962b92d8cfc6e602c6baeb2a253f1a119c3c"
     },
     {
       "path": "results/pauli_fourth_moment_phase0/cnc_positivity_audit.json",

@@ -1673,3 +1673,22 @@ theorem is explicitly secondary. C040--C044 scale/proof ledgers and the
 expanded source map are appendices; the central C039 matching-polytope and
 skewness ablations remain in the main text. A frozen JSON record, independent
 standard-library verifier, and five mutation tests enforce the honest scope.
+
+### C046 mock-referee and beta-body formalization — 2026-09-17
+
+Audited the headline proof as a hostile mathematical referee. No
+counterexample or normalization failure was found, but two major exposition
+gaps were real: the invariant beta body had not been defined before claiming
+body equality, and the odd-order Clifford case in the Majorana norm reduction
+was implicit. Four further moderate/minor findings concerned the realization
+quantifier, support-function separation, raw attainability language, and the
+logical isolation of the secondary SCF theorem.
+
+The revision now defines `Q(S)` and
+`BETA(G)=conv(down Q(S))`, cites representation invariance, proves
+`BETA(L(R))=MATCH(R)` as equality of compact convex corners with identical
+nonnegative support functions, and spells out the `2q`/`2q+1` Majorana block
+case. All six findings are resolved. The frozen record and verifier include
+mutation attacks against a missing body identity, the old representation
+quantifier, altered audit text, and false external-review status. External
+refereeing and bibliographic priority remain open.

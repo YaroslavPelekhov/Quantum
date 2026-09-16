@@ -1,5 +1,17 @@
 # Quantum x Evolutionary Computing Research Artifact
 
+## C046: body-level theorem and mock-referee closure
+
+The headline statement is now formalized at the strongest precise level:
+`BETA(L(R)) = MATCH(R)`, where `BETA` is the representation-independent
+compact convex corner of squared Pauli expectation profiles. The revision
+distinguishes this body from the realization-dependent raw joint range,
+derives equality from all nonnegative support functions, and makes the
+odd-order Clifford normalization explicit. Six mock-referee findings were
+resolved; no internal gap remains in the headline proof, while external review
+and bibliographic priority remain open. See the
+[C046 audit](experiments/pauli_fourth_moment_phase0/C046_MOCK_REFEREE_BODY_AUDIT.md).
+
 ## C045: focused line-graph theorem and adversarial priority audit
 
 The standalone paper is now centered on one result:
@@ -47,7 +59,7 @@ stress graphs. C043 now proves the stronger conjecture that all SCF quasi-line
 graphs are rank-perfect. The unrestricted quasi-line statement remains false.
 See the [C042 report](experiments/pauli_fourth_moment_phase0/C042_RANK_PERFECT_BOUNDARY.md).
 
-Current preparation cycle (2026-09-16): [unified research package](research_package/START_HERE_RU.md).
+Current preparation cycle (2026-09-17): [unified research package](research_package/START_HERE_RU.md).
 Three distinct manuscripts are preserved: early graph-scale normalization
 (`experiments/evoq_mis`, restored from the original local folder), QAOA
 cross-backend ranking, and weighted Pauli uncertainty. Four prepared PDFs
@@ -56,7 +68,7 @@ are in `output/pdf/prepared_20260910`. Older PDFs remain historical snapshots.
 The local Pauli manuscript is now led by the C038 theorem
 `beta(L(R),w)=alpha(L(R),w)=nu(R,w)` for every finite root graph and all
 nonnegative weights. It also retains the exact C031 proof for the fixed C014
-graph and weights. The prepared manuscript has 15 pages and is not externally
+graph and weights. The focused manuscript has 16 pages and is not externally
 reviewed or submitted; its honest status is a strong A/A* candidate, not a
 guarantee of venue acceptance or priority.
 

@@ -1,4 +1,4 @@
-"""Check standalone manuscript claims against the C038--C043 artifacts."""
+"""Check standalone manuscript claims against the C038--C046 artifacts."""
 import json
 from pathlib import Path
 
@@ -13,6 +13,7 @@ BOUNDARY = ROOT / "results" / "pauli_fourth_moment_phase0" / "c042_rank_perfect_
 QUASILINE = ROOT / "results" / "pauli_fourth_moment_phase0" / "c043_quasiline_scf_falsification.json"
 HARDENING = ROOT / "results" / "pauli_fourth_moment_phase0" / "c044_proof_hardening.json"
 PRIORITY = ROOT / "results" / "pauli_fourth_moment_phase0" / "c045_priority_submission_audit.json"
+MOCK_REVIEW = ROOT / "results" / "pauli_fourth_moment_phase0" / "c046_mock_referee_body_audit.json"
 
 
 def main():
@@ -25,8 +26,11 @@ def main():
     quasiline = json.loads(QUASILINE.read_text(encoding="utf-8"))
     hardening = json.loads(HARDENING.read_text(encoding="utf-8"))
     priority = json.loads(PRIORITY.read_text(encoding="utf-8"))
+    mock_review = json.loads(MOCK_REVIEW.read_text(encoding="utf-8"))
     required = [
         r"\beta(L(R),w)=\alpha(L(R),w)=\nu(R,w)",
+        r"\boxed{\BETA(L(R))=\MATCH(R).}",
+        r"\BETA(G)=\operatorname{conv}(\mathord\downarrow\mathcal Q(\mathcal S))",
         r"\left(\frac{\norm{A}_*}{2}\right)^2",
         "1245 root graphs",
         "47 small-root cases",
@@ -60,6 +64,8 @@ def main():
         "Exact weighted Pauli uncertainty on line graphs",
         "Contribution hierarchy, priority boundary, and conclusion",
         "C045 search",
+        "C046 mock-referee",
+        "also for odd-order roots",
     ]
     for item in required:
         assert item in text, item
@@ -109,8 +115,14 @@ def main():
     assert priority["exact_collision_found"] is False
     assert priority["priority_certified"] is False
     assert priority["manuscript_decisions"]["line_graph_theorem_is_headline"] is True
+    assert mock_review["status"] == "central_proof_survives_mock_referee"
+    assert mock_review["critical_findings"] == 0
+    assert mock_review["resolved_findings"] == 6
+    assert mock_review["headline_internal_gaps_remaining"] == 0
+    assert mock_review["body_equality_proved_by_support_functions"] is True
+    assert mock_review["external_reviewed"] is False
     print(json.dumps({
-        "status": "standalone_C038_C045_paper_checked",
+        "status": "standalone_C038_C046_paper_checked",
         "atlas_roots": report["atlas_nonempty_roots"],
         "direct_majorana_cases": report["direct_majorana_norm_cases"],
         "weighted_ablation_cases": ablations["weighted_instances"],
@@ -124,6 +136,7 @@ def main():
         "C044_all_deletions": hardening["all_deletions_heredity_audit"]["all_one_vertex_deletions"],
         "C044_exact_cliques": hardening["exact_circulant_clique_audit"]["cliques_enumerated"],
         "C045_sources_checked": priority["sources_checked"],
+        "C046_resolved_findings": mock_review["resolved_findings"],
         "full_polytope_exact_fraction": ablations["baseline_summary"]["full_matching"]["exact_fraction"],
         "external_reviewed": False,
         "priority_confirmed": False,

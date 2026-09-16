@@ -8,6 +8,6 @@ test_readout_exact_product (test_readiness.ReadinessTests.test_readout_exact_pro
 test_scorer_little_endian_and_forbidden (test_readiness.ReadinessTests.test_scorer_little_endian_and_forbidden) ... ok
 
 ----------------------------------------------------------------------
-Ran 8 tests in 0.004s
+Ran 8 tests in 0.046s
 
 OK

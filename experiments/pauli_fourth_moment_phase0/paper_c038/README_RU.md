@@ -1,10 +1,12 @@
-# Самостоятельная статья C038+C043
+# Самостоятельная статья C038--C046
 
 Эта папка содержит сфокусированную рукопись только об all-line-graph теореме.
 Старые C031/SCF-конструкции намеренно не включены: они сохранены в полной
 исторической рукописи `../paper`.
 
 Главный результат:
+
+`BETA(L(R)) = MATCH(R)`, эквивалентно
 
 `beta(L(R),w) = alpha(L(R),w) = nu(R,w)`
 
@@ -41,6 +43,13 @@ nuclear-norm формой не найдено, но приоритет не об
 SCF quasi-line theorem теперь вторична; масштабные тесты и полный ledger
 вынесены в приложения.
 
+C046 провёл mock-referee проверку центральной цепочки и устранил шесть
+формулировочных/доказательных рисков. Теперь `BETA` определена как
+representation-independent downward convex corner, равенство тел выведено из
+равенства всех неотрицательных support functions, а нечётный Clifford case
+выписан явно. Внутренних пробелов в headline proof не найдено; внешнее review
+и приоритет по-прежнему не объявляются подтверждёнными.
+
 Перед публичной подачей автор самостоятельно заполняет имя, аффилиацию,
 контакт, funding/conflict statements и точное раскрытие AI-помощи. Текущая
 версия анонимна и не проходила внешнее рецензирование.
@@ -56,6 +65,7 @@ python -S experiments/pauli_fourth_moment_phase0/verify_c041_density_coupling_st
 python -S experiments/pauli_fourth_moment_phase0/verify_c043_quasiline_scf_theorem.py
 python -S experiments/pauli_fourth_moment_phase0/verify_c044_proof_hardening.py
 python -S experiments/pauli_fourth_moment_phase0/verify_c045_priority_submission_audit.py
+python -S experiments/pauli_fourth_moment_phase0/verify_c046_mock_referee_body_audit.py
 ```
 
 Воспроизводимая сборка без зависимости от Perl/latexmk:

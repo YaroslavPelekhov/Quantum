@@ -14,8 +14,8 @@
       ],
       "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis_full_qoblib",
       "exit_code": 0,
-      "seconds": 6.115910300002724,
-      "log_sha256": "d1808cfd24dd2ac405706f49f1eabe6436f41f32e8198eda7a847979d3e0b153",
+      "seconds": 18.790788400001475,
+      "log_sha256": "e8884a0a94c03fae7c14b8925186540d6074c3ea3615b411f74806fa90e3eb86",
       "log_file": "qaoa_integrity.log"
     },
     {
@@ -29,8 +29,8 @@
       ],
       "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\evoq_mis",
       "exit_code": 0,
-      "seconds": 0.7400139999954263,
-      "log_sha256": "034090ff939b1732a020a25925269130acebe5722b402fda341aad1e80016417",
+      "seconds": 0.8628710000048159,
+      "log_sha256": "609ab76cb65feb2e71e33215381f82d38c478a820e0ba0e17437a7e7101ac30c",
       "log_file": "gsn_integrity.log"
     },
     {
@@ -46,8 +46,8 @@
       ],
       "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\research_package",
       "exit_code": 0,
-      "seconds": 1.1447359000012511,
-      "log_sha256": "4516addadd348a4831fe98d8c07ee95b3113ebfac07484a1fbd961be32066520",
+      "seconds": 1.1937911999993958,
+      "log_sha256": "68ce143413af54515bc0fab4b386bcbc1aa8a9fc82a669216f0187e7b3e2cc66",
       "log_file": "readiness_integrity.log"
     },
     {
@@ -64,8 +64,8 @@
       ],
       "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
       "exit_code": 0,
-      "seconds": 354.13497169999755,
-      "log_sha256": "b75c45c595f4e7f822bea9213ccdec2fbd3e6ffb0f74dff79d2b16051621cea5",
+      "seconds": 708.0823533999937,
+      "log_sha256": "c4c8a66a61d497e27a76bd85083835e03ef46c629527a9ed714a34c7dc3f4193",
       "log_file": "pauli_full_suite.log"
     },
     {
@@ -77,7 +77,7 @@
       ],
       "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
       "exit_code": 0,
-      "seconds": 0.1574110000001383,
+      "seconds": 0.16523299999244045,
       "log_sha256": "826f6ca753cb772466e510c40e5ba30ba00969bd9c5f009037b474a02893a5ea",
       "log_file": "verify_scf_rectangular_gram_bridge.log"
     },
@@ -90,7 +90,7 @@
       ],
       "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
       "exit_code": 0,
-      "seconds": 0.2630838999975822,
+      "seconds": 0.2586747000023024,
       "log_sha256": "74c23d59576f22440be14a55cee278781d2d1a00ef322fa05a90c5db25ad31c1",
       "log_file": "verify_scf_core_refinement.log"
     },
@@ -103,7 +103,7 @@
       ],
       "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
       "exit_code": 0,
-      "seconds": 1.6960456000015256,
+      "seconds": 1.6475913000031142,
       "log_sha256": "67d5982398ef4fa5191c8b32a29c8cb70879ce534606b3f6c150dde6d596052a",
       "log_file": "verify_scf_three_row_gram.log"
     },
@@ -116,7 +116,7 @@
       ],
       "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
       "exit_code": 0,
-      "seconds": 2.0786058000012417,
+      "seconds": 2.006150000001071,
       "log_sha256": "964db8779f72f26f5cd4fa334c13cf5ce05a303227538d0b0abf0ca15206e9fa",
       "log_file": "verify_scf_d_closure.log"
     },
@@ -129,7 +129,7 @@
       ],
       "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
       "exit_code": 0,
-      "seconds": 0.5717726000002585,
+      "seconds": 0.5512111999996705,
       "log_sha256": "afd224f897f05c92c7a47d7610a6632ee829cf5ff6f78b794bd5f69b4e29aebb",
       "log_file": "verify_c031_exact_six.log"
     },
@@ -142,7 +142,7 @@
       ],
       "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
       "exit_code": 0,
-      "seconds": 0.060880799996084534,
+      "seconds": 0.06555539999681059,
       "log_sha256": "ccd15cc5ce9396c80ef736c9e91aed5d809de933c7cef76f0e879a1edb236a3d",
       "log_file": "verify_c038_line_graph_hbar.log"
     },
@@ -155,7 +155,7 @@
       ],
       "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
       "exit_code": 0,
-      "seconds": 0.08341260000452166,
+      "seconds": 0.09326520000468008,
       "log_sha256": "56c731ec990342c8fafe4613603ded8108228c578441c5ae49336d8517d98e8d",
       "log_file": "verify_c039_central_ablations.log"
     },
@@ -168,7 +168,7 @@
       ],
       "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
       "exit_code": 0,
-      "seconds": 0.06310430000303313,
+      "seconds": 0.0698980000015581,
       "log_sha256": "f78ebdbf870687d4f4145be523c40409b439ec840bed5a8b886e4102312cecb8",
       "log_file": "verify_c040_scaled_ablations.log"
     },
@@ -181,7 +181,7 @@
       ],
       "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
       "exit_code": 0,
-      "seconds": 0.05068310000206111,
+      "seconds": 0.057413000002270564,
       "log_sha256": "c35601b972bc65aa0a4dfe449f25561b40edb11d6df00140509d6b7826bde2fe",
       "log_file": "verify_c041_density_coupling_stress.log"
     },
@@ -194,7 +194,7 @@
       ],
       "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
       "exit_code": 0,
-      "seconds": 1.8145023999968544,
+      "seconds": 1.7605907999968622,
       "log_sha256": "fd8797696ec615341fdc8e99ca1313406bf46f84490c879e0aa66b269d9d31fb",
       "log_file": "verify_c042_rank_perfect_boundary.log"
     },
@@ -207,7 +207,7 @@
       ],
       "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
       "exit_code": 0,
-      "seconds": 0.19898320000356762,
+      "seconds": 0.2024573000089731,
       "log_sha256": "201deae8555b3f8489e3b9c84561aad08eb72ebfae368aadcedf4202caeaf179",
       "log_file": "verify_c043_quasiline_scf_theorem.log"
     },
@@ -220,7 +220,7 @@
       ],
       "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
       "exit_code": 0,
-      "seconds": 0.6174987999984296,
+      "seconds": 0.783316900007776,
       "log_sha256": "674eb916d982d27ce635ffe9ed613d226adf37a876cf678ef3203c4e6df06a86",
       "log_file": "pauli_full_paper_check.log"
     },
@@ -233,7 +233,7 @@
       ],
       "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
       "exit_code": 0,
-      "seconds": 22.97145299999829,
+      "seconds": 41.44267370000307,
       "log_sha256": "098f55927eba77e2dfa9a1df2624d4f2f9fc7698a1730ebd6485a45385095b10",
       "log_file": "verify_c044_proof_hardening.log"
     },
@@ -246,9 +246,22 @@
       ],
       "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
       "exit_code": 0,
-      "seconds": 0.057115699994028546,
+      "seconds": 0.058314199995948,
       "log_sha256": "a050ddb5744805063845962fd1bcf15939a7327e8ca2dbb3b7f88d04a80be6d9",
       "log_file": "verify_c045_priority_submission_audit.log"
+    },
+    {
+      "name": "verify_c046_mock_referee_body_audit",
+      "command": [
+        "C:\\Users\\psgpe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-S",
+        "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814\\experiments\\pauli_fourth_moment_phase0\\verify_c046_mock_referee_body_audit.py"
+      ],
+      "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
+      "exit_code": 0,
+      "seconds": 0.05789329999242909,
+      "log_sha256": "019492f4f8fd507ad1992ac986865716b0868737842fc13bfadb9fa74c6af7e5",
+      "log_file": "verify_c046_mock_referee_body_audit.log"
     },
     {
       "name": "c038_standalone_paper_check",
@@ -259,8 +272,8 @@
       ],
       "cwd": "C:\\Users\\psgpe\\Downloads\\Taiwan\\Quantum_github_stage_20260814",
       "exit_code": 0,
-      "seconds": 0.08092279999982566,
-      "log_sha256": "f712a6d0ec8ebdb379e35ec995ff05448deacd33415c85db3adecc8350939dbb",
+      "seconds": 0.0902071999880718,
+      "log_sha256": "16687db7062685ce4a44b4ec983513b1047bb6eca514901743e69b68a1998e26",
       "log_file": "c038_standalone_paper_check.log"
     }
   ]

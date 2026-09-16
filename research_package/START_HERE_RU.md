@@ -1,4 +1,14 @@
-# Квантовый исследовательский пакет — 16 сентября 2026
+# Квантовый исследовательский пакет — 17 сентября 2026
+
+## C046: mock-referee и строгая формулировка beta body
+
+Headline theorem теперь утверждает точное равенство выпуклых тел
+`BETA(L(R))=MATCH(R)`, а не только совпадение оптимумов для перечисленных
+весов. Добавлены формальные определения raw squared joint range и
+representation-independent beta body, доказан переход через все
+неотрицательные support functions и явно закрыт нечётный Clifford case.
+Mock-referee ledger разрешает шесть замечаний и защищён мутационными тестами.
+Подробности: [C046 audit](../experiments/pauli_fourth_moment_phase0/C046_MOCK_REFEREE_BODY_AUDIT.md).
 
 ## C044: доказательство SCF quasi-line границы усилено
 
@@ -89,7 +99,7 @@ skew-controls, случайные матричные направления и �
 [Доказательство](../experiments/pauli_fourth_moment_phase0/LINE_GRAPH_HBAR_THEOREM_C038.md) ·
 [жёсткий аудит приоритета](../experiments/pauli_fourth_moment_phase0/LINE_GRAPH_PRIORITY_AUDIT_C038.md) ·
 [итоговый отчёт](FINAL_REPORT_C038_RU.md) ·
-[самостоятельная статья C038+C043](../output/pdf/c038_line_graph_pauli_matching_theorem.pdf)
+[самостоятельная статья C038--C046](../output/pdf/c038_line_graph_pauli_matching_theorem.pdf)
 
 Текущий честный статус: **сильный A/A* candidate**, а не подтверждённая
 редакцией A*-статья. Необходимы внешняя математическая проверка и
@@ -209,7 +219,7 @@ experiments/evoq_mis_full_qoblib/results/mps_ladder/exact_references.json.
 run_readiness.py, для сборки PDF — build_papers.py. Эти программы не отправляют
 QPU-задания. Архив является локальным пакетом для проверки, не публикацией.
 
-Итоговый локальный архив: `output/research_packages/quantum_research_package_20260916_final.zip`.
+Итоговый локальный архив: `output/research_packages/quantum_research_package_20260917_final.zip`.
 Его размер, SHA-256 и результат полной CRC/hash-проверки записываются в
 `research_package/archive_summary.json`. Если рукопись или результат меняется,
 архив необходимо пересобрать; старый ZIP не является указателем на рабочую копию.

@@ -1,5 +1,13 @@
 # Pauli fourth-moment phase 0
 
+C046 completed: the headline result is now the precise body identity
+`BETA(L(R))=MATCH(R)`. The manuscript defines the invariant beta convex corner,
+distinguishes it from the realization-dependent raw joint range, closes the
+nonnegative-support-function argument, and makes the odd-order Clifford case
+explicit. The [mock-referee audit](C046_MOCK_REFEREE_BODY_AUDIT.md) resolves six
+findings and has a mutation-controlled verifier. External review and priority
+certification remain open.
+
 C038 completed: [every line graph is hbar-perfect for all weights](LINE_GRAPH_HBAR_THEOREM_C038.md).
 The analytic proof uses a Majorana realization, nuclear-norm duality and
 Edmonds' matching polytope. It yields the exact identity

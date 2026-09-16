@@ -73,7 +73,7 @@ def main():
     write_json(HERE/'package_manifest.json',manifest)
     selected.add(HERE/'package_manifest.json')
     OUT.mkdir(parents=True,exist_ok=True)
-    archive=OUT/'quantum_research_package_20260916_final.zip'
+    archive=OUT/'quantum_research_package_20260917_final.zip'
     temporary=archive.with_suffix('.zip.tmp')
     if temporary.exists():
         temporary.unlink()

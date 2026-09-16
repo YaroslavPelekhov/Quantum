@@ -1,5 +1,5 @@
 {
-  "status": "standalone_C038_C045_paper_checked",
+  "status": "standalone_C038_C046_paper_checked",
   "atlas_roots": 1245,
   "direct_majorana_cases": 47,
   "weighted_ablation_cases": 6225,
@@ -13,6 +13,7 @@
   "C044_all_deletions": 38772,
   "C044_exact_cliques": 3803174,
   "C045_sources_checked": 9,
+  "C046_resolved_findings": 6,
   "full_polytope_exact_fraction": 1.0,
   "external_reviewed": false,
   "priority_confirmed": false

@@ -15,6 +15,7 @@
 \newcommand{\tr}{\operatorname{tr}}
 \newcommand{\STAB}{\operatorname{STAB}}
 \newcommand{\MATCH}{\operatorname{MATCH}}
+\newcommand{\BETA}{\operatorname{BETA}}
 \newcommand{\R}{\mathbb R}
 \setlength{\emergencystretch}{2em}
 \setlength{\parskip}{3pt}
@@ -23,7 +24,7 @@
 working manuscript. Author metadata and disclosure statement must be completed
 before submission.}}
 \author{Anonymous author\\Independent researcher}
-\date{16 September 2026}
+\date{17 September 2026}
 
 \begin{document}
 \maketitle
@@ -31,8 +32,12 @@ before submission.}}
 \begin{abstract}
 For Pauli observables, let the frustration graph join exactly the
 anticommuting pairs. We prove that the complete weighted quadratic uncertainty
-problem is exact on every line graph. For every finite simple graph $R$ and
-every nonnegative edge weight $w$,
+problem is exact on every line graph. For every finite simple graph $R$, the
+representation-independent beta body is exactly the matching polytope,
+\[
+ \BETA(L(R))=\MATCH(R).
+\]
+Equivalently, for every nonnegative edge weight $w$,
 \[
  \beta(L(R),w)=\alpha(L(R),w)=\nu(R,w),
 \]
@@ -60,9 +65,11 @@ claim.
 This is a self-contained working manuscript, not an externally reviewed
 article. The proof uses classical matching-polytope and Majorana tools, which
 are cited explicitly. A documented search found no prior statement of the
-all-weight equality above, but a negative literature search is not a proof of
-priority. The expanded C045 search was frozen on 16 September 2026 and found
-no exact collision, but this remains support rather than certification.
+body identity or all-weight equality above, but a negative literature search
+is not a proof of priority. The expanded C045 search was frozen on 16 September
+2026 and found no exact collision, but this remains support rather than
+certification. A C046 mock-referee pass formalized the body-level statement and
+audited every dependency in the central proof.
 No quantum advantage or new matching algorithm is claimed.
 
 \section{Introduction}
@@ -71,13 +78,13 @@ Let $P_1,\ldots,P_n$ be Hermitian Pauli observables. Their frustration graph
 $G$ has vertex set $[n]$ and an edge $ij$ exactly when
 $P_iP_j=-P_jP_i$; nonedges commute. For nonnegative $w$, define
 \begin{equation}\label{eq:beta}
- \beta(G,w)=\sup_{\{P_i\},\rho}\sum_i w_i\tr(\rho P_i)^2,
+ \beta(G,w)=\max_\rho\sum_i w_i\tr(\rho P_i)^2,
  \qquad
  \alpha(G,w)=\max_{S\text{ stable in }G}\sum_{i\in S}w_i.
 \end{equation}
-The supremum uses Pauli realizations with exactly the prescribed pairwise
-relations. Representation invariance of this graph parameter is established
-in the beta-number framework of Xu et al.~\cite{xu}. Since the observables in
+Here the first maximum may use any Pauli realization with exactly the
+prescribed pairwise relations: its value is representation-independent by the
+beta-number framework of Xu et al.~\cite{xu,xuprx}. Since the observables in
 a stable set commute, a common eigenstate gives
 $\beta(G,w)\geq\alpha(G,w)$. The difficult direction is the upper bound.
 
@@ -117,6 +124,25 @@ is separated from the headline contribution because it depends on the
 classical quasi-line facet classification.
 
 \section{Definitions and the variational reduction}
+
+For a fixed Pauli realization $\mathcal S=\{P_i\}_{i\in V(G)}$, write
+\[
+ \mathcal Q(\mathcal S)=
+ \left\{\bigl(\tr(\rho P_i)^2\bigr)_{i\in V(G)}:\rho\text{ a state}\right\}.
+\]
+If $T\subseteq\R^{V(G)}$, let
+$\mathord\downarrow T=\{x:\text{ there is }y\in T\text{ with }0\leq x\leq y\}$.
+Proposition~1 of Xu et al.~\cite{xu} proves that
+\begin{equation}\label{eq:beta-body}
+ \BETA(G)=\operatorname{conv}(\mathord\downarrow\mathcal Q(\mathcal S))
+ \quad\text{and}\quad
+ \beta(G,w)=\max_{y\in\BETA(G)}w\mathbin{\cdot}y
+ \quad(w\geq0)
+\end{equation}
+are independent of the chosen realization. Thus $\BETA(G)$ is a compact
+convex corner, whereas the raw joint range $\mathcal Q(\mathcal S)$ need not be
+convex and can depend on the realization. This distinction is essential for
+the body-level statement below.
 
 For a finite simple root graph $R=(V,E)$, its line graph $L(R)$ has one vertex
 for every edge of $R$; two vertices are adjacent when their root edges share
@@ -211,9 +237,13 @@ $\nu(R,w)^2$.
 
 \section{Exact Pauli uncertainty on line graphs}
 
-\begin{theorem}[All line graphs are $\hbar$-perfect]
+\begin{theorem}[Exact beta body of a line graph]
 \label{thm:main}
-For every finite simple graph $R$ and every nonnegative edge weight $w$,
+For every finite simple graph $R$,
+\begin{equation}\label{eq:body-main}
+ \boxed{\BETA(L(R))=\MATCH(R).}
+\end{equation}
+Consequently, for every nonnegative edge weight $w$,
 \begin{equation}\label{eq:main}
  \boxed{\beta(L(R),w)=\alpha(L(R),w)=\nu(R,w).}
 \end{equation}
@@ -235,6 +265,12 @@ coefficients $s_j$. Hence
 \begin{equation}\label{eq:maj-norm}
  \norm{\sum_ec_ei\gamma_u\gamma_v}=\sum_js_j=\frac{\norm{A}_*}{2}.
 \end{equation}
+If $|V(R)|=2q$ or $2q+1$, the skew normal form has $q$ two-by-two blocks
+(and one zero direction in the odd case). The associated $q$ commuting
+bilinear involutions have all joint sign patterns in the standard Clifford
+representation, which justifies the final equality in~\eqref{eq:maj-norm}
+also for odd-order roots.
+
 Combining~\eqref{eq:variational}, Theorem~\ref{thm:matrix}, and the normalized
 constraint $\sum_ec_e^2/w_e=1$ gives
 $\beta(L(R),w)\leq\nu(R,w)$.
@@ -242,23 +278,25 @@ $\beta(L(R),w)\leq\nu(R,w)$.
 Conversely, a maximum-weight matching is a stable set of $L(R)$. Its Pauli
 observables commute and have a common eigenstate, whose squared expectations
 on the matching are all one. Therefore
-$\beta(L(R),w)\geq\nu(R,w)$. Equation~\eqref{eq:alpha-nu} completes the proof.
+$\beta(L(R),w)\geq\nu(R,w)$. Equation~\eqref{eq:alpha-nu} proves the weighted
+identity for every $w\geq0$. By~\eqref{eq:beta-body}, these are precisely the
+nonnegative support functions of $\BETA(L(R))$; the same functions support
+$\MATCH(R)$. Compact convex corners are determined by their nonnegative
+support functions, so~\eqref{eq:body-main} follows.
 \end{proof}
 
-\begin{corollary}[Exact uncertainty body]
+\begin{corollary}[Realization-level blossom inequalities]
 For any Pauli realization with frustration graph $L(R)$, every squared
-expectation profile $y_e=\tr(\rho P_e)^2$ belongs to $\MATCH(R)$, and every
-matching incidence vector is attainable as a dominated profile. Thus all
-nonnegative support functions of the downward uncertainty body equal those
-of $\MATCH(R)$.
+expectation profile $y_e=\tr(\rho P_e)^2$ belongs to $\MATCH(R)$. Conversely,
+every matching incidence vector belongs to $\BETA(L(R))$.
 \end{corollary}
 
 \begin{proof}
-Theorem~\ref{thm:main} supplies every nonnegative weighted inequality valid
-for $\MATCH(R)$. Separation for compact downward-closed subsets of the
-nonnegative orthant gives membership. A common eigenstate attains value one
-on any fixed matching; uncontrolled coordinates can be discarded by
-downward closure.
+The first statement follows from
+$\mathcal Q(\mathcal S)\subseteq\BETA(L(R))=\MATCH(R)$. For a matching, its
+commuting Pauli observables have a common eigenstate and hence squared
+expectation one on every matching edge. Downward closure then contains the
+matching incidence vector.
 \end{proof}
 
 The theorem is constructive at the level of values: a maximum-weight
@@ -797,6 +835,13 @@ No simplicial clique occurs for $p\geq3$. A separate standard-library verifier
 recomputes the algebra and sumset counts, checks all frozen hashes, and is
 protected by five mutation tests.
 
+C046 is a claim-level mock-referee audit of the headline proof. It separates
+the realization-dependent raw joint range from the invariant beta body,
+checks the compact-convex support-function step, and makes the odd-order
+Clifford normalization explicit. Its verifier rejects a missing body identity,
+the old representation quantifier, an altered report, and false review-status
+flags. This is an internal adversarial check, not external peer review.
+
 From the repository root:
 \begin{quote}\small\ttfamily\raggedright
 python experiments/pauli\_fourth\_moment\_phase0/\\
@@ -838,6 +883,9 @@ python experiments/pauli\_fourth\_moment\_phase0/\\
 \hspace*{1em}run\_c044\_proof\_hardening.py --overwrite\par
 python -S experiments/pauli\_fourth\_moment\_phase0/\\
 \hspace*{1em}verify\_c044\_proof\_hardening.py
+\medskip\par
+python -S experiments/pauli\_fourth\_moment\_phase0/\\
+\hspace*{1em}verify\_c046\_mock\_referee\_body\_audit.py
 \end{quote}
 The wrapped paths are single commands. Numerical agreement is falsification
 support, not the proof of Theorem~\ref{thm:main}.
@@ -913,7 +961,7 @@ Source, frozen records, verifier, and tests are available in the
 \href{https://github.com/YaroslavPelekhov/Quantum/tree/research/c038-line-graph-hbar}{public C038 GitHub branch}.
 The repository index identifies the theorem note, priority audit, generator,
 frozen JSON, independent verifiers, and corruption-controlled tests. Every
-reported numerical constant is read from eight frozen JSON records by the
+reported numerical constant is read from nine frozen JSON records by the
 manuscript checker. They include graph identifiers, generator seeds, weight
 regimes, relaxation values, aggregate summaries, explicit scope flags, and
 hashes for all derived tables and figures.

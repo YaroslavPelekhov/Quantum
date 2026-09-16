@@ -1,4 +1,19 @@
-# Квантовое исследование: итог до C045
+# Квантовое исследование: итог до C046
+
+## C046 — mock-referee и точное равенство beta body, 17 сентября 2026
+
+Центральный claim теперь записан как строгое равенство выпуклых объектов:
+`BETA(L(R))=MATCH(R)`. В статье формально определены raw joint range
+`Q(S)`, её downward convex hull и representation-independent beta body.
+Это устраняет неоднозначность между равенством всех weighted optimum и
+равенством самих тел.
+
+Adversarial proof audit закрыл шесть замечаний: определение body, переход по
+support functions, квантор по Pauli-реализациям, нечётный Clifford case,
+формулировку realization-level corollary и независимость headline proof от
+SCF-расширения. Критических контрпримеров не найдено; внутренних пробелов в
+центральной цепочке не осталось. Это всё ещё внутренняя проверка, а не внешняя
+рецензия. См. [C046 mock-referee audit](C046_MOCK_REFEREE_BODY_AUDIT.md).
 
 ## C045 — центральная статья и adversarial priority audit, 16 сентября 2026
 
