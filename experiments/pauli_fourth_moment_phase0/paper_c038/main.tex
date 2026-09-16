@@ -19,7 +19,7 @@
 \setlength{\emergencystretch}{2em}
 \setlength{\parskip}{3pt}
 
-\title{Skew contractions and exact weighted Pauli uncertainty on all line graphs\thanks{Independent
+\title{Exact weighted Pauli uncertainty from matching polytopes and simplicial quasi-line graphs\thanks{Independent
 working manuscript. Author metadata and disclosure statement must be completed
 before submission.}}
 \author{Anonymous author\\Independent researcher}
@@ -59,10 +59,11 @@ regimes, controlled families through order 132, and a density stress through
 order 40. Local relaxations are often nearly exact on random sparse cases but
 retain constant gaps on planted blossoms. These computations test the
 mechanism; the theorem remains analytic.
-Beyond line graphs, we prove the general bridge that every rank-perfect
-simplicial claw-free graph is $\hbar$-perfect. Hence every simplicial
-claw-free semi-line graph is $\hbar$-perfect. An exact nine-vertex witness
-shows this extension is strict over both line graphs and $h$-perfect graphs.
+Beyond line graphs, we prove that every simplicial claw-free quasi-line graph
+is rank-perfect and therefore $\hbar$-perfect. The proof excludes the
+clique-circulants responsible for every nonrank quasi-line facet. An exact
+nine-vertex witness shows this extension is strict over both line graphs and
+$h$-perfect graphs.
 \end{abstract}
 
 \noindent\textbf{Status and scope.}
@@ -117,6 +118,9 @@ claw-free rank bounds and exhibit an infinite separation from the
 $h$-perfect sufficient class. Finally, rather than reporting only successful
 theorem checks, we compare the complete mechanism against two explicit weaker
 baselines and ablate skewness itself.
+We then combine a simplicial-clique heredity lemma with the modern facet
+structure of fuzzy circular interval graphs to prove $\hbar$-perfection for
+the strictly larger class of simplicial claw-free quasi-line graphs.
 
 \section{Definitions and the variational reduction}
 
@@ -355,11 +359,98 @@ holds for every nonnegative weight.
 \end{proof}
 
 Semi-line graphs are rank-perfect~\cite{oriolo,eosv}, giving an immediate
-named class beyond the matching construction.
+named class beyond the matching construction. The following argument closes
+the full quasi-line boundary under the SCF hypothesis.
 
 \begin{corollary}
 Every simplicial claw-free semi-line graph is $\hbar$-perfect.
 \end{corollary}
+
+\begin{lemma}[SCF heredity]\label{lem:scf-heredity}
+Every induced subgraph of a simplicial claw-free graph is componentwise
+simplicial claw-free.
+\end{lemma}
+
+\begin{proof}
+It is enough to delete one vertex $z$ from a connected graph $G$ with
+simplicial clique $K$. If $K\setminus\{z\}$ is nonempty, it remains a
+simplicial clique in its component of $G-z$. Consider any other component
+$D$. Connectivity gives a nonempty set $A=N_G(z)\cap V(D)$. This set is a
+clique: otherwise two nonadjacent vertices of $A$, together with a neighbor
+of $z$ in the component containing $K\setminus\{z\}$, form a claw centered at
+$z$. If $K=\{z\}$, then $N_G(z)$ is already a clique, so the same conclusion
+holds in every component. Finally, for $u\in A$, two nonadjacent vertices of
+$N_D(u)\setminus A$ would form a claw with $z$ centered at $u$. Thus $A$ is a
+simplicial clique of $D$. Repeated deletion proves the claim.
+\end{proof}
+
+Write $C(n,p)$ for the graph on $\mathbb Z_n$ in which two vertices are
+adjacent when their circular distance is at most $p-1$.
+
+\begin{lemma}[Circulant obstruction]\label{lem:circulant-obstruction}
+If $n>2p\geq4$, then $C(n,p)$ has a simplicial clique if and only if $p=2$.
+\end{lemma}
+
+\begin{proof}
+For $p=2$ the graph is a cycle and each edge is a simplicial clique. Assume
+$p\geq3$. First suppose that a clique $K$ is \emph{local}, meaning that it
+is contained in a block of $p$ consecutive vertices. Rotate the block so
+that the first and last vertices of $K$ are $0$ and $d$, with
+$0\leq d\leq p-1$. If $d\leq p-2$, then
+$x=-(p-d-1)$ and $y=d+1$ are outside $K$, both neighbor $0$, and are
+nonadjacent because their circular separation is $p$. If $d=p-1$ but the
+block has a missing vertex $y$, use $x=-(p-y)$ instead. The same separation
+argument applies. The only remaining case is the full block
+$K=\{0,\ldots,p-1\}$. Vertex $1$ then has the two outside neighbors $-1$
+and $p$; their two circular separations are $p+1$ and $n-p-1$, both larger
+than $p-1$. Thus no local clique is simplicial.
+
+For completeness, we use the elementary discrete circular-diameter fact that
+a pairwise $(p-1)$-close subset $S\subseteq\mathbb Z_n$ which is not contained
+in $p$ consecutive residues satisfies
+\begin{equation}\label{eq:nonlocal-clique-bound}
+ |S|\leq 3p-n.
+\end{equation}
+Here is a short count. Choose an inclusion-minimal nonlocal subset. The
+circular-arc Helly obstruction gives three cyclic extreme points; if their
+clockwise gaps are $a,b,c$, then $a+b+c=n$ and each is at most $p-1$.
+Assign every point of $S$ to the half-open gap following one of these three
+extremes. Pairwise closeness to the other two extremes leaves respectively at
+most $p-a$, $p-b$, and $p-c$ admissible integer positions. Summing gives
+$(p-a)+(p-b)+(p-c)=3p-n$, proving~\eqref{eq:nonlocal-clique-bound}.
+Apply this fact to a nonlocal clique $K$.
+The graph is $2(p-1)$-regular and has clique number $p$. If $K$ were
+simplicial, then for any $v\in K$ the set $N(v)\setminus K$ would be a
+clique, so $2p-1-|K|\leq p$ and hence $|K|\geq p-1$. When
+$n\geq2p+2$, equation~\eqref{eq:nonlocal-clique-bound} instead gives
+$|K|\leq p-2$, a contradiction. At the remaining boundary $n=2p+1$,
+$C(n,p)$ is the complement of the odd cycle $C_{2p+1}$; odd antiholes of
+length at least seven have no simplicial clique~\cite{csss}. Hence no
+nonlocal clique is simplicial either.
+\end{proof}
+
+\begin{theorem}[SCF quasi-line theorem]\label{thm:scf-quasiline}
+Every simplicial claw-free quasi-line graph is rank-perfect and hence
+$\hbar$-perfect.
+\end{theorem}
+
+\begin{proof}
+It suffices to consider a connected graph $G$. Quasi-line graphs outside the
+fuzzy circular interval class have only rank facets~\cite{eosv}. For a fuzzy
+circular interval graph, the facet theorem of Oriolo and
+Stauffer~\cite{oriolostauffer2022} says that every remaining facet is a
+clique-family inequality associated with a maximal $(n,p)$
+clique-circulant, where $\gcd(n,p)=1$ and $n>2p\geq4$. By definition that
+clique-circulant contains an induced $C(n,p)$. Lemma~\ref{lem:scf-heredity}
+makes this induced graph SCF, so Lemma~\ref{lem:circulant-obstruction} forces
+$p=2$. Coprimality then makes $n$ odd. In the clique-family inequality,
+$r=n\bmod p=1$, so the two coefficients $p-r$ and $p-r-1$ are respectively
+$1$ and $0$. The inequality is therefore a rank inequality, contradicting
+the assumption of a nonrank facet. Thus every nontrivial facet of
+$\STAB(G)$ is rank, which is exactly rank-perfectness. The
+$\hbar$-perfect conclusion follows from
+Theorem~\ref{thm:rank-perfect-scf}.
+\end{proof}
 
 The extension is strict. The graph with graph6 code
 \texttt{H?\textasciigrave{}adQY} has nine
@@ -382,18 +473,18 @@ reported rank facet was checked by exact validity and affine-rank calculations.
 \begin{figure}[t]
 \centering
 \includegraphics[width=\linewidth]{figures/c042_rank_perfect_boundary.png}
-\caption{Rank-perfect boundary audit. The order-nine panel is exhaustive for
+\caption{Rank-perfect boundary audit preceding the analytic closure. The order-nine panel is exhaustive for
 the frozen SCF census; the larger proper circular-arc panel is a conditioned
-seeded sample, and the web panel is an exact family sweep. These computations
-support, but do not prove, the stronger SCF quasi-line conjecture.}
+seeded sample, and the web panel is an exact family sweep. The C043 proof no
+longer depends on these finite observations.}
 \label{fig:rank-perfect-boundary}
 \end{figure}
 
-The tempting statement that all quasi-line graphs are $\hbar$-perfect is
-false: the anti-heptagon is quasi-line and is the smallest known
-$\hbar$-imperfect graph~\cite{xu}. We therefore record only the conjecture
-that every \emph{SCF} quasi-line graph is rank-perfect. Neither that conjecture
-nor unrestricted SCF $\hbar$-perfection is used in any theorem here.
+The SCF hypothesis is essential. The unrestricted statement that all
+quasi-line graphs are $\hbar$-perfect is false: the anti-heptagon is
+quasi-line, has no simplicial clique, and is the smallest known
+$\hbar$-imperfect graph~\cite{xu}. The theorem likewise makes no claim for
+SCF graphs outside the quasi-line class.
 
 \section{Baseline comparison and mechanism ablations}
 
@@ -625,6 +716,15 @@ graphs, 868 web graphs, and 60 conditioned proper circular-arc stress graphs.
 Its independent verifier reconstructs the graph classes, strict witness, and
 exact rank-facet certificates. Six tests include five intentional corruptions.
 
+The C043 record independently checks 4308 deterministic induced deletions,
+6162 circulant parameter pairs through order 160, all 18,149 cliques in the
+small circulants through order 18, one exact published nonrank-web positive
+control, and 250 exact clique-family stress graphs. The small exact sweep
+explicitly includes the nonlocal clique $\{0,3,6\}$ in $C(9,4)$ that falsifies
+the tempting local-cliques-only proof. Its standard-library verifier
+reconstructs the circulant witnesses and the positive-control facet; five
+mutation tests must reject corrupted records.
+
 From the repository root:
 \begin{quote}\small\ttfamily\raggedright
 python experiments/pauli\_fourth\_moment\_phase0/\\
@@ -656,6 +756,11 @@ python experiments/pauli\_fourth\_moment\_phase0/\\
 \hspace*{1em}run\_c042\_rank\_perfect\_boundary.py\par
 python -S experiments/pauli\_fourth\_moment\_phase0/\\
 \hspace*{1em}verify\_c042\_rank\_perfect\_boundary.py
+\medskip\par
+python experiments/pauli\_fourth\_moment\_phase0/\\
+\hspace*{1em}run\_c043\_quasiline\_scf\_falsification.py --overwrite\par
+python -S experiments/pauli\_fourth\_moment\_phase0/\\
+\hspace*{1em}verify\_c043\_quasiline\_scf\_theorem.py
 \end{quote}
 The wrapped paths are single commands. Numerical agreement is falsification
 support, not the proof of Theorem~\ref{thm:main}.
@@ -669,8 +774,9 @@ Xu et al.~define weighted beta numbers and $\hbar$-perfection and establish
 other sufficient graph classes~\cite{xu}; their accessible manuscript does
 not state the all-line-graph weighted matching equality used here. Oriolo and
 Eisenbrand et al.~supply the classical semi-line and quasi-line polyhedral
-boundary used only in Theorem~\ref{thm:rank-perfect-scf}'s corollary
-\cite{oriolo,eosv}.
+boundary~\cite{oriolo,eosv}. Oriolo and Stauffer's later clique-circulant
+facet theorem~\cite{oriolostauffer2022} is the structural input to
+Theorem~\ref{thm:scf-quasiline}.
 
 The graphs $L(K_{2k+1})$ already appear in magic-state simulation via
 Jordan--Wigner transformations~\cite{zurel}; the separating graphs themselves
@@ -713,11 +819,11 @@ hundreds of thousands of rows by order 40, while the complete mathematical
 object remains maximum-weight matching rather than an ever longer list of
 local repairs.
 
-The rank-perfect SCF bridge also shows that the line-graph mechanism is not the
-only analytic route. It extends exact Pauli uncertainty to every SCF semi-line
-graph and to a certified graph that is neither line nor $h$-perfect. The
-larger quasi-line statement remains a conjecture, explicitly separated from
-the proved result.
+The rank-perfect SCF bridge and the clique-circulant obstruction show that the
+line-graph mechanism is not the only analytic route. Exact Pauli uncertainty
+extends to every SCF quasi-line graph, including a certified graph that is
+neither line nor $h$-perfect. The unrestricted SCF and unrestricted
+quasi-line statements remain outside the theorem.
 
 The result concerns exact uncertainty values, not quantum advantage or hardware
 performance. The next scientific tests are independent refereeing and a wider
@@ -730,7 +836,7 @@ Source, frozen records, verifier, and tests are available in the
 \href{https://github.com/YaroslavPelekhov/Quantum/tree/research/c038-line-graph-hbar}{public C038 GitHub branch}.
 The repository index identifies the theorem note, priority audit, generator,
 frozen JSON, independent verifiers, and corruption-controlled tests. Every
-reported numerical constant is read from five frozen JSON records by the
+reported numerical constant is read from six frozen JSON records by the
 manuscript checker. They include graph identifiers, generator seeds, weight
 regimes, relaxation values, aggregate summaries, explicit scope flags, and
 hashes for all derived tables and figures.
@@ -743,6 +849,7 @@ fields must be completed truthfully by the author before submission. No QPU
 data are used in the theorem or its verification.
 
 \begin{thebibliography}{99}
+\small
 \bibitem{edmonds}
 J. Edmonds, \emph{Maximum matching and a polyhedron with 0,1-vertices},
 Journal of Research of the National Bureau of Standards B 69B, 125--130
@@ -775,6 +882,18 @@ quasi-line graphs}, Discrete Applied Mathematics 132, 185--201 (2003).
 F. Eisenbrand, G. Oriolo, G. Stauffer, and P. Ventura,
 \emph{The stable set polytope of quasi-line graphs}, Combinatorica 28,
 45--67 (2008). \url{https://doi.org/10.1007/s00493-008-2169-1}.
+
+\bibitem{oriolostauffer2022}
+G. Oriolo and G. Stauffer,
+\emph{On the facets of stable set polytopes of circular interval graphs},
+Annals of Operations Research 315, 1551--1573 (2022).
+\url{https://doi.org/10.1007/s10479-021-04449-7}.
+
+\bibitem{csss}
+M. Chudnovsky, A. Scott, P. Seymour, and S. Spirkl,
+\emph{A note on simplicial cliques},
+Discrete Mathematics 344, 112470 (2021).
+\url{https://doi.org/10.1016/j.disc.2021.112470}.
 
 \bibitem{zurel}
 M. Zurel, L. Z. Cohen, and R. Raussendorf,

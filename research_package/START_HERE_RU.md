@@ -1,14 +1,25 @@
 # Квантовый исследовательский пакет — 16 сентября 2026
 
-## C042: доказанная граница за пределами line graphs
+## C043: доказана вся SCF quasi-line граница
+
+Новый главный результат: каждый simplicial claw-free quasi-line граф
+rank-perfect и потому hbar-perfect для всех неотрицательных весов. Это
+аналитическая теорема, а не вывод из census. Доказательство объединяет
+наследственность SCF с clique-circulant структурой nonrank facets: допустимый
+SCF core вынуждает `p=2`, где facet уже rank. Проверены 4308 удалений, 6162
+циркулянтные пары параметров, все 18 149 клик малых циркулянтов, точный
+nonrank positive control и 250 exact-CFI
+stress-графов. Подробности: [отчёт C043](../experiments/pauli_fourth_moment_phase0/C043_QUASILINE_SCF_THEOREM.md).
+
+## C042: доказанная граница за пределами line graphs (предыдущий этап)
 
 Новый аналитический результат: каждый rank-perfect simplicial claw-free граф
 является hbar-perfect; следовательно, каждый SCF semi-line граф имеет точную
 weighted Pauli uncertainty. Девятивершинный точный witness показывает, что
 это строго шире и line graphs, и h-perfect sufficient route. Исчерпывающий
 order-nine аудит охватывает 4308 SCF-графов, а 60 больших stress-примеров и
-868 web-графов атакуют более сильную границу. Утверждение про все SCF
-quasi-line графы остаётся гипотезой. Подробности: [отчёт C042](../experiments/pauli_fourth_moment_phase0/C042_RANK_PERFECT_BOUNDARY.md).
+868 web-графов атаковали более сильную границу. C043 теперь доказал
+утверждение про все SCF quasi-line графы. Подробности: [отчёт C042](../experiments/pauli_fourth_moment_phase0/C042_RANK_PERFECT_BOUNDARY.md).
 
 ## Главное новое доказательство C038
 
@@ -58,7 +69,7 @@ skew-controls, случайные матричные направления и �
 [Доказательство](../experiments/pauli_fourth_moment_phase0/LINE_GRAPH_HBAR_THEOREM_C038.md) ·
 [жёсткий аудит приоритета](../experiments/pauli_fourth_moment_phase0/LINE_GRAPH_PRIORITY_AUDIT_C038.md) ·
 [итоговый отчёт](FINAL_REPORT_C038_RU.md) ·
-[самостоятельная статья C038+C042](../output/pdf/c038_line_graph_pauli_matching_theorem.pdf)
+[самостоятельная статья C038+C043](../output/pdf/c038_line_graph_pauli_matching_theorem.pdf)
 
 Текущий честный статус: **сильный A/A* candidate**, а не подтверждённая
 редакцией A*-статья. Необходимы внешняя математическая проверка и
@@ -91,8 +102,8 @@ cross-backend работы; это не декларация авторства 
 - Cross-backend QAOA: все 32 текущих теста прошли.
 - Новое планирование и аппаратный пакет: 8 тестов статистики, порядка битов,
   readout channel, схем, декодеров и запрета отправки прошли.
-- Паули: **206/206 тестов прошли** в математическом окружении Python 3.11;
-  полная suite включает C042 и его пять corruption controls.
+- Паули: **211/211 тестов прошли** в математическом окружении Python 3.11;
+  полная suite включает C043 и его пять corruption controls.
 - Отдельно успешно выполнены точные верификаторы C007/C009/C010/C031/C038
   и проверка рукописи с 64 хешами. Это не повторный поиск сертификатов.
 

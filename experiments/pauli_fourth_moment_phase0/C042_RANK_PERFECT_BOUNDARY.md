@@ -1,5 +1,8 @@
 # C042: rank-perfect boundary beyond line graphs
 
+> Superseded by C043: the conjecture recorded below is now proved. See
+> `C043_QUASILINE_SCF_THEOREM.md`. This file remains the frozen C042 record.
+
 Date: 2026-09-16.
 
 ## Central result

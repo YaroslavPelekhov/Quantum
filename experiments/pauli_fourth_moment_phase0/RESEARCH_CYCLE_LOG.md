@@ -1622,3 +1622,21 @@ blocks through order 80 follow ratio 2.5/(2+epsilon/2), preserving 1.2195 at
 epsilon 0.1 and 1.1111 at 0.5. Two stdlib verifiers and eleven corruption tests
 check aggregates, nested baselines, 40 blossom controls, formulas, scope, and
 ten artifact hashes. No QPU or paid resource used.
+### C043 SCF quasi-line theorem — 2026-09-16
+
+C043 closes the conjecture left by C042. Every simplicial claw-free quasi-line
+graph is rank-perfect and therefore hbar-perfect. The proof combines SCF
+heredity with the Oriolo--Stauffer clique-circulant facet theorem. A connected
+nonrank core would contain an induced `C(n,p)` with `n>2p`; explicit local
+witnesses, a nonlocal three-arc bound, and the odd-antihole boundary show that
+such a circulant has a simplicial clique only for `p=2`, where coprimality
+forces the associated clique-family
+inequality to have coefficients 1 and 0 and hence to be rank.
+
+The frozen campaign checks 4308 deterministic induced deletions, all 6162
+circulant parameter pairs through order 160, all 18,149 cliques in the small
+circulants through order 18, the published nonrank `W_25^5`
+CFI as an exact positive control, and 250 seeded proper-circular-arc SCF
+graphs at orders 10--14. The independent standard-library verifier and five
+mutation tests pass. No QPU evidence is involved. Priority and A* venue status
+remain subject to external review.

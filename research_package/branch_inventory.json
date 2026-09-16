@@ -259,7 +259,7 @@
     },
     {
       "branch": "pauli_fourth_moment_phase0",
-      "source_files": 229,
+      "source_files": 233,
       "reports": [
         "experiments/pauli_fourth_moment_phase0/C017_PPT_GATE.md",
         "experiments/pauli_fourth_moment_phase0/C018_PPT_SYMMETRY_GATE.md",
@@ -280,6 +280,7 @@
         "experiments/pauli_fourth_moment_phase0/C035_WEIGHTED_GEAR_GATE.md",
         "experiments/pauli_fourth_moment_phase0/C036_KNOWN_BOUND_AUDIT.md",
         "experiments/pauli_fourth_moment_phase0/C037_WHEEL_AUDIT.md",
+        "experiments/pauli_fourth_moment_phase0/C043_QUASILINE_SCF_THEOREM.md",
         "experiments/pauli_fourth_moment_phase0/LINE_GRAPH_HBAR_THEOREM_C038.md",
         "experiments/pauli_fourth_moment_phase0/LINE_GRAPH_PRIORITY_AUDIT_C038.md",
         "experiments/pauli_fourth_moment_phase0/NOVELTY_AUDIT_20260907.md",

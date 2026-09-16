@@ -29,7 +29,8 @@ def main():
                    'verify_c031_exact_six.py', 'verify_c038_line_graph_hbar.py',
                    'verify_c039_central_ablations.py', 'verify_c040_scaled_ablations.py',
                    'verify_c041_density_coupling_stress.py',
-                   'verify_c042_rank_perfect_boundary.py', 'paper/check_paper.py',
+                   'verify_c042_rank_perfect_boundary.py',
+                   'verify_c043_quasiline_scf_theorem.py', 'paper/check_paper.py',
                    'paper_c038/check_paper.py'):
         name = {
             'paper/check_paper.py': 'pauli_full_paper_check',

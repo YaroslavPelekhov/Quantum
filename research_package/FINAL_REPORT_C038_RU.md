@@ -1,4 +1,4 @@
-# Итоговый исследовательский отчёт: C038+C042 и локальный квантовый пакет
+# Итоговый исследовательский отчёт: C038+C043 и локальный квантовый пакет
 
 Дата фиксации: 16 сентября 2026 года.
 
@@ -17,8 +17,26 @@ line; все его facets rank, причём один support не clique и н
 quasi-line графов без nonrank facets и 550 SCF non-quasi-line графов с
 nonrank facets. Шестьдесят conditioned proper circular-arc stress-графов
 порядков 10--12 и 868 web-графов не дали контрпример. Это evidence, а не
-доказательство гипотезы «все SCF quasi-line rank-perfect». Общий quasi-line
-claim ложен.
+на момент C042 были evidence, а не доказательством гипотезы. C043, описанный
+ниже, теперь закрывает именно этот пробел. Общий quasi-line claim без SCF
+остаётся ложным.
+
+## C043: SCF quasi-line theorem
+
+Доказано: **каждый simplicial claw-free quasi-line граф rank-perfect и
+hbar-perfect**. По полной теории facets предполагаемый nonrank quasi-line
+facet содержит индуцированный clique-circulant core `C(n,p)` при `n>2p`.
+SCF наследуется индуцированными подграфами. Новая элементарная лемма показывает,
+что `C(n,p)` имеет simplicial clique только при `p=2`; coprimality тогда делает
+clique-family коэффициенты равными 1 и 0, то есть facet rank. Противоречие
+закрывает все nonrank случаи.
+
+Frozen audit: 4308 deterministic deletions, 6162 параметра до порядка 160,
+18 149 полностью перебранных клик малых циркулянтов,
+точный опубликованный nonrank-web positive control и 250 exact-CFI stress
+графов. Независимый standard-library verifier и пять corruption tests
+проходят. Результат является сильным A/A* кандидатом, но приоритет и уровень
+публикации требуют внешней рецензии.
 
 ## Короткий итог
 

@@ -1,0 +1,8 @@
+{
+  "status": "C043_verified",
+  "theorem": "Every simplicial claw-free quasi-line graph is rank-perfect.",
+  "heredity_deletions": 4308,
+  "circulant_cases": 6162,
+  "positive_nonrank_controls": 1,
+  "random_CFI_controls": 250
+}

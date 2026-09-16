@@ -1,6 +1,24 @@
 # Quantum x Evolutionary Computing Research Artifact
 
-## C042: analytic boundary beyond line graphs
+## C043: SCF quasi-line theorem
+
+The latest cycle proves that every **simplicial claw-free quasi-line graph is
+rank-perfect**, and therefore hbar-perfect for all nonnegative Pauli weights.
+The proof combines SCF heredity with the clique-circulant structure of every
+nonrank fuzzy-circular-interval facet. The only SCF-compatible circulant has
+parameter `p=2`, where the clique-family inequality collapses to a rank
+inequality.
+
+The frozen audit checks 4,308 induced deletions, 6,162 circulant parameter
+pairs through order 160, all 18,149 cliques in the small circulants through
+order 18, a published exact nonrank-web positive control, and 250 seeded
+exact-CFI stress graphs. See the
+[C043 report](experiments/pauli_fourth_moment_phase0/C043_QUASILINE_SCF_THEOREM.md).
+This is a genuine theorem and a substantially stronger A/A* candidate, but
+publication priority and venue status remain unconfirmed until external
+review.
+
+## C042: analytic boundary beyond line graphs (superseded boundary)
 
 The latest cycle proves that every **rank-perfect simplicial claw-free graph**
 is hbar-perfect. Since semi-line graphs are classically rank-perfect, every SCF
@@ -10,9 +28,9 @@ strict extension rather than a rephrasing of C038.
 
 The adversarial boundary audit reclassifies all 4308 order-nine SCF records,
 sweeps 868 web graphs, and checks 60 larger connected proper circular-arc
-stress graphs. It supports—but does not prove—the stronger conjecture that all
-SCF quasi-line graphs are rank-perfect. The unrestricted quasi-line statement
-is false. See the [C042 report](experiments/pauli_fourth_moment_phase0/C042_RANK_PERFECT_BOUNDARY.md).
+stress graphs. C043 now proves the stronger conjecture that all SCF quasi-line
+graphs are rank-perfect. The unrestricted quasi-line statement remains false.
+See the [C042 report](experiments/pauli_fourth_moment_phase0/C042_RANK_PERFECT_BOUNDARY.md).
 
 Current preparation cycle (2026-09-16): [unified research package](research_package/START_HERE_RU.md).
 Three distinct manuscripts are preserved: early graph-scale normalization

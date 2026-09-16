@@ -1,5 +1,5 @@
 {
-  "base_commit": "cd1fe3d8d7a65182c762c3566538542c766ca883",
+  "base_commit": "1c88d8edaf3c9cdce811fa98be086af6be697cf8",
   "working_tree_snapshot": true,
   "uploaded": true,
   "publication_branch": "research/c038-line-graph-hbar",
@@ -2939,8 +2939,13 @@
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/C042_RANK_PERFECT_BOUNDARY.md",
-      "bytes": 6215,
-      "sha256": "68da8a29671507704586289a0528b0c1d67a458286e5e57750e9925b74609683"
+      "bytes": 6364,
+      "sha256": "fa82c82568b5d27f7b7d179c86edd9a5eaf8824b6be43420f9df1414e4e31a6e"
+    },
+    {
+      "path": "experiments/pauli_fourth_moment_phase0/C043_QUASILINE_SCF_THEOREM.md",
+      "bytes": 5438,
+      "sha256": "9b761ea8ece3d6d26916bd1f7cee0a8ae864079575d590fa16daf28b7e24d982"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/check_novelty_modules_20260907.py",
@@ -2954,8 +2959,8 @@
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/LATEST_RESEARCH_RU.md",
-      "bytes": 30883,
-      "sha256": "a8cac6f2e481349768380d419922c14768a9236875b192ad2520ffdae52188f0"
+      "bytes": 32677,
+      "sha256": "75e8d03ed0978d3aa7c910dd7bed6f38ffd33fc78a47da8ba5f33c2795c242a1"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/LINE_GRAPH_HBAR_THEOREM_C038.md",
@@ -3009,8 +3014,8 @@
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/paper_c038/check_paper.py",
-      "bytes": 4678,
-      "sha256": "e050366aa559d314b78dc61649a5ca596ba6d76d9e43029298f4b5c126cbd18b"
+      "bytes": 5707,
+      "sha256": "e97c7ec448195b0554e834d5a31a5e05f49967cac3faf84e3bd7833d64591b8f"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/paper_c038/figures/c039_baseline_gaps.png",
@@ -3044,18 +3049,18 @@
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/paper_c038/main.tex",
-      "bytes": 37992,
-      "sha256": "88563f77954c1df40f61fdeaa494647713d43b48f3b7a736a13ba81b08ec656f"
+      "bytes": 44229,
+      "sha256": "51028a263f69d096db5c615793d290461797d9b2839cc5f8cdacc9fd5c2b74bc"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/paper_c038/README_RU.md",
-      "bytes": 3492,
-      "sha256": "b48a64d8a965569267f40804b30b9a4063cfb201595b7b678f313228ad12bfbc"
+      "bytes": 3686,
+      "sha256": "e14a1e1bd857d48af7afbba28af61cded1a6e07ff19dcce0aadc897cf0516aa1"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/paper_c038/SELF_REVIEW_CHECKLIST_RU.md",
-      "bytes": 5610,
-      "sha256": "2b9f6509c1c1927b36830e3a9cf7c3a9cb50bdf046f0e8c05d237fc4bf318daa"
+      "bytes": 5825,
+      "sha256": "d514bcdcc54a5aca294872b693b4c49db8c08d2115e07641b4f52a553ab8589f"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/POSTFREEZE_THEORY_NOTE.md",
@@ -3104,8 +3109,8 @@
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/RESEARCH_CYCLE_LOG.md",
-      "bytes": 96461,
-      "sha256": "4517baa38b0c2095a2882776cc81d6bb8178b720fc3e7ea9e5457754ec4acd2a"
+      "bytes": 97542,
+      "sha256": "0e4b908e222870aff03eca69c10ca3bda4f92e8d40b3005cf13f21912fc181b0"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/RESEARCH_PROGRAM_RU.md",
@@ -3241,6 +3246,11 @@
       "path": "experiments/pauli_fourth_moment_phase0/run_c042_rank_perfect_boundary.py",
       "bytes": 19570,
       "sha256": "5ef2a7822f93cf4c12df53bd05c8a6faa209576d62aa430a576b0d238b49d767"
+    },
+    {
+      "path": "experiments/pauli_fourth_moment_phase0/run_c043_quasiline_scf_falsification.py",
+      "bytes": 27841,
+      "sha256": "d1c110445103bc79fdcf6d29361b4ceeeeb8da11fedf2d9d5bf8eb32dd2b3f28"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/run_cnc_positivity_audit.py",
@@ -3678,6 +3688,11 @@
       "sha256": "7d2d2678184846fdfdd20c6c47bfd77e37487b1dca2ab41be317102ecfbc993b"
     },
     {
+      "path": "experiments/pauli_fourth_moment_phase0/test_c043_quasiline_scf_theorem.py",
+      "bytes": 1914,
+      "sha256": "17c0cfddd62d7781ba2a06e398d11b64d56fecb9dc980a16e278a554b9c2c519"
+    },
+    {
       "path": "experiments/pauli_fourth_moment_phase0/test_scf_almost_clique_closure.py",
       "bytes": 2263,
       "sha256": "19201ce6153b34ab70457a0219b7ca8de87d3d033e9fc2e9c03313a4bbaa64aa"
@@ -3841,6 +3856,11 @@
       "path": "experiments/pauli_fourth_moment_phase0/verify_c042_rank_perfect_boundary.py",
       "bytes": 10728,
       "sha256": "b0cb96ca51d637cf4bb2fba84aed49cfb739210acaf1f71979ea8e13347f8c2c"
+    },
+    {
+      "path": "experiments/pauli_fourth_moment_phase0/verify_c043_quasiline_scf_theorem.py",
+      "bytes": 8145,
+      "sha256": "e206babb7f1fece414be4550b1ef3a92ed59a43ad0d8135ce477c8c2cc89f0b5"
     },
     {
       "path": "experiments/pauli_fourth_moment_phase0/verify_n6_cover.py",
@@ -4429,8 +4449,8 @@
     },
     {
       "path": "output/pdf/c038_line_graph_pauli_matching_theorem.pdf",
-      "bytes": 1051584,
-      "sha256": "00ba956ee6ef7593278e431053702e04fa816d7520a1c1e90e05ddece7f82ec1"
+      "bytes": 1066306,
+      "sha256": "e7c95f3b5de4211dced7c59d14bfc1444602d6258fd921046dbc72a1c7b596ce"
     },
     {
       "path": "output/pdf/prepared_20260910/gsn_qaoa_mis_manuscript.pdf",
@@ -4624,8 +4644,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 38882,
-      "sha256": "541e0ec7385e92e11b63e8275d19dcff0cac2e047a3dc77ada610a8470bf5379"
+      "bytes": 39816,
+      "sha256": "e00d75797848b78e276b85bd55e45ab97fe9d2450a0df28993bd5feea1a251a0"
     },
     {
       "path": "REPRODUCIBILITY.md",
@@ -4654,8 +4674,8 @@
     },
     {
       "path": "research_package/branch_inventory.json",
-      "bytes": 15707,
-      "sha256": "90cd55c1d17e7e23b47f9bf9215ce0eaca7aeccd23cbdb6745e0f3d02aa2a37b"
+      "bytes": 15788,
+      "sha256": "fd7afa8f2901f22092854c601c6bbef8ca827fcce678b6dbb14fe887243205d7"
     },
     {
       "path": "research_package/build_papers.py",
@@ -4664,8 +4684,8 @@
     },
     {
       "path": "research_package/FINAL_REPORT_C038_RU.md",
-      "bytes": 17455,
-      "sha256": "7b3d25e5bb24114f7933fdbb2a14dccbc264dd1f91a68e1a2f2647537ccf1434"
+      "bytes": 18924,
+      "sha256": "5994a1880d3dd69d9543a3c59600ab48f8a41f211b4715a924ca22297428e9d4"
     },
     {
       "path": "research_package/hardware/chesapeake__prior_matched_random.qasm",
@@ -4759,8 +4779,8 @@
     },
     {
       "path": "research_package/results/c038_standalone_paper_check.log",
-      "bytes": 377,
-      "sha256": "a973119dc7af0833c2f8f13f80ccc02f24849da977161c326657530b87fdee88"
+      "bytes": 484,
+      "sha256": "3818b920e33f20feebd5e8b3c6f9dd2598ea8598534663b55188c524aba739d2"
     },
     {
       "path": "research_package/results/check_paper.log",
@@ -4800,7 +4820,7 @@
     {
       "path": "research_package/results/gsn_integrity.log",
       "bytes": 795,
-      "sha256": "4f3120940d3c308477faabed222424e3440726814ff1fcb5b356f17409de7cb6"
+      "sha256": "048a96605ea398fb3ed4782824768bd53fadb5bdfc3451e8e17e2ef750eba9e5"
     },
     {
       "path": "research_package/results/noise_checkpoint.json",
@@ -4814,13 +4834,13 @@
     },
     {
       "path": "research_package/results/pauli_full_suite.log",
-      "bytes": 313,
-      "sha256": "6a4ee9ff200f0227035023d35e2b47041ad8471aa2cee4b14900492e7042e829"
+      "bytes": 319,
+      "sha256": "ec7ab86eb1b1aa892a9f2c38f0a10af3554dcb20130a9e19cb71681a81cbb6bd"
     },
     {
       "path": "research_package/results/qaoa_integrity.log",
       "bytes": 136,
-      "sha256": "473aea7830686c49c7d6f72e369a3a50fefebe27f77274eb247c5a4f06b23541"
+      "sha256": "f8f2f550456bec0e1f0f24b6288752f71d786d26baaa249a9b31eae32e0d7290"
     },
     {
       "path": "research_package/results/readiness.json",
@@ -4830,17 +4850,17 @@
     {
       "path": "research_package/results/readiness_integrity.log",
       "bytes": 1107,
-      "sha256": "63c7b26c1a04322e8bc60c06430654c549c058781c233aa09894e94d1d49c73e"
+      "sha256": "12839637a6cb4ebc1e3c88e74350393cec1f75403a04ebf43e15d42f61d34203"
     },
     {
       "path": "research_package/results/shot_planning.json",
-      "bytes": 10316,
-      "sha256": "653f82c400130f73f914e354b270a7d2e8c3922069587603cbb5fb3a1138a9d0"
+      "bytes": 9935,
+      "sha256": "67ca941b969ca4b9fdf289c844659499ee6871e710b9465dfb6af69b8fddc21d"
     },
     {
       "path": "research_package/results/validation.json",
-      "bytes": 9953,
-      "sha256": "e1106af8fe215b1bf91f6ef15b58dd8f37087c026ea7e99f8d8d6082a37f465a"
+      "bytes": 10572,
+      "sha256": "da5e5601fb40da1b70eebdb516660adcb92d53fa9f1d28e454daba4b2cfcea84"
     },
     {
       "path": "research_package/results/verify_c031_exact_six.log",
@@ -4871,6 +4891,11 @@
       "path": "research_package/results/verify_c042_rank_perfect_boundary.log",
       "bytes": 187,
       "sha256": "2d8c9778643e685c05bf0edcf9500d01aafacc7b9b431fee94d234075fd5490c"
+    },
+    {
+      "path": "research_package/results/verify_c043_quasiline_scf_theorem.log",
+      "bytes": 238,
+      "sha256": "337dee4d7372e85f5b8a9dd8c04a3ec73f10bc92ab0eba83eb4f880dcacc9c2e"
     },
     {
       "path": "research_package/results/verify_scf_core_refinement.log",
@@ -4904,8 +4929,8 @@
     },
     {
       "path": "research_package/START_HERE_RU.md",
-      "bytes": 16622,
-      "sha256": "a35cd558cf052a16b9d8bb44650cb71a19b1e9ed606897205e1aacf887a3ccb2"
+      "bytes": 17582,
+      "sha256": "eda602fb2558f46d676ab94c7fbe3dec3b01106c7c26884ab344edc9c7c50db0"
     },
     {
       "path": "research_package/test_hardware_package.py",
@@ -4919,8 +4944,8 @@
     },
     {
       "path": "research_package/validate_package.py",
-      "bytes": 3200,
-      "sha256": "f427b9118f75f82d390428f1915f1ed213e9a5e4588f17d73d875dafdfa1cc09"
+      "bytes": 3259,
+      "sha256": "e7e21ace2168af1083ae402b2af67815ef9992c3ad5ba65272e34e9bb661eadd"
     },
     {
       "path": "results/ansatz_event_rank/development.json",
@@ -6921,6 +6946,11 @@
       "path": "results/pauli_fourth_moment_phase0/c042_web_boundary.csv",
       "bytes": 12775,
       "sha256": "c634ab23d541dbb98f2615d47cbaa60e629d54dff0f92f00775f8973f977a8d2"
+    },
+    {
+      "path": "results/pauli_fourth_moment_phase0/c043_quasiline_scf_falsification.json",
+      "bytes": 2263077,
+      "sha256": "14e1d3ab49e3413020003da453854a3ad4becdc2ffa1aa661649a6893d1db165"
     },
     {
       "path": "results/pauli_fourth_moment_phase0/cnc_positivity_audit.json",

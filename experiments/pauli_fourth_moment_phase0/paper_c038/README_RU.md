@@ -1,4 +1,4 @@
-# Самостоятельная статья C038+C042
+# Самостоятельная статья C038+C043
 
 Эта папка содержит сфокусированную рукопись только об all-line-graph теореме.
 Старые C031/SCF-конструкции намеренно не включены: они сохранены в полной
@@ -21,11 +21,13 @@ C040--C041 масштабируют проверку до случайных к�
 Добавлены пять уровней baseline, четыре режима весов, density stress,
 три графика, десять таблиц/графиков с хешами и независимые verifiers.
 
-C042 добавляет доказанный мост за пределы line graphs: rank-perfect SCF
-графы hbar-perfect, поэтому SCF semi-line класс покрыт целиком. Включён
-строгий девятивершинный свидетель вне line и h-perfect классов, исчерпывающий
-order-nine boundary audit и 60 больших stress-графов. Гипотеза про все SCF
-quasi-line графы оставлена гипотезой, а не перенесена в теорему.
+C042 добавил мост за пределы line graphs: rank-perfect SCF графы
+hbar-perfect. C043 закрывает оставшуюся границу аналитически: каждый SCF
+quasi-line граф rank-perfect и поэтому hbar-perfect. Доказательство исключает
+все nonrank clique-circulants; 4308 deletion-контролей, 6162 циркулянтных
+параметра, полный перебор 18 149 клик малых циркулянтов, опубликованный
+nonrank positive control и 250 exact-CFI stress
+графов проходят независимую проверку.
 
 Перед публичной подачей автор самостоятельно заполняет имя, аффилиацию,
 контакт, funding/conflict statements и точное раскрытие AI-помощи. Текущая
@@ -39,6 +41,7 @@ python -S experiments/pauli_fourth_moment_phase0/verify_c039_central_ablations.p
 python -m unittest discover -s experiments/pauli_fourth_moment_phase0 -p test_c039_central_ablations.py -v
 python -S experiments/pauli_fourth_moment_phase0/verify_c040_scaled_ablations.py
 python -S experiments/pauli_fourth_moment_phase0/verify_c041_density_coupling_stress.py
+python -S experiments/pauli_fourth_moment_phase0/verify_c043_quasiline_scf_theorem.py
 ```
 
 Воспроизводимая сборка без зависимости от Perl/latexmk:

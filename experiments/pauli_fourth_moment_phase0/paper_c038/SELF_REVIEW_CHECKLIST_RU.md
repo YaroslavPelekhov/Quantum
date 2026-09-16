@@ -44,9 +44,11 @@
 - Запустить C040/C041 verifiers и 11 corruption-тестов; отдельно проверить
   nested monotonicity пяти baseline, 40 full-blossom spot checks и формулу
   weak-coupling `2.5/(2+epsilon/2)`.
-- Запустить C042 verifier и шесть тестов; проверить, что rank-perfect SCF
-  bridge назван теоремой, а all-SCF-quasi-line rank-perfectness -- только
-  гипотезой.
+- Запустить C042 и C043 verifiers. Проверить, что rank-perfect SCF bridge и
+  all-SCF-quasi-line rank-perfectness названы теоремами, а unrestricted SCF
+  и unrestricted quasi-line statements не заявлены.
+- Перепроверить 6162 circulant cases, полный перебор 18 149 малых клик,
+  exact nonrank `W_25^5` positive control и пять C043 corruption tests.
 - Проверить точный strict witness ``H?`adQY`` и явно сохранить ограничения
   conditioned 60-graph proper circular-arc stress sample.
 - Не называть truncated odd-cycle baseline полным h-perfect relaxation на
