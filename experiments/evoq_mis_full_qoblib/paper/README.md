@@ -8,22 +8,21 @@ schedule is universally superior, that the 55-qubit state was simulated
 exactly, or that the correlated setting cohorts are independent population
 samples.
 
-Build from this directory:
+Build and validate both documents from the repository root:
 
 ```powershell
-pdflatex -interaction=nonstopmode -halt-on-error -output-directory output/pdf main.tex
-pdflatex -interaction=nonstopmode -halt-on-error -output-directory output/pdf main.tex
-pdflatex -interaction=nonstopmode -halt-on-error -output-directory output/pdf supplement.tex
-pdflatex -interaction=nonstopmode -halt-on-error -output-directory output/pdf supplement.tex
+python experiments/evoq_mis_full_qoblib/paper/build.py
 ```
 
 Stable deliverables are
-`output/pdf/qaoa_mps_cross_backend_rank_reversal_manuscript.pdf` and
-`output/pdf/qaoa_mps_cross_backend_rank_reversal_supplement.pdf`.
+`output/pdf/qaoa_mps_rank_certification_manuscript.pdf` and
+`output/pdf/qaoa_mps_rank_certification_supplement.pdf`. The build performs two
+LaTeX passes per document and rejects overfull boxes, unresolved references,
+undefined citations, and multiply defined labels.
 
 Render for visual QA:
 
 ```powershell
-pdftoppm -png -r 140 output/pdf/main.pdf tmp/pdfs/render/page
-pdftoppm -png -r 140 output/pdf/supplement.pdf tmp/pdfs/supplement-render/page
+pdftoppm -png -r 140 output/pdf/qaoa_mps_rank_certification_manuscript.pdf tmp/pdfs/render/page
+pdftoppm -png -r 140 output/pdf/qaoa_mps_rank_certification_supplement.pdf tmp/pdfs/supplement-render/page
 ```

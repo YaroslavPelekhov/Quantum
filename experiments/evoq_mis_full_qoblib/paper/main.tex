@@ -23,10 +23,10 @@
 \newcommand{\method}{NLR-QAOA}
 \newcommand{\anon}{Anonymous Authors}
 
-\title{When Better QAOA Schedules Depend on the Simulator:\\
-Exact and Cross-Backend Rank Reversals on QOBLIB}
-\author{\anon\\\small Research draft; author names and affiliations withheld}
-\date{}
+\title{When QAOA Schedule Rankings Depend on the Simulator:\\
+Observable-Level Certification on QOBLIB}
+\author{\anon\\\small Version prepared for advisor review; author names and affiliations withheld}
+\date{1 October 2026}
 
 \begin{document}
 \maketitle
@@ -51,6 +51,14 @@ sign agreement is 45/50, with all nine sign failures concentrated in the
 24-qubit, smallest-margin case. Thus rare-event rankings require
 observable-level error budgets rather than a single nominal MPS setting.
 \end{abstract}
+
+\noindent\textbf{Status and scope.}
+This is an exact-calibrated simulator study.  The central result is the
+observable-level certificate and its frozen cross-backend test, not a claim
+of quantum advantage or hardware performance.  The 55-qubit experiment is an
+approximate-MPS stress test; the five-case replication supplies the exact
+references.  A post-freeze Aer-only breadth extension is reported separately
+and is not pooled with the confirmatory 300-row analysis.
 
 \section{Introduction}
 
@@ -95,7 +103,7 @@ Our contributions are:
   BKS rank reversal while near-optimal and feasible-mass rankings remain stable;
   and
   \item dense exact adjudication on five real QOBLIB kernels (3--24 qubits),
-  followed by a frozen 300-row Aer/cuTensorNet replication; and
+  followed by a frozen 300-row Aer/cuTensorNet replication;
   \item an observable-level TVD certificate that preserves the exact ranking in
   all 77 certified cohorts and isolates all nine observed failures outside the
   certified region.

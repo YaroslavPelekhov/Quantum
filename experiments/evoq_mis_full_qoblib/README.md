@@ -1,8 +1,7 @@
-# Exact and cross-backend QAOA rank stability on QOBLIB
+# Observable-level certification of QAOA rank stability on QOBLIB
 
-Advisor-ready research artifact for the manuscript **When Better QAOA
-Schedules Depend on the Simulator: Exact and Cross-Backend Rank Reversals on
-QOBLIB**.
+Advisor-ready research artifact for the manuscript **When QAOA Schedule
+Rankings Depend on the Simulator: Observable-Level Certification on QOBLIB**.
 
 ## Main result
 
@@ -29,7 +28,7 @@ transferred schedule leads 101 to 41 BKS hits at the released Aer setting, but
 the ranking reverses when only the truncation cutoff is tightened. Strong
 classical controls dominate; this work makes no quantum-advantage claim.
 
-## Post-manuscript extension
+## Post-freeze breadth extension
 
 A preregistered all-instance screen has now audited all 50 QOBLIB MIS graphs.
 Under the fixed requirements of a non-empty kernel, at most 24 qubits, exact
@@ -45,9 +44,9 @@ silently pooled with the frozen five-case/two-backend manuscript experiment.
 ## Start here
 
 - `ADVISOR_BRIEF.md`: one-page interpretation and discussion prompts.
-- `paper/output/pdf/qaoa_mps_cross_backend_rank_reversal_manuscript.pdf`:
+- `paper/output/pdf/qaoa_mps_rank_certification_manuscript.pdf`:
   main paper.
-- `paper/output/pdf/qaoa_mps_cross_backend_rank_reversal_supplement.pdf`:
+- `paper/output/pdf/qaoa_mps_rank_certification_supplement.pdf`:
   full tables, certificate derivation, controls, and artifact map.
 - `CROSS_CASE_REPLICATION_PROTOCOL.md`: protocol frozen before the 240 new
   backend jobs.
@@ -94,13 +93,10 @@ $py = "C:\Users\psgpe\Downloads\Taiwan\.venv\Scripts\python.exe"
 & $py build_manifest.py
 ```
 
-Build the paper from `paper/`:
+Build and quality-check both PDFs from the repository root:
 
 ```powershell
-pdflatex -interaction=nonstopmode -halt-on-error -output-directory output/pdf main.tex
-pdflatex -interaction=nonstopmode -halt-on-error -output-directory output/pdf main.tex
-pdflatex -interaction=nonstopmode -halt-on-error -output-directory output/pdf supplement.tex
-pdflatex -interaction=nonstopmode -halt-on-error -output-directory output/pdf supplement.tex
+python experiments/evoq_mis_full_qoblib/paper/build.py
 ```
 
 Tested Windows analysis environment: Python 3.13.0, Qiskit 2.5.1, Aer 0.17.2,
