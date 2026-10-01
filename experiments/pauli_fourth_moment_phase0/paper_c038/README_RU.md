@@ -1,4 +1,4 @@
-# Самостоятельная статья C038--C046
+# Самостоятельная статья C038--C047
 
 Эта папка содержит сфокусированную рукопись только об all-line-graph теореме.
 Старые C031/SCF-конструкции намеренно не включены: они сохранены в полной
@@ -50,6 +50,13 @@ representation-independent downward convex corner, равенство тел в�
 выписан явно. Внутренних пробелов в headline proof не найдено; внешнее review
 и приоритет по-прежнему не объявляются подтверждёнными.
 
+C047 добавил независимую межъязыковую проверку: автономный C\#/.NET oracle без
+Python, NumPy, SciPy и NetworkX реализует maximum-weight matching через subset
+DP и собственный Jacobi eigensolver. На 119 корневых графах, 952 весовых
+векторах и 3808 случайных skew-направлениях нарушений нет; ещё 952
+matching-supported направления воспроизводят равенство с остатком не более
+`7.78e-16`. Это сильная falsification-проверка, но не внешнее рецензирование.
+
 Перед публичной подачей автор самостоятельно заполняет имя, аффилиацию,
 контакт, funding/conflict statements и точное раскрытие AI-помощи. Текущая
 версия анонимна и не проходила внешнее рецензирование.
@@ -66,6 +73,7 @@ python -S experiments/pauli_fourth_moment_phase0/verify_c043_quasiline_scf_theor
 python -S experiments/pauli_fourth_moment_phase0/verify_c044_proof_hardening.py
 python -S experiments/pauli_fourth_moment_phase0/verify_c045_priority_submission_audit.py
 python -S experiments/pauli_fourth_moment_phase0/verify_c046_mock_referee_body_audit.py
+python -m unittest experiments.pauli_fourth_moment_phase0.test_c047_external_oracle -v
 ```
 
 Воспроизводимая сборка без зависимости от Perl/latexmk:

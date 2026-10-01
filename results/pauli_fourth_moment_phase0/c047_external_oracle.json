@@ -1,0 +1,18 @@
+{
+  "stage": "c047_independent_dotnet_skew_oracle",
+  "complete": true,
+  "runtime": "4.0.30319.42000",
+  "root_graphs": 119,
+  "weight_vectors": 952,
+  "random_directions": 3808,
+  "equality_directions": 952,
+  "inequality_violations": 0,
+  "maximum_random_ratio": 1.0000000000000002,
+  "minimum_random_ratio": 0.070327031761380776,
+  "maximum_ratio_case": "er3_3",
+  "maximum_tightness_residual": 7.7715611723760958E-16,
+  "inequality_tolerance": 1e-8,
+  "tightness_tolerance": 2e-8,
+  "source_sha256": "0ef75c242b160bac15a33418a42042a529254a7d21c813157ac91062c2607099",
+  "protocol_sha256": "c74c15ebd441e6e647646392d1ac5354815b250345e1715b4cd1b6adc146d366"
+}

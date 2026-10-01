@@ -48,7 +48,11 @@ $(\mathrm{TV}_i+\mathrm{TV}_j)/|\Delta|<1$ covers 77 cohorts and all 77 preserve
 the exact sign; outside it, only 14 of 23 do (Fisher exact
 $p=4.30\times10^{-7}$). Overall sign correctness is 91/100 and cross-backend
 sign agreement is 45/50, with all nine sign failures concentrated in the
-24-qubit, smallest-margin case. Thus rare-event rankings require
+24-qubit, smallest-margin case. A frozen post-hoc task-and-stack validation
+then changes MIS to MaxCut and constructs exact circuits independently in
+Qiskit and Amazon Braket. The exact stacks agree to TVD $1.14\times10^{-15}$;
+all 40 MPS effect inequalities and signs hold, including all 16 certified
+cohorts. Thus rare-event rankings require
 observable-level error budgets rather than a single nominal MPS setting.
 \end{abstract}
 
@@ -146,6 +150,14 @@ beyond conventional statevector sizes \cite{pilotwave}. These studies motivate
 careful convergence analysis, but they do not establish that optimization
 algorithm rankings are invariant under the approximation controls used in a
 submitted benchmark.
+
+\paragraph{Quantum-software validation.}
+MorphQ uses semantics-preserving program transformations to test quantum
+platforms, while MetaMorphQ derives physics-based invariants for variational
+circuits \cite{morphq,metamorphq}. We do not claim a new general testing
+paradigm. Our narrower construction combines a task shift, an independently
+implemented exact SDK, qubit relabeling, and an approximation ladder to test
+transport of one observable-ranking certificate.
 
 \section{Benchmark protocol}
 
@@ -617,6 +629,27 @@ one-qubit parameter $10^{-4}$, and 1\% symmetric readout error. These are
 planning results, not measurements on a QPU or a calibrated device model.
 The supplementary information specifies the protocol and its limitations.
 
+\subsection{Cross-task and cross-stack validation}
+
+After freezing a separate protocol, we changed the task from QOBLIB MIS to
+unweighted MaxCut without retuning either depth-15 schedule. Four generated
+graphs of orders 10, 12, 14, and 16 were evaluated under identity and seeded
+qubit placements. Exact circuits were constructed independently in Qiskit and
+Amazon Braket~\cite{braket} rather than converted between SDKs. Across 16 schedule/case/
+placement rows, the maximum cross-SDK TVD was $1.14\times10^{-15}$ and the
+maximum exact placement residual in optimum probability was
+$8.33\times10^{-16}$.
+
+Aer/MPS then contributed 80 states at five pre-specified bond/cutoff points,
+forming 40 matched-random-minus-LR effect cohorts. All 40 effect-error
+inequalities held and all 40 signs matched the exact sign. Sixteen cohorts
+were certified by the exact-margin criterion, and all 16 were correct. The
+exact effects were $0.253799$, $0.094427$, $0.193721$, and $0.116571$ for the
+four graph generators. No external rank reversal occurred; the result tests
+transport of the sufficient certificate, not reversal prevalence. Because it
+was run after the QOBLIB analysis, it is reported as external validation and
+is not pooled with the confirmatory 300-row experiment.
+
 \subsection{Limitations}
 
 The transfer study uses one four-instance graph family and one MIS reduction
@@ -734,6 +767,19 @@ and Noisy Quantum Circuits up to Hundreds of Qubits,'' Quantum 10, 2173 (2026).
 H. Bayraktar et al., ``cuQuantum SDK: A High-Performance Library for
 Accelerating Quantum Science,'' 2023 IEEE International Conference on Quantum
 Computing and Engineering (QCE), 1050--1061 (2023).
+
+\bibitem{morphq}
+M. Paltenghi and M. Pradel, ``MorphQ: Metamorphic Testing of the Qiskit
+Quantum Computing Platform,'' arXiv:2206.01111 (2022).
+
+\bibitem{metamorphq}
+N. N. Nguyen, J. Le, T. T. Vu, T. T. N. Nguyen, and J. Shen,
+``MetaMorphQ: Physics-Based Metamorphic Testing of Variational Quantum
+Circuits,'' arXiv:2606.28742 (2026).
+
+\bibitem{braket}
+Amazon Web Services, ``Amazon Braket Developer Guide: Local quantum device
+emulator,'' 2026, \url{https://docs.aws.amazon.com/braket/latest/developerguide/braket-local-emulator.html}.
 
 \end{thebibliography}
 

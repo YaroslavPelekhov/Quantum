@@ -41,6 +41,13 @@ The follow-up Aer pilot completed 18 exact references and 108 seeded MPS jobs
 the exact BKS-effect sign. These results extend the instance audit but are not
 silently pooled with the frozen five-case/two-backend manuscript experiment.
 
+A separately frozen C047 external-validity cycle changes the task to MaxCut,
+constructs exact circuits independently in Qiskit and Amazon Braket, and uses
+two qubit placements plus a five-point Aer/MPS ladder. The two exact stacks
+agree to maximum TVD `1.14e-15`. All 40 observable-effect inequalities and all
+40 signs hold; the exact-margin certificate covers 16 cohorts and all 16 are
+correct. This post-freeze result is not pooled with the QOBLIB replication.
+
 ## Start here
 
 - `ADVISOR_BRIEF.md`: one-page interpretation and discussion prompts.
@@ -56,6 +63,8 @@ silently pooled with the frozen five-case/two-backend manuscript experiment.
 - `QOBLIB_COHORT_SCREEN_REPORT.md`: complete 50-instance eligibility audit.
 - `EXPANDED_QOBLIB_PILOT_REPORT.md`: exact and seeded-MPS results on three new
   eligible cases.
+- `C047_CROSS_TASK_STACK_PROTOCOL.md` and `run_c047_cross_task_stack.py`:
+  frozen MaxCut/Qiskit/Braket external validation.
 
 ## Repository map
 
@@ -100,7 +109,8 @@ python experiments/evoq_mis_full_qoblib/paper/build.py
 ```
 
 Tested Windows analysis environment: Python 3.13.0, Qiskit 2.5.1, Aer 0.17.2,
-NumPy 2.5.1, SciPy 1.18.0, and Matplotlib 3.11.1. The independent backend uses
+NumPy 2.5.1, SciPy 1.18.0, Matplotlib 3.11.1, and Amazon Braket SDK 1.127.3.
+The independent backend uses
 the recorded WSL cuQuantum/cuTensorNet 26.6.0 environment.
 
 ## Full backend execution

@@ -555,4 +555,49 @@ The repository-level \texttt{research\_package} directory contains the frozen
 planning protocol, runner, six compiled circuit files, unit tests, and
 \texttt{results/readiness.json} with source and circuit hashes.
 
+\section{Cross-task and cross-stack external validation}
+
+The C047 protocol was frozen before execution and changes every nonessential
+axis of the exact-calibrated comparison. QOBLIB MIS is replaced by unweighted
+MaxCut on four deterministic generated graphs. The two previously frozen
+depth-15 schedules are used without MaxCut tuning. Each graph is run under an
+identity and a seeded random logical-to-physical placement. Qiskit and Amazon
+Braket circuits are constructed separately from the graph and schedule; no
+circuit interchange format connects the two exact stacks. Braket's
+most-significant-qubit indexing is reversed before comparison with Qiskit's
+little-endian statevector convention.
+
+The exact gate requires cross-SDK TVD below $10^{-10}$ and placement-invariant
+optimum probabilities. It passes with maxima $1.14\times10^{-15}$ and
+$8.33\times10^{-16}$, respectively. The Aer/MPS ladder uses five
+$(\chi,\tau)$ points,
+\[
+ (4,10^{-2}),\ (8,10^{-3}),\ (16,10^{-4}),\
+ (32,10^{-6}),\ (128,10^{-12}),
+\]
+producing 80 approximate states and 40 schedule-effect cohorts.
+
+\begin{table}[H]
+\centering
+\caption{C047 MaxCut task-and-stack validation. ``Certified'' is out of ten
+placement/setting cohorts per graph; all ten signs are correct in every row.}
+\begin{tabular}{lrrr}
+\toprule
+Graph & Qubits & Exact effect & Certified \\
+\midrule
+3-regular & 10 & $+0.253799$ & 6/10 \\
+Erdos--Renyi & 12 & $+0.094427$ & 4/10 \\
+Watts--Strogatz & 14 & $+0.193721$ & 4/10 \\
+3-regular & 16 & $+0.116571$ & 2/10 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+All 40 observable-effect inequalities hold; all 40 approximate signs match
+the exact signs, and all 16 certified signs are correct. This clean transfer
+does not establish that reversals are common in MaxCut. It shows that the
+certificate remains valid under simultaneous task, generator, SDK, backend,
+and representation shifts. The protocol, runner, complete JSON record, and
+two corruption-controlled tests are included in the repository.
+
 \end{document}

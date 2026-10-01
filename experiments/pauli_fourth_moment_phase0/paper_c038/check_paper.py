@@ -14,6 +14,7 @@ QUASILINE = ROOT / "results" / "pauli_fourth_moment_phase0" / "c043_quasiline_sc
 HARDENING = ROOT / "results" / "pauli_fourth_moment_phase0" / "c044_proof_hardening.json"
 PRIORITY = ROOT / "results" / "pauli_fourth_moment_phase0" / "c045_priority_submission_audit.json"
 MOCK_REVIEW = ROOT / "results" / "pauli_fourth_moment_phase0" / "c046_mock_referee_body_audit.json"
+EXTERNAL_ORACLE = ROOT / "results" / "pauli_fourth_moment_phase0" / "c047_external_oracle.json"
 
 
 def main():
@@ -27,6 +28,7 @@ def main():
     hardening = json.loads(HARDENING.read_text(encoding="utf-8"))
     priority = json.loads(PRIORITY.read_text(encoding="utf-8"))
     mock_review = json.loads(MOCK_REVIEW.read_text(encoding="utf-8"))
+    external_oracle = json.loads(EXTERNAL_ORACLE.read_text(encoding="utf-8"))
     required = [
         r"\beta(L(R),w)=\alpha(L(R),w)=\nu(R,w)",
         r"\boxed{\BETA(L(R))=\MATCH(R).}",
@@ -66,6 +68,9 @@ def main():
         "C045 search",
         "C046 mock-referee",
         "also for odd-order roots",
+        "3808 random weighted skew directions",
+        "119 roots",
+        "952 matching-supported equality directions",
     ]
     for item in required:
         assert item in text, item
@@ -121,8 +126,14 @@ def main():
     assert mock_review["headline_internal_gaps_remaining"] == 0
     assert mock_review["body_equality_proved_by_support_functions"] is True
     assert mock_review["external_reviewed"] is False
+    assert external_oracle["complete"] is True
+    assert external_oracle["root_graphs"] == 119
+    assert external_oracle["random_directions"] == 3808
+    assert external_oracle["equality_directions"] == 952
+    assert external_oracle["inequality_violations"] == 0
+    assert external_oracle["maximum_tightness_residual"] < 1e-14
     print(json.dumps({
-        "status": "standalone_C038_C046_paper_checked",
+        "status": "standalone_C038_C047_paper_checked",
         "atlas_roots": report["atlas_nonempty_roots"],
         "direct_majorana_cases": report["direct_majorana_norm_cases"],
         "weighted_ablation_cases": ablations["weighted_instances"],
@@ -137,6 +148,7 @@ def main():
         "C044_exact_cliques": hardening["exact_circulant_clique_audit"]["cliques_enumerated"],
         "C045_sources_checked": priority["sources_checked"],
         "C046_resolved_findings": mock_review["resolved_findings"],
+        "C047_external_directions": external_oracle["random_directions"],
         "full_polytope_exact_fraction": ablations["baseline_summary"]["full_matching"]["exact_fraction"],
         "external_reviewed": False,
         "priority_confirmed": False,

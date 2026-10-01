@@ -55,7 +55,10 @@ $k\geq2$, proves that the theorem strictly extends the previously sufficient
 $h$-perfect route. An exhaustive small-root ablation separates the mechanism:
 degree constraints are exact on 66.89\% of 6225 weighted instances, cliques
 plus odd cycles on 84.69\%, and the complete odd-set system on 100\%. Removing
-skewness fails already on a triangle. As a secondary extension, we prove that
+skewness fails already on a triangle. A dependency-free C\# oracle independently
+checks 3808 random weighted skew directions on 119 roots with zero violations
+and 952 matching-supported equality directions to $7.78\times10^{-16}$. As a
+secondary extension, we prove that
 every simplicial claw-free quasi-line graph is rank-perfect and hence
 $\hbar$-perfect. The analytic theorem, not the finite computation, carries the
 claim.
@@ -842,6 +845,17 @@ Clifford normalization explicit. Its verifier rejects a missing body identity,
 the old representation quantifier, an altered report, and false review-status
 flags. This is an internal adversarial check, not external peer review.
 
+C047 adds a genuinely independent runtime check of the sharp weighted
+skew-matrix inequality. A C\# program compiled by the standard .NET Framework
+compiler uses no Python, NumPy, SciPy, NetworkX, or external linear-algebra
+package. It implements subset-dynamic-programming maximum matching and a
+Jacobi eigensolver for $-A^2$ from scratch. On 119 structured and seeded roots,
+952 positive weight vectors, and 3808 Gaussian skew directions, it finds zero
+violations; the largest ratio is $1.0000000000000002$. A further 952
+matching-supported directions attain equality with maximum residual
+$7.78\times10^{-16}$. This is cross-language falsification of the analytic
+inequality, not formal verification or external peer review.
+
 From the repository root:
 \begin{quote}\small\ttfamily\raggedright
 python experiments/pauli\_fourth\_moment\_phase0/\\
@@ -961,7 +975,7 @@ Source, frozen records, verifier, and tests are available in the
 \href{https://github.com/YaroslavPelekhov/Quantum/tree/research/c038-line-graph-hbar}{public C038 GitHub branch}.
 The repository index identifies the theorem note, priority audit, generator,
 frozen JSON, independent verifiers, and corruption-controlled tests. Every
-reported numerical constant is read from nine frozen JSON records by the
+reported numerical constant is read from ten frozen JSON records by the
 manuscript checker. They include graph identifiers, generator seeds, weight
 regimes, relaxation values, aggregate summaries, explicit scope flags, and
 hashes for all derived tables and figures.
