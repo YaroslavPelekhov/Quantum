@@ -37,7 +37,7 @@ def main():
         "1245 root graphs",
         "47 small-root cases",
         r"L(K_{2k+1})",
-        "not an externally reviewed",
+        "has not yet undergone external peer",
         "No quantum advantage",
         "6225 weighted",
         "66.89\\%",

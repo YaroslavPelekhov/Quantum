@@ -1,6 +1,6 @@
 # Paper build
 
-The manuscript is an advisor-ready research draft centered on
+The manuscript is an advisor-ready research paper centered on
 observable-level certification of MPS schedule rankings. It includes a frozen
 five-case, 300-row Aer/cuTensorNet exact replication and the motivating
 55-qubit truncation-induced rank reversal. It does not claim that the selected
